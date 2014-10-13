@@ -1,5 +1,5 @@
-name = Shanti Sarvaka STARTERLOT
-description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme
+name = Shanti Sarvaka Mediabase
+description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme for the Mediabase
 core = 7.x
 base theme = shanti_sarvaka
 version = 1.x
@@ -27,14 +27,14 @@ regions[admin_footer]   = Admin Footer
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] =  css/shanti-search-STARTERKIT.css
-stylesheets[all][] =  css/shanti-main-STARTERKIT.css
+stylesheets[all][] =  css/shanti-main-mediabase.css
+stylesheets[all][] =  css/shanti-search-mediabase.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;
-scripts[] = js/shanti-main-STARTERKIT.js
-scripts[] = js/shanti-search-STARTERKIT.js
+scripts[] = js/shanti-main-mediabase.js
+scripts[] = js/shanti-search-mediabase.js
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Theme Settings   
