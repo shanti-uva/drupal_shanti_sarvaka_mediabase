@@ -24,7 +24,7 @@ function sarvaka_mediabase_theme() {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	dpm($vars, 'vars');
+	//dpm($vars, 'vars');
 	// Add collection field to group details
 	if(!empty($vars['coll'])) {
 		$title = $vars['coll']->title;
