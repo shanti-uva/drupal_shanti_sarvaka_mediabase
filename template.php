@@ -39,8 +39,6 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 	$vars['content']['group_details']['field_subcollection']['#icon'] = 'create'; 					// subcollection
 	$vars['content']['group_details']['field_characteristic']['#icon'] = 'subjects'; 				// subjects
 	$vars['content']['group_details']['field_pbcore_coverage_spatial']['#icon'] = 'places';	// places
-	 
-	
 }
 
 /**
