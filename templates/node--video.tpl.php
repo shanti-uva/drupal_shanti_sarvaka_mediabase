@@ -249,6 +249,7 @@ else:     /************ FULL Display ***********/
 		          	$content['group_details']['#attributes']['class'][] = "in"; 
 								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);
+								//dpm($content, 'content');
 		          	print render($content); 
 		          ?>
 		        </div>
