@@ -211,7 +211,7 @@
 	        </div>
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
-		        	<h5>Collection</h5>
+		        	<span class="icon shanticon-create" title="Collection"></span> 
 		        	<?php print $coll->title; ?>
 		        </div>
 		      <?php endif; ?>

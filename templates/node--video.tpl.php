@@ -80,8 +80,10 @@
  * @ingroup themeable
  */
 ?>
-<?php // TEASER Display ?> 
-<?php if($teaser): 
+
+<?php 
+/********* TEASER Display ****************/
+if($teaser): 
 		//dpm($variables, 'in teaser');
 		?>
 		<li class="shanti-thumbnail video"> 
@@ -137,8 +139,9 @@
    </div> <!-- end shanti-thumbnail-info -->
 </li> <!-- end shanti-thumbnail -->
 
-<?php // Full Mode Display ?>
-<?php else: ?>
+<?php 
+else:     /************ FULL Display ***********/
+?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -207,41 +210,20 @@
 	        </div>
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
-		        	<h5>Collection</h5>
+		        	<span class="icon shanticon-create" title="Collection"></span> 
 		        	<?php print $coll->title; ?>
 		        </div>
 		      <?php endif; ?>
-		      <?php if(!empty($content['group_details']['field_subcollection'])): ?>
-		      	<div class="subcollection">
-		      		<span class="icon shanticon-create" title="places"></span>
-		      		<?php
-		        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_subcollection']); 
-								$content['group_details']['field_subcollection']['#label_display'] = 'above';
-								show($content['group_details']['field_subcollection']);
-		      		?>
-		      	</div>
-		      <?php endif; ?>
-		      <?php if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
+		      <?php 
+		      if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
 		        <div class="avplace">
-		          	<span class="icon shanticon-places" title="places"></span>  
+		          	<span class="icon shanticon-places" title="Related Places"></span>  
 		          	<?php 
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
 		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
-		        </div>
-		      <?php endif; ?>
-	        <?php if(!empty($content['group_details']['field_characteristic'])): ?>
-		        <div class="avsubjects">
-		        	<span class="icon shanticon-subjects" title="subjects"></span>  
-		        	<?php
-		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_characteristic']); 
-								$content['group_details']['field_characteristic']['#label_display'] = 'above';
-								show($content['group_details']['field_characteristic']);
-		        	?>
 		        </div>
 		      <?php endif; ?>
 	      </div>
@@ -265,10 +247,7 @@
           	<div class="panel-group" id="av-details">
 		          <?php 
 		          	$content['group_details']['#attributes']['class'][] = "in"; 
-								/*
-								 * TODO: Deal with titles. Right now displays first title in current language in mediabase.module hook_node_view
-								 */
-								 //dpm($content, 'content in template');
+								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);
 		          	print render($content); 
 		          ?>
