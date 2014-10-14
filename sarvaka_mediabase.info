@@ -2,7 +2,7 @@ name = Shanti Sarvaka Mediabase
 description = A sub-theme of the Drupal 7 Shanti Sarvaka Theme for the Mediabase
 core = 7.x
 base theme = shanti_sarvaka
-version = 1.x
+version = 7.x-1.x
 
 dependencies[] = jquery_update ; requires jquery v 1.10+
 
@@ -44,4 +44,4 @@ scripts[] = js/shanti-search-mediabase.js
 ; Furthermore, base color is primarily determined in CSS
 ;
 ;settings[shanti_sarvaka_base_color] = '#dc3c47' 
-;settings[shanti_sarvaka_icon_class] = 'av'
+;settings[shanti_sarvaka_icon_class] = 'audio-video'
