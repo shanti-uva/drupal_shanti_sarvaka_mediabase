@@ -143,6 +143,12 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 
 #edit-filter-settings-title{ margin-bottom:0 !important;}
 
+div.node .group-details .field-label-span {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	vertical-align: top;
+}
 /* ---------------------- */
 /* -- Video Edit form --- */
 /* ---------------------- */

@@ -25,20 +25,25 @@ function sarvaka_mediabase_theme() {
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
 	//dpm($vars, 'vars');
-	// Add collection field to group details
-	if(!empty($vars['coll'])) {
-		$title = $vars['coll']->title;
-		$vars['content']['group_details']['collection'] = array(
-			'#type' => 'markup',
-			'#markup' => "<div class=\"field field-name-av-collection\">
-											<span class=\"field-label-span\"><span class=\"icon shanticon-create\" title=\"Collection\"></span> " .
-											t('Collection:') . "</span> {$title} </div>",
-		);
+	// Preprocess a/v nodes only:
+	if(in_array($vars['type'], array('audio', 'video'))) {
+		// Add collection field to group details
+		if(!empty($vars['coll'])) {
+			$title = $vars['coll']->title;
+			$vars['content']['group_details']['collection'] = array(
+				'#type' => 'markup',
+				'#markup' => "<div class=\"field field-name-av-collection\">
+												<span class=\"icon shanticon-create\" title=\"Collection\"></span>&nbsp;<span class=\"field-label-span\">" .
+												t('Collection') . "</span>&nbsp;{$title} </div>",
+			);
+		}
+		// Add Icons 
+		$vars['content']['group_details']['field_subcollection']['#icon'] = 'create'; 					// subcollection
+		$vars['content']['group_details']['field_characteristic']['#icon'] = 'subjects'; 				// subjects
+		$vars['content']['group_details']['field_pbcore_coverage_spatial']['#icon'] = 'places';	// places
+		// Remove Display of Tags in a/v nodes
+		unset($vars['content']['group_details']['field_tags']);
 	}
-	// Add Icons 
-	$vars['content']['group_details']['field_subcollection']['#icon'] = 'create'; 					// subcollection
-	$vars['content']['group_details']['field_characteristic']['#icon'] = 'subjects'; 				// subjects
-	$vars['content']['group_details']['field_pbcore_coverage_spatial']['#icon'] = 'places';	// places
 }
 
 /**
