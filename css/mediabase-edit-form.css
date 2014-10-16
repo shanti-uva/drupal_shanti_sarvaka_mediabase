@@ -135,10 +135,7 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 }
 
 .form-item.location-selector label {
-	margin-top: 12px !important;
-	margin-left: 12px !important;
-	margin-right: 8px !important;
-	margin-bottom: 6px !important;
+	margin: 12px 8px 6px 12px !important;
 }
 
 .form-item.location-selector .results {
@@ -219,6 +216,43 @@ div.kmap-selector button.selectpicker {
 .location-selector button.btn.btn-sm .icon.shanticon-magnify {
 	font-size: 1.75em;
 	padding-top: 4px !important;
+}
+
+/* Rights & Licensing Section */
+#accordionnode_video_form_group_rights div.panel-body > div {
+	float: left;
+	width: 30%;
+	border: none;
+}
+
+/* Technical Metadata */
+#field-pbcore-instantiation-add-more-wrapper .field-type-list-text, #field-pbcore-instantiation-add-more-wrapper .field-type-text {
+	float: left;
+	width: 30%;
+	border: none;
+}
+
+/* Media Workflow Section */
+#field_collection_item_field_workflow_form_group_media_workflow div.panel-body > div,
+#accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div,
+#field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div,
+{
+	float: left;
+	width: 30%;
+	border: none;
+}
+
+#edit-field-workflow-und-0-field-edl-log-files,
+#accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div.field-type-text-long,
+#field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div.field-type-text-long {
+	clear: both;
+	margin-right: 12px;
+	width: 45%;
+}
+
+#field_collection_item_field_workflow_form_group_media_workflow div.panel-body > .field-type-text-long {
+	float: left;
+	width: 45%;
 }
 
 /* ----------------------------*/
