@@ -87,6 +87,40 @@ div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group
 	margin: 18px 0px;
 }	
 
+div#edit-group-audience > div.form-item > label {
+	font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
+	font-size: 100%;
+	text-transform: uppercase;
+	color: #555;
+	margin: -24px 0px 12px -3px;
+}
+
+div#edit-group-audience > div.form-item > div.collection-details-audience {
+	margin-left: 8px;
+}
+
+.group-details .field-type-taxonomy-term-reference > label {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 6px;
+	margin-bottom: 12px;
+	width: 99%;
+	font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	color: #555;
+}
+
+.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .branch-filter {
+	margin-top: -12px;
+}
+
+.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .browse-link {
+	margin-top: -6px;
+}
+
+.field-type-taxonomy-term-reference .form-item.kmap-selector label {
+	margin-left: 6px;
+}
+
 .field-widget-field-collection-hidden {
 	display: none;
 }
@@ -100,6 +134,17 @@ div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group
 	margin: 0px 6px;
 }
 
+.form-item.location-selector label {
+	margin-top: 12px !important;
+	margin-left: 12px !important;
+	margin-right: 8px !important;
+	margin-bottom: 6px !important;
+}
+
+.form-item.location-selector .results {
+	margin-left: 12px;
+}
+
 div.kmap-selector button.selectpicker {
 	min-width: 300px;
 }
@@ -107,6 +152,11 @@ div.kmap-selector button.selectpicker {
 .browse-link a {
 	display: inline-block;
 	margin-left: -120px;
+}
+
+.form-item.kmap-selector a.show-annot {
+	font-size: 90%;
+	margin-left: 8px;
 }
 
 .kmap-selector .autocomplete-input {
@@ -135,6 +185,14 @@ div.kmap-selector button.selectpicker {
 	float: left;
 }
 
+.kmap-selector .results {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	margin-left: -4px;
+}
+
 .location-selector button.btn.btn-sm {
 	float: none;
 	width: 25px;
@@ -160,6 +218,7 @@ div.kmap-selector button.selectpicker {
 
 .location-selector button.btn.btn-sm .icon.shanticon-magnify {
 	font-size: 1.75em;
+	padding-top: 4px !important;
 }
 
 /* ----------------------------*/
