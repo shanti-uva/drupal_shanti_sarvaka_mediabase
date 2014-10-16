@@ -14,7 +14,6 @@
 	 * 
 	 */
 ?>
-<div class="messages"><?php print $messages; ?></div>
 <div class="mb-av-form">
 	<?php
 		echo drupal_render_children($form); 
