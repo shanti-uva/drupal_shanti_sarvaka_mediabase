@@ -50,16 +50,14 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
  * Preprocess function for a VIDEO ENTRY FORM
  */
 function sarvaka_mediabase_preprocess_video_node_form(&$vars) {
-	/*dpm($vars['form']);
-	$vars['messages'] = theme_status_messages(array('display' => 'status'));*/
-	
+	drupal_add_css(drupal_get_path('theme', 'sarvaka_mediabase') . '/css/mediabase-edit-form.css');
 }
 
 /**
  * Preprocess function for a AUDIO ENTRY FORM
  */
 function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
-	// Add variables for audio node form processing here
+	drupal_add_css(drupal_get_path('theme', 'sarvaka_mediabase') . '/css/mediabase-edit-form.css');
 }
 
 /**

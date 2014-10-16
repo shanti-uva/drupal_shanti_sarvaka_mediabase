@@ -92,6 +92,10 @@ div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group
 }
 
 /* KMap Fields */
+#field_pbcore_coverage_spatial_location_selector {
+	min-height: 60px;
+}
+
 .kmap-selector .autocomplete-input label {
 	margin: 0px 6px;
 }
