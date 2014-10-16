@@ -7,6 +7,7 @@
 					<?php print render($video_controls); ?>
 				</td>
                                 <td class='transcript-wrapper'>
+					<?php print render($transcript_controls); ?>
                                         <ul class='nav nav-tabs' role='tablist'>
                                                 <li class='active'><a href='#transcript-<?php print $trid; ?>' role='tab' data-toggle='tab'>Transcript</a></li>
                                                 <li><a href='#hits-<?php print $trid; ?>' role='tab' data-toggle='tab'>Search</a></li>
