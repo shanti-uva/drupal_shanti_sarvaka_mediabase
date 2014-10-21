@@ -43,5 +43,6 @@ scripts[] = js/shanti-search-mediabase.js
 ; These theme settings can be changed in the admin interface as well.
 ; Furthermore, base color is primarily determined in CSS
 ;
-;settings[shanti_sarvaka_base_color] = '#dc3c47' 
-;settings[shanti_sarvaka_icon_class] = 'audio-video'
+settings[shanti_sarvaka_base_color] = '#32ccca' 
+settings[shanti_sarvaka_icon_class] = 'audio-video'
+settings[shanti_sarvaka_site_body_tag] = 'mediabase'
