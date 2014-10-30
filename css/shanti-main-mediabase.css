@@ -171,3 +171,27 @@ a.hide-annot:before{
 	position:relative;
 	top:-1px;
 }
+
+/** Home page View */
+.shanti-filters {
+	margin-left: 18px;
+}
+
+.shanti-filters td {
+	white-space: nowrap;
+}
+
+.shanti-filters td .label {
+	color: #444;
+	font-weight: bold;
+	font-size: 90%;
+	text-transform: uppercase;
+}
+
+.shanti-filters td .count {
+	font-size: 90%;
+}
+
+.shanti-filters .pagerer {
+	margin: 0px;
+}
