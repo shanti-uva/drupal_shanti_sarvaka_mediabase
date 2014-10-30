@@ -1,5 +1,14 @@
 (function ($) { // jQuery wrapper function
 	
+	// Move the dom-id class so that the view block reloads all content and so does not duplicate filters, pager, etc.
+	Drupal.behaviors.shanti_sarvaka_mb_bef_mainpage = {
+		attach: function (context, settings) {
+			domid = $('.shanti-view-dom-id').attr('data-dom-id');
+			$("div.view-dom-id-" + domid).removeClass("view-dom-id-" + domid);
+			$('.shanti-view-dom-id').addClass("view-dom-id-" + domid);
+		}
+	};
+	
 	Drupal.behaviors.shanti_sarvaka_mb_trim_desc =  {
 	  attach: function (context, settings) {
 			if($('.field-name-field-pbcore-description .field-item').length > 1) { 

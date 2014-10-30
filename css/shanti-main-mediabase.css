@@ -195,3 +195,15 @@ a.hide-annot:before{
 .shanti-filters .pagerer {
 	margin: 0px;
 }
+
+.views-widget-sort-sort_bef_combine .form-item-sort-bef-combine {
+	min-width: 140px;
+}
+
+.views-widget-sort-sort_bef_combine label {
+	display: none;
+}
+
+.dropdown-menu.open .disabled  {
+	background-color: #d0d0d0;
+}

@@ -20,6 +20,12 @@ function sarvaka_mediabase_theme() {
   );
 }
 
+function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
+	if($form_id == "views_exposed_form") {
+		//$form['#ajax']['wrapper'] = 'block-views-browse-media-home-block';
+	}
+}
+
 /**
  * Preprocess function for a NODE
  */
@@ -58,6 +64,35 @@ function sarvaka_mediabase_preprocess_video_node_form(&$vars) {
  */
 function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
 	drupal_add_css(drupal_get_path('theme', 'sarvaka_mediabase') . '/css/mediabase-edit-form.css');
+}
+
+/**
+ * Views Preprocess
+ */
+function sarvaka_mediabase_preprocess_views_view(&$vars) {
+}
+
+function sarvaka_mediabase_select($vars) {
+	$element = &$vars['element'];
+	
+	// Deal with Attributes
+	$element['#attributes']['class'][] = 'form-control';
+  $element['#attributes']['class'][] = 'form-select';
+  $element['#attributes']['class'][] = 'ss-select';
+  $element['#attributes']['class'][] = 'selectpicker';
+  element_set_attributes($element, array('id', 'name', 'size'));
+	
+	// Process Options into HTML 
+	$html = form_select_options($element);
+	//   If exposed filter in form, add title as a first option
+	if($element['#name'] == 'sort_bef_combine') {
+		$element['#options'] = array('label' => $element['#title']) + $element['#options'];
+		$html = form_select_options($element);
+		$html = str_replace('value="label"', 'data-hidden="true"', $html);
+		$html = str_replace('selected="selected"', 'disabled="disabled"', $html);
+	}
+	
+  return '<select' . drupal_attributes($element['#attributes']) . '>' . $html . '</select>';
 }
 
 /**
