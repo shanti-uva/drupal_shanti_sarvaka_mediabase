@@ -196,6 +196,10 @@ a.hide-annot:before{
 	margin: 0px;
 }
 
+.shanti-filters .ajax-progress {
+	display: inline-block;
+}
+
 .form-item-sort-bef-combine {
 	min-width: 140px;
 } 
