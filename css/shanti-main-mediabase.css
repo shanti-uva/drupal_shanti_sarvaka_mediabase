@@ -196,9 +196,9 @@ a.hide-annot:before{
 	margin: 0px;
 }
 
-.views-widget-sort-sort_bef_combine .form-item-sort-bef-combine {
+.form-item-sort-bef-combine {
 	min-width: 140px;
-}
+} 
 
 .form-item-sort-bef-combine label {
 	display: none;
