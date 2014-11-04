@@ -6,7 +6,7 @@ ul.ss-full-tabs>li.active>a:after {
   border-color: #32ccca;
   border-top-color: #32ccca;
 } 
-i.thumbtype { background-color: rgba(50,204,202, 0.8); }
+/*i.thumbtype { background-color: rgba(50,204,202, 0.8); }*/
 .breadwrap ol li .icon{ background:#32ccca;}
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
