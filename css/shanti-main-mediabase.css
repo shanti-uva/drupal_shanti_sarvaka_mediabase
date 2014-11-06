@@ -1,16 +1,11 @@
-/* custom theme colors */
-.titlearea {background: #32ccca; } 
-.basebg { background-color: #32ccca; } 
-.basecolor { color: #32ccca; }   
-ul.ss-full-tabs>li.active>a:after {
-  border-color: #32ccca;
-  border-top-color: #32ccca;
-} 
-.breadwrap ol li .icon{ background:#32ccca;}
-.ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#32ccca;}
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#32ccca;}
-/* END custom theme colors */
+/* BEGIN custom theme colors */
+.titlearea,
+.breadwrap ol li .icon,
+.carousel a.carousel-control,
+.ss-full-tabs.nav-tabs>li.active a,
+.ss-full-tabs.nav-tabs>li.active a:hover{ background:#32ccca;}
+.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca;}
+/* END colors */
 
 .carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel .carousel-inner{ padding-top: 0;}
@@ -82,10 +77,11 @@ ul.ss-full-tabs>li.active>a:after {
 .navbar .lang ul.dropdown-menu{ left: -2em;} /* language menu */
 .highlight:last-child{ border-left-color: #d0d0d0;}
 
+/*
 .block .content .nav a{}
 .block .content .nav a:hover, 
 .block .content .nav a:focus{ text-decoration: none;background: #fff;color: #444;}
-
+*/
 
 
 /* tables in admin */
@@ -96,7 +92,6 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 	margin-left:20px;
 }
 
-.bootstrap-select.btn-group .btn .filter-option{ font-size:1em;}
 
 
 
