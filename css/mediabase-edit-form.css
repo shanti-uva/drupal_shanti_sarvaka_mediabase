@@ -32,12 +32,6 @@ div.file-widget.form-managed-file > * {
 
 /* Title Group */
 
-.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
-
-.field-name-field-workflow .field-widget-options-select{ padding:0; float:left; display:inline; width:33.3%; }
-.field-name-field-workflow .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
-.field-name-field-workflow .bootstrap-select.form-control:not([class*='span']){ max-width:95%; margin-left:1rem;}
-
 div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
 	float: left;
 	border: none;
@@ -232,16 +226,16 @@ div.kmap-selector button.selectpicker {
 	padding-top: 4px !important;
 }
 
+
+
+
+
+
+
+
+
 /* Rights & Licensing Section */
 #accordionnode_video_form_group_rights div.panel-body > div {
-	float: left;
-	width: 30%;
-	border: none;
-}
-
-/* Technical Metadata */
-#field-pbcore-instantiation-add-more-wrapper .field-type-list-text,
-#field-pbcore-instantiation-add-more-wrapper .field-type-text {
 	float: left;
 	width: 30%;
 	border: none;
@@ -269,6 +263,28 @@ div.kmap-selector button.selectpicker {
 	float: left;
 	width: 45%;
 }
+
+
+
+
+
+
+
+.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
+
+.field-name-field-workflow .field-widget-options-select,
+.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.3%; border-bottom:none;}
+.field-name-field-workflow .form-item.form-type-select label,
+.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
+.field-name-field-workflow .bootstrap-select.form-control:not([class*='span']),
+.field-type-field-collection  .bootstrap-select.form-control:not([class*='span']){ max-width:95%; margin-left:1rem;}
+
+
+
+.field-type-field-collection .field-type-text.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:31%; position:relative; left:1rem}
+
+
+
 
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
