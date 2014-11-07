@@ -32,10 +32,10 @@ div.file-widget.form-managed-file > * {
 
 /* Title Group */
 
-.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:13rem;}
+.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
 
 .field-name-field-workflow .field-widget-options-select{ padding:0; float:left; display:inline; width:33.3%; }
-.field-name-field-workflow .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:1rem;}
+.field-name-field-workflow .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
 .field-name-field-workflow .bootstrap-select.form-control:not([class*='span']){ max-width:95%; margin-left:1rem;}
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
