@@ -230,27 +230,6 @@ div.kmap-selector button.selectpicker {
 
 
 
-
-
-
-
-/* Rights & Licensing Section */
-#accordionnode_video_form_group_rights div.panel-body > div {
-	float: left;
-	width: 30%;
-	border: none;
-}
-
-/* Media Workflow Section */
-#field_collection_item_field_workflow_form_group_media_workflow div.panel-body > div,
-#accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div,
-#field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div,
-{
-	float: left;
-	width: 30%;
-	border: none;
-}
-
 #edit-field-workflow-und-0-field-edl-log-files,
 #accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div.field-type-text-long,
 #field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div.field-type-text-long {
@@ -265,25 +244,22 @@ div.kmap-selector button.selectpicker {
 }
 
 
-
-
-
-
-
 .field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
 
+
+.group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
 .field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.3%; border-bottom:none;}
+
+.group-rights .form-type-textfield label,
 .field-name-field-workflow .form-item.form-type-select label,
 .field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
+
 .field-name-field-workflow .bootstrap-select.form-control:not([class*='span']),
 .field-type-field-collection  .bootstrap-select.form-control:not([class*='span']){ max-width:95%; margin-left:1rem;}
 
-
-
-.field-type-field-collection .field-type-text.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:31%; position:relative; left:1rem}
-
-
+.group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
+.field-type-field-collection input.form-text.form-control{ max-width:31%; position:relative; left:1rem}
 
 
 /* ----------------------------*/
