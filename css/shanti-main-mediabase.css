@@ -5,6 +5,8 @@
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active{ background:#32ccca;}
+html body a.icon-play.comp.largePlayBtn,
+.largePlayBtn:hover{ color:#fff; background-color:#32ccca !important;}
 .nav-justified>li.active:before{ color:#32ccca;}
 /* END colors */
 
@@ -86,7 +88,7 @@
 
 
 /* tables in admin */
-.filter-option.pull-left{ width:3.25em;}
+/*.filter-option.pull-left{ width:3.25em;}*/
 
 table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
 	width:70px;

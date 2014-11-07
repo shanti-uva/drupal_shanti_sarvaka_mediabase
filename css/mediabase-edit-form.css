@@ -32,6 +32,12 @@ div.file-widget.form-managed-file > * {
 
 /* Title Group */
 
+.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:13rem;}
+
+.field-name-field-workflow .field-widget-options-select{ padding:0; float:left; display:inline; width:30%; }
+.field-name-field-workflow .form-item.form-type-select label{ display:block; margin-bottom:0.8rem}
+.field-name-field-workflow .bootstrap-select.form-control:not([class*='span']){ max-width:90%;}
+
 div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
 	float: left;
 	border: none;
@@ -42,18 +48,25 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	padding: 0px 0px 8px 0px;
 }
 
-div.field-type-field-collection tr.draggable td div[class*="field-type-"] button.dropdown-toggle.selectpicker { /* was div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker */
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
+
+/*
+	div.field-type-field-collection tr.draggable td div[class*="field-type-"] button.dropdown-toggle.selectpicker {
+	was ====> div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker
+
 	width: 90% !important;
 	margin-left: 5%;
 }
+*/
 
 div.field-type-field-collection tr.draggable td div.field-type-text-long {
-	width: 75%;
+	width: 70%;
+	padding-right:1rem;
 }
 
 /* Remove button (Trashcan icon) */
 form.node-form button.btn-delete {
-	float: right; 
+	float: right;
 	max-width: 3em;
 	max-height: 3em;
 	min-height: 22px;
@@ -62,7 +75,7 @@ form.node-form button.btn-delete {
 
 /* tr.draggable are field groups where user can add any number of fields */
 form.node-form tr.draggable button.btn-delete {
-	margin-top: 3em;
+	margin: 4em 1.5em 0 0;
 }
 
 form.node-form button.btn-delete span.icon {
@@ -85,7 +98,7 @@ div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group
 	background-color: #f0f0f0;
 	padding: 12px;
 	margin: 18px 0px;
-}	
+}
 
 div#edit-group-audience > div.form-item > label {
 	font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
@@ -169,7 +182,8 @@ div.kmap-selector button.selectpicker {
 	vertical-align: middle;
 }
 
-.kmap-selector-item, .location-selector-item {
+.kmap-selector-item,
+.location-selector-item {
 	line-height: 19px;
 	white-space: nowrap;
 	margin: 6px 3px 3px 0px;
@@ -226,7 +240,8 @@ div.kmap-selector button.selectpicker {
 }
 
 /* Technical Metadata */
-#field-pbcore-instantiation-add-more-wrapper .field-type-list-text, #field-pbcore-instantiation-add-more-wrapper .field-type-text {
+#field-pbcore-instantiation-add-more-wrapper .field-type-list-text,
+#field-pbcore-instantiation-add-more-wrapper .field-type-text {
 	float: left;
 	width: 30%;
 	border: none;
