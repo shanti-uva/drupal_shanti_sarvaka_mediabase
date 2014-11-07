@@ -1,10 +1,11 @@
 /* BEGIN custom theme colors */
 .titlearea,
 .breadwrap ol li .icon,
-.carousel a.carousel-control,
-.ss-full-tabs.nav-tabs>li.active a,
-.ss-full-tabs.nav-tabs>li.active a:hover{ background:#32ccca;}
-.ss-full-tabs.nav-tabs>li.active:before{ color:#32ccca;}
+.carousel-control,
+.nav-justified>li.active a,
+.nav-justified>li.active a:hover,
+.nav-justified>li.active a:active{ background:#32ccca;}
+.nav-justified>li.active:before{ color:#32ccca;}
 /* END colors */
 
 .carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
@@ -79,7 +80,7 @@
 
 /*
 .block .content .nav a{}
-.block .content .nav a:hover, 
+.block .content .nav a:hover,
 .block .content .nav a:focus{ text-decoration: none;background: #fff;color: #444;}
 */
 
@@ -87,7 +88,7 @@
 /* tables in admin */
 .filter-option.pull-left{ width:3.25em;}
 
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{ 
+table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
 	width:70px;
 	margin-left:20px;
 }
@@ -106,12 +107,12 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 	margin-top:3em;
 	margin-left:0;
 }
- 
+
 #locale-translation-filter-form .form-item-translation{ width:22em;}
 #locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */}
 
 
- 
+
 #edit-actions.form-actions{ margin-top:0.5em;}
 
 input.role-weight.form-control{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
@@ -153,17 +154,17 @@ div.node .group-details .field-label-span {
 }
 
 /*--- show-hide toggle button ---*/
-a.show-annot, 
-a.hide-annot{ 
+a.show-annot,
+a.hide-annot{
 	font-size:1em;
 	text-transform:uppercase;
 	font-family:sans-serif;
 	font-weight:bold;
 	margin-left:-0.5em;
 }
-a.show-annot:before, 
-a.hide-annot:before{ 
-	color:#5a65d1;	
+a.show-annot:before,
+a.hide-annot:before{
+	color:#5a65d1;
 	font-size: 0.62em;
 	line-height:.75em;
 	font-weight:normal;
@@ -204,7 +205,7 @@ a.hide-annot:before{
 
 .form-item-sort-bef-combine {
 	min-width: 140px;
-} 
+}
 
 .form-item-sort-bef-combine label {
 	display: none;
