@@ -5,7 +5,7 @@
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active{ background:#32ccca;}
-html body a.icon-play.comp.largePlayBtn,
+.largePlayBtn,
 .largePlayBtn:hover{ color:#fff; background-color:#32ccca !important;}
 .nav-justified>li.active:before{ color:#32ccca;}
 /* END colors */
