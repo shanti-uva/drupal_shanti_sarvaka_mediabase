@@ -81,65 +81,65 @@
  */
 ?>
 
-<?php 
+<?php
 /********* TEASER Display ****************/
-if($teaser): 
+if($teaser):
 		//dpm($variables, 'in teaser');
 		?>
-		<li class="shanti-thumbnail video"> 
-	    <div class="shanti-thumbnail-image shanti-field-video"> 
+		<li class="shanti-thumbnail video">
+	    <div class="shanti-thumbnail-image shanti-field-video">
 	      <a href="<?php print $variables['node_url']; ?>" class="shanti-thumbnail-link">
 	         <span class="overlay">
 	            <span class="icon"></span>
 	         </span>
-	         <img title="<?php print $title; ?>" 
-	             alt="<?php print $title; ?>" 
-	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>" 
+	         <img title="<?php print $title; ?>"
+	             alt="<?php print $title; ?>"
+	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>"
 	             typeof="foaf:Image" class="k-no-rotate">
-	         <span class="icon shanticon-video"></span>  
+	         <span class="icon shanticon-video"></span>
 	      </a>
 	    </div>
-	    <div class="shanti-thumbnail-info">      
+	    <div class="shanti-thumbnail-info">
 	     <div class="body-wrap">
-	      <div class="shanti-thumbnail-field shanti-field-title">        
-	         <span class="field-content"><a href="<?php print $variables['node_url']; ?>" 
-	             class="shanti-thumbnail-link"><?php print $title; ?></a></span>  
-	      </div>  
-	      
-	      <div class="shanti-thumbnail-field shanti-field-created">       
+	      <div class="shanti-thumbnail-field shanti-field-title">
+	         <span class="field-content"><a href="<?php print $variables['node_url']; ?>"
+	             class="shanti-thumbnail-link"><?php print $title; ?></a></span>
+	      </div>
+
+	      <div class="shanti-thumbnail-field shanti-field-created">
 	          <span class="shanti-field-content"><?php if(!empty($variables['media_create_date'])) {
-	          	print date('d M Y', $variables['media_create_date']); 
-	          } ?></span>  
-	      </div>  
-      
+	          	print date('d M Y', $variables['media_create_date']);
+	          } ?></span>
+	      </div>
+
       <?php if(isset($variables['duration'])): ?>
-        <div class="shanti-thumbnail-field shanti-field-duration">        
+        <div class="shanti-thumbnail-field shanti-field-duration">
          <span class="field-content"> <?php print $variables['duration']['formatted'] ?></span>
         </div>
       <?php endif; ?>
-      
+
       <?php if($coll): ?>
-        <div class="shanti-field shanti-field-group-audience">     
-            <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
+        <div class="shanti-field shanti-field-group-audience">
+            <div class="shanti-field-content"><a href="<?php print $coll->url; ?>"
               class="shanti-thumbnail-link"><a href="<?php print $coll->url; ?>"><?php print $coll->title; ?></a>
-            </div>  
-        </div>  
+            </div>
+        </div>
       <?php endif; ?>
     </div> <!-- end body-wrap -->
-    
-    <div class="footer-wrap">  
+
+    <div class="footer-wrap">
       <?php if(isset($variables['place_link'])): ?>
-        <div class="shanti-thumbnail-field shanti-field-place">        
-         <span class="field-content"><span class="icon shanticon-places"></span>  
+        <div class="shanti-thumbnail-field shanti-field-place">
+         <span class="field-content"><span class="icon shanticon-places"></span>
            <?php print render($variables['place_link']); ?>
          </span>
         </div>
       <?php endif; ?>
-    </div> <!-- end footer -->  
+    </div> <!-- end footer -->
    </div> <!-- end shanti-thumbnail-info -->
 </li> <!-- end shanti-thumbnail -->
 
-<?php 
+<?php
 else:     /************ FULL Display ***********/
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
@@ -159,7 +159,7 @@ else:     /************ FULL Display ***********/
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-  <div class="mms-wrap-left">  
+  <div class="mms-wrap-left">
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -204,23 +204,23 @@ else:     /************ FULL Display ***********/
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
 	      <div class="video-overview">
-	        <h5><?php print t('Video Overview'); ?></h5>
+	        <h5 class="video-overview-title"><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
-		        	<span class="icon shanticon-create" title="Collection"></span> 
+		        	<span class="icon shanticon-create" title="Collection"></span>
 		        	<?php print $coll->title; ?>
 		        </div>
 		      <?php endif; ?>
-		      <?php 
+		      <?php
 		      if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
 		        <div class="avplace">
-		          	<span class="icon shanticon-places" title="Related Places"></span>  
-		          	<?php 
+		          	<span class="icon shanticon-places" title="Related Places"></span>
+		          	<?php
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          		print render($content['group_details']['field_pbcore_coverage_spatial']); 
+		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
@@ -229,12 +229,12 @@ else:     /************ FULL Display ***********/
 	      </div>
 	    </div><!--- End mms-wrap-left -->
       </div> <!-- End of avdesc -->
-      
+
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
-          <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>          
+          <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
           <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
-        </ul>        
+        </ul>
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
@@ -245,12 +245,12 @@ else:     /************ FULL Display ***********/
           		<button type="button" class="btn btn-default btn-sm btn-toggle-accordion expand">Expand All</button>
           	</div>
           	<div class="panel-group" id="av-details">
-		          <?php 
-		          	$content['group_details']['#attributes']['class'][] = "in"; 
+		          <?php
+		          	$content['group_details']['#attributes']['class'][] = "in";
 								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);
 								//dpm($content, 'content');
-		          	print render($content); 
+		          	print render($content);
 		          ?>
 		        </div>
           </div> <!-- End of #details -->
