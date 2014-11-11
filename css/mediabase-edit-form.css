@@ -171,6 +171,8 @@ div.kmap-selector button.selectpicker {
 	margin-right: 6px;
 }
 
+.location-selector .autocomplete-input{ display:inline; float:left;}
+
 .kmap-selector-item .icon:before {
 	font-size: 1.5em;
 	vertical-align: middle;
@@ -197,6 +199,8 @@ div.kmap-selector button.selectpicker {
 	margin-bottom: 8px;
 	margin-left: -4px;
 }
+
+.location-selector{background:transparent !important;}
 
 .location-selector button.btn.btn-sm {
 	float: none;
@@ -259,9 +263,15 @@ div.kmap-selector button.selectpicker {
 .field-type-field-collection  .bootstrap-select.form-control:not([class*='span']){ max-width:95%; margin-left:1rem;}
 
 .group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
-.field-type-field-collection input.form-text.form-control{ max-width:31%; position:relative; left:1rem}
+
+.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:80% !important;}
+
+.field-type-field-collection input.form-text.form-control{ max-width:31% !important; position:relative; left:1rem}
 
 
+.field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
+
+.form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{max-width:100% !important;}
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
