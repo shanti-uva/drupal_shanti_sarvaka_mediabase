@@ -182,40 +182,5 @@ a.hide-annot:before{
 	top:-1px;
 }
 
-/** Home page View */
-/*.shanti-filters {
-	margin-left: 18px;
-}
-*/
-.shanti-filters td {
-	white-space: nowrap;
-}
-
-.shanti-filters td .label {
-	color: #444;
-	font-weight: bold;
-	font-size: 90%;
-	text-transform: uppercase;
-}
-
-.shanti-filters td .count {
-	font-size: 90%;
-	padding-right:1rem;
-}
-
-.shanti-filters .ajax-progress {
-	display: inline-block;
-}
 
 
-.form-item-sort-bef-combine {
-	min-width: 140px;
-}
-
-.form-item-sort-bef-combine label {
-	display: none;
-}
-
-.dropdown-menu.open .disabled  {
-	background-color: #d0d0d0;
-}
