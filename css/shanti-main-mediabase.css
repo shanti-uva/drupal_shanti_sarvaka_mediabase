@@ -23,9 +23,10 @@
 .carousel a.carousel-control i{ font-family:'shanticon'; font-style:normal;}
 .carousel a.carousel-control.left .icon:before{ content:'\e641'; /*-- right arrow-tri icon */ position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
 .carousel a.carousel-control.right .icon:before{ content:'\e642'; /*-- left arrow-tri icon */ position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
-.carouseldiv .header{ margin-top: 0.5em;}
-.carouseldiv .header p{ margin-bottom: 0.18em;}
-.carouseldiv .header p .show-more{ font-size:85%; float:right; margin-right:2.5em; position:relative; top:0.25em;}
+.carouseldiv .header{ margin-top: 0.7rem;}
+.carouseldiv .header p{ margin-bottom: 0.24rem;}
+.carouseldiv .header .show-more{ font-size:85%; float:right; margin-right:3rem; position:relative; top:0.35rem;}
+.carouseldiv .header .show-more:after{ padding-left:0.4rem;}
 .carouseldiv .header .title{ font-style:italic;font-weight:bold;font-size:120%;}
 .carousel .caption .title h3{ font-weight:normal;margin: 0 0 0.63em;font-size:1.63em;}
 .carousel .caption .title h3 a{ color: #404040;}
@@ -181,11 +182,11 @@ a.hide-annot:before{
 	top:-1px;
 }
 
-/** Home page View
-.shanti-filters {
+/** Home page View */
+/*.shanti-filters {
 	margin-left: 18px;
 }
-
+*/
 .shanti-filters td {
 	white-space: nowrap;
 }
@@ -208,7 +209,7 @@ a.hide-annot:before{
 .shanti-filters .ajax-progress {
 	display: inline-block;
 }
-*/
+
 
 .form-item-sort-bef-combine {
 	min-width: 140px;
