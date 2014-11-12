@@ -12,7 +12,7 @@
 .largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;}
 /* END colors */
 
-.carousel{ margin-bottom:1.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
+.carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel .carousel-inner{ padding-top: 0;}
 .carousel img{ max-width:100%; float:right;}
 .carousel a.carousel-control{ /*--- right-left button ---*/ top: 50%;margin-top:-0.68em;width:1.75em;font-size: 2.63em;height:1.44em;line-height:1.75em;color: #fff;background-image: none;text-shadow:none;text-align:center;border-radius:0;border:none !important;}
@@ -200,10 +200,7 @@ a.hide-annot:before{
 
 .shanti-filters td .count {
 	font-size: 90%;
-}
-
-.shanti-filters .pagerer {
-	margin: 0;
+	padding-right:1rem;
 }
 
 .shanti-filters .ajax-progress {
