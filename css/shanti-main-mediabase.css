@@ -39,7 +39,6 @@
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;}
 .view-collections .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .view-collections .views-exposed-form .views-exposed-widget{ padding-top:0;padding-bottom: 0.12em;}
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
