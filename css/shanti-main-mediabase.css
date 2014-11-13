@@ -15,7 +15,7 @@
 .carousel{ margin-bottom:0.25em; padding: 1.56em 2.5em; background: #fff; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.175); border-collapse: separate;}
 .carousel-header{ margin-top: -0.5rem;}
 .carousel-header p{ margin-bottom: 0.2rem;}
-.carousel-header .show-more{ font-size:0.93em;float:right;margin-right:3rem;position:relative;top:0.6rem;}
+.carousel-header .show-more{ font-size:0.93em;float:right;margin-right:3rem;position:relative;top:0.4rem;}
 .carousel-feature-collections{ font-style:italic;font-weight:bold;font-size:120%;}
 .carousel-title{ font-weight:normal;margin: 0 0 0.8rem;font-size:1.63em;}
 .carousel-title a{ color: #404040;}
@@ -25,9 +25,9 @@
 .carousel-main-content .show-more{ font-size:0.93em}
 .carousel-main-image{ float:right;}
 .carousel-main-image img{ max-width:100%; margin:0.5rem 0 0.5rem 1rem;}
-.carousel-control{top:50%;margin-top:-0.68em;width:1.75em;font-size: 2.63em;height:1.44em;line-height:1.75em;color: #fff;background-image: none;text-shadow:none;text-align:center;border-radius:0;border:none !important;}
+.carousel-control{top:50%;margin-top:-0.68em;width:1.75em;font-size: 2.63em;height:1.44em;line-height:1.75em;color: #fff;background-image: none;text-shadow:none;text-align:center;border-radius:0;border:none;}
 .carousel-control:hover,
-.carousel-control:focus{ border:none !important; /*opacity:2; filter: alpha(opacity=20);*/}
+.carousel-control:focus{ opacity:.6; filter: alpha(opacity=60);}
 .carousel-control.left{ margin-left: -1.18em;}
 .carousel-control.right{ margin-right: -1.18em;}
 .carousel-control .icon{ font-family:'shanticon'; font-style:normal;}
@@ -36,6 +36,14 @@
 .carousel-control:hover .icon{ color:#fff;}
 .carousel-pause { margin: 6px 50% -6px; border-radius: 20px; padding: 6px; }
 .carousel-pause .glyphicon { padding-left: 1px; }
+@media (min-width:768px) {
+	.logged-in .carousel .col-sm-8{ width:100%;}
+  .logged-in .carousel .col-sm-4{ width:100%;}
+}
+@media (min-width:992px) {
+  .logged-in .carousel .col-md-9{ width:45%;}
+  .logged-in .carousel .col-md-3{ width:55%;}
+}
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/
