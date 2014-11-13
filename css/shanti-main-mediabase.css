@@ -39,7 +39,7 @@
 /** End of Carousel Styles **/
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;font-weight:normal;text-transform: uppercase;/* font-family: 'museo-sans-500',helvetica, arial, sans-serif; */}
+.view-collections .views-exposed-form label{ margin-bottom:0;font-size:0.82em;padding-left:.44em;}
 .view-collections .views-exposed-form{ margin-bottom:0;border-bottom:1px solid #ccc;}
 .view-collections .views-exposed-form .views-exposed-widget{ padding-top:0;padding-bottom: 0.12em;}
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
@@ -98,15 +98,6 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 	width:70px;
 	margin-left:20px;
 }
-
-
-
-
-.field-label-span { /* temp */
-	font-weight: bold;
-}
-
-
 
 
 .form-actions{ /* testing this at bottom of page for edit save buttons --*/
