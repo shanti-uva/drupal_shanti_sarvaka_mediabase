@@ -39,12 +39,20 @@
 
 
 @media (min-width:768px) {
-	.logged-in .carousel .col-sm-8{ width:100%;}
-  .logged-in .carousel .col-sm-4{ width:100%;}
+	.logged-in .carousel .col-sm-7{ width:100%;}
+  .logged-in .carousel .col-sm-5{ width:100%;}
+  .carousel-main-image{ min-width:270px;}
 }
 @media (min-width:992px) {
-  .logged-in .carousel .col-md-9{ width:45%;}
-  .logged-in .carousel .col-md-3{ width:55%;}
+  .logged-in .carousel .col-md-8{ width:50%;}
+  .logged-in .carousel .col-md-4{ width:50%;}
+  .carousel-main-image{min-width:290px;}
+}
+@media (min-width:1200px) {
+	.logged-in .carousel .col-lg-9{ width:60%;}
+  .logged-in .carousel .col-lg-3{ width:40%;}
+  .logged-in .carousel-main-image{ max-width:390px;}
+	.carousel-main-image{ min-width:260px;}
 }
 /** End of Carousel Styles **/
 
