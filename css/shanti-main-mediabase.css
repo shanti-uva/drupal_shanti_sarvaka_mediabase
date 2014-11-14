@@ -34,8 +34,10 @@
 .carousel-control.left .icon:before{ content:'\e641'; position:relative; right:-0.32em; text-shadow: -3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control.right .icon:before{ content:'\e642'; position:relative; left:-0.32em; text-shadow: 3px 0 7px rgba(0,0,0, 0.10);}
 .carousel-control:hover .icon{ color:#fff;}
-.carousel-pause { margin: 6px 50% -6px; border-radius: 20px; padding: 6px; }
-.carousel-pause .glyphicon { padding-left: 1px; }
+.carousel-pause { color:#777 !important; font-size:0.75em !important; text-align:center; margin: 0 50% -2rem; border-radius:50% !important; padding: 0.4rem 0.5rem !important;}
+.carousel-pause .glyphicon{ padding-left:0.1rem}
+
+
 @media (min-width:768px) {
 	.logged-in .carousel .col-sm-8{ width:100%;}
   .logged-in .carousel .col-sm-4{ width:100%;}
@@ -63,7 +65,7 @@
 /* collections page thumbnail - remove responsive class */
 .view-collections .collimage{ max-width:50%; float:left; padding-right: 20px;}
 
-/*---- cusotmize mediabase search panel ----*/
+/*---- customize mediabase search panel ----*/
 .input-section .search-group{ margin-top:-1em;}
 .input-section .search-group .form-group{ padding-left:1.5em;}
 .input-section .input-group .input-group-btn{ position:absolute; right:13px;}

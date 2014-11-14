@@ -1,5 +1,5 @@
 (function ($) { // jQuery wrapper function
-	
+
 	// Move the dom-id class so that the view block reloads all content and so does not duplicate filters, pager, etc.
 	Drupal.behaviors.shanti_sarvaka_mb_bef_mainpage = {
 		attach: function (context, settings) {
@@ -8,12 +8,12 @@
 			$('.shanti-view-dom-id').addClass("view-dom-id-" + domid);
 		}
 	};
-	
+
 	Drupal.behaviors.shanti_sarvaka_mb_trim_desc =  {
 	  attach: function (context, settings) {
-			if($('.field-name-field-pbcore-description .field-item').length > 1) { 
+			if($('.field-name-field-pbcore-description .field-item').length > 1) {
 				var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
-				if(items.length > 1) { 
+				if(items.length > 1) {
 					items.first().nextAll().hide();
 					items.last().after('<p id="pb-core-desc-readmore"><a href="#" class="show-more-toggle">' + Drupal.t('Show More') + '</a></p>');
 					if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
@@ -32,11 +32,11 @@
 			}
 		}
 	};
-	
+
 	// Various Markup changes for styling MB in sarvaka theme
 	Drupal.behaviors.shanti_sarvaka_mb_markup_tweaks = {
 		attach: function (context, settings) {
-			if(context == window.document) { 
+			if(context == window.document) {
 				$('#edit-group-audience .form-item-group-audience-und').wrapInner('<div class="collection-details-audience"></div>');
 				$('.collection-details-audience').before($('.collection-details-audience > label').detach());
 				$('#edit-group-audience .form-item-group-audience-und > label, #edit-field-subcollection > label').prepend('<span class="icon shanticon-create"></span> ');
@@ -45,5 +45,5 @@
 			}
 	  }
 	};
-	
+
 } (jQuery)); // End of JQuery Wrapper
