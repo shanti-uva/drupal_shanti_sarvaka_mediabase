@@ -1,0 +1,28 @@
+/**
+ *  Search form in flyout  (ndg, 2014-11-17)
+ **/
+.region-search-flyout .block-search .form-item.form-type-radio {
+	display: inline-block;
+	max-width: 49%;
+	white-space: nowrap;
+}
+
+.region-search-flyout .block-search .form-item.form-type-radio label:first-child {
+	max-width: 1.5em;
+	min-width: 1em;
+}
+
+.region-search-flyout .block-search .form-item.form-type-radio label {
+	margin: 0;
+	padding: 0 12px 0 0;
+}
+
+.region-search-flyout .block-search .input-group .input-group-btn {
+	top: -1px;
+}
+
+.region-search-flyout .block-search .form-group .toggle-link.advanced-link {
+	display: none;
+	top: -4px;
+	left: -6px
+}
