@@ -58,28 +58,11 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	padding-right:1rem;
 }
 
-/* Remove button (Trashcan icon) */
-form.node-form button.btn-delete {
-	float: right;
-	max-width: 3em;
-	max-height: 3em;
-	min-height: 22px;
-	margin-left: 3em;
-}
-
-/* tr.draggable are field groups where user can add any number of fields */
-form.node-form tr.draggable button.btn-delete {
-	margin: 4em 1.5em 0 0;
-}
-
-form.node-form button.btn-delete span.icon {
-	padding: 0;
-	margin: -4px;
-}
-
-form.node-form button.btn-delete span.icon:hover {
-	background-color: red !important;
-}
+/* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
+.btn-sm.btn-icon.btn-delete {float: right;max-width: 3em;max-height: 3em;min-height: 22px;margin-left: 3em;}
+.btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
+.btn-sm.btn-icon.btn-delete span.icon {padding: 0;margin: -4px;}
+.btn-sm.btn-icon.btn-delete span.icon:hover {background-color: red !important;}
 
 /* Details Field Group */
 /*
