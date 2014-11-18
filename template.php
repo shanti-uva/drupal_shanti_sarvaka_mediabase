@@ -31,8 +31,26 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
 	//dpm($vars, 'vars');
-	// Preprocess a/v nodes only:
-	if(in_array($vars['type'], array('audio', 'video'))) {
+	// Preprocess Collection Nodes
+	if($vars['type'] == 'collection') {
+		$style_name = $vars['elements']['field_images'][0]['#image_style'];
+		$uri = $vars['elements']['field_images']['#items'][0]['uri'];
+		$path = image_style_path($style_name, $uri);
+		$src = file_create_url($path);
+		$src = image_style_url($style_name, $path);
+		$vars['collimage'] = '<img class="img-responsive pull-left" src="' . $src . '" />';
+		$subcolls = array();
+		if(!empty($vars['field_subcoll_root_kmap_id'])) {
+			module_load_include('inc','kmap_taxonomy','includes/kmap');
+			foreach($vars['field_subcoll_root_kmap_id'] as $n => $t) {
+				$kmap = new Kmap($t['taxonomy_term']->kmap_id[LANGUAGE_NONE][0]['value']);
+				$subcolls[] = _kmap_subject_popover($kmap);
+			}
+		}
+		$vars['subcolls'] = implode(', ', $subcolls);
+	}
+	// Preprocess a/v nodes:
+	else if(in_array($vars['type'], array('audio', 'video'))) {
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
 			$title = $vars['coll']->title;
