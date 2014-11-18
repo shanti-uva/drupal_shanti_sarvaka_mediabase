@@ -30,20 +30,20 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	//dpm($vars, 'vars');
+	// dpm($vars, 'vars');
 	// Preprocess Collection Nodes
 	if($vars['type'] == 'collection') {
 		$style_name = $vars['elements']['field_images'][0]['#image_style'];
 		$uri = $vars['elements']['field_images']['#items'][0]['uri'];
-		$path = image_style_path($style_name, $uri);
-		$src = file_create_url($path);
-		$src = image_style_url($style_name, $path);
+		//$path = image_style_path($style_name, $uri);
+		$src = image_style_url($style_name, $uri);
 		$vars['collimage'] = '<img class="img-responsive pull-left" src="' . $src . '" />';
 		$subcolls = array();
 		if(!empty($vars['field_subcoll_root_kmap_id'])) {
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
 			foreach($vars['field_subcoll_root_kmap_id'] as $n => $t) {
 				$kmap = new Kmap($t['taxonomy_term']->kmap_id[LANGUAGE_NONE][0]['value']);
+				$kmap->field_name = 'field_subcollection';
 				$subcolls[] = _kmap_subject_popover($kmap);
 			}
 		}

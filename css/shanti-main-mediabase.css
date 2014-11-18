@@ -137,7 +137,15 @@ a.hide-annot:before{
  * 	Individual Collection Pages
  */
 .node-type-collection .content {
-	margin-top: 12px;
+	margin: 12px 0 0 8px;
+}
+
+.node-type-collection .content .collimage {
+	margin: 0 -12px;
+}
+
+.node-type-collection .content .field-name-body {
+	margin: 0 8px 0 0;
 }
 
 .node-collection .field-subcollection label {
