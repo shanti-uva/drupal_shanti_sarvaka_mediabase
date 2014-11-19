@@ -134,6 +134,15 @@ a.hide-annot:before{
 }
 
 /**
+ * 	All Collections Page
+ */
+.shanti-thumbnail.collection .shanti-field-body {
+	margin-top: 3px;
+	padding-top: 3px;
+	border-top: thin solid #ccc;
+}
+
+/**
  * 	Individual Collection Pages
  */
 .node-type-collection .content {
