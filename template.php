@@ -88,6 +88,47 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  * Views Preprocess
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
+	$view = $vars['view'];
+  if (isset($view->name) && $view->name == 'collections') {
+  	//dpm($view, 'view');
+		$displ = $view->current_display;
+    // Grab the pieces you want and then remove them from the array    
+    $header   = $vars['header'];    $vars['header']   = '';
+    $filters  = $vars['exposed'];   $vars['exposed']  = '';
+    $pager    = $vars['pager'];     $vars['pager']    = '';
+    
+    // Should be a render array
+    
+    // Create the view layout switcher
+		$faton = ($displ == 'page_list') ? ' on':'';
+		$thumbon = ($displ == 'page_thumbs') ? ' on':'';
+		$fatpath = ($faton == '') ? $view->display['page_list']->display_options['path'] : '#';
+		$thumbpath = ($thumbon == '') ? $view->display['page_thumbs']->display_options['path'] : '#';
+		
+    $btn1 = "<span class='icon shanticon-list'></span>";
+    $btn2 = "<span class='icon shanticon-list4'></span>";
+    $btn3 = "<span class='icon shanticon-grid'></span>";
+    $switch = "<ul id='view-all-colls-switcher'><li class='fat-list$faton'><a href='$fatpath'>$btn1</a></li><li class='grid$thumbon'><a href='$thumbpath'>$btn3</a></li></ul>";
+		// Took out: <!--<li class='thin-list'>$btn2</li>-->
+    
+    // Put everything in a new element
+    $control_box = "<div class='view-all-colls-control-box'><div class='view-all-colls-control-box-row'>";
+    $control_box .= "<span class='a view-all-colls-control-box-cell'>$header</span>";
+    $control_box .= "<span class='b view-all-colls-control-box-cell'>$filters</span>";
+    $control_box .= "<span class='c view-all-colls-control-box-cell'>$switch</span>";
+    $control_box .= "<span class='d view-all-colls-control-box-cell'>$pager</span></div></div>\n";
+    
+    // Attach the new element to the array
+    $vars['attachment_before'] = $control_box;
+    $vars['attachment_after'] = $pager;
+   /* 
+    // Add JS and CSS files that will take over behavior
+    drupal_add_js(SHANTI_ESSAYS_PATH . '/js/jquery.transit.min.js', 'file');
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.cookie.js', 'file');
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_essays_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
+    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_essays_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
+  */
+  }
 }
 
 function sarvaka_mediabase_select($vars) {
