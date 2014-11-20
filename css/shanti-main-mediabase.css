@@ -142,6 +142,11 @@ a.hide-annot:before{
 	border-top: thin solid #ccc;
 }
 
+.shanti-thumbnail.collection .shanti-field-title a {
+	font-size: 0.93em;
+	font-weight: bold;
+}
+
 /**
  * 	Individual Collection Pages
  */
