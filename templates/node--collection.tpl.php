@@ -96,38 +96,37 @@
     </div>
   <?php endif; ?>
 -->
-  <div class="content"<?php print $content_attributes; ?>>
     
-    <?php
-      //dpm($content);
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-			hide($content['field_images']);
-			hide($content['field_subcoll_root_kmap_id']);
-      // Description is compiled in mediabase_preprocess_node and contained in $description variable
-      // Not working hide($content['field_pbcore_description']);
-    ?>	
-    	<div class="row">
-    		<div class="col-md-4 pull-left collimage">
-    			<div class="content-heading clearfix media">
-    				<?php print $collimage; ?>
-		      </div>
-		    </div>
-		    <div>
-          <?php print render($content['body']); ?>
-          <?php if(!empty($subcolls)): ?>
-	          <div class="field field-subcollection">
-	          	<label>Subcollection: </label> <?php print $subcolls; ?>
-	          </div>
-	        <?php endif; ?>
-    		</div>
-    	</div>
-          
-        <?php
-          print render($content);
-        ?>
-  </div>
+  <?php
+    //dpm($content);
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+		hide($content['field_images']);
+		hide($content['field_subcoll_root_kmap_id']);
+    // Description is compiled in mediabase_preprocess_node and contained in $description variable
+    // Not working hide($content['field_pbcore_description']);
+  ?>	
+	<div class="about">
+		<div class="pull-left collimage">
+			<div class="content-heading clearfix media">
+				<?php print $collimage; ?>
+      </div>
+    </div>
+    <div class="description trim" data-trim-length="">
+			<h4>Overview</h4>
+      <?php print render($content['body']); ?>
+      <?php if(!empty($subcolls)): ?>
+        <div class="field field-subcollection">
+        	<label>Subcollection: </label> <?php print $subcolls; ?>
+        </div>
+      <?php endif; ?>
+		</div>
+	</div> 
+	
+	<div class="collection-content"<?php print $content_attributes; ?>>
+     <?php print render($content); ?>
+	</div>
 
   <?php print render($content['links']); ?>
 

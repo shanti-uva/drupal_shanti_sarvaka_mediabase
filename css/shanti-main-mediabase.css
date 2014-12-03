@@ -233,16 +233,10 @@ ul.pager {
 /**
  * 	Individual Collection Pages
  */
-.node-type-collection .content {
-	margin: 12px 0 0 8px;
-}
-
-.node-type-collection .content .collimage {
-	margin: 0 -8px 0 -12px;
-}
-
-.node-type-collection .content .field-name-body {
-	margin: 0 8px 0 0;
+.node-collection .collection-content {
+	clear: both;
+	margin: 0px 8px;
+	padding-top: 1px;
 }
 
 .node-collection .field-subcollection label {
@@ -251,8 +245,14 @@ ul.pager {
 
 .collimage .img-thumbnail { 
 	padding: 4px; 
-	margin-right: 6px;
+	margin: 0 18px 0 12px;
 	border: 2px solid #32ccca;
 }
 
+.about .description .field-item p {
+	text-align: justify;  
+  -webkit-hyphens: auto;  
+  -moz-hyphens: auto;  
+  hyphens: auto;
+}
 
