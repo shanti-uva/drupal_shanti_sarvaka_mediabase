@@ -113,7 +113,7 @@
 				<?php print $collimage; ?>
       </div>
     </div>
-    <div class="description trim" data-trim-length="">
+    <div class="description trim">
 			<h4>Overview</h4>
       <?php print render($content['body']); ?>
       <?php if(!empty($subcolls)): ?>

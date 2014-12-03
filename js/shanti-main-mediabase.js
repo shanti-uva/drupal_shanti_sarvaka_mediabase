@@ -11,6 +11,7 @@
 
 	Drupal.behaviors.shanti_sarvaka_mb_trim_desc =  {
 	  attach: function (context, settings) {
+	  	// Pb core description trimming
 			if($('.field-name-field-pbcore-description .field-item').length > 1) {
 				var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
 				if(items.length > 1) {
@@ -30,6 +31,27 @@
 					});
 				}
 			}
+			
+			// Collection Home Page Trimming
+			$('.description.trim').each(function() {
+			 	if($(this).text().length > 800 && $(this).find('p').length > 1) {
+			 		var p1 = $(this).find('p').first();
+			 		p1.siblings('p').hide();
+			 		$(this).append('<div class="show-more"><a href="#">Show more</a></div>');
+			 	}
+			});
+			$('.description.trim .show-more a').each(function() {
+				$(this).click(function(event) {
+					event.preventDefault();
+					var parent = $(this).parents('.description.trim');
+					var ps = parent.find('p').first().siblings('p');
+					ps.slideToggle();
+					var txt = $(this).text();
+					console.log(txt);
+					txt = (txt.indexOf('more') > -1) ? 'Show less' : 'Show more';
+					$(this).text(txt);
+				});
+			});
 		}
 	};
 
