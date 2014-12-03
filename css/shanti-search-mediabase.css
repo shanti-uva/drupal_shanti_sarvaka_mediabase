@@ -1,7 +1,16 @@
 /**
  *  Search form in flyout  (ndg, 2014-11-17)
  **/
-.region-search-flyout .block-search .form-item.form-type-radio {
+
+
+.input-section .search-group{ position:relative;top:-1.4rem;}
+
+.input-section .input-group .input-group-btn{ position:absolute; top:-1px; right:13px;}
+
+.input-section .toggle-link.advanced-link{ position:relative; top:0;}
+
+/*
+	.region-search-flyout .block-search .form-item.form-type-radio {
 	display: inline-block;
 	max-width: 49%;
 	white-space: nowrap;
@@ -26,3 +35,18 @@
 	top: -4px;
 	left: -6px
 }
+*/
+
+/*---- BEGIN search flyout ---*/
+/*---- customize mediabase search panel ----*/
+/*.input-section .search-group{ margin-top:-1em;}
+.input-section .search-group .form-group{ padding-left:1.5em;}
+.input-section .input-group .input-group-btn{ position:absolute; right:13px;}
+
+.input-section .advanced-view{ padding-top:0.5em;}
+.input-section .radio-inline:first-child{ width:6.25em; min-width:6.25em;}
+
+.view-section .treeview h2{ font-size:1.5em;}
+.view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
+
+ */

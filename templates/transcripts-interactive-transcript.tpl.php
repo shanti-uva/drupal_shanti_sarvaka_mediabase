@@ -1,5 +1,5 @@
 <div>
-	<div id='<?php print $trid; ?>' class='transcript-player' data-defaultMode='<?php print $default_mode; ?>' data-hello='<?php print $hello; ?>'>
+	<div class='transcript-player'>
 		<table>
 			<tr>
 				<td class='video-wrapper' style='padding-right: 20px;'>

@@ -35,17 +35,6 @@
 .view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
 
 
-/*---- BEGIN search flyout ---*/
-/*---- customize mediabase search panel ----*/
-.input-section .search-group{ margin-top:-1em;}
-.input-section .search-group .form-group{ padding-left:1.5em;}
-.input-section .input-group .input-group-btn{ position:absolute; right:13px;}
-.input-section .advanced-view{ padding-top:0.5em;}
-.input-section .radio-inline:first-child{ width:6.25em; min-width:6.25em;}/*--- search advanced - this fixes first text strong from wrapping ---*/
-
-.view-section .treeview h2{ font-size:1.5em;}
-.view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
-
 
 
 
@@ -166,14 +155,14 @@ a.hide-annot:before{
 
 #view-all-colls-switcher {
   display: inline-block;
-  margin: 0; 
-  padding: 0; 
-  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   text-align: center;
 }
 
-#view-all-colls-switcher li { 
-  display: inline; 
+#view-all-colls-switcher li {
+  display: inline;
   list-style: none;
   font-size: 18pt;
   padding: .25em .5em .1em;
