@@ -34,7 +34,7 @@
 			
 			// Collection Home Page Trimming
 			$('.description.trim').each(function() {
-			 	if($(this).text().length > 800 && $(this).find('p').length > 1) {
+			 	if($(this).text().length > 1000 && $(this).find('p').length > 1) {
 			 		var p1 = $(this).find('p').first();
 			 		p1.siblings('p').hide();
 			 		$(this).append('<div class="show-more"><a href="#">Show more</a></div>');
@@ -47,7 +47,6 @@
 					var ps = parent.find('p').first().siblings('p');
 					ps.slideToggle();
 					var txt = $(this).text();
-					console.log(txt);
 					txt = (txt.indexOf('more') > -1) ? 'Show less' : 'Show more';
 					$(this).text(txt);
 				});
