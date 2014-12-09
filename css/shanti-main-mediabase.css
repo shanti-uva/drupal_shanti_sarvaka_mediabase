@@ -294,3 +294,10 @@ ul.pager {
 #av-details .field-type-taxonomy-term-reference ul {
 	margin: 3px 0px 0px 0px;
 }
+
+/* fixing spacing of links at bottom (email, add to favs etc.) */
+
+ul.links.inline {
+	margin-bottom: 24px;
+	display: block;
+}

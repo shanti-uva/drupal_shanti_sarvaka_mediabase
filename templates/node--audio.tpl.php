@@ -137,8 +137,9 @@
    </div> <!-- end shanti-thumbnail-info -->
 </li> <!-- end shanti-thumbnail -->
 
-<?php // Full Mode Display ?>
-<?php else: ?>
+<?php
+else:     /************ FULL Display ***********/
+?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -162,6 +163,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+			hide($content['field_tags']);
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
@@ -170,35 +172,29 @@
       </div>
       <div class="avdesc clearfix">
       	<!-- Info/Description row -->
-        <div class="avinfo">
-          <?php if($variables['has_transcript']): ?>
-            <!--<button type="button" class="row btn btn-primary btn-md btn-block play-transcript-btn" href="<?php print $transcript_url; ?>">
-              <div class="inline btn-icon"><span class="icon shanticon-uniE04A"></span> </div>
-              <div class="inline btn-text">Play with <br/>Transcript</div>
-            </button>-->
-            <div class="trans-btn">
-            	<form action="<?php print $transcript_url; ?>" method="post">
-	              <button type="button" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
-	                <span class="icon shanticon-texts"></span>  <span>Play with <br/>Transcript</span>
-	              </button>
+	      <!-- info column -->
+	      <div class="avinfo">
+	        <?php if($variables['has_transcript']): ?>
+	          <div class="trans-btn">
+	            <form action="<?php print $transcript_url; ?>" method="post">
+	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
+	            		<span class="icon shanticon-texts"></span> <span>Play with<br/>Transcript</span>
+	          		</button>
 	            </form>
-            </div>
-          <?php endif; ?>
-          <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']); //$date ;  ?></div>
-          <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
-          <div class="avrating">
+	          </div>
+	        <?php endif; ?>
+	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
+	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
+	        <div class="avrating">
 	            <h5>Rating</h5>
 	            <?php print render($content['field_rating']); ?>
-          </div>
-
-          <?php if(!empty($content['service_links'])): ?>
+	        </div>
+	        <?php if(!empty($content['service_links'])): ?>
 	          <div class="avshare">
 	          	<div class="share-links">
 	          		<h5>Share <span>&lt;/&gt; embed</span></h5>
 	          		<ul>
-	          			<?php
-	          				print render($content['service_links']);
-									?>
+	          			<?php  print render($content['service_links']);  ?>
 	          		</ul>
 	          	</div>
 	          </div>
@@ -212,40 +208,19 @@
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
 		        	<span class="icon shanticon-create" title="Collection"></span>
-		        	<?php print $coll->title; ?>
+		        	<a href="<?php print $coll->url; ?>"><?php print $coll->title; ?></a>
 		        </div>
 		      <?php endif; ?>
-		      <?php if(!empty($content['group_details']['field_subcollection'])): ?>
-		      	<div class="subcollection">
-		      		<span class="icon shanticon-create" title="places"></span>
-		      		<?php
-		        		$content['group_details']['field_subcollection']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_subcollection']);
-								$content['group_details']['field_subcollection']['#label_display'] = 'above';
-								show($content['group_details']['field_subcollection']);
-		      		?>
-		      	</div>
-		      <?php endif; ?>
-	        <?php if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
+		      <?php
+		      if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
 		        <div class="avplace">
-		          	<span class="icon shanticon-places" title="places"></span>
+		          	<span class="icon shanticon-places" title="Related Places"></span>
 		          	<?php
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
 		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
-		        </div>
-		      <?php endif; ?>
-	        <?php if(!empty($content['group_details']['field_characteristic'])): ?>
-		        <div class="avsubjects">
-		        	<span class="icon shanticon-subjects" title="subjects"></span>
-		        	<?php
-		        		$content['group_details']['field_characteristic']['#label_display'] = 'hidden';
-		        		print render($content['group_details']['field_characteristic']);
-								$content['group_details']['field_characteristic']['#label_display'] = 'above';
-								show($content['group_details']['field_characteristic']);
-		        	?>
 		        </div>
 		      <?php endif; ?>
 	      </div>
@@ -257,31 +232,29 @@
           <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
           <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Audios'); ?></a></li>
         </ul>
-
         <!-- Tab panes -->
         <div class="tab-content">
-         <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
-         </div> <!-- End of #related -->
+          <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
+          </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="btn-group avnode-details-buttons">
           		<button type="button" value="click here" class="btn btn-default btn-sm btn-edit-details">Customize</button>
-          		<button type="button" class="btn btn-default btn-sm btn-toggle-acc expand">Expand All</button>
+          		<button type="button" class="btn btn-default btn-sm btn-toggle-accordion expand">Expand All</button>
           	</div>
           	<div class="panel-group" id="av-details">
-           		<?php
+		          <?php
 		          	$content['group_details']['#attributes']['class'][] = "in";
-
-								/*
-								 * TODO: Deal with titles. Right now displays first title in current language in mediabase.module hook_node_view
-								 */
+								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);
+								//dpm($content, 'content');
 		          	print render($content);
 		          ?>
-            </div>
+		        </div>
           </div> <!-- End of #details -->
         </div>
       </div>
   </div>
+
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>

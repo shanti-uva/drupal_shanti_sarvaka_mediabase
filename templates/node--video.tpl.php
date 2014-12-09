@@ -211,7 +211,7 @@ else:     /************ FULL Display ***********/
 	        <?php if(isset($coll)): ?>
 		        <div class="avcollection">
 		        	<span class="icon shanticon-create" title="Collection"></span>
-		        	<?php print $coll->title; ?>
+		        	<a href="<?php print $coll->url; ?>"><?php print $coll->title; ?></a>
 		        </div>
 		      <?php endif; ?>
 		      <?php

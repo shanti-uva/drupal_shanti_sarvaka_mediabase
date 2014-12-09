@@ -58,7 +58,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 				'#type' => 'markup',
 				'#markup' => "<div class=\"field field-name-av-collection\">
 												<span class=\"icon shanticon-create\" title=\"Collection\"></span>&nbsp;<span class=\"field-label-span\">" .
-												t('Collection') . "</span>&nbsp;{$title} </div>",
+												t('Collection') . "</span>&nbsp;<a href=\"{$vars['coll']->url}\">{$title}</a></div>",
 			);
 		}
 		// Add Icons 
