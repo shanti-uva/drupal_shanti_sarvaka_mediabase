@@ -43,7 +43,7 @@
 
 
 /*--- QUESTION: where is this from - ? ---*/
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
+table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
 	width:70px;
 	margin-left:20px;
 }
@@ -276,4 +276,21 @@ ul.pager {
 	font-size: .9em;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+/** 
+ * 	Individual A/V Pages 
+ */
+
+/* add space after collection name */
+#av-details .field-name-av-collection {
+	margin-bottom: 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference {
+	margin: 9px 0px 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference ul {
+	margin: 3px 0px 0px 0px;
 }
