@@ -296,11 +296,59 @@ ul.pager {
 }
 
 /* Metadata on a/v record */
-div#field_collection_item_field_workflow_full_group_workflow .subgroup {
+#field_collection_item_field_workflow_full_group_workflow .subgroup {
 	float: left;
 	width: 33%;
 }
 
+#field_collection_item_field_workflow_full_group_workflow .subgroup p {
+	display: inline-block;
+}
+
+.node .content .mb-identifier label, .node .content .field-label-inline .field-label-span {
+	color: #333;
+	margin: 0;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.node .content .field-name-field-recording-location {
+	margin: 0 !important;
+}
+
+.node .content .field-name-field-recording-location .field-label-span {
+	color: #333;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.node .content .field-name-field-pbcore-format-id > .field-items > .field-item {
+	display: block;
+}
+
+.field.field-name-field-format-id.field-type-text.field-label-inline.clearfix {
+	float: left;
+}
+
+.field.field-name-field-format-id-source.field-type-text.field-label-inline.clearfix {
+	float: left;
+	padding-left: 4px;
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id .field-label,
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-label {
+	display: none;
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item:before {
+	content: '(';
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item:after {
+	content: ')';
+	clear: both;
+}
 /* fixing spacing of links at bottom (email, add to favs etc.) */
 
 ul.links.inline {
