@@ -160,6 +160,26 @@ function sarvaka_mediabase_select($vars) {
   return '<select' . drupal_attributes($element['#attributes']) . '>' . $html . '</select>';
 }
 
+function sarvaka_mediabase_fieldset($vars) {
+	$el = $vars['element'];
+	if(isset($el['#id']) && $el['#id'] == 'field_collection_item_field_workflow_full_group_workflow') {
+		$children = element_children($el);
+		$output = '<div class="subgroup"><h5>Media Workflow</h5>';
+		foreach($children as $n => $child) {
+			$output .= render($el[$child]);
+			if($n == 9) {
+				$output.= '</div><div class="subgroup"><h5>Cataloging Workflow</h5>';
+			}
+			if($n == 16) {
+				$output.= '</div><div class="subgroup"><h5>Transcript Workflow</h5>';
+			}
+		}
+		$output .= '</div>';
+		$vars['element']['#children'] = $output;
+	}
+	return shanti_sarvaka_fieldset($vars);
+}
+
 /**
  * Add js for play transcript button toggle
  */

@@ -295,6 +295,12 @@ ul.pager {
 	margin: 3px 0px 0px 0px;
 }
 
+/* Metadata on a/v record */
+div#field_collection_item_field_workflow_full_group_workflow .subgroup {
+	float: left;
+	width: 33%;
+}
+
 /* fixing spacing of links at bottom (email, add to favs etc.) */
 
 ul.links.inline {
