@@ -355,3 +355,15 @@ ul.links.inline {
 	margin-bottom: 24px;
 	display: block;
 }
+
+/** Hiding Spaces table until it can be properly implemented */
+.node-type-collection table.spaces {
+display: none;
+}
+
+/** General **/
+/* Trashcan icon for removing fields */
+/*.node-collection-form .btn-sm.btn-icon[value=Remove] {
+	min-height: 32px;
+	max-width: 34px;
+}*/

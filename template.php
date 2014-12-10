@@ -12,6 +12,11 @@ function sarvaka_mediabase_theme() {
       'template' => 'av-node-form',
       'path' => drupal_get_path('theme', 'sarvaka_mediabase') . '/templates'
     ),
+    'collection_node_form' => array(
+      'render element' => 'form',
+      'template' => 'av-node-form',
+      'path' => drupal_get_path('theme', 'sarvaka_mediabase') . '/templates'
+    ),
     'video_node_form' => array(
       'render element' => 'form',
       'template' => 'av-node-form',
@@ -30,7 +35,7 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	// dpm($vars, 'vars');
+	//dpm($vars, 'vars for node');
 	// Preprocess Collection Nodes
 	if($vars['type'] == 'collection') {
 		$style_name = $vars['elements']['field_images'][0]['#image_style'];
@@ -74,6 +79,13 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		// Remove Display of Tags in a/v nodes
 		unset($vars['content']['group_details']['field_tags']);
 	}
+}
+
+/**
+ * Preprocess function for a Collection ENTRY FORM
+ */
+function sarvaka_mediabase_preprocess_collection_node_form(&$vars) {
+	drupal_add_css(drupal_get_path('theme', 'sarvaka_mediabase') . '/css/mediabase-edit-form.css');
 }
 
 /**
@@ -136,6 +148,13 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
   */
   }
 }
+
+/**
+ * Preprocess for spaces preset form
+ */
+ /*
+function sarvaka_mediabase_preprocess_spaces_preset_form(&$vars) {
+} */
 
 function sarvaka_mediabase_select($vars) {
 	$element = &$vars['element'];
