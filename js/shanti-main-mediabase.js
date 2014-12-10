@@ -32,7 +32,7 @@
 				}
 			}
 			
-			// Collection Home Page Trimming
+			// Description Trimming
 			$('.description.trim').each(function() {
 			 	if($(this).text().length > 1000 && $(this).find('p').length > 1) {
 			 		var p1 = $(this).find('p').first();
@@ -43,6 +43,7 @@
 			$('.description.trim .show-more a').each(function() {
 				$(this).click(function(event) {
 					event.preventDefault();
+					$(this).parent('.show-more').toggleClass('less');
 					var parent = $(this).parents('.description.trim');
 					var ps = parent.find('p').first().siblings('p');
 					ps.slideToggle();

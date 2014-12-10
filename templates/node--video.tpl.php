@@ -205,7 +205,7 @@ else:     /************ FULL Display ***********/
 	      </div> <!-- End of avinfo -->
 	      <div class="video-overview">
 	        <h5 class="video-overview-title"><?php print t('Video Overview'); ?></h5>
-	        <div class="avpbcoredesc">
+	        <div class="avpbcoredesc description trim">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
 	        <?php if(isset($coll)): ?>
