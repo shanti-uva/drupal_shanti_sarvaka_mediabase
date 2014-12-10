@@ -381,3 +381,13 @@ display: none;
 .show-more.less a:after {
 	content: '\2212';
 }
+
+/** My Content Pages **/
+.view .form-item-operation {
+	float: left;
+}
+
+.view .form-item-operation + button {
+	margin: 0 0 0 8px;
+	vertical-align: top;
+}
