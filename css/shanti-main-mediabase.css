@@ -7,11 +7,11 @@
 .nav-justified>li.active a:focus{ background:#32ccca;}
 .nav-justified>li.active:before{ color:#32ccca;}
 
-/* maybe include this PlayBtn in custom colors once it actually works */
+/* maybe include this PlayBtn in custom colors once it actually works
 .largePlayBtn,
 .largePlayBtn:hover,
-.largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;}
-/* END colors */
+.largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;} */
+/*--- END colors ---*/
 
 
 /*--- view collections page ---*/
