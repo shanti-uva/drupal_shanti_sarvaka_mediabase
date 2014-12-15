@@ -391,3 +391,32 @@ display: none;
 	margin: 0 0 0 8px;
 	vertical-align: top;
 }
+
+.view-my-content .views-table, 
+.view-my-collections .views-table, 
+.view-my-memberships .views-table, 
+.view-my-workflow .views-table {
+	width: 100%;
+}
+
+.view-my-content .views-table th,
+.view-my-collections .views-table th,
+.view-my-memberships .views-table th,
+.view-my-workflow .views-table th {
+	padding: 6px 12px 6px 3px;
+	min-width: 75px;
+	font-size: 1em;
+}
+
+.view-my-content .views-table tr td,
+.view-my-collections .views-table tr td,
+.view-my-memberships .views-table tr td,
+.view-my-workflow .views-table tr td {
+	padding: 6px 12px 6px 3px;
+	min-width: 75px;
+	font-size: 1em;
+}
+
+.views-table .kaltura-thumb img {
+	height: 50px;
+}
