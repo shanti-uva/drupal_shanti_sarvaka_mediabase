@@ -2,12 +2,20 @@
  *  Search form in flyout  (ndg, 2014-11-17)
  **/
 
-
-.input-section .search-group{ position:relative;top:-1.4rem;}
-
-.input-section .input-group .input-group-btn{ position:absolute; top:-1px; right:13px;}
-
-.input-section .toggle-link.advanced-link{ position:relative; top:0;}
+/*---- BEGIN search flyout ---*/
+/*---- customize mediabase search panel ----*/
+.input-section .input-group input.form-control { margin-top: 6px; }
+.input-section .search-group{position:relative; margin-top:-1em; }
+.input-section .search-group .form-group{ padding-left:1.5em; }
+.input-section .input-group .input-group-btn{ position:absolute; top: -3px; right:13px; }
+.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top: 6px; }
+.input-section .advanced-view{ padding-top:0.5em;}
+.input-section .search-group .radio-inline { min-width: 0px !important; }
+.form-item .option.icheck-label { font-size: 100% !important; }
+.input-section .toggle-link.advanced-link{ position:relative; top:0; display: none; }
+.input-section .search-group .shanti-options .form-item { width: 48%; float: left;}
+.view-section .treeview h2{ font-size:1.5em;}
+.view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
 
 .mb-solr-results {
 	margin: 18px 0 0;
@@ -59,16 +67,3 @@
 }
 */
 
-/*---- BEGIN search flyout ---*/
-/*---- customize mediabase search panel ----*/
-/*.input-section .search-group{ margin-top:-1em;}
-.input-section .search-group .form-group{ padding-left:1.5em;}
-.input-section .input-group .input-group-btn{ position:absolute; right:13px;}
-
-.input-section .advanced-view{ padding-top:0.5em;}
-.input-section .radio-inline:first-child{ width:6.25em; min-width:6.25em;}
-
-.view-section .treeview h2{ font-size:1.5em;}
-.view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
-
- */
