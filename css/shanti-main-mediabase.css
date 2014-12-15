@@ -415,6 +415,7 @@ display: none;
 	padding: 6px 12px 6px 3px;
 	min-width: 75px;
 	font-size: 1em;
+	white-space: nowrap;
 }
 
 .views-table .kaltura-thumb img {
