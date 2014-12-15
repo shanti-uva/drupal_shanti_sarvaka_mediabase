@@ -200,7 +200,6 @@ function sarvaka_mediabase_fieldset($vars) {
 }
 
 function sarvaka_mediabase_field__datetime($vars) {
-	dpm($vars);
 	return render($vars['element']);
 }
 
