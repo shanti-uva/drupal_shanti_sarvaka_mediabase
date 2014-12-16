@@ -166,16 +166,18 @@ function sarvaka_mediabase_select($vars) {
 function sarvaka_mediabase_preprocess_transcripts_ui_video_controls($vars) {
         drupal_add_js("
                 (function ($) {
-                        $('.play-transcript').click(function() {
-                                $('i.icon', this).toggleClass('shanticon-play-video shanticon-play-transcript');
-                                if ($(this).hasClass('without-transcript')) {
-                                        $('span', this).html(Drupal.t('Show<br/>transcript'));
-                                }
-                                else {
-                                        $('span', this).html(Drupal.t('Hide<br/>transcript'));
-                                }
-                        });
-                }(jQuery));
+			$(document).ready(function() {
+                        	$('.play-transcript').click(function() {
+                                	$('i.icon', this).toggleClass('shanticon-play-video shanticon-play-transcript');
+                                	if ($(this).hasClass('hidden-transcript')) {
+                                	        $('span', this).html(Drupal.t('Show<br/>transcript'));
+                                	}
+                                	else {
+                                	        $('span', this).html(Drupal.t('Hide<br/>transcript'));
+                                	}
+                        	});
+                	})
+		}(jQuery));
         ", 'inline');
 }
 function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
@@ -198,7 +200,7 @@ function sarvaka_mediabase_transcripts_ui_video_controls($vars) {
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_play_transcript($vars) {
-        $out = "<button class='btn btn-primary btn-icon play-transcript without-transcript'>";
+        $out = "<button class='btn btn-primary btn-icon play-transcript'>";
         $out .= "<i class='icon shanticon-play-video'></i>";
         $out .= "<span>" . t('Hide<br/>transcript') . "</span>";
         $out .= "</button>";
