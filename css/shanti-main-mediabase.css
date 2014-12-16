@@ -7,11 +7,11 @@
 .nav-justified>li.active a:focus{ background:#32ccca;}
 .nav-justified>li.active:before{ color:#32ccca;}
 
-/* maybe include this PlayBtn in custom colors once it actually works */
+/* maybe include this PlayBtn in custom colors once it actually works
 .largePlayBtn,
 .largePlayBtn:hover,
-.largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;}
-/* END colors */
+.largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;} */
+/*--- END colors ---*/
 
 
 /*--- view collections page ---*/
@@ -43,7 +43,7 @@
 
 
 /*--- QUESTION: where is this from - ? ---*/
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker{
+table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
 	width:70px;
 	margin-left:20px;
 }
@@ -270,4 +270,154 @@ ul.pager {
 	text-transform: uppercase;
 	font-size: 0.9em;
 	padding-top: 12px;
+}
+
+.region-sidebar-second .block h4 {
+	font-size: .9em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/** 
+ * 	Individual A/V Pages 
+ */
+
+/* add space after collection name */
+#av-details .field-name-av-collection {
+	margin-bottom: 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference {
+	margin: 9px 0px 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference ul {
+	margin: 3px 0px 0px 0px;
+}
+
+/* Metadata on a/v record */
+#field_collection_item_field_workflow_full_group_workflow .subgroup {
+	float: left;
+	width: 33%;
+}
+
+#field_collection_item_field_workflow_full_group_workflow .subgroup p {
+	display: inline-block;
+}
+
+.node .content .mb-identifier label, .node .content .field-label-inline .field-label-span {
+	color: #333;
+	margin: 0;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.node .content .field-name-field-recording-location {
+	margin: 0 !important;
+}
+
+.node .content .field-name-field-recording-location .field-label-span {
+	color: #333;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.node .content .field-name-field-pbcore-format-id > .field-items > .field-item {
+	display: block;
+}
+
+.field.field-name-field-format-id.field-type-text.field-label-inline.clearfix {
+	float: left;
+}
+
+.field.field-name-field-format-id-source.field-type-text.field-label-inline.clearfix {
+	float: left;
+	padding-left: 4px;
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id .field-label,
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-label {
+	display: none;
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item:before {
+	content: '(';
+}
+
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item:after {
+	content: ')';
+	clear: both;
+}
+/* fixing spacing of links at bottom (email, add to favs etc.) */
+
+ul.links.inline {
+	margin-bottom: 24px;
+	display: block;
+}
+
+/** Hiding Spaces table until it can be properly implemented */
+.node-type-collection table.spaces {
+display: none;
+}
+
+/** General **/
+.show-more {
+	margin: 0 0 8px 0;
+}
+
+.show-more a, .show-more a:focus {
+	color: #5a65d1;
+}
+
+.show-more a:hover, .show-more a:hover:after {
+	color: rgb(207, 47, 30);
+}
+
+.show-more a:after {
+	top: 0;
+}
+
+.show-more.less a:after {
+	content: '\2212';
+}
+
+/** My Content Pages **/
+.view .form-item-operation {
+	float: left;
+}
+
+.view .form-item-operation + button {
+	margin: 0 0 0 8px;
+	vertical-align: top;
+}
+
+.view-my-content .views-table, 
+.view-my-collections .views-table, 
+.view-my-memberships .views-table, 
+.view-my-workflow .views-table {
+	width: 100%;
+}
+
+.view-my-content .views-table th,
+.view-my-collections .views-table th,
+.view-my-memberships .views-table th,
+.view-my-workflow .views-table th {
+	padding: 6px 12px 6px 3px;
+	min-width: 75px;
+	font-size: 1em;
+}
+
+.view-my-content .views-table tr td,
+.view-my-collections .views-table tr td,
+.view-my-memberships .views-table tr td,
+.view-my-workflow .views-table tr td {
+	padding: 6px 12px 6px 3px;
+	min-width: 75px;
+	font-size: 1em;
+	white-space: nowrap;
+}
+
+.views-table .kaltura-thumb img {
+	height: 50px;
 }
