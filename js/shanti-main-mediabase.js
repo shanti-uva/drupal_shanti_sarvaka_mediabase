@@ -9,7 +9,7 @@
 		}
 	};
 
-	Drupal.behaviors.shanti_sarvaka_mb_trim_desc =  {
+	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
 	  attach: function (context, settings) {
 	  	// Pb core description trimming
 			if($('.field-name-field-pbcore-description .field-item').length > 1) {
@@ -56,7 +56,7 @@
 	};
 
 	// Various Markup changes for styling MB in sarvaka theme
-	Drupal.behaviors.shanti_sarvaka_mb_markup_tweaks = {
+	Drupal.behaviors.shantiSarvakaMbMarkupTweaks = {
 		attach: function (context, settings) {
 			if(context == window.document) {
 				$('#edit-group-audience .form-item-group-audience-und').wrapInner('<div class="collection-details-audience"></div>');
