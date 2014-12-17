@@ -267,11 +267,11 @@ function sarvaka_mediabase_transcripts_ui_next_tcu($vars) {
         $out .= "</button>";
         return $out;
 }
-function sarvaka_mediabase_form_transcripts_ui_mode_selector_alter(&$form, &$form_state) {
-        $form['mode_selector']['#title'] = '';
-        $form['mode_selector']['#attributes']['data-header'] = t('Select a transcript view');
-        $form['#attached']['css'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/css/transcripts-ui-mode-selector.css';
-        $form['#attached']['js'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/js/transcripts-ui-mode-selector.js';
+function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
+        $form['viewer_selector']['#title'] = '';
+        $form['viewer_selector']['#attributes']['data-header'] = t('Select a transcript view');
+        $form['#attached']['css'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/css/transcripts-ui-viewer-selector.css';
+        $form['#attached']['js'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/js/transcripts-ui-viewer-selector.js';
 }
 function sarvaka_mediabase_form_transcripts_ui_tier_selector_alter(&$form, &$form_state) {
         $form['tier_selector']['#title'] = '';

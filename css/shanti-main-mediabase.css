@@ -257,13 +257,6 @@ ul.pager {
   hyphens: auto;
 }
 
-.about .description .show-more a {
-	color: rgb(69, 79, 164);
-}
-
-.about .description .show-more a:after {
-	vertical-align: 2px;
-}
 
 .about .description h4 {
 	font-weight: bold;
@@ -361,26 +354,7 @@ ul.links.inline {
 display: none;
 }
 
-/** General **/
-.show-more {
-	margin: 0 0 8px 0;
-}
 
-.show-more a, .show-more a:focus {
-	color: #5a65d1;
-}
-
-.show-more a:hover, .show-more a:hover:after {
-	color: rgb(207, 47, 30);
-}
-
-.show-more a:after {
-	top: 0;
-}
-
-.show-more.less a:after {
-	content: '\2212';
-}
 
 /** My Content Pages **/
 .view .form-item-operation {
