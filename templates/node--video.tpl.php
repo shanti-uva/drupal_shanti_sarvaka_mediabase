@@ -242,7 +242,8 @@ else:     /************ FULL Display ***********/
       </div> <!-- End of mms-wrap-left -->
 
 <div class="mms-right">
-	<div class='transcript-container'>
+	<?php if($variables['has_transcript']): ?>
+		<div class='transcript-container'>
                         <ul class='nav nav-tabs nav-justified' role='tablist'>
                                 <li class='active'><a href='#transcript' role='tab' data-toggle='tab'>Transcript</a></li>
                                 <li><a href='#hits' role='tab' data-toggle='tab'>Search</a></li>
@@ -255,7 +256,8 @@ else:     /************ FULL Display ***********/
                                         <?php print render($hits); ?>
                                 </div>
                         </div>
-	</div>
+		</div>
+	<?php endif; ?>
 </div>
 
      </div>
