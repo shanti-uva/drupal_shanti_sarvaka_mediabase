@@ -159,6 +159,13 @@ else:     /************ FULL Display ***********/
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
+
+  <?php if($variables['has_transcript']): ?>
+    <?php print render($transcript_controls); ?>
+  <?php endif; ?>
+
+  <div class="mms-wrapper clearfix">
+
   <div class="mms-wrap-left">
     <?php
       //dpm($content);
@@ -169,14 +176,18 @@ else:     /************ FULL Display ***********/
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
-      <div class="video-row">
+      <div class="video-row" data-transcripts-role="video" data-transcripts-trid="<?php print $trid;?>">
           <?php print render($content['field_video']); ?>
       </div>
-      <div class="avdesc clearfix">
+
+      <div class="avdesc">
       	<!-- Info/Description row -->
+		<?php if($variables['has_transcript']): ?>
+			<?php print render($video_controls); ?>
+		<?php endif; ?>
 	      <!-- info column -->
 	      <div class="avinfo">
-	        <?php if($variables['has_transcript']): ?>
+	        <!-- <?php if($variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
 	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
@@ -184,7 +195,7 @@ else:     /************ FULL Display ***********/
 	          		</button>
 	            </form>
 	          </div>
-	        <?php endif; ?>
+	        <?php endif; ?> -->
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
@@ -227,8 +238,27 @@ else:     /************ FULL Display ***********/
 		        </div>
 		      <?php endif; ?>
 	      </div>
-	    </div><!--- End mms-wrap-left -->
-      </div> <!-- End of avdesc -->
+	    </div><!--- End of avdesc -->
+      </div> <!-- End of mms-wrap-left -->
+
+<div class="mms-right">
+	<div class='transcript-container'>
+                        <ul class='nav nav-tabs nav-justified' role='tablist'>
+                                <li class='active'><a href='#transcript' role='tab' data-toggle='tab'>Transcript</a></li>
+                                <li><a href='#hits' role='tab' data-toggle='tab'>Search</a></li>
+                        </ul>
+                        <div class='transcript-content tab-content'>
+                                <div class='tab-pane active' id='transcript'>
+                                        <?php print render($transcript); ?>
+                                </div>
+                                <div class='tab-pane' id='hits'>
+                                        <?php print render($hits); ?>
+                                </div>
+                        </div>
+	</div>
+</div>
+
+     </div>
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
