@@ -176,7 +176,11 @@ else:     /************ FULL Display ***********/
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
+	<?php if ($variables['has_transcript']): ?>
       <div class="video-row" data-transcripts-role="video" data-transcripts-trid="<?php print $trid;?>">
+	<?php else: ?>
+      <div class="video-row">
+	<?php endif; ?>
           <?php print render($content['field_video']); ?>
       </div>
 
