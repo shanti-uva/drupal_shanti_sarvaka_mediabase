@@ -245,6 +245,7 @@ else:     /************ FULL Display ***********/
 	    </div><!--- End of avdesc -->
       </div> <!-- End of mms-wrap-left -->
 
+<!--
 <div class="mms-right">
         <?php if($variables['has_transcript']): ?>
                 <div class='transcript-container'>
@@ -263,8 +264,8 @@ else:     /************ FULL Display ***********/
                 </div>
         <?php endif; ?>
 </div>
+-->
 
-<!--
 <div class="mms-right">
         <?php if($variables['has_transcript']): ?>
                 <div class='transcript-container'>
@@ -274,7 +275,6 @@ else:     /************ FULL Display ***********/
                 </div>
         <?php endif; ?>
 </div>
--->
 
      </div> <!-- End of mms-wrapper -->
 
