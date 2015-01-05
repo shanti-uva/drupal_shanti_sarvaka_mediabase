@@ -264,6 +264,18 @@ else:     /************ FULL Display ***********/
         <?php endif; ?>
 </div>
 
+<!--
+<div class="mms-right">
+        <?php if($variables['has_transcript']): ?>
+                <div class='transcript-container'>
+                        <div class='transcript-content' id='transcript'>
+                        	<?php print render($transcript); ?>
+                        </div>
+                </div>
+        <?php endif; ?>
+</div>
+-->
+
      </div> <!-- End of mms-wrapper -->
 
       <div>
