@@ -208,7 +208,9 @@ function sarvaka_mediabase_field__datetime($vars) {
 /**
  * Add js for play transcript button toggle
  */
-function sarvaka_mediabase_preprocess_transcripts_ui_video_controls($vars) {
+
+/* not using for now 
+function sarvaka_mediabase_preprocess_transcripts_ui_transcript_controls($vars) {
         drupal_add_js("
                 (function ($) {
 			$(document).ready(function() {
@@ -225,6 +227,31 @@ function sarvaka_mediabase_preprocess_transcripts_ui_video_controls($vars) {
 		}(jQuery));
         ", 'inline');
 }
+function sarvaka_mediabase_transcripts_ui_play_transcript($vars) {
+        $out = "<button class='btn btn-primary btn-icon play-transcript'>";
+        $out .= "<i class='icon shanticon-play-video'></i>";
+        $out .= "<span>" . t('Hide<br/>transcript') . "</span>";
+        $out .= "</button>";
+        return $out;
+}
+*/
+
+function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
+        $out = "<div class='btn-group btn-group-lg btn-group-justified btn-group-transcript'>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#prev']. "</div>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#same']. "</div>";
+        $out .= "<div class='btn-group'>" .$vars['element']['#next']. "</div>";
+
+	$out .= "<div class='btn-group'>";
+	$out .= "<button class='btn btn-default btn-icon search' title='Search transcript'>";
+	$out .= "<i class='icon shanticon-search'></i>";
+	$out .= "</button>";
+	$out .= "</div>";
+
+        $out .= "</div>";
+        $out .= drupal_render($vars['element']['tier_selector']);
+	return $out;
+}
 function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
         $mins = floor ($vars['element']['#time'] / 60);
         $secs = $vars['element']['#time'] % 60;
@@ -233,22 +260,6 @@ function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
         $out .= "<span class='glyphicon glyphicon-play'></span> ";
         $out .= "<br>" . $time;
         $out .= "</a>";
-        return $out;
-}
-function sarvaka_mediabase_transcripts_ui_video_controls($vars) {
-        $out = "<div style='width: 480px;' class='btn-group btn-group-lg btn-group-justified btn-group-transcript'>";
-        $out .= "<div class='btn-group'>" .$vars['element']['#play']. "</div>";
-        $out .= "<div class='btn-group'>" .$vars['element']['#prev']. "</div>";
-        $out .= "<div class='btn-group'>" .$vars['element']['#same']. "</div>";
-        $out .= "<div class='btn-group'>" .$vars['element']['#next']. "</div>";
-        $out .= "</div>";
-        return $out;
-}
-function sarvaka_mediabase_transcripts_ui_play_transcript($vars) {
-        $out = "<button class='btn btn-primary btn-icon play-transcript'>";
-        $out .= "<i class='icon shanticon-play-video'></i>";
-        $out .= "<span>" . t('Hide<br/>transcript') . "</span>";
-        $out .= "</button>";
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_previous_tcu($vars) {

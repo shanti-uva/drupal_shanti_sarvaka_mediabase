@@ -4,7 +4,6 @@
 			<tr>
 				<td class='video-wrapper' style='padding-right: 20px;'>
 					<?php print $video_tag; ?>
-					<?php print render($video_controls); ?>
 				</td>
                                 <td class='transcript-wrapper'>
 					<?php print render($transcript_controls); ?>
