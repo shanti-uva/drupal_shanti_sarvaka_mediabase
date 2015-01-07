@@ -186,9 +186,6 @@ else:     /************ FULL Display ***********/
 
       <div class="avdesc">
       	<!-- Info/Description row -->
-		<?php if($variables['has_transcript']): ?>
-			<?php print render($video_controls); ?>
-		<?php endif; ?>
 	      <!-- info column -->
 	      <div class="avinfo">
 	        <!-- <?php if($variables['has_transcript']): ?>
@@ -268,6 +265,7 @@ else:     /************ FULL Display ***********/
 
 <div class="mms-right">
         <?php if($variables['has_transcript']): ?>
+		<?php print render($video_controls); ?>
                 <div class='transcript-container'>
                         <div class='transcript-content' id='transcript'>
                         	<?php print render($transcript); ?>
