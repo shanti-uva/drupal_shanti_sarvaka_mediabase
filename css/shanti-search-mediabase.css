@@ -16,7 +16,10 @@
 .input-section .search-group .shanti-options .form-item { width: 48%; float: left;}
 .view-section .treeview h2{ font-size:1.5em;}
 .view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
+.view-section ul.fancytree-container { min-height: 100%; }
+.fancytree-expander { background-image: none !important; } /* Removes default fancytree arrows */
 
+/*--------- SOLR Results ---------------*/
 .mb-solr-results {
 	margin: 18px 0 0;
 }
