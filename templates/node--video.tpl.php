@@ -160,10 +160,6 @@ else:     /************ FULL Display ***********/
 
   <div class="content"<?php print $content_attributes; ?>>
 
-  <?php if($variables['has_transcript']): ?>
-    <?php print render($transcript_controls); ?>
-  <?php endif; ?>
-
   <div class="mms-wrapper clearfix">
 
   <div class="mms-wrap-left">
@@ -186,9 +182,6 @@ else:     /************ FULL Display ***********/
 
       <div class="avdesc">
       	<!-- Info/Description row -->
-		<?php if($variables['has_transcript']): ?>
-			<?php print render($video_controls); ?>
-		<?php endif; ?>
 	      <!-- info column -->
 	      <div class="avinfo">
 	        <!-- <?php if($variables['has_transcript']): ?>
@@ -247,26 +240,7 @@ else:     /************ FULL Display ***********/
 
 <div class="mms-right">
         <?php if($variables['has_transcript']): ?>
-                <div class='transcript-container'>
-                        <ul class='nav nav-tabs nav-justified' role='tablist'>
-                                <li class='active'><a href='#transcript' role='tab' data-toggle='tab'>Transcript</a></li>
-                                <li><a href='#hits' role='tab' data-toggle='tab'>Search</a></li>
-                        </ul>
-                        <div class='transcript-content tab-content'>
-                                <div class='tab-pane active' id='transcript'>
-                                        <?php print render($transcript); ?>
-                                </div>
-                                <div class='tab-pane' id='hits'>
-                                        <?php print render($hits); ?>
-                                </div>
-                        </div>
-                </div>
-        <?php endif; ?>
-</div>
-
-<!--
-<div class="mms-right">
-        <?php if($variables['has_transcript']): ?>
+		<?php print render($transcript_controls); ?>
                 <div class='transcript-container'>
                         <div class='transcript-content' id='transcript'>
                         	<?php print render($transcript); ?>
@@ -274,7 +248,6 @@ else:     /************ FULL Display ***********/
                 </div>
         <?php endif; ?>
 </div>
--->
 
      </div> <!-- End of mms-wrapper -->
 
