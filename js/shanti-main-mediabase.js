@@ -73,10 +73,10 @@
 	  }
 	};
 	
+	// Applies wookmark js to related videos tab div by calling Drupal behaviors
 	Drupal.behaviors.shantiSarvakaMbRelatedTab = {
 		attach: function (context, settings) {
 			if(context == window.document) {
-				// Applies wookmark js to related videos tab div by calling Drupal behaviors
 				$('a#related-tab').on('shown.bs.tab', function(e) {
 					Drupal.attachBehaviors('#related');
 				});
