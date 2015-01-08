@@ -253,8 +253,8 @@ else:     /************ FULL Display ***********/
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
-          <li class="active"><a href="#details" role="tab" data-toggle="tab"><?php print t('Details'); ?></a></li>
-          <li><a href="#related" role="tab" data-toggle="tab"><?php print t('Related Videos'); ?></a></li>
+          <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
+          <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Videos'); ?></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
