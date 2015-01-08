@@ -157,7 +157,7 @@ else:     /************ FULL Display ***********/
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-  <div class="mms-wrap-left">
+  <div class="av-main-left">
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -224,7 +224,7 @@ else:     /************ FULL Display ***********/
 		        </div>
 		      <?php endif; ?>
 	      </div>
-	    </div><!--- End mms-wrap-left -->
+	    </div><!--- End av-main-wrap-left -->
       </div> <!-- End of avdesc -->
 
       <div>

@@ -244,7 +244,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 
 	$out .= "<div class='btn-group'>";
 	$out .= "<button class='btn btn-default btn-icon search' title='Search transcript'>";
-	$out .= "<i class='icon shanticon-search'></i>";
+	$out .= "<span class='icon shanticon-magnify'></span>";
 	$out .= "</button>";
 	$out .= "</div>";
 
@@ -264,19 +264,19 @@ function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
 }
 function sarvaka_mediabase_transcripts_ui_previous_tcu($vars) {
         $out = "<button class='btn btn-default btn-icon previous' title='Previous line'>";
-        $out .= "<i class='icon shanticon-arrow-left'></i>";
+        $out .= "<span class='icon shanticon-arrow-left'></span>";
         $out .= "</button>";
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_same_tcu($vars) {
         $out = "<button class='btn btn-default btn-icon sameagain' title='Same line'>";
-        $out .= "<i class='icon shanticon-spin3'></i>";
+        $out .= "<span class='icon shanticon-spin3'></span>";
         $out .= "</button>";
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_next_tcu($vars) {
         $out = "<button class='btn btn-default btn-icon next' title='Next line'>";
-        $out .= "<i class='icon shanticon-arrow-right'></i>";
+        $out .= "<span class='icon shanticon-arrow-right'></span>";
         $out .= "</button>";
         return $out;
 }
