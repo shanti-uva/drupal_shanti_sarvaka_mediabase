@@ -237,17 +237,18 @@ else:     /************ FULL Display ***********/
 	      </div>
 	    </div><!--- End of avdesc -->
       </div> <!-- End of av-main-video-section -->
-
-<div class="av-main-transcript-section col-xs-6 col-md-5">
-        <?php if($variables['has_transcript']): ?>
-		<?php print render($transcript_controls); ?>
-                <div class='transcript-container'>
-                        <div class='transcript-content' id='transcript'>
-                        	<?php print render($transcript); ?>
-                        </div>
-                </div>
-        <?php endif; ?>
-</div>
+			
+			<!-- BEGIN av-main-transcript-section -->
+			<div class="av-main-transcript-section col-xs-6 col-md-5">
+			        <?php if($variables['has_transcript']): ?>
+					<?php print render($transcript_controls); ?>
+			                <div class='transcript-container'>
+			                        <div class='transcript-content' id='transcript'>
+			                        	<?php print render($transcript); ?>
+			                        </div>
+			                </div>
+			        <?php endif; ?>
+			</div>
 
      </div> <!-- End of av-main-wrapper -->
 
