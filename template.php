@@ -281,14 +281,14 @@ function sarvaka_mediabase_transcripts_ui_next_tcu($vars) {
 }
 function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
         $form['viewer_selector']['#title'] = '';
-        $form['viewer_selector']['#attributes']['data-header'] = t('Select a transcript view');
+        $form['viewer_selector']['#attributes']['data-header'] = t('Select View');
         $form['#attached']['css'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/css/transcripts-ui-viewer-selector.css';
         $form['#attached']['js'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/js/transcripts-ui-viewer-selector.js';
 }
 function sarvaka_mediabase_form_transcripts_ui_tier_selector_alter(&$form, &$form_state) {
         $form['tier_selector']['#title'] = '';
         $form['tier_selector']['#attributes']['multiple'] = '';
-        $form['tier_selector']['#attributes']['data-header'] = t('Choose languages to display');
+        $form['tier_selector']['#attributes']['data-header'] = t('Select Language');
         $form['tier_selector']['#attributes']['data-selected-text-format'] = 'count > 2';
         $form['#attached']['css'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/css/transcripts-ui-tier-selector.css';
 }
