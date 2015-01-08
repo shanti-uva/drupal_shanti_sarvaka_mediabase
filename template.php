@@ -249,7 +249,6 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out .= "</div>";
 
         $out .= "</div>";
-        $out .= drupal_render($vars['element']['tier_selector']);
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {

@@ -193,6 +193,7 @@ else:     /************ FULL Display ***********/
 	            </form>
 	          </div>
 	        <?php endif; ?> -->
+		<?php print render($tier_selector); ?>
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
