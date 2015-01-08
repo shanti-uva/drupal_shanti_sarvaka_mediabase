@@ -160,9 +160,9 @@ else:     /************ FULL Display ***********/
 
   <div class="content"<?php print $content_attributes; ?>>
 
-  <div class="mms-wrapper clearfix">
+  <div class="av-main-wrapper row">
 
-  <div class="mms-wrap-left">
+  <div class="av-main-video-section col-xs-6 col-md-7">
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -236,9 +236,9 @@ else:     /************ FULL Display ***********/
 		      <?php endif; ?>
 	      </div>
 	    </div><!--- End of avdesc -->
-      </div> <!-- End of mms-wrap-left -->
+      </div> <!-- End of av-main-video-section -->
 
-<div class="mms-right">
+<div class="av-main-transcript-section col-xs-6 col-md-5">
         <?php if($variables['has_transcript']): ?>
 		<?php print render($transcript_controls); ?>
                 <div class='transcript-container'>
@@ -249,7 +249,7 @@ else:     /************ FULL Display ***********/
         <?php endif; ?>
 </div>
 
-     </div> <!-- End of mms-wrapper -->
+     </div> <!-- End of av-main-wrapper -->
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
