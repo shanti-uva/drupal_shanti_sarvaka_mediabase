@@ -1,3 +1,4 @@
+/* 
 .viewer-selector .bootstrap-select.form-control:not([class*="span"]){
   width:14em;
 }
@@ -6,4 +7,8 @@
   position:relative;
   top:1px;
 }
+*/
+
 /*.transcripts-processed{ margin-left:5px;}*/
+
+
