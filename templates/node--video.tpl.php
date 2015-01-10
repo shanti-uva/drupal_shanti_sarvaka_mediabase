@@ -184,9 +184,6 @@ else:     /************ FULL Display ***********/
       	<!-- Info/Description row -->
 	      <!-- info column -->
 	      <div class="avinfo col-xs-12 col-sm-6 col-md-4 col-lg-3">		      
-		      <?php if ($variables['has_transcript']): ?> 
-		      	<h5>Transcript Options</h5> 
-		      <?php endif; ?>
 	        <!-- <?php if($variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
@@ -196,8 +193,7 @@ else:     /************ FULL Display ***********/
 	            </form>
 	          </div>
 	        <?php endif; ?> -->
-		<?php print render($tier_selector); ?>
-					<h5>Details</h5>
+		<h5>Details</h5>
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
