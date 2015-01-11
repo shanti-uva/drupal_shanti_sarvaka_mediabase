@@ -184,9 +184,6 @@ else:     /************ FULL Display ***********/
       	<!-- Info/Description row -->
 	      <!-- info column -->
 	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
-		      <?php if ($variables['has_transcript']): ?> 
-		      	<h5>Transcript Options</h5> 
-		      <?php endif; ?>
 	        <!-- <?php if($variables['has_transcript']): ?>
 	          <div class="trans-btn">
 	            <form action="<?php print $transcript_url; ?>" method="post">
