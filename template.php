@@ -220,7 +220,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
         $out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
         $out .= t('Languages') . "<span class='caret'></span>";
         $out .= "</button>";
-	$out .= "<select multiple class='selectpicker tier-selector' data-header='Transcript options' title='Choose transcript options'>";
+	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages to display'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
