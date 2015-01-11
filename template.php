@@ -226,10 +226,9 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</optgroup>";
-        $out .= "<optgroup label='Speaker name'>";
-        foreach ($vars['element']['speaker_modes'] as $key => $val) {
-                $out .= "<option value='s-{$key}'>{$val}</option>";
-        }
+        $out .= "<optgroup label='Speaker names' data-max-options='1'>";
+	$out .= "<option value='sp-bod'>Tibetan</option>";
+	$out .= "<option value='sp-wylie'>Wylie</option>";
 	$out .= "</optgroup>";
 	$out .= "</select>";
 	$out .= "</div>";
