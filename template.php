@@ -218,18 +218,12 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
         $out = "<div class='btn-group' role='group'>";
         $out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
-        $out .= t('Options') . "<span class='caret'></span>";
+        $out .= t('Languages') . "<span class='caret'></span>";
         $out .= "</button>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Transcript options' title='Choose transcript options'>";
-	$out .= "<optgroup data-type='tier-options' label='Transcript tiers'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
-	$out .= "</optgroup>";
-        $out .= "<optgroup data-type='speaker-options' label='Speaker names' data-max-options='1'>";
-	$out .= "<option selected value='sp-bod'>Tibetan</option>";
-	$out .= "<option value='sp-wylie'>Wylie</option>";
-	$out .= "</optgroup>";
 	$out .= "</select>";
 	$out .= "</div>";
 	return $out;
