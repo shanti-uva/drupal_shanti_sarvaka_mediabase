@@ -227,7 +227,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	}
 	$out .= "</optgroup>";
         $out .= "<optgroup data-type='speaker-options' label='Speaker names' data-max-options='1'>";
-	$out .= "<option value='sp-bod'>Tibetan</option>";
+	$out .= "<option selected value='sp-bod'>Tibetan</option>";
 	$out .= "<option value='sp-wylie'>Wylie</option>";
 	$out .= "</optgroup>";
 	$out .= "</select>";
