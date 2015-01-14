@@ -76,6 +76,17 @@
 	background-color: #f8f8f8;
 }
 
+.view-section .nav-tabs>li {
+	width: 50%;
+	max-width: 200px;
+	font-size: .9em;
+}
+
+#search-flyout .view-section .shanticon-tree:before {
+	content: "\e639";
+	padding-right: 5px;
+}
+
 /* Place checkmark before selected facets */
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:before {
 	content: "\2713";

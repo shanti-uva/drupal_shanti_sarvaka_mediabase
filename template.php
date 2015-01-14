@@ -31,6 +31,64 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 	}
 }
 
+function sarvaka_mediabase_preprocess_block(&$vars) {
+	//dpm($vars, 'in pp block');
+	if(!empty($vars['#facet']['label'])) {
+		$vars['#facetlabel'] = $vars['#facet']['label'];
+	}
+}
+
+function sarvaka_mediabase_preprocess_region(&$vars) {
+	if($vars['region'] == 'search_flyout') {
+		// For search flyout in mediabase, sniff out facet api blocks so that they can be placed in tabs
+		$elements = $vars['elements'];
+		//dpm($vars, 'vars in pp region');
+		$children = element_children($elements);
+		$facets_done = FALSE;
+		$prefacetmu = $postfacetmu = '';
+		$facetmu = '<div class="tab-content">';
+		$facettabs = array();
+		foreach($children as $ename) {
+			if(strpos($ename, 'facetapi') > -1) {
+				$facets_done = TRUE;
+				list($flabel, $fname) = sarvaka_mediabase_get_facet_info($elements[$ename]['#block']->delta);
+				$srflabel = strtolower($flabel);
+				$facettabs[] = $flabel;
+				$facetmu .= "<div class=\"facet-{$srflabel} tab-pane active\"><div class=\"kmaps-tree facet-{$srflabel} view-wrap\"><div class=\"shoppingcart\" display=\"none;\"></div>{$elements[$ename]['#children']}</div></div>";
+			} elseif (!$facets_done) {
+				$prefacetmu .= $elements[$ename]['#children'];
+			} else {
+				$facettabs .= $elements[$ename]['#children'];
+			}
+		}
+		$facetmu .= '</div>';
+		$prefix = '<section class="view-section"><ul class="nav nav-tabs">';
+		$class = ' active';
+		foreach($facettabs as $flabel) {
+			$srflabel = strtolower($flabel);
+			$prefix .= "<li class=\"facet-{$srflabel}{$class}\"><a href=\".facet-{$srflabel}\" data-toggle=\"tab\"><span class=\"icon shanticon-tree\"></span>{$flabel}</a></li>";
+			$class = '';
+		}
+    $prefix .= '</ul>';      
+		$facetmu = $prefix . $facetmu . '</section>';  
+		$vars['prefacet'] = $prefacetmu;
+		$vars['facetcnt'] = $facetmu;
+		$vars['postfacet'] = $postfacetmu;
+		//dpm($facetmu, 'facet markup');
+	}
+}
+
+function sarvaka_mediabase_get_facet_info($fbid) {
+	$dmap = facetapi_get_delta_map();
+	$searcher = 'apachesolr@solr';
+	//$fbid = 'JpJnN1e8hK027W200nfaKp74Qf8XINrv';
+	$facet_name = $dmap[$fbid];
+	$fparts = explode(':', $facet_name);
+	$facet_name = array_pop($fparts);
+	$facet = facetapi_facet_load($facet_name, $searcher);
+	return array($facet['label'], $facet_name);
+}
+
 /**
  * Preprocess function for a NODE
  */
