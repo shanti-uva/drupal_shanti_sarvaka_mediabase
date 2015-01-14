@@ -70,3 +70,17 @@
 }
 */
 
+/* Facet flyouts */
+
+.kmaps-tree ul.fancytree-container {
+	background-color: #f8f8f8;
+}
+
+/* Place checkmark before selected facets */
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:before {
+	content: "\2713";
+	color: red;
+	margin: 0px 12px 0px -10px;
+	display: inline-block;
+	padding: 3px;
+}
