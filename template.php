@@ -293,7 +293,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	}
 	$out .= "</select>";
 
-	// $out .= "</div>";
+  $out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
