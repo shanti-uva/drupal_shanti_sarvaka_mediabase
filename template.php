@@ -264,8 +264,8 @@ function sarvaka_mediabase_field__datetime($vars) {
 */
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out  = "<div class='btn-group' role='group'>";
-        $out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
+	$out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= "</div>";
 	$out .= drupal_render($vars['element']['content']['transcript_search']);
         return $out;
