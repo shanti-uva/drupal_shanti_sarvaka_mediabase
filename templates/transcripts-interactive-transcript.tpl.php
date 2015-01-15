@@ -2,7 +2,7 @@
 	<div class='transcript-player'>
 		<table>
 			<tr>
-				<td class='video-wrapper' style='padding-right: 20px;'>
+				<td class='video-wrapper'>
 					<?php print $video_tag; ?>
 					<?php print $tier_selector; ?>
 				</td>
