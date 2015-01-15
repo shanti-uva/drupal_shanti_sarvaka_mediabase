@@ -284,16 +284,16 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	$out .= "</ul>";
 
 	//transcript tier selector
-	$out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
-        $out .= "<span class='glyphicon glyphicon-subtitles'></span> <span class='caret'></span>";
-        $out .= "</button>";
+	// $out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
+  //      $out .= "<span class='glyphicon glyphicon-subtitles'></span> <span class='caret'></span>";
+  //      $out .= "</button>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages to display'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</select>";
 
-	$out .= "</div>";
+	// $out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
