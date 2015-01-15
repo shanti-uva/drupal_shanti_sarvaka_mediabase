@@ -297,7 +297,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
   //      $out .= "</button>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages to display'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
-		$out .= "<option data-icon="glyphicon-user" value='{$key}'>{$val}</option>";
+		$out .= "<option data-icon='glyphicon-user' value='{$key}'>{$val}</option>";
 	}
 	$out .= "</select>";
 
