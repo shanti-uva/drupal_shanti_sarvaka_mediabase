@@ -414,4 +414,4 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
 .transcript-search-result .shanti-thumbnail-info{ width:30%;}
-.transcript-search-result .shanti-thumbnail-info .btn.btn-default:last-child{ font-size:0.88em;color:red;}
+.transcript-search-result .shanti-thumbnail-info .btn.btn-default:last-child{ font-size:0.88em;color:#c00;max-width:14rem;position:relative;top:0.3rem;left:-0.3rem;}
