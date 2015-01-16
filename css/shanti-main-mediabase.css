@@ -398,3 +398,18 @@ display: none;
 .views-table .kaltura-thumb img {
 	height: 50px;
 }
+
+
+
+
+
+
+.main-content .av-main-transcript-section button.btn.dropdown-toggle.selectpicker.btn-default{ background-image:none; background:#fff; border-radius:0; width:3rem;}
+.main-content .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}
+
+.transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.3rem;left:1rem;}
+
+.transcript-search-result{min-height:160px;padding-top:0.5rem;}
+.transcript-search-result .shanti-thumbnail-image{ position:relative;top:3.8rem;width:160px;}
+
+
