@@ -270,10 +270,10 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out  = "<div class='btn-group' role='group'>";
+		$out .= drupal_render($vars['element']['content']['transcript_navigation']);
         $out .= drupal_render($vars['element']['content']['transcript_options']);
-	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	$out .= "</div>";
-	$out .= drupal_render($vars['element']['content']['transcript_search']);
+	// $out .= drupal_render($vars['element']['content']['transcript_search']);
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
@@ -290,10 +290,10 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	$out .= "</ul>";
 
 	//transcript tier selector
-	$out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
-        $out .= "<span class='glyphicon glyphicon-subtitles'></span> <span class='caret'></span>";
-        $out .= "</button>";
-	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages to display'>";
+//	$out .= "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
+//  $out .= "<span class='glyphicon glyphicon-subtitles'></span> <span class='caret'></span>";
+//  $out .= "</button>";
+	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
