@@ -414,11 +414,11 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
 
-.transcript-search-result .btn.btn-default{ font-weight:bold;font-size:0.62em;}
-.transcript-search-result .btn.btn-default:first-child{ padding: .5em 1em;color: rgb(207, 47, 30);}
+.transcript-search-result .btn.btn-default{ font-weight:bold;font-size:0.62em;color:#454fa4;}
+.transcript-search-result .btn.btn-default:first-child{ padding: .5em 1em;}
 .transcript-search-result .btn.btn-default:hover{ color:#333;}
 .transcript-search-result .shanti-thumbnail-info{ width:30%;}
-.transcript-search-result .shanti-thumbnail-info .btn.btn-default:last-child{ margin-bottom:2rem;font-size:0.88em;color:#454fa4;max-width:15rem;position:relative;top:0.3rem;left:-0.5rem;}
+.transcript-search-result .shanti-thumbnail-info .btn.btn-default:last-child{ margin-bottom:2rem;font-size:0.88em;max-width:15rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-info .btn.btn-default:before,
 .transcript-search-result .shanti-thumbnail-info .btn.btn-default:after{
   z-index: -1; 
