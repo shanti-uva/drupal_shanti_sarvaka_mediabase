@@ -412,4 +412,5 @@ display: none;
 .transcript-search-result{min-height:160px;padding-top:0.8rem;}
 .transcript-search-result .shanti-thumbnail-image{ position:relative;top:4.3rem;width:170px;}
 
-
+.transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
+.transcript-search-result .shanti-thumbnail-info{ width:30%;}
