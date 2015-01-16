@@ -273,12 +273,17 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 	$out  = "<div class='btn-group' role='group'>";
 	$out .= "<button type='button' class='btn btn-default previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
+	$out .= "</div>";
+	$out  = "<div class='btn-group' role='group'>";
 	$out .= "<button type='button' class='btn btn-default sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
+	$out .= "</div>";
+	$out  = "<div class='btn-group' role='group'>";
 	$out .= "<button type='button' class='btn btn-default next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
+	$out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
-
+	$out  = "<div class='btn-group' role='group'>";
 	//speaker name selector
         $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
         $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
@@ -288,6 +293,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='wylie'> Wylie</li>"; 	
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='none'> None</li>"; 
 	$out .= "</ul>";
+	$out .= "</div>";	
 
 	//transcript tier selector
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages to display'>";
@@ -296,7 +302,6 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	}
 	$out .= "</select>";
 
-	$out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_search_form($vars) {
