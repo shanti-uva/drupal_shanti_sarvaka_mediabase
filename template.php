@@ -262,6 +262,12 @@ function sarvaka_mediabase_field__datetime($vars) {
 	return render($vars['element']);
 }
 */
+
+function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
+        if ($vars['doc']->entity_type == 'tcu') {
+		$vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('View transcript');
+        }
+}
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out  = "<div class='btn-group' role='group'>";
         $out .= drupal_render($vars['element']['content']['transcript_options']);
@@ -314,7 +320,10 @@ function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
         $time = sprintf ("%d:%02d", $mins, $secs);
         $out = "<a href='" . $vars['element']['#linkurl'] . "' class='btn btn-default' role='button'>";
         $out .= "<span class='glyphicon glyphicon-play'></span> ";
-        $out .= "<br>" . $time;
+        $out .= $time;
+	if (isset($vars['element']['#text'])) {
+		$out .= " " . $vars['element']['#text'];
+	}
         $out .= "</a>";
         return $out;
 }
@@ -324,34 +333,3 @@ function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$f
         $form['#attached']['css'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/css/transcripts-ui-viewer-selector.css';
         $form['#attached']['js'][] = drupal_get_path('theme', 'sarvaka_mediabase') .'/js/transcripts-ui-viewer-selector.js';
 }
-
-/**
- * Add js for play transcript button toggle
- */
-
-/* not using for now
-function sarvaka_mediabase_preprocess_transcripts_ui_transcript_controls($vars) {
-        drupal_add_js("
-                (function ($) {
-                        $(document).ready(function() {
-                                $('.play-transcript').click(function() {
-                                        $('i.icon', this).toggleClass('shanticon-play-video shanticon-play-transcript');
-                                        if ($(this).hasClass('hidden-transcript')) {
-                                                $('span', this).html(Drupal.t('Show<br/>transcript'));
-                                        }
-                                        else {
-                                                $('span', this).html(Drupal.t('Hide<br/>transcript'));
-                                        }
-                                });
-                        })
-                }(jQuery));
-        ", 'inline');
-}
-function sarvaka_mediabase_transcripts_ui_play_transcript($vars) {
-        $out = "<button class='btn btn-primary btn-icon play-transcript'>";
-        $out .= "<i class='icon shanticon-play-video'></i>";
-        $out .= "<span>" . t('Hide<br/>transcript') . "</span>";
-        $out .= "</button>";
-        return $out;
-}
-*/
