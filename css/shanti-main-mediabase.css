@@ -414,9 +414,9 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
 
-.transcript-search-result .btn{ font-weight:bold;font-size:0.62em;}
-.transcript-search-result .btn:first-child{ padding:0.5em 1em;}
-.transcript-search-result .btn:hover{ color:#333;}
+.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#fff;}
+.transcript-search-result .btn.btn-primary:first-child{ padding:0.5em 1em;}
+.transcript-search-result .btn.btn-primary:hover{ color:#eee;}
 .transcript-search-result .shanti-thumbnail-info{ width:30%;margin-left:3%; }
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;font-size:0.88em;max-width:15rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-info .btn:before,
