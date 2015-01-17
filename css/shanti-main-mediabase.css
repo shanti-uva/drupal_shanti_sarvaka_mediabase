@@ -410,12 +410,12 @@ display: none;
 .transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.8rem;left:1rem;}
 
 .transcript-search-result{min-height:160px;padding-top:1rem;}
-.transcript-search-result .shanti-thumbnail-image{ position:relative;top:3.5rem;width:160px;}
+.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;width:160px;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
 
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#fff;}
-.transcript-search-result .btn.btn-primary:first-child{ padding:0.5em 1em;}
+.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}
 .transcript-search-result .btn.btn-primary:hover{ color:#eee;}
 .transcript-search-result .shanti-thumbnail-info{ width:30%;margin-left:3%; }
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;font-size:0.88em;max-width:15rem;position:relative;top:0.3rem;left:-0.5rem;}
