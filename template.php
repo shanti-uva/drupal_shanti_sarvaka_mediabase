@@ -274,8 +274,14 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	// $out .= drupal_render($vars['element']['content']['transcript_search']);
         return $out;
 }
-function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
+function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 	$out  = "<div class='btn-group' role='group'>";
+	$out .= "<button type='button' class='btn btn-default previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
+	$out .= "<button type='button' class='btn btn-default sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
+	$out .= "<button type='button' class='btn btn-default next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
+	return $out;
+}
+function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 
 	//speaker name selector
         $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
@@ -296,18 +302,11 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</select>";
+	$out .= "</div>";
 
-	$out .= "</div>";
 	return $out;
 }
-function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
-	$out  = "<div class='btn-group' role='group'>";
-	$out .= "<button type='button' class='btn btn-default previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
-	$out .= "<button type='button' class='btn btn-default sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
-	$out .= "<button type='button' class='btn btn-default next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
-	$out .= "</div>";
-	return $out;
-}
+
 function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
         $out = drupal_render($vars['element']['search_form']);
         return $out;
