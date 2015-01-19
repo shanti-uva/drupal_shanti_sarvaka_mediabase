@@ -269,9 +269,9 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
         }
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
-	$out  = drupal_render($vars['element']['content']['transcript_navigation']);
+	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	$out .= drupal_render($vars['element']['content']['transcript_options']);
-	$out .= drupal_render($vars['element']['content']['transcript_search']);
+	// $out .= drupal_render($vars['element']['content']['transcript_search']);
         return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
@@ -284,7 +284,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 	$out .= "<div style='position:relative;'>";
-        $out  = "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
+        $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
         $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
         $out .= "</button>";
 	$out .= "<ul class='dropdown-menu' role='menu' aria-labelledby='speaker-dropdown'>";
