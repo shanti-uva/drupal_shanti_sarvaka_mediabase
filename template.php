@@ -269,42 +269,37 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
         }
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
-	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	$out .= drupal_render($vars['element']['content']['transcript_options']);
+	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	// $out .= drupal_render($vars['element']['content']['transcript_search']);
         return $out;
 }
-function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
-	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
-	$out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
-	$out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
-	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
-	return $out;
-}
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
-	$out .= "<div style='position:relative;'>";
-        $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
-        $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
-        $out .= "</button>";
+	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
+  $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
+  $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
+  $out .= "</button>";
 	$out .= "<ul class='dropdown-menu' role='menu' aria-labelledby='speaker-dropdown'>";
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='bod'> Tibetan</li>";
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='wylie'> Wylie</li>"; 	
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='none'> None</li>"; 
 	$out .= "</ul>";
-	$out .= "</div>";
-	
 	//transcript tier selector
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</select>";
-	$out .= "</div>";
-
 	return $out;
 }
-
+function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
+	$out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
+	$out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
+	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
+	$out .= "</div>";
+	return $out;
+}
 function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
         $out = drupal_render($vars['element']['search_form']);
         return $out;
