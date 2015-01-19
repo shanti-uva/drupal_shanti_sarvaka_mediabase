@@ -423,9 +423,9 @@ display: none;
 
 .transcript-container { height:800px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
-.transcripts-apachesolr-search-snippet .tiers{ margin-left:0; }
+.transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
 
-.transcript-search-result {display:table;width:100%;padding:1rem;min-height:17rem;}
+.transcript-search-result {display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .shanti-thumbnail-image,
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;}
