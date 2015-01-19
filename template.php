@@ -265,7 +265,7 @@ function sarvaka_mediabase_field__datetime($vars) {
 
 function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
         if ($vars['doc']->entity_type == 'tcu') {
-		$vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('View transcript');
+		$vars['transcripts_apachesolr_search_snippet']['link']['#text'] = t('Transcript');
         }
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
