@@ -408,13 +408,6 @@ display: none;
 .transcript-controls .btn-group:nth-child(1) .btn{ border-left:1px solid #ddd;}
  /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
  
-.btn-group-transcript .btn.btn-icon{ display:table-cell;}
-.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
-.btn-group-transcript .btn.btn-icon span{ position:static;}
-.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
-.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
-
-.btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
 .transcripts-apachesolr-search-snippet .controls{ width:16rem; position:absolute;top:0.8rem;left:1rem;}
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
@@ -435,6 +428,16 @@ display: none;
 .transcript-search-result .shanti-thumbnail-info{ width:21%;padding-left:5%; }
 .transcript-search-result .shanti-thumbnail-image{ width:140px;left:-12px;}
 .transcript-search-result .shanti-thumbnail-image a{ top:27px;}
+
+
+.btn-group-transcript .btn.btn-icon{ display:table-cell;}
+.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
+.btn-group-transcript .btn.btn-icon span{ position:static;}
+.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
+
+.btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
+
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-info .btn:before,
