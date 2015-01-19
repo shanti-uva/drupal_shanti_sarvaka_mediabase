@@ -415,6 +415,11 @@ display: none;
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
 .transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.8rem;left:1rem;}
+.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
+.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}
+.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
+.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ background-image:none; background:#fff; border-radius:0; width:3rem;}
+.av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;} /* testing hiding names */
 
 .transcript-search-result {display:table;width:100%;padding:1rem;min-height:17rem;}
 .transcript-search-result .shanti-thumbnail-image,
@@ -428,16 +433,10 @@ display: none;
 .transcript-container { height:800px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ background-image:none; background:#fff; border-radius:0; width:3rem;}
-.av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;} /* testing hiding names */
 
+.transcripts-apachesolr-search-snippet .tiers{ margin-left:0; }
 
-.transcripts-apachesolr-search-snippet .tiers{ width:60%; margin-left:20%; }
-
-.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
-.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}
-.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
-.transcript-search-result .shanti-thumbnail-info{ width:18%;margin-left:1.5rem; }
+.transcript-search-result .shanti-thumbnail-info{ width:18%;padding-left:2%; }
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-info .btn:before,
 .transcript-search-result .shanti-thumbnail-info .btn:after{
