@@ -414,7 +414,7 @@ display: none;
 
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
-.transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.8rem;left:1rem;}
+.transcripts-apachesolr-search-snippet .controls{ width:16rem; position:absolute;top:0.8rem;left:1rem;}
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 .transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}
 .transcript-search-result .btn.btn-primary:hover{ color:#fff;}
