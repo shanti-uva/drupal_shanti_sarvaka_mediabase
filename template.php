@@ -276,7 +276,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
-	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
+	$out  = "<div class='btn-group btn-group-justified' role='group'>";
   $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
   $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
   $out .= "</button>";
