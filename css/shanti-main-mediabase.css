@@ -420,8 +420,10 @@ display: none;
 .transcript-search-result .shanti-thumbnail-image,
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;}
-.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;width:160px;height:auto;}
+.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;max-width:130px;height:auto;}
 
+.transcript-search-result .shanti-thumbnail-image,
+.transcript-search-result .shanti-thumbnail-link{ float:left;}
 
 .transcript-container { height:800px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
