@@ -277,14 +277,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
-  $out .= "<button id='speaker-dropdown' type='button' class='btn btn-default btn-icon dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>";
-  $out .= "<span class='glyphicon glyphicon-user'></span> <span class='caret'></span>";
-  $out .= "</button>";
-	$out .= "<ul class='dropdown-menu' role='menu' aria-labelledby='speaker-dropdown'>";
-	$out .= "<li><input type='radio' name='speaker-name-selector' id='bod'> Tibetan</li>";
-	$out .= "<li><input type='radio' name='speaker-name-selector' id='wylie'> Wylie</li>"; 	
-	$out .= "<li><input type='radio' name='speaker-name-selector' id='none'> None</li>"; 
-	$out .= "</ul>";
+
 	//transcript tier selector
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
