@@ -409,8 +409,8 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.8rem;left:1rem;}
 
-.transcript-search-result{min-height:160px;padding-top:1rem;}
-.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;width:160px;}
+.transcript-search-result{padding:1rem;}
+.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;max-width:160px;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; }
 
