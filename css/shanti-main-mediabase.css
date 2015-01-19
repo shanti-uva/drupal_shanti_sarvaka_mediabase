@@ -426,11 +426,12 @@ display: none;
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
 
 .transcript-search-result {display:table;width:100%;padding:1rem;min-height:15rem;}
+.transcript-search-result .shanti-thumbnail-image{ position:relative;top:2.65rem;width:140px;}
 .transcript-search-result .search-snippet-info,
+.transcript-search-result .shanti-thumbnail-image,
 .transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;}
-.transcript-search-result .shanti-thumbnail-image{ display:block;position:relative;top:2.65rem;width:140px;}
-
 .transcript-search-result .shanti-thumbnail-info{ width:18%;padding-left:5%; }
+
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
 .transcript-search-result .shanti-thumbnail-info .btn:before,
 .transcript-search-result .shanti-thumbnail-info .btn:after{
