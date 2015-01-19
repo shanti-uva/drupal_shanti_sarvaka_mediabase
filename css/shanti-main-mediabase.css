@@ -416,7 +416,7 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .controls{ width:auto; position:absolute;top:0.8rem;left:1rem;}
 
-.transcript-search-result {display:table;width:100%;padding:1rem;}
+.transcript-search-result {display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .shanti-thumbnail-image,
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-info {display:table-cell;vertical-align:top;}
