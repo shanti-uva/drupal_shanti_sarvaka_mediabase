@@ -286,7 +286,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	$out .= "<li><input type='radio' name='speaker-name-selector' id='none'> None</li>"; 
 	$out .= "</ul>";
 	//transcript tier selector
-	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+	$out .= "<select multiple class='selectpicker tier-selector btn btn-default btn-icon' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
