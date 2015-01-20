@@ -421,7 +421,7 @@ display: none;
     background: #ddd
 }
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:1.5em;margin-right:7rem;}
-
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd;}
 
 
 .transcript-container { height:750px; overflow-x:auto;}
