@@ -431,7 +431,7 @@ display: none;
 .transcript-search-result .shanti-thumbnail-image a{ top:27px;}
 
 
-.btn-group-transcript .btn.btn-icon{ display:table-cell;}
+.btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
 .btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
 .btn-group-transcript .btn.btn-icon span{ position:static;}
 .btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
