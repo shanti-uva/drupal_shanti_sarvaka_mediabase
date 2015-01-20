@@ -442,6 +442,15 @@ display: none;
 		width:37rem;
 }
 
+form#transcripts-ui-search-form.transcripts-ui-search-form{ 
+		background: #fff;
+		display: block;
+		height: 5rem;
+		width: 75%;
+		position: absolute;
+		top:0.1rem;
+}
+
 
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
 .btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
