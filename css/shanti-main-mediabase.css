@@ -423,7 +423,7 @@ display: none;
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .main-content .selectpicker li a{ line-height:2.5em; height:2.5em;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd !important;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color:red !important;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ color:red !important;margin-top: 0.5em;}
 
 
 .transcript-container { height:750px; overflow-x:auto;}
