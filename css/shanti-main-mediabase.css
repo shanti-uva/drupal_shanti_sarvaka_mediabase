@@ -434,6 +434,13 @@ display: none;
 .transcript-search-result .shanti-thumbnail-image{ width:140px;left:-12px;}
 .transcript-search-result .shanti-thumbnail-image a{ top:27px;}
 
+.transcript-search-result .input-group .form-control{ height:3rem;}
+.transcript-search-result .input-group{
+		position: absolute;
+		top:1rem;
+		left:3rem;
+		width:37rem;
+}
 
 
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
