@@ -441,12 +441,10 @@ display: none;
 		left:3rem;
 		width:37rem;
 }
-form#transcripts-ui-search-form.transcripts-ui-search-form{
-	background: transparent;
-}
+
 .av-main-transcript-section .input-group{ display:none;}
 form#transcripts-ui-search-form.transcripts-ui-search-form{ 
-		background: #fff;
+		background: transparent;
 		display: block;
 		height: 5rem;
 		width: 75%;
