@@ -420,7 +420,7 @@ display: none;
     border: 1px solid #ccc;
     background: #ddd
 }
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo',arial,sans-serif;color:#333;line-height:1.5em;margin-right:2rem;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:1.5em;margin-right:2rem;}
 
 
 
