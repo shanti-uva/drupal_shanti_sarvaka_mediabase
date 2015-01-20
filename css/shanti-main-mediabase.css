@@ -418,7 +418,7 @@ display: none;
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
     border: 1px solid #ccc;
-    background: #eee
+    background: #ddd
 }
 .transcript-container { height:800px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
