@@ -442,6 +442,7 @@ display: none;
 		width:37rem;
 }
 
+.av-main-transcript-section .input-group{ display:none;}
 form#transcripts-ui-search-form.transcripts-ui-search-form{ 
 		background: #fff;
 		display: block;
