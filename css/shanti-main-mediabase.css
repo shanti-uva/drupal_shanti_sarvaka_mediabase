@@ -420,7 +420,8 @@ display: none;
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
 
-.transcript-search-result .btn.btn-primary{ width:16rem;}
+.transcript-search-result .btn.btn-primary,
+.transcript-search-result .btn.btn-default{ width:20%;}
 .transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-image,
