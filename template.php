@@ -269,19 +269,15 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
         }
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
-	$out .= "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
 	$out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
-	$out .= "</div>";
-	$out .= "<div class='search-trans'>";
-	$out .= drupal_render($vars['element']['content']['transcript_search']);
-	$out .= "</div>";
   return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 
 	//transcript tier selector
+		$out .= "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
@@ -294,6 +290,9 @@ function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 	$out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
+	$out .= "<div class='search-trans'>";
+	$out .= drupal_render($vars['element']['content']['transcript_search']);
+	$out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
