@@ -442,6 +442,8 @@ display: none;
 .transcript-search-result .shanti-thumbnail-image{ width:140px;left:-12px;}
 .transcript-search-result .shanti-thumbnail-image a{ top:27px;}
 
+.av-main-transcript-section .play-button a.btn.btn-primary{ margin:0;padding:0.5rem 1rem;}
+
 .av-main-transcript-section  .input-group .form-control{ height:3rem;}
 .av-main-transcript-section  .input-group{
 		position: absolute;
