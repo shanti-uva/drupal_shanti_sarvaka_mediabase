@@ -278,12 +278,12 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//transcript tier selector
 	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
-	$out .= "<optgroup class='tier-listing'>";
+	$out .= "<optgroup label='tier-listing'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</optgroup>";
-	$out .= "<optgroup class='speaker-tier'>";
+	$out .= "<optgroup label='speaker-tier'>";
 	$out .= "<option>Tibetan</option>";
 	$out .= "<option>Chinese</option>";
 	$out .= "</optgroup>";

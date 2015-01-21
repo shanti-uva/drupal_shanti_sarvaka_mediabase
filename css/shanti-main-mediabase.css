@@ -410,9 +410,7 @@ display: none;
  
 
 .transcripts-apachesolr-search-snippet .controls{ width:16rem; position:absolute;top:0.8rem;left:1rem;}
-.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
-/*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
-.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
+
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ position:relative;top:-1px;background-image:none; background:#fff; border-radius:0; height:5rem; border:1px solid #ddd; width:100%;}
 .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;} /* testing hiding names */
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
@@ -421,17 +419,21 @@ display: none;
     background: #ddd
 }
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
-.main-content .selectpicker li a{ line-height:2.5em; height:2.5em;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:#ddd !important;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ color:red !important;margin-top: 0.5em;}
+.main-content .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:green;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
 
 
 .transcript-container { height:750px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
 
+.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
+/*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
 .transcript-search-result .btn.btn-primary,
 .transcript-search-result .btn.btn-default{ width:20%;}
+.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
+
 .transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-image,
