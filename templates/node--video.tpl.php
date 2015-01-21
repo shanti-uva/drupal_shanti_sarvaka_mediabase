@@ -253,6 +253,7 @@ else:     /************ FULL Display ***********/
 			</div>
 
      </div> <!-- End of av-main-wrapper -->
+  </div>
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
