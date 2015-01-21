@@ -460,7 +460,7 @@ display: none;
 .btn-group-transcript{ background:#fff;width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
-.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em;}
+.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}
 .btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
