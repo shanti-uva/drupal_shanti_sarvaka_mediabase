@@ -425,7 +425,9 @@ display: none;
 
 .av-main-transcript-section .tcu-info{ width:auto;}
 .av-main-transcript-section .speaker-tiers{ margin-left:20%;}
-.av-main-transcript-section .play-button .btn{ padding:0.5rem 1rem;}
+
+.av-main-transcript-section .play-button{ margin:0; position:relative;top:3rem;left:0;}
+.av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
@@ -435,21 +437,6 @@ display: none;
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
 
 
-.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
-/*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
-.transcript-search-result .btn.btn-primary,
-.transcript-search-result .btn.btn-default{ width:20%;}
-.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
-
-.transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
-.transcript-search-result .search-snippet-info,
-.transcript-search-result .shanti-thumbnail-image,
-.transcript-search-result .shanti-thumbnail-info { display:table-cell;vertical-align:top;}
-.transcript-search-result .shanti-thumbnail-info{ width:21%;padding-left:5%; }
-.transcript-search-result .shanti-thumbnail-image{ width:140px;left:-12px;}
-.transcript-search-result .shanti-thumbnail-image a{ top:27px;}
-
-.av-main-transcript-section .play-button a.btn.btn-primary{ margin:0;padding:0.5rem 1rem;}
 
 .av-main-transcript-section  .input-group .form-control{ height:3rem;}
 .av-main-transcript-section  .input-group{
@@ -459,7 +446,7 @@ display: none;
 		width:37rem;
 		display:none;
 }
-form#transcripts-ui-search-form.transcripts-ui-search-form{ 
+form#transcripts-ui-search-form.transcripts-ui-search-form{ /* show hide search form */
 		background: #fff;
 		display: none;
 		height: 5rem;
@@ -474,8 +461,21 @@ form#transcripts-ui-search-form.transcripts-ui-search-form{
 .btn-group-transcript .btn.btn-icon span{ position:static;}
 .btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
-
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
+
+.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
+/*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
+.transcript-search-result .btn.btn-primary,
+.transcript-search-result .btn.btn-default{ width:20%;}
+.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
+
+.transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
+.transcript-search-result .search-snippet-info,
+.transcript-search-result .shanti-thumbnail-image,
+.transcript-search-result .shanti-thumbnail-info { display:table-cell;vertical-align:top;}
+.transcript-search-result .shanti-thumbnail-info{ width:21%;padding-left:5%; }
+.transcript-search-result .shanti-thumbnail-image{ width:140px;left:-12px;}
+.transcript-search-result .shanti-thumbnail-image a{ top:27px;}
 
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
