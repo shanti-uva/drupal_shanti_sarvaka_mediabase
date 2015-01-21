@@ -424,9 +424,9 @@ display: none;
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
 
 .av-main-transcript-section .speaker-tiers{ margin-left:120px;}
-.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
+/*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
-
+*/
 
 .transcript-container { height:750px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
