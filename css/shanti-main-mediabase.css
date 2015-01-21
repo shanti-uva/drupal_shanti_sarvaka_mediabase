@@ -423,7 +423,7 @@ display: none;
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:green;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
 
-.av-main-transcript-section .tcu-info{ width:auto;}
+.av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:20%;}
 .av-main-transcript-section .speaker-name{ float:left;position:absolute;top:1rem;left:2rem;}
 
