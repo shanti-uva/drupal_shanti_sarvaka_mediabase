@@ -416,7 +416,7 @@ display: none;
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
     border: 1px solid #ccc;
-    background: #ddd
+    background: #ddd;
 }
 .main-content .dropdown-menu.open{ border-radius:0;}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
@@ -457,12 +457,11 @@ form#transcripts-ui-search-form.transcripts-ui-search-form{ /* show hide search 
 		top:0.1rem;
 }
 
-.btn-group-transcript{ background:#fff;width:100%;padding:0;margin:0;}
+.btn-group-transcript{ background:#fff;width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
-.btn-group-transcript .btn.btn-icon:last-child{ width:20.5%;}
-.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em .75em;}
-.btn-group-transcript .btn.btn-icon span{ position:static;}
-.btn-group-transcript .btn.btn-icon .icon{/* width:auto;*/ font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
+.btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
+.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em 2em;}
+.btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
