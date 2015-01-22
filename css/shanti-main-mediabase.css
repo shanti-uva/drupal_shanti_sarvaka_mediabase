@@ -411,7 +411,7 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .controls{ width:16rem; position:absolute;top:0.8rem;left:1rem;}
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ display: table-cell;background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;}
+.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ display: table-cell; background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;} /* testing hiding names */
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
