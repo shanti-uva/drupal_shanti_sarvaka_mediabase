@@ -477,7 +477,7 @@ display: none;
 		background: #fff;
 		position:relative;
 		top:0.2rem;
-		padding:0.8rem 2rem;
+		padding:0.8rem 2rem 0.6rem;
 		display:none;
 }
 .av-main-transcript-section  .transcripts-ui-search-form  .input-group.show{ display:block;}
