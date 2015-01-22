@@ -48,13 +48,16 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 		$prefacetmu = $postfacetmu = '';
 		$facetmu = '<div class="tab-content">';
 		$facettabs = array();
+		$fct = 0;
 		foreach($children as $ename) {
 			if(strpos($ename, 'facetapi') > -1) {
+				$fct++;
 				$facets_done = TRUE;
 				list($flabel, $fname) = sarvaka_mediabase_get_facet_info($elements[$ename]['#block']->delta);
 				$srflabel = strtolower($flabel);
 				$facettabs[] = $flabel;
-				$facetmu .= "<div class=\"facet-{$srflabel} tab-pane active\"><div class=\"kmaps-tree facet-{$srflabel} view-wrap\"><div class=\"shoppingcart\" display=\"none;\"></div>{$elements[$ename]['#children']}</div></div>";
+				$active = ($fct == 1) ? " active":"";
+				$facetmu .= "<div class=\"facet-{$srflabel} tab-pane{$active}\"><div class=\"kmaps-tree facet-{$srflabel} view-wrap\">{$elements[$ename]['#children']}</div></div>";
 			} elseif (!$facets_done) {
 				$prefacetmu .= $elements[$ename]['#children'];
 			} else {

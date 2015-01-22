@@ -87,11 +87,37 @@
 	padding-right: 5px;
 }
 
-/* Place checkmark before selected facets */
+/* Place checkmark before selected facets 
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:before {
 	content: "\2713";
 	color: red;
 	margin: 0px 12px 0px -10px;
 	display: inline-block;
 	padding: 3px;
+}*/
+
+/** Fancytree selected styles **/
+ul.fancytree-container li {
+	padding: 0px;
+}
+
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
+	background-color: #d0f2f2;
+}
+
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
+	background-color: transparent;
+	white-space: nowrap;
+}
+
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title a {
+	font-style: italic;
+	white-space: nowrap;
+}
+
+/** Ajax Progress Throbber **/
+.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
+	display: inline;
+	margin: 0;
+	padding: 0;
 }
