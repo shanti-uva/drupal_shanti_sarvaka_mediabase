@@ -274,6 +274,7 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out  = drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
+	$out .= drupal_render($vars['element']['content']['transcript_search']);
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
