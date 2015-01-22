@@ -469,21 +469,17 @@ display: none;
 		width: 79%;
 		position: absolute;
 		top:0.1rem;
-		z-index:-1;
-		
+		z-index:-1;	
 }
-
-.av-main-transcript-section  .input-group{
+.transcripts-ui-search-form  .input-group{
 		width:100%;
 		background: #fff;
 		position:relative;
 		top:0.2rem;
 		padding:0.8rem 2rem 0.6rem;
-		display:none;
+		display:block;
 }
-.av-main-transcript-section  .transcripts-ui-search-form  .input-group.show{ display:block;}
-
-.av-main-transcript-section  .form-control{ height:3.5rem;border-radius:1.5em !important;}
+.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;}
 
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
