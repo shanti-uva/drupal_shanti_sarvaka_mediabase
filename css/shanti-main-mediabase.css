@@ -460,7 +460,8 @@ display: none;
 */
 
 .transcript-container { height:750px; overflow-x:auto;}
-.transcript-container ul:first-child{ -webkit-margin-before: 0;}
+.transcript-container .list-group{ -webkit-margin-before: 0;}
+.transcript-container .alert-info{ margin-bottom:0;}
 
 .transcript-content .playing .speaker-tiers{ border-left:1px solid #222;}
 .transcript-content .scroller .playing { background:#f7f7f7;}
