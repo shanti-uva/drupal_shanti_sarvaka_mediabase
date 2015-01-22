@@ -452,7 +452,7 @@ display: none;
 
 .av-main-transcript-section .play-button{ margin:0; position:relative;top:3.3rem;left:-0.5rem;}
 .av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;font-size:0.88rem;box-shadow: 0 0 10px 0 rgba(50,50,50,0.075);}
-.av-main-transcript-section .play-button .btn:hover{ color:#fff;}
+.av-main-transcript-section .play-button .btn:hover{ color:#333;}
 
 .av-main-transcript-section .play-button .btn .glyphicon{ left:-.3rem; color:#777;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
@@ -462,7 +462,7 @@ display: none;
 .transcript-container { height:750px; overflow-x:auto;}
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
 
-
+.transcript-content .playing .speaker-tiers{ border-left:1px solid #222;}
 
 .transcripts-ui-search-form{
 		height: 5rem;
