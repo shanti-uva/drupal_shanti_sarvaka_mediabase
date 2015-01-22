@@ -471,6 +471,7 @@ display: none;
 		top:0.1rem;
 		z-index:-1;	
 }
+.transcripts-ui-search-form.show{ z-index:1; position:absolute;}
 .transcripts-ui-search-form  .input-group{
 		width:100%;
 		background: #fff;
