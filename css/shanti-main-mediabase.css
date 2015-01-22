@@ -439,7 +439,7 @@ display: none;
     border: 1px solid #ccc;
     background: #ddd;
 }
-.av-main-transcript-section .dropdown-menu.open{ border-radius:0;}
+.av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
 .av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
 .av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
 .av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
