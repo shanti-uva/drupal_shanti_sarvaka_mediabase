@@ -40,6 +40,20 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/*-- Pager fixes (for solr results) --*/
+.pager-first .icon, .pager-previous .icon, .pager-next .icon, .pager-last .icon {
+	border: none;
+}
+
+/*-- Pager changing active to black and inactive to grey --*/
+.pager-first .icon, .pager-previous .icon, .pager-next .icon, .pager-last .icon {
+	color: #999;
+}
+
+.pager-first.active .icon, .pager-previous.active .icon, .pager-next.active .icon, .pager-last.active .icon {
+	color: #222;
+}
+
 .navbar nav.navtop .block h2{ display: none;} /*--- QUESTION: what is this - ? ---*/
  /*--- .navbar .lang ul.dropdown-menu{ left: -2em;} QUESTION: language menu NOT USED any longer - ? ---*/
 
