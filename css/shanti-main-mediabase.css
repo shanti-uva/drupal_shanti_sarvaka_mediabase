@@ -465,10 +465,10 @@ display: none;
 		top:1rem;
 		left:3rem;
 		width:37rem;
-		display:none;
+		display:block;
+		background: #fff;
 }
 .transcripts-ui-search-form{ /* show hide search form */
-		background: #fff;
 		display: block;
 		height: 5rem;
 		width: 75%;
