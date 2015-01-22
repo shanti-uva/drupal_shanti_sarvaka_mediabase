@@ -466,20 +466,22 @@ display: none;
 
 .transcripts-ui-search-form{
 		height: 5rem;
-		width: 76%;
+		width: 79%;
 		position: absolute;
 		top:0.1rem;
-		display:none;
+		
 }
-.av-main-transcript-section  .transcripts-ui-search-form{ display:block;}
 
 .av-main-transcript-section  .input-group{
 		width:100%;
 		background: #fff;
 		position:relative;
 		top:0.2rem;
-		padding:0.8rem 0 0.3rem 2rem;
+		padding:0.8rem 2rem;
+		display:none;
 }
+.av-main-transcript-section  .transcripts-ui-search-form  .input-group.show{ display:block;}
+
 .av-main-transcript-section  .form-control{ height:3.5rem;border-radius:1.5em !important;}
 
 
