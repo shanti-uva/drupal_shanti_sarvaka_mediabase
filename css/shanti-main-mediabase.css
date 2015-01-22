@@ -468,10 +468,11 @@ display: none;
 
 .transcripts-ui-search-form{
 		height: 5rem;
-		width: 79%;
+		width: 78%;
 		position: absolute;
 		top:0.1rem;
 		z-index:-1;	
+		left:.3rem;
 }
 .transcripts-ui-search-form.show{ z-index:1; position:absolute;}
 .transcripts-ui-search-form  .input-group{
