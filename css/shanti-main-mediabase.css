@@ -463,6 +463,8 @@ display: none;
 .transcript-container ul:first-child{ -webkit-margin-before: 0;}
 
 .transcript-content .playing .speaker-tiers{ border-left:1px solid #222;}
+.transcript-content .scroller .playing { background:#f7f7f7;}
+
 
 .transcripts-ui-search-form{
 		height: 5rem;
