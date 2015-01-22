@@ -469,6 +469,7 @@ display: none;
 		width: 79%;
 		position: absolute;
 		top:0.1rem;
+		z-index:-1;
 		
 }
 
