@@ -45,6 +45,8 @@
 	letter-spacing: 0.5px;
 }
 
+.shanti-filters { height:1.75em; margin-bottom:2rem;position:relative;top:-2.5rem;}
+
 /*-- Pager fixes (for solr results) --*/
 .pager-first .icon, .pager-previous .icon, .pager-next .icon, .pager-last .icon {
 	border: none;
