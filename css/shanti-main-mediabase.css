@@ -439,19 +439,20 @@ display: none;
     border: 1px solid #ccc;
     background: #ddd;
 }
-.main-content .dropdown-menu.open{ border-radius:0;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
-.main-content .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:green;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
+.av-main-transcript-section .dropdown-menu.open{ border-radius:0;}
+.av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
+.av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
+.av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
+.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:1px solid #ddd;}
 .av-main-transcript-section .speaker-name{ min-width:15rem;position:absolute;top:1rem;left:1rem;}
 
 
-.av-main-transcript-section .play-button{ margin:0; position:relative;top:3rem;left:0.5rem;}
-.av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;}
+.av-main-transcript-section .play-button{ margin:0; position:relative;top:3.3rem;left:-0.5rem;}
+.av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;font-size:0.88rem;}
+.av-main-transcript-section .play-button .btn .glyphicon{ left:-.3rem; color:#777;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
