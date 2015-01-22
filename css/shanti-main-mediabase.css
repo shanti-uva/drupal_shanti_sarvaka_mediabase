@@ -40,6 +40,11 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/*-- Shanti Gallery for MB -*/
+.shanti-thumbnail-field.shanti-field-title .field-content a {
+	letter-spacing: 0.5px;
+}
+
 /*-- Pager fixes (for solr results) --*/
 .pager-first .icon, .pager-previous .icon, .pager-next .icon, .pager-last .icon {
 	border: none;
