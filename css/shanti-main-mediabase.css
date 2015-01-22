@@ -466,7 +466,7 @@ display: none;
 
 .transcripts-ui-search-form{
 		height: 5rem;
-		width: 100%;
+		width: 76%;
 		position: absolute;
 		top:0.1rem;
 		display:none;
@@ -474,7 +474,7 @@ display: none;
 .av-main-transcript-section  .transcripts-ui-search-form{ display:block;}
 
 .av-main-transcript-section  .input-group{
-		width:76%;
+		width:100%;
 		background: #fff;
 		position:relative;
 		top:0.2rem;
