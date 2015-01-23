@@ -484,7 +484,7 @@ display: none;
 		padding:0.8rem 2rem 0.6rem;
 		display:block;
 }
-.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
+.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
 
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
@@ -501,6 +501,7 @@ display: none;
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
 .transcript-search-result .btn{ width:100%;padding:0.1rem 1rem;}
+.transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;color:#5b68ce;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:5%; border-left:1px solid #ddd;}
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
