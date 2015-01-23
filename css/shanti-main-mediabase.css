@@ -448,44 +448,55 @@ display: none;
     border: 1px solid #ccc;
     background: #ddd;
 }
-.main-content .dropdown-menu.open{ border-radius:0;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
-.main-content .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ color:green;}
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
+.av-main-transcript-section .dropdown-menu.open{ border-radius:0;min-width:18rem;}
+.av-main-transcript-section .dropdown-menu li a span.text{ font-family:'museo-sans-500',helvetica,arial,sans-serif;color:#333;line-height:2.5em;margin-right:7rem;}
+.av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
+.av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
+.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
+.av-main-transcript-section .selectpicker .caret::before{ color:#555;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
-.av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:1px solid #ddd;}
+.av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
+.av-main-transcript-section .speaker-tiers mark{ font-weight:bold;background:transparent;border-bottom:2px solid #aaa;padding:0;}
 .av-main-transcript-section .speaker-name{ min-width:15rem;position:absolute;top:1rem;left:1rem;}
 
 
-.av-main-transcript-section .play-button{ margin:0; position:relative;top:3rem;left:0.5rem;}
-.av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;}
+.av-main-transcript-section .play-button{ margin:0; position:relative;top:3.3rem;left:-0.5rem;}
+.av-main-transcript-section .play-button .btn{ margin:0;padding:0.1rem 1rem;font-size:0.88rem;box-shadow: 0 0 10px 0 rgba(50,50,50,0.075);}
+.av-main-transcript-section .play-button .btn:hover{ color:#333;}
+
+.av-main-transcript-section .play-button .btn .glyphicon{ left:-0.3rem; color:#5b68ce;}
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
 
 .transcript-container { height:750px; overflow-x:auto;}
-.transcript-container ul:first-child{ -webkit-margin-before: 0;}
+.transcript-container .list-group{ -webkit-margin-before: 0;}
+.transcript-container .alert-info{ margin-bottom:0;}
+
+.transcript-content .playing .speaker-tiers{ border-color: #888;}
+.transcript-content .scroller .playing { background:#f7f7f7;}
 
 
-.transcripts-apachesolr-search-snippet .tiers{ margin-left:3%; }
-.av-main-transcript-section  .input-group .form-control{ height:3rem;}
-.av-main-transcript-section  .input-group{
-		position: absolute;
-		top:1rem;
-		left:3rem;
-		width:37rem;
-		display:block;
-		background: #fff;
-}
-.transcripts-ui-search-form{ /* show hide search form */
-		display: block;
+.transcripts-ui-search-form{
 		height: 5rem;
-		width: 75%;
+		width: 78%;
 		position: absolute;
 		top:0.1rem;
+		z-index:-1;	
+		left:.3rem;
 }
+.transcripts-ui-search-form.show{ z-index:100; position:absolute;}
+.transcripts-ui-search-form  .input-group{
+		width:100%;
+		background: #fff;
+		position:relative;
+		top:0.2rem;
+		padding:0.8rem 2rem 0.6rem;
+		display:block;
+}
+.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
+
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
@@ -495,11 +506,19 @@ display: none;
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
+.btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
+.btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ border-left:none;margin-left:0;}
+
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
-.transcript-search-result .btn.btn-primary,
-.transcript-search-result .btn.btn-default{ width:20%;}
-.transcript-search-result .btn.btn-primary:hover{ color:#fff;}
+.transcript-search-result .btn{ width:100%;padding:0.1rem 1rem;}
+.transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;color:#5b68ce;}
+
+.transcripts-apachesolr-search-snippet .tiers{ margin-left:4%; border-left:3px solid #eee;}
+.transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
+
+.transcripts-apachesolr-search-snippet .tiers strong,
+.transcripts-apachesolr-search-snippet .tiers mark{ border-bottom:2px solid #aaa;}
 
 .transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .search-snippet-info,
