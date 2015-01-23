@@ -495,8 +495,8 @@ display: none;
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
 
-.btn-group-transcript .btn-group .btn+.btn{ border-left:none;}
-.btn-group-transcript .btn-group:nth-child(1) > .btn.btn-default{ margin-left:0;}
+.btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
+.btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ margin-left:0;}
 
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
