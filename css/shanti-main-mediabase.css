@@ -475,7 +475,7 @@ display: none;
 		z-index:-1;	
 		left:.3rem;
 }
-.transcripts-ui-search-form.show{ z-index:1; position:absolute;}
+.transcripts-ui-search-form.show{ z-index:100; position:absolute;}
 .transcripts-ui-search-form  .input-group{
 		width:100%;
 		background: #fff;
@@ -494,6 +494,8 @@ display: none;
 .btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:20%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:20%;}
+
+.btn-group-transcript .btn+.btn{ border-left:none;}
 
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
