@@ -444,6 +444,7 @@ display: none;
 .av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
 .av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
+.av-main-transcript-section .selectpicker .caret::before{ color:#555;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}

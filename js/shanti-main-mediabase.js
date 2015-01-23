@@ -83,6 +83,15 @@
 			}
 	  }
 	};
-	
+      
+	Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+				$('.searchtrans').click( function(){  
+					$('.transcripts-ui-search-form').toggleClass('show');		
+				});
+			}
+	  }
+	};	      	
 
 } (jQuery)); // End of JQuery Wrapper
