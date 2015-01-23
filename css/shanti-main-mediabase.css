@@ -484,7 +484,7 @@ display: none;
 		padding:0.8rem 2rem 0.6rem;
 		display:block;
 }
-.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;}
+.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
 
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
