@@ -448,7 +448,7 @@ display: none;
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
-.av-main-transcript-section .speaker-tiers mark{ font-weight:bold;background:transparent;border-bottom:2px solid #aaa;}
+.av-main-transcript-section .speaker-tiers mark{ font-weight:bold;background:transparent;border-bottom:2px solid #aaa;padding:0;}
 .av-main-transcript-section .speaker-name{ min-width:15rem;position:absolute;top:1rem;left:1rem;}
 
 
