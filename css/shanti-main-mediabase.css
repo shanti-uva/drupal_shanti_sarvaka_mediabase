@@ -457,7 +457,7 @@ display: none;
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
-.av-main-transcript-section .speaker-tiers mark{ font-weight:bold;background:transparent;border-bottom:2px solid #aaa;padding:0;}
+.av-main-transcript-section .speaker-tiers mark{ background:#ff0; padding:0;}
 .av-main-transcript-section .speaker-name{ min-width:15rem;position:absolute;top:1rem;left:1rem;}
 
 
@@ -518,7 +518,7 @@ display: none;
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
 
 .transcripts-apachesolr-search-snippet .tiers strong,
-.transcripts-apachesolr-search-snippet .tiers mark{ border-bottom:2px solid #aaa;}
+.transcripts-apachesolr-search-snippet .tiers mark{ background:#ff0; padding:0;}
 
 .transcript-search-result { display:table;width:100%;padding:1rem;min-height:15rem;}
 .transcript-search-result .search-snippet-info,
