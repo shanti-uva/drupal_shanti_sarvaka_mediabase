@@ -32,7 +32,12 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 }
 
 function sarvaka_mediabase_preprocess_block(&$vars) {
-	//dpm($vars, 'in pp block');
+	/*
+	if(!empty($vars['block_html_id']) && strpos($vars['block_html_id'], 'browse-media-home') > -1) {
+		dpm($vars, 'browse media home block vars');
+	}
+	*/
+	// Facet labels
 	if(!empty($vars['#facet']['label'])) {
 		$vars['#facetlabel'] = $vars['#facet']['label'];
 	}
@@ -167,6 +172,7 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  * Views Preprocess
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
+	//dpm($vars, 'pp view');
 	$view = $vars['view'];
   if (isset($view->name) && $view->name == 'collections') {
   	//dpm($view, 'view');
@@ -207,7 +213,35 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
     drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_essays_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
     drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_essays_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
   */
+  } else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
+  	//dpm($vars, 'pp view');
+		$query = $view->query;
+    // Grab the pieces you want and then remove them from the array    
+	    /*$header   = $vars['header'];    $vars['header']   = '';
+	    $pager    = $vars['pager'];     $vars['pager']    = '';
+			$vars['header']   = $header;
+			$vars['pager']    = $pager;*/
+			
+		// Make sure text search box is only size 15 on home page filter
+    $filters  = $vars['exposed'];   $vars['exposed']  = '';
+  	$filters = str_replace('name="title" value="" size="30"', 'name="title" value="" size="15"', $filters);
+		
+		// Set Dropdown selected value
+		$field = $query->orderby[0]['field'];
+		$direction = $query->orderby[0]['direction'];
+		$selval = $query->fields[$field]['field'] . ' ' . $direction;
+		$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
+		/*$filters = str_replace('Date Created Asc', 'Date Created &#11014;', $filters);
+		$filters = str_replace('Date Created Desc', 'Date Created &#11015;', $filters);
+		$filters = str_replace('Asc', '(A-Z)', $filters);
+		$filters = str_replace('Desc', '(Z-A)', $filters);*/
+		//dpm($filters, 'filters');
+		$vars['exposed']  = $filters;
   }
+}
+
+function decodeUniChar($unicodeChar) {
+	return json_decode('"'.$unicodeChar.'"');
 }
 
 /**

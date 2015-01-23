@@ -41,6 +41,15 @@
 /*---------------------------*/
 
 /*-- Shanti Gallery for MB -*/
+
+.shanti-filters td .label {
+	letter-spacing: inherit;
+}
+
+.views-exposed-form .views-widget-filter-title label {
+display: none;
+}
+
 .shanti-thumbnail-field.shanti-field-title .field-content a {
 	letter-spacing: 0.5px;
 }
