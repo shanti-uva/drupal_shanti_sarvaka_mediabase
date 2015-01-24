@@ -314,12 +314,13 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 	//transcript tier selector
-	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
+	//$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
 	$out .= "</select>";
+	//$out .= "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
