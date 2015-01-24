@@ -172,11 +172,7 @@ else:     /************ FULL Display ***********/
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
-	<?php if ($variables['has_transcript']): ?>
-      <div class="video-row" data-transcripts-role="video" data-transcripts-trid="<?php print $trid;?>">
-	<?php else: ?>
       <div class="video-row">
-	<?php endif; ?>
           <?php print render($content['field_video']); ?>
       </div>
 
@@ -184,17 +180,7 @@ else:     /************ FULL Display ***********/
       	<!-- Info/Description row -->
 	      <!-- info column -->
 	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
-	        <!-- <?php if($variables['has_transcript']): ?>
-	          <div class="trans-btn">
-	            <form action="<?php print $transcript_url; ?>" method="post">
-	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
-	            		<span class="icon shanticon-texts"></span> <span>Play with<br/>Transcript</span>
-	          		</button>
-	            </form>
-	          </div>
-	        <?php endif; ?> -->
-		<?php print render($tier_selector); ?>
-					<h5>Details</h5>
+		<h5>Details</h5>
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
@@ -242,14 +228,14 @@ else:     /************ FULL Display ***********/
 			
 			<!-- BEGIN av-main-transcript-section -->
 			<div class="av-main-transcript-section col-xs-6 col-md-5">
-			        <?php if($variables['has_transcript']): ?>
+				<?php if($variables['has_transcript']): ?>
 					<?php print render($transcript_controls); ?>
 			                <div class='transcript-container'>
 			                        <div class='transcript-content' id='transcript'>
 			                        	<?php print render($transcript); ?>
 			                        </div>
 			                </div>
-			        <?php endif; ?>
+                                <?php endif; ?>
 			</div>
 
      </div> <!-- End of av-main-wrapper -->
