@@ -80,8 +80,10 @@
  * @ingroup themeable
  */
 ?>
-<?php // TEASER Display ?>
-<?php if($teaser):
+
+<?php
+/********* TEASER Display ****************/
+if($teaser):
 		//dpm($variables, 'in teaser');
 		?>
 		<li class="shanti-thumbnail audio">
@@ -157,7 +159,10 @@ else:     /************ FULL Display ***********/
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-  <div class="av-main-left">
+
+  <div class="av-main-wrapper row">
+
+  <div class="av-main-video-section col-xs-6 col-md-7">
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -170,19 +175,12 @@ else:     /************ FULL Display ***********/
       <div class="video-row">
           <?php print render($content['field_audio']); ?>
       </div>
-      <div class="avdesc clearfix">
+
+      <div class="avdesc">
       	<!-- Info/Description row -->
 	      <!-- info column -->
-	      <div class="avinfo">
-	        <?php if($variables['has_transcript']): ?>
-	          <div class="trans-btn">
-	            <form action="<?php print $transcript_url; ?>" method="post">
-	            	<button type="submit" class="btn btn-primary btn-icon btn-wrap play-transcript-btn">
-	            		<span class="icon shanticon-texts"></span> <span>Play with<br/>Transcript</span>
-	          		</button>
-	            </form>
-	          </div>
-	        <?php endif; ?>
+	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
+		<h5>Details</h5>
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
@@ -196,13 +194,14 @@ else:     /************ FULL Display ***********/
 	          		<ul>
 	          			<?php  print render($content['service_links']);  ?>
 	          		</ul>
+	          		<!--<p class="hidden"><img src="<?php print $node->thumbnail_url; ?>"/></p>-->
 	          	</div>
 	          </div>
-	      	<?php endif; ?>
-        </div> <!-- End of avinfo -->
-        <div class="video-overview description trim">
+	        <?php endif; ?>
+	      </div> <!-- End of avinfo -->
+	      <div class="video-overview col-xs-12 col-sm-7 col-md-8 col-lg-9">
 	        <h5 class="video-overview-title"><?php print t('Audio Overview'); ?></h5>
-	        <div class="avpbcoredesc">
+	        <div class="avpbcoredesc description trim">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
 	        <?php if(isset($coll)): ?>
@@ -224,13 +223,28 @@ else:     /************ FULL Display ***********/
 		        </div>
 		      <?php endif; ?>
 	      </div>
-	    </div><!--- End av-main-wrap-left -->
-      </div> <!-- End of avdesc -->
+	    </div><!--- End of avdesc -->
+      </div> <!-- End of av-main-video-section -->
+			
+			<!-- BEGIN av-main-transcript-section -->
+			<div class="av-main-transcript-section col-xs-6 col-md-5">
+				<?php if($variables['has_transcript']): ?>
+					<?php print render($transcript_controls); ?>
+			                <div class='transcript-container'>
+			                        <div class='transcript-content' id='transcript'>
+			                        	<?php print render($transcript); ?>
+			                        </div>
+			                </div>
+                                <?php endif; ?>
+			</div>
+
+     </div> <!-- End of av-main-wrapper -->
+  </div>
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
-          <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audios'); ?></a></li>
+          <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audio'); ?></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
