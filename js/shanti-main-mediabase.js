@@ -95,10 +95,10 @@
 	};	 
 	
 	
-	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdown = {
+	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
 		attach: function (context, settings) {
 			if(context == window.document) {
-				$('.tier-selector .filter-option').html('Language');
+				$('.tier-selector .filter-option').replaceWith('<span class="icon shanticon-search></span>');
 			}
 	  }
 	};	
