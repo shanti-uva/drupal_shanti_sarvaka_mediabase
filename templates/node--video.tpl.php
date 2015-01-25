@@ -180,7 +180,6 @@ else:     /************ FULL Display ***********/
       	<!-- Info/Description row -->
 	      <!-- info column -->
 	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
-		<h5>Details</h5>
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
