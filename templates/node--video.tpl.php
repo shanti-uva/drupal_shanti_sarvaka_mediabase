@@ -216,14 +216,14 @@ else:     /************ FULL Display ***********/
 		          	<span class="icon shanticon-places" title="Related Places"></span>
 		          	<?php
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
+		          						print render($content['group_details']['field_pbcore_coverage_spatial']);
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
 		        </div>
 		      <?php endif; ?>
 	      </div>
-	    </div><!--- End of avdesc -->
+	 </div><!--- End of avdesc -->
       </div> <!-- End of av-main-video-section -->
 			
 			<!-- BEGIN av-main-transcript-section -->
@@ -239,7 +239,7 @@ else:     /************ FULL Display ***********/
 			</div>
 
      </div> <!-- End of av-main-wrapper -->
-  </div>
+  </div> <!-- End of content -->
 
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -267,7 +267,6 @@ else:     /************ FULL Display ***********/
           </div> <!-- End of #details -->
         </div>
       </div>
-  </div>
 
   <?php print render($content['links']); ?>
 
