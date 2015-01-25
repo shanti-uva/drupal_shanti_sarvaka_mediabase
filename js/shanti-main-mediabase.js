@@ -92,16 +92,6 @@
 				});
 			}
 	  }
-	};	  
-	
-	
-	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageSelector = {
-		attach: function (context, settings) {
-			if(context == window.document) {	
-				$('.tier-selector .selectpicker').selectpicker('val', 'Language');
-			}
-	  }
-	};	
-	    	
+	};	      	
 
 } (jQuery)); // End of JQuery Wrapper
