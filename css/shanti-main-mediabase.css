@@ -51,7 +51,7 @@ display: none;
 }
 
 .shanti-thumbnail-field.shanti-field-title .field-content a {
-	letter-spacing: 0.5px;
+	letter-spacing:-0.05rem;
 }
 
 .shanti-filters { height:1.75em;}
