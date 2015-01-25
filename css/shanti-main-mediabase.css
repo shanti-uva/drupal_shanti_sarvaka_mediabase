@@ -511,8 +511,8 @@ display: none;
 
 .transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
-.transcript-search-result .btn{ width:100%;padding:0.1rem 1rem;}
-.transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;color:#5b68ce;}
+.transcript-search-result .btn{ width:100%;padding: 0.3rem 1rem 0.1rem;}
+.transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;}
 
 .transcripts-apachesolr-search-snippet .tiers{ margin-left:4%; border-left:3px solid #eee;}
 .transcripts-apachesolr-search-snippet .tiers>div{ padding-left:1.5rem;}
