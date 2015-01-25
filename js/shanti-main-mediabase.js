@@ -92,6 +92,16 @@
 				});
 			}
 	  }
-	};	      	
+	};	 
+	
+	
+	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdown = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+				$('.tier-selector .filter-option').html('Language');
+			}
+	  }
+	};	
+     	
 
 } (jQuery)); // End of JQuery Wrapper
