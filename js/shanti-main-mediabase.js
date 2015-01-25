@@ -98,7 +98,7 @@
 	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageSelector = {
 		attach: function (context, settings) {
 			if(context == window.document) {	
-				$('.tier-selector .selectpicker').val('Language');
+				$('.tier-selector .selectpicker').selectpicker('val', 'Language');
 			}
 	  }
 	};	
