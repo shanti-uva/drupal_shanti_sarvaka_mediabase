@@ -475,7 +475,7 @@ display: none;
 .transcript-container .alert-info{ margin-bottom:0;}
 
 .transcript-content .playing .speaker-tiers{ border-color: #888;}
-.transcript-content .playing { background:#f5f5f5;}
+.transcript-content .playing { border-top:1px solid #aaa; border-bottom:1px solid #aaa; background:#f5f5f5;}
 
 
 .transcripts-ui-search-form{
