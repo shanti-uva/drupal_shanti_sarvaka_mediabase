@@ -334,7 +334,20 @@ function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
         $out = drupal_render($vars['element']['search_form']);
         return $out;
 }
-function sarvaka_mediabase_transcripts_ui_goto_tcu($vars) {
+function sarvaka_mediabase_transcripts_apachesolr_link_tcu($vars) {
+    $mins = floor ($vars['element']['#time'] / 60);
+    $secs = $vars['element']['#time'] % 60;
+    $time = sprintf ("%d:%02d", $mins, $secs);
+    $out = "<a href='" . $vars['element']['#linkurl'] . "' class='btn btn-default' role='button'>";
+    $out .= "<span class='glyphicon glyphicon-play'></span> ";
+    $out .= $time;
+    if (isset($vars['element']['#text'])) {
+        $out .= " " . $vars['element']['#text'];
+    }
+    $out .= "</a>";
+    return $out;
+}
+function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
         $mins = floor ($vars['element']['#time'] / 60);
         $secs = $vars['element']['#time'] % 60;
         $time = sprintf ("%d:%02d", $mins, $secs);
