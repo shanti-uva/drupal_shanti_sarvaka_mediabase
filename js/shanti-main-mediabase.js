@@ -98,7 +98,7 @@
 	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
 		attach: function (context, settings) {
 			if(context == window.document) {
-				$('.tier-selector .filter-option').replaceWith('<span class="icon shanticon-search"></span>');
+				$('.tier-selector .filter-option').replaceWith('<span class="icon shanticon-community"></span>');
 			}
 	  }
 	};	
