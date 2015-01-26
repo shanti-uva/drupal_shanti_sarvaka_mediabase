@@ -446,6 +446,8 @@ display: none;
 .tier-selector .btn .icon{ font-size:1.8rem;line-height:2.5em;}
 .btn-group.tier-selector .btn:hover,
 .btn-group.tier-selector .btn:focus,
+.btn-group.tier-selector .btn:hover .icon,
+.btn-group.tier-selector .btn:focus .icon,
 .btn-group.tier-selector .btn:hover .icon:before,
 .btn-group.tier-selector .btn:focus .icon:before{ background:#ddd !important;}
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
