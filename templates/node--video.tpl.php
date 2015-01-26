@@ -179,7 +179,7 @@ else:     /************ FULL Display ***********/
       <div class="avdesc">
       	<!-- Info/Description row -->
 	      <!-- info column -->
-	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
+	      <div class="avinfo col-xs-12 col-sm-5 col-md-3">		      
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
@@ -198,7 +198,7 @@ else:     /************ FULL Display ***********/
 	          </div>
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
-	      <div class="video-overview col-xs-12 col-sm-7 col-md-8 col-lg-9">
+	      <div class="video-overview col-xs-12 col-sm-7 col-md-9">
 	        <h5 class="video-overview-title"><?php print t('Video Overview'); ?></h5>
 	        <div class="avpbcoredesc description trim">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
@@ -243,7 +243,7 @@ else:     /************ FULL Display ***********/
       <div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
-          <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Videos'); ?></a></li>
+          <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audio/Videos'); ?></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
