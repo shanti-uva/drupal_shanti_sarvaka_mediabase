@@ -497,6 +497,8 @@ display: none;
 }
 .transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
 
+.tier-selector .btn .icon{ font-size:1.8rem;line-height:2.5em;}
+.tier-selector .btn .icon:hover{ background:#ddd;}
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
