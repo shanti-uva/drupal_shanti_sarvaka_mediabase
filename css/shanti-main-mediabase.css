@@ -443,7 +443,7 @@ display: none;
 
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
-.tier-selector .btn .icon{ font-size:1.8rem;line-height:2.5em;}
+.tier-selector .btn .icon{ font-size:2.3rem;line-height:1.5em;color:#666;}
 .btn-group.tier-selector .btn:hover,
 .btn-group.tier-selector .btn:focus,
 .btn-group.tier-selector .btn:hover .icon,
@@ -458,7 +458,7 @@ display: none;
 .av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
 .av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
-.av-main-transcript-section .selectpicker .caret::before{ color:#555;}
+.av-main-transcript-section .selectpicker .caret::before{ color:#555;font-size: 1.62em;left:-3.5rem;top:-1rem;z-index:10;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
