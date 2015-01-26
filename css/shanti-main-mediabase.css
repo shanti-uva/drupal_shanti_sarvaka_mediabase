@@ -443,7 +443,7 @@ display: none;
 
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
-.tier-selector .btn .icon{ font-size:2.3rem;line-height:1.5em;color:#666;}
+.tier-selector .btn .icon{ font-size:2.3rem;line-height:1.5em;color:#666;left:0.4rem;}
 .btn-group.tier-selector .btn:hover,
 .btn-group.tier-selector .btn:focus,
 .btn-group.tier-selector .btn:hover .icon,
@@ -500,9 +500,7 @@ display: none;
 		padding:0.8rem 2rem 0.6rem;
 		display:block;
 }
-.transcripts-ui-search-form  .form-control{ height:3.5rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
-
-
+.transcripts-ui-search-form  .form-control{ max-width:100%; height:3.5rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:20%;}
