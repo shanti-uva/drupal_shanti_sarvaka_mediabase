@@ -444,10 +444,10 @@ display: none;
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
 .tier-selector .btn .icon{ font-size:1.8rem;line-height:2.5em;}
-.av-main-transcript-section .btn-group.tier-selector .btn:hover,
-.av-main-transcript-section .btn-group.tier-selector .btn:focus,
-.av-main-transcript-section .btn-group.tier-selector .btn .icon:hover,
-.av-main-transcript-section .btn-group.tier-selector .btn .icon:focus{ background:#ddd;}
+.btn-group.tier-selector .btn:hover,
+.btn-group.tier-selector .btn:focus,
+.btn-group.tier-selector .btn:hover .icon:before,
+.btn-group.tier-selector .btn:focus .icon:before{ background:#ddd !important;}
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
     border: 1px solid #ccc;
