@@ -16,6 +16,8 @@
 
 .content-section{ padding-top:1rem;}
 
+.view-header h1{ font-size:1.5em; margin-top:0;}
+
 /*--- view collections page ---*/
 
 .view-collections .views-exposed-form{ margin-bottom:0; /*border-bottom:1px solid #ccc;*/ }
@@ -206,7 +208,7 @@ a.hide-annot:before{
   width: 100%;
   border-top:0;
   margin: 10px 0;
-  border-color:none;
+  border-color:transparent;
 }
 
 .view-all-colls-control-box-row  {
@@ -443,7 +445,7 @@ display: none;
 
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
-.bootstrap-select.btn-group.tier-selector .icon:first-child{ font-size:2.3rem;line-height:1.5em;color:#666;position:relative;left:0;top:0;}
+.bootstrap-select.btn-group.tier-selector .icon:first-child{ font-size:2.3rem;line-height:1.5em;color:#666;position:relative;left:0;top:0;width:auto;}
 .bootstrap-select.btn-group.tier-selector .btn:hover,
 .bootstrap-select.btn-group.tier-selector .btn:focus,
 .bootstrap-select.btn-group.tier-selector .btn:hover .icon,
@@ -458,7 +460,7 @@ display: none;
 .av-main-transcript-section .selectpicker li a{ line-height:2.5em; height:2.5em;color:blue;}
 .av-main-transcript-section .dropdown-menu li a .check-mark{ color:green;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0.5em;}
-.av-main-transcript-section .selectpicker .caret::before{ color:#555;font-size: 1.62em;left:-3rem;right:0;top:-1rem;z-index:10;}
+.av-main-transcript-section .selectpicker .caret::before{ color:#555;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
 
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
