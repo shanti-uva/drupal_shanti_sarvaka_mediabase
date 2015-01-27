@@ -42,7 +42,7 @@
 .view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
 
 /* Home media list block */
-div#block-views-browse-media-home-block .shanti-filters { top: -2.5rem; }
+div#block-views-browse-media-home-block .shanti-filters {  }
 
 /* Kmaps List page views*/
 .page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 6px 0px 0px;}
@@ -447,7 +447,7 @@ display: none;
  /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
  
 
-.transcripts-apachesolr-search-snippet .controls{ width:16rem; position:absolute;top:0.8rem;left:1rem;}
+.transcripts-apachesolr-search-snippet .controls{ width:15.5rem; position:absolute;top:0.8rem;left:1rem;}
 
 .av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
