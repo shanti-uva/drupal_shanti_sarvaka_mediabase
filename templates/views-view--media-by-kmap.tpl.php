@@ -27,7 +27,8 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
+<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
+
 	<?php //dpm($variables, 'vars'); ?>
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -37,8 +38,7 @@
   
   <?php if ($rows && $pager): ?>
 	<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
-	<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
-		<div class="shanti-filters">
+			<div class="shanti-filters">
 		  	<table>
 				    <tr>
 				    		<td>
@@ -64,19 +64,21 @@
       <?php print $attachment_before; ?>
     </div>
   <?php endif; ?>
-
-  <?php if ($rows): ?>
-	    <div class="view-content">
-		    <ul class="shanti-gallery">
-					<?php print $rows; //dpm($rows, 'rows')?>
-				</ul>
+	
+	<div class="<?php print $classes; ?>">
+	  <?php if ($rows): ?>
+		    <div class="view-content">
+			    <ul class="shanti-gallery">
+						<?php print $rows; //dpm($rows, 'rows')?>
+					</ul>
+		    </div>
+	
+	  <?php elseif ($empty): ?>
+	    <div class="view-empty">
+	      <?php print $empty; ?>
 	    </div>
-
-  <?php elseif ($empty): ?>
-    <div class="view-empty">
-      <?php print $empty; ?>
-    </div>
-  <?php endif; ?>
+	  <?php endif; ?>
+	</div><?php /* class view */ ?>
 	
   <?php if ($attachment_after): ?>
     <div class="attachment attachment-after">
@@ -105,5 +107,4 @@
 			<?php print $pager; ?>
 		</div>
 	<?php endif; ?>
-	</div><?php /* class view */ ?>
 </div><?php /* end template div*/?>
