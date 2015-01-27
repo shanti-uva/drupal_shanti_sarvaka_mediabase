@@ -213,6 +213,7 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
     drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_essays_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
     drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_essays_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
   */
+  // Home page view Tweaks
   } else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
   	//dpm($vars, 'pp view');
 		$query = $view->query;
@@ -237,6 +238,18 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
 		$filters = str_replace('Desc', '(Z-A)', $filters);*/
 		//dpm($filters, 'filters');
 		$vars['exposed']  = $filters;
+		
+	// List views of Media By Kmap
+  } else if(isset($view->name) && $view->name == 'media_by_kmap') {
+  	$type = $vars['display_id'];
+  	$title = "";
+		$kmid = $view->args[0];
+		if($type == 'list_places') {
+			module_load_include('inc', 'mb_location', 'mb_location');
+			$place = _get_kmap_place($kmid);
+			$title .= "Resources Tagged With " . $place->header;
+		}
+		$vars['title'] = $title;
   }
 }
 
