@@ -35,16 +35,20 @@
 .view-collections .views-field-title{ font-size:1.5em;margin-bottom:-0.5em;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
 .view-collections .views-field-realname{ margin-bottom:0.25em;margin-top:1em;font-size:90%;color:#808080;font-style:italic;}
 .view-collections .views-field-field-images img{ float:left;margin:.44em .88em .18em 0;-webkit-box-shadow:0 0 3px 0 rgba(50, 50, 50, 0.7);box-shadow:0 0 3px 0 rgba(50, 50, 50, 0.7);border-collapse: separate; /* fix for ie9 shadow */}
-/* collections page thumbnail - remove responsive class */
-.view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
-
-/* Kmaps List page views*/
-.page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 6px 0px 0px;}
-.page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; top: -2.5rem; }
 
 /*---------------------------*/
 /***** REVIEW STYLES *********/
 /*---------------------------*/
+
+/* collections page thumbnail - remove responsive class */
+.view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
+
+/* Home media list block */
+div#block-views-browse-media-home-block .shanti-filters { top: -2.5rem; }
+
+/* Kmaps List page views*/
+.page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 6px 0px 0px;}
+.page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; top: -2.5rem; }
 
 /*-- Shanti Gallery for MB -*/
 
