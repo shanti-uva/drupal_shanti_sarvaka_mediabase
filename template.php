@@ -247,7 +247,12 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
 		if($type == 'list_places') {
 			module_load_include('inc', 'mb_location', 'mb_location');
 			$place = _get_kmap_place($kmid);
-			$title .= "Resources Tagged With " . $place->header;
+			$title .= "Resources Tagged With &ldquo;" . $place->header . "&rdquo;";
+		} else if($type == 'list_subcollections' || $type == 'list_subjects') {
+			module_load_include('inc','kmap_taxonomy','includes/kmap');
+			$kmap = new Kmap($kmid);
+			$t = $kmap->get_term();
+			$title .= "Resources Tagged with &ldquo;" . $t->name . "&rdquo;";
 		}
 		$vars['title'] = $title;
   }

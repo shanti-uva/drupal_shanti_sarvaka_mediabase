@@ -58,7 +58,6 @@
 				</table>
 		</div>
 	<?php endif; ?>
-	
 
   <?php if ($attachment_before): ?>
     <div class="attachment attachment-before">
