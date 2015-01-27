@@ -39,9 +39,9 @@
 				    		</td>
 				        <td>
 				        	<?php if ($exposed): ?>
-			              <span class="view-filters-mb">
+			              <div class="view-filters-mb">
 			                <?php print $exposed; ?>
-			              </span>
+			              </div>
 			            <?php endif;?>
 				        </td>
 				        <td>
