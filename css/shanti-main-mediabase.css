@@ -516,8 +516,8 @@ display: none;
 .btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
 .btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ border-left:none;margin-left:0;}
 
-.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#777;}
-.transcript-search-result .btn.btn-primary.untimed{ background:#ddd;}
+.transcript-search-result .btn.btn-primary{ font-weight:bold;font-size:0.62em;color:#eee;}
+.transcript-search-result .btn.btn-primary.untimed{ background:#ddd;color:#777;}
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
 .transcript-search-result .btn{ width:100%;padding: 0.3rem 1rem 0.1rem;}
 .transcript-search-result .btn .glyphicon{ position:relative;left:-0.5rem;}
