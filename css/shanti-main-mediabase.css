@@ -534,13 +534,15 @@ display: none;
 .transcripts-apachesolr-search-snippet .tiers strong,
 .transcripts-apachesolr-search-snippet .tiers mark{ background:#ff0; padding:0;}
 
-.transcript-search-result { display:table;width:100%;padding:0 1rem;min-height:14rem;}
+.transcript-search-result { display:table;width:100%;padding:0 1rem;min-height:13.5rem;}
 .transcript-search-result .search-snippet-info,
 .transcript-search-result .shanti-thumbnail-image,
 .transcript-search-result .shanti-thumbnail-info { display:table-cell;vertical-align:top;}
 .transcript-search-result .shanti-thumbnail-info{ width:21%;padding-left:5%; }
 .transcript-search-result .shanti-thumbnail-image{ width:13.5rem;}
-.transcript-search-result .shanti-thumbnail-image img{ height:12rem;}
+.transcript-search-result .shanti-thumbnail-image img{ height:10rem;}
 .transcript-search-result .shanti-thumbnail-image a{ position:relative;top:32px;border-radius:0.3rem;}
 .transcript-search-result .shanti-thumbnail-info .btn:last-child{ margin-bottom:2rem;padding:0;font-size:0.88em;min-width:115px;max-width:12rem;position:relative;top:0.3rem;left:-0.5rem;}
-.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2em;}
+.transcript-search-result .shanti-thumbnail-image a .overlay::before{ line-height:2.25em;}
+.transcript-search-result .shanti-thumbnail-image a:hover .overlay::before, 
+.transcript-search-result .shanti-thumbnail-image a:focus .overlay::before{ font-size:3.5em !important;}
