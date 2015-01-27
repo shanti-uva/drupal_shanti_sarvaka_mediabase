@@ -104,4 +104,5 @@
 			<?php print $pager; ?>
 		</div>
 	<?php endif; ?>
-</div><?php /* class view */ ?>
+	</div><?php /* class view */ ?>
+</div><?php /* end template div*/?>
