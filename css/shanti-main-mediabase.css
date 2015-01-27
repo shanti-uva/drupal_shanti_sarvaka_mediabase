@@ -465,7 +465,7 @@ display: none;
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
 .av-main-transcript-section .speaker-tiers mark{ background:#ff0; padding:0;}
-.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:4%;width:12rem;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;}
+.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:2%;width:11rem;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;}
 
 
 .av-main-transcript-section .play-button{ margin:0; position:relative;top:2.5rem;left:4%;}
