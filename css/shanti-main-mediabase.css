@@ -513,14 +513,14 @@ display: none;
 .transcripts-ui-search-form  .form-control{ max-width:85%; height:3.3rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;}
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
-.btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.6%;}
+.btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
 .btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}
 .btn-group-transcript .btn.btn-icon .fa,
 .btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:1.75rem; position:static;line-height:1;width:auto;background:transparent;}
 .btn-group-transcript .btn.btn-icon .fa{ font-size:1em;line-height: 2.32em;}
-.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:16.6%;}
-.btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:16.6%;}
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:16.66%;}
+.btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:16.66%;}
 
 .btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
 .btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ border-left:none;margin-left:0;}
