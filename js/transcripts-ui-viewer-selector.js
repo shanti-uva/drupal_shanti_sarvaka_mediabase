@@ -5,7 +5,7 @@
 				var $viewerSelect = $('.viewer-select', this);
 				$('option[value=transcripts_controller]', $viewerSelect).attr('data-icon', 'shanticon-play-transcript');
                                 $('option[value=unit_player]', $viewerSelect).attr('data-icon', 'shanticon-stack');
-                                $('option[value=speech_bubbles]', $viewerSelect).attr('data-icon', 'fa-language');
+                                $('option[value=speech_bubbles]', $viewerSelect).attr('data-icon', 'fa-comments-o');
 			});
 		}
 	}

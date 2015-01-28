@@ -99,7 +99,7 @@
 	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
 		attach: function (context, settings) {
 			if(context == window.document) {
-				$('.tier-selector .filter-option').replaceWith('<span class="icon fa-language"></span>');
+				$('.tier-selector .filter-option').replaceWith('<span class="icon fa-comments-o"></span>');
 			}
 	  }
 	};	
