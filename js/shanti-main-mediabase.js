@@ -91,10 +91,6 @@
 					$('.transcripts-ui-search-form').toggleClass('show-search');		
 					$('.transcript-container').toggleClass('show-search');	
 				});
-				
-				$('.btn-group-transcript .fa-play').click( function(){  
-					$(this).toggleClass('fa-play fa-pause');		
-				});								
 			}
 	  }
 	};	 
