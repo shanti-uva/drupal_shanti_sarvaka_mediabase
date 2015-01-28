@@ -381,6 +381,20 @@ function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
         $out .= "</button>";
         return $out;
 }
+function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
+	$form['search']['buttons']['go']['#id'] = 'searchbutton';
+	$form['search']['buttons']['go']['#inner'] = "<i class='icon'></i>";
+        $form['search']['buttons']['go']['#find'] = 'btn-primary';
+        $form['search']['buttons']['go']['#replace'] = 'btn-default';
+	$form['search']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+        $form['search']['buttons']['reset']['#inner'] = "<i class='icon'></i>";
+	$form['search']['buttons']['reset']['#find'] = 'btn-primary';
+	$form['search']['buttons']['reset']['#replace'] = 'searchreset';
+        $form['search']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+}
+function sarvaka_mediabase_find_replace($markup, $element) {
+	return str_replace($element['#find'], $element['#replace'], $markup);
+}
 function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
         $form['viewer_selector']['#title'] = '';
         $form['viewer_selector']['#attributes']['data-header'] = t('Select View');
