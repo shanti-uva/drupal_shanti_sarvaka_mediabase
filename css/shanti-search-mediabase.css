@@ -19,6 +19,8 @@
 .view-section ul.fancytree-container { min-height: 100%; }
 .fancytree-expander { background-image: none !important; } /* Removes default fancytree arrows */
 
+.input-section .search-group .radio-inline:first-child{ width:20px;}
+
 /*--------- SOLR Results ---------------*/
 .mb-solr-results {
 	margin: 18px 0 0;
@@ -126,3 +128,7 @@ ul.fancytree-container li {
 	margin: 0;
 	padding: 0;
 }
+
+
+
+
