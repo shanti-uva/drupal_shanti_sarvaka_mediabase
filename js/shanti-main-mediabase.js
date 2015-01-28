@@ -90,6 +90,10 @@
 				$('.searchtrans').click( function(){  
 					$('.transcripts-ui-search-form').toggleClass('show');		
 				});
+				
+				$('.btn-group-transcript .fa-play').click( function(){  
+					$(this).toggleClass('fa-play fa-pause');		
+				});								
 			}
 	  }
 	};	 
