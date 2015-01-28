@@ -346,10 +346,12 @@ function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 	$out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
+	$out .= "</div>"
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
-        $out = drupal_render($vars['element']['search_form']);
+				$out  = "<div>"
+        $out .= drupal_render($vars['element']['search_form']);
         return $out;
 }
 function sarvaka_mediabase_transcripts_apachesolr_link_tcu($vars) {
