@@ -341,7 +341,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
-	$out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play'><span class='fa fa-play'></span></button>";
+	$out  = "<button type='button' class='btn btn-default btn-icon playpause' title='Play / Pause'><span class='fa fa-play'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon previous' title='Previous line'><span class='icon shanticon-arrow-left'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon sameagain' title='Same line'><span class='icon shanticon-spin3'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
