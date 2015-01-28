@@ -449,7 +449,7 @@ display: none;
 
 .transcripts-apachesolr-search-snippet .controls{ width:15.5rem; position:absolute;top:0.8rem;left:1.2rem;}
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:5.5rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
+.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker{ /*display: table-cell;*/ background-image:none; background:#fff; border-radius:0; height:6.2rem; border:1px solid #ddd; width:100%;position: relative; top:-0.15rem;}
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
 .bootstrap-select.btn-group.tier-selector .icon:first-child{ font-size:2.3rem;line-height:1.5em;color:#606060;position:relative;left:0.5rem;top:0;width:auto;}
 .bootstrap-select.btn-group.tier-selector .btn:hover,
@@ -518,6 +518,8 @@ display: none;
 .btn-group-transcript .btn.btn-icon .fa,
 .btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:2rem; position:static;line-height:1;width:auto;background:transparent;}
 .btn-group-transcript .btn.btn-icon .fa{ font-size:1em;line-height: 2.32em;}
+.btn-group-transcript .btn.btn-icon.playpause{ font-size:1em;}
+
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:16.66%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:16.66%;}
 
