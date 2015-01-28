@@ -498,9 +498,10 @@ display: none;
 		width: 100%;
 		position: absolute;
 		top:5.7rem;
-		z-index:1;
+		display:none;
+		-webkit-transition: all 500ms ease 1s;-moz-transition: all 500ms ease 1s;-o-transition: all 500ms ease 1s;transition:  all 500ms ease 1s;	
 }
-.transcripts-ui-search-form.show-search{ z-index:99; position:absolute;-webkit-transition: all 200ms ease 0s;-moz-transition: all 200ms ease 0s;-o-transition: all 200ms ease 0s;transition:  all 200ms ease 0s;}
+.transcripts-ui-search-form.show-search{ display:block;}
 .transcripts-ui-search-form  .input-group{
 		width:100%;
 		background: #f9f9f9;
