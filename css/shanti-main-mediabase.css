@@ -483,7 +483,7 @@ display: none;
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
 
-.transcript-container { height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 100ms ease 1s;-moz-transition: all 100ms ease 1s;-o-transition: all 100ms ease 1s;transition:  all 100ms ease 1s;}
+.transcript-container { height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 200ms ease 1s;-moz-transition: all 200ms ease 1s;-o-transition: all 200ms ease 1s;transition:  all 200ms ease 1s;}
 .transcript-container.show-search { margin-top:7rem;}
 
 .transcript-container .list-group{ -webkit-margin-before: 0;}
@@ -498,10 +498,8 @@ display: none;
 		width: 100%;
 		position: absolute;
 		top:5.7rem;
-		z-index:-1;
-		-webkit-transition: all 200ms ease 1s;-moz-transition: all 200ms ease 1s;-o-transition: all 200ms ease 1s;transition:  all 200ms ease 1s;	
+		z-index:1;
 }
-.transcripts-ui-search-form.show-search{ z-index:99; position:absolute;-webkit-transition: all 200ms ease 0s;-moz-transition: all 200ms ease 0s;-o-transition: all 200ms ease 0s;transition:  all 200ms ease 0s;}
 .transcripts-ui-search-form  .input-group{
 		width:100%;
 		background: #f9f9f9;
@@ -512,7 +510,7 @@ display: none;
 }
 .transcripts-ui-search-form  .form-control{ max-width:85%; height:3.3rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;}
 
-.btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
+.btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;position:absolute;z-index:10;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
 .btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}

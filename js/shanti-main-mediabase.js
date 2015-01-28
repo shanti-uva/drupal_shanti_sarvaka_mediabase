@@ -88,7 +88,6 @@
 		attach: function (context, settings) {
 			if(context == window.document) {
 				$('.searchtrans').click( function(){  
-					$('.transcripts-ui-search-form').toggleClass('show-search');		
 					$('.transcript-container').toggleClass('show-search');	
 				});
 				
