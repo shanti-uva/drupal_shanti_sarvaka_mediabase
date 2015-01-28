@@ -499,7 +499,7 @@ display: none;
 		position: absolute;
 		top:5.7rem;
 		z-index:-1;
-		-webkit-transition: all 500ms ease 0s;-moz-transition: all 500ms ease 0s;-o-transition: all 500ms ease 0s;transition:  all 500ms ease 0s;	
+		-webkit-transition: all 700ms ease 1s;-moz-transition: all 700ms ease 1s;-o-transition: all 700ms ease 1s;transition:  all 700ms ease 1s;	
 }
 .transcripts-ui-search-form.show-search{ z-index:99; position:absolute;}
 .transcripts-ui-search-form  .input-group{
