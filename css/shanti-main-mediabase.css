@@ -507,6 +507,7 @@ display: none;
 		padding:1rem 2rem 0;
 		display:block;
 		height:7rem;
+		border:1px solid #ddd;
 }
 .transcripts-ui-search-form  .form-control{ max-width:85%; height:3.3rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;}
 
