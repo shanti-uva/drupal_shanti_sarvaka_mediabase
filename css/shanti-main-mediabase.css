@@ -501,34 +501,6 @@ display: none;
 
 
 
-
-
-
-
-
-.transcripts-ui-search-form{
-		position: absolute;
-		top:5.7rem;
-		z-index:-1;
-		-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;	
-}
-.transcripts-ui-search-form.show-search{ z-index:99; position:absolute;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
@@ -543,6 +515,8 @@ display: none;
 
 .btn-group-transcript.btn-group .btn+.btn{ border-left:none;}
 .btn-group-transcript.btn-group:nth-child(1) > .btn.btn-default{ border-left:none;margin-left:0;}
+
+
 
 
 
