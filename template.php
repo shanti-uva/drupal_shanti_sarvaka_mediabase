@@ -392,6 +392,13 @@ function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_
 	$form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
 	$form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
         $form['search']['input']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+
+	$form['search']['form_id'] = $form['form_id'];
+	$form['search']['form_token'] = $form['form_token'];
+	$form['search']['form_build_id'] = $form['form_build_id'];
+	unset($form['form_id']);
+	unset($form['form_token']);
+	unset($form['form_build_id']);
 }
 function sarvaka_mediabase_find_replace($markup, $element) {
 	return str_replace($element['#find'], $element['#replace'], $markup);
