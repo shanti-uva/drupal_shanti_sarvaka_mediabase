@@ -328,7 +328,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	$out .= "</div>";
-	$out .= drupal_render($vars['element']['content']['transcript_search']);
+	$out .= "<div class='transcript-search-wrapper'>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
