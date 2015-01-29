@@ -328,7 +328,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 	$out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
 	$out .= "</div>";
-	$out .= "<div class='transcript-search-wrapper'>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
+	$out .= drupal_render($vars['element']['content']['transcript_search']);
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
@@ -383,15 +383,15 @@ function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
         return $out;
 }
 function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
-	$form['search']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
-	$form['search']['buttons']['go']['#inner'] = "<i class='icon'></i>";
-        $form['search']['buttons']['go']['#find'] = 'btn-primary';
-        $form['search']['buttons']['go']['#replace'] = 'btn-default';
-	$form['search']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
-        $form['search']['buttons']['reset']['#inner'] = "<i class='icon'></i>";
-	$form['search']['buttons']['reset']['#find'] = 'btn-primary';
-	$form['search']['buttons']['reset']['#replace'] = 'searchreset';
-        $form['search']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+	$form['search']['input']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
+	$form['search']['input']['buttons']['go']['#inner'] = "<span class='icon'></span>";
+        $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
+        $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
+	$form['search']['input']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+        $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon'></span>";
+	$form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
+	$form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
+        $form['search']['input']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
 }
 function sarvaka_mediabase_find_replace($markup, $element) {
 	return str_replace($element['#find'], $element['#replace'], $markup);
