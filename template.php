@@ -334,7 +334,7 @@ function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 	//transcript tier selector
-	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
+	$out = "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
 	}
@@ -383,7 +383,7 @@ function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
         return $out;
 }
 function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
-	$form['search']['buttons']['go']['#id'] = 'searchbutton';
+	$form['search']['buttons']['go']['#attributes']['class'][] = 'searchbutton';
 	$form['search']['buttons']['go']['#inner'] = "<i class='icon'></i>";
         $form['search']['buttons']['go']['#find'] = 'btn-primary';
         $form['search']['buttons']['go']['#replace'] = 'btn-default';
