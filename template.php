@@ -388,10 +388,23 @@ function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_
         $form['search']['input']['buttons']['go']['#find'] = 'btn-primary';
         $form['search']['input']['buttons']['go']['#replace'] = 'btn-default';
 	$form['search']['input']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+
         $form['search']['input']['buttons']['reset']['#inner'] = "<span class='icon'></span>";
 	$form['search']['input']['buttons']['reset']['#find'] = 'btn-primary';
 	$form['search']['input']['buttons']['reset']['#replace'] = 'searchreset';
         $form['search']['input']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+
+        $form['search']['navigate']['buttons']['next']['#attributes']['class'][] = 'nextresult';
+        $form['search']['navigate']['buttons']['next']['#inner'] = "<span class='icon'></span>";
+        $form['search']['navigate']['buttons']['next']['#find'] = 'btn-primary';
+        $form['search']['navigate']['buttons']['next']['#replace'] = 'btn-default';
+        $form['search']['navigate']['buttons']['next']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+
+        $form['search']['navigate']['buttons']['previous']['#attributes']['class'][] = 'previousresult';
+        $form['search']['navigate']['buttons']['previous']['#inner'] = "<span class='icon'></span>";
+        $form['search']['navigate']['buttons']['previous']['#find'] = 'btn-primary';
+        $form['search']['navigate']['buttons']['previous']['#replace'] = 'btn-default';
+        $form['search']['navigate']['buttons']['previous']['#post_render'][] = 'sarvaka_mediabase_find_replace';
 
 	$form['search']['form_id'] = $form['form_id'];
 	$form['search']['form_token'] = $form['form_token'];
