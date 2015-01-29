@@ -104,9 +104,6 @@
 }*/
 
 /** Fancytree selected styles **/
-ul.fancytree-container li {
-	padding: 0px;
-}
 
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
 	background-color: #d0f2f2;
