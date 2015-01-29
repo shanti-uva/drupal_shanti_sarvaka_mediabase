@@ -596,24 +596,28 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active .icon{ color:#777;}
+
 /*--- clear all button ---*/
-.transcript-search-wrapper .input-group-btn .searchreset{
+.transcript-search-wrapper .input-group-btn .btn.searchreset { 
 	border:none;
 	background:transparent;
 	background-image:none;
 	width:15px;
 	height:15px;
 	position:absolute;
-	right:46px;
+	right:50px;
 	top:9px;
 	z-index:10000;
+	padding:0;
+	margin:0;
+	display:none;
 	font-size:1.5em;
 	color:#ccc;
-	display:none;
-	padding:0;margin:0;
 }
-
-
+.transcript-search-wrapper .input-group-btn .btn.searchreset:active,
+.transcript-search-wrapper .input-group-btn .btn.searchreset.active{ box-shadow:none; background-image:none;}
+.transcript-search-wrapper .input-group-btn .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
+.transcript-search-wrapper .input-group-btn .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
 
 
