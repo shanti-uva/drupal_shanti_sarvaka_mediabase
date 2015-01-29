@@ -523,22 +523,16 @@ display: none;
 
 .transcript-search-wrapper{
 		background: #f9f9f9;
-		padding:1rem 2rem 0;
+		padding:0;
 		display:none;
-		height:7rem;
+		height:7.5rem;
 		border:1px solid #ddd;
 		position:relative;
 }
-/*
-.transcript-search-wrapper .form-control{ max-width:85%; height:3.3rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;}
-*/
-
-
-
-/*-------*/
-
-
-/*--- search ux ---*/
+.transcripts-ui-search-form{ height:7.5rem;}
+.transcripts-ui-search-form > div{ display:table;}
+.transcript-search-input{ display:table-cell;}
+.transcript-navigate-results{ display:table-cell;}
 
 .transcript-search-wrapper .form-control{
 	color:#777;
@@ -582,6 +576,7 @@ display: none;
 	padding:0;
 	margin:0;
 	font-size:1.2rem;
+	background:#eee;
 	background-image:none;
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
