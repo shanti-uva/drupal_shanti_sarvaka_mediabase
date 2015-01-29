@@ -324,15 +324,16 @@ function sarvaka_mediabase_preprocess_apachesolr_search_snippets(&$vars) {
         }
 }
 function sarvaka_mediabase_transcripts_ui_transcript_controls($vars) {
-	$out  = drupal_render($vars['element']['content']['transcript_options']);
+	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
+	$out .= drupal_render($vars['element']['content']['transcript_options']);
 	$out .= drupal_render($vars['element']['content']['transcript_navigation']);
-	$out .= drupal_render($vars['element']['content']['transcript_search']);
+	$out .= "</div>";
+	$out .= "<div>" .drupal_render($vars['element']['content']['transcript_search']). "</div>";
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_options($vars) {
 	//speaker name selector
 	//transcript tier selector
-	$out  = "<div class='btn-group btn-group-justified btn-group-transcript' role='group'>";
 	$out .= "<select multiple class='selectpicker tier-selector' data-header='Languages'>";
 	foreach ($vars['element']['data_tiers'] as $key => $val) {
 		$out .= "<option value='{$key}'>{$val}</option>";
@@ -380,6 +381,20 @@ function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
 	}
         $out .= "</button>";
         return $out;
+}
+function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
+	$form['search']['buttons']['go']['#id'] = 'searchbutton';
+	$form['search']['buttons']['go']['#inner'] = "<i class='icon'></i>";
+        $form['search']['buttons']['go']['#find'] = 'btn-primary';
+        $form['search']['buttons']['go']['#replace'] = 'btn-default';
+	$form['search']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+        $form['search']['buttons']['reset']['#inner'] = "<i class='icon'></i>";
+	$form['search']['buttons']['reset']['#find'] = 'btn-primary';
+	$form['search']['buttons']['reset']['#replace'] = 'searchreset';
+        $form['search']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
+}
+function sarvaka_mediabase_find_replace($markup, $element) {
+	return str_replace($element['#find'], $element['#replace'], $markup);
 }
 function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
         $form['viewer_selector']['#title'] = '';
