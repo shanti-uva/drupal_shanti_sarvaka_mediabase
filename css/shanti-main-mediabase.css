@@ -524,9 +524,10 @@ display: none;
 .transcript-search-wrapper{
 		background: #f9f9f9;
 		padding:1rem 2rem 0;
-		display:block;
+		display:none;
 		height:7rem;
 		border:1px solid #ddd;
+		position:relative;
 }
 /*
 .transcript-search-wrapper .form-control{ max-width:85%; height:3.3rem;border-radius:1.5em !important;font-size:1.12em;padding-left:2rem;}
