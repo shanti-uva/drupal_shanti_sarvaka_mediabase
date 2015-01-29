@@ -347,11 +347,11 @@ function sarvaka_mediabase_transcripts_ui_transcript_navigation($vars) {
 	$out .= "<button type='button' class='btn btn-default btn-icon next' title='Next line'><span class='icon shanticon-arrow-right'></span></button>";
 	$out .= "<button type='button' class='btn btn-default btn-icon searchtrans' title='Search Transcript'><span class='icon shanticon-magnify'></span></button>";
 	$out .= "</div>"
+	$out .= "<div>"
 	return $out;
 }
 function sarvaka_mediabase_transcripts_ui_transcript_search($vars) {
-				$out  = "<div>"
-        $out .= drupal_render($vars['element']['search_form']);
+        $out = drupal_render($vars['element']['search_form']);
         return $out;
 }
 function sarvaka_mediabase_transcripts_apachesolr_link_tcu($vars) {
@@ -382,20 +382,6 @@ function sarvaka_mediabase_transcripts_ui_play_tcu($vars) {
 	}
         $out .= "</button>";
         return $out;
-}
-function sarvaka_mediabase_form_transcripts_ui_search_form_alter(&$form, &$form_state) {
-	$form['search']['buttons']['go']['#id'] = 'searchbutton';
-	$form['search']['buttons']['go']['#inner'] = "<i class='icon'></i>";
-        $form['search']['buttons']['go']['#find'] = 'btn-primary';
-        $form['search']['buttons']['go']['#replace'] = 'btn-default';
-	$form['search']['buttons']['go']['#post_render'][] = 'sarvaka_mediabase_find_replace';
-        $form['search']['buttons']['reset']['#inner'] = "<i class='icon'></i>";
-	$form['search']['buttons']['reset']['#find'] = 'btn-primary';
-	$form['search']['buttons']['reset']['#replace'] = 'searchreset';
-        $form['search']['buttons']['reset']['#post_render'][] = 'sarvaka_mediabase_find_replace';
-}
-function sarvaka_mediabase_find_replace($markup, $element) {
-	return str_replace($element['#find'], $element['#replace'], $markup);
 }
 function sarvaka_mediabase_form_transcripts_ui_viewer_selector_alter(&$form, &$form_state) {
         $form['viewer_selector']['#title'] = '';
