@@ -126,6 +126,10 @@
 	padding: 0;
 }
 
+/** No Results Header **/
+.view-media-by-kmap .view-empty h3 {
+	font-style: italic;
+}
 
 
 
