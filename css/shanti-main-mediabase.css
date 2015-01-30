@@ -532,17 +532,19 @@ display: none;
 .transcripts-ui-search-form{ height:7.5rem;}
 .transcripts-ui-search-form > div{ display:table;}
 .transcript-search-input{ display:table-cell;position:relative;}
-.transcript-search-options{ margin:1.4rem 0 0;}
+.transcript-search-options{ margin:-0.4rem 0 0;}
 
-.transcript-navigate-results{ display:table-cell;width:18%;padding:1rem 1rem 0 0;}
+.transcript-navigate-results{ display:table-cell;width:10rem;padding: 0 0.5rem 0 0;width: 10rem;}
 .transcript-navigate-results .nextresult,
 .transcript-navigate-results .previousresult{ 
-	width:3.2rem;
-	height:3.5rem;
-	background:#fff;
-	border:1px solid #ddd;
-	margin:0 0.5rem 0 0;
-	box-shadow:none;
+width:2.6rem;
+height:3.6rem;
+background:#fff;
+border:1px solid #ddd;
+margin:0 0.5rem 0 0;
+box-shadow:none;
+position:relative;
+top:-0.7rem;
 }
 
 
