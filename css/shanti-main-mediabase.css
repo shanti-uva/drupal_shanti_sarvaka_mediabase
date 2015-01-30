@@ -531,21 +531,21 @@ display: none;
 }
 .transcripts-ui-search-form{ height:7.5rem;}
 .transcripts-ui-search-form > div{ display:table;}
-.transcript-search-input{ display:table-cell;}
+.transcript-search-input{ display:table-cell;position:relative;}
 .transcript-navigate-results{ display:table-cell;}
 
 .transcript-search-wrapper .form-control{
 	color:#777;
 	border: 1px solid #ccc;
-	border-radius: 25px;
+	border-radius: 3.7rem;
 	background-clip: padding-box;
-	font-size:1.06em;
-	height:35px; /* coordinate with button height below */
-	line-height:1.44em;
-	margin: 0;
-	padding:2px 60px 0 15px;
-  width:100%;
-  max-width:85%;
+	font-size:1.7rem;
+	height:3.7rem; /* coordinate with button height below */
+	margin: 0 0 0.3rem 2rem;
+	padding:0.3rem 4rem 0 2rem;
+  max-width:90%;
+  position:relative;
+  top:-0.5rem;
 	overflow: auto;
 	vertical-align:middle;
 	-webkit-box-shadow:0 2px 5px #eee inset;
@@ -565,11 +565,12 @@ display: none;
 .transcript-search-wrapper .input-group-btn{ width:45px !important; /* set button width and position */ position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default{
 	display:block;
-	height:33px; /* 2px less than search input height above */
+	height:3.5rem; /* 2px less than search input height above */
+	width:4.5rem;
 	color:#aaa;
-	width:33px;
 	border: 1px solid #e5e5e5;
-	border-radius: 25px !important;
+	border-top-right-radius: 1.7rem !important;
+	border-bottom-right-radius: 1.7rem !important;
 	background-clip: padding-box;
 	-webkit-box-shadow:none;
 	box-shadow:none;
@@ -578,12 +579,15 @@ display: none;
 	font-size:1.2rem;
 	background:#eee;
 	background-image:none;
+	position:absolute;
+	right:1.5rem;
+	top:-0.5rem;
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active, 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
-.transcript-search-wrapper .input-group-btn .btn.btn-default .icon:before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
+.transcript-search-wrapper .input-group-btn .btn.btn-default .icon:before{ content: '\e080'; position:relative; right: 0.3rem; top: -0.6rem;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active .icon{ color:#777;}
 
