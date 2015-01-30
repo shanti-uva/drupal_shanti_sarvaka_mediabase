@@ -602,22 +602,22 @@ display: none;
 	width:15px;
 	height:15px;
 	position:absolute;
-	right:6.5rem;
+	right:7.2rem;
 	top:0.7rem;
 	z-index:10000;
 	padding:0;
 	margin:0;
-	display:none;
 	font-size:1.5em;
 	color:#ccc;
+	border-radius:50%;
 }
 .transcript-search-wrapper .input-group-btn .btn.searchreset:active,
 .transcript-search-wrapper .input-group-btn .btn.searchreset.active{ box-shadow:none; background-image:none;}
 .transcript-search-wrapper .input-group-btn .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
 .transcript-search-wrapper .input-group-btn .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
-.transcript-search-options{ margin:1.3rem 0 0;}
-.transcript-search-options label{ font-size:90%; text-transform:capitalize;display:none;-webkit-transition: all 300ms ease 0s;-moz-transition: all 300ms ease 0s;-o-transition: all 300ms ease 0s;transition:  all 300ms ease 0s;}
+.transcript-search-options{ margin:1.6rem 0 0;}
+.transcript-search-options label{ font-size:80%; text-transform:capitalize;display:none;-webkit-transition: all 300ms ease 0s;-moz-transition: all 300ms ease 0s;-o-transition: all 300ms ease 0s;transition:  all 300ms ease 0s;}
 
 .transcript-navigate-results{ display:table-cell;width:10rem;padding: 0 0.5rem 0 0;width: 10rem;}
 .transcript-navigate-results .btn.nextresult,
