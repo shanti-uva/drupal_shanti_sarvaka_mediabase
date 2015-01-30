@@ -579,7 +579,7 @@ display: none;
 	background-image:none;
 	position:absolute;
 	right:1.5rem;
-	top:-0.55rem;
+	top:-0.4rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
@@ -612,7 +612,7 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
 .transcript-search-wrapper .input-group-btn .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
-.transcript-search-options{ margin:-0.4rem 0 0;}
+.transcript-search-options{ margin:1.3rem 0 0;}
 
 .transcript-navigate-results{ display:table-cell;width:10rem;padding: 0 0.5rem 0 0;width: 10rem;}
 .transcript-navigate-results .nextresult,
@@ -634,13 +634,16 @@ display: none;
 	top: 0.5rem;
 	padding:0;
 	line-height:1;
-	background:#f00;
 	width:auto;
 }
-.transcript-navigate-results .btn.nextresult .icon:before{ content: '\e080';}
-.transcript-navigate-results .btn.previousresult .icon:before{ content: '\e080';}
-
-
+.transcript-navigate-results .btn.nextresult .icon:before{ content: '\e605';}
+.transcript-navigate-results .btn.previousresult .icon:before{ content: '\e608';}
+.transcript-navigate-results div:last-child{ 
+	margin-top:1rem;
+	width:100%;
+	text-align:center;
+	padding-right:1rem;
+}
 
 
 
