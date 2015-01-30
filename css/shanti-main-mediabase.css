@@ -560,11 +560,11 @@ display: none;
 
 
 /*--- button group ---*/
-.transcript-search-wrapper .input-group-btn{ width:4rem; /* set button width and position */ position:absolute; top:1.5rem; right:1.3rem; z-index:10; background:transparent; padding:0; margin:0;}
+.transcript-search-wrapper .input-group-btn{ width:4rem; /* set button width and position */ position:absolute; top:1.5rem; left:89.5%; z-index:10; background:transparent; padding:0; margin:0;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default{
 	display:block;
 	height:3.5rem; /* 2px less than search input height above */
-	width:4.5rem;
+	width:120%;
 	color:#aaa;
 	border: 1px solid #e5e5e5;
 	border-top-right-radius: 1.7rem !important;
@@ -578,7 +578,7 @@ display: none;
 	background:#eee;
 	background-image:none;
 	position:absolute;
-	right:1.5rem;
+	right:1.9rem;
 	top:-0.4rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
