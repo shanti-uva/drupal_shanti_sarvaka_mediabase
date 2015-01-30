@@ -522,17 +522,32 @@ display: none;
 
 
 .transcript-search-wrapper{
-		background: #f9f9f9;
-		padding:0;
-		display:none;
-		height:7.5rem;
-		border:1px solid #ddd;
-		position:relative;
+	background: #f9f9f9;
+	padding:0;
+	display:none;
+	height:7.5rem;
+	border:1px solid #ddd;
+	position:relative;
 }
 .transcripts-ui-search-form{ height:7.5rem;}
 .transcripts-ui-search-form > div{ display:table;}
-.transcript-search-input{ display:table-cell;position:relative;width:85%;}
-.transcript-navigate-results{ display:table-cell;width:15%;}
+.transcript-search-input{ display:table-cell;position:relative;}
+.transcript-navigate-results{ display:table-cell;width:18%;}
+.transcript-search-options{ margin:1.4rem 0 0;}
+.transcript-search-options .nextresult,
+.transcript-search-options .previousresult{ 
+	width:3.2rem;
+	height:3.5rem;
+	background:#fff;
+	border:1px solid #ddd;
+	margin:0 0.5rem 0;
+	box-shadow:none;
+}
+.transcript-search-options .previousresult{ 
+
+}
+
+
 
 .transcript-search-wrapper .form-control{
 	color:#777;
@@ -581,7 +596,7 @@ display: none;
 	background-image:none;
 	position:absolute;
 	right:1.5rem;
-	top:-0.6rem;
+	top:-0.5rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
