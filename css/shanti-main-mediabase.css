@@ -624,9 +624,19 @@ display: none;
 	margin:0 0.5rem 0 0;
 	box-shadow:none;
 	position:relative;
-	top:-0.7rem;
+	top:0.7rem;
 }
-.transcript-navigate-results .btn.nextresult .icon{ font-family:'shanticon'; color:#ccc; position:relative; right:0.3rem; top:1rem;}
+.transcript-navigate-results .btn .icon{ 
+	font-family: 'shanticon';
+	color: #ccc;
+	position: absolute;
+	right: 0;
+	top: 0.5rem;
+	padding:0;
+	line-height:1;
+	background:#f00;
+	width:auto;
+}
 .transcript-navigate-results .btn.nextresult .icon:before{ content: '\e080';}
 .transcript-navigate-results .btn.previousresult .icon:before{ content: '\e080';}
 
