@@ -531,8 +531,8 @@ display: none;
 }
 .transcripts-ui-search-form{ height:7.5rem;}
 .transcripts-ui-search-form > div{ display:table;}
-.transcript-search-input{ display:table-cell;position:relative;}
-.transcript-navigate-results{ display:table-cell;}
+.transcript-search-input{ display:table-cell;position:relative;width:85%;}
+.transcript-navigate-results{ display:table-cell;width:15%;}
 
 .transcript-search-wrapper .form-control{
 	color:#777;
@@ -582,6 +582,7 @@ display: none;
 	position:absolute;
 	right:1.5rem;
 	top:-0.6rem;
+	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active, 
