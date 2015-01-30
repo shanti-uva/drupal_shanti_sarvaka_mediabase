@@ -631,10 +631,12 @@ display: none;
 	color: #ccc;
 	position: absolute;
 	right: 0;
-	top: 0.5rem;
+	top: 0.75rem;
 	padding:0;
 	line-height:1;
 	width:auto;
+	background:transparent;
+	font-size:2rem;
 }
 .transcript-navigate-results .btn.nextresult .icon:before{ content: '\e605';}
 .transcript-navigate-results .btn.previousresult .icon:before{ content: '\e608';}
@@ -644,9 +646,8 @@ display: none;
 	text-align:center;
 	padding-right:1rem;
 }
-
-
-
+.transcript-navigate-results .btn.btn-default:hover,
+.transcript-navigate-results .btn.btn-default:active{ background:#eee;}
 
 
 /*--- search results window ---*/
