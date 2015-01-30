@@ -560,7 +560,7 @@ display: none;
 
 
 /*--- button group ---*/
-.transcript-search-wrapper .input-group-btn{ width:4rem; /* set button width and position */ position:absolute; top:1.5rem; left:89.5%; z-index:10; background:transparent; padding:0; margin:0;}
+.transcript-search-wrapper .input-group-btn{ width:4rem; position:absolute; top:1.5rem; left:89.5%; z-index:10; background:transparent; padding:0; margin:0;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default{
 	display:block;
 	height:3.5rem; /* 2px less than search input height above */
@@ -613,7 +613,7 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
 
 .transcript-search-options{ margin:1.3rem 0 0;}
-.transcript-search-options label{ text-transform:capitalize;display:none;-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;}
+.transcript-search-options label{ font-size:90%; text-transform:capitalize;display:none;-webkit-transition: all 300ms ease 0s;-moz-transition: all 300ms ease 0s;-o-transition: all 300ms ease 0s;transition:  all 300ms ease 0s;}
 
 .transcript-navigate-results{ display:table-cell;width:10rem;padding: 0 0.5rem 0 0;width: 10rem;}
 .transcript-navigate-results .btn.nextresult,
@@ -626,12 +626,12 @@ display: none;
 	box-shadow:none;
 	position:relative;
 	top:0.7rem;
-	-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;
+	-webkit-transition: all 300ms ease 0s;-moz-transition: all 300ms ease 0s;-o-transition: all 300ms ease 0s;transition:  all 300ms ease 0s;
 	display:none;
 }
 .transcript-navigate-results .btn .icon{ 
 	font-family: 'shanticon';
-	color: #ccc;
+	color: #aaa;
 	position: absolute;
 	right: 0;
 	top: 0.75rem;
@@ -649,7 +649,7 @@ display: none;
 	text-align:center;
 	padding-right:1rem;
 	display:none;
-	-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;
+	-webkit-transition: all 300ms ease 0s;-moz-transition: all 300ms ease 0s;-o-transition: all 300ms ease 0s;transition:  all 300ms ease 0s;
 }
 .transcript-navigate-results .btn.btn-default:hover,
 .transcript-navigate-results .btn.btn-default:active{ background:#eee;}
