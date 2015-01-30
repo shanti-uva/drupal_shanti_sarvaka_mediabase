@@ -535,8 +535,8 @@ display: none;
 .transcript-search-options{ margin:1.4rem 0 0;}
 
 .transcript-navigate-results{ display:table-cell;width:18%;padding:1rem 1rem 0 0;}
-.transcript-search-options .nextresult,
-.transcript-search-options .previousresult{ 
+.transcript-navigate-results .nextresult,
+.transcript-navigate-results .previousresult{ 
 	width:3.2rem;
 	height:3.5rem;
 	background:#fff;
