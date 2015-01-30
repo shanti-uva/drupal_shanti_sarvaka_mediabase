@@ -540,7 +540,8 @@ display: none;
 	border: 1px solid #ccc;
 	border-radius: 3.7rem;
 	background-clip: padding-box;
-	font-size:1.7rem;
+	font-size:1.5rem;
+	line-height:1;
 	height:3.7rem; /* coordinate with button height below */
 	margin: 0 0 0.3rem 2rem;
 	padding:0.2rem 4rem 0 2rem;
