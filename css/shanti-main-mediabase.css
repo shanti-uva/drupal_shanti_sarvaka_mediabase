@@ -562,7 +562,7 @@ display: none;
 
 
 /*--- button group ---*/
-.transcript-search-wrapper .input-group-btn{ width:4rem; /* set button width and position */ position:absolute; top:1.6rem; right:1.3rem; z-index:10; background:transparent; padding:0; margin:0;}
+.transcript-search-wrapper .input-group-btn{ width:4rem; /* set button width and position */ position:absolute; top:1.5rem; right:1.3rem; z-index:10; background:transparent; padding:0; margin:0;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default{
 	display:block;
 	height:3.5rem; /* 2px less than search input height above */
