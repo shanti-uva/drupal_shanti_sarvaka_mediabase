@@ -597,7 +597,7 @@ display: none;
 /*--- reset search button ---*/
 .transcript-search-wrapper .input-group-btn .btn.searchreset { 
 	border:none;
-	background:#ddd;
+	background:#ccc;
 	background-image:none;
 	width:15px;
 	height:15px;
