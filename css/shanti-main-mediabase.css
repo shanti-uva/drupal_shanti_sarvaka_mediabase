@@ -476,6 +476,8 @@ display: none;
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark:before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark:before{ color:#aaa;}
 
+.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark{ top:0.7rem;}
+
 .av-main-transcript-section .tcu-info{ width:auto;min-height:5.5rem;}
 .av-main-transcript-section .speaker-tiers{ margin-left:25%;padding-left:1rem;border-left:2px solid #eee;}
 .av-main-transcript-section .speaker-tiers mark{ background:#ff0; padding:0;}
