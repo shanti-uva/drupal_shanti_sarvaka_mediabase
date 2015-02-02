@@ -96,7 +96,7 @@
 	};
 	
 	
-	Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
+	Drupal.behaviors.shantiSarvakaMbSearchCancel = {
 		attach: function (context, settings) {
 			if(context == window.document) {
 								
