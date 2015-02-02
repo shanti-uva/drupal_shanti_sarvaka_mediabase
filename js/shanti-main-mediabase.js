@@ -100,26 +100,26 @@
 		attach: function (context, settings) {
 			if(context == window.document) {
 												
-			  var mbsrch = $('.input-group > .form-control'); // the main search input
-		    $(mbsrch).data('holder', $(mbsrch).attr('placeholder'));
+			  var mbsrch = $(".input-group > .form-control"); // the main search input
+		    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
 		
 		    // --- features inputs - focusin / focusout
 		    $(mbsrch).focusin(function () {
-		        $(mbsrch).attr('placeholder', '');
-		        $('button.searchreset').show('fast');
+		        $(mbsrch).attr("placeholder", "");
+		        $("button.searchreset").show("fast");
 		    });
 		    $(mbsrch).focusout(function () {
-		        $(mbsrch).attr('placeholder', $(mbsrch).data('holder'));
-		        $('button.searchreset').hide();
+		        $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
+		        $("button.searchreset").hide();
 		
-		        var str = 'Enter Search...';
+		        var str = "Enter Search...";
 		        var txt = $(mbsrch).val();
 		
 		        if (str.indexOf(txt) > -1) {
-		            $('button.searchreset').hide();
+		            $("button.searchreset").hide();
 		            return true;
 		        } else {
-		            $('button.searchreset').show(100);
+		            $("button.searchreset").show(100);
 		            return false;
 		        }
 		    });
