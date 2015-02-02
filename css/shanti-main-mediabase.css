@@ -471,7 +471,7 @@ display: none;
 .av-main-transcript-section .selectpicker .caret:before{ color:#555;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
 .av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em;color:#606060;position: relative;left:0.5rem;}
 
-.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0; top:0.9rem;}
+.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0; top:0.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark:before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark:before{ color:#aaa;}
 
@@ -591,7 +591,7 @@ display: none;
 	top:-0.4rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
-.transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
+.transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#5b68ce;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active, 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
