@@ -92,31 +92,39 @@
 					// $('.transcript-container').toggleClass('show-search');	
 				});
 			}
+	  }
+	};
+	
+	
+	Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+								
+			  var mbsrch = $(".input-group > .form-control"); // the main search input
+		    $(mbsrch).data("holder", $(transrch).attr("placeholder"));
+		
+		    // --- features inputs - focusin / focusout
+		    $(mbsrch).focusin(function () {
+		        $(mbsrch).attr("placeholder", "");
+		        $("button.searchreset").show("fast");
+		    });
+		    $(mbsrch).focusout(function () {
+		        $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
+		        $("button.searchreset").hide();
+		
+		        var str = "Enter Search...";
+		        var txt = $(transrch).val();
+		
+		        if (str.indexOf(txt) > -1) {
+		            $("button.searchreset").hide();
+		            return true;
+		        } else {
+		            $("button.searchreset").show(100);
+		            return false;
+		        }
+		    });
 			
-		  var transrch = $(".transcript-search-input > .form-control"); // the main search input
-	    $(transrch).data("holder", $(transrch).attr("placeholder"));
-	
-	    // --- features inputs - focusin / focusout
-	    $(transrch).focusin(function () {
-	        $(transrch).attr("placeholder", "");
-	        $("button.searchreset").show("fast");
-	    });
-	    $(transrch).focusout(function () {
-	        $(transrch).attr("placeholder", $(transrch).data("holder"));
-	        $("button.searchreset").hide();
-	
-	        var str = "Enter Search...";
-	        var txt = $(transrch).val();
-	
-	        if (str.indexOf(txt) > -1) {
-	            $("button.searchreset").hide();
-	            return true;
-	        } else {
-	            $("button.searchreset").show(100);
-	            return false;
-	        }
-	    });
-			
+			}
 	  }
 	};	 
 	
