@@ -91,8 +91,15 @@
 					$('.transcript-search-wrapper').slideToggle();		
 					// $('.transcript-container').toggleClass('show-search');	
 				});
+			}
+	  }
+	};
 
-								
+
+	Drupal.behaviors.shantiSarvakaMbTranscriptSearchCancel = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+												
 			  var mbsrch = $('.input-group > .form-control'); // the main search input
 		    $(mbsrch).data('holder', $(mbsrch).attr('placeholder'));
 		
