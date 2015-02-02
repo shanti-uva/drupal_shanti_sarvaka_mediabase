@@ -471,7 +471,7 @@ display: none;
 .av-main-transcript-section .selectpicker .caret:before{ color:#555;font-size: 1.62em;left:-1rem;right:0;top:-1rem;z-index:10;}
 .av-main-transcript-section .selectpicker .fa:before{ font-size:2.5em;color:#606060;position: relative;left:0.5rem;}
 
-.av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark:before{ color:#ccc;}
+.av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark{ color:#ccc;}
 .av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark{ margin-top: 0; top:0.5rem;}
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark:before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark:before{ color:#aaa;}
