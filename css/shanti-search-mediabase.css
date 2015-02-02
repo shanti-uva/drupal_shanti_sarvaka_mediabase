@@ -10,7 +10,7 @@
 .input-section .search-group .form-group{ padding-left:1.5em; }
 .input-section .input-group .input-group-btn{ position:absolute; top: -3px; right:13px; }
 .input-section .input-group .btn.btn-default{ font-size:1.5rem;}
-.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.45rem; }
+.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.35rem; }
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
 .form-item .option.icheck-label { font-size: 100% !important; }
