@@ -591,7 +591,7 @@ display: none;
 	top:-0.4rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
-.transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#5b68ce;}
+.transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active, 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active{ background: transparent; border-color:#fff; /* active state for button */}
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
