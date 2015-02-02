@@ -101,7 +101,7 @@
 			if(context == window.document) {
 								
 			  var mbsrch = $(".input-group > .form-control"); // the main search input
-		    $(mbsrch).data("holder", $(transrch).attr("placeholder"));
+		    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
 		
 		    // --- features inputs - focusin / focusout
 		    $(mbsrch).focusin(function () {
@@ -113,7 +113,7 @@
 		        $("button.searchreset").hide();
 		
 		        var str = "Enter Search...";
-		        var txt = $(transrch).val();
+		        var txt = $(mbsrch).val();
 		
 		        if (str.indexOf(txt) > -1) {
 		            $("button.searchreset").hide();
