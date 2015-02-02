@@ -1,6 +1,7 @@
 /**
  *  Search form in flyout  (ndg, 2014-11-17)
  **/
+ 
 
 /*---- BEGIN search flyout ---*/
 /*---- customize mediabase search panel ----*/
@@ -8,7 +9,8 @@
 .input-section .search-group{position:relative; margin-top:-1em; }
 .input-section .search-group .form-group{ padding-left:1.5em; }
 .input-section .input-group .input-group-btn{ position:absolute; top: -3px; right:13px; }
-.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top: 6px; }
+.input-section .input-group .btn.btn-default{ font-size:1.5rem;}
+.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.45rem; }
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
 .form-item .option.icheck-label { font-size: 100% !important; }
@@ -18,6 +20,9 @@
 .view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
 .view-section ul.fancytree-container { min-height: 100%; }
 .fancytree-expander { background-image: none !important; } /* Removes default fancytree arrows */
+
+.main-content .selectpicker>li.selected>a:hover .check-mark, 
+.main-content .selectpicker>li.selected>a:focus .check-mark{ color:#777;}
 
 .input-section .search-group .radio-inline:first-child{ width:20px;}
 
