@@ -89,7 +89,6 @@
 			if(context == window.document) {
 				$('.searchtrans').click( function(){  
 					$('.transcript-search-wrapper').slideToggle();		
-					// $('.transcript-container').toggleClass('show-search');	
 				});
 			}
 	  }
