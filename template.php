@@ -103,12 +103,14 @@ function sarvaka_mediabase_get_facet_info($fbid) {
 function sarvaka_mediabase_preprocess_node(&$vars) {
 	//dpm($vars, 'vars for node');
 	// Preprocess Collection Nodes
-	if($vars['type'] == 'collection') {
-		$style_name = $vars['elements']['field_images'][0]['#image_style'];
-		$uri = $vars['elements']['field_images']['#items'][0]['uri'];
-		//$path = image_style_path($style_name, $uri);
-		$src = image_style_url($style_name, $uri);
-		$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
+	if($vars['type'] == 'collection' || $vars['type'] == 'team') {
+		$vars['collimage'] = '';
+		if(isset($vars['elements']['field_images'][0]['#image_style']) && isset($vars['elements']['field_images']['#items'][0]['uri'])) {
+			$style_name = $vars['elements']['field_images'][0]['#image_style'];
+			$uri = $vars['elements']['field_images']['#items'][0]['uri'];
+			$src = image_style_url($style_name, $uri);
+			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
+		}
 		$subcolls = array();
 		if(!empty($vars['field_subcoll_root_kmap_id'])) {
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
