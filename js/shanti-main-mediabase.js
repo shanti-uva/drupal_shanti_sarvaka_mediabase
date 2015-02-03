@@ -102,7 +102,7 @@
 												
 			  var mbsrch = $(".form-text.form-control");  // the main search input
 		    
-		    $(mbsrch).attr("placeholder"));
+		    $(mbsrch).attr("placeholder");
 		
 		    //  --- features inputs - focusin / focusout
 		    $(mbsrch).focusin(function () {
@@ -110,7 +110,7 @@
 		        $(".searchreset").show("fast");
 		    });
 		    $(mbsrch).focusout(function () {
-		        $(mbsrch).attr("placeholder"));
+		        $(mbsrch).attr("placeholder");
 		        $(".searchreset").hide();
 		
 		        var str = "Enter Search...";
