@@ -101,26 +101,25 @@
 			if(context == window.document) {
 												
 			  var mbsrch = $(".form-text.form-control");  // the main search input
-		    
-		    $(mbsrch).attr("placeholder");
+		    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
 		
-		    //  --- features inputs - focusin / focusout
+		    // --- focusin - focusout
 		    $(mbsrch).focusin(function () {
 		        $(mbsrch).attr("placeholder", "");
-		        $(".searchreset").show("fast");
+		        $("button.searchreset").show("fast");
 		    });
 		    $(mbsrch).focusout(function () {
-		        $(mbsrch).attr("placeholder");
-		        $(".searchreset").hide();
+		        $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
+		        $("button.searchreset").hide();
 		
 		        var str = "Enter Search...";
 		        var txt = $(mbsrch).val();
 		
 		        if (str.indexOf(txt) > -1) {
-		            $(".searchreset").hide();
+		            $("button.searchreset").hide();
 		            return true;
 		        } else {
-		            $(".searchreset").show(100);
+		            $("button.searchreset").show(100);
 		            return false;
 		        }
 		    });
