@@ -614,9 +614,10 @@ display: none;
 	padding:0;
 	margin:0;
 	display:none;
+	border-radius:50%;
 }
 .transcript-search-wrapper .input-group-btn .searchreset:active,
-.transcript-search-wrapper .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;}
+.transcript-search-wrapper .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
 
 .transcript-search-wrapper .input-group-btn .searchreset .icon{ cursor:pointer; width: 1.75rem;
 height: 1.75rem;
