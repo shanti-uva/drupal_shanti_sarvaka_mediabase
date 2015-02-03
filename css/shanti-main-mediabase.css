@@ -624,7 +624,7 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.searchreset.active{ box-shadow:none; background-image:none;}
 .transcript-search-wrapper .input-group-btn .btn.searchreset span.icon{ cursor:pointer;}
 .transcript-search-wrapper .input-group-btn .btn.searchreset span.icon:before,
-.transcript-search-wrapper .input-group-btn .btn.searchreset span.icon:after{ background:#ccc; position:absolute;top:0; width:1rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.transcript-search-wrapper .input-group-btn .btn.searchreset span.icon:after{ background:#aaa; position:absolute;top:0.7rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .transcript-search-wrapper .input-group-btn .btn.searchreset span.icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 
 
