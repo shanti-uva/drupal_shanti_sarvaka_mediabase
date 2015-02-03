@@ -8,15 +8,16 @@
 .input-section .input-group input.form-control { margin-top: 1rem; }
 .input-section .search-group{position:relative; margin-top:-1em; }
 .input-section .search-group .form-group{ padding-left:1.5em; }
-.input-section .input-group .input-group-btn{ position:absolute; top: -3px; right:13px; }
+.input-section .input-group .input-group-btn{ position:absolute; top:0; right:13px; height:35px;}
 .input-section .input-group .btn.btn-default{ font-size:1.5rem;}
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.35rem; }
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
-.form-item .option.icheck-label { font-size: 100% !important; }
+.input-section .form-item .option.icheck-label { font-size: 100% !important; }
 .input-section .toggle-link.advanced-link{ position:relative; top:0; display: none; }
 .input-section .search-group .shanti-options .form-item { width: 48%; float: left;}
 
+.input-section .search-group .searchreset{ background:transparent;position:relative;top:-2.3rem;left: -1.8rem;}
 .input-section .search-group .searchreset .icon{ cursor:pointer;}
 .input-section .search-group .searchreset .icon:before,
 .input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
