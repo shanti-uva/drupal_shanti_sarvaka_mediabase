@@ -100,17 +100,18 @@
 		attach: function (context, settings) {
 			if(context == window.document) {
 												
-			  var mbsrch = $(".input-group > .form-control");  // the main search input
-		    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
+			  var mbsrch = $(".form-text.form-control");  // the main search input
+		    
+		    $(mbsrch).attr("placeholder"));
 		
 		    //  --- features inputs - focusin / focusout
 		    $(mbsrch).focusin(function () {
 		        $(mbsrch).attr("placeholder", "");
-		        $("button.searchreset").show("fast");
+		        $(".searchreset").show("fast");
 		    });
 		    $(mbsrch).focusout(function () {
-		        $(mbsrch).attr("placeholder", $(mbsrch).data("holder"));
-		        $("button.searchreset").hide();
+		        $(mbsrch).attr("placeholder"));
+		        $(".searchreset").hide();
 		
 		        var str = "Enter Search...";
 		        var txt = $(mbsrch).val();
