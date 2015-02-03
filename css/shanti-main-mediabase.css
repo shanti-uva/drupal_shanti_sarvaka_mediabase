@@ -96,7 +96,7 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 /*--- MOVE TO SARVAKA - bottom of page for edit save buttons ---*/
-#edit-actions.form-actions{ margin-top:1rem;}
+#edit-actions.form-actions{ margin-top:1.1rem;}
 .form-control.role-weight{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
 
 
@@ -533,7 +533,7 @@ display: none;
 	background: #f9f9f9;
 	padding:0;
 	display:none;
-	height:7.8rem;
+	height:8rem;
 	position:relative;
 	margin:0 1px 1px;
 	border:1px solid #ccc;
@@ -603,27 +603,33 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active .icon{ color:#777;}
 
 /*--- reset search button ---*/
-.transcript-search-wrapper .input-group-btn .btn.searchreset { 
+.transcript-search-wrapper .input-group-btn .searchreset { 
 	border:none;
-	background:#ddd;
+	background:transparent;
 	background-image:none;
-	width:15px;
-	height:15px;
 	position:absolute;
 	right:7.2rem;
 	top:0.7rem;
-	z-index:10000;
+	z-index:10;
 	padding:0;
 	margin:0;
-	font-size:1.5em;
-	color:#ccc;
-	border-radius:50%;
-	/* display:none; */
+	display:none;
 }
-.transcript-search-wrapper .input-group-btn .btn.searchreset:active,
-.transcript-search-wrapper .input-group-btn .btn.searchreset.active{ box-shadow:none; background-image:none;}
-.transcript-search-wrapper .input-group-btn .btn.searchreset .icon{ font-size:1.25em; color:#aaa; }
-.transcript-search-wrapper .input-group-btn .btn.searchreset .icon:before{ font-family: 'shanticon'; content: "\e610"; }
+.transcript-search-wrapper .input-group-btn .searchreset:active,
+.transcript-search-wrapper .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;}
+
+.transcript-search-wrapper .input-group-btn .searchreset .icon{ cursor:pointer; width: 1.75rem;
+height: 1.75rem;
+border-radius: 50%;
+border: none;
+position: relative;
+background:transparent;
+}
+.transcript-search-wrapper .input-group-btn .searchreset .icon:before,
+.transcript-search-wrapper .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; left:.15rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.transcript-search-wrapper .input-group-btn .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.transcript-search-wrapper .input-group-btn .searchreset:hover .icon,
+.transcript-search-wrapper .input-group-btn .searchreset:active .icon{ border:1px solid #ddd;}
 
 .transcript-search-options{ margin:1.5rem 0 0 1rem;}
 .transcript-search-options label{ font-size:90%; text-transform:capitalize;display:none;-webkit-transition: all 500ms ease 0s;-moz-transition: all 500ms ease 0s;-o-transition: all 500ms ease 0s;transition:  all 500ms ease 0s;}
