@@ -16,7 +16,6 @@
 .form-item .option.icheck-label { font-size: 100% !important; }
 .input-section .toggle-link.advanced-link{ position:relative; top:0; display: none; }
 .input-section .search-group .shanti-options .form-item { width: 48%; float: left;}
-.input-section .search-group .searchreset{ top:2rem;position: absolute;}
 
 .input-section .search-group .searchreset .icon{ cursor:pointer;}
 .input-section .search-group .searchreset .icon:before,
