@@ -43,7 +43,7 @@
 
 /* Home media list block */
 /* Please talk to Than before removing the line below */
-#block-views-browse-media-home-block .shanti-filters { top: -2.5rem; }
+#block-views-browse-media-home-block .shanti-filters { top: -1.5rem; }
 
 /* Kmaps List page views*/
 .page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 6px 0px 0px;}
@@ -209,7 +209,7 @@ a.hide-annot:before{
   background-color: #EEE5EE;
 }
 
-#view-all-colls-switcher span.icon:hover {
+#view-all-colls-switcher .icon:hover {
   cursor: pointer;
 }
 
@@ -496,7 +496,7 @@ display: none;
 .transcript-container { height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;}
 .transcript-container.show-search { margin-top:7rem;}
 
-.transcript-container .list-group{ -webkit-margin-before: 0;}
+.transcript-container .list-group{ -webkit-margin-before:0;margin-bottom:600px;}
 .transcript-container .alert-info{ margin-bottom:0;}
 
 .transcript-content .list-group{ border-left:1px solid #ddd;}
