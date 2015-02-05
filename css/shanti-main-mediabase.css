@@ -610,6 +610,8 @@ display: none;
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
     position:relative; top:-0.7rem;
+    width:auto;
+    line-height:1;
 }
 
 @-webkit-keyframes spin2 {
