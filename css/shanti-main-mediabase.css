@@ -609,6 +609,7 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
+    position:relative; top:-0.7rem;
 }
 
 @-webkit-keyframes spin2 {
