@@ -605,8 +605,21 @@ display: none;
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon:before{ content: "\e031"; position:relative; right: 0.3rem; top: -0.6rem;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled:active .icon,
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled.active .icon{ color:#777;}
+.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled.active .icon{ color:#00f;}
+.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
 
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
 
 
 
