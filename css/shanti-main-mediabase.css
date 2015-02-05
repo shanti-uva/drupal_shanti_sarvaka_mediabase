@@ -545,7 +545,7 @@ display: none;
 .transcript-search-input{ position:relative;float:left;width:75%;}
 .transcript-search-wrapper .form-control{
 	color:#777;
-	border: 1px solid #ccc;
+	border: 1px solid #aaa;
 	border-radius: 3.7rem;
 	background-clip: padding-box;
 	font-size:1.5rem;
@@ -578,7 +578,7 @@ display: none;
 	height:3.5rem; /* 2px less than search input height above */
 	width:120%;
 	color:#aaa;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #e0e0e0;
 	border-top-right-radius: 1.7rem !important;
 	border-bottom-right-radius: 1.7rem !important;
 	background-clip: padding-box;
@@ -590,8 +590,8 @@ display: none;
 	background:#eee;
 	background-image:none;
 	position:absolute;
-	right:1.9rem;
-	top:-0.4rem;
+	right:2rem;
+	top:-0.42rem;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover{ background:#eee; color:#d00;}
