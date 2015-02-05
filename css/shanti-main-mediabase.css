@@ -610,7 +610,7 @@ display: none;
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
     position:relative; left:0;
-    top:0.7rem;
+    top:0.4rem;
     width:auto;
     line-height:1;
 }
