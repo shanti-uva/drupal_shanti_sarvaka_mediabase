@@ -609,12 +609,12 @@ display: none;
     -webkit-animation: spin2 .7s infinite linear;
     position:relative; 
     left:0;
-    top:0.3rem;
+    top:0.4rem;
     width:auto;
     line-height:1em;
     padding:0;
     border-radius:0;
-    font-size:1.8rem;
+    font-size:1.7rem;
 }
 
 @-webkit-keyframes spin2 {
