@@ -636,7 +636,7 @@ display: none;
 	background-image:none;
 	position:absolute;
 	right:7.2rem;
-	top:0.7rem;
+	top:0.6rem;
 	z-index:10;
 	padding:0;
 	margin:0;
@@ -654,11 +654,13 @@ position: relative;
 background:transparent;
 }
 .transcript-search-wrapper .input-group-btn .searchreset .icon:before,
-.transcript-search-wrapper .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; left:.15rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.transcript-search-wrapper .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:0.75rem; left:0.3rem; width:1rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .transcript-search-wrapper .input-group-btn .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .transcript-search-wrapper .input-group-btn .searchreset:hover .icon,
-.transcript-search-wrapper .input-group-btn .searchreset:active .icon{ border:1px solid #ddd;}
+.transcript-search-wrapper .input-group-btn .searchreset:active .icon{ background:#aaa;}
 
+.transcript-search-wrapper .input-group-btn .searchreset:hover .icon:before,
+.transcript-search-wrapper .input-group-btn .searchreset:hover .icon:after{ background:#fff;}
 .transcript-search-options{ margin:1.5rem 0 0 1rem;}
 .transcript-search-options label{ font-size:90%; text-transform:capitalize;display:none;-webkit-transition: all 500ms ease 0s;-moz-transition: all 500ms ease 0s;-o-transition: all 500ms ease 0s;transition:  all 500ms ease 0s;}
 
