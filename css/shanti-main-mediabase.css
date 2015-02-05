@@ -602,19 +602,18 @@ display: none;
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active .icon{ color:#777;}
 
-
+.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled{ }
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon:before{ content: "\e031"; position:relative; left:0; right:0; top:0;}
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled:active .icon,
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled.active .icon{ color:#555;}
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
     position:relative; left:0;
-    top:0.2rem;
+    top:0.3rem;
     width:auto;
     line-height:1;
     padding:0;
     border-radius:0;
+    font-size:1.2rem;
 }
 
 @-webkit-keyframes spin2 {
