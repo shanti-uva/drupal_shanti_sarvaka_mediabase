@@ -510,10 +510,12 @@ display: none;
 
 
 .btn-group-transcript{ width:100%;padding:0 0.1rem;margin:0;}
-.btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
+.btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;border-radius:0;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
+.btn-group-transcript .btn.btn-icon span:hover,
+.btn-group-transcript .btn.btn-icon span:active,
 .btn-group-transcript .btn.btn-icon:hover,
-.btn-group-transcript .btn.btn-icon:active{ background:#999 !important;}
+.btn-group-transcript .btn.btn-icon:active{ background:#999;}
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
 .btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:2rem; position:static;line-height:1;width:auto;background:transparent;}
