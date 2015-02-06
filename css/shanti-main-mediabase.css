@@ -513,16 +513,12 @@ display: none;
 .btn-group-transcript .btn.btn-icon{ display:table-cell;width:16.66%;}
 .btn-group-transcript .btn.btn-icon span{ position:static;padding: 1em 0;}
 .btn-group-transcript .btn.btn-icon:hover,
-.btn-group-transcript .btn.btn-icon:active{ background:#aaa;}
+.btn-group-transcript .btn.btn-icon:active{ background:transparent;}
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
-.btn-group-transcript .btn.btn-icon .icon{margin:0 auto;font-size:2rem; position:static;line-height:1;width:auto;background:transparent;}
+.btn-group-transcript .btn.btn-icon .icon{border-radius:0;margin:0 auto;font-size:2rem; position:static;line-height:1;width:auto;background:transparent;}
 .btn-group-transcript .btn.btn-icon .fa{ font-size:1em;line-height: 2.32em;}
 .btn-group-transcript .btn.btn-icon.playpause{ font-size:1em;}
-
-.btn-group-transcript .btn.btn-icon .fa,
-.btn-group-transcript .btn.btn-icon .icon{ background:#aaa;}
-
 
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){ width:16.66%;}
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle{ padding:0; width:16.66%;}
