@@ -496,7 +496,7 @@ display: none;
 .transcript-container { height:750px; overflow-x:auto;margin-top:0;-webkit-transition: all 100ms ease 0s;-moz-transition: all 100ms ease 0s;-o-transition: all 100ms ease 0s;transition:  all 100ms ease 0s;}
 .transcript-container.show-search { margin-top:7rem;}
 
-.transcript-container .list-group{ -webkit-margin-before:0;margin-bottom:600px;}
+.transcript-container .list-group{ -webkit-margin-before:0;margin-bottom:420px;}
 .transcript-container .alert-info{ margin-bottom:0;}
 
 .transcript-content .list-group{ border-left:1px solid #ddd;}
@@ -643,6 +643,8 @@ display: none;
 	display:none;
 	border-radius:50%;
 }
+.transcript-search-wrapper .input-group-btn .searchreset:hover,
+.transcript-search-wrapper .input-group-btn .searchreset:active{ color:#777;}
 .transcript-search-wrapper .input-group-btn .searchreset:active,
 .transcript-search-wrapper .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
 
@@ -657,10 +659,10 @@ background:transparent;
 .transcript-search-wrapper .input-group-btn .searchreset .icon:after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .transcript-search-wrapper .input-group-btn .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .transcript-search-wrapper .input-group-btn .searchreset:hover .icon,
-.transcript-search-wrapper .input-group-btn .searchreset:active .icon{ background:#ddd;}
+.transcript-search-wrapper .input-group-btn .searchreset:active .icon{ background:#eee;}
 
 .transcript-search-wrapper .input-group-btn .searchreset:hover .icon:before,
-.transcript-search-wrapper .input-group-btn .searchreset:hover .icon:after{ background:#fff;}
+.transcript-search-wrapper .input-group-btn .searchreset:hover .icon:after{ background:#555;}
 .transcript-search-options{ margin:1.5rem 0 0 1rem;}
 .transcript-search-options label{ font-size:90%; text-transform:capitalize;display:none;-webkit-transition: all 500ms ease 0s;-moz-transition: all 500ms ease 0s;-o-transition: all 500ms ease 0s;transition:  all 500ms ease 0s;}
 
