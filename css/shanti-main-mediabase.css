@@ -501,7 +501,7 @@ display: none;
 
 .transcript-content .list-group{ border-left:1px solid #ddd;}
 .transcript-content li{ border:3px double #fff; border-style:solid double;}
-.transcript-content li.playing .speaker-tiers{ }
+.transcript-content li.playing .speaker-tiers{ border-color: #5b68ce;}
 .transcript-content li.playing { border-color: #5b68ce; background:#f5f5f5;}
 
 
