@@ -115,7 +115,6 @@ table.field-multiple-table tbody{ border:2px solid #ddd;}
 .kaltura-thumb-wrap{ clear:none;}
 .kaltura_status_ok{ background-image:none !important; border:none !important;}
 
-.kWidgetIframeContainer.KalturaDynamicPlayer{ width:100% !important;}
 
 
 #kmap_annotation_json{ margin-left:2em;} /* textbox on bottom */
