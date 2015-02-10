@@ -83,25 +83,6 @@
 			}
 	  }
 	};
-      
-	Drupal.behaviors.shantiSarvakaMbTranscriptSearchToggle = {
-		attach: function (context, settings) {
-			if(context == window.document) {
-				$('.searchtrans').click( function(){  
-					$('.transcript-search-wrapper').slideToggle();		
-				});
-			}
-	  }
-	};
-
-
-	Drupal.behaviors.shantiSarvakaMbTranscriptLanguageDropdownIcon = {
-		attach: function (context, settings) {
-			if(context == window.document) {
-				$('.tier-selector .filter-option').replaceWith('<span class="fa fa-comments-o"></span>');
-			}
-	  }
-	};	
      	
 	Drupal.behaviors.shantiSarvakaMbSearchFlyoutCancel = {
 			attach: function (context, settings) {
