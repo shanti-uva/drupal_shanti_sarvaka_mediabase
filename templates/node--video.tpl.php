@@ -85,13 +85,13 @@
 /********* TEASER Display ****************/
 if($teaser):
 		//dpm($variables, 'in teaser');
-		?>
+		?> 
 		<li class="shanti-thumbnail video">
 	    <div class="shanti-thumbnail-image shanti-field-video">
 	      <a href="<?php print $variables['node_url']; ?>" class="shanti-thumbnail-link">
 	         <span class="overlay">
 	            <span class="icon"></span>
-	         </span>
+	         </span><!--use html entities-->
 	         <img title="<?php print htmlentities($title); ?>"
 	             alt="<?php print htmlentities($title); ?>"
 	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>"
