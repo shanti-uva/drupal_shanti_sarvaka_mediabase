@@ -2,16 +2,12 @@
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
+.has-tabs div.banner-tabs
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:focus{ background:#32ccca;}
+.nav-justified>li.active a:focus{ background:#32ccca !important;}
 .nav-justified>li.active:before{ color:#32ccca;}
-
-/* maybe include this PlayBtn in custom colors once it actually works
-.largePlayBtn,
-.largePlayBtn:hover,
-.largePlayBtn:focus{ color:#fff; background-color:#32ccca !important;} */
-/*--- END colors ---*/
+/*--- END custom colors ---*/
 
 
 .content-section{ padding-top:1rem;}
