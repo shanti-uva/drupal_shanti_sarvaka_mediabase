@@ -9,7 +9,8 @@
 /*--- END colors ---*/
 
 
-.content-section{ padding-top:1rem;}
+.content-section{ }
+.content-section.equal-height > .tab-content{ padding-top:1rem;}
 
 /*--- view collections page ---*/
 
@@ -45,7 +46,7 @@
 .page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; top: -2.5rem; }
 
 /*-- Shanti Gallery for MB -*/
-
+.shanti-filters { height:1.75em;}
 .shanti-filters td .label {
 	letter-spacing: inherit;
 }
@@ -58,7 +59,6 @@ display: none;
 	letter-spacing:-0.05rem;
 }
 
-.shanti-filters { height:1.75em;}
 
 /*-- Pager fixes (for solr results) --*/
 .pager-first .icon, .pager-previous .icon, .pager-next .icon, .pager-last .icon {
@@ -74,17 +74,22 @@ display: none;
 	color: #222;
 }
 
-.navbar nav.navtop .block h2{ display: none;} /*--- QUESTION: what is this - ? ---*/
- /*--- .navbar .lang ul.dropdown-menu{ left: -2em;} QUESTION: language menu NOT USED any longer - ? ---*/
+ul.pager {
+  width: 100%;
+}
 
 
-/*--- QUESTION: where is this from - ? ---*/
+
+
+.navbar nav.navtop .block h2{ display: none;} 
+
+
 table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
 	width:70px;
 	margin-left:20px;
 }
 
-/*--- QUESTION: is this translations part of Video - ? ---*/
+
 #locale-translation-filter-form .form-item-translation{ width:22em;}
 #locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */}
 
@@ -238,10 +243,6 @@ a.hide-annot:before{
 
 .view-all-colls-control-box-cell.d  {
   width:25%;
-}
-
-ul.pager {
-  width: 100%;
 }
 
 .views-widget-filter-title label {
