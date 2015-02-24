@@ -179,8 +179,7 @@ else:     /************ FULL Display ***********/
       <div class="avdesc">
       	<!-- Info/Description row -->
 	      <!-- info column -->
-	      <div class="avinfo col-xs-12 col-sm-5 col-md-4 col-lg-3">		      
-		<h5>Details</h5>
+	      <div class="avinfo col-xs-12 col-sm-5 col-md-3">		      
 	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
 	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
 	        <div class="avrating">
@@ -199,7 +198,7 @@ else:     /************ FULL Display ***********/
 	          </div>
 	        <?php endif; ?>
 	      </div> <!-- End of avinfo -->
-	      <div class="video-overview col-xs-12 col-sm-7 col-md-8 col-lg-9">
+	      <div class="video-overview col-xs-12 col-sm-7 col-md-9">
 	        <h5 class="video-overview-title"><?php print t('Audio Overview'); ?></h5>
 	        <div class="avpbcoredesc description trim">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
@@ -267,7 +266,6 @@ else:     /************ FULL Display ***********/
           </div> <!-- End of #details -->
         </div>
       </div>
-  </div>
 
   <?php print render($content['links']); ?>
 

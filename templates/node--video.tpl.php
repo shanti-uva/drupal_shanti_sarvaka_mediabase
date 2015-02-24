@@ -215,7 +215,7 @@ else:     /************ FULL Display ***********/
 		          	<span class="icon shanticon-places" title="Related Places"></span>
 		          	<?php
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          						print render($content['group_details']['field_pbcore_coverage_spatial']);
+		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
