@@ -115,7 +115,13 @@
     </div>
     <div class="description trim">
 			<h4>Overview</h4>
-      <?php print render($content['body']); ?>
+      <?php 
+      if (!empty($content['body'])) {
+      	 print render($content['body']); 
+			} else {
+				print t("<p><em>No description available.</em></p>");
+			}
+      ?>
       <?php if(!empty($subcolls)): ?>
         <div class="field field-subcollection">
         	<label>Subcollection: </label> <?php print $subcolls; ?>
