@@ -260,12 +260,15 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
 		if($type == 'list_places') {
 			module_load_include('inc', 'mb_location', 'mb_location');
 			$place = _get_kmap_place($kmid);
-			$title .= "Resources Tagged With &ldquo;" . $place->header . "&rdquo;";
+			$title .= t("Resources Associated with the Place: ") . $place->header;
 		} else if($type == 'list_subcollections' || $type == 'list_subjects') {
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
 			$kmap = new Kmap($kmid);
 			$t = $kmap->get_term();
-			$title .= "Resources Tagged with &ldquo;" . $t->name . "&rdquo;";
+			$typestr = ($type == 'list_subjects') ? t("Subject") : t("Subcollection");
+			$title .= t("Resources Associated with the @typestr: ", array('@typestr' => $typestr)) .  $t->name;
+			$lineage = $kmap->render_kmap_lineage(Kmap::KMAP_LINEAGE_FULL, TRUE);
+			$vars['lineage'] = '<div class="lineage"><span class="label">' . t("Subject Tree:") . '<span> <span class="links">' . $lineage . '</span></div>';
 		}
 		$vars['title'] = $title;
   }
