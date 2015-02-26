@@ -38,12 +38,11 @@
 .view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
 
 /* Home media list block */
-/* Please talk to Than before removing the line below */
-#block-views-browse-media-home-block .shanti-filters { top: -1.5rem; }
 
 /* Kmaps List page views*/
 .page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 12px 0px 0px;}
-.page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; top: -2.5rem; }
+.page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; }
+.page-list .shanti-view-dom-id .shanti-filters table td { padding: 0px; }
 .page-list .shanti-view-dom-id .view-media-by-kmap { margin-top: 16px; }
 .page-list .shanti-view-dom-id .lineage { margin-top: 12px; margin-left: -6px; }
 .page-list .shanti-view-dom-id .lineage .label { font-size: 1.25rem; color: #444; font-weight: bold; }

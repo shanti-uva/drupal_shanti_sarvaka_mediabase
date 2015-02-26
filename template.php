@@ -261,6 +261,17 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
 			module_load_include('inc', 'mb_location', 'mb_location');
 			$place = _get_kmap_place($kmid);
 			$title .= t("Resources Associated with the Place: ") . $place->header;
+			$parents = array_reverse(fetch_place_dict_details($kmid), TRUE);
+			$vars['lineage'] = '<div class="lineage"><span class="label">' . t("Places Tree:") . '<span> <span class="links">';
+			$ppath = variable_get('kmaps_site_places', 'http://badger.drupal-dev.shanti.virginia.edu/places');
+			$ppath .= variable_get('kmaps_site_path_format', '/%d/overview/nojs');
+			$pout = "";
+			foreach($parents as $pdid => $pname) {
+				$pout .= (strlen($pout) > 0) ? ' > ': '';
+				$link = sprintf($ppath, $pdid);
+				$pout .= "<a href=\"$link\" target=\"_blank\">$pname</a>";
+			}
+			$vars['lineage'] .= $pout . '</span></div>';
 		} else if($type == 'list_subcollections' || $type == 'list_subjects') {
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
 			$kmap = new Kmap($kmid);
