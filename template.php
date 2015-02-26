@@ -147,6 +147,17 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		// Remove Display of Tags in a/v nodes
 		unset($vars['content']['group_details']['field_tags']);
 	}
+
+	// Author info
+	$uid = $vars['uid'];
+	$uname = $uid;
+	$author = user_load($uid);
+	if(!empty($author->realname)) {
+		$uname = $author->realname; 
+	} elseif (!empty($author->name)) {
+		$uname = $author->name;
+	}
+	$vars['user_link'] = l($uname, "user/$uid");
 }
 
 /**

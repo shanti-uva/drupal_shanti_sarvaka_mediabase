@@ -42,8 +42,9 @@
 #block-views-browse-media-home-block .shanti-filters { top: -1.5rem; }
 
 /* Kmaps List page views*/
-.page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 6px 0px 0px;}
+.page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 12px 0px 0px;}
 .page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; top: -2.5rem; }
+.page-list .shanti-view-dom-id .view-media-by-kmap { margin-top: 16px; }
 
 /*-- Shanti Gallery for MB -*/
 .shanti-filters { height:1.75em;}
