@@ -179,9 +179,18 @@ else:     /************ FULL Display ***********/
       <div class="avdesc">
       	<!-- Info/Description row -->
 	      <!-- info column -->
-	      <div class="avinfo col-xs-12 col-sm-5 col-md-3">		      
-	        <div class="avdate"><span class="icon shanticon-calendar"></span>  <?php print date('d M Y', $variables['media_create_date']);  ?></div>
-	        <div class="avduration"><span class="icon shanticon-hourglass"></span>  <?php print $node->duration['formatted'];  ?></div>
+	      <div class="avinfo col-xs-12 col-sm-5 col-md-3">
+	      	<?php if (!empty($variables['media_create_date'])) : ?>	      	      
+	        	<div class="avdate"><span class="icon shanticon-calendar" title="Created"></span>  
+	        		<?php print date('d M Y', $variables['media_create_date']);  ?>
+	        	</div>
+	        <?php endif; ?>
+	        <?php if (!empty($node->duration['formatted'])) : ?>
+	        	<div class="avduration"><span class="icon shanticon-hourglass" title="Length"></span>  
+	        		<?php print $node->duration['formatted'];  ?>
+	        	</div>
+	        <?php endif; ?>
+	        <div class="avauthor"><span class="icon shanticon-agents" title="Creator"></span>  <?php print $user_link;  ?></div>
 	        <div class="avrating">
 	            <h5>Rating</h5>
 	            <?php print render($content['field_rating']); ?>

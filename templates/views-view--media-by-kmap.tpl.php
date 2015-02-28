@@ -35,7 +35,7 @@
     <h2><?php print $title; ?></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-  
+  <?php if (isset($lineage)) { print $lineage; } ?>
   <?php if ($rows && $pager): ?>
 	<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
 			<div class="shanti-filters">
