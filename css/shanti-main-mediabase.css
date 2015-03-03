@@ -8,7 +8,8 @@
 .nav-justified>li.active:before{ color:#32ccca;}
 
 .main-content .selectpicker .caret:before,
-.view-section ul.fancytree-container .glyphicon, 
+.view-section ul.fancytree-container .glyphicon,
+.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:focus{ color: rgba(32, 132, 131, 0.86);}
