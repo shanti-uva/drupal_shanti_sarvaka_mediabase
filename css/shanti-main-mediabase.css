@@ -13,6 +13,9 @@
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:focus{ color: rgba(32, 132, 131, 0.86);}
 
+.view-section .nav-tabs>li.active>a, 
+.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a:focus{ border-top:2px solid rgba(32, 132, 131, 0.86);}
 
 /* possibly for search flyout in the future, save
 .view-section .fancytree-active .fancytree-title::before{ background:;}
