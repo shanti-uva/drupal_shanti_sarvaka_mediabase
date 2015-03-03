@@ -9,6 +9,7 @@
 .input-section .input-group .btn.btn-default{ font-size:1.5rem;}
 .input-section .search-group #edit-actions.form-actions{ margin-top:0;}
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.35rem; }
+.input-section .input-group .input-group-btn .btn span:last-child{ display:none;}
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
 .input-section .form-item .option.icheck-label { font-size: 100% !important; }
