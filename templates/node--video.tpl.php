@@ -131,7 +131,7 @@ if($teaser):
       <?php if(isset($variables['place_link'])): ?>
         <div class="shanti-thumbnail-field shanti-field-place">
          <span class="field-content"><span class="icon shanticon-places"></span>
-           <?php print render($variables['place_link']); ?>
+           <?php print $variables['place_link']; ?>
          </span>
         </div>
       <?php endif; ?>
