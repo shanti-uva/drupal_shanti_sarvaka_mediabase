@@ -23,6 +23,14 @@
 
 .page-search section>.tab-content{ padding-top:1rem;}
 
+/* sidebarsorting list */
+.sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
+.sidebar #block-apachesolr-search-sort ul li a{ font-weight:bold;display:block;}
+
+.sidebar #block-apachesolr-search-sort ul li a:before{ content:'&#xf0da';}
+.sidebar #block-apachesolr-search-sort ul li a.active:before{ }
+
+
 
 .content-section{ }
 .content-section.equal-height > .tab-content{ padding-top:1rem;}
