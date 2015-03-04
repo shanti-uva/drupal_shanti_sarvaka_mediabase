@@ -359,7 +359,6 @@ function sarvaka_mediabase_preprocess_field(&$vars) {
 		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
 		$label = $ew->field_publisher_rome->value();
 		if (strlen($label) > 0) { $vars['label'] = $label; }
-		dpm($vars);
 	}
 }
 
