@@ -7,6 +7,7 @@
 .nav-justified>li.active a:focus{ background:#32ccca;}
 .nav-justified>li.active:before{ color:#32ccca;}
 
+/* note that darker shades are used below on details */
 .main-content .selectpicker .caret:before,
 .input-section .input-group .btn.btn-default:hover,
 .view-section .nav-tabs>li.active>a, 
@@ -17,7 +18,9 @@
 
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus{ border-top:2px solid rgb(43, 175, 174);}
+.view-section .nav-tabs>li.active>a:focus,
+.transcripts-apachesolr-search-snippet .tiers strong,
+.transcripts-apachesolr-search-snippet .tiers mark{ border-color: rgb(43, 175, 174) !important;}
 /*--- END colors ---*/
 
 
