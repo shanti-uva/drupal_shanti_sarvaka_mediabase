@@ -77,7 +77,8 @@
   letter-spacing: -0.03rem;
 }
 
-.shanti-thumbnail-info .shanti-field-group-audience .shanti-thumbnail-link {
+.shanti-thumbnail-info .shanti-field-group-audience .shanti-thumbnail-link, 
+.shanti-thumbnail-info .shanti-field-group-audience .shanti-thumbnail-link a {
   font-size: 1rem;  
   letter-spacing: -0.05rem;
 }
