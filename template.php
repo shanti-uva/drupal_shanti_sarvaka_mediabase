@@ -347,15 +347,19 @@ function sarvaka_mediabase_preprocess_field(&$vars) {
 	$el = &$vars['element'];
 	if($el['#field_name'] == 'field_creator') {
 		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
-		$vars['label'] = $ew->field_creator_role->value();
+		$label = $ew->field_creator_role->value();
+		if (strlen($label) > 0) { $vars['label'] = $label; }
 		
 	} else if($el['#field_name'] == 'field_contributor') {
 		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
-		$vars['label'] = t('Contributing ') . $ew->field_contributor_role->value();
+		$label = $ew->field_contributor_role->value();
+		if (strlen($label) > 0) { $vars['label'] = t('Contributing ') . $label; }
 		
 	} else if($el['#field_name'] == 'field_publisher') {
 		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
-		$vars['label'] = $ew->field_publisher_rome->value();
+		$label = $ew->field_publisher_rome->value();
+		if (strlen($label) > 0) { $vars['label'] = $label; }
+		dpm($vars);
 	}
 }
 
