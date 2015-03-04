@@ -339,6 +339,26 @@ function sarvaka_mediabase_fieldset($vars) {
 	return shanti_sarvaka_fieldset($vars);
 }
 
+/**
+ * Impelments hook_preprocess_field:
+ * 	Changes labels for field collection to use "role" for label (or in the case of publisher "rome")
+ */
+function sarvaka_mediabase_preprocess_field(&$vars) {
+	$el = &$vars['element'];
+	if($el['#field_name'] == 'field_creator') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$vars['label'] = $ew->field_creator_role->value();
+		
+	} else if($el['#field_name'] == 'field_contributor') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$vars['label'] = t('Contributing ') . $ew->field_contributor_role->value();
+		
+	} else if($el['#field_name'] == 'field_publisher') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$vars['label'] = $ew->field_publisher_rome->value();
+	}
+}
+
 /*
 function sarvaka_mediabase_field__datetime($vars) {
 	return render($vars['element']);
