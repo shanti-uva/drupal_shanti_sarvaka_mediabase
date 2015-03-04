@@ -426,7 +426,7 @@ a.hide-annot:before{
 }
 
 /* hiding double display of Publisher label */
-.node .content .field-name-field-pbcore-publisher > .field-label {
+.field-name-field-pbcore-publisher > .field-label {
   display: none;
 }
 
