@@ -424,6 +424,12 @@ a.hide-annot:before{
 	content: ')';
 	clear: both;
 }
+
+/* hiding double display of Publisher label */
+.node .content .field-name-field-pbcore-publisher > .field-label {
+  display: none;
+}
+
 /* fixing spacing of links at bottom (email, add to favs etc.) */
 
 ul.links.inline {
