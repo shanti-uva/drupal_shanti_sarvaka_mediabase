@@ -1,33 +1,23 @@
 /* BEGIN custom theme colors */
 .titlearea,
 .carousel-control,
-.breadcrumb .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:focus{ background:#32ccca;}
 .nav-justified>li.active:before{ color:#32ccca;}
 
+.breadcrumb .icon,
 .main-content .selectpicker .caret:before,
-.view-section ul.fancytree-container .glyphicon,
-.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon,
 .input-section .input-group .btn.btn-default:hover,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus{ color: rgba(32, 132, 131, 0.86);}
+.view-section .nav-tabs>li.active>a:focus,
+.view-section ul.fancytree-container .glyphicon,
+.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon{ color:rgb(43, 175, 174);  /* color: rgba(32, 132, 131, 0.86);*/ }
 
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus{ border-top:2px solid rgba(32, 132, 131, 0.86);}
-
-/* possibly for search flyout in the future, save
-.view-section .fancytree-active .fancytree-title::before{ background:;}
-.view-section .nav-tabs>li.active>a, 
-.view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus{ color:; border-top}
-
-.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon{ color:;}
-.view-section ul.fancytree-container .glyphicon{ color:;}
-*/
+.view-section .nav-tabs>li.active>a:focus{ border-top:2px solid rgb(43, 175, 174);}
 
 /*--- END colors ---*/
 
@@ -35,7 +25,7 @@
 
 .page-search section>.tab-content{ padding-top:1rem;}
 
-/* sidebarsorting list */
+/* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
 .sidebar #block-apachesolr-search-sort ul li img{ display:none;width:0;height:0;}
 .sidebar #block-apachesolr-search-sort ul li a{ background: transparent;font-weight:normal;display:block;}
