@@ -71,6 +71,16 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/* Increasing font size on thumbnails */
+.shanti-thumbnail-info .shanti-field-title .shanti-thumbnail-link {
+  font-size: 1.2rem;
+  letter-spacing: -0.03rem;
+}
+
+.shanti-thumbnail-info .shanti-field-group-audience .shanti-thumbnail-link {
+  font-size: 1rem;  
+  letter-spacing: -0.05rem;
+}
 /* collections page thumbnail - remove responsive class */
 .view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
 
