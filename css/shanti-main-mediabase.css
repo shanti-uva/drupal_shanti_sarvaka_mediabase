@@ -18,9 +18,9 @@
 
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus,
+.view-section .nav-tabs>li.active>a:focus{ border-top-color: rgb(43, 175, 174);}
 .transcripts-apachesolr-search-snippet .tiers strong,
-.transcripts-apachesolr-search-snippet .tiers mark{ border-color: rgb(43, 175, 174) !important;}
+.transcripts-apachesolr-search-snippet .tiers mark{ border-bottom-color: rgb(43, 175, 174);}
 /*--- END colors ---*/
 
 
