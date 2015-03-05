@@ -425,6 +425,9 @@ ul.links.inline {
 display: none;
 }
 
+.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
+	display: none;
+}
 
 
 /** My Content Pages **/
