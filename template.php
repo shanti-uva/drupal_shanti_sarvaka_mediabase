@@ -124,9 +124,17 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
+		// Truncate title in teasers
+		if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 75) {
+			$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
+		}
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
-			$title = $vars['coll']->title;
+			$vars['coll_title'] = $vars['coll']->title;
+			// Truncate collection title in teaser if item title is longer than 60 chars
+			if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 50) {
+				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 32, TRUE, TRUE);
+			}
 			$vars['content']['group_details']['collection'] = array(
 				'#type' => 'markup',
 				'#markup' => "<div class=\"field field-name-av-collection\">
