@@ -6,7 +6,7 @@
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:focus{ background-color:#32ccca !important;}
 .nav-justified>li.active:before{ color:#32ccca !important;}
-mark{ border-bottom-color: #32ccca !important;}
+/*mark{ border-bottom-color: #32ccca !important;}*/
 /* darker shades below are used to better define details */
 .main-content .selectpicker .caret:before,
 .input-section .input-group .btn.btn-default:hover,
