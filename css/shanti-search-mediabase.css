@@ -129,6 +129,22 @@
 	white-space: nowrap;
 }
 **/
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
+	background-color: #fff;
+}
+.view-section .nav-tabs>li {
+	width: 50%;
+	max-width: 200px;
+	font-size: .9em;
+}
+
+
+
+
+
+
+
+
 
 /** Ajax Progress Throbber **/
 .ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
