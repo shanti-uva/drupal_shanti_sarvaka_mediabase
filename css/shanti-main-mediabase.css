@@ -9,7 +9,7 @@
 /* darker shades below are used to better define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .main-content .selectpicker .caret:before,
-.input-section .input-group .btn.btn-default:hover .icon:before,
+.input-section .input-group .btn.btn-default:hover,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:focus,
