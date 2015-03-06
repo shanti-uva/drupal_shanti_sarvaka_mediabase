@@ -30,7 +30,7 @@
 .input-section .input-group-btn .searchreset{ position:absolute; top:0 !important;}
 .input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
 .input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.3rem;}
-.view-section .nav-tabs>li{ width:45%;}
+.view-section .nav-tabs>li{ width:45% !important;}
 .view-section .nav-tabs>li:first-child{ width:55%;}
 
 /* sidebar search results sorting list */
