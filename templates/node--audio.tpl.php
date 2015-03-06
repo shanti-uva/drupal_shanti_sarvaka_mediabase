@@ -121,7 +121,7 @@ if($teaser):
       <?php if($coll): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
-            	class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
+            	class="shanti-thumbnail-link"><?php print $variables['coll_title']; ?></a>
             </div>
         </div>
       <?php endif; ?>
@@ -131,7 +131,7 @@ if($teaser):
       <?php if(isset($variables['place_link'])): ?>
         <div class="shanti-thumbnail-field shanti-field-place">
          <span class="field-content"><span class="icon shanticon-places"></span>
-           <?php print render($variables['place_link']); ?>
+           <?php print $variables['place_link']; ?>
          </span>
         </div>
       <?php endif; ?>

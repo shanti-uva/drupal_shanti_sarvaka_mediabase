@@ -9,25 +9,24 @@
 .input-section .input-group .btn.btn-default{ font-size:1.5rem;}
 .input-section .search-group #edit-actions.form-actions{ margin-top:0;}
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.35rem; }
+.input-section .input-group .input-group-btn .btn span:last-child{ display:none;}
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
 .input-section .form-item .option.icheck-label { font-size: 100% !important; }
 .input-section .toggle-link.advanced-link{ position:relative; top:0; display: none; }
-.input-section .search-group .shanti-options .form-item { width: 48%; float: left;}
-
+.input-section .search-group .shanti-options .form-item { /*width: 48%;*/ margin-right:1rem; float: left;}
+/*
 .input-section .search-group .searchreset{ border-radius:50%;background:transparent;position:relative;top:-2.4rem;left: -2.2rem;}
 .input-section .search-group .searchreset .icon{ cursor:pointer;}
 .input-section .search-group .searchreset .icon:before,
 .input-section .search-group .searchreset .icon:after{ background:#aaa; position:absolute;top:0.7rem; width:1.3rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .input-section .search-group .searchreset .icon:after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
-
+*/
 .view-section .treeview h2{ font-size:1.5em;}
 .view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
-.view-section ul.fancytree-container { min-height: 100%; }
-.fancytree-expander { background-image: none !important; } /* Removes default fancytree arrows */
 /*
-.main-content .selectpicker>li.selected>a:hover .check-mark, 
-.main-content .selectpicker>li.selected>a:focus .check-mark{ color:#777;}
+.view-section ul.fancytree-container { min-height: 100%; }
+.fancytree-expander { background-image: none !important; }  Removes default fancytree arrows 
 */
 .input-section .search-group .radio-inline:first-child{ width:20px;}
 
@@ -59,6 +58,15 @@
 	margin: 12px;
 	font-size: 0.9em;
 }
+
+
+
+
+.view-section .nav-tabs>li {
+	width: 50%;
+	max-width: 200px;
+	font-size: .9em;
+}
 /*
 	.region-search-flyout .block-search .form-item.form-type-radio {
 	display: inline-block;
@@ -87,22 +95,17 @@
 }
 */
 
-/* Facet flyouts */
+/* Facet flyouts 
 
 .kmaps-tree ul.fancytree-container {
 	background-color: #f8f8f8;
-}
-
-.view-section .nav-tabs>li {
-	width: 50%;
-	max-width: 200px;
-	font-size: .9em;
 }
 
 #search-flyout .view-section .shanticon-tree:before {
 	content: "\e639";
 	padding-right: 5px;
 }
+*/
 
 /* Place checkmark before selected facets 
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:before {
@@ -113,7 +116,7 @@
 	padding: 3px;
 }*/
 
-/** Fancytree selected styles **/
+/** Fancytree selected styles 
 
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
 	background-color: #d0f2f2;
@@ -128,6 +131,17 @@
 	font-style: italic;
 	white-space: nowrap;
 }
+**/
+
+
+
+
+
+
+
+
+
+
 
 /** Ajax Progress Throbber **/
 .ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {

@@ -124,14 +124,22 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
+		// Truncate title in teasers
+		if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 75) {
+			$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
+		}
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
-			$title = $vars['coll']->title;
+			$vars['coll_title'] = $vars['coll']->title;
+			// Truncate collection title in teaser if item title is longer than 60 chars
+			if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 50) {
+				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 32, TRUE, TRUE);
+			}
 			$vars['content']['group_details']['collection'] = array(
 				'#type' => 'markup',
 				'#markup' => "<div class=\"field field-name-av-collection\">
 												<span class=\"icon shanticon-create\" title=\"Collection\"></span>&nbsp;<span class=\"field-label-span\">" .
-												t('Collection') . "</span>&nbsp;<a href=\"{$vars['coll']->url}\">{$title}</a></div>",
+												t('Collection') . "</span>&nbsp;<a href=\"{$vars['coll']->url}\">{$vars['coll_title']}</a></div>",
 			);
 		}
 		// Add Icons 
@@ -337,6 +345,29 @@ function sarvaka_mediabase_fieldset($vars) {
 		$vars['element']['#children'] = $output;
 	}
 	return shanti_sarvaka_fieldset($vars);
+}
+
+/**
+ * Impelments hook_preprocess_field:
+ * 	Changes labels for field collection to use "role" for label (or in the case of publisher "rome")
+ */
+function sarvaka_mediabase_preprocess_field(&$vars) {
+	$el = &$vars['element'];
+	if($el['#field_name'] == 'field_creator') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$label = $ew->field_creator_role->value();
+		if (strlen($label) > 0) { $vars['label'] = $label; }
+		
+	} else if($el['#field_name'] == 'field_contributor') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$label = $ew->field_contributor_role->value();
+		if (strlen($label) > 0) { $vars['label'] = t('Contributing ') . $label; }
+		
+	} else if($el['#field_name'] == 'field_publisher') {
+		$ew = entity_metadata_wrapper($el['#entity_type'], $el['#object']);
+		$label = $ew->field_publisher_rome->value();
+		if (strlen($label) > 0) { $vars['label'] = $label; }
+	}
 }
 
 /*

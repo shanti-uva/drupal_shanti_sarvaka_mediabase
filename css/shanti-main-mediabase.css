@@ -4,16 +4,37 @@
 .breadcrumb .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:focus{ background:#32ccca;}
-.nav-justified>li.active:before{ color:#32ccca;}
+.nav-justified>li.active a:focus{ background-color:#32ccca !important;}
+.nav-justified>li.active:before{ color:#32ccca !important;}
+/*mark{ border-bottom-color: #32ccca !important;}*/
+/* darker shades below are used to better define details */
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark,
+.main-content .selectpicker .caret:before,
+.input-section .input-group .btn.btn-default:hover,
+.view-section .nav-tabs>li.active>a, 
+.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a:focus,
+.view-section ul.fancytree-container .glyphicon,
+.view-section ul.fancytree-container .fancytree-node:hover > .glyphicon{ color:rgb(43, 175, 174) !important;  /* color: rgba(32, 132, 131, 0.86);*/ }
+.view-section .nav-tabs>li.active>a, 
+.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a:focus{ border-top-color: rgb(43, 175, 174) !important;}
 /*--- END colors ---*/
-
 
 .content-section{ }
 .content-section.equal-height > .tab-content{ padding-top:1rem;}
+.page-search section>.tab-content{ padding-top:1rem;}
+
+/* sidebar search results sorting list */
+.sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
+.sidebar #block-apachesolr-search-sort ul li img{ display:none;width:0;height:0;}
+.sidebar #block-apachesolr-search-sort ul li a{ background: transparent;font-weight:normal;display:block;}
+.sidebar #block-apachesolr-search-sort ul li a.active{ font-weight:bold;}
+
+.sidebar #block-apachesolr-search-sort ul li a:before{ content:''; width:1rem;height:1rem;background:transparent;border:2px solid #5b68ce;display:inline-block; border-radius:50%; margin-right:8px;}
+.sidebar #block-apachesolr-search-sort ul li a.active:before{ background: #5b68ce;}
 
 /*--- view collections page ---*/
-
 .view-collections .views-exposed-form{ margin-bottom:0; /*border-bottom:1px solid #ccc;*/ }
 .view-collections .views-exposed-form .views-exposed-widget{ float: left; padding: .5em 1em 0 0;}
 .view-collections .views-exposed-form .views-exposed-widget label, .view-collections .views-exposed-form .views-exposed-widget div { float: left; margin: 0 1em 0 0; vertical-align: middle; }
@@ -23,7 +44,7 @@
 .view-collections .views-exposed-widget.views-widget-sort-order{ width:6em;}
 .view-collections .views-exposed-widget.views-widget-per-page{ width:10.5em;}
 
-.view-collections .views-row{ padding-top: 0.75em;padding-bottom: 1em;margin:0 auto;border-top:1px solid #fff;border-bottom:1px solid #ccc;	min-height:14em;}
+.view-collections .views-row{ padding-top: 0.75em;padding-bottom: 1em;margin:0 auto;border-top:1px solid #fff;border-bottom:1px solid #ccc;	min-height:12.5em;}
 .view-collections .views-row:after{ clear:both;}
 .view-collections .views-row:first-child{ /* padding-top:0;margin-top:0.25em; border-top:3px double #e0e0e0; */}
 .view-collections .views-field-title{ font-size:1.5em;margin-bottom:-0.5em;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
@@ -33,6 +54,9 @@
 /*---------------------------*/
 /***** REVIEW STYLES *********/
 /*---------------------------*/
+
+
+
 
 /* collections page thumbnail - remove responsive class */
 .view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
@@ -59,9 +83,7 @@
 display: none;
 }
 
-.shanti-thumbnail-field.shanti-field-title .field-content a {
-	letter-spacing:-0.05rem;
-}
+
 
 
 /*-- Pager fixes (for solr results) --*/
@@ -169,14 +191,16 @@ a.hide-annot:before{
 	margin: 20px 10px 0 0;
 }
 
+
+
+.shanti-thumbnail.collection .shanti-thumbnail-info{ }
 .shanti-thumbnail.collection .shanti-field-body {
 	margin-top: 3px;
 	padding-top: 3px;
-	border-top: thin solid #ccc;
+	border-top: 1px solid #ccc;
 }
-
 .shanti-thumbnail.collection .shanti-field-title a {
-	font-size: 0.93em;
+	font-size: 1.12em;
 	font-weight: bold;
 }
 
@@ -386,6 +410,12 @@ a.hide-annot:before{
 	content: ')';
 	clear: both;
 }
+
+/* hiding double display of Publisher label */
+.field-name-field-pbcore-publisher > .field-label {
+  display: none;
+}
+
 /* fixing spacing of links at bottom (email, add to favs etc.) */
 
 ul.links.inline {
@@ -398,6 +428,9 @@ ul.links.inline {
 display: none;
 }
 
+.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
+	display: none;
+}
 
 
 /** My Content Pages **/
