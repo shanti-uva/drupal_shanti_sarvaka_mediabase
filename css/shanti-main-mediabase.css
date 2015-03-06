@@ -28,7 +28,6 @@
 .page-search section>.tab-content{ padding-top:1rem;}
 
 .input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.3rem;}
-.view-section .nav-tabs>li.active>a .icon{ margin-right:0.5rem;}
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
