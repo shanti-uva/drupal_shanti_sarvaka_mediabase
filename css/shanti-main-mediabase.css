@@ -17,10 +17,10 @@
 .view-section .nav-tabs>li.active>a:focus,
 .view-section .fancytree-container .glyphicon,
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
-.view-section .fancytree-container .fancytree-node:focus > .glyphicon{ color:rgb(43, 175, 174) !important;  /* color: rgba(32, 132, 131, 0.86);*/ }
+.view-section .fancytree-container .fancytree-node:focus > .glyphicon{ color:rgb(40, 161, 160) !important;  /* color: rgba(32, 132, 131, 0.86);*/ }
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:focus{ border-top-color: rgb(43, 175, 174) !important;}
+.view-section .nav-tabs>li.active>a:focus{ border-top-color: rgb(40, 161, 160) !important;}
 /*--- END colors ---*/
 
 .content-section{ }
