@@ -31,7 +31,7 @@
 .input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
 .input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.3rem;}
 .view-section .nav-tabs>li{ width:45% !important;}
-.view-section .nav-tabs>li:first-child{ width:55%;}
+.view-section .nav-tabs>li:first-child{ width:55% !important;}
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
