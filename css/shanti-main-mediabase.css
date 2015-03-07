@@ -27,12 +27,6 @@
 .content-section.equal-height > .tab-content{ padding-top:1rem;}
 .page-search section>.tab-content{ padding-top:1rem;}
 
-.input-section .input-group-btn .searchreset{ position:absolute; top:0 !important;}
-.input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
-.input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.1rem;}
-.view-section .nav-tabs>li{ width:45% !important;}
-.view-section .nav-tabs>li:first-child{ width:55% !important;}
-
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
 .sidebar #block-apachesolr-search-sort ul li img{ display:none;width:0;height:0;}
@@ -480,87 +474,6 @@ display: none;
 .views-table .kaltura-thumb img {
 	height: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*******************************************************************************
- * Styles specific to this skin.
- *
- * This section is automatically generated from the `ui-fancytree.less` template.
- ******************************************************************************/
-/*
-ul.fancytree-container ul {
-  padding: 0 0 0 1.5em;
-  margin: 0;
-}
-/* Prevent focus frame ------
-.fancytree-container:focus {
-  outline: none;
-}
-span.fancytree-node {
-  border: 1px solid transparent;
-  border-radius: 3px;
-  padding-left: 8px;
-}
-span.fancytree-title {
-  border-radius: 3px;
-}
-*/
-span.fancytree-node.fancytree-selected {
-  background-color: #fff;
-  border-color: transparent;
-  box-shadow: 1px 1px 0 rgba(255,255,255,.4);
-}
-span.fancytree-node.fancytree-selected span.fancytree-title {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-span.fancytree-node.fancytree-active {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-.fancytree-container.fancytree-treefocus span.fancytree-node:hover {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-focused {
-  border-color: #aaa;
-}
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-  border-color: transparent;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -8,7 +8,7 @@
 .input-section .search-group{ margin-top:-1em; }
 .input-section .input-group .btn.btn-default{ font-size:1.5rem;}
 .input-section .search-group #edit-actions.form-actions{ margin-top:0;}
-.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.35rem; }
+.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right { top:0.2rem; }
 .input-section .input-group .input-group-btn .btn span:last-child{ display:none;}
 .input-section .advanced-view{ padding-top:0.5em;}
 .input-section .search-group .radio-inline { min-width: 0px !important; }
@@ -59,14 +59,85 @@
 	font-size: 0.9em;
 }
 
+.input-section .input-group-btn .searchreset{ position:absolute; top:0 !important;}
+.input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
+.view-section .nav-tabs>li{ width:45% !important;	max-width: 200px; font-size: .9em;}
+.view-section .nav-tabs>li:first-child{ width:55% !important;}
 
-
-
-.view-section .nav-tabs>li {
-	width: 50%;
-	max-width: 200px;
-	font-size: .9em;
+/*******************************************************************************
+ * Styles specific to this skin.
+ *
+ * This section is automatically generated from the `ui-fancytree.less` template.
+ ******************************************************************************/
+/*
+ul.fancytree-container ul {
+  padding: 0 0 0 1.5em;
+  margin: 0;
 }
+/* Prevent focus frame ------
+.fancytree-container:focus {
+  outline: none;
+}
+span.fancytree-node {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+span.fancytree-title {
+  border-radius: 3px;
+}
+*/
+span.fancytree-node.fancytree-selected {
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: 1px 1px 0 rgba(255,255,255,.4);
+}
+span.fancytree-node.fancytree-selected span.fancytree-title {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+span.fancytree-node.fancytree-active {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.fancytree-container.fancytree-treefocus span.fancytree-node:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-focused {
+  border-color: #aaa;
+}
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
+  border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 	.region-search-flyout .block-search .form-item.form-type-radio {
 	display: inline-block;
