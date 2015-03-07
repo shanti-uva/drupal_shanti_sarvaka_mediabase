@@ -29,7 +29,7 @@
 
 .input-section .input-group-btn .searchreset{ position:absolute; top:0 !important;}
 .input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
-.input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.3rem;}
+.input-section .input-group-btn .glyphicon-chevron-right{ position: relative; top:0.1rem;}
 .view-section .nav-tabs>li{ width:45% !important;}
 .view-section .nav-tabs>li:first-child{ width:55% !important;}
 
@@ -518,27 +518,34 @@ span.fancytree-title {
 span.fancytree-node.fancytree-selected {
   background-color: #fff;
   border-color: transparent;
+  box-shadow: 1px 1px 0 rgba(255,255,255,.4);
 }
 span.fancytree-node.fancytree-selected span.fancytree-title {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
 }
 span.fancytree-node.fancytree-active {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
 }
 .fancytree-container.fancytree-treefocus span.fancytree-node:hover {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
 }
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-focused {
   border-color: #aaa;
 }
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
 }
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
 }
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active {
   background-color: #fff;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4);
   border-color: transparent;
 }
 
