@@ -193,7 +193,6 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  * Views Preprocess
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
-	//dpm($vars, 'pp view');
 	$view = $vars['view'];
   if (isset($view->name) && $view->name == 'collections') {
   	//dpm($view, 'view');

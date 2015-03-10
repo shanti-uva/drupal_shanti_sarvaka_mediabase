@@ -436,6 +436,43 @@ display: none;
 
 
 /** My Content Pages **/
+.view-my-content .vbo-views-form fieldset#edit-select {
+	float: right;
+	width: 65%;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select legend {
+	color: #555;
+	font-size: 80%;
+	font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+  padding: 12px 0px 0px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
+	margin-top: -0.3em;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
+	margin-top: -8px;	
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
+	margin: 0px;
+}
+
+.view-my-content .views-exposed-widgets {
+	float: left;
+	width: 30%;
+}
+
+.view-my-workflow .views-exposed-widget {
+	float: left;
+	padding: 0px 12px;
+}
+
 .view .form-item-operation {
 	float: left;
 }
