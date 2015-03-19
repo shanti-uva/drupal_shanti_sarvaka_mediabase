@@ -38,7 +38,7 @@
 
 /*--- view collections page ---*/
 .view-collections .views-exposed-form{ margin-bottom:0; /*border-bottom:1px solid #ccc;*/ }
-.view-collections .views-exposed-form .views-exposed-widget{ float: left; padding: .5em 1em 0 0;}
+.view-collections .views-exposed-form .views-exposed-widget{ padding: .5em 1em 0 0;}
 .view-collections .views-exposed-form .views-exposed-widget label, 
 .view-collections .views-exposed-form .views-exposed-widget div { float: left; margin: 0 1em 0 0; vertical-align: middle; }
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
