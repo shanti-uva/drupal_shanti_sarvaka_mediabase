@@ -60,16 +60,16 @@
 			attach: function (context, settings) {
 				if(context == window.document) {		
 
-						if ($(".tabs.primary > active:contains('My Media')") { 							
+						if ($(".tabs.primary > active:contains('My Media')")) { 							
 							  $(body).addClass("my-media");							
 						}
-						if ($(".tabs.primary > active:contains('My Collections')") { 							
+						if ($(".tabs.primary > active:contains('My Collections')")) { 							
 							  $(body).addClass("my-collections");							
 						}
-						if ($(".tabs.primary > active:contains('My Workflow')") { 							
+						if ($(".tabs.primary > active:contains('My Workflow')")) { 							
 							  $(body).addClass("my-workflow");							
 						}
-						if ($(".tabs.primary > active:contains('My Memberships')") { 							
+						if ($(".tabs.primary > active:contains('My Memberships')")) { 							
 							  $(body).addClass("my-memberships");							
 						}												
 				}
