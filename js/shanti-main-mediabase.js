@@ -61,16 +61,16 @@
 				if(context == window.document) {		
 
 						if ($('.tabs.primary > .active:contains("My Media")').length ) { 							
-							  $(body).addClass('page-my-media');							
+							  $('body').addClass('page-my-media');							
 						}
 						if ($('.tabs.primary > .active:contains("My Collections")').length ) { 							
-							  $(body).addClass('page-my-collections');							
+							  $('body').addClass('page-my-collections');							
 						}
 						if ($('.tabs.primary > .active:contains("My Workflow")').length ) { 							
-							  $(body).addClass('page-my-workflow');							
+							  $('body').addClass('page-my-workflow');							
 						}
 						if ($('.tabs.primary > .active:contains("My Memberships")').length ) { 							
-							  $(body).addClass('page-my-memberships');							
+							  $('body').addClass('page-my-memberships');							
 						}												
 				}
 		 }
