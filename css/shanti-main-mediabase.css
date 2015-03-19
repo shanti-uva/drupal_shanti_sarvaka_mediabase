@@ -291,7 +291,8 @@ a.hide-annot:before{
   margin: -4px 8px 0 0;
 }
 
-.view-collections .views-exposed-widget.views-submit-button, .view-collections .views-exposed-widget.views-reset-button {
+.view-collections .views-exposed-widget.views-submit-button, 
+.view-collections .views-exposed-widget.views-reset-button {
 	padding: 0;
 	margin: -12px 0 0 0;
 }
@@ -508,13 +509,13 @@ display: none;
 .view-my-workflow .views-table tr td{ font-size: 0.88em;}
 .view-my-workflow .views-table tr td.views-field-title{ font-size:1em;}
 
-/* --- AV users MyMedia tab ---*/
+/* --- AV users MyMedia tab 
 .page-my-content .panel-heading:first-child{ display:none;}
 .page-my-content .panel-heading:first-child .panel-body{ background:transparent;}
 .page-my-content .view-content,
 .page-my-content div#edit-select.panel-collapse.collapse.in{ height:20px;}
 .page-my-content .views-exposed-form .views-exposed-widget{ float:none; width:auto; padding: 0.5em 1em 0 0;}
-
+---*/
 
 .views-table .kaltura-thumb img { height: 50px;}
 
