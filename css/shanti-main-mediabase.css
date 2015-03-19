@@ -76,11 +76,7 @@
 .page-list .shanti-view-dom-id .lineage .links:text-only { font-size: 1.25rem; color: #444; }
 .page-list .shanti-view-dom-id .lineage .links a { font-size: 1.25rem; font-weight: normal; }
 
-/*-- Shanti Gallery for MB -*/
-.shanti-filters { height:1.75em;}
-.shanti-filters td .label {
-	letter-spacing: inherit;
-}
+
 
 .views-exposed-form .views-widget-filter-title label {
 display: none;
