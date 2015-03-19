@@ -112,7 +112,7 @@ if($teaser):
 	          } ?></span>
 	      </div>
 
-      <?php if(isset($variables['duration'])): ?>
+      <?php if(!empty($variables['duration']['formatted'])): ?>
         <div class="shanti-thumbnail-field shanti-field-duration">
          <span class="field-content"> <?php print $variables['duration']['formatted'] ?></span>
         </div>
