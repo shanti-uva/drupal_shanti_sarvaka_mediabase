@@ -54,6 +54,27 @@
 				
 				}
 		  }
-		};	 		
+		};	 
+		
+	Drupal.behaviors.shantiSarvakaMbSearchFlyoutCancel = {
+			attach: function (context, settings) {
+				if(context == window.document) {		
+
+						if ($(".tabs.primary > active:contains('My Media')").length ) { 							
+							  $(body).addClass("page-my-media");							
+						}
+						if ($(".tabs.primary > active:contains('My Collections')").length ) { 							
+							  $(body).addClass("page-my-collections");							
+						}
+						if ($(".tabs.primary > active:contains('My Workflow')").length ) { 							
+							  $(body).addClass("page-my-workflow");							
+						}
+						if ($(".tabs.primary > active:contains('My Memberships')").length ) { 							
+							  $(body).addClass("page-my-memberships");							
+						}												
+				}
+		 }
+	};	
+				
 	
 } (jQuery)); // End of JQuery Wrapper
