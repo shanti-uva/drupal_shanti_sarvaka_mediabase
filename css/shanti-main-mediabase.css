@@ -505,7 +505,7 @@ display: none;
 	padding: 6px 12px 6px 3px;
 	min-width: 75px;
 	font-size: 1em;
-	white-space: nowrap;
+	/* white-space: nowrap; ---- removed...this is pushing the table too wide on myworkflow page, probably others too */
 }
 
 .views-table .kaltura-thumb img {
@@ -513,45 +513,9 @@ display: none;
 }
 
 
-
-/* BS carousel fading styling, instad of sliding 
-.carousel-fade {
-  .carousel-inner {
-    .item {
-      opacity: 0;
-      transition-property: opacity;
-    }
-
-    .active {
-      opacity: 1;
-    }
-
-    .active.left,
-    .active.right {
-      left: 0;
-      opacity: 0;
-      z-index: 1;
-    }
-
-    .next.left,
-    .prev.right {
-      opacity: 1;
-    }
-  }
-
-  .carousel-control {
-    z-index: 2;
-  }
-}
-.carousel.carousel-fade .carousel-inner .item{ opacity: 0;transition-property: opacity;}
-.carousel.carousel-fade .carousel-inner .active{ left: 0;opacity: 1;z-index: 1;}
-.carousel.carousel-fade .carousel-inner .active.left,
-.carousel.carousel-fade .carousel-inner .active.right{ left: 0;opacity: 0;z-index: 1;}
-.carousel.carousel-fade .carousel-inner .next.left,
-.carousel.carousel-fade .carousel-inner .prev.right{  opacity: 1;}
-.carousel.carousel-fade .carousel-control{ z-index: 2;}
-*/
-
+/* ---------------------- */
+/* carousel - fade styles */
+/* ---------------------- */
 .carousel.carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
@@ -566,16 +530,18 @@ display: none;
   left: 0;
   opacity: 0;
   z-index: 1;
-}
-
+}	
 .carousel.carousel-fade .carousel-inner .next.left,
 .carousel.carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
 
+/* keep the next-prev button under the right white column for logged in */
 .carousel.carousel-fade .carousel-control {
-  z-index: 2;
+  z-index: 1;
 }
+/* hide pause button */
+.carousel.carousel-fade .control-box-2{ display:none;}
 
 /*
 WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
@@ -607,6 +573,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 
 
-
+.page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
 
 
