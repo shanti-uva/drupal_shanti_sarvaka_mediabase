@@ -510,10 +510,10 @@ display: none;
 .view-my-workflow .views-table tr td.views-field-title{ font-size:1em;}
 
 /* --- AV users MyMedia tab ---*/
-.page-my-media .field-accordion:first-child .panel-heading{ display:none;}
-.page-my-media .field-accordion:first-child .panel-body{ background:transparent;}
-/* .my-media .view-content, */
-.page-my-media .field-accordion:first-child .panel-collapse.collapse.in{ height:20px;}
+.page-my-media .field-accordion .panel-heading{ display:none;}
+.page-my-media .field-accordion .panel-body{ background:transparent;}
+.page-my-media .view-content,
+.page-my-media .field-accordion .panel-collapse.collapse.in{ height:20px;}
 .page-my-media .views-exposed-form .views-exposed-widget{ float:none; width:auto; padding: 0.5em 1em 0 0;}
 
 
