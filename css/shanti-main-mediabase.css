@@ -23,9 +23,12 @@
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(40, 161, 160) !important;}
 /*--- END colors ---*/
 
+
 .content-section{ }
 .content-section.equal-height > .tab-content{ padding-top:1rem;}
 .page-search section>.tab-content{ padding-top:1rem;}
+
+.extruder .input-section{ height:8.9rem;}
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
