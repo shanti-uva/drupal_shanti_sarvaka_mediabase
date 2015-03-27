@@ -200,6 +200,7 @@ a.hide-annot::before{
 	margin-top: 3px;
 	padding-top: 3px;
 	border-top: 1px solid #ccc;
+	height:14rem; /* overflow auto is set in shanti-main */
 }
 .shanti-thumbnail.collection .shanti-field-title a {
 	font-size: 1.12em;
