@@ -196,7 +196,7 @@ a.hide-annot::before{
 
 
 .shanti-thumbnail.collection{ height:18.5em;}
-.shanti-thumbnail.collection .body-wrap{ overflow-y:hidden; overflow-x:auto; height:14.25rem;}
+.shanti-thumbnail.collection .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
 .shanti-thumbnail.collection .view.view-collections{ padding-bottom:6rem;}
 .shanti-thumbnail.collection .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; */}
 
