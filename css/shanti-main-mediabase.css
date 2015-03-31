@@ -198,7 +198,7 @@ a.hide-annot::before{
 .shanti-thumbnail.collection{ height:18.5em;}
 .shanti-thumbnail.collection .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
 .shanti-thumbnail.collection .view.view-collections{ padding-bottom:6rem;}
-.shanti-thumbnail.collection .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; */}
+.shanti-thumbnail.collection .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; for URL paths if needed with js */}
 
 
 .shanti-thumbnail.collection .shanti-thumbnail-info{ }
@@ -206,7 +206,7 @@ a.hide-annot::before{
 	margin-top: 3px;
 	padding-top: 3px;
 	border-top: 1px solid #ccc;
-	height:14rem; /* overflow auto is set in shanti-main */
+	/* dont set height on this */
 }
 .shanti-thumbnail.collection .shanti-field-title a {
 	font-size: 1.12em;
