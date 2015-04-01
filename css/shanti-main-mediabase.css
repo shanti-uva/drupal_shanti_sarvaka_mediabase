@@ -41,9 +41,9 @@
 
 /*--- view collections page ---*/
 .view-collections .views-exposed-form{ margin-bottom:0; /*border-bottom:1px solid #ccc;*/ }
-.view-collections .views-exposed-form .views-exposed-widget{ padding: .5em 1em 0 0;}
+.view-collections .views-exposed-form .views-exposed-widget{ padding:0 0.5em 0 0;}
 .view-collections .views-exposed-form .views-exposed-widget label, 
-.view-collections .views-exposed-form .views-exposed-widget div { float: left; margin: 0 1em 0 0; vertical-align: middle; }
+.view-collections .views-exposed-form .views-exposed-widget div { /*float: left; margin: 0 1em 0 0; */vertical-align: middle; }
 .view-collections .views-exposed-form input.form-control{ width:12em;	}
 .view-collections .views-exposed-widget.views-widget-filter-status{ width:6em;padding-top:0;}
 .view-collections .views-exposed-widget.views-widget-sort-by{ width:9.5em;}
@@ -209,7 +209,7 @@ a.hide-annot::before{
 	/* dont set height on this */
 }
 .shanti-thumbnail.collection .shanti-field-title a {
-	font-size: 1.12em;
+	font-size: 1.06em;
 	font-weight: bold;
 }
 
@@ -476,6 +476,7 @@ display: none;
 .view-my-content .views-exposed-widgets {
 	float: left;
 	width: 30%;
+	margin-bottom:0;
 }
 
 .view-my-workflow .views-exposed-widget {
