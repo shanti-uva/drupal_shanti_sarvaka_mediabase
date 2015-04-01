@@ -492,13 +492,19 @@ display: none;
 
 .view-my-content .views-exposed-widgets {
 	float: left;
-	width: 30%;
 	margin-bottom:0;
+
 }
 
 .view-my-workflow .views-exposed-widget {
 	float: left;
 	padding: 0px 12px;
+}
+
+.views-exposed-form .views-exposed-widget{
+	width:27rem;
+	height:5.5rem;
+	margin:0 auto;
 }
 
 .view .form-item-operation {
