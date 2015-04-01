@@ -220,7 +220,7 @@ a.hide-annot::before{
 .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   font-size: 1em;
-  margin-top:2rem;
+  margin-top:2.3rem;
   text-align:center;
 }
 
@@ -229,7 +229,7 @@ a.hide-annot::before{
   margin: 2rem 0 0;
   padding: 0;
   list-style-type: none;
-  text-align: center;
+  text-align: right;
 }
 
 #view-all-colls-switcher li {
@@ -271,12 +271,12 @@ a.hide-annot::before{
 }
 
 .view-all-colls-control-box .pager{ 
-text-align: center;
+text-align: left;
 float: none;
 position: static;
 top: 0;
 right: 0;
-margin:2.5rem 0 0;
+margin:2.3rem 0 0;
 }
 
 .view-all-colls-control-box .pager li>a{
