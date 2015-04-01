@@ -284,11 +284,11 @@ a.hide-annot::before{
 
 .view-all-colls-control-box .pager{ 
 text-align: left;
-float: none;
+float: left;
 position: static;
 top: 0;
 right: 0;
-margin:2.3rem 0 0;
+margin:1.5rem 0 0;
 }
 
 .view-all-colls-control-box .pager li>a{
