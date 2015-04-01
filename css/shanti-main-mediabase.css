@@ -282,6 +282,7 @@ top: 0;
 right: 0;
 margin:1.5rem 0 1rem;
 }
+.view-collections .view-all-colls-control-box .pagerer-pager .pager{ margin:0.6rem 0 1rem;}
 
 .view-all-colls-control-box .pager li>a{
 	color: #606060;
@@ -636,6 +637,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	.view-collections .view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
 	.view-collections #view-all-colls-switcher{ margin-top:2rem; margin-bottom:1rem;}
 	.view-collections .view-all-colls-control-box .pager{ margin:2.3rem 0 1rem;}
+	.view-collections .view-all-colls-control-box .pagerer-pager .pager{ margin-top:1.5;}
 
 }
 

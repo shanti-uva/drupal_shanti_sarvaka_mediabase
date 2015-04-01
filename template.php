@@ -220,8 +220,8 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
     $control_box = "<div class='view-all-colls-control-box'><div class='view-all-colls-control-box-row'>";
     $control_box .= "<span class='a view-all-colls-control-box-cell col-xs-12 col-sm-3'>$header</span>";
     $control_box .= "<span class='b view-all-colls-control-box-cell col-xs-12 col-sm-3'>$filters</span>";
-    $control_box .= "<span class='c view-all-colls-control-box-cell col-xs-6 col-sm-3'>$switch</span>";
-    $control_box .= "<span class='d view-all-colls-control-box-cell col-xs-6 col-sm-3'>$pager</span></div></div>\n";
+    $control_box .= "<span class='c view-all-colls-control-box-cell col-xs-3 col-sm-2'>$switch</span>";
+    $control_box .= "<span class='d view-all-colls-control-box-cell col-xs-9 col-sm-4'>$pager</span></div></div>\n";
     
     // Attach the new element to the array
     $vars['attachment_before'] = $control_box;
