@@ -219,7 +219,7 @@ a.hide-annot::before{
 
 .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 #view-all-colls-switcher {
@@ -233,16 +233,18 @@ a.hide-annot::before{
 #view-all-colls-switcher li {
   display: inline;
   list-style: none;
-  font-size: 18pt;
+  font-size: 1.75rem;
   padding: .25em .5em .1em;
-  margin: 0 3px;
+  margin: 0 0.7rem;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 0px 1px 5px #aaa;
   background-color: white;
 }
 
+.views-exposed-form .form-submit{ margin-top:-0.3rem;}
+
 #view-all-colls-switcher li.on {
-  background-color: #EEE5EE;
+  background-color: #e0e0e0;
 }
 
 #view-all-colls-switcher .icon:hover {
