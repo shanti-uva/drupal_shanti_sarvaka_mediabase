@@ -230,7 +230,7 @@ a.hide-annot::before{
 
 #view-all-colls-switcher {
   display: block;
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
   padding: 0;
   list-style-type: none;
   text-align: right;
@@ -280,7 +280,7 @@ float: left;
 position: static;
 top: 0;
 right: 0;
-margin:0.6rem 0 1rem;
+margin:1.5rem 0 1rem;
 }
 
 .view-all-colls-control-box .pager li>a{
@@ -635,7 +635,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	
 	.view-collections .view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
 	.view-collections #view-all-colls-switcher{ margin-top:2rem; margin-bottom:1rem;}
-	.view-collections .view-all-colls-control-box .pager{ margin:1.5rem 0 1rem;}
+	.view-collections .view-all-colls-control-box .pager{ margin:2.3rem 0 1rem;}
 
 }
 
