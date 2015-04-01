@@ -40,7 +40,7 @@
 .sidebar #block-apachesolr-search-sort ul li a.active::before{ background: #5b68ce;}
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form{ margin-bottom:0; /*border-bottom:1px solid #ccc;*/ }
+.view-collections .views-exposed-form{ margin-bottom:0; text-align:center;/*border-bottom:1px solid #ccc;*/ }
 .view-collections .views-exposed-form .views-exposed-widget{ padding:0 0.5em 0 0;}
 .view-collections .views-exposed-form .views-exposed-widget label, 
 .view-collections .views-exposed-form .views-exposed-widget div { /*float: left; margin: 0 1em 0 0; */vertical-align: middle; }
@@ -218,11 +218,23 @@ a.hide-annot::before{
  */
 
 .view-result-count-info {
-  font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
+  font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
   font-size: 1em;
-  margin-top:2.3rem;
+  margin-top:0.3rem;
+  margin-bottom:0;
   text-align:center;
+  font-weight:bold;
+  font-weight:700;
+  color:#606060;
 }
+
+@media screen and (min-width: 768px) {
+	.view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
+
+}
+
+
+
 
 #view-all-colls-switcher {
   display: block;
@@ -243,7 +255,7 @@ a.hide-annot::before{
   background-color: white;
 }
 
-.views-exposed-form .form-submit{ margin-top:-0.3rem;}
+.views-exposed-form .views-exposed-widget .form-submit{ margin-top:1.75em;padding: .75em 1.32em .62em; margin: 2em 0 0; line-height: 1.75em;}
 
 #view-all-colls-switcher li.on {
   background-color: #e0e0e0;
@@ -280,8 +292,9 @@ margin:2.3rem 0 0;
 }
 
 .view-all-colls-control-box .pager li>a{
-	color: #555;
-padding: 0.2rem 0.7rem 0.4rem;
+	color: #606060;
+	padding: 0.2rem 0.7rem 0.4rem;
+	text-transform:capitalize;
 }
 
 .view-all-colls-control-box-cell table.pagerer{ float: none; position:static; min-width: 30rem;text-align: left; margin:0 auto;}
@@ -497,7 +510,7 @@ display: none;
 	float: left;
 	margin-bottom:0;
 }
-.view-collections .views-exposed-form .views-exposed-widgets{ min-width:27rem;margin:0 auto;}
+.view-collections .views-exposed-form .views-exposed-widgets{ min-width:27rem;margin:0 auto;display:inline-block;}
 
 .view-collections .view-my-workflow .views-exposed-widget {
 	float: left;
