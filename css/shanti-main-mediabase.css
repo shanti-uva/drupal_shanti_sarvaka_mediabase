@@ -265,7 +265,7 @@ a.hide-annot::before{
    display: table-cell;
    vertical-align: middle;
 }
-
+/*
 .view-all-colls-control-box-cell.a  {
   width:20%;
 }
@@ -281,7 +281,7 @@ a.hide-annot::before{
 .view-all-colls-control-box-cell.d  {
   width:25%;
 }
-
+*/
 .views-widget-filter-title label {
   padding-top: 3px;
   font-size: 14pt;
