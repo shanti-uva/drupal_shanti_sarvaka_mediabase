@@ -220,11 +220,12 @@ a.hide-annot::before{
 .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   font-size: 1em;
+  margin-top:2rem;
 }
 
 #view-all-colls-switcher {
-  display: inline-block;
-  margin: 0;
+  display: block;
+  margin: 2rem 0 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
@@ -266,6 +267,15 @@ a.hide-annot::before{
 .view-all-colls-control-box-cell  {
    display: table-cell;
    vertical-align: middle;
+}
+
+view-all-colls-control-box .pager{ 
+text-align: center;
+float: none;
+position: static;
+top: 0;
+right: 0;
+margin-top:2rem;
 }
 /*
 .view-all-colls-control-box-cell.a  {
