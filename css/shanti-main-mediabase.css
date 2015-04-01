@@ -195,20 +195,20 @@ a.hide-annot::before{
 
 
 
-.shanti-thumbnail.collection{ height:18.5em;}
-.shanti-thumbnail.collection .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
-.shanti-thumbnail.collection .view.view-collections{ padding-bottom:6rem;}
-.shanti-thumbnail.collection .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; for URL paths if needed with js */}
+.view-collections .shanti-thumbnail{ height:18.5em;}
+.view-collections .shanti-thumbnail .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
+.view-collections .shanti-thumbnail .view.view-collections{ padding-bottom:6rem;}
+.view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; for URL paths if needed with js */}
 
 
-.shanti-thumbnail.collection .shanti-thumbnail-info{ }
-.shanti-thumbnail.collection .shanti-field-body {
+.view-collections .shanti-thumbnail .shanti-thumbnail-info{ }
+.view-collections .shanti-thumbnail .shanti-field-body {
 	margin-top: 3px;
 	padding-top: 3px;
 	border-top: 1px solid #ccc;
 	/* dont set height on this */
 }
-.shanti-thumbnail.collection .shanti-field-title a {
+.view-collections .shanti-thumbnail .shanti-field-title a {
 	font-size: 1.06em;
 	font-weight: bold;
 }
@@ -228,17 +228,9 @@ a.hide-annot::before{
   color:#606060;
 }
 
-@media screen and (min-width: 768px) {
-	.view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
-
-}
-
-
-
-
 #view-all-colls-switcher {
   display: block;
-  margin: 2rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
   list-style-type: none;
   text-align: right;
@@ -282,13 +274,13 @@ a.hide-annot::before{
    vertical-align: middle;
 }
 
-.view-all-colls-control-box .pager{ 
+.view-collections .view-all-colls-control-box .pager{ 
 text-align: left;
 float: left;
 position: static;
 top: 0;
 right: 0;
-margin:1.5rem 0 0;
+margin:0.6rem 0 1rem;
 }
 
 .view-all-colls-control-box .pager li>a{
@@ -510,7 +502,7 @@ display: none;
 	float: left;
 	margin-bottom:0;
 }
-.view-collections .views-exposed-form .views-exposed-widgets{ min-width:27rem;margin:0 auto;display:inline-block;}
+.view-collections .views-exposed-form .views-exposed-widgets{ min-width:24rem;margin:0 auto;display:inline-block;}
 
 .view-collections .view-my-workflow .views-exposed-widget {
 	float: left;
@@ -520,6 +512,7 @@ display: none;
 .view-collections .views-exposed-form .views-exposed-widget{
 	height:5.5rem;
 	margin:0;
+	text-align:left;
 }
 
 .view .form-item-operation {
@@ -634,5 +627,18 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 
 .page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
+
+
+
+
+@media screen and (min-width: 768px) {
+	
+	.view-collections .view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
+	.view-collections #view-all-colls-switcher{ margin-top:2rem; margin-bottom:1rem;}
+	.view-collections .view-all-colls-control-box .pager{ margin:1.5rem 0 1rem;}
+
+}
+
+
 
 
