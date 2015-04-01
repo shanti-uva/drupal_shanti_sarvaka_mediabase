@@ -276,13 +276,16 @@ float: none;
 position: static;
 top: 0;
 right: 0;
-margin-top:2rem;
+margin:2.5rem 0 0;
 }
 
 .view-all-colls-control-box .pager li>a{
 	color: #555;
 padding: 0.2rem 0.7rem 0.4rem;
 }
+
+.view-all-colls-control-box-cell table.pagerer{ float: none; position:static; min-width: 30rem;text-align: left;}
+.view-all-colls-control-box-cell table.pagerer .admin-menu .content table td{ padding:0;}
 
 /*
 .view-all-colls-control-box-cell.a  {
