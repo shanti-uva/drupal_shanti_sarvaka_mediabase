@@ -219,13 +219,14 @@ a.hide-annot::before{
 
 .view-result-count-info {
   font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
-  font-size: 1em;
+  font-size: 0.88em;
   margin-top:0.3rem;
   margin-bottom:0;
   text-align:center;
   font-weight:bold;
   font-weight:700;
   color:#606060;
+  white-space:nowrap;
 }
 
 #view-all-colls-switcher {
@@ -272,6 +273,7 @@ a.hide-annot::before{
 .view-all-colls-control-box-cell  {
    display: table-cell;
    vertical-align: middle;
+   margin:0 -15px;
 }
 
 .view-collections .view-all-colls-control-box .pager{ 
@@ -282,7 +284,7 @@ top: 0;
 right: 0;
 margin:1.5rem 0 1rem;
 }
-.view-collections .view-all-colls-control-box .pagerer-pager > .pager{ margin:0.6rem 0 1rem;}
+.view-collections .view-all-colls-control-box .pagerer-pager > .pager{ margin:0.6rem 0 1rem;white-space: nowrap;}
 
 .view-all-colls-control-box .pager li>a{
 	color: #606060;
@@ -290,7 +292,7 @@ margin:1.5rem 0 1rem;
 	text-transform:capitalize;
 }
 
-.view-all-colls-control-box-cell table.pagerer{ float: none; position:static; min-width: 30rem;text-align: left; margin:0 auto;}
+.view-all-colls-control-box-cell table.pagerer{ float: none; position:static; text-align: left; margin:0 auto;}
 .view-all-colls-control-box-cell table.pagerer .admin-menu .content table td{ padding:0;}
 
 /*
