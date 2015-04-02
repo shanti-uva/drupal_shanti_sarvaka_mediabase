@@ -248,7 +248,7 @@ a.hide-annot::before{
   background-color: white;
 }
 
-.views-exposed-form .views-exposed-widget .form-submit{ margin-top:1.75em;padding: .75em 1.32em .62em; margin: 2em 0 0; line-height: 1.75em;}
+.views-exposed-form .views-exposed-widget .form-submit{ padding: .75em 1.32em .62em; margin: 1.75em 0 0; line-height: 1.75em;}
 
 #view-all-colls-switcher li.on {
   background-color: #e0e0e0;
