@@ -128,6 +128,19 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 75) {
 			$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
 		}
+		
+		// Team link
+		if(!empty($vars['team'])) {
+			$path = drupal_get_path_alias('node/' . $vars['team']->nid);
+			$team_link = l($vars['team']->title, $path);
+			$vars['content']['group_details']['team'] = array(
+				'#type' => 'markup',
+				'#markup' => "<div class=\"field field-name-av-team\">
+												<span class=\"icon shanticon-create\" title=\"Team\"></span>&nbsp;<span class=\"field-label-span\">" .
+												t('Team') . "</span>&nbsp;{$team_link}</div>",
+			);
+		}
+
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
 			$vars['coll_title'] = $vars['coll']->title;
@@ -142,6 +155,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 												t('Collection') . "</span>&nbsp;<a href=\"{$vars['coll']->url}\">{$vars['coll_title']}</a></div>",
 			);
 		}
+		
 		// Add Icons 
 		if(!empty($vars['content']['group_details']['field_subcollection'])) {
 			$vars['content']['group_details']['field_subcollection']['#icon'] = 'create'; 					// subcollection
