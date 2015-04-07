@@ -141,6 +141,7 @@ if($teaser):
 
 <?php
 else:     /************ FULL Display ***********/
+	hide($content['group_details']['group_audience']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 

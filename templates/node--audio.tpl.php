@@ -91,7 +91,7 @@ if($teaser):
 	      <a href="<?php print $variables['node_url']; ?>" class="shanti-thumbnail-link">
 	         <span class="overlay">
 	            <span class="icon"></span>
-	         </span>
+	         </span><!--use html entities-->
 	         <img title="<?php print htmlentities($title); ?>"
 	             alt="<?php print htmlentities($title); ?>"
 	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>"
@@ -114,7 +114,7 @@ if($teaser):
 
       <?php if(!empty($variables['duration']['formatted'])): ?>
         <div class="shanti-thumbnail-field shanti-field-duration">
-         <span class="field-content"> <?php print $variables['duration']['formatted'] ?></span>
+         <span class="field-content"> <?php print $variables['duration']['formatted']; ?></span>
         </div>
       <?php endif; ?>
 
@@ -141,6 +141,7 @@ if($teaser):
 
 <?php
 else:     /************ FULL Display ***********/
+	hide($content['group_details']['group_audience']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
@@ -224,7 +225,7 @@ else:     /************ FULL Display ***********/
 		          	<span class="icon shanticon-places" title="Related Places"></span>
 		          	<?php
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          						print render($content['group_details']['field_pbcore_coverage_spatial']);
+		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
 									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
 									show($content['group_details']['field_pbcore_coverage_spatial']);
 		          	?>
