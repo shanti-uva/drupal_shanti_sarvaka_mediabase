@@ -35,7 +35,7 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 function sarvaka_mediabase_preprocess_html(&$vars) {
 	$mpath = drupal_get_path('theme', 'sarvaka_mediabase');
 	drupal_add_css($mpath . '/css/mb-iframe.css', array('group' => CSS_THEME));
-	drupal_add_js($mpath . '/js/mb-iframe.js', array('group' => JS_THEME));
+	drupal_add_js($mpath . '/js/mb-iframe.js', array('weight' => -99, 'group' => JS_DEFAULT));
 	if(isset($_GET[MBFRAME]) && $_GET[MBFRAME] == "on") {
 		$vars['classes_array'][] ='in-frame';
 	} 

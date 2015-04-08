@@ -13,10 +13,8 @@
 		attach: function (context, settings) {
 			if(context == window.document) {
 				if(inMBframe()) {
-					console.log('in frame');
 					$('body').addClass('in-frame');
 				} else {
-					console.log('not in iframe');
 					$('body').removeClass('in-frame');
 				}
 			}
