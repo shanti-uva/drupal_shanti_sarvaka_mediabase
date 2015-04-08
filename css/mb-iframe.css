@@ -1,0 +1,11 @@
+.in-frame header.header-banner,
+.in-frame header.banner,
+.in-frame #search-flyout,
+.in-frame footer.footer,
+.in-frame #admin-footer,
+.in-frame #admin-menu
+{
+	display: none !important;
+	height: 0px !important;
+	width: 0px !important;
+}

@@ -4,7 +4,8 @@
  * @file
  * template.php
  */
- 
+define(MBFRAME, 'mbframe'); // Name of MBFRAME Cookie
+
 function sarvaka_mediabase_theme() {
   return array(
     'audio_node_form' => array(
@@ -29,6 +30,15 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 	if($form_id == "views_exposed_form") {
 		//$form['#ajax']['wrapper'] = 'block-views-browse-media-home-block';
 	}
+}
+
+function sarvaka_mediabase_preprocess_html(&$vars) {
+	$mpath = drupal_get_path('theme', 'sarvaka_mediabase');
+	drupal_add_css($mpath . '/css/mb-iframe.css', array('group' => CSS_THEME));
+	drupal_add_js($mpath . '/js/mb-iframe.js', array('group' => JS_THEME));
+	if(isset($_GET[MBFRAME]) && $_GET[MBFRAME] == "on") {
+		$vars['classes_array'][] ='in-frame';
+	} 
 }
 
 function sarvaka_mediabase_preprocess_block(&$vars) {
