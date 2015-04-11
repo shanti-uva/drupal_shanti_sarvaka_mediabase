@@ -188,18 +188,12 @@ a.hide-annot::before{
 /**
  * 	All Collections Page
  */
-.view-collections .collection-list-link {
-	float: left;
-	margin: 20px 10px 0 0;
-}
-
-
+.view-collections .collection-list-link { float: left; margin: 20px 10px 0 0;}
 
 .view-collections .shanti-thumbnail{ height:18.5em;}
 .view-collections .shanti-thumbnail .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
 .view-collections .shanti-thumbnail .view.view-collections{ padding-bottom:6rem;}
 .view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; for URL paths if needed with js */}
-
 
 .view-collections .shanti-thumbnail .shanti-thumbnail-info{ }
 .view-collections .shanti-thumbnail .shanti-field-body {
