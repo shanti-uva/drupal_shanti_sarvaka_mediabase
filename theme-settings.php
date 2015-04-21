@@ -1,8 +1,8 @@
 <?php
 /**
  * Implements HOOK_form_system_theme_settings_alter
- * Adds base color field to theme settings
  */
+ /*
 function sarvaka_mediabase_form_system_theme_settings_alter(&$form, $form_state) {
   global $base_path;
    $form['shanti_sarvaka_shanti_site'] = array(
@@ -65,3 +65,4 @@ function sarvaka_mediabase_form_system_theme_settings_alter(&$form, $form_state)
     '#description'   => t("A unique class identifying the site to add to the body tag"),
   );
 } 
+*/
