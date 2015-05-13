@@ -70,7 +70,7 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 				$facets_done = TRUE;
 				list($flabel, $fname) = sarvaka_mediabase_get_facet_info($elements[$ename]['#block']->delta);
 				$srflabel = strtolower($flabel);
-				$facettabs[] = $flabel;
+				if(is_array($facettabs)) { $facettabs[] = $flabel; }
 				$active = ($fct == 1) ? " active":"";
 				$facetmu .= "<div class=\"facet-{$srflabel} tab-pane{$active}\"><div class=\"kmaps-tree facet-{$srflabel} view-wrap\">{$elements[$ename]['#children']}</div></div>";
 			} elseif (!$facets_done) {
