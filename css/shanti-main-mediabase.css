@@ -563,8 +563,11 @@ display: none;
 .page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
 
 
+.carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;}
 
-.front.mediabase .main-col .content:nth-child(1){ max-width:1050px; margin:0 auto;}
+.carousel-inner,
+.front.mediabase .main-col .content:nth-child(1),
+#block-views-browse-media-home-block.block.block-views{ max-width:1050px; margin:0 auto;}
 
 
 
