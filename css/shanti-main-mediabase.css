@@ -560,11 +560,11 @@ display: none;
 
 .views-table .kaltura-thumb img { height: 50px;}
 
-
-
-
-
 .page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
+
+
+
+.front.mediabase .main-col .content:nth-child(1){ max-width:1050px; margin:0 auto;}
 
 
 
