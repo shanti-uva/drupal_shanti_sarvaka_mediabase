@@ -565,7 +565,8 @@ display: none;
 
 /* carousel width controls */
 .carousel-header,
-.carousel-inner > .item,
+.carousel-inner,
+/* .carousel-inner > .item, */
 #block-views-browse-media-home-block.block.block-views,
 .front.mediabase .main-col > .region-content > .block-system .content{ max-width:1050px; margin:0 auto;}
 /* testing - reduce width slightly for text */
