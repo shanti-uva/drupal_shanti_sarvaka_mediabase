@@ -565,7 +565,7 @@ display: none;
 
 /* BEGIN carousel custom theme styles */
 /* adding space below top text block */
-.front.mediabase .main-col > .region-content > .block-system .content {margin-bottom:1rem;}
+.front.mediabase .main-col > .region-content > .block-system .content {margin-bottom:1rem !important;}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
