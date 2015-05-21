@@ -563,16 +563,17 @@ display: none;
 .page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
 
 
-/* carousel width controls */
+/* BEGIN carousel custom theme styles */
+/* adding space below top text block */
+.front.mediabase .main-col > .region-content > .block-system .content {margin-bottom:1rem;}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
 #block-views-browse-media-home-block.block.block-views,
 .front.mediabase .main-col > .region-content > .block-system .content{ max-width:1050px; margin:0 auto;}
-/* testing - reduce width slightly for text */
-.carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;}
-/* adding space below top text block */
-.front.mediabase .main-col > .region-content > .block-system .content {margin-bottom:1rem;}
+
+/* .carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;} */
+/* END carousel */
 
 
 @media screen and (min-width: 768px) {
