@@ -62,7 +62,7 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 		$facets_done = FALSE;
 		$prefacetmu = $postfacetmu = '';
 		$facetmu = '<div class="tab-content">';
-		$facettabs = array();
+		$facettabs = array(); // Facettabs defined as an array.
 		$fct = 0;
 		foreach($children as $ename) {
 			if(strpos($ename, 'facetapi') > -1) {
@@ -76,16 +76,20 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 			} elseif (!$facets_done) {
 				$prefacetmu .= $elements[$ename]['#children'];
 			} else {
-				$facettabs .= $elements[$ename]['#children'];
+				$facettabs .= $elements[$ename]['#children']; // In this case, facettabs are a string. Why?
 			}
 		}
 		$facetmu .= '</div>';
 		$prefix = '<section class="view-section"><ul class="nav nav-tabs">';
 		$class = ' active';
-		foreach($facettabs as $flabel) {
-			$srflabel = strtolower($flabel);
-			$prefix .= "<li class=\"facet-{$srflabel}{$class}\"><a href=\".facet-{$srflabel}\" data-toggle=\"tab\"><span class=\"icon shanticon-tree\"></span>{$flabel}</a></li>";
-			$class = '';
+		if (is_array($facettabs)) {
+			foreach($facettabs as $flabel) {
+				$srflabel = strtolower($flabel);
+				$prefix .= "<li class=\"facet-{$srflabel}{$class}\"><a href=\".facet-{$srflabel}\" data-toggle=\"tab\"><span class=\"icon shanticon-tree\"></span>{$flabel}</a></li>";
+				$class = '';
+			}
+		} else if (is_string($facettabs)) {
+			$prefix .= "<li>$facettabs</li>"; // Is this what we want to do if facettabs are a string?
 		}
     $prefix .= '</ul>';      
 		$facetmu = $prefix . $facetmu . '</section>';  
