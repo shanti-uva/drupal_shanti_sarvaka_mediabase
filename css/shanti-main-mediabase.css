@@ -6,7 +6,7 @@
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active{ background-color:#32ccca !important;}
 
-.navbar-brand:hover .shanticon-slogan,
+.navbar-brand .site-slogan,
 .nav-justified>li.active::before{ color:#32ccca !important;}
 /* darker shades below are used to better define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
