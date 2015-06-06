@@ -572,11 +572,12 @@ display: none;
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-#block-views-browse-media-home-block.block.block-views,
-.front .field-type-text-with-summary > div  > div > p{ max-width:1050px; margin:0 auto; margin-bottom:1rem !important;}
+.front .field-type-text-with-summary > div > div > p,
+#block-views-browse-media-home-block.block.block-views{ max-width:1050px; margin:0 auto; margin-bottom:1rem !important;}
 
-.front .field-type-text-with-summary > div  > div > p{ margin-top:1.5rem !important;padding:0 2rem !important;}
+.front .field-type-text-with-summary > div > div > p{ margin:1.5rem auto 1rem !important; padding:0 2rem 0 0 !important;}
 .front .field-type-text-with-summary h4{ display:none !important;}
+
 /* .carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;} */
 /* END carousel */
 
