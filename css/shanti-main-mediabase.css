@@ -18,10 +18,10 @@
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
-.view-section .fancytree-node.fancytree-selected > .glyphicon{ color:rgb(40, 161, 160) !important;  /* color: rgba(32, 132, 131, 0.86);*/ }
+.view-section .fancytree-node.fancytree-selected > .glyphicon{ color:#2fc0be !important; }
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(40, 161, 160) !important;}
+.view-section .nav-tabs>li.active>a:active{ border-top-color:#2fc0be !important;}
 /*--- END colors ---*/
 
 
