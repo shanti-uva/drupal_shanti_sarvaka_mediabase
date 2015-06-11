@@ -40,6 +40,10 @@
 .sidebar #block-apachesolr-search-sort ul li a::before{ content:''; width:1rem;height:1rem;background:transparent;border:2px solid #5b68ce;display:inline-block; border-radius:50%; margin-right:8px;}
 .sidebar #block-apachesolr-search-sort ul li a.active::before{ background: #5b68ce;}
 
+.region-sidebar-second h3{ font-size:1.32em;}
+.region-sidebar-second h4{ font-size:0.9em;font-family:'museo-sans-700',arial,helvetica,sans-serif;text-transform:uppercase;font-weight:bold;}
+
+
 /*--- view collections page ---*/
 .view-collections .views-exposed-form{ margin-bottom:0; text-align:center;/*border-bottom:1px solid #ccc;*/ }
 .view-collections .views-exposed-form .views-exposed-widget{ padding:0 0.5em 0 0;}
@@ -367,12 +371,6 @@ margin:1.5rem 0 1rem;
 	text-transform: uppercase;
 	font-size: 0.9em;
 	padding-top: 12px;
-}
-
-.region-sidebar-second .block h4 {
-	font-size: .9em;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 /** 
