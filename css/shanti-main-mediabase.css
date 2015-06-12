@@ -22,6 +22,8 @@
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color:#2fc0be !important;}
+
+.navbar-brand:active .site-slogan{ color:#444 !important;}
 /*--- END colors ---*/
 
 
