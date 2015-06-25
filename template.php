@@ -4,7 +4,7 @@
  * @file
  * template.php
  */
-define(MBFRAME, 'mbframe'); // Name of MBFRAME Cookie
+define('MBFRAME', 'mbframe'); // Name of MBFRAME Cookie
 
 function sarvaka_mediabase_theme() {
   return array(
@@ -32,7 +32,11 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 	}
 }
 
+/**
+ * Implements hook_preprocess_html
+ */
 function sarvaka_mediabase_preprocess_html(&$vars) {
+	// Add js and css to detect if in iframe and if so hide header elements
 	$mpath = drupal_get_path('theme', 'sarvaka_mediabase');
 	drupal_add_css($mpath . '/css/mb-iframe.css', array('group' => CSS_THEME));
 	drupal_add_js($mpath . '/js/mb-iframe.js', array('weight' => -99, 'group' => JS_DEFAULT));
