@@ -9,9 +9,9 @@
 .navbar-brand:hover .site-slogan,
 .nav-justified>li.active::before{ color:#32ccca !important;}
 /* darker shades below are used to better define details */
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active,
