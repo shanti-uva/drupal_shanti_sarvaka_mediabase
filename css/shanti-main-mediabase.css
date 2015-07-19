@@ -282,6 +282,8 @@ ul.links.inline {margin-bottom: 24px;display: block;}
 .front .main-col .content:first-of-type h4{ display: none;}
 .front .main-col .content:first-of-type h4+p{ margin-bottom:1.5rem;padding:0 2rem;}
 
+.carousel-main-content .show-more{ margin-top:1rem;}
+
 /* .carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;} */
 /* END carousel */
 
