@@ -20,14 +20,16 @@
 				$('#edit-field-characteristic > label').once('aveditsubjects').prepend('<span class="icon shanticon-subjects"></span> ');
 				$('#edit-field-pbcore-coverage-spatial > label').once('aveditspatial').prepend('<span class="icon shanticon-places"></span> ');
 				// Show more language descriptions
-				if( $('.avpbcoredesc .hidden').length > 0) {
+				if( $('.avpbcoredesc .field-item .content > .hidden').length > 0) {
 					$('.showdesclang').removeClass('hidden');
 				}
 				$('.showdesclang a').click(function(e) {
 					e.preventDefault();
 					$('.avpbcoredesc .hidden').removeClass('hidden');
 					$('.showdesclang').addClass('hidden');
-					$('#pb-core-desc-readmore a').eq(0).click();
+					if ($('#pb-core-desc-readmore a').eq(0).text().indexOf('More') > -1) {
+						$('#pb-core-desc-readmore a').eq(0).click();
+					}
 				});
 			}
 	  }

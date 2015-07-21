@@ -210,7 +210,7 @@ else:     /************ FULL Display ***********/
 	      </div> <!-- End of avinfo -->
 	      <div class="video-overview col-xs-12 col-sm-7 col-md-9">
 	        <h5 class="video-overview-title"><?php print t('Audio Overview'); ?></h5>
-	        <div class="showdesclang hidden">(<a href="#"><?php print t('Show All Descriptions'); ?></a>)</div>
+	        <div class="showdesclang hidden">(<a href="#"><?php print t('Show All Languages'); ?></a>)</div>
 	        <div class="avpbcoredesc description trim">
 	        		<?php print str_replace('clearfix', '', render($content['field_pbcore_description'])); ?>
 	        </div>
