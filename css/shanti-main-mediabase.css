@@ -74,7 +74,21 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
-/* Tibetan in av descriptions */
+/* Fix black margins around thumbs (MANU-1817) */
+.shanti-thumbnail-image img {
+    min-height: 11rem;
+    height: auto;
+    min-width: 170px;
+}
+
+.shanti-thumbnail-image a {
+    position: relative;
+    overflow: hidden;
+    height: 11rem;
+}
+
+
+/* Tibetan in av descriptions*/
 .avpbcoredesc div.bo p {
     font-size: 1.75rem;
 }
