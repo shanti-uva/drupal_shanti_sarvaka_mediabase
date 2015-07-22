@@ -27,7 +27,9 @@
 					e.preventDefault();
 					$('.avpbcoredesc .hidden').removeClass('hidden');
 					$('.showdesclang').addClass('hidden');
+					$('.avpbcoredesc .altlang').removeClass('altlang');
 					if ($('#pb-core-desc-readmore a').eq(0).text().indexOf('More') > -1) {
+						console.log('Read more link text: ' + $('#pb-core-desc-readmore a').eq(0).text());
 						$('#pb-core-desc-readmore a').eq(0).click();
 					}
 				});
@@ -88,5 +90,70 @@
 		 }
 	};	
 				
+	// Moved from Shanti Sarvaka shanti-main.js
+	
+	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
+	  attach: function (context, settings) {
+	  	if (context == document) {
+		  	// Pb core description trimming
+				if($('.field-name-field-pbcore-description .field-item').length > 1) {
+					var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+					var multip = false;
+					if (items.eq(0).find('p').length > 0) {
+						multip = true;
+						items.eq(0).find('p').eq(0).nextAll().each(function() { $(this).hide(); });
+					}
+					var ct = 0;
+					items.each(function() {
+						if ($(this).find('.content > .hidden').filter(":not(.altlang)").length > 0) { ct++; }
+					});
+					if(ct > 0 || multip) {
+						//items.first().nextAll().hide();
+						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
+						if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
+						$(".show-more > a").click(function (e) {
+							var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+							//items.first().nextAll('.field-item').slideToggle();
+							items.eq(0).nextAll().find('.content > div').filter(":not(.altlang)").toggleClass('hidden');
+							items.eq(0).find('p').eq(0).nextAll().toggle();
+							//console.log($(".avdesc").attr('class'));
+					     if($(".avdesc").hasClass("show-more-height")) {
+					         $(this).text(Drupal.t('Show Less'));
+					     } else {
+					         $(this).text(Drupal.t('Show More'));
+					     }
+					     $(".avdesc").toggleClass("show-more-height");
+							 e.preventDefault();
+						});
+					}
+				}
+	
+				// Description Trimming
+				/* This makes there be multiple "Show More"s on Dreams page
+					Could perhaps use } else { if needed for other situations
+	
+				$('.description.trim').each(function() {
+				 	if($(this).text().length > 1000 && $(this).find('p').length > 1 && $(this).find('div.show-more').length == 0) {
+				 		var p1 = $(this).find('p').first();
+				 		p1.siblings('p').hide();
+				 		$(this).append('<div class="show-more"><a href="#">Show more</a></div>');
+				 	}
+				});
+				$('.description.trim .show-more a').each(function() {
+					$(this).click(function(event) {
+						event.preventDefault();
+						$(this).parent('.show-more').toggleClass('less');
+						var parent = $(this).parents('.description.trim');
+						var ps = parent.find('p').first().siblings('p');
+						ps.slideToggle();
+						var txt = $(this).text();
+						txt = (txt.indexOf('more') > -1) ? 'Show less' : 'Show more';
+						$(this).text(txt);
+					});
+				});
+				*/
+			}
+		} // end context = document
+	};
 	
 } (jQuery)); // End of JQuery Wrapper
