@@ -271,7 +271,7 @@ else:     /************ FULL Display ***********/
 								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);
 								//dpm($content, 'content');
-		          	print render($content);
+								print render($content);
 		          ?>
 		        </div>
           </div> <!-- End of #details -->

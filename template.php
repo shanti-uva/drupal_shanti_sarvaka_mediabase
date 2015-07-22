@@ -186,6 +186,10 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		}
 		// Remove Display of Tags in a/v nodes
 		unset($vars['content']['group_details']['field_tags']);
+		
+		// Add Label as prefix for related media so it doesn't repeat for each on
+		$vars['content']['group_details']['field_pbcore_relation']['#prefix'] = '<div class="field"><span class="field-label-span">Related Media</span></div>';			
+		          	
 	}
 
 	// Author info
