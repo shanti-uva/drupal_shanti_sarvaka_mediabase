@@ -74,10 +74,20 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/* Tibetan in av descriptions */
+.avpbcoredesc div.bo p {
+    font-size: 1.75rem;
+}
+
 .pb-desc-label {
 	padding: 0px;
   margin: 0px;
   font-size: 1rem;
+}
+
+/** Tibetan text areas in node form **/
+.node-form .bo textarea {
+  font-size: 1.75rem;
 }
 
 /* collections page thumbnail - remove responsive class */

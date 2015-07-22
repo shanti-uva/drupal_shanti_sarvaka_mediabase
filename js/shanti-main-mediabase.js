@@ -29,7 +29,7 @@
 					$('.showdesclang').addClass('hidden');
 					$('.avpbcoredesc .altlang').removeClass('altlang');
 					if ($('#pb-core-desc-readmore a').eq(0).text().indexOf('More') > -1) {
-						console.log('Read more link text: ' + $('#pb-core-desc-readmore a').eq(0).text());
+						//console.log('Read more link text: ' + $('#pb-core-desc-readmore a').eq(0).text());
 						$('#pb-core-desc-readmore a').eq(0).click();
 					}
 				});
@@ -99,15 +99,16 @@
 				if($('.field-name-field-pbcore-description .field-item').length > 1) {
 					var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
 					var multip = false;
-					if (items.eq(0).find('p').length > 0) {
+					if (items.eq(0).find('p').length > 1) {
 						multip = true;
 						items.eq(0).find('p').eq(0).nextAll().each(function() { $(this).hide(); });
 					}
 					var ct = 0;
 					items.each(function() {
-						if ($(this).find('.content > .hidden').filter(":not(.altlang)").length > 0) { ct++; }
+						if ($(this).find('.content > .hidden').not(".altlang").length > 0) { ct++; }
 					});
-					if(ct > 0 || multip) {
+					if(ct > 0 || multip == true) {
+						//console.log(ct, multip, items.eq(0).find('p').length);
 						//items.first().nextAll().hide();
 						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
 						if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
