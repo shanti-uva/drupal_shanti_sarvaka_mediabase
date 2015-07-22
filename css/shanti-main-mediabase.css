@@ -81,7 +81,7 @@
     min-width: 170px;
 }
 
-.shanti-thumbnail-image a {
+.shanti-thumbnail-image a:nth-last-of-type(1){
     position: relative;
     overflow: hidden;
     height: 11rem;
