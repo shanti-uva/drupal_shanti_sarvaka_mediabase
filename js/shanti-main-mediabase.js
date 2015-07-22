@@ -37,7 +37,22 @@
 	  }
 	};
 	
-     	
+	// Trim Description text for projects in carousel and add ellipsis
+  Drupal.behaviors.shantiSarvakaMBCarouselTextTrim = {
+		attach: function (context, settings) {
+			if(context == window.document) {								
+				$('.carousel-description .field-item p').each(function() { 
+					var txt = $(this).text();
+					if ($(this).text().length > 500) { 
+						txt = txt.substr(0, 500);
+						txt = txt.substr(0, txt.lastIndexOf(' ')) + "..."; 
+						$(this).text(txt);
+					} 
+				});
+			}
+		}
+  };
+  
 	Drupal.behaviors.shantiSarvakaMbSearchFlyoutCancel = {
 			attach: function (context, settings) {
 				if(context == window.document) {
