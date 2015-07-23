@@ -78,7 +78,7 @@
 .shanti-thumbnail-image img {
     min-height: 11rem;
     height: auto;
-    min-width: 170px;
+    min-width: 200px;
 }
 
 .shanti-thumbnail-image a:nth-last-of-type(1){
