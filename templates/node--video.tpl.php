@@ -221,14 +221,14 @@ else:     /************ FULL Display ***********/
 		        </div>
 		      <?php endif; ?>
 		      <?php
-		      if(!empty($content['group_details']['field_pbcore_coverage_spatial'])): ?>
+		      if(!empty($content['group_details']['field_location'])): ?>
 		        <div class="avplace">
 		          	<span class="icon shanticon-places" title="Related Places"></span>
 		          	<?php
-									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'hidden';
-		          		print render($content['group_details']['field_pbcore_coverage_spatial']);
-									$content['group_details']['field_pbcore_coverage_spatial']['#label_display'] = 'above';
-									show($content['group_details']['field_pbcore_coverage_spatial']);
+									$content['group_details']['field_location']['#label_display'] = 'hidden';
+		          		print render($content['group_details']['field_location']);
+									$content['group_details']['field_location']['#label_display'] = 'above';
+									show($content['group_details']['field_location']);
 		          	?>
 		        </div>
 		      <?php endif; ?>

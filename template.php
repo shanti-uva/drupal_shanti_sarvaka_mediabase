@@ -186,14 +186,14 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		}
 
 		// Add Icons 
-		if(!empty($vars['content']['group_details']['field_subcollection'])) {
-			$vars['content']['group_details']['field_subcollection']['#icon'] = 'create'; 					// subcollection
+		if(!empty($vars['content']['group_details']['field_subcollection_new'])) {
+			$vars['content']['group_details']['field_subcollection_new']['#icon'] = 'create'; 					// subcollection
 		}
-		if(!empty($vars['content']['group_details']['field_characteristic'])) {
-			$vars['content']['group_details']['field_characteristic']['#icon'] = 'subjects'; 				// subjects
+		if(!empty($vars['content']['group_details']['field_subject'])) {
+			$vars['content']['group_details']['field_subject']['#icon'] = 'subjects'; 				// subjects
 		}
-		if(!empty($vars['content']['group_details']['field_pbcore_coverage_spatial'])) {
-			$vars['content']['group_details']['field_pbcore_coverage_spatial']['#icon'] = 'places';	// places
+		if(!empty($vars['content']['group_details']['field_location'])) {
+			$vars['content']['group_details']['field_location']['#icon'] = 'places';	// places
 		}
 		// Remove Display of Tags in a/v nodes
 		unset($vars['content']['group_details']['field_tags']);

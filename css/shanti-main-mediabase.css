@@ -74,6 +74,13 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/* New node place markup in video overview */
+.avplace .field-items-span ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
 /* Fix black margins around thumbs (MANU-1817) */
 .shanti-thumbnail-image img {
     min-height: 11rem;
