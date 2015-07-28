@@ -88,14 +88,9 @@
     padding: 0;
 }
 
-/* Fix black margins around thumbs (MANU-1817) */
-.search-results .shanti-thumbnail-image img {
-    min-height: 11rem;
-    height: auto;
-    min-width: 200px;
-}
 
-.search-results .shanti-thumbnail-image a:nth-last-of-type(1){ /* temp fix for Collections gallery Mark */
+
+.search-results .shanti-thumbnail-image a:nth-last-of-type(1){ /* NOTE: temp fix for Collections gallery Mark */
     position: relative;
     overflow: hidden;
     height: 11rem;
