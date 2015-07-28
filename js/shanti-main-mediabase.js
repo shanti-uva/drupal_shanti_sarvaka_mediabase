@@ -85,7 +85,7 @@
 		  }
 		};	 
 		
-	Drupal.behaviors.shantiSarvakaMbSearchFlyoutCancel = {
+	Drupal.behaviors.shantiSarvakaAccountTabs = {
 			attach: function (context, settings) {
 				if(context == window.document) {		
 
