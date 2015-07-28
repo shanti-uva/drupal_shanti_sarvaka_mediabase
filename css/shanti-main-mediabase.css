@@ -76,6 +76,11 @@
 /***** REVIEW STYLES *********/
 /*---------------------------*/
 
+/* Revive point on last breadcrumb when search result replace node */
+.breadwrap .breadcrumb li:last-child a.revive-pointer:hover {
+	cursor: pointer !important;
+}
+
 /* New node place markup in video overview */
 .avplace .field-items-span ul {
     display: inline;
