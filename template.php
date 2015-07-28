@@ -141,14 +141,14 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
 		}
 		$subcolls = array();
-		if(!empty($vars['field_subcoll_root_kmap_id'])) {
+		if(!empty($vars['field_subcoll_root_kmap_id'])) { // old field
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
 			foreach($vars['field_subcoll_root_kmap_id'] as $n => $t) {
 				$kmap = new Kmap($t['taxonomy_term']->kmap_id[LANGUAGE_NONE][0]['value']);
 				$kmap->field_name = 'field_subcollection';
 				$subcolls[] = _kmap_subject_popover($kmap);
 			}
-		}
+		} 
 		$vars['subcolls'] = implode(', ', $subcolls);
 	}
 	// Preprocess a/v nodes:
