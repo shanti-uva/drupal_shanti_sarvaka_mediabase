@@ -12,6 +12,8 @@
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .icon-ok.check-mark::before, 
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active,
@@ -82,13 +84,13 @@
 }
 
 /* Fix black margins around thumbs (MANU-1817) */
-.shanti-thumbnail-image img {
+.search-results .shanti-thumbnail-image img {
     min-height: 11rem;
     height: auto;
-    min-width: 170px;
+    min-width: 200px;
 }
 
-.shanti-thumbnail-image a:nth-last-of-type(1){
+.search-results .shanti-thumbnail-image a:nth-last-of-type(1){ /* temp fix for Collections gallery Mark */
     position: relative;
     overflow: hidden;
     height: 11rem;
