@@ -68,8 +68,8 @@
 .page-collections-list #block-system-main.block.block-system{ width:100%;float:none;margin:0 auto;max-width:90rem;}
 
 
-
-
+.mb-solr-results .results{ margin-top:1rem;}
+.mb-solr-results .head{ position:relative;top:-.5rem;margin-top:1rem;}
 
 
 /*---------------------------*/
@@ -232,8 +232,8 @@ a.hide-annot::before{ color:#5a65d1;font-size: 0.62em;line-height:.75em;font-wei
 .collimage .img-thumbnail.pull-right{ margin-right:0;}
 
 .about .description .field-item p {text-align: justify; padding-right: 12px; -webkit-hyphens: auto;  -moz-hyphens: auto;  hyphens: auto;}
-.about .description h4 {font-weight: bold;text-transform: uppercase;font-size: 0.9em;padding-top: 12px;}
-
+.about .description h4 { font-weight: bold !important; text-transform: uppercase;font-size: 0.9em;padding-top: 12px;}
+.about .field label{ font-weight: bold !important;}
 
 /** 
  * 	Individual A/V Pages 
