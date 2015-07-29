@@ -32,33 +32,15 @@
 .input-section .search-group .radio-inline:first-child{ width:20px;}
 
 /*--------- SOLR Results ---------------*/
-.mb-solr-results {
-	margin: 18px 0 0;
-}
-
-.mb-solr-results .head {
-	margin-bottom: 8px;
-}
-
-.mb-solr-results .head table.pagerer {
-	margin: -26px -12px;
-}
-
-.mb-solr-results .head .label {
-	color: #333;
-	text-transform: uppercase;
-	font-size: 0.9em;
-}
-
-.mb-solr-results .foot table.pagerer {
-	margin: -12px;
-}
-
+.mb-solr-results {margin: 18px 0 0;}
+.mb-solr-results .head {margin-bottom: 8px;}
+.mb-solr-results .head table.pagerer {margin: -26px -12px;}
+.mb-solr-results .head .label {color: #333;text-transform: uppercase;font-size: 0.9em;}
+.mb-solr-results .foot table.pagerer {margin: -12px;}
 #no-views-filter-results {
 	color: red;
 	margin: 12px;
-	font-size: 0.9em;
-}
+	font-size: 0.9em;}
 
 .input-section .input-group-btn .searchreset{ position:absolute; top:0 !important;}
 .input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
@@ -126,6 +108,20 @@ span.fancytree-node.fancytree-active {
 
 
 
+
+
+
+/** Ajax Progress Throbber **/
+.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/** No Results Header **/
+.view-media-by-kmap .view-empty h3 {
+	font-style: italic;
+}
 
 
 
@@ -207,25 +203,6 @@ span.fancytree-node.fancytree-active {
 
 
 
-
-
-
-
-
-
-
-
-/** Ajax Progress Throbber **/
-.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-
-/** No Results Header **/
-.view-media-by-kmap .view-empty h3 {
-	font-style: italic;
-}
 
 
 
