@@ -123,7 +123,7 @@
 			}
       ?>
       <?php if(!empty($subcolls)): ?>
-        <div class="field field-subcollection">
+        <div class="field field-subcollection hidden">
         	<label>Subcollection: </label> <?php print $subcolls; ?>
         </div>
       <?php endif; ?>

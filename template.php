@@ -143,12 +143,12 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		$subcolls = array();
 		if(!empty($vars['field_subcoll_root_kmap_id'])) { // old field
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
-			foreach($vars['field_subcoll_root_kmap_id'] as $n => $t) {
-				$kmap = new Kmap($t['taxonomy_term']->kmap_id[LANGUAGE_NONE][0]['value']);
+			foreach($vars['field_subcoll_root_kmap_id']['und'] as $n => $t) {
+				$kmap = Kmap::createKmapByTid($t['tid']);
 				$kmap->field_name = 'field_subcollection';
 				$subcolls[] = _kmap_subject_popover($kmap);
-			}
-		} 
+			} 
+		}
 		$vars['subcolls'] = implode(', ', $subcolls);
 	}
 	// Preprocess a/v nodes:
