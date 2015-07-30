@@ -19,13 +19,13 @@
 .input-section .search-group .searchreset { box-shadow:none;border:none;background:transparent;background-image:none;position:absolute;right:6.45rem;top:0rem;z-index:10;padding:0;margin:0;border-radius:50%;}
 .input-section .search-group .searchreset:hover,
 .input-section .search-group .searchreset:active{ color:transparent;background-image:none;background:transparent;border:none;}
-.input-section .search-group .searchreset .icon{ cursor:pointer; width: 1px; height: 1.7rem;position: relative; top:-0.55rem; left:0.5rem;background:transparent;border-radius: 50%;border: none;}
-.input-section .search-group .searchreset .icon:hover{ background-color:transparent;}
-.input-section .search-group .searchreset .icon::before,
-.input-section .search-group .searchreset .icon::after{ background:#aaa; width:1.7rem;height:1px; position:absolute;top:1.1rem;left: 0.3rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
-.input-section .search-group .searchreset .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
-.input-section .search-group .searchreset:hover .icon,
-.input-section .search-group .searchreset:active .icon{ background:transparent;}
+.input-section .search-group .searchreset span{ cursor:pointer; width: 1px; height: 1.7rem;position: relative; top:-0.55rem; left:0.5rem;background:transparent;border-radius: 50%;border: none;}
+.input-section .search-group .searchreset span:hover{ background-color:transparent;}
+.input-section .search-group .searchreset span::before,
+.input-section .search-group .searchreset span::after{ background:#aaa; width:1.7rem;height:1px; position:absolute;top:1.1rem;left: 0.3rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.input-section .search-group .searchreset span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.input-section .search-group .searchreset:hover span,
+.input-section .search-group .searchreset:active span{ background:transparent;}
 
 .input-section .input-group-btn .searchreset .icon{ position:relative; top:0.4rem;}
 
