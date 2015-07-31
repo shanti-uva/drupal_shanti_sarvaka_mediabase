@@ -24,7 +24,7 @@
 .input-section .search-group .searchreset .icon::after{ background:#aaa; width:1.7rem;height:1px; position:absolute;top:1.08rem;left: 0.3rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .input-section .search-group .searchreset .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .input-section .search-group .searchreset:hover .icon,
-.input-section .search-group .searchreset:active .icon{ background:#f5f5f5;}
+.input-section .search-group .searchreset:active .icon{ background:#f0f0f0;}
 
 .view-section .treeview h2{ font-size:1.5em;}
 .view-section h2 .toggle-facet-label-search{ float:left;margin-left:0.62em;margin-right:.5em;margin-bottom:0.5em;position:relative;top:0.25em;}
