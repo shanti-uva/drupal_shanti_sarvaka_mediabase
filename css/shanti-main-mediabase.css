@@ -87,15 +87,6 @@
     padding: 0;
 }
 
-
-
-.search-results .shanti-thumbnail-image a:nth-last-of-type(1){ /* NOTE: temp fix for Collections gallery Mark */
-    position: relative;
-    overflow: hidden;
-    height: 11rem;
-}
-
-
 /* Tibetan in av descriptions*/
 .avpbcoredesc div.bo p {
     font-size: 1.75rem;
