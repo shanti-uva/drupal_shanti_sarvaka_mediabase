@@ -68,6 +68,41 @@ function sarvaka_mediabase_preprocess_block(&$vars) {
 	}
 }
 
+/**
+ * New Search Flyout Preprocess used with Shanti_Kmap_facets 
+ */
+function sarvaka_mediabase_preprocess_region(&$vars) {
+	if($vars['region'] == 'search_flyout') {
+		// For search flyout in mediabase, sniff out facet api blocks so that they can be placed in tabs
+		$elements = $vars['elements'];
+		$children = element_children($elements);
+		$facets_done = FALSE;
+		$facetmu = '<div class="tab-content">';
+		$facettabs = '<section class="view-section"><ul class="nav nav-tabs">'; 
+		$fct = 0;
+		foreach($children as $ename) {
+			if(strpos($ename, 'kmaps_facets') > -1) {
+				$el = $elements[$ename];
+				$flabel = $el['#block']->title;
+				$fct++;
+				$srflabel = str_replace('_', '-', $ename);
+				$active = ($fct == 1) ? " active":"";
+				$bcnt = $el['#markup'];
+				$facetmu .= "<div class=\"{$srflabel} treeview tab-pane{$active}\">{$bcnt}</div>";
+				$facettabs .= "<li class=\"{$srflabel}{$active}\"><a href=\".{$srflabel}\" data-toggle=\"tab\">" . 
+												"<span class=\"icon shanticon-tree\"></span>{$flabel}</a></li>";
+			} 
+		}
+		$facetmu .= '</div>';
+		$facettabs .= '</ul>';
+		$facetmu = $facettabs . $facetmu . '</section>';  
+		$vars['prefacet'] = $prefacetmu;
+		$vars['facetcnt'] = $facetmu;
+		//dpm($facetmu, 'facet markup');
+	}
+}
+
+/* old Search Flyout Preprocess
 function sarvaka_mediabase_preprocess_region(&$vars) {
 	if($vars['region'] == 'search_flyout') {
 		// For search flyout in mediabase, sniff out facet api blocks so that they can be placed in tabs
@@ -114,7 +149,7 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 		//dpm($facetmu, 'facet markup');
 	}
 }
-
+*/
 function sarvaka_mediabase_get_facet_info($fbid) {
 	$dmap = facetapi_get_delta_map();
 	$searcher = 'apachesolr@solr';

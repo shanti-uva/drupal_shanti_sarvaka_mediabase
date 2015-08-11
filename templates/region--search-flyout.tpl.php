@@ -28,11 +28,14 @@
  * @ingroup themeable
  */
 ?>
+
 <?php if ($content): ?>
   <div class="<?php print $classes; ?>">
-  	<section class="input-section" style="display:none;"> 
-    	<?php print $prefacet; ?>
-    </section>
+  	<?php if (isset($variables['elements']['search_form'])): ?>
+	  	<section class="input-section"> 
+	    	<?php print render($variables['elements']['search_form']); ?>
+	    </section>
+	  <?php endif; ?>
     <?php print $facetcnt; ?>
     <?php print $postfacet; ?>
   </div>
