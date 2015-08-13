@@ -88,9 +88,9 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 				$srflabel = str_replace('_', '-', $ename);
 				$active = ($fct == 1) ? " active":"";
 				$bcnt = $el['#markup'];
-				$facetmu .= "<div class=\"{$srflabel} treeview tab-pane{$active}\">{$bcnt}</div>";
-				$facettabs .= "<li class=\"{$srflabel}{$active}\"><a href=\".{$srflabel}\" data-toggle=\"tab\">" . 
-												"<span class=\"icon shanticon-tree\"></span>{$flabel}</a></li>";
+				$facetmu .= "<div class=\"km-facet-div {$srflabel} treeview tab-pane{$active}\">{$bcnt}</div>";
+				$facettabs .= "<li class=\"km-facet-tab {$srflabel}{$active}\"><a href=\".{$srflabel}\" data-toggle=\"tab\">" . 
+												"{$flabel}</a></li>";
 			} 
 		}
 		$facetmu .= '</div>';

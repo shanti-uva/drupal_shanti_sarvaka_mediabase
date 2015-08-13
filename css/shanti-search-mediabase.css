@@ -34,6 +34,9 @@
 */
 .input-section .search-group .radio-inline:first-child{ width:20px;}
 
+.view-section .nav-tabs>li.km-facet-tab, .view-section .nav-tabs>li:first-child {display: inline-block; width: 33%;}
+.view-section .nav-tabs>li.km-facet-tab a {font-size: 90%;}
+
 /*--------- SOLR Results ---------------*/
 .mb-solr-results {margin: 18px 0 0;}
 .mb-solr-results .head {margin-bottom: 8px;}
@@ -42,8 +45,8 @@
 .mb-solr-results .foot table.pagerer {margin: -12px;}
 #no-views-filter-results{ color:red;margin: 12px;font-size: 0.9em;}
 
-.view-section .nav-tabs>li{ width:45% !important;	max-width: 200px; font-size: .9em;}
-.view-section .nav-tabs>li:first-child{ width:55% !important;}
+/*.view-section .nav-tabs>li{ width:45% !important;	max-width: 200px; font-size: .9em;}
+.view-section .nav-tabs>li:first-child{ width:55% !important;}*/
 
 /*******************************************************************************
  * Styles specific to this skin.
