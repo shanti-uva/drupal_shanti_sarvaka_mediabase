@@ -32,18 +32,21 @@
 .view-section ul.fancytree-container { min-height: 100%; }
 .fancytree-expander { background-image: none !important; }  Removes default fancytree arrows 
 */
-.input-section .search-group .radio-inline:first-child{ width:20px;}
+.input-section .search-group .radio-inline:first-child{ width:2rem;}
 
-.view-section .nav-tabs>li.km-facet-tab, .view-section .nav-tabs>li:first-child {display: inline-block; width: 33%;}
-.view-section .nav-tabs>li.km-facet-tab a {font-size: 90%;}
+.view-section .nav-tabs>li.km-facet-tab, .view-section .nav-tabs>li:first-child{ width: 33%;}
+.view-section .nav-tabs>li.km-facet-tab a {font-size: 0.88em;}
+.view-section .nav-tabs>li.km-facet-tab.active>a,
+.view-section .nav-tabs>li.km-facet-tab.active>a:hover,
+.view-section .nav-tabs>li.km-facet-tab.active>a:active{ font-size: 0.93em;}
 
 /*--------- SOLR Results ---------------*/
-.mb-solr-results {margin: 18px 0 0;}
-.mb-solr-results .head {margin-bottom: 8px;}
+.mb-solr-results {margin: 1.8rem 0 0;}
+.mb-solr-results .head {margin-bottom: 8rem;}
 .mb-solr-results .head table.pagerer {margin: -26px -12px;}
 .mb-solr-results .head .label {color: #333;text-transform: uppercase;font-size: 0.9em;}
-.mb-solr-results .foot table.pagerer {margin: -12px;}
-#no-views-filter-results{ color:red;margin: 12px;font-size: 0.9em;}
+.mb-solr-results .foot table.pagerer {margin: -1.2rem;}
+#no-views-filter-results{ color:red;margin: 1.2rem;font-size: 0.9em;}
 
 /*.view-section .nav-tabs>li{ width:45% !important;	max-width: 200px; font-size: .9em;}
 .view-section .nav-tabs>li:first-child{ width:55% !important;}*/
