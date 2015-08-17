@@ -306,8 +306,8 @@ ul.links.inline {margin-bottom: 24px;display: block;}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-.front .main-col .content:first-of-type p, /* intro text above carousel */
-#block-views-browse-media-home-block.block.block-views{ max-width:1050px; margin:0 auto;}
+.front .field-type-text-with-summary p, /* intro text above carousel */
+.front .main-col .block-views{ max-width:1050px; margin:0 auto;}
 
 .front .main-col .content:first-of-type h4{ display: none;}
 .front .main-col .content:first-of-type h4+p{ margin-bottom:1.5rem;padding:0 2rem;}
@@ -319,7 +319,6 @@ ul.links.inline {margin-bottom: 24px;display: block;}
 
 
 @media screen and (min-width: 768px) {
-	
 	.view-collections .view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
 	.view-collections #view-all-colls-switcher{ margin-top:2rem; margin-bottom:1rem;}
 	.view-collections .view-all-colls-control-box .pager{ margin:2.3rem 0 1rem;}
