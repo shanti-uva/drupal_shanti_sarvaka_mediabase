@@ -37,6 +37,5 @@
 	    </section>
 	  <?php endif; ?>
     <?php print $facetcnt; ?>
-    <?php print $postfacet; ?>
   </div>
 <?php endif; ?>

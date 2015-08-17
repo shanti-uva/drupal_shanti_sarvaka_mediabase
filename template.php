@@ -96,7 +96,6 @@ function sarvaka_mediabase_preprocess_region(&$vars) {
 		$facetmu .= '</div>';
 		$facettabs .= '</ul>';
 		$facetmu = $facettabs . $facetmu . '</section>';  
-		$vars['prefacet'] = $prefacetmu;
 		$vars['facetcnt'] = $facetmu;
 		//dpm($facetmu, 'facet markup');
 	}
