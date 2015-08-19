@@ -309,8 +309,8 @@ ul.links.inline {margin-bottom: 24px;display: block;}
 .front .field-type-text-with-summary p, /* intro text above carousel */
 .front .main-col .block-views{ max-width:1050px; margin:0 auto;}
 
-.front .main-col .content:first-of-type h4{ display: none;}
-.front .main-col .content:first-of-type h4+p{ margin-bottom:1.5rem;padding:0 2rem;}
+.front .field-type-text-with-summary h4{ display: none;}
+.front .field-type-text-with-summary h4+p{ margin-bottom:1.5rem;padding:0 2rem;}
 
 .carousel-main-content .show-more{ margin-top:1rem;}
 
