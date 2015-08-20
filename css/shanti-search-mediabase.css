@@ -140,7 +140,8 @@
 }
 
 .mb-solr-results .head {
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; mf8yk - hid this 08/20 since it created large white space above grid in content area */
+  margin-bottom: 0;
 }
 
 .mb-solr-results .head table.pagerer {
