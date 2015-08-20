@@ -4,7 +4,9 @@
 .breadcrumb .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:active{ background-color:#2fbebc !important;}
+.nav-justified>li.active a:active {
+  background-color: #2fbebc !important;
+}
 
 .navbar-brand:hover .site-slogan,
 .nav-justified>li.active::before,
@@ -20,55 +22,179 @@
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
-.view-section .fancytree-node.fancytree-selected > .glyphicon{ color:#2fc0be !important; }
+.view-section .fancytree-node.fancytree-selected > .glyphicon {
+  color: #2fc0be !important;
+}
+
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:active{ border-top-color:#2fc0be !important;}
+.view-section .nav-tabs>li.active>a:active {
+  border-top-color: #2fc0be !important;
+}
 
-.navbar-brand:active .site-slogan{ color:#444 !important;}
+.navbar-brand:active .site-slogan {
+  color: #444 !important;
+}
 /*--- END colors ---*/
 
 
 /* .page-search .tab-content:nth-of-type(1){ padding-top:1rem;} */
-.extruder .input-section{ height:8.9rem;}
+.extruder .input-section {
+  height: 8.9rem;
+}
+
+.extruder-content .input-section:first-child{ border:none !important;} /* fixes big in markup producing two input section wrappers */
+.advanced-view .form-group:nth-of-type(2) { display: none;}
+
+
 
 /* sidebar search results sorting list */
-.sidebar #block-apachesolr-search-sort ul li{ list-style-type:none;}
-.sidebar #block-apachesolr-search-sort ul li img{ display:none;width:0;height:0;}
-.sidebar #block-apachesolr-search-sort ul li a{ background: transparent;font-weight:normal;display:block;}
-.sidebar #block-apachesolr-search-sort ul li a.active{ font-weight:bold;}
+.sidebar #block-apachesolr-search-sort ul li {
+  list-style-type: none;
+}
 
-.sidebar #block-apachesolr-search-sort ul li a::before{ content:''; width:0.7rem;height:0.7rem;background:transparent;border:2px solid #5b68ce;display:inline-block; border-radius:50%; margin-right:8px;position:relative;top:-0.1rem;}
-.sidebar #block-apachesolr-search-sort ul li a:hover::before{ background: #5b68ce;}
-.sidebar #block-apachesolr-search-sort ul li a.active::before{ background: #5b68ce;}
+.sidebar #block-apachesolr-search-sort ul li img {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
-.region-sidebar-second h3{ font-size:1.32em;}
-.region-sidebar-second h4{ font-size:0.9em;font-family:'museo-sans-700',arial,helvetica,sans-serif;text-transform:uppercase;font-weight:bold;}
+.sidebar #block-apachesolr-search-sort ul li a {
+  background: transparent;
+  font-weight: normal;
+  display: block;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a.active {
+  font-weight: bold;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a::before {
+  content: '';
+  width: 0.7rem;
+  height: 0.7rem;
+  background: transparent;
+  border: 2px solid #5b68ce;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  top: -0.1rem;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a:hover::before {
+  background: #5b68ce;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a.active::before {
+  background: #5b68ce;
+}
+
+.region-sidebar-second h3 {
+  font-size: 1.32em;
+}
+
+.region-sidebar-second h4 {
+  font-size: 0.9em;
+  font-family: 'museo-sans-700',arial,helvetica,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 
 /*--- view collections page ---*/
-.view-collections .views-exposed-form{ margin-bottom:0; text-align:center;/*border-bottom:1px solid #ccc;*/ }
-.view-collections .views-exposed-form .views-exposed-widget{ padding:0 0.5em 0 0;}
+.view-collections .views-exposed-form {
+  margin-bottom: 0;
+  text-align: center;
+/*border-bottom:1px solid #ccc;*/
+}
+
+.view-collections .views-exposed-form .views-exposed-widget {
+  padding: 0 0.5em 0 0;
+}
+
 .view-collections .views-exposed-form .views-exposed-widget label, 
-.view-collections .views-exposed-form .views-exposed-widget div { /*float: left; margin: 0 1em 0 0; */vertical-align: middle; }
-.view-collections .views-exposed-form input.form-control{ width:12em;	}
-.view-collections .views-exposed-widget.views-widget-filter-status{ width:6em;padding-top:0;}
-.view-collections .views-exposed-widget.views-widget-sort-by{ width:9.5em;}
-.view-collections .views-exposed-widget.views-widget-sort-order{ width:6em;}
-.view-collections .views-exposed-widget.views-widget-per-page{ width:10.5em;}
+.view-collections .views-exposed-form .views-exposed-widget div {
+ /*float: left; margin: 0 1em 0 0; */
+  vertical-align: middle;
+}
 
-.view-collections .views-row{ padding-top: 0.75em;padding-bottom:2em;margin:0 auto;border-top:1px solid #fff;border-bottom:1px solid #ccc;}
-.view-collections .views-row::after{ clear:both;}
-.view-collections .views-row:first-child{ /* padding-top:0;margin-top:0.25em; border-top:3px double #e0e0e0; */}
-.view-collections .views-field-title{ font-size:1.5em;margin-bottom:-0.5em;font-family: 'museo-sans-500',helvetica, arial, sans-serif;}
-.view-collections .views-field-realname{ margin-bottom:0.25em;margin-top:1em;font-size:90%;color:#808080;font-style:italic;}
-.view-collections .views-field-field-images img{ float:left;margin:.44em .88em .18em 0;-webkit-box-shadow:0 0 3px 0 rgba(50, 50, 50, 0.7);box-shadow:0 0 3px 0 rgba(50, 50, 50, 0.7);border-collapse: separate; /* fix for ie9 shadow */}
+.view-collections .views-exposed-form input.form-control {
+  width: 12em;
+}
 
-.page-collections-list #block-system-main.block.block-system{ width:100%;float:none;margin:0 auto;max-width:90rem;}
+.view-collections .views-exposed-widget.views-widget-filter-status {
+  width: 6em;
+  padding-top: 0;
+}
 
+.view-collections .views-exposed-widget.views-widget-sort-by {
+  width: 9.5em;
+}
 
-.mb-solr-results .results{ margin-top:1rem;}
-.mb-solr-results .head{ position:relative;top:-.5rem;margin-top:1rem;}
+.view-collections .views-exposed-widget.views-widget-sort-order {
+  width: 6em;
+}
+
+.view-collections .views-exposed-widget.views-widget-per-page {
+  width: 10.5em;
+}
+
+.view-collections .views-row {
+  padding-top: 0.75em;
+  padding-bottom: 2em;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.view-collections .views-row::after {
+  clear: both;
+}
+
+.view-collections .views-row:first-child {
+ /* padding-top:0;margin-top:0.25em; border-top:3px double #e0e0e0; */
+}
+
+.view-collections .views-field-title {
+  font-size: 1.5em;
+  margin-bottom: -0.5em;
+  font-family: 'museo-sans-500',helvetica, arial, sans-serif;
+}
+
+.view-collections .views-field-realname {
+  margin-bottom: 0.25em;
+  margin-top: 1em;
+  font-size: 90%;
+  color: #808080;
+  font-style: italic;
+}
+
+.view-collections .views-field-field-images img {
+  float: left;
+  margin: .44em .88em .18em 0;
+  -webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
+  border-collapse: separate;
+ /* fix for ie9 shadow */
+}
+
+.page-collections-list #block-system-main.block.block-system {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.mb-solr-results .results {
+  margin-top: 1rem;
+}
+
+.mb-solr-results .head {
+  position: relative;
+  top: -.5rem;
+  margin-top: 1rem;
+}
 
 
 /*---------------------------*/
@@ -77,23 +203,23 @@
 
 /* Revive point on last breadcrumb when search result replace node */
 .breadwrap .breadcrumb li:last-child a.revive-pointer:hover {
-	cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 /* New node place markup in video overview */
 .avplace .field-items-span ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 /* Tibetan in av descriptions*/
 .avpbcoredesc div.bo p {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 .pb-desc-label {
-	padding: 0px;
+  padding: 0px;
   margin: 0px;
   font-size: 1rem;
 }
@@ -104,201 +230,577 @@
 }
 
 /* collections page thumbnail - remove responsive class */
-.view-collections .field-image-thumb{ max-width:50%; float:left; padding-right: 20px;}
+.view-collections .field-image-thumb {
+  max-width: 50%;
+  float: left;
+  padding-right: 20px;
+}
 
 /* Home media list block */
 
 /* Kmaps List page views*/
-.page-list .shanti-view-dom-id > h2 { font-size: 1.75em; margin: 12px 0px 0px;}
-.page-list .shanti-view-dom-id .shanti-filters { margin-bottom: 1.75rem; }
-.page-list .shanti-view-dom-id .shanti-filters table td { padding: 0px; }
-.page-list .shanti-view-dom-id .view-media-by-kmap { margin-top: 16px; }
-.page-list .shanti-view-dom-id .lineage { margin-top: 12px; margin-left: -6px; }
-.page-list .shanti-view-dom-id .lineage .label { font-size: 1.25rem; color: #444; font-weight: bold; }
-.page-list .shanti-view-dom-id .lineage .links:text-only { font-size: 1.25rem; color: #444; }
-.page-list .shanti-view-dom-id .lineage .links a { font-size: 1.25rem; font-weight: normal; }
+.page-list .shanti-view-dom-id > h2 {
+  font-size: 1.75em;
+  margin: 12px 0px 0px;
+}
 
-.views-exposed-form .views-widget-filter-title label { display: none;}
+.page-list .shanti-view-dom-id .shanti-filters {
+  margin-bottom: 1.75rem;
+}
+
+.page-list .shanti-view-dom-id .shanti-filters table td {
+  padding: 0px;
+}
+
+.page-list .shanti-view-dom-id .view-media-by-kmap {
+  margin-top: 16px;
+}
+
+.page-list .shanti-view-dom-id .lineage {
+  margin-top: 12px;
+  margin-left: -6px;
+}
+
+.page-list .shanti-view-dom-id .lineage .label {
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.page-list .shanti-view-dom-id .lineage .links:text-only {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+.page-list .shanti-view-dom-id .lineage .links a {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.views-exposed-form .views-widget-filter-title label {
+  display: none;
+}
 
 
 /*-- Pager fixes (for solr results) --*/
 .pager-first .icon, 
 .pager-previous .icon, 
 .pager-next .icon, 
-.pager-last .icon { border:none;}
+.pager-last .icon {
+  border: none;
+}
 
 
 
 /* ul.pager{ width: 100%;} */
 
-.navbar nav.navtop .block h2{ display: none;} 
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker { width:70px;margin-left:20px;}
+.navbar nav.navtop .block h2 {
+  display: none;
+}
 
-#locale-translation-filter-form .form-item-translation{ width:22em;}
-#locale-translation-filter-form .form-actions{ margin-left:0; padding: 1.25em 0 0 1em; /* padding typo override */}
+table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
+  width: 70px;
+  margin-left: 20px;
+}
+
+#locale-translation-filter-form .form-item-translation {
+  width: 22em;
+}
+
+#locale-translation-filter-form .form-actions {
+  margin-left: 0;
+  padding: 1.25em 0 0 1em;
+ /* padding typo override */
+}
 
 
 /*--- MOVE TO SARVAKA - bottom of page for edit save buttons ---*/
-#edit-actions.form-actions{ margin-top:1.1rem;}
-.form-control.role-weight{ font-size:80%; width:4em; height:1.5em;line-height:1.5em;}
+#edit-actions.form-actions {
+  margin-top: 1.1rem;
+}
+
+.form-control.role-weight {
+  font-size: 80%;
+  width: 4em;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+.tabledrag-toggle-weight-wrapper {
+  display: inline;
+  float: right;
+ /* margin-top:-0.62em; */
+}
+
+.tabledrag-toggle-weight-wrapper a {
+  color: #5a65d1;
+}
+
+table.field-multiple-table {
+  margin-bottom: 2em;
+}
+
+table.field-multiple-table tbody {
+  border: 2px solid #ddd;
+}
+
+.kaltura-thumb-wrap {
+  clear: none;
+}
+
+.kaltura_status_ok {
+  background-image: none !important;
+  border: none !important;
+}
+
+#kmap_annotation_json {
+  margin-left: 2em;
+} /* textbox on bottom */
 
 
-.tabledrag-toggle-weight-wrapper{ display:inline; float:right; /* margin-top:-0.62em; */}
-.tabledrag-toggle-weight-wrapper a{ color: #5a65d1;}
+#edit-filter-settings-title {
+  margin-bottom: 0 !important;
+}
 
-table.field-multiple-table{ margin-bottom:2em;}
-table.field-multiple-table tbody{ border:2px solid #ddd;}
+div.node .group-details .field-label-span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  vertical-align: top;
+}
 
-.kaltura-thumb-wrap{ clear:none;}
-.kaltura_status_ok{ background-image:none !important; border:none !important;}
-
-
-#kmap_annotation_json{ margin-left:2em;} /* textbox on bottom */
-
-
-#edit-filter-settings-title{ margin-bottom:0 !important;}
-
-div.node .group-details .field-label-span{ font-weight: bold;text-transform: uppercase;font-size: 0.9em;vertical-align: top;}
-
-.field-name-field-pbcore-description .show-more{ position:relative; top:-0.7rem;}
+.field-name-field-pbcore-description .show-more {
+  position: relative;
+  top: -0.7rem;
+}
 
 /*--- WHERE is show-annot from? ---*/
 /*--- show-hide toggle button ---*/
-a.show-annot, a.hide-annot{ font-size:1em;text-transform:uppercase;font-family:sans-serif;font-weight:bold;margin-left:-0.5em;}
+a.show-annot, a.hide-annot {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: -0.5em;
+}
+
 a.show-annot::before,
-a.hide-annot::before{ color:#5a65d1;font-size: 0.62em;line-height:.75em;font-weight:normal;padding-right:0.62em;font-family: 'Glyphicons Halflings';content: '\002b'; /*-- plus icon */position:relative;top:-1px;}
+a.hide-annot::before {
+  color: #5a65d1;
+  font-size: 0.62em;
+  line-height: .75em;
+  font-weight: normal;
+  padding-right: 0.62em;
+  font-family: 'Glyphicons Halflings';
+  content: '\002b';
+ /*-- plus icon */
+  position: relative;
+  top: -1px;
+}
 
 /**
- * 	All Collections Page
+ *  All Collections Page
  */
-.view-collections .collection-list-link { float: left; margin: 20px 10px 0 0;}
+.view-collections .collection-list-link {
+  float: left;
+  margin: 20px 10px 0 0;
+}
 
-.view-collections .shanti-thumbnail{ height:18.5em;}
-.view-collections .shanti-thumbnail .body-wrap{ overflow-y:hidden; overflow-x:auto; height:15.5rem;}
-.view-collections .shanti-thumbnail .view.view-collections{ padding-bottom:6rem;}
-.view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body{ white-space:normal !important; /* word-break:break-all; for URL paths if needed with js */}
-.view-collections .shanti-thumbnail .shanti-field-body { color:#404040; margin-top: 3px;padding-top: 3px; border-top: 1px solid #ccc; /* dont set height on this */}
-.view-collections .shanti-thumbnail .shanti-field-title a { font-size: 1.06em;font-weight: bold;}
+.view-collections .shanti-thumbnail {
+  height: 18.5em;
+}
+
+.view-collections .shanti-thumbnail .body-wrap {
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 15.5rem;
+}
+
+.view-collections .shanti-thumbnail .view.view-collections {
+  padding-bottom: 6rem;
+}
+
+.view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body {
+  white-space: normal !important;
+ /* word-break:break-all; for URL paths if needed with js */
+}
+
+.view-collections .shanti-thumbnail .shanti-field-body {
+  color: #404040;
+  margin-top: 3px;
+  padding-top: 3px;
+  border-top: 1px solid #ccc;
+ /* dont set height on this */
+}
+
+.view-collections .shanti-thumbnail .shanti-field-title a {
+  font-size: 1.06em;
+  font-weight: bold;
+}
 
 /**
- * 	All Collections View Header Styles taken from Essays
+ *  All Collections View Header Styles taken from Essays
  */
-.view-result-count-info {font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;font-size: 0.88em;margin-top:0.3rem;margin-bottom:0;text-align:center;font-weight:bold;font-weight:700;color:#606060;white-space:nowrap;}
-.views-exposed-form .views-exposed-widget .form-submit{ padding: .75em 1.32em .62em; margin: 1.75em 0 0; line-height: 1.75em;}
+.view-result-count-info {
+  font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
+  font-size: 0.88em;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  font-weight: 700;
+  color: #606060;
+  white-space: nowrap;
+}
 
-#view-all-colls-switcher {display: block;margin: 1rem 0 0;padding: 0;list-style-type: none;text-align: right;}
-#view-all-colls-switcher li {display: inline;list-style: none;font-size: 1.75rem;padding: .25em .5em .1em;margin: 0 0.7rem;border-radius: 3px;box-shadow: 0px 1px 5px #aaa;background-color: white;}
-#view-all-colls-switcher li.on {background-color: #e0e0e0;}
-#view-all-colls-switcher .icon:hover {cursor: pointer;}
+.views-exposed-form .views-exposed-widget .form-submit {
+  padding: .75em 1.32em .62em;
+  margin: 1.75em 0 0;
+  line-height: 1.75em;
+}
 
-.view-all-colls-control-box {display:table;width: 100%;border-top:0;margin: 10px 0;border-color:transparent;}
-.view-all-colls-control-box-row  {display: table-row;}
-.view-all-colls-control-box-cell  {display: table-cell;vertical-align: middle;margin:0 -15px;}
-.view-collections .view-all-colls-control-box .pager{ text-align: left;float: left;position: static;top: 0;right: 0;margin:1.5rem 0 1rem;}
-.view-collections .view-all-colls-control-box .pagerer-pager > .pager{ margin:0.6rem 0 1rem;white-space: nowrap;}
-.view-all-colls-control-box .pager li>a{color: #606060;padding: 0.2rem 0.7rem 0.4rem;text-transform:capitalize;}
+#view-all-colls-switcher {
+  display: block;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
 
-.view-all-colls-control-box-cell table.pagerer{ float: none; position:static; text-align: left; margin:0 auto;}
-.view-all-colls-control-box-cell table.pagerer .admin-menu .content table td{ padding:0;}
+#view-all-colls-switcher li {
+  display: inline;
+  list-style: none;
+  font-size: 1.75rem;
+  padding: .25em .5em .1em;
+  margin: 0 0.7rem;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px #aaa;
+  background-color: white;
+}
 
-.views-widget-filter-title label {padding-top: 3px;font-size: 14pt;}
-.views-widget-filter-title input {height: 24px;}
+#view-all-colls-switcher li.on {
+  background-color: #e0e0e0;
+}
 
-.shanti-collections .content-section {padding-top: 0;}
+#view-all-colls-switcher .icon:hover {
+  cursor: pointer;
+}
 
-#edit-title-wrapper label {font-size: 1.25em;text-transform: capitalize;margin: -4px 8px 0 0;}
+.view-all-colls-control-box {
+  display: table;
+  width: 100%;
+  border-top: 0;
+  margin: 10px 0;
+  border-color: transparent;
+}
+
+.view-all-colls-control-box-row {
+  display: table-row;
+}
+
+.view-all-colls-control-box-cell {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 -15px;
+}
+
+.view-collections .view-all-colls-control-box .pager {
+  text-align: left;
+  float: left;
+  position: static;
+  top: 0;
+  right: 0;
+  margin: 1.5rem 0 1rem;
+}
+
+.view-collections .view-all-colls-control-box .pagerer-pager > .pager {
+  margin: 0.6rem 0 1rem;
+  white-space: nowrap;
+}
+
+.view-all-colls-control-box .pager li>a {
+  color: #606060;
+  padding: 0.2rem 0.7rem 0.4rem;
+  text-transform: capitalize;
+}
+
+.view-all-colls-control-box-cell table.pagerer {
+  float: none;
+  position: static;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.view-all-colls-control-box-cell table.pagerer .admin-menu .content table td {
+  padding: 0;
+}
+
+.views-widget-filter-title label {
+  padding-top: 3px;
+  font-size: 14pt;
+}
+
+.views-widget-filter-title input {
+  height: 24px;
+}
+
+.shanti-collections .content-section {
+  padding-top: 0;
+}
+
+#edit-title-wrapper label {
+  font-size: 1.25em;
+  text-transform: capitalize;
+  margin: -4px 8px 0 0;
+}
 
 .view-collections .views-exposed-widget.views-submit-button, 
-.view-collections .views-exposed-widget.views-reset-button {padding: 0;margin: -12px 0 0 0;}
+.view-collections .views-exposed-widget.views-reset-button {
+  padding: 0;
+  margin: -12px 0 0 0;
+}
 
 
 /**
- * 	Individual Collection Pages
+ *  Individual Collection Pages
  */
-.node-collection .collection-content {clear: both;margin: 0 8px;padding-top: 1px;}
-.node-collection .field-subcollection label {margin: 0;}
-.collimage .img-thumbnail { padding: 0.7rem; margin: 12px 18px; border-radius:0.2rem; /* border: 2px solid #32ccca; */}
-.collimage .img-thumbnail.pull-left{ margin-left:0.7rem;}
-.collimage .img-thumbnail.pull-right{ margin-right:0;}
+.node-collection .collection-content {
+  clear: both;
+  margin: 0 8px;
+  padding-top: 1px;
+}
 
-.about .description .field-item p {text-align: justify; padding-right: 12px; -webkit-hyphens: auto;  -moz-hyphens: auto;  hyphens: auto;}
-.about .description h4 { font-weight: bold !important; text-transform: uppercase;font-size: 0.9em;padding-top: 12px;}
-.about .field label{ font-weight: bold !important;}
+.node-collection .field-subcollection label {
+  margin: 0;
+}
+
+.collimage .img-thumbnail {
+  padding: 0.7rem;
+  margin: 12px 18px;
+  border-radius: 0.2rem;
+ /* border: 2px solid #32ccca; */
+}
+
+.collimage .img-thumbnail.pull-left {
+  margin-left: 0.7rem;
+}
+
+.collimage .img-thumbnail.pull-right {
+  margin-right: 0;
+}
+
+.about .description .field-item p {
+  text-align: justify;
+  padding-right: 12px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.about .description h4 {
+  font-weight: bold !important;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding-top: 12px;
+}
+
+.about .field label {
+  font-weight: bold !important;
+}
 
 /** 
- * 	Individual A/V Pages 
+ *  Individual A/V Pages 
  */
 
 /* add space after collection name */
-#av-details .field-name-av-collection {margin-bottom: 3px;}
+#av-details .field-name-av-collection {
+  margin-bottom: 3px;
+}
 
-#av-details .field-type-taxonomy-term-reference {margin: 9px 0px 3px;}
-#av-details .field-type-taxonomy-term-reference ul {margin: 3px 0px 0px 0px;}
+#av-details .field-type-taxonomy-term-reference {
+  margin: 9px 0px 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference ul {
+  margin: 3px 0px 0px 0px;
+}
 
 /* Metadata on a/v record */
-#field_collection_item_field_workflow_full_group_workflow .subgroup {float: left;width: 33%;}
-#field_collection_item_field_workflow_full_group_workflow .subgroup p {display: inline-block;}
+#field_collection_item_field_workflow_full_group_workflow .subgroup {
+  float: left;
+  width: 33%;
+}
+
+#field_collection_item_field_workflow_full_group_workflow .subgroup p {
+  display: inline-block;
+}
 
 .node .content .mb-identifier label, 
-.node .content .field-label-inline .field-label-span {color: #333;margin: 0;font-size: 14px;text-transform: capitalize;}
-.node .content .field-name-field-recording-location {margin: 0 !important;}
-.node .content .field-name-field-recording-location .field-label-span {color: #333;margin: 0;font-size: 14px;font-weight: bold;}
-.node .content .field-name-field-pbcore-format-id > .field-items > .field-item {display: block;}
+.node .content .field-label-inline .field-label-span {
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.node .content .field-name-field-recording-location {
+  margin: 0 !important;
+}
+
+.node .content .field-name-field-recording-location .field-label-span {
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.node .content .field-name-field-pbcore-format-id > .field-items > .field-item {
+  display: block;
+}
 
 .node .content .field-name-field-pbcore-format-id .field-name-field-format-id .field-label,
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-label {display: none;}
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::before {content: '(';}
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::after {content: ')';clear: both;}
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-label {
+  display: none;
+}
 
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::before {
+  content: '(';
+}
 
-.field.field-name-field-format-id.field-type-text.field-label-inline.clearfix {float: left;}
-.field.field-name-field-format-id-source.field-type-text.field-label-inline.clearfix {float: left;padding-left: 4px;}
+.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::after {
+  content: ')';
+  clear: both;
+}
+
+.field.field-name-field-format-id.field-type-text.field-label-inline.clearfix {
+  float: left;
+}
+
+.field.field-name-field-format-id-source.field-type-text.field-label-inline.clearfix {
+  float: left;
+  padding-left: 4px;
+}
 
 /* hiding double display of Publisher label */
-.field-name-field-pbcore-publisher > .field-label {display: none;}
+.field-name-field-pbcore-publisher > .field-label {
+  display: none;
+}
 
 /* fixing spacing of links at bottom (email, add to favs etc.) */
-ul.links.inline {margin-bottom: 24px;display: block;}
+ul.links.inline {
+  margin-bottom: 24px;
+  display: block;
+}
 
 /** Hiding Spaces table until it can be properly implemented */
-.node-type-collection table.spaces {display: none;}
-.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {display: none;}
+.node-type-collection table.spaces {
+  display: none;
+}
+
+.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
+  display: none;
+}
 
 /** My Content Pages **/
-.view-my-content .vbo-views-form fieldset#edit-select {float: right;width: 65%;}
-.view-my-content .vbo-views-form fieldset#edit-select legend {color: #555;font-size: 80%;font-family: 'museo-sans-500',helvetica,arial,sans-serif;font-weight: bold;text-transform: uppercase;border: none;padding: 12px 0px 0px;}
-.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {margin-top: -0.3em;}
-.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {margin-top: -8px;	}
-.view-my-content .vbo-views-form fieldset#edit-select .btn-group {margin: 0px;}
-.view-collections .view-my-content .views-exposed-widgets {float: left;margin-bottom:0;}
-.view-collections .views-exposed-form .views-exposed-widgets{ min-width:24rem;margin:0 auto;display:inline-block;}
-.view-collections .view-my-workflow .views-exposed-widget {float: left;padding: 0px 12px;}
-.view-collections .views-exposed-form .views-exposed-widget{height:5.5rem;margin:0;text-align:left;}
-.view .form-item-operation {float: left;}
-.view .form-item-operation + button {margin: 0 0 0 8px;vertical-align: top;}
+.view-my-content .vbo-views-form fieldset#edit-select {
+  float: right;
+  width: 65%;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select legend {
+  color: #555;
+  font-size: 80%;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 0px 0px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item {
+  margin-top: -0.3em;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .fieldset-wrapper > .form-item + button {
+  margin-top: -8px;
+}
+
+.view-my-content .vbo-views-form fieldset#edit-select .btn-group {
+  margin: 0px;
+}
+
+.view-collections .view-my-content .views-exposed-widgets {
+  float: left;
+  margin-bottom: 0;
+}
+
+.view-collections .views-exposed-form .views-exposed-widgets {
+  min-width: 24rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.view-collections .view-my-workflow .views-exposed-widget {
+  float: left;
+  padding: 0px 12px;
+}
+
+.view-collections .views-exposed-form .views-exposed-widget {
+  height: 5.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.view .form-item-operation {
+  float: left;
+}
+
+.view .form-item-operation + button {
+  margin: 0 0 0 8px;
+  vertical-align: top;
+}
 
 .view-my-content .views-table, 
 .view-my-collections .views-table, 
 .view-my-memberships .views-table, 
-.view-my-workflow .views-table { width: 100%;}
+.view-my-workflow .views-table {
+  width: 100%;
+}
 
 .view-my-content .views-table th,
 .view-my-collections .views-table th,
 .view-my-memberships .views-table th,
-.view-my-workflow .views-table th { padding: 6px 12px 6px 3px;min-width: 75px;font-size: 1em;}
+.view-my-workflow .views-table th {
+  padding: 6px 12px 6px 3px;
+  min-width: 75px;
+  font-size: 1em;
+}
 
 .view-my-content .views-table tr td,
 .view-my-collections .views-table tr td,
 .view-my-memberships .views-table tr td,
-.view-my-workflow .views-table tr td { padding: 6px 12px 6px 3px;min-width: 75px;font-size: 1em;/* white-space: nowrap; ---- removed...this is pushing the table too wide on myworkflow page, probably others too */}
+.view-my-workflow .views-table tr td {
+  padding: 6px 12px 6px 3px;
+  min-width: 75px;
+  font-size: 1em;
+/* white-space: nowrap; ---- pushing the table too wide on myworkflow page */
+}
 
-.view-my-workflow .views-table tr td{ font-size: 0.88em;}
-.view-my-workflow .views-table tr td.views-field-title{ font-size:1em;}
+.view-my-workflow .views-table tr td {
+  font-size: 0.88em;
+}
 
+.view-my-workflow .views-table tr td.views-field-title {
+  font-size: 1em;
+}
 
-.views-table .kaltura-thumb img { height: 50px;}
+.views-table .kaltura-thumb img {
+  height: 50px;
+}
 
-.page-my-content-workflow .views-exposed-widgets{ margin:1rem;}
+.page-my-content-workflow .views-exposed-widgets {
+  margin: 1rem;
+}
 
 
 /* BEGIN carousel custom theme styles */
@@ -307,23 +809,48 @@ ul.links.inline {margin-bottom: 24px;display: block;}
 .carousel-inner,
 .carousel-inner > .item,
 .front .field-type-text-with-summary p, /* intro text above carousel */
-.front .main-col .block-views{ max-width:1050px; margin:0 auto;}
+.front .main-col .block-views {
+  max-width: 1050px;
+  margin: 0 auto;
+}
 
-.front .main-col .content:first-of-type h4{ display: none;}
-.front .main-col .content:first-of-type h4+p{ margin-bottom:1.5rem;padding:0 2rem;}
+.front .field-type-text-with-summary h4 {
+  display: none;
+}
 
-.carousel-main-content .show-more{ margin-top:1rem;}
+.front .field-type-text-with-summary h4+p {
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+}
+
+.carousel-main-content .show-more {
+  margin-top: 1rem;
+}
 
 /* .carousel-main-content.col-xs-12.col-sm-7.col-md-8{ max-width:66%;} */
 /* END carousel */
 
 
 @media screen and (min-width: 768px) {
-	.view-collections .view-result-count-info { margin-top:2.3rem;margin-bottom:0.5rem;}
-	.view-collections #view-all-colls-switcher{ margin-top:2rem; margin-bottom:1rem;}
-	.view-collections .view-all-colls-control-box .pager{ margin:2.3rem 0 1rem;}
-	.view-collections .view-all-colls-control-box .pagerer-pager > .pager{ margin-top:1.5rem;}
+  .view-collections .view-result-count-info {
+    margin-top: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .view-collections #view-all-colls-switcher {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .view-collections .view-all-colls-control-box .pager {
+    margin: 2.3rem 0 1rem;
+  }
+
+  .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
+    margin-top: 1.5rem;
+  }
 }
+
 
 
 
