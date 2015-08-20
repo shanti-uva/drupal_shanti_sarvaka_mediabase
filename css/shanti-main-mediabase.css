@@ -783,7 +783,7 @@ ul.links.inline {
   padding: 6px 12px 6px 3px;
   min-width: 75px;
   font-size: 1em;
-/* white-space: nowrap; ---- removed...this is pushing the table too wide on myworkflow page, probably others too */
+/* white-space: nowrap; ---- pushing the table too wide on myworkflow page */
 }
 
 .view-my-workflow .views-table tr td {

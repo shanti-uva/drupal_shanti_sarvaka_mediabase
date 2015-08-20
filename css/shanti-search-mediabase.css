@@ -124,7 +124,7 @@
   width: 33%;
 }
 */
-.view-section .nav-tabs>li{ width:30%;}
+.view-section .nav-tabs>li.km-facet-tab{ width:30%;}
 .view-section .nav-tabs>li:first-child{ width:40%;}
 
 .view-section .nav-tabs>li.km-facet-tab a {
