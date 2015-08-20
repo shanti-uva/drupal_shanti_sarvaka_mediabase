@@ -392,6 +392,10 @@ a.hide-annot::before {
 /**
  *  All Collections Page
  */
+.page-collections .view-collections{ 
+  padding-bottom:10rem;
+}
+
 .view-collections .collection-list-link {
   float: left;
   margin: 20px 10px 0 0;
