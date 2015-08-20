@@ -16,10 +16,6 @@
   top: 4px;
 }
 
-.input-section .advanced-view {
-  padding-top: 0.5em;
-}
-
 .input-section .search-group .radio-inline {
   min-width: 0px !important;
 }
@@ -257,8 +253,18 @@ span.fancytree-node.fancytree-active {
 
 
 
+/* .page-search .tab-content:nth-of-type(1){ padding-top:1rem;} */
+.extruder .input-section {
+  height: 7.5rem;
+}
+
+.extruder-content .input-section:first-child { 
+	border:none !important;
+} /* fixes big in markup producing two input section wrappers */
 
 
+.advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
+.advanced-view .form-group:nth-of-type(2) { display: none;}
 
 
 
