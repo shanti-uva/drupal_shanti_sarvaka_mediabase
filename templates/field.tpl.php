@@ -43,11 +43,13 @@
  *
  * @ingroup themeable
  */
+ 
+ /**
+  * Customized field template to add icon when $element['#icon'] is defined (ndg, 2015-07-27) 
+  * Also uses ul list for multiple items
+  */
 ?>
-<!--
-Customized field template to add icon when $element['#icon'] is defined (ndg, 2015-07-27)
-Also uses ul list for multiple items
--->
+
 <?php if ($element['#field_type'] == 'shanti_kmaps_fields_default'): ?>
 	<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
 	  <?php if (!$label_hidden): ?>
