@@ -119,10 +119,14 @@
 .input-section .search-group .radio-inline:first-child {
   width: 2rem;
 }
-
-.view-section .nav-tabs>li.km-facet-tab, .view-section .nav-tabs>li:first-child {
+/*
+.view-section .nav-tabs>li.km-facet-tab, 
+.view-section .nav-tabs>li:first-child {
   width: 33%;
 }
+*/
+.view-section .nav-tabs>li{ width:30%;}
+.view-section .nav-tabs>li:first-child{ width:40%;}
 
 .view-section .nav-tabs>li.km-facet-tab a {
   font-size: 0.88em;
