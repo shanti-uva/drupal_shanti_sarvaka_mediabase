@@ -106,7 +106,7 @@
 .view-collections .views-exposed-form {
   margin-bottom: 0;
   text-align: center;
-/*border-bottom:1px solid #ccc;*/;
+/*border-bottom:1px solid #ccc;*/
 }
 
 .view-collections .views-exposed-form .views-exposed-widget {
@@ -153,7 +153,7 @@
 }
 
 .view-collections .views-row:first-child {
- /* padding-top:0;margin-top:0.25em; border-top:3px double #e0e0e0; */;
+ /* padding-top:0;margin-top:0.25em; border-top:3px double #e0e0e0; */
 }
 
 .view-collections .views-field-title {
@@ -176,7 +176,7 @@
   -webkit-box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
   box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
   border-collapse: separate;
- /* fix for ie9 shadow */;
+ /* fix for ie9 shadow */
 }
 
 .page-collections-list #block-system-main.block.block-system {
@@ -310,7 +310,7 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 #locale-translation-filter-form .form-actions {
   margin-left: 0;
   padding: 1.25em 0 0 1em;
- /* padding typo override */;
+ /* padding typo override */
 }
 
 
@@ -329,7 +329,7 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 .tabledrag-toggle-weight-wrapper {
   display: inline;
   float: right;
- /* margin-top:-0.62em; */;
+ /* margin-top:-0.62em; */
 }
 
 .tabledrag-toggle-weight-wrapper a {
@@ -422,7 +422,7 @@ a.hide-annot::before {
 
 .view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body {
   white-space: normal !important;
- /* word-break:break-all; for URL paths if needed with js */;
+ /* word-break:break-all; for URL paths if needed with js */
 }
 
 .view-collections .shanti-thumbnail .shanti-field-body {
@@ -430,7 +430,7 @@ a.hide-annot::before {
   margin-top: 3px;
   padding-top: 3px;
   border-top: 1px solid #ccc;
- /* dont set height on this */;
+ /* dont set height on this */
 }
 
 .view-collections .shanti-thumbnail .shanti-field-title a {
@@ -578,7 +578,7 @@ a.hide-annot::before {
   padding: 0.7rem;
   margin: 12px 18px;
   border-radius: 0.2rem;
- /* border: 2px solid #32ccca; */;
+ /* border: 2px solid #32ccca; */
 }
 
 .collimage .img-thumbnail.pull-left {
@@ -783,7 +783,7 @@ ul.links.inline {
   padding: 6px 12px 6px 3px;
   min-width: 75px;
   font-size: 1em;
-/* white-space: nowrap; ---- removed...this is pushing the table too wide on myworkflow page, probably others too */;
+/* white-space: nowrap; ---- removed...this is pushing the table too wide on myworkflow page, probably others too */
 }
 
 .view-my-workflow .views-table tr td {
