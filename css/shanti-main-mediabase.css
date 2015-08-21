@@ -849,7 +849,7 @@ ul.links.inline {
 
 
 /* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
-    .shanti-thumbnail-image a{ height:auto;}
+.page-collections .shanti-thumbnail-image a{ height:auto;}
 
 
 
