@@ -32,9 +32,7 @@
 <?php if ($content): ?>
   <div class="<?php print $classes; ?>">
   	<?php if (isset($variables['elements']['search_form'])): ?>
-	  	<section class="input-section"> 
 	    	<?php print render($variables['elements']['search_form']); ?>
-	    </section>
 	  <?php endif; ?>
     <?php print $facetcnt; ?>
   </div>
