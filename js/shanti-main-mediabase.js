@@ -25,13 +25,16 @@
 				}
 				$('.showdesclang a').click(function(e) {
 					e.preventDefault();
-					$('.avpbcoredesc .hidden').removeClass('hidden');
+					$('#pb-core-desc-readmore').show();
 					$('.showdesclang').addClass('hidden');
-					$('.avpbcoredesc .altlang').removeClass('altlang');
-					if ($('#pb-core-desc-readmore a').eq(0).text().indexOf('More') > -1) {
-						//console.log('Read more link text: ' + $('#pb-core-desc-readmore a').eq(0).text());
-						$('#pb-core-desc-readmore a').eq(0).click();
+					// if more than one altlang field show everything and change to show less
+					if ($('.avpbcoredesc .altlang').length > 1) {
+						$('.avpbcoredesc .hidden').removeClass('hidden');
+						$('#pb-core-desc-readmore a').eq(0).text('Show Less');
 					}
+					// Default just show altlang
+					$('.avpbcoredesc .altlang').removeClass('hidden altlang');
+					
 				});
 			}
 	  }
@@ -66,6 +69,9 @@
 		  	// Pb core description trimming
 				if($('.field-name-field-pbcore-description .field-item').length > 1) {
 					var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+					// Determine if there any divs showing content
+					var showing = false;
+					items.each(function() { if (jQuery(this).find('div.content > div.hidden').length == 0) { showing = true; }});
 					var multip = false;
 					if (items.eq(0).find('p').length > 1) {
 						multip = true;
@@ -76,22 +82,30 @@
 						if ($(this).find('.content > .hidden').not(".altlang").length > 0) { ct++; }
 					});
 					if(ct > 0 || multip == true) {
-						//console.log(ct, multip, items.eq(0).find('p').length);
 						//items.first().nextAll().hide();
 						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
+						if (!showing) { $('#pb-core-desc-readmore').hide();} // Hide show more if no divs showing content
 						if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
 						$(".show-more > a").click(function (e) {
 							var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
 							//items.first().nextAll('.field-item').slideToggle();
-							items.eq(0).nextAll().find('.content > div').filter(":not(.altlang)").toggleClass('hidden');
-							items.eq(0).find('p').eq(0).nextAll().toggle();
-							//console.log($(".avdesc").attr('class'));
-					     if($(".avdesc").hasClass("show-more-height")) {
+							var divstotoggle = items.eq(0).nextAll().find('.content > div');
+							if ($('.showdesclang').is(":visible")) {
+								divstotoggle = divstotoggle.filter(":not(.altlang)");
+							} 
+					     if($(this).text() == Drupal.t('Show More')) {
+					     	// When Show More is clicked
 					         $(this).text(Drupal.t('Show Less'));
+					         divstotoggle.removeClass('hidden');
+									 items.eq(0).find('p').eq(0).nextAll().show();
+					     		$(".avdesc").addClass("show-more-height");
 					     } else {
+					     	// When Show Less is clicked
 					         $(this).text(Drupal.t('Show More'));
+					         divstotoggle.addClass('hidden');
+									 items.eq(0).find('p').eq(0).nextAll().hide();
+					     		$(".avdesc").removeClass("show-more-height");
 					     }
-					     $(".avdesc").toggleClass("show-more-height");
 							 e.preventDefault();
 						});
 					}
