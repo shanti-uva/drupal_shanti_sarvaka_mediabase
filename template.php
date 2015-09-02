@@ -26,6 +26,24 @@ function sarvaka_mediabase_theme() {
   );
 }
 
+/**
+ * Implements theme_breadcrumb
+ * 		Change First Breadcrumb to link to collection/group page for group admin pages
+ */
+function sarvaka_mediabase_breadcrumb($variables) {
+	$cp = current_path();
+	// Change First Breadcrumb to link to collection/group page for group admin pages
+	if (drupal_match_path($cp, 'group/node/*/admin/**')) {
+		$bcs = &$variables['breadcrumb'];
+		if (count($bcs) > 1 && $menuitem = menu_get_item($cp)) {
+			$node = node_load($menuitem['map'][2]); // 3rd item in menu item map is the group node id
+			$url = 'node/' . $node->nid; 
+			$bcs[1] = l($node->title, $url);
+		}
+	}
+	return shanti_sarvaka_breadcrumb($variables);
+}
+
 function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 	// Add bo class to text areas for Tibetan descriptions
 	if ($form_id == 'video_node_form' || $form_id == 'audio_node_form' ) {
