@@ -1,6 +1,7 @@
 /*---- BEGIN search flyout ---*/
 .input-section .search-group {
-  margin-top: -1em;
+  margin-top: -0.7rem;
+  height:4.7rem;
 }
 
 .input-section .input-group .btn.btn-default {
@@ -257,10 +258,6 @@ span.fancytree-node.fancytree-active {
 .extruder .input-section {
   height: 7.5rem;
 }
-
-.extruder-content .input-section:first-child { 
-	border:none !important;
-} /* fixes big in markup producing two input section wrappers */
 
 
 .advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
