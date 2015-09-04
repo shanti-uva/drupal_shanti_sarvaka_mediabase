@@ -34,6 +34,6 @@
   	<?php if (isset($variables['elements']['search_form'])): ?>
 	    	<?php print render($variables['elements']['search_form']); ?>
 	  <?php endif; ?>
-    <?php print $facetcnt; ?>
+    <?php if ($facetcnt) { print $facetcnt; } ?>
   </div>
 <?php endif; ?>
