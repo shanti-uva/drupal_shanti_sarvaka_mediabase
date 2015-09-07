@@ -826,6 +826,15 @@ ul.links.inline {
 /* END carousel */
 
 
+@media screen and (max-width: 991px) {
+  /* hiding video transcript column when not needed */
+  .av-main-transcript-section{ display:none;}
+  .has-transcript .av-main-transcript-section{ display:block;}
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
