@@ -830,9 +830,9 @@ ul.links.inline {
   /* hiding video transcript column when not needed */
 
 .av-main-video-section.col-sm-6,
-.av-main-video-section.col-md-7{ width:100%}
-.has-transcript .av-main-video-section.col-sm-6{ width:50%;}
-.has-transcript .av-main-video-section.col-md-7{ width:61.3333%}
+.av-main-video-section.col-md-7{ width:100% !important;}
+.has-transcript .av-main-video-section.col-sm-6{ width:50% !important;}
+.has-transcript .av-main-video-section.col-md-7{ width:61.275% !important;}
 
 .av-main-transcript-section{ display:none;}
 .has-transcript .av-main-transcript-section{ display:block;}
