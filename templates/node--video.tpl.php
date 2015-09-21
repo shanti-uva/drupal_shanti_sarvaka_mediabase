@@ -92,8 +92,7 @@ if($teaser):
 	         <span class="overlay">
 	            <span class="icon"></span>
 	         </span><!--use html entities-->
-	         <img title="<?php print htmlentities($title); ?>"
-	             alt="<?php print htmlentities($title); ?>"
+	         <img 
 	             src="<?php if(isset($variables['thumbnail_url'])) { print $variables['thumbnail_url']; } ?>"
 	             typeof="foaf:Image" class="k-no-rotate">
 	         <span class="icon shanticon-video"></span>
