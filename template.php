@@ -124,11 +124,17 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
-		// Truncate title in teasers
-		if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 75) {
-			$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
+		// Teasers
+		if($vars['view_mode'] == 'teaser') {
+			// Get Title language and add as variable for template
+			$ew = entity_metadata_wrapper('node', $vars['node']);
+			$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
+			// Truncate title in teasers
+			if(strlen($vars['title']) > 75) {
+				$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
+			}
 		}
-		 
+		
 		// Team link
 		if(!empty($vars['team'])) {
 			$path = drupal_get_path_alias('node/' . $vars['team']->nid);
@@ -393,3 +399,10 @@ function sarvaka_mediabase_field__datetime($vars) {
 	return render($vars['element']);
 }
 */
+
+function lang_code($lname) {
+	foreach (language_list() as $cd => $lang) {
+		if ($lang->name == $lname) { return $cd; }
+	}
+	return "en";
+}

@@ -228,6 +228,10 @@
 }
 
 /* Home media list block */
+/* Tibetan in teaser titles */
+.shanti-thumbnail-field.shanti-field-title.bo {
+    font-size: 120%;
+}
 
 /* Kmaps List page views*/
 .page-list .shanti-view-dom-id > h2 {
