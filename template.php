@@ -129,6 +129,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			// Get Title language and add as variable for template
 			$ew = entity_metadata_wrapper('node', $vars['node']);
 			$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
+
 			// Truncate title in teasers
 			if(strlen($vars['title']) > 75) {
 				$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
@@ -151,8 +152,8 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		if(!empty($vars['coll'])) {
 			$vars['coll_title'] = $vars['coll']->title;
 			// Truncate collection title in teaser if item title is longer than 60 chars
-			if($vars['view_mode'] == 'teaser' && strlen($vars['title']) > 50) {
-				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 32, TRUE, TRUE);
+			if($vars['view_mode'] == 'teaser') {
+				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 38, TRUE, TRUE);
 			}
 			$vars['content']['group_details']['collection'] = array(
 				'#type' => 'markup',
@@ -400,9 +401,16 @@ function sarvaka_mediabase_field__datetime($vars) {
 }
 */
 
+/**
+ * Converts a language's English name into its two-letter language code
+ */
 function lang_code($lname) {
+	// Search through list of enabled languages
 	foreach (language_list() as $cd => $lang) {
 		if ($lang->name == $lname) { return $cd; }
 	}
+	// Account for when I18n languages have not been enabled but still used in field collection
+	if ($lname == "Tibetan") {return "bo";}
+	if ($lname == "Chinese") {return "zh";}
 	return "en";
 }

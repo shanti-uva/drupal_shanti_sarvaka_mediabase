@@ -104,7 +104,15 @@ if($teaser):
 	         <span class="field-content"><a href="<?php print $variables['node_url']; ?>"
 	             class="shanti-thumbnail-link"><?php print $title; ?></a></span>
 	      </div>
-
+	      
+				<?php if(isset($variables['place_link'])): ?>
+	        <div class="shanti-thumbnail-field shanti-field-place">
+	         <span class="field-content"><span class="icon shanticon-places"></span>
+	           <?php print $variables['place_link']; ?>
+	         </span>
+	        </div>
+	      <?php endif; ?>
+	      
 	      <div class="shanti-thumbnail-field shanti-field-created">
 	          <span class="shanti-field-content"><?php if(!empty($variables['media_create_date'])) {
 	          	print date('d M Y', $variables['media_create_date']);
@@ -117,21 +125,18 @@ if($teaser):
         </div>
       <?php endif; ?>
 
+				<div class="shanti-thumbnail-field shanti-field-creator">
+	          <span class="shanti-field-content"><a href="<?php print "user/{$variables['uid']}";?>"><?php print $variables['name']; ?></a></span>
+	      </div>
+
+    </div> <!-- end body-wrap -->
+
+    <div class="footer-wrap">
       <?php if($coll): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
             	class="shanti-thumbnail-link"><?php print $variables['coll_title']; ?></a>
             </div>
-        </div>
-      <?php endif; ?>
-    </div> <!-- end body-wrap -->
-
-    <div class="footer-wrap">
-      <?php if(isset($variables['place_link'])): ?>
-        <div class="shanti-thumbnail-field shanti-field-place">
-         <span class="field-content"><span class="icon shanticon-places"></span>
-           <?php print $variables['place_link']; ?>
-         </span>
         </div>
       <?php endif; ?>
     </div> <!-- end footer -->
