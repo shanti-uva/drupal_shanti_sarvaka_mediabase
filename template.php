@@ -128,8 +128,11 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 		if($vars['view_mode'] == 'teaser') {
 			// Get Title language and add as variable for template
 			$ew = entity_metadata_wrapper('node', $vars['node']);
-			$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
-
+			try {
+				$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
+			} catch (EntityMetadataWrapperException $emwe) {
+				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $vars['node']->nid);
+			}
 			// Truncate title in teasers
 			if(strlen($vars['title']) > 75) {
 				$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);

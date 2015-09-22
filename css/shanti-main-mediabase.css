@@ -228,6 +228,16 @@
 }
 
 /* Home media list block */
+/* Filters on top of block */
+#views-exposed-form-browse-media-home-block .views-exposed-form {
+    min-width: 450px;
+    margin-right: -50px;
+}
+
+#views-exposed-form-browse-media-home-block .views-exposed-form input#edit-title {
+    max-width: 130px;
+}
+
 /* Tibetan in teaser titles */
 .shanti-thumbnail-field.shanti-field-title.bo {
     font-size: 120%;
