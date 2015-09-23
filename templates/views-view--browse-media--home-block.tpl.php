@@ -28,7 +28,6 @@
  */
 ?>
 
-<?php if ($rows && $pager): ?>
 	<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
 	<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
 		<div class="shanti-filters clearfix">
@@ -44,13 +43,16 @@
 			              </div>
 			            <?php endif;?>
 				        </td>
+				        
+							<?php if ($rows && $pager): ?>
 				        <td>
 				            <?php print $pager; ?>
 				        </td>
+				      
+							<?php endif; ?>
 				    </tr>
 				</table>
 		</div>
-	<?php endif; ?>
 	
 	<div class="<?php print $classes; ?>">
 	  <?php print render($title_prefix); ?>
@@ -102,7 +104,7 @@
 	
 	</div><?php /* class view */ ?>
 	
-	<?php if ($rows && $pager): ?>
+	<?php if ($pager): ?>
 		<div class="shanti-filters bottom">
 			<?php print $pager; ?>
 		</div>
