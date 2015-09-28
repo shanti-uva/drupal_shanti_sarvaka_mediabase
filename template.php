@@ -156,7 +156,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			$vars['coll_title'] = $vars['coll']->title;
 			// Truncate collection title in teaser if item title is longer than 60 chars
 			if($vars['view_mode'] == 'teaser') {
-				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 38, TRUE, TRUE);
+				$vars['coll_title'] = truncate_utf8($vars['coll_title'], 32, TRUE, TRUE);
 			}
 			$vars['content']['group_details']['collection'] = array(
 				'#type' => 'markup',
