@@ -234,6 +234,18 @@
     margin-right: -50px;
 }
 
+form#views-exposed-form-browse-media-home-block {
+    margin-right: -3rem;
+}
+
+.view-filters-mb {
+    margin-right: -3rem;
+}
+
+#views-exposed-form-browse-media-home-block  .views-exposed-widget {
+    padding-right: 0rem !important;
+}
+
 #views-exposed-form-browse-media-home-block .views-exposed-form input#edit-title {
     max-width: 130px;
 }
