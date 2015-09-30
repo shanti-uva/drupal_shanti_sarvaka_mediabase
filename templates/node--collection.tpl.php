@@ -102,10 +102,11 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
-		hide($content['field_images']);
-		hide($content['field_subcoll_root_kmap_id']);
+	hide($content['field_images']);
+	hide($content['field_subcoll_root_kmap_id']);
     // Description is compiled in mediabase_preprocess_node and contained in $description variable
     // Not working hide($content['field_pbcore_description']);
+    //dpm($content, 'content in template');
   ?>	
 	<div class="about">
 		<div class="pull-left collimage">
