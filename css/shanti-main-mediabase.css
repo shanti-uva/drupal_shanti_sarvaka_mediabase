@@ -880,4 +880,8 @@ ul.links.inline {
 .page-collections .shanti-thumbnail-image a{ height:auto;}
 
 
+.node-type-video .admin-menu #block-system-main{
+  margin-top:-2rem;
+}
+
 
