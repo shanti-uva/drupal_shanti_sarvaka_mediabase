@@ -881,6 +881,10 @@ ul.links.inline {
 
 
 .node-type-video #block-system-main{
+  margin-top: 0;
+}
+
+.logged-in .node-type-video #block-system-main{
   margin-top:-2rem;
 }
 
