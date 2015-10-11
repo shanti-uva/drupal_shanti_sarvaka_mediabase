@@ -887,3 +887,9 @@ ul.links.inline {
 .front #block-system-main.block.block-system{
   margin-top:0 !important;
 }
+
+.front.logged-in #block-system-main.block.block-system{
+  margin-top:1rem !important;
+}
+
+
