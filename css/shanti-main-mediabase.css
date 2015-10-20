@@ -884,9 +884,10 @@ ul.links.inline {
   margin-top: 0;
 }
 
-.logged-in .node-type-video #block-system-main{
-  margin-top:-2.5rem;
+.node-type-video.logged-in #block-system-main{
+  margin-top:-0.75em;
 }
+
 /*--- homepage white space above carousel ---*/
 .front #block-system-main.block.block-system{
   margin-top:0 !important;
