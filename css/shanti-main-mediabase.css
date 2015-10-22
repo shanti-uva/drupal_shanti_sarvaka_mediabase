@@ -1940,11 +1940,11 @@ object.KalturaDynamicPlayer {
 }
 
 
-.has-transcript .av-main-wrapper {
+.has-transcript .av-main-video-section {
   width:100% !important;
 }
 
-.has-transcript .av-main-video-section {
+.has-transcript .av-main-transcript-section {
   width:100% !important;
 }
 
@@ -2366,22 +2366,22 @@ button on video window
 
 @media screen and (min-width: 820px) {
 
-  .has-transcript .av-main-wrapper {
+  .has-transcript .av-main-video-section {
     width:33.33333333333333% !important;
   }
 
-  .has-transcript .av-main-video-section {
+  .has-transcript .av-main-transcript-section {
     width:66.66666666666666% !important;
   }
 } 
 
 @media screen and (min-width: 992px) {
 
-  .has-transcript .av-main-wrapper {
+  .has-transcript .av-main-video-section {
     width:41.66666666666667% !important;
   }
 
-  .has-transcript .av-main-video-section {
+  .has-transcript .av-main-transcript-section {
     width:58.333333333333336% !important;
   }
 } 
@@ -2405,11 +2405,11 @@ button on video window
   .av-main-transcript-section .tcu-info {
     width: 29%;
   }
-  .has-transcript .av-main-wrapper {
+  .has-transcript .av-main-video-section {
     width:50% !important;
   }
 
-  .has-transcript .av-main-video-section {
+  .has-transcript .av-main-transcript-section {
     width:50% !important;
   }
 }
