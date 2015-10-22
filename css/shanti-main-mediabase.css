@@ -1010,7 +1010,8 @@ ul.links.inline {
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
-  padding: .5rem 0 .3rem .4rem;
+  padding: .5rem .5rem .5rem .8rem;
+  border:1px dotted transparent;
 }
 
 .av-main-transcript-section .play-button {
@@ -1238,11 +1239,12 @@ ul.links.inline {
 
 /***** speaker name ****/
 .editing-active .speaker-name span:hover{
-  background:#fcffc6;
-  background: rgba(252, 255, 198, 0.5);
+  /*background:#fcffc6;
+  background: rgba(252, 255, 198, 0.5);*/
+  border-color:#aaa;
 }
 
-.editing-active .speaker-name span::after{
+.editing-active .speaker-name span::before{
   content: '\e065';
   float:right;
   position: relative;
@@ -1255,7 +1257,7 @@ ul.links.inline {
   width:17px;
   font-family: 'Glyphicons Halflings';
 }
-.editing-active .speaker-name span:hover::after{
+.editing-active .speaker-name span:hover::before{
   color:#aaa;
 }
 
