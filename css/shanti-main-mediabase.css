@@ -1269,9 +1269,9 @@ ul.links.inline {
   content: "\f040";
   font-family:'FontAwesome';
   color:#444;
-  font-size:1.18em;
+  font-size:1.25em;
   position:relative;
-  top: -0.2rem;
+  top: -0.05rem;
   right: -0.5rem;
 }
 
