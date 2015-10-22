@@ -1263,7 +1263,6 @@ ul.links.inline {
 
 .has-transcript .tabs.primary li:nth-of-type(3) a{
   padding-right: 1.25rem;
-  line-height: 1.12em
 }
 
 .has-transcript .tabs.primary li:nth-of-type(3) a:after{
@@ -1272,9 +1271,8 @@ ul.links.inline {
   color:#444;
   font-size:1.18em;
   position:relative;
-  top:0;
-  right:0;
-  float:right;
+  top: -0.2rem;
+  right: -0.5rem;
 }
 
 
