@@ -1262,14 +1262,15 @@ ul.links.inline {
 }
 
 .has-transcript .tabs.primary li:nth-of-type(3) a{
-  padding-right: 3rem;
+  padding-right: 1.25rem;
+  line-height: 1.12em
 }
 
 .has-transcript .tabs.primary li:nth-of-type(3) a:after{
   content: "\f040";
   font-family:'FontAwesome';
-  color:red;
-  font-size:1em;
+  color:#444;
+  font-size:1.18em;
   position:relative;
   top:0;
   right:0;
