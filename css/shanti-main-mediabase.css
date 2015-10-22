@@ -1114,14 +1114,24 @@ ul.links.inline {
   margin-bottom: 0;
 }
 
-
 .transcript-content li.playing {
   border-color: #7181ff;
   background: #fafafa;
   border-width: 1px;
 }
 
-.transcript-content .speaker-tiers .editableform .form-control{ width: 100%; margin: 0.5rem 1rem 0.5rem 0;}
+.speaker-tiers .editableform .form-control{ 
+  width: 100%; 
+  margin: 0.5rem 1rem 0 0;
+}
+
+.speaker-tiers .editable-buttons.editable-buttons-bottom{ 
+  margin-top:0;
+}
+
+.speaker-tiers .editable-container.editable-inline{
+  border-bottom: 1px solid #eee;
+}
 
 .twitter-typeahead .tt-query, 
 .twitter-typeahead .tt-hint{
