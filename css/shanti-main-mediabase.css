@@ -1152,7 +1152,7 @@ ul.links.inline {
   padding: 8px;
 }
 
-.speaker-tiers .tier.active:last-child{
+.speaker-tiers .tier:last-child{
   border-bottom-color:transparent;
 }
 
