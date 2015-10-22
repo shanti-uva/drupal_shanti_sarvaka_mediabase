@@ -1025,8 +1025,8 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button .btn {
   margin: 0;
-  padding: 0.4rem 2.5rem 0.4rem 2rem;
-  font-size: 1.2rem;
+  padding: 0.4rem 3.5rem 0.2rem 2rem;
+  font-size: 1.1rem;
   border: 1px solid transparent;
   box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);
   border-collapse: separate;
@@ -1054,8 +1054,8 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
-  color: #5b68ce;
-  line-height: 0.9rem;
+  color: #606060;
+  line-height: 0.8rem;
   float: left;
   padding: 0;
   position: relative;
@@ -1156,14 +1156,13 @@ ul.links.inline {
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
-.av-main-transcript-section .edit-times{
+.edit-times{
   display: inline-block;
-  color:transparent;
+  color: #aaa;
   cursor: pointer;
-  position:static;
-  right:0;
-  top:0;
-  float: right;
+  position:relative;
+  left: -1.8rem;
+  top: 0.35rem;
   height: 17px;
   width: 17px;
 }
@@ -1177,7 +1176,7 @@ ul.links.inline {
   width: 100% !important;
 }
 
-.speaker-tiers .btn.btn-default.btn-sm.editable-cancel{
+.speaker-tiers .editable-cancel{
   border:none;
   box-shadow:none;
   padding: .5em 1em .62em;
@@ -1186,7 +1185,7 @@ ul.links.inline {
   font-size:1rem;
 }
 
-.speaker-tiers .btn.btn-default.btn-sm.editable-cancel:hover{
+.speaker-tiers .editable-cancel:hover{
   border:none;
   box-shadow:none;
   background:transparent;
@@ -1194,8 +1193,12 @@ ul.links.inline {
   text-decoration:underline !important;
 }
 
-.speaker-tiers .editable-buttons.editable-buttons-bottom{
+.speaker-tiers .editable-buttons-bottom{
   display:inline-block;
+  float:right;
+}
+
+.speaker-tiers .editable-submit{
   float:right;
 }
 
@@ -1203,15 +1206,11 @@ ul.links.inline {
   display:block;
 }
 
-.speaker-tiers .btn.btn-primary.btn-sm.editable-submit{
-  float:right;
-}
-
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
   content:'Update';
 }
 
-.speaker-tiers .btn.btn-default.btn-sm.editable-cancel .glyphicon-remove::before{
+.speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
 
@@ -1219,12 +1218,12 @@ ul.links.inline {
   border: 1px dashed #c0c0c0;
 }
 
-.speaker-tiers .tier.editable::after{ 
+.speaker-tiers .tier.editable::before{ 
   content: '\e065';
   float: right;
   position: relative;
-  top: 0;
-  right: .1rem;
+  top: -0.5rem;
+  right: -1rem;
   font-size: 1.2rem;
   color:white;
   display:inline-block;
@@ -1233,17 +1232,17 @@ ul.links.inline {
   font-family: 'Glyphicons Halflings';
 }
 
-.speaker-tiers .tier.editable:hover::after{ 
+.speaker-tiers .tier.editable:hover::before{ 
   color:#aaa;
 }
 
 /***** speaker name ****/
-.editing-active .av-main-transcript-section .speaker-name span:hover{
+.editing-active .speaker-name span:hover{
   background:#fcffc6;
   background: rgba(252, 255, 198, 0.5);
 }
 
-.editing-active .av-main-transcript-section .speaker-name span::after{
+.editing-active .speaker-name span::after{
   content: '\e065';
   float:right;
   position: relative;
@@ -1256,7 +1255,7 @@ ul.links.inline {
   width:17px;
   font-family: 'Glyphicons Halflings';
 }
-.editing-active .av-main-transcript-section .speaker-name span:hover::after{
+.editing-active .speaker-name span:hover::after{
   color:#aaa;
 }
 
