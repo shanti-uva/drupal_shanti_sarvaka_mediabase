@@ -1147,7 +1147,7 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier.active:last-child{
-  border-bottom:none;
+  border-bottom-color:transparent;
 }
 
 
@@ -1216,11 +1216,7 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier.editable:hover{
-  border: 1px dashed #ddd;
-}
-
-.speaker-tiers .tier.editable:hover{
-  border: 1px dashed #ddd;
+  border: 1px dashed #c0c0c0;
 }
 
 .speaker-tiers .tier.editable::after{ 
