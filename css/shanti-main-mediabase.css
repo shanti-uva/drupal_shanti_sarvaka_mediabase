@@ -1162,8 +1162,8 @@ ul.links.inline {
   color: #aaa;
   cursor: pointer;
   position:relative;
-  left: -1.8rem;
-  top: 0.35rem;
+  left: -1.75rem;
+  top: 0.2rem;
   height: 17px;
   width: 17px;
 }
@@ -1224,7 +1224,7 @@ ul.links.inline {
   float: right;
   position: relative;
   top: -0.5rem;
-  right: -1rem;
+  right: -0.5rem;
   font-size: 1.2rem;
   color:white;
   display:inline-block;
@@ -1271,7 +1271,7 @@ ul.links.inline {
   color:#444;
   font-size:1.25em;
   position:relative;
-  top: -0.05rem;
+  top: -0.055rem;
   right: -0.5rem;
   float: right;
 }
