@@ -894,7 +894,7 @@ ul.links.inline {
   left: 1.2rem;
 }
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle.selectpicker {
+.av-main-transcript-section .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
   background: #fff;
@@ -904,8 +904,12 @@ ul.links.inline {
   width: 100%;
   position: relative;
   top: -0.15rem;
-  outline: 0;
 }
+
+.av-main-transcript-section .btn.btn-default.dropdown-toggle:focus {
+  box-shadow:none;
+}
+
 /* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
 .bootstrap-select.btn-group.tier-selector .icon:first-child {
   font-size: 2.3rem;
@@ -1392,7 +1396,7 @@ ul.links.inline {
   background-clip: padding-box;
   font-size: 1.5rem;
   line-height: 1;
-  height: 2.44em;
+  height: 2.5em;
  /* coordinate with button height below */
   margin: 0 0 0.3rem 2rem;
   padding: 0.2rem 4rem 0 2rem;
