@@ -994,11 +994,6 @@ ul.links.inline {
   top: 0.9rem;
 }
 
-.av-main-transcript-section .tcu-info {
-  width: 33%;
-  min-height: 5.5rem;
-  padding-bottom:1rem;
-}
 /*.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51); padding:0;}*/
 .speaker-name {
   /* position: absolute;
@@ -1135,6 +1130,12 @@ ul.links.inline {
   margin-left: 35%;
   padding-left: 1rem;
   border-left: 1px solid #eee;
+}
+
+.av-main-transcript-section .tcu-info {
+  width: 34%;
+  min-height: 5.5rem;
+  padding-bottom:1rem;
 }
 
 .transcript-content li.playing .speaker-tiers {
@@ -2426,17 +2427,11 @@ button on video window
   }
 
   .av-main-transcript-section .tcu-info{
-    width:28%;
+    width:29%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .av-main-transcript-section .speaker-tiers {
-    margin-left: 30%;
-  }
-  .av-main-transcript-section .tcu-info {
-    width: 29%;
-  }
   .has-transcript .av-main-video-section {
     width:50% !important;
   }
