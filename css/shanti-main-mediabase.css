@@ -871,6 +871,48 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 
+.transcript-container {
+  /*background: white;*/
+  height: 750px;
+  overflow-x: auto;
+  margin-top: 0;
+  -webkit-transition: all 100ms ease 0s;
+  transition: all 100ms ease 0s;
+}
+
+.transcript-container.show-search {
+  margin-top: 7rem;
+}
+
+.transcript-container .list-group {
+  -webkit-margin-before: 0;
+  margin-bottom: 420px;
+}
+
+.transcript-container .alert-info {
+  margin-bottom: 0;
+}
+
+.transcript-content {
+  /* border: 1px solid #ddd;
+  border-width: 0 1px 4px 1px; */
+}
+
+.transcript-content li {
+  /* border: 3px double #fff;
+  border-style: solid double; */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding:1rem;
+  margin-bottom: 0;
+}
+
+.transcript-content li.playing {
+  border-color: #7181ff;
+  background: #fafafa;
+  border-width: 1px;
+}
+
 .transcript-controls table tbody,
 .transcript-player table tbody {
   border-top: none;
@@ -885,7 +927,6 @@ ul.links.inline {
   border-left: 1px solid #ddd;
 }
  /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
-
 
 .transcripts-apachesolr-search-snippet .controls {
   width: 15.5rem;
@@ -1034,24 +1075,10 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn:hover {
-   border-color: #ddd;
+  border-color: #ddd;
   background-color: #555;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
-}
-
-.av-main-transcript-section .play-button .btn:hover .glyphicon {
-  color: #fff;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.av-main-transcript-section .play-button .btn:active,
-.av-main-transcript-section .play-button .btn:focus {
-  box-shadow: none;
-  border-color: #ddd;
-  background: #f5f5f5;
-  color: #333;
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
@@ -1065,55 +1092,29 @@ ul.links.inline {
   top: 0.6rem;
 }
 
+.av-main-transcript-section .play-button .btn:hover .glyphicon {
+  color: #fff;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.av-main-transcript-section .play-button .btn:focus {
+  box-shadow: none;
+  border-color: #ddd;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.av-main-transcript-section .play-button .btn:focus .glyphicon{
+  color: #606060;
+}
+
 .av-main-transcript-section .play-button .btn.untimed {
   display: none;
 }
 /*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
 .av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
 */
-
-
-.transcript-container {
-  /*background: white;*/
-  height: 750px;
-  overflow-x: auto;
-  margin-top: 0;
-  -webkit-transition: all 100ms ease 0s;
-  transition: all 100ms ease 0s;
-}
-
-.transcript-container.show-search {
-  margin-top: 7rem;
-}
-
-.transcript-container .list-group {
-  -webkit-margin-before: 0;
-  margin-bottom: 420px;
-}
-
-.transcript-container .alert-info {
-  margin-bottom: 0;
-}
-
-.transcript-content {
-  /* border: 1px solid #ddd;
-  border-width: 0 1px 4px 1px; */
-}
-
-.transcript-content li {
-  /* border: 3px double #fff;
-  border-style: solid double; */
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  padding:1rem;
-  margin-bottom: 0;
-}
-
-.transcript-content li.playing {
-  border-color: #7181ff;
-  background: #fafafa;
-  border-width: 1px;
-}
 
 .twitter-typeahead .tt-query, 
 .twitter-typeahead .tt-hint{
@@ -1958,33 +1959,15 @@ object.KalturaDynamicPlayer {
 /**** REVIEW - mix including MB migration *****/
 /**********************************************/
 
-/* .av-main-wrap-left {float:left;} */
-.av-main-wrapper {
-  /* padding-top: 1rem; */
-}
-
 .av-main-video-section {
   padding-right: 1.5rem;
 }
 
-
-.has-transcript .av-main-video-section {
+.is-transcript-editing .av-main-video-section,
+.is-transcript-editing .av-main-transcript-section {
   width:100% !important;
 }
-
-.has-transcript .av-main-transcript-section {
-  width:100% !important;
-}
-
-
-
-
-
-
-
-
-
-
+/* this adds black band on top of video */
 .kaltura-embed {
   border-top: 1.5rem solid #000;
 }
@@ -2014,11 +1997,11 @@ object.KalturaDynamicPlayer {
   margin-bottom: 12px;
   margin-top: 0.1rem; /* improves alignemnt with transcript top */
 }
-
+/* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
   padding-left: 0 !important;
 }
-
+/* right column wrapper for descriptive metadata immediately under video */
 .video-overview {
   padding-left: 5px !important;
 }
@@ -2058,7 +2041,7 @@ object.KalturaDynamicPlayer {
 }
 /* .avduration::after,
 .avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;} */
-div.fivestar-widget .star{
+.fivestar-widget .star{
   width: 17px;
   height: 17px;
 }
@@ -2394,32 +2377,29 @@ button on video window
 
 @media screen and (min-width: 880px) {
 
-  .has-transcript .av-main-video-section {
+  .is-transcript-editing .av-main-video-section {
     width:33.33333333333333% !important;
   }
 
-  .has-transcript .av-main-transcript-section {
+  .is-transcript-editing .av-main-transcript-section {
     width:66.66666666666666% !important;
   }
 } 
 
 @media screen and (min-width: 992px) {
 
-  .has-transcript .av-main-video-section {
+  .is-transcript-editing .av-main-video-section {
     width:41.66666666666667% !important;
   }
 
-  .has-transcript .av-main-transcript-section {
+  .is-transcript-editing .av-main-transcript-section {
     width:58.333333333333336% !important;
   }
 } 
 
 @media (min-width:1100px) {
 
-  .audio-video .logged-in .carousel .col-sm-7 {
-    width: 50%;
-  }
-
+  .audio-video .logged-in .carousel .col-sm-7,
   .audio-video .logged-in .carousel .col-sm-5 {
     width: 50%;
   }
@@ -2437,11 +2417,9 @@ button on video window
 }
 
 @media screen and (min-width: 1280px) {
-  .has-transcript .av-main-video-section {
-    width:50% !important;
-  }
-
-  .has-transcript .av-main-transcript-section {
+  
+  .is-transcript-editing .av-main-video-section,
+  .is-transcript-editing .av-main-transcript-section {
     width:50% !important;
   }
 }
