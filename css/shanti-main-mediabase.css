@@ -1261,11 +1261,11 @@ ul.links.inline {
   color:#aaa;
 }
 
-.has-transcript .tabs.primary li a:nth-of-type(3){
+.has-transcript .tabs.primary li:nth-of-type(3) a{
   padding-right: 3rem;
 }
 
-.has-transcript .tabs.primary li a:after{
+.has-transcript .tabs.primary li:nth-of-type(3) a:after{
   content: "\f040";
   font-family:'FontAwesome';
   color:red;
