@@ -1226,7 +1226,7 @@ ul.links.inline {
   top: -0.5rem;
   right: -0.5rem;
   font-size: 1.2rem;
-  color:white;
+  color:#fff;
   display:inline-block;
   height:17px;
   width:17px;
@@ -1886,11 +1886,13 @@ object.KalturaDynamicPlayer {
   position: relative;
   top: 0;
   text-align: center;
-  background: LightYellow;
+  background: rgb(254, 254, 223);
   height: 2rem;
   margin: 0 .1rem;
   border: 1px solid #ddd;
   border-width: 0 1px 0 1px;
+  font-size: 90%;
+  line-height: 1.62em;
 }
 
 /*------------------------------*/
