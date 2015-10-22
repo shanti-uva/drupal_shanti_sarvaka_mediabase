@@ -1220,7 +1220,7 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier.editable:hover{
-  border: 1px dashed #ddd;{
+  border: 1px dashed #ddd;
 }
 
 .speaker-tiers .tier.editable::after{ 
