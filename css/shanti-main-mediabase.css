@@ -2387,7 +2387,7 @@ button on video window
 
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 880px) {
 
   .has-transcript .av-main-video-section {
     width:33.33333333333333% !important;
