@@ -1273,6 +1273,7 @@ ul.links.inline {
   position:relative;
   top: -0.05rem;
   right: -0.5rem;
+  float: right;
 }
 
 .has-transcript .tabs.primary li:nth-of-type(3) a:hover::after{
