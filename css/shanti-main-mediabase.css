@@ -1144,7 +1144,7 @@ ul.links.inline {
 .speaker-tiers .tier {
   /* margin-top: 1rem; */
   border:1px solid transparent;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px dashed #eee;
   /*padding-bottom: 1rem;*/
   padding: 8px;
 }
@@ -1266,7 +1266,7 @@ ul.links.inline {
   content: '\e065';
   float:right;
   position: relative;
-  top: -0.5rem;
+  top: -0.4rem;
   right: -0.4rem;
   font-size: 1.1rem;
   color:white;
