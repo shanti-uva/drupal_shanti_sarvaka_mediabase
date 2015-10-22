@@ -1000,7 +1000,7 @@ ul.links.inline {
   padding-bottom:1rem;
 }
 /*.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51); padding:0;}*/
-.av-main-transcript-section .speaker-name {
+.speaker-name {
   /* position: absolute;
   top: 1rem;
   left: 2%; */
@@ -1009,7 +1009,7 @@ ul.links.inline {
   margin: 0.3rem 0 2rem;
 }
 
-.av-main-transcript-section .speaker-name span{
+.speaker-name .speaker-display{
   display:block;
   font-size:90%;
   overflow:hidden;
@@ -1256,13 +1256,13 @@ ul.links.inline {
 }
 
 /***** speaker name ****/
-.editing-active .speaker-name span:hover{
+.editing-active .speaker-display:hover{
   /*background:#fcffc6;
   background: rgba(252, 255, 198, 0.5);*/
   border-color: #c0c0c0;
 }
 
-.editing-active .speaker-name span::before{
+.editing-active .speaker-display::before{
   content: '\e065';
   float:right;
   position: relative;
@@ -1275,7 +1275,7 @@ ul.links.inline {
   width:12px;
   font-family: 'Glyphicons Halflings';
 }
-.editing-active .speaker-name span:hover::before{
+.editing-active .speaker-display:hover::before{
   color:#aaa;
 }
 
