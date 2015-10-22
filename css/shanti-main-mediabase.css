@@ -2397,6 +2397,16 @@ button on video window
   }
 }
 
+@media (min-width:1150px) {
+
+  .transcript-content .speaker-tiers{
+    margin-left:30%;
+  }
+
+  .av-main-transcript-section .tcu-info{
+    width:28%;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   .av-main-transcript-section .speaker-tiers {
