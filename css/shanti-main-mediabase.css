@@ -1159,17 +1159,6 @@ ul.links.inline {
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
-.edit-times{
-  display: inline-block;
-  color: #aaa;
-  cursor: pointer;
-  position:relative;
-  left: -1.75rem;
-  top: 0.2rem;
-  height: 17px;
-  width: 17px;
-}
-
 .speaker-tiers .editable-input{
   width: 100% !important;
   display: block !important;
@@ -1260,6 +1249,21 @@ ul.links.inline {
   /*background:#fcffc6;
   background: rgba(252, 255, 198, 0.5);*/
   border-color: #c0c0c0;
+}
+
+.edit-times{
+  display: inline-block;
+  color: #aaa;
+  cursor: pointer;
+  position:relative;
+  left: -1.75rem;
+  top: 0.2rem;
+  height: 17px;
+  width: 17px;
+}
+
+.tcu-info .editableform .form-control{
+  width:100%;
 }
 
 .editing-active .speaker-display::before{
