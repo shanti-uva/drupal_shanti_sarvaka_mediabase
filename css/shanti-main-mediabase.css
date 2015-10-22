@@ -1011,7 +1011,7 @@ ul.links.inline {
   white-space: nowrap;
   text-overflow:ellipsis;
   padding: .5rem .5rem .5rem .8rem;
-  border:1px dotted transparent;
+  border:1px dashed transparent;
 }
 
 .av-main-transcript-section .play-button {
@@ -1241,7 +1241,7 @@ ul.links.inline {
 .editing-active .speaker-name span:hover{
   /*background:#fcffc6;
   background: rgba(252, 255, 198, 0.5);*/
-  border-color:#aaa;
+  border-color: #c0c0c0;
 }
 
 .editing-active .speaker-name span::before{
