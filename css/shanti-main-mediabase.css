@@ -1284,8 +1284,13 @@ ul.links.inline {
   color:#aaa;
 }
 
-.tcu-info .btn.btn-default.play-range{
+.tcu-info .btn.play-range{
   padding: .2rem 1rem;
+}
+
+.tcu-info .btn.play-range .glyphicon-play{
+  top: .2rem;
+  margin-right: 0.2rem;
 }
 
 /***** banner tabs for editors ****/
