@@ -1330,6 +1330,113 @@ ul.links.inline {
   outline: 0;
 }
 
+.btn-group-transcript .fa.fa-comments-o{
+  top: 0.2rem;
+  position: relative;
+}
+
+.btn-group-transcript .selectpicker li,
+.btn-group-transcript .selectpicker li:hover,
+.btn-group-transcript .selectpicker li span.text,
+.btn-group-transcript .selectpicker li:hover span.text {
+  color: #555;
+}
+
+.btn-group-transcript .selectpicker li.selected a,
+.btn-group-transcript .selectpicker li.selected:hover a,
+.btn-group-transcript .selectpicker li.selected:hover a span.text,
+.btn-group-transcript .selectpicker li.selected a span.text,
+.btn-group-transcript .selectpicker li.selected a:hover span.text,
+.btn-group-transcript .selectpicker li.selected a:active span.text {
+  color: #444;
+}
+
+.av-main-transcript-section .dropdown-menu.open {
+  border-radius: 0 0 1rem 1rem;
+  min-width: 18rem;
+  padding-bottom:1rem;
+  margin-top:-0.25rem;
+}
+
+.av-main-transcript-section .dropdown-menu li a span.text {
+  font-weight: normal !important;
+  font-size: 1.18em;
+  line-height: 2.5em;
+  font-family: arial,helvetica,sans-serif;
+  color: #333;
+  margin-right: 7rem;
+}
+
+.av-main-transcript-section .selectpicker li a {
+  line-height: 2.62em;
+  height: 2.62em;
+}
+
+.av-main-transcript-section .selectpicker .caret::before {
+  color: #606060 !important;
+  font-size: 1.88em;
+  left: -1.3rem;
+  right: 0;
+  top: -0.8rem;
+  z-index: 10;
+}
+
+.av-main-transcript-section .selectpicker .fa::before {
+  font-size: 2.5em;
+  color: #606060 !important;
+  position: relative;
+  left: 0.5rem;
+}
+
+.av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark {
+  color: #ddd;
+  margin-top: 0;
+  top: 0.5rem;
+}
+
+.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark {
+}
+
+.av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
+.av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before {
+  color: #aaa;
+}
+
+.av-main-transcript-section .dropdown-menu button.close {
+  font-size: 2rem;
+  line-height: 0.93em;
+}
+
+.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
+  top: 0.9rem;
+}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
+  padding: 7px 20px;
+  background: #eee;
+  color: #555;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt {
+  padding-left: 20px;
+}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt span.text::before {
+  content: '- ';
+}
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain {
+  display: none;
+}
+
+
 
 
 /*---------------------------*/
@@ -1818,111 +1925,15 @@ ul.links.inline {
   height: 10rem;
 }
 
+
+
+
+
+
 object.KalturaDynamicPlayer {
   width: 100% !important;
 }
 
-.btn-group-transcript .selectpicker li,
-.btn-group-transcript .selectpicker li:hover,
-.btn-group-transcript .selectpicker li span.text,
-.btn-group-transcript .selectpicker li:hover span.text {
-  color: #555;
-}
-
-.btn-group-transcript .selectpicker li.selected a,
-.btn-group-transcript .selectpicker li.selected:hover a,
-.btn-group-transcript .selectpicker li.selected:hover a span.text,
-.btn-group-transcript .selectpicker li.selected a span.text,
-.btn-group-transcript .selectpicker li.selected a:hover span.text,
-.btn-group-transcript .selectpicker li.selected a:active span.text {
-  color: #444;
-}
-
-
-.av-main-transcript-section .dropdown-menu.open {
-  border-radius: 0 0 1rem 1rem;
-  min-width: 18rem;
-  padding-bottom:1rem;
-  margin-top:-0.25rem;
-}
-
-.av-main-transcript-section .dropdown-menu li a span.text {
-  font-weight: normal !important;
-  font-size: 1.18em;
-  line-height: 2.5em;
-  font-family: arial,helvetica,sans-serif;
-  color: #333;
-  margin-right: 7rem;
-}
-
-.av-main-transcript-section .selectpicker li a {
-  line-height: 2.62em;
-  height: 2.62em;
-}
-
-.main-content .av-main-transcript-section .selectpicker .caret::before {
-  color: #606060 !important;
-  font-size: 1.88em;
-  left: -1.3rem;
-  right: 0;
-  top: -1rem;
-  z-index: 10;
-}
-
-.av-main-transcript-section .selectpicker .fa::before {
-  font-size: 2.5em;
-  color: #606060 !important;
-  position: relative;
-  left: 0.5rem;
-}
-
-.av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark {
-  color: #ddd;
-  margin-top: 0;
-  top: 0.5rem;
-}
-
-.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark {
-}
-
-.av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
-.av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before {
-  color: #aaa;
-}
-
-.av-main-transcript-section .dropdown-menu button.close {
-  font-size: 2rem;
-  line-height: 0.93em;
-}
-
-.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
-  top: 0.9rem;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
-  padding: 7px 20px;
-  background: #eee;
-  color: #555;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt {
-  padding-left: 20px;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt span.text::before {
-  content: '- ';
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain {
-  display: none;
-}
 
 /* this shows for editing mode notice */
 .editing-message{
@@ -1946,18 +1957,6 @@ object.KalturaDynamicPlayer {
 
 
 
-
-
-
-
-
-
-
-
-
-/**********************************************/
-/**** REVIEW - mix including MB migration *****/
-/**********************************************/
 
 .av-main-video-section {
   padding-right: 1.5rem;
@@ -2006,7 +2005,7 @@ object.KalturaDynamicPlayer {
 }
 /* right column wrapper for descriptive metadata immediately under video */
 .video-overview {
-  padding-left: 5px !important;
+  padding-left: 0px !important;
 }
 
 .avinfo .trans-btn {
@@ -2379,6 +2378,11 @@ button on video window
 }
 
 @media screen and (min-width: 880px) {
+
+  .video-overview {
+    padding-left: 5px !important;
+    padding-bottom: 2rem;
+  }
 
   .is-transcript-editing .av-main-video-section {
     width:33.33333333333333% !important;
