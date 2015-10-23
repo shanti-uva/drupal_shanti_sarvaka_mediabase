@@ -2379,11 +2379,6 @@ button on video window
 
 @media screen and (min-width: 880px) {
 
-  .video-overview {
-    padding-left: 5px !important;
-    padding-bottom: 2rem;
-  }
-
   .is-transcript-editing .av-main-video-section {
     width:33.33333333333333% !important;
   }
@@ -2394,6 +2389,11 @@ button on video window
 } 
 
 @media screen and (min-width: 992px) {
+
+  .video-overview {
+    padding-left: 5px !important;
+    padding-bottom: 2rem;
+  }
 
   .is-transcript-editing .av-main-video-section {
     width:41.66666666666667% !important;
