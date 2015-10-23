@@ -175,7 +175,7 @@ else:     /************ FULL Display ***********/
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-			hide($content['field_tags']);
+	  hide($content['field_tags']);
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
