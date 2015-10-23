@@ -1966,6 +1966,9 @@ object.KalturaDynamicPlayer {
 .is-transcript-editing .av-main-video-section,
 .is-transcript-editing .av-main-transcript-section {
   width:100% !important;
+  transition:width 0.25s;
+  -webkit-transition:width 1.25s;
+  -moz-transition: width 1.25s;
 }
 /* this adds black band on top of video */
 .kaltura-embed {
