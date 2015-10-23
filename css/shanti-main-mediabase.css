@@ -1024,7 +1024,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
-  color: #606060;
+  color: #888;
   line-height: 0.8rem;
   float: left;
   padding: 0;
@@ -1048,7 +1048,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn:focus .glyphicon{
-  color: #606060;
+  color: #888;
 }
 
 .av-main-transcript-section .play-button .btn.untimed {
