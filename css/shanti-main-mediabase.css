@@ -361,15 +361,6 @@ table.field-multiple-table tbody {
   border: 2px solid #ddd;
 }
 
-.kaltura-thumb-wrap {
-  clear: none;
-}
-
-.kaltura_status_ok {
-  background-image: none !important;
-  border: none !important;
-}
-
 #kmap_annotation_json {
   margin-left: 2em;
 } /* textbox on bottom */
@@ -815,9 +806,7 @@ ul.links.inline {
   font-size: 1em;
 }
 
-.views-table .kaltura-thumb img {
-  height: 50px;
-}
+
 
 .page-my-content-workflow .views-exposed-widgets {
   margin: 1rem;
@@ -1333,7 +1322,7 @@ ul.links.inline {
 }
 
 .btn-group-transcript .fa.fa-comments-o{
-  top: 0.2rem;
+  top: 0.3rem;
   position: relative;
 }
 
@@ -1927,16 +1916,6 @@ ul.links.inline {
   height: 10rem;
 }
 
-
-
-
-
-
-object.KalturaDynamicPlayer {
-  width: 100% !important;
-}
-
-
 /* this shows for editing mode notice */
 .editing-message{
   position: relative;
@@ -1958,6 +1937,31 @@ object.KalturaDynamicPlayer {
 
 
 
+/* this adds black band on top of video */
+.kaltura-embed > div{
+  border: 1.5rem solid #000;
+  border-bottom-width: .5rem;
+  border-radius: 0.3rem;
+}
+.kaltura-thumb-wrap {
+  clear: none;
+}
+
+.views-table .kaltura-thumb img {
+  height: 50px;
+}
+
+.kaltura_status_ok {
+  background-image: none !important;
+  border: none !important;
+}
+
+object.KalturaDynamicPlayer {
+  width: 100% !important;
+}
+
+
+
 
 
 .av-main-video-section {
@@ -1968,12 +1972,8 @@ object.KalturaDynamicPlayer {
 .is-transcript-editing .av-main-transcript-section {
   width:100% !important;
   transition:width 0.25s;
-  -webkit-transition:width 1.25s;
-  -moz-transition: width 1.25s;
-}
-/* this adds black band on top of video */
-.kaltura-embed {
-  border-top: 1.5rem solid #000;
+  -webkit-transition:width 1s;
+  -moz-transition: width 1s;
 }
 
 .node-video .tab-content {
