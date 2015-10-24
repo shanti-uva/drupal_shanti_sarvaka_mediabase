@@ -940,7 +940,7 @@ ul.links.inline {
   background-image: none;
   background: #fff;
   border-radius: 0;
-  height: 6.2rem;
+  height: 5.18em;
   border: 1px solid #ddd;
   width: 100%;
   position: relative;
@@ -1282,7 +1282,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon span {
   position: static;
-  padding: 1em 0;
+  padding: 2rem 0;
 }
 
 .btn-group-transcript .btn.btn-icon:hover,
@@ -1294,7 +1294,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-icon .icon {
   border-radius: 0;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1em;
   color: #606060;
   position: static;
   line-height: 1;
@@ -1304,7 +1304,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon .fa {
   font-size: 1em;
-  line-height: 2.32em;
+  line-height: 1.44em;
 }
 
 .btn-group-transcript .btn.btn-icon.playpause {
@@ -1403,8 +1403,8 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .dropdown-menu button.close {
-  font-size: 2rem;
-  line-height: 0.93em;
+  font-size: 0.82em;
+  line-height: 0.75em;
 }
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
@@ -1472,7 +1472,7 @@ ul.links.inline {
   border: 1px solid #d0d0d0;
   border-radius: 1.8rem;
   background-clip: padding-box;
-  font-size: 1.5rem;
+  font-size: 1.06em;
   line-height: 1;
   height: 2.5em;
  /* coordinate with button height below */
@@ -1504,7 +1504,7 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn {
-  width: 4rem;
+  width: 13%;
   position: absolute;
   top: 1.5rem;
   left: 89.5%;
@@ -1516,9 +1516,9 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default {
   display: block;
-  height: 3.5rem;
+  height: 3em;
  /* 2px less than search input height above */
-  width: 120%;
+  width: 105%;
   color: #aaa;
   border: 1px solid #e0e0e0;
   border-top-right-radius: 1.7rem !important;
@@ -1531,7 +1531,7 @@ ul.links.inline {
   background: #eee;
   position: absolute;
   right: 1.9rem;
-  top: -0.42rem;
+  top: -0.44rem;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
@@ -1557,7 +1557,7 @@ ul.links.inline {
   content: '\e080';
   position: relative;
   right: 0.3rem;
-  top: -0.6rem;
+  top: -0.5rem;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
