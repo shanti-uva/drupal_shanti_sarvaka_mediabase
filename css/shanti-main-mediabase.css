@@ -309,7 +309,60 @@ form#views-exposed-form-browse-media-home-block {
 
 
 
-/* ul.pager{ width: 100%;} */
+.shanti-filters {
+  height: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  top: -1rem;
+}
+
+.logged-in.front .shanti-filters {
+  top: -2rem;
+}
+
+.shanti-filters table {
+  float: right;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+}
+
+.shanti-filters table tbody {
+  border-top: none;
+}
+
+.shanti-filters td {
+  white-space: nowrap;
+}
+
+.shanti-filters table td:nth-of-type(2) {
+  width: 100%;
+}
+
+.shanti-filters td .label {
+  color: #555;
+  font-size: 0.88em;
+  text-transform: uppercase;
+/*letter-spacing: -0.1rem;*/
+}
+
+.shanti-filters td .count {
+  font-size: 0.88em;
+  margin-right: 2rem;
+  text-transform: capitalize;
+}
+
+.shanti-filters .view-filters-mb .views-exposed-widget {
+  position: relative;
+  padding-right: 3rem;
+}
+
+.shanti-filters .ajax-progress {
+ /*display: inline;*/
+  position: absolute;
+  top: 1.35rem;
+  right: 0;
+}
+
+
 
 .navbar nav.navtop .block h2 {
   display: none;
