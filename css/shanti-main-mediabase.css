@@ -1548,11 +1548,11 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn {
-  width: 14%;
+  /*width: 14%;*/
   max-width:4.5rem;
   position: absolute;
   top: 1.15rem;
-  left: 95.5%;
+  left: 95%;
   z-index: 10;
   background: transparent;
   padding: 0;
