@@ -1548,10 +1548,8 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn {
-  /*width: 14%;*/
-  max-width:4.5rem;
   position: absolute;
-  top: 1.15rem;
+  top: 1.1rem;
   left: 95%;
   z-index: 10;
   background: transparent;
@@ -1561,10 +1559,8 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default {
   display: block;
-  height: 2.88em;
- /* 2px less than search input height above */
-  width: 105%;
-  min-width:4.5rem;
+  height: 2.93em;
+  width:4.5rem;
   color: #aaa;
   border: 1px solid #e0e0e0;
   border-top-right-radius: 1.7rem !important;
