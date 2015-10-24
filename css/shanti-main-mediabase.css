@@ -1962,7 +1962,9 @@ object.KalturaDynamicPlayer {
 
 
 
-
+.videoHolder{
+  position:static !important;
+}
 
 .av-main-video-section {
   padding-right: 1.5rem;
