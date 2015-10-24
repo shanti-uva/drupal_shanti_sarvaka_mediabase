@@ -1310,6 +1310,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon.playpause {
   font-size: 1em;
+  height: 4em;
 }
 
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
