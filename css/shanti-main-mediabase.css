@@ -940,7 +940,7 @@ ul.links.inline {
   background-image: none;
   background: #fff;
   border-radius: 0;
-  height: 5.18em;
+  height: 5.88em;
   border: 1px solid #ddd;
   width: 100%;
   position: relative;
@@ -1278,6 +1278,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-icon {
   display: table-cell;
   width: 16.66%;
+  height: 4.56em;
 }
 
 .btn-group-transcript .btn.btn-icon span {
@@ -1294,7 +1295,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-icon .icon {
   border-radius: 0;
   margin: 0 auto;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #606060;
   position: static;
   line-height: 1;
@@ -1304,7 +1305,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon .fa {
   font-size: 1em;
-  line-height: 1.44em;
+  height: 4em;
 }
 
 .btn-group-transcript .btn.btn-icon.playpause {
@@ -1382,7 +1383,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .selectpicker .fa::before {
-  font-size: 2.5em;
+  font-size: 2.32em;
   color: #606060 !important;
   position: relative;
   left: 0.5rem;
