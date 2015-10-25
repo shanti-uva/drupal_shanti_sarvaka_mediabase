@@ -1534,7 +1534,8 @@ ul.links.inline {
   margin: 0 2rem 0.3rem 2rem;
   padding: 0.2rem 4rem 0 2rem;
   max-width: 90%;
-  position: relative;
+  position: absolute;
+  right:0;
   top: 1rem;
   overflow: auto;
   vertical-align: middle;
