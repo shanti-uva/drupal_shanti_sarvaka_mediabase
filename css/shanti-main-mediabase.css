@@ -1767,8 +1767,8 @@ ul.links.inline {
   box-shadow: none;
   position: relative;
   top: 1rem;
-  -webkit-transition: background 1s ease 0s;
-  transition: background 1s ease 0s;
+  -webkit-transition: background 200ms ease 0s;
+  transition: background 200ms ease 0s;
   display: none;
 }
 
@@ -1785,20 +1785,8 @@ ul.links.inline {
   font-size: 1.75rem;
 }
 
-.transcript-navigate-results .btn:hover{
-  background: #ccc;
-}
-
-.transcript-navigate-results .btnt:hover .icon{
-  color:#fff;
-}
-
-.transcript-navigate-results .btn:active .icon{
-  background: #ccc;
-}
-
-.transcript-navigate-results .btn:active .icon{
-  color:#fff;
+.transcript-navigate-results .btn:hover .icon{
+  color:#777;
 }
 
 .transcript-navigate-results .btn.nextresult .icon::before {
