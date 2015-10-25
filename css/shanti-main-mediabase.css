@@ -1606,10 +1606,11 @@ ul.links.inline {
   font-family: 'Glyphicons Halflings' !important;
   background: transparent;
   position:relative;
-  top: -8px;
-  left: 0px;
-  width: 35px;
-  height: 35px;
+  top: -10px;
+  left: -3px;
+  font-size:18px;
+  width: 18px;
+  height: 18px;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
