@@ -1622,22 +1622,16 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon::before {
   content: '\f110';
-  position: relative;
   font-family:'FontAwesome';
   color:#555;
-  right: 0;
-  top: 0;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
   position: relative;
   left: 0;
   top: 0.4rem;
-  width: auto;
-  line-height: 1em;
   padding: 0;
-  border-radius: 0;
-  font-size:17px;
+  font-size:24px;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
