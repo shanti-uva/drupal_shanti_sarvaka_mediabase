@@ -1560,7 +1560,7 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default {
   display: block;
-  height: 2.93em;
+  height: 2.83em;
   width:4.5rem;
   color: #aaa;
   border: 1px solid #e0e0e0;
@@ -1574,7 +1574,7 @@ ul.links.inline {
   background: #eee;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 0.021rem;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
