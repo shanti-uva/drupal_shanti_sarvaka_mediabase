@@ -1094,7 +1094,7 @@ ul.links.inline {
 .twitter-typeahead .tt-hint{
   margin-bottom:0.5rem;
 }
-
+/*
 .twitter-typeahead .tt-hint{
   position:absolute;
   top:0.5rem !important;
