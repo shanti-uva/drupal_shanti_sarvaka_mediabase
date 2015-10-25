@@ -1573,7 +1573,7 @@ ul.links.inline {
   font-size: 1.2rem;
   background: #eee;
   position: absolute;
-  right: 5.3rem;
+  right: 0;
   top: 0;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
@@ -1672,7 +1672,7 @@ ul.links.inline {
   background: transparent;
   background-image: none;
   position: absolute;
-  right: 7rem;
+  right: 5rem;
   top: 1rem;
   z-index: 10;
   padding: 0;
