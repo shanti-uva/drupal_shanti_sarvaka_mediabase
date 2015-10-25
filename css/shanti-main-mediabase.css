@@ -1606,7 +1606,7 @@ ul.links.inline {
   font-family: 'Glyphicons Halflings' !important;
   background: transparent;
   position:relative;
-  top: 7px;
+  top: -8px;
   left: 0px;
   width: 35px;
   height: 35px;
