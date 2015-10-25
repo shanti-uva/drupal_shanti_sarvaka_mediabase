@@ -138,35 +138,5 @@
 			}
 		} // end context = document
 	};
-
-
-
-
-
-
-
-
-
-    Drupal.behaviors.shantiSarvakaKalturaResizeTranscript = {
-      attach: function (context, settings) {
-    	if(context == document) {
-    		
-    		var transcriptTab = $(".has-transcript ul.primary").find("a").eq( 2 );
-		    $( transcriptTab ).bind( "click", function() {
-					calcPlayerSize();
-		    });
-
-	    }
-      }
-
-    });
-
-
-
-
-
-
-
-
 	
 } (jQuery)); // End of JQuery Wrapper

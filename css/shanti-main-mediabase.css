@@ -1094,13 +1094,13 @@ ul.links.inline {
 .twitter-typeahead .tt-hint{
   margin-bottom:0.5rem;
 }
-
+/*
 .twitter-typeahead .tt-hint{
   position:absolute;
   top:0.5rem !important;
   left:0.3rem !important;
 }
-
+*/
 .transcript-content .speaker-tiers {
   margin-left: 35%;
   padding-left: 1rem;
@@ -1135,6 +1135,7 @@ ul.links.inline {
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
+.speaker-name .editable-input,
 .speaker-tiers .editable-input{
   width: 100% !important;
   display: block !important;
@@ -1202,6 +1203,10 @@ ul.links.inline {
   margin-bottom:1rem;
 }
 
+.speaker-name .editable-container.editable-inline{
+  border-bottom:none;
+}
+
 .speaker-tiers .tier.editable:hover{
   border: 1px dashed #c0c0c0;
 }
@@ -1249,11 +1254,16 @@ ul.links.inline {
 .tcu-info .editable-buttons{
   display: inline-block;
   float:left;
-  margin-left:30%;
+  margin-left:25%;
 }
 
 .tcu-info .twitter-typeahead{
   display: block !important;
+}
+
+.tcu-info .twitter-typeahead .tt-query, 
+.tcu-info .twitter-typeahead .tt-hint{
+  margin-bottom:0;
 }
 
 .tcu-info .editable-clear-x{
