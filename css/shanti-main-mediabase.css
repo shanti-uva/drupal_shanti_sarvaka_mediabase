@@ -1184,15 +1184,15 @@ ul.links.inline {
   line-height: 1.62em;
   padding-top:0.62em;
 }
-
+.speaker-name .editable-container.editable-inline .glyphicon-ok::before,
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
   content:'Update';
 }
-
+.speaker-name .editable-cancel .glyphicon-remove::before,
 .speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
-
+.speaker-name .editable-container.editable-inline,
 .speaker-tiers .editable-container.editable-inline{
   display:block;
   border-bottom: 1px solid #eee;
@@ -1244,7 +1244,9 @@ ul.links.inline {
 }
 
 .tcu-info .editable-buttons{
-  display:block;
+  display: inline-block;
+  float:left;
+  margin-left:30%;
 }
 
 .tcu-info .editable-clear-x{
