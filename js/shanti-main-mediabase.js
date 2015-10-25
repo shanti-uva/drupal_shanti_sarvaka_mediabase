@@ -147,29 +147,29 @@
 
 
 
-   Drupal.behaviors.shantiSarvakaKalturaResizeTranscript = {
-    attach: function (context, settings) {
+    Drupal.behaviors.shantiSarvakaKalturaResizeTranscript = {
+      attach: function (context, settings) {
     	if(context == document) {
     		// The player on the node edit form cannot be made responsive thru this script.
     		// Because it causes the player not to appear until resize happens (ndg, 2015-01-30)
-			  if (typeof kWidget != 'undefined' && !$('body').hasClass('is-transcript-editing')) {
-					kWidget.addReadyCallback(function(playerId) {
-						function calcPlayerSize() {
-					    var elm = document.getElementById(playerId);
-					    $(elm).css({width: "auto", height: (elm.clientWidth/16.0)*9+"px"});
-					    /* Doesn't work (replaced wth above 2015-09-02 ndg)
-								elm.style.width = "auto";
-								elm.style.height = (elm.clientWidth/16.0)*9+"px";
-							*/
-						}
-						window.addEventListener("resize", calcPlayerSize, false);
-						calcPlayerSize();
-					});
-				}
+		   if (typeof kWidget != 'undefined' && !$('body').hasClass('is-transcript-editing')) {
+				kWidget.addReadyCallback(function(playerId) {
+					function calcPlayerSize() {
+				    var elm = document.getElementById(playerId);
+				    $(elm).css({width: "auto", height: (elm.clientWidth/16.0)*9+"px"});
+				    /* Doesn't work (replaced wth above 2015-09-02 ndg)
+							elm.style.width = "auto";
+							elm.style.height = (elm.clientWidth/16.0)*9+"px";
+						*/
+					}
+					window.addEventListener("resize", calcPlayerSize, false);
+					calcPlayerSize();
+				});
+			}
 	    }
-    }
+      }
 
-
+    });
 
 
 
