@@ -1608,24 +1608,19 @@ ul.links.inline {
   color: #777;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled {
-}
-
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon{
-  font-family:'FontAwesome';
-}
-
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon::before {
   content: '\f110';
   position: relative;
   font-family:'FontAwesome';
+  font-size:110%;
+  color:#888;
   right: 0;
   top: 0;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
-  -webkit-animation: spin 1.5s infinite linear;
-  -animation: spin 1.5s infinite linear;
+  -webkit-animation: spin 2.5s infinite linear;
+  -animation: spin 2.5s infinite linear;
   position: relative;
   left: 0;
   top: 0.4rem;
