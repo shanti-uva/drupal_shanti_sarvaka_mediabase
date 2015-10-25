@@ -1605,13 +1605,15 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon {
   font-family: 'Glyphicons Halflings' !important;
   background: transparent;
+  position:relative;
+  top: 7px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
   content: '\e080';
-  position: relative;
-  right: 6px;
-  top: -8px;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover .icon,
