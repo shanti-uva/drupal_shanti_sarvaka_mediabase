@@ -1615,7 +1615,7 @@ ul.links.inline {
   top: -0.6rem;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
+.transcript-search-wrapper .input-group-btn .btn.btn-default:hover .icon,
 .transcript-search-wrapper .input-group-btn .btn.btn-default.active .icon {
   color: #777;
 }
@@ -1624,7 +1624,6 @@ ul.links.inline {
   content: '\f110';
   position: relative;
   font-family:'FontAwesome';
-  font-size:130%;
   color:#555;
   right: 0;
   top: 0;
@@ -1638,11 +1637,18 @@ ul.links.inline {
   line-height: 1em;
   padding: 0;
   border-radius: 0;
-  font-size: 21px;
+  font-size:17px;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
+/*
+@-moz-document url-prefix() {
+  .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
+    will-change: transform;
+  }
+}
+*/
 
 @-webkit-keyframes fa-spin {
   0% {
