@@ -1767,8 +1767,8 @@ ul.links.inline {
   box-shadow: none;
   position: relative;
   top: 1rem;
-  -webkit-transition: all 500ms ease 0s;
-  transition: all 500ms ease 0s;
+  -webkit-transition: background 1s ease 0s;
+  transition: background 1s ease 0s;
   display: none;
 }
 
@@ -1805,7 +1805,8 @@ ul.links.inline {
 
 .transcript-navigate-results .btn.btn-default:hover,
 .transcript-navigate-results .btn.btn-default:active {
-  background: #eee;
+  background: #aaa;
+  color:#555;
 }
 
 .has-searched .transcript-search-options label,
