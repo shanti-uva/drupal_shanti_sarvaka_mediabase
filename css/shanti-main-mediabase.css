@@ -1139,7 +1139,7 @@ ul.links.inline {
   width: 100% !important;
   display: block !important;
 }
-
+.speaker-name .editableform .control-group,
 .speaker-tiers .editableform .control-group{
   width: 100% !important;
 }
@@ -1161,6 +1161,7 @@ ul.links.inline {
   text-transform:capitalize;
   text-decoration:none;
   font-size:1rem;
+   background:transparent;
 }
 
 .speaker-name .editable-cancel:hover,
@@ -1247,6 +1248,10 @@ ul.links.inline {
   display: inline-block;
   float:left;
   margin-left:30%;
+}
+
+.tcu-info .twitter-typeahead{
+  display: block;
 }
 
 .tcu-info .editable-clear-x{
