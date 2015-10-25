@@ -138,22 +138,5 @@
 			}
 		} // end context = document
 	};
-
-
-
-	Drupal.behaviors.shantiSarvakaTimecodeEditToggle = {
-	  attach: function (context, settings) {
-	  	if (context == document) {
-
-			$( ".edit-times" ).on( "click", function() {
-			    $( this ).css( "display", "none" );
-			});
-
-		}
-	  }
-	};
-
 	
 } (jQuery)); // End of JQuery Wrapper
-
-
