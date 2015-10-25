@@ -1184,6 +1184,8 @@ ul.links.inline {
   font-size: 0.62em;
   line-height: 1.62em;
   padding-top:0.62em;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .speaker-name .editable-container.editable-inline .glyphicon-ok::before,
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
@@ -1251,7 +1253,7 @@ ul.links.inline {
 }
 
 .tcu-info .twitter-typeahead{
-  display: block;
+  display: block !important;
 }
 
 .tcu-info .editable-clear-x{
