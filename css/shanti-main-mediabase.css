@@ -2489,15 +2489,15 @@ button on video window
     width:29%;
   }
 }
-
+/*
 @media screen and (min-width: 1280px) {
   
-  .av-main-video-section,
-  .av-main-transcript-section {
+  .is-transcript-editing .av-main-video-section,
+  .is-transcript-editing .av-main-transcript-section {
     width:50% !important;
   }
 }
-
+*/
 
 
 

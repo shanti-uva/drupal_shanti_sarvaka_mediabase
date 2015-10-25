@@ -167,7 +167,7 @@ else:     /************ FULL Display ***********/
 
   <div class="av-main-wrapper row">
 
-  <div class="av-main-video-section col-xs-12 col-sm-6 col-md-7">
+  <div class="av-main-video-section col-xs-12 col-sm-6 col-md-7 col-lg-6">
     <?php
       //dpm($content);
       // We hide the comments and links now so that we can render them later.
@@ -241,7 +241,7 @@ else:     /************ FULL Display ***********/
       </div> <!-- End of av-main-video-section -->
 			
 			<!-- BEGIN av-main-transcript-section -->
-			<div class="av-main-transcript-section col-xs-12 col-sm-6 col-md-5">
+			<div class="av-main-transcript-section col-xs-12 col-sm-6 col-md-5 col-lg-6">
 				<?php if($variables['has_transcript']): ?>
 					<?php print render($transcript_controls); ?>
 			                <div class='transcript-container'>
