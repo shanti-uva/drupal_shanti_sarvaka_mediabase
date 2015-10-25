@@ -1560,7 +1560,7 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default {
   display: block;
-  height: 2.83em;
+  height: 2.88em;
   width:4.5rem;
   color: #aaa;
   border: 1px solid #e0e0e0;
@@ -1574,7 +1574,7 @@ ul.links.inline {
   background: #eee;
   position: absolute;
   right: 0;
-  top: 0.021rem;
+  top: 0.03rem;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
@@ -1592,15 +1592,15 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon {
-  font-family: 'Glyphicons Halflings' !important;
+  font-family: 'FontAwesome' !important;
   background: transparent;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
-  content: '\e080';
+  content: '\f110';
   position: relative;
-  right: 0.3rem;
-  top: -0.5rem;
+  right: 0.5rem;
+  top: -0.6rem;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default:active .icon,
