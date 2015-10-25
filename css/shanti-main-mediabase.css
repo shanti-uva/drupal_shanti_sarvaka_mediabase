@@ -1135,12 +1135,17 @@ ul.links.inline {
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
-.speaker-name .editable-input,
 .speaker-tiers .editable-input{
   width: 100% !important;
   display: block !important;
 }
-.speaker-name .editableform .control-group,
+
+.tcu-info .editable-input{
+  width: 95% !important;
+  display: block !important;
+}
+
+.tcu-info .editableform .control-group,
 .speaker-tiers .editableform .control-group{
   width: 100% !important;
 }
@@ -1154,7 +1159,7 @@ ul.links.inline {
   margin-top:0;
 }
 
-.speaker-name .editable-cancel,
+.tcu-info .editable-cancel,
 .speaker-tiers .editable-cancel{
   border:none;
   box-shadow:none;
@@ -1165,7 +1170,7 @@ ul.links.inline {
    background:transparent;
 }
 
-.speaker-name .editable-cancel:hover,
+.tcu-info .editable-cancel:hover,
 .speaker-tiers .editable-cancel:hover{
   border:none;
   box-shadow:none;
@@ -1174,12 +1179,12 @@ ul.links.inline {
   text-decoration:underline !important;
 }
 
-.speaker-name .editable-buttons-bottom,
+.tcu-info .editable-buttons-bottom,
 .speaker-tiers .editable-buttons-bottom{
   display:inline-block;
   float:right;
 }
-.speaker-name .editable-submit,
+.tcu-info .editable-submit,
 .speaker-tiers .editable-submit{
   float:right;
   font-size: 0.62em;
@@ -1188,22 +1193,22 @@ ul.links.inline {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.speaker-name .editable-container.editable-inline .glyphicon-ok::before,
+.tcu-info .editable-container.editable-inline .glyphicon-ok::before,
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
   content:'Update';
 }
-.speaker-name .editable-cancel .glyphicon-remove::before,
+.tcu-info .editable-cancel .glyphicon-remove::before,
 .speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
-.speaker-name .editable-container.editable-inline,
+.tcu-info .editable-container.editable-inline,
 .speaker-tiers .editable-container.editable-inline{
   display:block;
   border-bottom: 1px solid #eee;
   margin-bottom:1rem;
 }
 
-.speaker-name .editable-container.editable-inline{
+.tcu-info .editable-container.editable-inline{
   border-bottom:none;
 }
 
