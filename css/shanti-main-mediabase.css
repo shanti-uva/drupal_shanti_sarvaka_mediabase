@@ -1612,15 +1612,15 @@ ul.links.inline {
   content: '\f110';
   position: relative;
   font-family:'FontAwesome';
-  font-size:110%;
-  color:#888;
+  font-size:130%;
+  color:#555;
   right: 0;
   top: 0;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
-  -webkit-animation: spin 2.5s infinite linear;
-  -animation: spin 2.5s infinite linear;
+  -webkit-animation: spin 5s infinite linear;
+  -animation: spin 5s infinite linear;
   position: relative;
   left: 0;
   top: 0.4rem;
