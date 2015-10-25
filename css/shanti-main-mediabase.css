@@ -1094,7 +1094,7 @@ ul.links.inline {
 .twitter-typeahead .tt-hint{
   margin-bottom:0.5rem;
 }
-/*
+
 .twitter-typeahead .tt-hint{
   position:absolute;
   top:0.5rem !important;
@@ -1261,9 +1261,8 @@ ul.links.inline {
   display: block !important;
 }
 
-.tcu-info .twitter-typeahead .tt-query, 
-.tcu-info .twitter-typeahead .tt-hint{
-  margin-bottom:0;
+.tcu-info .twitter-typeahead .tt-query{
+  margin-bottom:0 !important;
 }
 
 .tcu-info .editable-clear-x{
