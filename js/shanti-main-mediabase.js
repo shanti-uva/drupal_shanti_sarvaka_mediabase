@@ -141,7 +141,7 @@
 
 
 
-	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
+	Drupal.behaviors.shantiSarvakaTimecodeEditToggle = {
 	  attach: function (context, settings) {
 	  	if (context == document) {
 
