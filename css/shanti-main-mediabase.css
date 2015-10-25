@@ -1252,6 +1252,10 @@ ul.links.inline {
   width:100%;
 }
 
+.tcu-info .editable-buttons{
+  display:block;
+}
+
 .editing-active .speaker-display::before{
   content: '\e065';
   float:right;
