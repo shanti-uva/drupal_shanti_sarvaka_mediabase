@@ -1785,6 +1785,22 @@ ul.links.inline {
   font-size: 1.75rem;
 }
 
+.transcript-navigate-results .btn:hover{
+  background: #ccc;
+}
+
+.transcript-navigate-results .btnt:hover .icon{
+  color:#fff;
+}
+
+.transcript-navigate-results .btn:active .icon{
+  background: #ccc;
+}
+
+.transcript-navigate-results .btn:active .icon{
+  color:#fff;
+}
+
 .transcript-navigate-results .btn.nextresult .icon::before {
   content: '\e605';
 }
@@ -1801,12 +1817,6 @@ ul.links.inline {
   display: none;
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s;
-}
-
-.transcript-navigate-results .btn.btn-default:hover,
-.transcript-navigate-results .btn.btn-default:active {
-  background: #aaa;
-  color:#555;
 }
 
 .has-searched .transcript-search-options label,
