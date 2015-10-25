@@ -1531,7 +1531,6 @@ ul.links.inline {
   font-size: 1.06em;
   line-height: 1;
   height: 2.5em;
- /* coordinate with button height below */
   margin: 0 2rem 0.3rem 2rem;
   padding: 0.2rem 4rem 0 2rem;
   max-width: 90%;
@@ -1611,7 +1610,7 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
   content: '\e080';
   position: relative;
-  left: 6px;
+  right: 6px;
   top: -8px;
 }
 
