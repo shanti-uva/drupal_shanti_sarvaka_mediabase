@@ -145,13 +145,9 @@
 	  attach: function (context, settings) {
 	  	if (context == document) {
 
-			$( ".edit-times" ).toggle(
-			  function() {
+			$( ".edit-times" ).click( function() {
 			    $( this ).css( "display", "none" );
-			  }, function() {
-			    $( this ).css( "display", "inline-block" );
-			  }
-			);
+			});
 
 		}
 	  }
