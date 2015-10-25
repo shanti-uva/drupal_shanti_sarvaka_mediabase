@@ -1582,11 +1582,11 @@ ul.links.inline {
   box-shadow: none;
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 13px;
   background: #eee;
   position: absolute;
   right: 0;
-  top: 0.03rem;
+  top: 0;
   background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
@@ -1611,8 +1611,8 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
   content: '\e080';
   position: relative;
-  left: 10px;
-  top: -6px;
+  left: 6px;
+  top: -8px;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default:hover .icon,
@@ -1627,11 +1627,6 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
-  position: relative;
-  left: 0;
-  top: 4px;
-  padding: 0;
-  font-size:20px;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
