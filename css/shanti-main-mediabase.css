@@ -1627,8 +1627,8 @@ ul.links.inline {
   padding: 0;
   border-radius: 0;
   font-size: 1.7rem;
-  -webkit-animation: spin 2000ms infinite linear;
-  animation: spin 2000ms infinite linear;
+  -webkit-animation: spin 5000ms infinite linear;
+  animation: spin 5000ms infinite linear;
 }
 
 @-webkit-keyframes spin {
