@@ -2010,7 +2010,7 @@ object.KalturaDynamicPlayer {
   padding-right: 1.5rem;
 }
 
-body.is-transcript-editing{ border-bottom:1rem solid #000;}
+body.is-transcript-editing{ margin-bottom:1rem;}
 
 .is-transcript-editing .av-main-video-section,
 .is-transcript-editing .av-main-transcript-section {
