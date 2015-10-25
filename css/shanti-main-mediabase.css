@@ -1643,7 +1643,7 @@ ul.links.inline {
   animation: fa-spin 1s infinite steps(8);
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -1654,7 +1654,7 @@ ul.links.inline {
   }
 }
 
-@keyframes spin {
+@keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
