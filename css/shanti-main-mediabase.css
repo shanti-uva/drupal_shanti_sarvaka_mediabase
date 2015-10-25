@@ -1619,8 +1619,6 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
-  -webkit-animation: spin 5s infinite linear;
-  -animation: spin 5s infinite linear;
   position: relative;
   left: 0;
   top: 0.4rem;
@@ -1629,39 +1627,29 @@ ul.links.inline {
   padding: 0;
   border-radius: 0;
   font-size: 1.7rem;
-}
-
-@-webkit-keyframes spin2 {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-  }
+  -webkit-animation: spin 2000ms infinite linear;
+  animation: spin 2000ms infinite linear;
 }
 
 @-webkit-keyframes spin {
-  from {
-    -webkit-transform: scale(1) rotate(0deg);
-    transform: scale(1) rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-
-  to {
-    -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 @keyframes spin {
-  from {
-    -webkit-transform: scale(1) rotate(0deg);
-    transform: scale(1) rotate(0deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-
-  to {
-    -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
