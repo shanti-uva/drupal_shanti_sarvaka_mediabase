@@ -145,7 +145,7 @@
 	  attach: function (context, settings) {
 	  	if (context == document) {
 
-			$( ".edit-times" ).click( function() {
+			$( ".edit-times" ).bind( "click", function() {
 			    $( this ).css( "display", "none" );
 			});
 
