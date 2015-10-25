@@ -993,7 +993,6 @@ ul.links.inline {
   box-shadow:none;
 }
 
-/* .av-main-transcript-section .bootstrap-select.btn-group .btn .filter-option{ display:none;}  hiding names */
 .bootstrap-select.btn-group.tier-selector .icon:first-child {
   font-size: 2.3rem;
   line-height: 1.5em;
@@ -1019,14 +1018,10 @@ ul.links.inline {
   background: #f5f5f5;
 }
 
-/*.av-main-transcript-section .speaker-tiers mark{ background:#ff0; background: rgba(255, 255, 0, 0.51); padding:0;}*/
 .speaker-name {
-  /* position: absolute;
-  top: 1rem;
-  left: 2%; */
   width: 100%;
   float:none;
-  margin: 0.3rem 0 2rem;
+  margin: 0.3rem 0 1rem;
 }
 
 .speaker-name .speaker-display{
@@ -1041,8 +1036,6 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button {
   margin: 0 0 0 0.8rem;
-  /* position: relative;
-  top: 3rem; */
 }
 
 .av-main-transcript-section .play-button:hover{
@@ -1096,9 +1089,6 @@ ul.links.inline {
 .av-main-transcript-section .play-button .btn.untimed {
   display: none;
 }
-/*.av-main-transcript-section .speaker-name{ position:absolute;top:1rem;left:-2rem;width:100px;}
-.av-main-transcript-section .play-button{ position:relative;top:3rem;left:0;margin:-0.5rem;}
-*/
 
 .twitter-typeahead .tt-query, 
 .twitter-typeahead .tt-hint{
@@ -1163,10 +1153,7 @@ ul.links.inline {
   margin-top:0;
 }
 
-.speaker-tiers .editable-container.editable-inline{
-  border-bottom: 1px solid #eee;
-}
-
+.speaker-name .editable-cancel,
 .speaker-tiers .editable-cancel{
   border:none;
   box-shadow:none;
@@ -1176,6 +1163,7 @@ ul.links.inline {
   font-size:1rem;
 }
 
+.speaker-name .editable-cancel:hover,
 .speaker-tiers .editable-cancel:hover{
   border:none;
   box-shadow:none;
@@ -1184,20 +1172,17 @@ ul.links.inline {
   text-decoration:underline !important;
 }
 
+.speaker-name .editable-buttons-bottom,
 .speaker-tiers .editable-buttons-bottom{
   display:inline-block;
   float:right;
 }
-
+.speaker-name .editable-submit,
 .speaker-tiers .editable-submit{
   float:right;
   font-size: 0.62em;
   line-height: 1.62em;
   padding-top:0.62em;
-}
-
-.speaker-tiers .editable-container.editable-inline{
-  display:block;
 }
 
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
@@ -1206,6 +1191,12 @@ ul.links.inline {
 
 .speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
+}
+
+.speaker-tiers .editable-container.editable-inline{
+  display:block;
+  border-bottom: 1px solid #eee;
+  margin-bottom:1rem;
 }
 
 .speaker-tiers .tier.editable:hover{
