@@ -1989,6 +1989,7 @@ ul.links.inline {
   border: 1.5rem solid #000;
   border-bottom-width: .5rem;
   border-radius: 0.3rem;
+  background: #555;
 }
 .kaltura-thumb-wrap {
   clear: none;
