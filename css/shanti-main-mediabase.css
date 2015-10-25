@@ -1256,6 +1256,14 @@ ul.links.inline {
   display:block;
 }
 
+.tcu-info .editable-clear-x{
+  position: absolute;
+  top: .44em;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  margin-top: 0;
+}
+
 .editing-active .speaker-display::before{
   content: '\e065';
   float:right;
