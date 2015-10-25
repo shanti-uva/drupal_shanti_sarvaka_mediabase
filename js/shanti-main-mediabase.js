@@ -138,5 +138,26 @@
 			}
 		} // end context = document
 	};
+
+
+
+	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
+	  attach: function (context, settings) {
+	  	if (context == document) {
+
+			$( ".edit-times" ).toggle(
+			  function() {
+			    $( this ).css( "display", "none" );
+			  }, function() {
+			    $( this ).css( "display", "inline-block" );
+			  }
+			);
+
+		}
+	  }
+	};
+
 	
 } (jQuery)); // End of JQuery Wrapper
+
+
