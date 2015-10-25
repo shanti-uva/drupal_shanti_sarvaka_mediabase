@@ -2492,8 +2492,8 @@ button on video window
 
 @media screen and (min-width: 1280px) {
   
-  .is-transcript-editing .av-main-video-section,
-  .is-transcript-editing .av-main-transcript-section {
+  .av-main-video-section,
+  .av-main-transcript-section {
     width:50% !important;
   }
 }
