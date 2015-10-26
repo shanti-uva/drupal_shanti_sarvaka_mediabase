@@ -2495,11 +2495,11 @@ button on video window
   }
 
   .is-transcript-editing .av-main-video-section {
-    width:41.66666666666667% !important;
+    width:40% !important;
   }
 
   .is-transcript-editing .av-main-transcript-section {
-    width:58.333333333333336% !important;
+    width:59% !important;
   }
 
   .logged-in .carousel .carousel-main-image{
