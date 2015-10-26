@@ -138,5 +138,16 @@
 			}
 		} // end context = document
 	};
-	
+
+	Drupal.behaviors.shantiSarvakaTranscriptTabs = {
+		attach: function (context, settings) {
+			if(context == window.document) {
+
+				$(".has-transcript .primary a:contains('Transcript')").addClass("transcript-edit");
+
+			}
+		} // end context = document
+	};
+
+
 } (jQuery)); // End of JQuery Wrapper
