@@ -2261,6 +2261,10 @@ a.tabledrag-toggle-weight {
   margin: -10px 0 20px;
 }
 
+.video-overview .show-more a{
+  font-size:1em;
+}
+
 .video-overview-title {
   margin-bottom: 0.25em;
   text-transform: uppercase;
