@@ -2502,7 +2502,7 @@ button on video window
     width:44%;
   }
 
-  .logged-in .carousel .col-sm-5{
+  .logged-in .carousel .col-sm-7{
     width:55%;
   }
 } 
@@ -2512,6 +2512,13 @@ button on video window
   .audio-video .logged-in .carousel .col-sm-7,
   .audio-video .logged-in .carousel .col-sm-5 {
     width: 50%;
+  }
+  .logged-in .carousel .col-sm-5{
+    width:41.66666666666667%
+  }
+
+  .logged-in .carousel .col-sm-7{
+    width:58.333333333333336%;
   }
 }
 
