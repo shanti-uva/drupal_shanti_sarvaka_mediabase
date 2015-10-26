@@ -2513,13 +2513,6 @@ button on video window
   .audio-video .logged-in .carousel .col-sm-5 {
     width: 50%;
   }
-  .logged-in .carousel .col-sm-5{
-    width:41.66666666666667%
-  }
-
-  .logged-in .carousel .col-sm-7{
-    width:58.333333333333336%;
-  }
 }
 
 @media (min-width:1150px) {
@@ -2531,7 +2524,20 @@ button on video window
   .av-main-transcript-section .tcu-info{
     width:29%;
   }
+
+  .logged-in .carousel .col-sm-5{
+    width:34%;
+  }
+
+  .logged-in .carousel .col-sm-7{
+    width:65%;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+
+
+} 
 
 @media screen and (min-width: 1280px) {
   
