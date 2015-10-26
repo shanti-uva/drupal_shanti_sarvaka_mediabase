@@ -1317,12 +1317,12 @@ ul.links.inline {
 }
 
 /***** banner tabs for editors ****/
-.has-transcript .tabs a.transcript-edit{
+.has-transcript .tabs li a.transcript-edit{
   padding-right: 1.25rem;
   padding-top: 0.5rem;
 }
 
-.has-transcript .tabs a.transcript-edit::after{
+.has-transcript .tabs li a.transcript-edit::after{
   content: "\f040";
   font-family:'FontAwesome';
   color:#444;
@@ -1332,17 +1332,15 @@ ul.links.inline {
   right: -0.5rem;
 }
 
-
-
-.has-transcript .tabs a.transcript-edit:hover::after{
+.has-transcript .tabs li a.transcript-edit:hover::after{
   color:#fff;
 }
 
-.has-transcript .tabs a.transcript-edit::after{
+.has-transcript .tabs li.active a.transcript-edit::after{
   color:#bc1e20;
 }
 
-.has-transcript .tabs a.transcript-edit:hover::after{
+.has-transcript .tabs li.active a.transcript-edit:hover::after{
   color:#bc1e20;
 }
 
