@@ -1317,12 +1317,12 @@ ul.links.inline {
 }
 
 /***** banner tabs for editors ****/
-.is-transcript-editing .has-transcript .tabs.primary li:nth-of-type(3) a{
+.is-transcript-editing .tabs.primary li:nth-of-type(3) a{
   padding-right: 1.25rem;
   padding-top: 0.5rem;
 }
 
-.is-transcript-editing .has-transcript .tabs.primary li:nth-of-type(3) a::after{
+.is-transcript-editing .tabs.primary li:nth-of-type(3) a::after{
   content: "\f040";
   font-family:'FontAwesome';
   color:#444;
@@ -1332,17 +1332,15 @@ ul.links.inline {
   right: -0.5rem;
 }
 
-
-
-.is-transcript-editing .has-transcript .tabs.primary li:nth-of-type(3) a:hover::after{
+.is-transcript-editing .tabs.primary li:nth-of-type(3) a:hover::after{
   color:#fff;
 }
 
-.is-transcript-editing .has-transcript .tabs.primary li.active:nth-of-type(3) a::after{
+.is-transcript-editing .tabs.primary li.active:nth-of-type(3) a::after{
   color:#bc1e20;
 }
 
-.is-transcript-editing .has-transcript .tabs.primary li.active:nth-of-type(3) a:hover::after{
+.is-transcript-editing .tabs.primary li.active:nth-of-type(3) a:hover::after{
   color:#bc1e20;
 }
 
