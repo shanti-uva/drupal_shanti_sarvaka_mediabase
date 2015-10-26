@@ -1167,6 +1167,10 @@ ul.links.inline {
   margin-top:0;
 }
 
+.speaker-tiers .tier:last-of-type + span{
+  border-bottom:none;
+}
+
 .tcu-info .editable-cancel,
 .speaker-tiers .editable-cancel{
   border:none;
@@ -1315,6 +1319,7 @@ ul.links.inline {
 /***** banner tabs for editors ****/
 .has-transcript .tabs.primary li:nth-of-type(3) a{
   padding-right: 1.25rem;
+  padding-top: 0.5rem;
 }
 
 .has-transcript .tabs.primary li:nth-of-type(3) a::after{
