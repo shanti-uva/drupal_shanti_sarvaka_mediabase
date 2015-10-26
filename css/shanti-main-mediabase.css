@@ -2498,26 +2498,22 @@ button on video window
     width:58.333333333333336% !important;
   }
 
-  .logged-in .carousel .col-sm-5{
+  .logged-in .carousel .carousel-main-image{
     width:44%;
   }
 
-  .logged-in .carousel .col-sm-7{
+  .logged-in .carousel .carousel-main-content{
     width:55%;
   }
 } 
 
 @media (min-width:1100px) {
 
-  .audio-video .logged-in .carousel .col-sm-7,
-  .audio-video .logged-in .carousel .col-sm-5 {
-    width: 50%;
-  }
-  .logged-in .carousel .col-sm-5{
-    width:41.66666666666667%
+  .logged-in .carousel .carousel-main-image{
+    width:41.66666666666667%;
   }
 
-  .logged-in .carousel .col-sm-7{
+  .logged-in .carousel .carousel-main-content{
     width:58.333333333333336%;
   }
 }
@@ -2532,11 +2528,11 @@ button on video window
     width:29%;
   }
 
-  .logged-in .carousel .col-sm-5{
+  .logged-in .carousel .carousel-main-image{
     width:34%;
   }
 
-  .logged-in .carousel .col-sm-7{
+  .logged-in .carousel .carousel-main-content{
     width:65%;
   }
 }
