@@ -2474,6 +2474,13 @@ button on video window
     padding-right: 0;
   }
 
+  .logged-in .carousel .carousel-main-image{
+    width:39%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width:60%;
+  }
 }
 
 @media screen and (min-width: 880px) {
@@ -2484,6 +2491,14 @@ button on video window
 
   .is-transcript-editing .av-main-transcript-section {
     width:66.66666666666666% !important;
+  }
+
+  .logged-in .carousel .carousel-main-image{
+    width:44%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width:55%;
   }
 } 
 
