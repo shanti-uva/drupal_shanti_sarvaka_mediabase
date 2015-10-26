@@ -989,8 +989,8 @@ ul.links.inline {
   height: 5.88em;
   border: 1px solid #ddd;
   width: 100%;
-  position: relative;
-  top: -0.15rem;
+  /*position: relative;
+  top: -0.15rem;*/
 }
 
 .av-main-transcript-section .btn.btn-default.dropdown-toggle:focus {
@@ -1438,7 +1438,7 @@ ul.links.inline {
   background-clip: padding-box;
   min-width: 18rem;
   padding-bottom:1rem;
-  margin-top:-0.25rem;
+ /* margin-top:-0.05rem;*/
 }
 
 .av-main-transcript-section .dropdown-menu li a span.text {
@@ -1488,6 +1488,11 @@ ul.links.inline {
 .av-main-transcript-section .dropdown-menu button.close {
   font-size: 1.82em;
   line-height: 0.88em;
+}
+
+.btn-group.bootstrap-select.show-tick.tier-selector{
+  margin-bottom:0;
+  margin-top: -0.1em;
 }
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
