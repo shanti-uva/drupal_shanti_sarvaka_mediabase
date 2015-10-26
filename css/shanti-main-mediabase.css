@@ -1160,7 +1160,7 @@ ul.links.inline {
 
 .tcu-info .btn.btn-default,
 .speaker-tiers .btn.btn-default{
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
 }
 
 .speaker-tiers .editable-buttons.editable-buttons-bottom{ 
