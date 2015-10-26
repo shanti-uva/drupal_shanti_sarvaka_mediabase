@@ -1317,12 +1317,12 @@ ul.links.inline {
 }
 
 /***** banner tabs for editors ****/
-.is-transcript-editing .tabs.primary li:nth-of-type(3) a{
+.has-transcript .tabs a.transcript-edit{
   padding-right: 1.25rem;
   padding-top: 0.5rem;
 }
 
-.is-transcript-editing .tabs.primary li:nth-of-type(3) a::after{
+.has-transcript .tabs a.transcript-edit::after{
   content: "\f040";
   font-family:'FontAwesome';
   color:#444;
@@ -1332,15 +1332,17 @@ ul.links.inline {
   right: -0.5rem;
 }
 
-.is-transcript-editing .tabs.primary li:nth-of-type(3) a:hover::after{
+
+
+.has-transcript .tabs a.transcript-edit:hover::after{
   color:#fff;
 }
 
-.is-transcript-editing .tabs.primary li.active:nth-of-type(3) a::after{
+.has-transcript .tabs a.transcript-edit::after{
   color:#bc1e20;
 }
 
-.is-transcript-editing .tabs.primary li.active:nth-of-type(3) a:hover::after{
+.has-transcript .tabs a.transcript-edit:hover::after{
   color:#bc1e20;
 }
 
