@@ -2497,6 +2497,14 @@ button on video window
   .is-transcript-editing .av-main-transcript-section {
     width:58.333333333333336% !important;
   }
+
+  .logged-in .carousel .col-sm-5{
+    width:44%;
+  }
+
+  .logged-in .carousel .col-sm-5{
+    width:55%;
+  }
 } 
 
 @media (min-width:1100px) {
