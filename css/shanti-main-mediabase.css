@@ -949,7 +949,7 @@ ul.links.inline {
   border-radius: 10px;
   background-clip: padding-box;
   border: 1px solid #ddd;
-  padding:1rem;
+  padding:1rem 1rem 0;
   margin-bottom: 0;
 }
 
