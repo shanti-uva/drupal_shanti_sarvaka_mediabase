@@ -1158,6 +1158,11 @@ ul.links.inline {
   margin: 0.5rem 1rem 0 0;
 }
 
+.tcu-info .btn.btn-default,
+.speaker-tiers .btn.btn-default{
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
 .speaker-tiers .editable-buttons.editable-buttons-bottom{ 
   margin-top:0;
 }
