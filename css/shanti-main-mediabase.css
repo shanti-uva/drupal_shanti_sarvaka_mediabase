@@ -2510,11 +2510,11 @@ button on video window
 @media (min-width:1100px) {
 
   .logged-in .carousel .carousel-main-image{
-    width:41.66666666666667%;
+    width:36%;
   }
 
   .logged-in .carousel .carousel-main-content{
-    width:58.333333333333336%;
+    width:62%;
   }
 }
 
