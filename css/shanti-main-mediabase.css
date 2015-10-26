@@ -2514,11 +2514,11 @@ button on video window
 @media (min-width:1100px) {
 
   .logged-in .carousel .carousel-main-image{
-    width:30%;
+    width:29%;
   }
 
   .logged-in .carousel .carousel-main-content{
-    width:62%;
+    width:60%;
   }
 }
 
@@ -2533,7 +2533,7 @@ button on video window
   }
 
   .logged-in .carousel .carousel-main-image{
-    width:37%;
+    width:28%;
   }
 
   .logged-in .carousel .carousel-main-content{
@@ -2543,7 +2543,13 @@ button on video window
 
 @media screen and (min-width: 1200px) {
 
+  .logged-in .carousel .carousel-main-image{
+    width:33%;
+  }
 
+  .logged-in .carousel .carousel-main-content{
+    width:66%;
+  }
 } 
 
 @media screen and (min-width: 1280px) {
