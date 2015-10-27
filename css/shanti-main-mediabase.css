@@ -1171,6 +1171,10 @@ ul.links.inline {
   border-bottom:none;
 }
 
+.tcu-info .play-button.editable .btn.untimed{
+  display: block;
+}
+
 .tcu-info .editable-cancel,
 .speaker-tiers .editable-cancel{
   border:none;
