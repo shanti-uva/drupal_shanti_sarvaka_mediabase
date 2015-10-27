@@ -2043,10 +2043,11 @@ object.KalturaDynamicPlayer {
 }
 
 
-
+/* this is in iframe and thus does nothing
 .videoHolder{
   position:static !important;
 }
+*/
 
 .av-main-video-section {
   padding-right: 1.5rem;
@@ -2054,10 +2055,10 @@ object.KalturaDynamicPlayer {
 
 .is-transcript-editing .av-main-video-section,
 .is-transcript-editing .av-main-transcript-section {
-  width:100% !important;
-  transition:width 0.25s;
-  -webkit-transition:width 1s;
-  -moz-transition: width 1s;
+  width:100%; /* 100% is for mobile */
+  transition:width 500ms;
+  -webkit-transition:width 500ms;
+  -moz-transition: width 500ms;
 }
 
 .node-video .tab-content {
