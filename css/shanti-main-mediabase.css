@@ -2438,9 +2438,9 @@ button on video window
 
 
 
-
-
-
+/*-------------------------*/
+/***** BEGIN max-width *****/
+/*-------------------------*/
 
 @media screen and (max-width: 767px) {
 
@@ -2451,24 +2451,14 @@ button on video window
   }
 }
 
-
-
-@media screen and (min-width: 650px) {
-  
-  .carousel .carousel-main-image{
-    width:50%;
-  }
-
-  .carousel .carousel-main-content{
-    width:50%;
-  }
-
-}
+/***** END max-width *****/
 
 
 
 
-
+/*-------------------------*/
+/***** BEGIN min-width *****/
+/*-------------------------*/
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
