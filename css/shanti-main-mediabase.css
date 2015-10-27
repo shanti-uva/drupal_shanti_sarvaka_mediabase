@@ -1492,7 +1492,7 @@ ul.links.inline {
 
 .btn-group.bootstrap-select.show-tick.tier-selector{
   margin-bottom:0;
-  margin-top: -0.07em;
+  margin-top: 0;
 }
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
