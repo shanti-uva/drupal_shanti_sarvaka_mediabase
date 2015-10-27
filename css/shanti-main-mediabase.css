@@ -2493,6 +2493,14 @@ button on video window
   .logged-in .carousel .carousel-main-content{
     width:60%;
   }
+
+  .logged-in .carousel-main-image img {
+    /* max-width: 100%; */
+  }
+
+  .logged-in .carousel-description p {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 880px) {
@@ -2536,6 +2544,23 @@ button on video window
   .logged-in .carousel .carousel-main-content{
     width:55%;
   }
+
+  .logged-in .carousel-title {
+    font-size: 1.12em;
+  }
+
+  .logged-in .carousel .byline {
+    font-size: 70%;
+    margin: -0.1em 0 .44em;
+  }
+
+  .logged-in .carousel-main-image img {
+    max-height: 225px;
+  }
+
+  .logged-in .carousel-description p {
+    height: 10em;
+  }
 } 
 
 @media (min-width:1100px) {
@@ -2546,6 +2571,15 @@ button on video window
 
   .logged-in .carousel .carousel-main-content{
     width:60%;
+  }
+
+  .logged-in .carousel-title {
+    font-size: 1.5em;
+  }
+
+  .logged-in .carousel .byline {
+    font-size: 80%;
+    margin: -0.2em 0 .63em;
   }
 }
 
@@ -2576,6 +2610,14 @@ button on video window
 
   .logged-in .carousel .carousel-main-content{
     width:64%;
+  }
+
+  .logged-in .carousel .carousel-main-image {
+    width: 40%;
+  }
+
+  .logged-in .carousel .carousel-main-content {
+    width: 60%;
   }
 } 
 
