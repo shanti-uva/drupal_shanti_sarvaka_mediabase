@@ -2408,13 +2408,14 @@ button on video window
   max-width: 1050px;
   margin: 0 auto;
 }
-
+/* intro text above carousel */
 .front .field-type-text-with-summary h4 {
   display: none;
 }
-
-.front .field-type-text-with-summary h4+p {
+/* intro text above carousel */
+.front .field-type-text-with-summary p { 
   margin-bottom: 1.5rem;
+  margin-top:1.5rem;
   padding: 0 2rem;
 }
 
@@ -2476,6 +2477,11 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
+@media screen and (min-width: 700px) {  
+
+
+}
+
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
