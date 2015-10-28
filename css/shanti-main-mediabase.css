@@ -2423,7 +2423,7 @@ button on video window
 }
 
 .logged-in .carousel-description p {
-  height: 11.5em;
+  height: 11em;
   overflow: hidden;
 }
 
@@ -2500,15 +2500,15 @@ button on video window
   }
 
   .logged-in .carousel .carousel-main-image{
-    width:40%;
+    width:38%;
   }
 
   .logged-in .carousel .carousel-main-content{
-    width:60%;
+    width:62%;
   }
 
   .logged-in .carousel-main-image img {
-    /* max-width: 100%; */
+    max-height: 200px;
   }
 
   .logged-in .carousel-description p {
@@ -2524,14 +2524,6 @@ button on video window
 
   .is-transcript-editing .av-main-transcript-section {
     width:66.66666666666666% !important;
-  }
-
-  .logged-in .carousel .carousel-main-image{
-    width: 36%;
-  }
-
-  .logged-in .carousel .carousel-main-content{
-    width: 64%;
   }
 } 
 
