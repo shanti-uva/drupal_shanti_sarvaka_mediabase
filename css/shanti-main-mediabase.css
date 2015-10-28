@@ -2559,10 +2559,6 @@ button on video window
     margin: -0.1em 0 .44em;
   }
 
-  .logged-in .carousel-main-image img {
-    max-height: 225px;
-  }
-
   .logged-in .carousel-description p {
     height: 10em;
   }
