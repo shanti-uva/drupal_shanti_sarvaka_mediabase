@@ -2398,14 +2398,6 @@ button on video window
 /*----------------*/
 /* BEGIN carousel */
 /*----------------*/
-.carousel-header,
-.carousel-inner,
-.carousel-inner > .item,
-.front .block-system-main p, /* intro text above carousel */
-.front .main-col .block-views {
-  max-width: 1050px;
-  margin: 0 auto;
-}
 /* intro text above carousel */
 .front #block-system-main h4 {
   display: none;
