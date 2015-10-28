@@ -2407,10 +2407,10 @@ button on video window
   margin: 0 auto;
 }
 /* intro text above carousel */
-.front div.content:first-of-type .field-type-text-with-summary h4 {
+.front #block-system-main h4 {
   display: none;
 }
-.front div.content:first-of-type .field-type-text-with-summary p { 
+.front #block-system-main p { 
   padding:0 2rem;
 }
 
