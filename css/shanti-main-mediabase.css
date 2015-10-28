@@ -2487,6 +2487,11 @@ button on video window
     padding-right: 0;
   }
 
+  
+  .logged-in .carousel-title {
+    font-size: 1.38em;
+  }
+
   .logged-in .carousel .carousel-main-image{
     width:38%;
   }
@@ -2536,10 +2541,6 @@ button on video window
 
   .logged-in .carousel .carousel-main-content{
     width:55%;
-  }
-
-  .logged-in .carousel-title {
-    font-size: 1.12em;
   }
 
   .logged-in .carousel .byline {
