@@ -38,6 +38,12 @@
   top: 4px;
 }
 
+
+.input-section .search-group .form-group{
+  position: relative;
+  top: -1.7rem;
+}
+
 .input-section .search-group .radio-inline {
   min-width: 0px !important;
 }
