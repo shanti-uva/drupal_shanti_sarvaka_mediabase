@@ -264,7 +264,7 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
   */
   // Home page view Tweaks
   } else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
-  	//dpm($vars, 'pp view');
+  	 //dpm($vars, 'pp view browse media');
 		$query = $view->query;
     // Grab the pieces you want and then remove them from the array    
 	    /*$header   = $vars['header'];    $vars['header']   = '';

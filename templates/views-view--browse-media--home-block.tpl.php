@@ -70,7 +70,7 @@
 	  <?php if ($rows): ?>
 		    <div class="view-content">
 		    	<ul class="shanti-gallery">
-		      	<?php print $rows; ?>
+		      	<?php print $rows;  ?>
 		      </ul>
 		    </div>
 	
