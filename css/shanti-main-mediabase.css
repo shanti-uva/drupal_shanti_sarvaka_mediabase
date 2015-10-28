@@ -2612,6 +2612,17 @@ button on video window
   } 
 } 
 
+@media (min-width:1250px) {
+
+  .logged-in .carousel .carousel-main-image{
+    width: 31%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width: 69%;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   
   .is-transcript-editing .av-main-video-section,
@@ -2620,7 +2631,16 @@ button on video window
   }
 }
 
+@media (min-width:1400px) {
 
+  .logged-in .carousel .carousel-main-image{
+    width: 28%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width: 72%;
+  }
+}
 
 
 
