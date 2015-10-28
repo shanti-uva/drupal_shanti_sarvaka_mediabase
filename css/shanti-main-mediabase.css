@@ -2438,7 +2438,6 @@ button on video window
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-
 @media screen and (max-width: 767px) {
 
   .is-transcript-editing .avdesc{
@@ -2465,11 +2464,6 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
-@media screen and (min-width: 700px) {  
-
-
-}
-
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
