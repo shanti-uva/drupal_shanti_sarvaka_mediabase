@@ -2403,7 +2403,7 @@ button on video window
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-.front .field-type-text-with-summary:first-of-type p, /* intro text above carousel */
+.front .block-system-main p, /* intro text above carousel */
 .front .main-col .block-views {
   max-width: 1050px;
   margin: 0 auto;
@@ -2413,7 +2413,7 @@ button on video window
   display: none;
 }
 /* intro text above carousel */
-.front .field-type-text-with-summary:first-of-type p { 
+.front .block-system-main p { 
   margin-bottom: 1.5rem;
   margin-top:1.5rem;
   padding: 0 2rem;
