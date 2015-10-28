@@ -2370,14 +2370,12 @@ button on video window
   margin-top:-0.75em;
 }
 
-/*--- homepage white space above carousel ---*/
+/*--- homepage white space above carousel 
 .front #block-system-main.block.block-system{
   margin-top:0 !important;
-}
+} ---*/
 
-.front.logged-in #block-system-main.block.block-system{
-  margin-top:1rem !important;
-}
+
 
 
 
@@ -2413,9 +2411,7 @@ button on video window
   display: none;
 }
 /* intro text above carousel */
-.front .block-system-main p { 
-  margin-bottom: 1.5rem;
-  margin-top:1.5rem;
+.front .block-system-main { 
   padding: 0 2rem;
 }
 
