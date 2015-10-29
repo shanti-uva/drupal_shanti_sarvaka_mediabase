@@ -524,7 +524,7 @@ a.hide-annot::before {
   line-height: 1.75em;
 }
 
-#view-all-colls-switcher {
+.view-all-colls-control-box-cell ul {
   display: block;
   margin: 1rem 0 0;
   padding: 0;
@@ -532,7 +532,7 @@ a.hide-annot::before {
   text-align: right;
 }
 
-#view-all-colls-switcher li {
+.view-all-colls-control-box-cell ul li {
   display: inline;
   list-style: none;
   font-size: 1.75rem;
@@ -542,14 +542,27 @@ a.hide-annot::before {
   background-clip: padding-box;
   box-shadow: 0px 1px 5px #aaa;
   border-collapse: separate;
+  background-color: #3c47b7;
+    opacity: .8;
+}
+
+.view-all-colls-control-box-cell ul li:hover{
+  opacity: 1;
+}
+
+.view-all-colls-control-box-cell ul li.on {
   background-color: white;
 }
 
-#view-all-colls-switcher li.on {
-  background-color: #e0e0e0;
+.view-all-colls-control-box-cell ul li .icon::before{
+  color: white;
 }
 
-#view-all-colls-switcher .icon:hover {
+.view-all-colls-control-box-cell ul li.on .icon::before{
+  color: #5463ff;
+}
+
+.view-all-colls-control-box-cell ul .icon:hover {
   cursor: pointer;
 }
 
