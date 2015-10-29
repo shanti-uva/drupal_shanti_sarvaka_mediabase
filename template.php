@@ -48,7 +48,7 @@ function sarvaka_mediabase_form_alter(&$form, &$form_state, $form_id) {
 	// Add bo class to text areas for Tibetan descriptions
 	if ($form_id == 'video_node_form' || $form_id == 'audio_node_form' ) {
 		foreach($form['field_pbcore_description'][$form['field_pbcore_description']['#language']] as $key => &$item) {
-			if (is_numeric($key)) {
+			if (is_numeric($key) && !empty($item['field_language'][$item['field_language']['#language']]['#default_value'][0])) {
 				if ($item['field_language'][$item['field_language']['#language']]['#default_value'][0] == 'Tibetan') {
 					$item['field_description']['#attributes']['class'][] = 'bo'; 
 				}
