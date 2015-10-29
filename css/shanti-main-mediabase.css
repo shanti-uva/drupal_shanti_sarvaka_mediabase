@@ -519,8 +519,8 @@ a.hide-annot::before {
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-  padding: .75em 1.32em .62em;
-  margin: 1.75em 0 0;
+  padding: .62em 1.32em .5em;
+  margin: 2em 0 0;
   line-height: 1.75em;
 }
 
@@ -2509,7 +2509,7 @@ button on video window
   }
 
   .view-collections #view-all-colls-switcher {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     margin-bottom: 1rem;
   }
 
