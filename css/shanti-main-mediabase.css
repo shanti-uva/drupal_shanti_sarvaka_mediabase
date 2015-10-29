@@ -2362,8 +2362,9 @@ button on video window
 .page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}
 
 /* newer hacks oct 29, 2015 view-display-id-page_list */
-.page-collections .views-field-body{
-  min-height: 5rem;
+.page-collections .views-field-field-images{
+  display: inline-block;
+  float: left;
 }
 .page-collections .views-field-field-images::after{
   content: ".";
