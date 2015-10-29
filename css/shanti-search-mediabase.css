@@ -45,6 +45,10 @@
   font-size: 100% !important;
 }
 
+.input-section .advanced-view{
+  display:none;
+}
+
 .input-section .toggle-link.advanced-link {
   position: relative;
   top: 0;
