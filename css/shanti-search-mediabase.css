@@ -18,7 +18,7 @@
 }
 
 .input-section .input-group .btn.btn-default {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 .input-section .search-group #edit-actions.form-actions {
@@ -34,7 +34,7 @@
 
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right {
   position: relative;
-  top: 4px;
+  top: 0.3rem;
 }
 
 .input-section .search-group .radio-inline {
@@ -116,6 +116,18 @@
   background: #f0f0f0;
 }
 
+.input-section .search-group .radio-inline:first-child {
+  width: 2rem;
+}
+
+
+#loading-text{
+  position: absolute;
+  left: 27px;
+}
+
+
+
 .view-section .treeview h2 {
   font-size: 1.5em;
 }
@@ -132,9 +144,7 @@
 .view-section ul.fancytree-container { min-height: 100%; }
 .fancytree-expander { background-image: none !important; }  Removes default fancytree arrows 
 */
-.input-section .search-group .radio-inline:first-child {
-  width: 2rem;
-}
+
 /*
 .view-section .nav-tabs>li.km-facet-tab, 
 .view-section .nav-tabs>li:first-child {
@@ -272,11 +282,6 @@ span.fancytree-node.fancytree-active {
 
 
 
-
-#loading-text{
-  position: absolute;
-  left: 27px;
-}
 
 
 
