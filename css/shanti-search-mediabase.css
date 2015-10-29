@@ -4,17 +4,37 @@
   height: 8.75rem;
 }
 
+.extruder .input-section {
+  height: 8.5rem;
+}
+
+.input-section .input-group input.form-control{
+  margin-top:-5px;
+}
+
+.input-section .input-group .input-group-btn{
+  position:absolute;
+  top:10px;
+}
+
 .input-section .input-group .btn.btn-default {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 .input-section .search-group #edit-actions.form-actions {
   margin-top: 0;
 }
 
+.advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
+.advanced-view .form-group:nth-of-type(2) { display: none;}
+
+.advanced-view.show-options{
+  display: none;
+}
+
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right {
   position: relative;
-  top: 4px;
+  top: 0.3rem;
 }
 
 .input-section .search-group .radio-inline {
@@ -23,6 +43,10 @@
 
 .input-section .form-item .option.icheck-label {
   font-size: 100% !important;
+}
+
+.input-section .advanced-view{
+  display:none;
 }
 
 .input-section .toggle-link.advanced-link {
@@ -96,6 +120,18 @@
   background: #f0f0f0;
 }
 
+.input-section .search-group .radio-inline:first-child {
+  width: 2rem;
+}
+
+
+#loading-text{
+  position: absolute;
+  left: 27px;
+}
+
+
+
 .view-section .treeview h2 {
   font-size: 1.5em;
 }
@@ -112,9 +148,7 @@
 .view-section ul.fancytree-container { min-height: 100%; }
 .fancytree-expander { background-image: none !important; }  Removes default fancytree arrows 
 */
-.input-section .search-group .radio-inline:first-child {
-  width: 2rem;
-}
+
 /*
 .view-section .nav-tabs>li.km-facet-tab, 
 .view-section .nav-tabs>li:first-child {
@@ -250,18 +284,6 @@ span.fancytree-node.fancytree-active {
   font-style: italic;
 }
 
-
-
-
-
-/* .page-search .tab-content:nth-of-type(1){ padding-top:1rem;} */
-.extruder .input-section {
-  height: 7.5rem;
-}
-
-
-.advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
-.advanced-view .form-group:nth-of-type(2) { display: none;}
 
 
 

@@ -519,12 +519,12 @@ a.hide-annot::before {
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-  padding: .75em 1.32em .62em;
-  margin: 1.75em 0 0;
+  padding: .62em 1.32em .5em;
+  margin: 2em 0 0;
   line-height: 1.75em;
 }
 
-#view-all-colls-switcher {
+.view-all-colls-control-box-cell ul {
   display: block;
   margin: 1rem 0 0;
   padding: 0;
@@ -532,7 +532,7 @@ a.hide-annot::before {
   text-align: right;
 }
 
-#view-all-colls-switcher li {
+.view-all-colls-control-box-cell ul li {
   display: inline;
   list-style: none;
   font-size: 1.75rem;
@@ -542,14 +542,27 @@ a.hide-annot::before {
   background-clip: padding-box;
   box-shadow: 0px 1px 5px #aaa;
   border-collapse: separate;
+  background-color: #3c47b7;
+    opacity: .8;
+}
+
+.view-all-colls-control-box-cell ul li:hover{
+  opacity: 1;
+}
+
+.view-all-colls-control-box-cell ul li.on {
   background-color: white;
 }
 
-#view-all-colls-switcher li.on {
-  background-color: #e0e0e0;
+.view-all-colls-control-box-cell ul li .icon::before{
+  color: white;
 }
 
-#view-all-colls-switcher .icon:hover {
+.view-all-colls-control-box-cell ul li.on .icon::before{
+  color: #5463ff;
+}
+
+.view-all-colls-control-box-cell ul .icon:hover {
   cursor: pointer;
 }
 
@@ -557,7 +570,8 @@ a.hide-annot::before {
   display: table;
   width: 100%;
   border-top: 0;
-  margin: 10px 0;
+  /* margin: 10px 0; removed oct 29, 2015 mf8yk */
+  margin:0;
   border-color: transparent;
 }
 
@@ -2359,14 +2373,38 @@ button on video window
 
 
 /* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
-.page-collections .shanti-thumbnail-image a{ height:auto;}
+.page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}
+
+/* newer hacks oct 29, 2015 view-display-id-page_list */
+.page-collections .views-field-field-images{
+  display: inline-block;
+  float: left;
+}
+.page-collections .views-field-field-images::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.page-collections .views-field-field-images::before,
+.page-collections .views-field-field-images::after{
+  display: table;
+  content: " "
+}
+.page-collections .views-field-title{
+  margin-top: 2rem;
+}
+/* END temporary fix */
+
+
 
 
 .node-type-video #block-system-main{
   margin-top: 0;
 }
 
-.node-type-video.logged-in #block-system-main{
+.logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
 
@@ -2438,7 +2476,6 @@ button on video window
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-
 @media screen and (max-width: 767px) {
 
   .is-transcript-editing .avdesc{
@@ -2465,11 +2502,6 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
-@media screen and (min-width: 700px) {  
-
-
-}
-
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
@@ -2477,7 +2509,7 @@ button on video window
   }
 
   .view-collections #view-all-colls-switcher {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     margin-bottom: 1rem;
   }
 
@@ -2491,6 +2523,11 @@ button on video window
 
   .av-main-video-section {
     padding-right: 0;
+  }
+
+  
+  .logged-in .carousel-title {
+    font-size: 1.38em;
   }
 
   .logged-in .carousel .carousel-main-image{
@@ -2542,10 +2579,6 @@ button on video window
 
   .logged-in .carousel .carousel-main-content{
     width:55%;
-  }
-
-  .logged-in .carousel-title {
-    font-size: 1.12em;
   }
 
   .logged-in .carousel .byline {
