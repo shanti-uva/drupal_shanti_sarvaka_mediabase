@@ -557,7 +557,8 @@ a.hide-annot::before {
   display: table;
   width: 100%;
   border-top: 0;
-  margin: 10px 0;
+  /* margin: 10px 0; removed oct 29, 2015 mf8yk */
+  margin:0;
   border-color: transparent;
 }
 
