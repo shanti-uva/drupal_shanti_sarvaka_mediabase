@@ -2360,13 +2360,35 @@ button on video window
 
 /* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
 .page-collections .shanti-thumbnail-image a{ height:auto;}
+/* newer hacks oct 29, 2015 view-display-id-page_list */
+.page-collections .views-field-body{
+  min-height: 5rem;
+}
+.page-collections .views-field-field-images::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.page-collections .views-field-field-images::before,
+.page-collections .views-field-field-images::after{
+  display: table;
+  content: " "
+}
+.page-collections .views-field-title{
+  margin-top: 2rem;
+}
+/* END temporary fix */
+
+
 
 
 .node-type-video #block-system-main{
   margin-top: 0;
 }
 
-.node-type-video.logged-in #block-system-main{
+.logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
 
