@@ -2359,7 +2359,8 @@ button on video window
 
 
 /* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
-.page-collections .shanti-thumbnail-image a{ height:auto;}
+.page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}
+
 /* newer hacks oct 29, 2015 view-display-id-page_list */
 .page-collections .views-field-body{
   min-height: 5rem;
