@@ -9,8 +9,7 @@
 }
 
 .input-section .input-group input.form-control{
-  margin-top:9px;
-  float:none;
+  margin-top:-5px;
 }
 
 .input-section .input-group .input-group-btn{
@@ -36,12 +35,6 @@
 .input-section .input-group .input-group-btn .btn .glyphicon-chevron-right {
   position: relative;
   top: 4px;
-}
-
-
-.input-section .search-group .form-group{
-  position: relative;
-  top: -1.7rem;
 }
 
 .input-section .search-group .radio-inline {
