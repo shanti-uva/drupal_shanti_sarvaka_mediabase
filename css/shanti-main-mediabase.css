@@ -466,6 +466,10 @@ a.hide-annot::before {
   padding-bottom:10rem;
 }
 
+.view-collections .view-content{
+  margin-top:3rem;
+}
+
 .view-collections .collection-list-link {
   float: left;
   margin: 20px 10px 0 0;
@@ -583,6 +587,7 @@ a.hide-annot::before {
   display: table-cell;
   vertical-align: middle;
   margin: 0 -15px;
+  height:3rem;
 }
 
 .view-collections .view-all-colls-control-box .pager {
