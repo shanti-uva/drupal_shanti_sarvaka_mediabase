@@ -1,20 +1,20 @@
 /*---- BEGIN search flyout ---*/
-.input-section .search-group {
+/* .input-section .search-group {
   margin-top: -0.7rem;
   height: 8.75rem;
-}
+} */
 
 .extruder .input-section {
   height: 8.5rem;
 }
 
 .input-section .input-group input.form-control{
-  margin-top:-5px;
+  margin-top:5px;
 }
 
 .input-section .input-group .input-group-btn{
   position:absolute;
-  top:10px;
+  top:6px;
 }
 
 .input-section .input-group .btn.btn-default {
@@ -25,6 +25,10 @@
   margin-top: 0;
 }
 
+.input-section .form-item-search-block-form{
+  margin-top:0;
+}
+
 .advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
 .advanced-view .form-group:nth-of-type(2) { display: none;}
 
@@ -32,7 +36,7 @@
   display: none;
 }
 
-.input-section .input-group .input-group-btn .btn .glyphicon-chevron-right {
+.input-section .input-group-btn .glyphicon-chevron-right {
   position: relative;
   top: 0.3rem;
 }
@@ -55,10 +59,14 @@
   display: none;
 }
 
-.input-section .search-group .shanti-options .form-item {
+.input-section .shanti-options .form-item {
  /*width: 48%;*/
   margin-right: 1rem;
   float: left;
+}
+
+.input-section .form-radios .form-item{
+  margin-top:0.2rem;
 }
 
 .input-section .search-group .searchreset {
@@ -130,7 +138,9 @@
   left: 53px;
 }
 
-
+.input-section .form-group{
+  margin-bottom:10px;
+}
 
 .view-section .treeview h2 {
   font-size: 1.5em;
