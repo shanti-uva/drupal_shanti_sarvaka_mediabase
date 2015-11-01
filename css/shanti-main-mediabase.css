@@ -381,7 +381,6 @@ form#views-exposed-form-browse-media-home-block {
   padding: 0;
   margin: -1rem 0 0;
   width: ;
-  height: 2rem;
 }
 
 
@@ -2536,11 +2535,11 @@ button on video window
 
 @media screen and (min-width:599px) {
 
-  .shanti-filters .control-box-cell-filters.col-xs-6,
-  .shanti-filters .control-box-cell-header.col-xs-5 {
+  .shanti-filters .control-box-cell-filters,
+  .shanti-filters .control-box-cell-header {
     width: ;
   }
-  .shanti-filters .pagerer {
+  .shanti-filters table.pagerer {
     margin-left:2rem;
   }
 }
