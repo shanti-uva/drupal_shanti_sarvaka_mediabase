@@ -339,17 +339,17 @@ form#views-exposed-form-browse-media-home-block {
 */
 .shanti-filters .label {
   display:none;
-  /*color: #555;
-  font-size: 0.88em;
-  text-transform: uppercase;*/
+  color: #555;
+  font-size: 0.82em;
+  text-transform: uppercase;
 }
-/*
+
 .shanti-filters .count {
   font-size: 0.88em;
   margin-right: 2rem;
   text-transform: capitalize;
 }
-
+/*
 .shanti-filters .view-filters-mb .views-exposed-widget {
   position: relative;
   padding-right: 3rem;
