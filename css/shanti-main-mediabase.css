@@ -355,6 +355,12 @@ form#views-exposed-form-browse-media-home-block {
   padding-right: 3rem;
 }
 */
+
+.shanti-filters input.pagerer-page{
+  margin-top:-1rem;
+}
+
+
 .shanti-filters .ajax-progress {
   position: absolute;
   top: 1.35rem;
