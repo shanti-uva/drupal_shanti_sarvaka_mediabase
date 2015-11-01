@@ -260,15 +260,15 @@ form#views-exposed-form-browse-media-home-block {
   font-size: 1.75em;
   margin: 12px 0px 0px;
 }
-
+/*
 .page-list .shanti-view-dom-id .shanti-filters {
   margin-bottom: 1.75rem;
 }
 
-.page-list .shanti-view-dom-id .shanti-filters table td {
+.page-list .shanti-view-dom-id .shanti-filters div {
   padding: 0px;
 }
-
+*/
 .page-list .shanti-view-dom-id .view-media-by-kmap {
   margin-top: 16px;
 }
@@ -308,7 +308,7 @@ form#views-exposed-form-browse-media-home-block {
 }
 
 
-
+/*
 .shanti-filters {
   height: 2.5rem;
   margin-bottom: 2.5rem;
@@ -320,7 +320,7 @@ form#views-exposed-form-browse-media-home-block {
   top: -2rem;
 }
 
-.shanti-filters table {
+.shanti-filters div {
   float: right;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
@@ -329,22 +329,21 @@ form#views-exposed-form-browse-media-home-block {
   border-top: none;
 }
 
-.shanti-filters td {
+.shanti-filters div {
   white-space: nowrap;
 }
 
-.shanti-filters table td:nth-of-type(2) {
+.shanti-filters > div:nth-of-type(2) {
   width: 100%;
 }
-
-.shanti-filters td .label {
+*/
+.shanti-filters .label {
   color: #555;
   font-size: 0.88em;
   text-transform: uppercase;
-/*letter-spacing: -0.1rem;*/
 }
-
-.shanti-filters td .count {
+/*
+.shanti-filters .count {
   font-size: 0.88em;
   margin-right: 2rem;
   text-transform: capitalize;
@@ -354,9 +353,8 @@ form#views-exposed-form-browse-media-home-block {
   position: relative;
   padding-right: 3rem;
 }
-
+*/
 .shanti-filters .ajax-progress {
- /*display: inline;*/
   position: absolute;
   top: 1.35rem;
   right: 0;
@@ -2488,12 +2486,12 @@ button on video window
     padding-left: 0.5rem;
     margin-bottom:1.5rem;
   }
-
-  .shanti-filters table.pagerer {
+/*
+  .shanti-filters .pagerer {
     font-size: 75%;
     right: 0;
   }
-
+*/
   .shanti-filters .label {
     display: none;
   } 
