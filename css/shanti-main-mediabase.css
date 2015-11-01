@@ -367,7 +367,7 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-header {
   margin: 0.8rem 0 0 0;
-  padding: 0 0 0 2.5rem;
+  padding: 0;
   font-size: 0.93em;
   width: ;
   max-width: ;
@@ -380,8 +380,8 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-pager {
   padding: 0;
   margin: 0;
-  width: auto;
-  height: 5rem;
+  width: ;
+  height: 2rem;
 }
 
 
@@ -2572,22 +2572,18 @@ button on video window
 
 
 
-  .shanti-filters .control-box-cell-header.col-xs-5 {
+  .shanti-filters .control-box-cell-header {
     width: ;
     max-width: ;
-    padding-top: 0.7rem;
   }
 
   .shanti-filters .shanti-filters .control-box-cell-filters {
-    padding: 0;
     width: ;
     max-width: ;
   }
 
   .shanti-filters .control-box-cell-pager {
     float: right;
-    left: 1rem;
-    right: 0;
   }
 
 
@@ -2629,7 +2625,7 @@ button on video window
 @media screen and (min-width: 992px) {
 
   .shanti-filters .control-box-cell-filters {
-    margin-top: 0.5rem;
+    
   }
 
   .shanti-filters .control-box-cell-header {
@@ -2638,6 +2634,7 @@ button on video window
 
   .shanti-filters .label {
     display:inline;
+    color:#555;
   }
 
 
