@@ -360,6 +360,36 @@ form#views-exposed-form-browse-media-home-block {
   right: 0;
 }
 
+.shanti-filters .control-box .ajax-progress {
+  display: none;
+}
+
+.shanti-filters .control-box-cell-header {
+  margin: 0.8rem 0 0 0;
+  padding: 0 0 0 2.5rem;
+  font-size: 0.93em;
+  width: 54%;
+  max-width: 54%;
+}
+
+.shanti-filters .control-box-cell-filters {
+  margin: 0 auto;
+}
+
+.shanti-filters .control-box-cell-pager {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 5rem;
+  position: relative;
+  top: 0;
+  right: 1rem;
+  float: left;
+}
+
+
+
+
 
 
 .navbar nav.navtop .block h2 {
@@ -2505,6 +2535,21 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
+
+
+@media screen and (min-width:599px) {
+
+  .shanti-filters .control-box-cell-filters.col-xs-6,
+  .shanti-filters .control-box-cell-header.col-xs-5 {
+    width: 100% !important;
+  }
+  .shanti-filters .pagerer {
+    margin-left:2rem;
+  }
+}
+
+
+
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
@@ -2527,6 +2572,29 @@ button on video window
   .av-main-video-section {
     padding-right: 0;
   }
+
+
+
+  .shanti-filters .control-box-cell-header.col-xs-5 {
+    width: 28% !important;
+    max-width: 28% !important;
+    padding-top: 0.7rem;
+  }
+
+  .shanti-filters .shanti-filters .control-box-cell-filters {
+    padding: 0;
+    width: 37%;
+    max-width: 37%;
+  }
+
+  .shanti-filters .control-box-cell-pager {
+    float: right;
+    left: 1rem;
+    right: 0;
+  }
+
+
+
 
   
   .logged-in .carousel-title {
@@ -2562,6 +2630,14 @@ button on video window
 } 
 
 @media screen and (min-width: 992px) {
+
+  .shanti-filters .control-box-cell-filters {
+    margin-top: 0.5rem;
+  }
+
+  .shanti-filters .control-box-cell-header {
+    font-size: 1em;
+  }
 
   .video-overview {
     padding-left: 5px !important;
