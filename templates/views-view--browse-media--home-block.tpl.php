@@ -31,28 +31,25 @@
 	<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
 	<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
 		<div class="shanti-filters clearfix">
-		  	<table>
-				    <tr>
-				    		<td>
-				    			<?php print $header; ?>
-				    		</td>
-				        <td>
-				        	<?php if ($exposed): ?>
-			              <div class="view-filters-mb">
-			                <?php print $exposed; ?>
-			              </div>
-			            <?php endif;?>
-				        </td>
+		  	<div class="col-xs-5">
+				<?php print $header; ?>
+			</div>
+		    
+		    <div class="col-xs-6 col-md-4">
+			   <?php if ($exposed): ?>
+			      <div class="view-filters-mb">
+			         <?php print $exposed; ?>
+			      </div>
+			   <?php endif;?>
+		    </div>
 				        
-							<?php if ($rows && $pager): ?>
-				        <td>
-				            <?php print $pager; ?>
-				        </td>
-				      
-							<?php endif; ?>
-				    </tr>
-				</table>
-		</div>
+			<?php if ($rows && $pager): ?>
+		    <div class="col-xs-12 col-md-4">
+			   <?php print $pager; ?>
+		    </div>	      
+	        <?php endif; ?>
+		</div>	        
+	</div>
 	
 	<div class="<?php print $classes; ?>">
 	  <?php print render($title_prefix); ?>
