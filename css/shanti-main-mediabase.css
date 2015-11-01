@@ -368,8 +368,8 @@ form#views-exposed-form-browse-media-home-block {
   margin: 0.8rem 0 0 0;
   padding: 0 0 0 2.5rem;
   font-size: 0.93em;
-  width: 54%;
-  max-width: 54%;
+  width: ;
+  max-width: ;
 }
 
 .shanti-filters .control-box-cell-filters {
@@ -381,10 +381,6 @@ form#views-exposed-form-browse-media-home-block {
   margin: 0;
   width: auto;
   height: 5rem;
-  position: relative;
-  top: 0;
-  right: 1rem;
-  float: left;
 }
 
 
@@ -2541,7 +2537,7 @@ button on video window
 
   .shanti-filters .control-box-cell-filters.col-xs-6,
   .shanti-filters .control-box-cell-header.col-xs-5 {
-    width: 100% !important;
+    width: ;
   }
   .shanti-filters .pagerer {
     margin-left:2rem;
@@ -2576,15 +2572,15 @@ button on video window
 
 
   .shanti-filters .control-box-cell-header.col-xs-5 {
-    width: 28% !important;
-    max-width: 28% !important;
+    width: ;
+    max-width: ;
     padding-top: 0.7rem;
   }
 
   .shanti-filters .shanti-filters .control-box-cell-filters {
     padding: 0;
-    width: 37%;
-    max-width: 37%;
+    width: ;
+    max-width: ;
   }
 
   .shanti-filters .control-box-cell-pager {
@@ -2638,6 +2634,9 @@ button on video window
   .shanti-filters .control-box-cell-header {
     font-size: 1em;
   }
+
+
+
 
   .video-overview {
     padding-left: 5px !important;
