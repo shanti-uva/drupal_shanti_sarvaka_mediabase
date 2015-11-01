@@ -338,9 +338,10 @@ form#views-exposed-form-browse-media-home-block {
 }
 */
 .shanti-filters .label {
-  color: #555;
+  display:none;
+  /*color: #555;
   font-size: 0.88em;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
 }
 /*
 .shanti-filters .count {
@@ -2635,7 +2636,9 @@ button on video window
     font-size: 1em;
   }
 
-
+  .shanti-filters .label {
+    display:inline;
+  }
 
 
   .video-overview {
