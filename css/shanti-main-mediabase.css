@@ -2539,6 +2539,10 @@ button on video window
     padding-left: 0.5rem;
     margin-bottom:1.5rem;
   }
+
+  .nav-justified>li.active::before{
+    border-color: transparent !important;
+  }
 }
 
 /***** END max-width *****/
