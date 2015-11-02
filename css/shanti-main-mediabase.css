@@ -2507,7 +2507,7 @@ button on video window
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 499px) {
 
   .shanti-filters table.pagerer {
     margin-top: 1rem;
