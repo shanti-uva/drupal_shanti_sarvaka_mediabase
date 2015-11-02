@@ -383,7 +383,9 @@ form#views-exposed-form-browse-media-home-block {
   width: ;
 }
 
-
+.shanti-filters table.pagerer {
+  margin-top: -1rem;
+}
 
 
 
@@ -2537,9 +2539,6 @@ button on video window
   .shanti-filters .control-box-cell-header {
     width: ;
   }
-  .shanti-filters table.pagerer {
-    margin: 2rem 0 0 2rem;
-  }
 }
 
 
@@ -2567,7 +2566,9 @@ button on video window
     padding-right: 0;
   }
 
-
+  .shanti-filters table.pagerer {
+    margin: 2rem 0 0;
+  }
 
   .shanti-filters .control-box-cell-header {
     width: ;
