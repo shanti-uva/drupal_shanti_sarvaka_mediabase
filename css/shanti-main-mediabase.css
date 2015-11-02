@@ -2,14 +2,14 @@
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
-.nav-justified>li.active a,
-.nav-justified>li.active a:hover,
-.nav-justified>li.active a:active {
+.node-type-video .nav-justified>li.active a,
+.node-type-video .nav-justified>li.active a:hover,
+.node-type-video .nav-justified>li.active a:active {
   background-color: #2fbebc !important;
 }
 
 .navbar-brand:hover .site-slogan,
-.nav-justified>li.active::before,
+.node-type-video .nav-justified>li.active::before,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
@@ -2540,8 +2540,8 @@ button on video window
     margin-bottom:1.5rem;
   }
 
-  .nav-justified>li.active::before{
-    border-color: transparent !important;
+  .node-type-video .nav-justified>li.active::before{
+    color: transparent !important;
   }
 }
 
