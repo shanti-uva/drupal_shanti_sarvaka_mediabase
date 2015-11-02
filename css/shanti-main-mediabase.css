@@ -2525,6 +2525,12 @@ button on video window
   .shanti-filters .label{
     display:none;
   }
+
+  .control-box-cell-header,
+  .control-box-cell-filters,
+  .control-box-cell-pager{
+    width:100%;
+  }
 }  
 
 @media screen and (max-width: 767px) {
