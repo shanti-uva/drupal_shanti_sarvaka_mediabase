@@ -377,6 +377,14 @@ form#views-exposed-form-browse-media-home-block {
   margin: 0 auto;
 }
 
+.shanti-filters .control-box-cell-filters .views-exposed-form .form-item{
+  margin-right: 1rem;
+}
+
+.shanti-filters .control-box-cell-filters .view-filters-mb{
+  margin-right:0;
+}
+
 .shanti-filters .control-box-cell-pager {
   padding: 0;
   margin: -1rem 0 0;
@@ -2505,6 +2513,13 @@ button on video window
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
+@media screen and (max-width: 600px) {
+
+  .shanti-filters .control-box-cell-pager{
+    margin-top:2.5rem;
+  }
+}  
+
 @media screen and (max-width: 767px) {
 
   .is-transcript-editing .avdesc{
