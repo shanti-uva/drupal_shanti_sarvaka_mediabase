@@ -2518,8 +2518,8 @@ button on video window
 
 @media screen and (max-width: 599px) {
 
-  .shanti-filters .control-box-cell-pager{
-    /*margin-top:2.5rem;*/
+  .shanti-filters table.pagerer{
+    margin-top:-1rem;
   }
 
   .shanti-filters .label{
