@@ -338,23 +338,15 @@ form#views-exposed-form-browse-media-home-block {
 }
 */
 .shanti-filters .label {
-  display:none;
   color: #555;
-  font-size: 0.82em;
   text-transform: uppercase;
 }
 
 .shanti-filters .count {
-  font-size: 0.88em;
   margin-right: 2rem;
   text-transform: capitalize;
 }
-/*
-.shanti-filters .view-filters-mb .views-exposed-widget {
-  position: relative;
-  padding-right: 3rem;
-}
-*/
+
 .shanti-filters .ajax-progress {
   position: absolute;
   top: 1.35rem;
@@ -2527,15 +2519,6 @@ button on video window
     padding-left: 0.5rem;
     margin-bottom:1.5rem;
   }
-/*
-  .shanti-filters .pagerer {
-    font-size: 75%;
-    right: 0;
-  }
-*/
-  .shanti-filters .label {
-    display: none;
-  } 
 }
 
 /***** END max-width *****/
@@ -2652,7 +2635,6 @@ button on video window
     display:inline;
     color:#555;
   }
-
 
   .video-overview {
     padding-left: 5px !important;
