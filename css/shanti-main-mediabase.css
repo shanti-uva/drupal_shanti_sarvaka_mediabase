@@ -2510,8 +2510,8 @@ button on video window
 @media screen and (max-width: 499px) {
 
   .shanti-filters table.pagerer {
-    margin-top: 1rem;
-    float:left;
+    margin-top: 1rem !important;
+    float:left !important;
   }
 } 
 
@@ -2528,7 +2528,7 @@ button on video window
   .control-box-cell-header,
   .control-box-cell-filters,
   .control-box-cell-pager{
-    width:100%;
+    width:100% !important;
   }
 }  
 
@@ -2606,10 +2606,6 @@ button on video window
     float: right;
   }
 
-
-
-
-  
   .logged-in .carousel-title {
     font-size: 1.38em;
   }
