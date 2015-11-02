@@ -2540,7 +2540,7 @@ button on video window
     width: ;
   }
   .shanti-filters table.pagerer {
-    margin-left:2rem;
+    margin: 2rem 0 0 2rem;
   }
 }
 
@@ -2629,6 +2629,8 @@ button on video window
 
   .shanti-filters .control-box-cell-header {
     font-size: 1em;
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
   }
 
   .shanti-filters .label {
