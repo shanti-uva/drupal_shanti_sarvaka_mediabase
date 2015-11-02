@@ -2507,7 +2507,7 @@ button on video window
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 
   .shanti-filters .control-box-cell-pager{
     margin-top:2.5rem;
