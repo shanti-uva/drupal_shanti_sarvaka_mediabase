@@ -2511,7 +2511,6 @@ button on video window
 
   .shanti-filters table.pagerer {
     margin-top: 1rem;
-    width:100%;
     float:left;
   }
 } 
@@ -2519,7 +2518,7 @@ button on video window
 @media screen and (max-width: 599px) {
 
   .shanti-filters table.pagerer{
-    margin-top:-1rem;
+    margin-top:-5.2rem;
   }
 
   .shanti-filters .label{
