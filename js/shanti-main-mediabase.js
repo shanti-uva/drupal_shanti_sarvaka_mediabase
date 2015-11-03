@@ -111,6 +111,13 @@
 					}
 				}
 	
+
+		// --- unhiding shanti-filters: inline styles keeps the default dropdown from flashing onLoad before the bootstrap-select script/css loads
+	Drupal.behaviors.shantiFiltersOnLoadFlickerControl = {
+	  attach: function (context, settings) {
+			$('.control-box-cell-filters")').show( "fast" );
+	  }
+	};
 				// Description Trimming
 				/* This makes there be multiple "Show More"s on Dreams page
 					Could perhaps use } else { if needed for other situations
