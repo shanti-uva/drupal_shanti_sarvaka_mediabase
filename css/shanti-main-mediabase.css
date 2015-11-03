@@ -337,6 +337,11 @@ form#views-exposed-form-browse-media-home-block {
   width: 100%;
 }
 */
+.shanti-filters .label,
+.shanti-filters .label{
+  font-size:0.88em;
+}
+
 .shanti-filters .label {
   color: #555;
   text-transform: uppercase;
@@ -360,9 +365,6 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-header {
   margin: 0.8rem 0 0 0;
   padding: 0;
-  font-size: 0.93em;
-  width: ;
-  max-width: ;
 }
 
 .shanti-filters .control-box-cell-filters {
@@ -2387,22 +2389,6 @@ button on video window
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
 .page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}
 
@@ -2438,16 +2424,6 @@ button on video window
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
-
-/*--- homepage white space above carousel 
-.front #block-system-main.block.block-system{
-  margin-top:0 !important;
-} ---*/
-
-
-
-
-
 
 
 
@@ -2553,17 +2529,9 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
-
-
 @media screen and (min-width:599px) {
 
-  .shanti-filters .control-box-cell-filters,
-  .shanti-filters .control-box-cell-header {
-    width: ;
-  }
 }
-
-
 
 @media screen and (min-width: 768px) {
   .view-collections .view-result-count-info {
@@ -2640,19 +2608,9 @@ button on video window
 
 @media screen and (min-width: 992px) {
 
-  .shanti-filters .control-box-cell-filters {
-    
-  }
-
   .shanti-filters .control-box-cell-header {
-    font-size: 1em;
     padding-top: 0.25rem;
     padding-left: 0.25rem;
-  }
-
-  .shanti-filters .label {
-    display:inline;
-    color:#555;
   }
 
   .video-overview {
