@@ -337,19 +337,17 @@ form#views-exposed-form-browse-media-home-block {
   width: 100%;
 }
 */
-.shanti-filters .label,
-.shanti-filters .label{
-  font-size:0.88em;
-}
 
 .shanti-filters .label {
   color: #555;
   text-transform: uppercase;
+  font-size:0.82em;
 }
 
 .shanti-filters .count {
   margin-right: 2rem;
   text-transform: capitalize;
+  font-size:0.88em;
 }
 
 .shanti-filters .ajax-progress {
