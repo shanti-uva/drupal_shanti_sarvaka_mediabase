@@ -1137,6 +1137,10 @@ ul.links.inline {
   border-bottom-color:transparent;
 }
 
+.speaker-tiers .tier[data-tier="content_bod"]{
+  font-size:1.6rem;
+}
+
 
 
 
