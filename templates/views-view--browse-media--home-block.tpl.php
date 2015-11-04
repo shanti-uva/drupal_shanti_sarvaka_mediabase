@@ -28,76 +28,75 @@
  */
 ?>
 
-	<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
-	<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
-		<div class="shanti-filters clearfix">
-		  	<div class="control-box-cell-header col-xs-12 col-sm-12 col-md-4">
-				<?php print $header; ?>
-			</div>
-		    
-		    <div class="control-box-cell-filters col-xs-6 col-sm-6 col-md-4" style="display:none;">
-			   <?php if ($exposed): ?>
-			      <div class="view-filters-mb">
-			         <?php print $exposed; ?>
-			      </div>
-			   <?php endif;?>
-		    </div>
-				        
-			<?php if ($rows && $pager): ?>
-		    <div class="control-box-cell-pager col-xs-6 col-sm-6 col-md-4">
-			   <?php print $pager; ?>
-		    </div>	      
-	        <?php endif; ?>
-		</div>	        
-	</div>
+<?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
+<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
+	<div class="shanti-filters clearfix">
+		<div class="control-box-cell-header col-xs-12 col-sm-12 col-md-4">
+			<?php print $header; ?>
+		</div>
+		
+		<div class="control-box-cell-filters col-xs-6 col-sm-6 col-md-4" style="display:none;">
+			<?php if ($exposed): ?>
+				<div class="view-filters-mb">
+				<?php print $exposed; ?>
+				</div>
+			<?php endif;?>
+		</div>
+		
+		<?php if ($rows && $pager): ?>
+			<div class="control-box-cell-pager col-xs-6 col-sm-6 col-md-4">
+				<?php print $pager; ?>
+			</div>	      
+		<?php endif; ?>
+	</div>	   
 	
 	<div class="<?php print $classes; ?>">
-	  <?php print render($title_prefix); ?>
-	  <?php if ($title): ?>
-	    <?php print $title; ?>
-	  <?php endif; ?>
-	  <?php print render($title_suffix); ?>
-	
-	  <?php if ($attachment_before): ?>
-	    <div class="attachment attachment-before">
-	      <?php print $attachment_before; ?>
-	    </div>
-	  <?php endif; ?>
-	
-	  <?php if ($rows): ?>
-		    <div class="view-content">
-		    	<ul class="shanti-gallery">
-		      	<?php print $rows;  ?>
-		      </ul>
-		    </div>
-	
-	  <?php elseif ($empty): ?>
-	    <div class="view-empty">
-	      <?php print $empty; ?>
-	    </div>
-	  <?php endif; ?>
-	
-	  <?php if ($attachment_after): ?>
-	    <div class="attachment attachment-after">
-	      <?php print $attachment_after; ?>
-	    </div>
-	  <?php endif; ?>
-	
-	  <?php if ($more): ?>
-	    <?php print $more; ?>
-	  <?php endif; ?>
-	
-	  <?php if ($footer): ?>
-	    <div class="view-footer">
-	      <?php print $footer; ?>
-	    </div>
-	  <?php endif; ?>
-	
-	  <?php if ($feed_icon): ?>
-	    <div class="feed-icon">
-	      <?php print $feed_icon; ?>
-	    </div>
-	  <?php endif; ?>
+		<?php print render($title_prefix); ?>
+		<?php if ($title): ?>
+			<?php print $title; ?>
+		<?php endif; ?>
+		<?php print render($title_suffix); ?>
+		
+		<?php if ($attachment_before): ?>
+			<div class="attachment attachment-before">
+				<?php print $attachment_before; ?>
+			</div>
+		<?php endif; ?>
+		
+		<?php if ($rows): ?>
+			<div class="view-content">
+				<ul class="shanti-gallery">
+					<?php print $rows;  ?>
+				</ul>
+			</div>
+		
+		<?php elseif ($empty): ?>
+			<div class="view-empty">
+				<?php print $empty; ?>
+			</div>
+		<?php endif; ?>
+		
+		<?php if ($attachment_after): ?>
+			<div class="attachment attachment-after">
+				<?php print $attachment_after; ?>
+			</div>
+		<?php endif; ?>
+		
+		<?php if ($more): ?>
+			<?php print $more; ?>
+		<?php endif; ?>
+		
+		<?php if ($footer): ?>
+			<div class="view-footer">
+				<?php print $footer; ?>
+			</div>
+		<?php endif; ?>
+		
+		<?php if ($feed_icon): ?>
+			<div class="feed-icon">
+				<?php print $feed_icon; ?>
+			</div>
+		<?php endif; ?>
 	
 	</div><?php /* class view */ ?>
 	
