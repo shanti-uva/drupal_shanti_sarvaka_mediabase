@@ -2,6 +2,9 @@
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
+.node-type-audio .nav-justified>li.active a,
+.node-type-audio .nav-justified>li.active a:hover,
+.node-type-audio .nav-justified>li.active a:active,
 .node-type-video .nav-justified>li.active a,
 .node-type-video .nav-justified>li.active a:hover,
 .node-type-video .nav-justified>li.active a:active {
@@ -9,6 +12,7 @@
 }
 
 .navbar-brand:hover .site-slogan,
+.node-type-audio .nav-justified>li.active::before,
 .node-type-video .nav-justified>li.active::before,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
@@ -2417,16 +2421,17 @@ button on video window
 
 
 
-
+.node-type-audio #block-system-main,
 .node-type-video #block-system-main{
   margin-top: 0;
 }
 
+.logged-in.node-type-audio #block-system-main,
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
 
-
+.node-type-audio .tab-pane.main-col.active,
 .node-type-video .tab-pane.main-col.active{
  margin-left: 1.5rem;
 }
@@ -2516,7 +2521,7 @@ button on video window
     padding-left: 0.5rem;
     margin-bottom:1.5rem;
   }
-
+  .node-type-audio .nav-justified>li.active::before,
   .node-type-video .nav-justified>li.active::before{
     color: transparent !important;
   }
