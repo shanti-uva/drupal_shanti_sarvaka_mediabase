@@ -1821,7 +1821,7 @@ ul.links.inline {
 
 .transcript-navigate-results .btn .icon {
   font-family: 'shanticon';
-  color: #aaa;
+  color: #ddd;
   position: absolute;
   right: 0;
   top: 0.8rem;
@@ -1832,11 +1832,15 @@ ul.links.inline {
   font-size: 1.75rem;
 }
 
-.transcript-navigate-results .btn:hover .icon{
+.has-searched .transcript-navigate-results .btn .icon{
+   color: #aaa;
+}
+
+.has-searched .transcript-navigate-results .btn:hover .icon{
   color:#777;
 }
 
-.transcript-navigate-results .btn.nextresult .icon::before {
+.has-searched .transcript-navigate-results .btn.nextresult .icon::before {
   content: '\e605';
 }
 
