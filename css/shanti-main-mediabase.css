@@ -2427,7 +2427,9 @@ button on video window
 }
 
 
-
+.node-type-video .tab-pane.main-col.active{
+ margin-left: 1.5rem;
+}
 
 .no-sidebars.node-type-audio .tab-pane.main-col > div,
 .no-sidebars.node-type-video .tab-pane.main-col > div{
