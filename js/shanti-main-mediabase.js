@@ -144,9 +144,10 @@
 		// --- unhiding shanti-filters: inline styles keeps the default dropdown from flashing onLoad before the bootstrap-select script/css loads
 	Drupal.behaviors.shantiFiltersOnLoadFlickerControl = {
 	  	attach: function (context, settings) {
-	  		if(context == window.document) {
-				$(".front .control-box-cell-filters").show( "fast" );
-			}	
+	  		$(".front .control-box-cell-filters").show( "fast" );
+	  		if ($.trim($(".control-box-cell-header").html()) == '') {
+	  			$(".control-box-cell-header").html('<span class="label">Recent Additions</span> (No matches)');
+	  		}
 	    }
 	};
 
