@@ -1813,7 +1813,6 @@ ul.links.inline {
   top: 1rem;
   -webkit-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
-  display: none;
 }
 
 .transcript-navigate-results .btn .icon {
