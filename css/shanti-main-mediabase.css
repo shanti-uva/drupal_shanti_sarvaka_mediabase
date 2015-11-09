@@ -36,7 +36,7 @@
   color: #444 !important;
 }
 /*--- END colors ---*/
-
+.front .main-content{ margin-bottom:5rem;}
 
 
 /* sidebar search results sorting list */
@@ -2434,8 +2434,6 @@ button on video window
 .no-sidebars.node-type-video .tab-pane.main-col > div{
   max-width: 100% !important;
 }
-
-
 
 
 
