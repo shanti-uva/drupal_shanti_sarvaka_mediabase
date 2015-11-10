@@ -1830,15 +1830,18 @@ ul.links.inline {
 }
 
 .transcript-navigate-results .btn .icon::before,
-.transcript-navigate-results .btn:hover .icon::before{
+.transcript-navigate-results .btn:hover .icon::before,
+.transcript-navigate-results .btn:active .icon::before{
   color: #ddd;
+  background: transparent;
 }
 
 .has-searched .transcript-navigate-results .btn .icon:before{
    color: #aaa;
 }
 
-.has-searched .transcript-navigate-results .btn:hover .icon{
+.has-searched .transcript-navigate-results .btn:hover .icon,
+.has-searched .transcript-navigate-results .btn:active .icon{
   color:#777;
 }
 
