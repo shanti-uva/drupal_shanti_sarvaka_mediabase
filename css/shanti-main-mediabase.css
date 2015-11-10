@@ -1657,12 +1657,12 @@ ul.links.inline {
   font-size:18px;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
-  content: '\e080';
-}
-
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon.fa-spinner{
   color: transparent;
+  font-family:'FontAwesome';
+  position: relative;
+  top:0;
+  left:0;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
@@ -1674,6 +1674,9 @@ ul.links.inline {
   animation: fa-spin 1s infinite steps(8);
 }
 
+.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
+  content: '\e080';
+}
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner::before {
   content: '\f110';
