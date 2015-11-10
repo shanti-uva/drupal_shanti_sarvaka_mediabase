@@ -1661,17 +1661,30 @@ ul.links.inline {
   content: '\e080';
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon::before {
-  content: '\f110';
-  font-family:'FontAwesome';
-  color:#555;
+.transcript-search-wrapper .input-group-btn .btn.btn-default .icon.fa-spinner{
+  color: transparent;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
+.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  left: -2.7rem;
+  top:0.8rem;
+  color: #aaa;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
+
+
+.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner::before {
+  content: '\f110';
+  font-family:'FontAwesome';
+}
+
+
 /*
 @-moz-document url-prefix() {
   .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon {
@@ -1822,12 +1835,12 @@ ul.links.inline {
   font-family: 'shanticon';
   background: transparent;
   font-size: 1.75rem;
+  line-height: 3rem;
   position: absolute;
-  top:-0.8rem;
-  left:0.45rem;
-  width: 3rem;
-  height: 3rem;
-  color:#ddd;
+  right: 0.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  color: #ddd;
 }
 
 .transcript-navigate-results .btn:hover,
