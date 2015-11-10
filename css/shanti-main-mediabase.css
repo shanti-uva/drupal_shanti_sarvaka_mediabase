@@ -1829,11 +1829,14 @@ ul.links.inline {
   height: 3rem;
 }
 
-.transcript-navigate-results .btn .icon::before,
+.transcript-navigate-results .btn:hover,
+.transcript-navigate-results .btn:active{
+  background: #fff;
+}
+
 .transcript-navigate-results .btn:hover .icon::before,
 .transcript-navigate-results .btn:active .icon::before{
   color: #ddd;
-  background: #fff;
 }
 
 .has-searched .transcript-navigate-results .btn .icon:before{
