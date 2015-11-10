@@ -1887,7 +1887,8 @@ ul.links.inline {
 .has-searched .transcript-navigate-results div:last-child {
   display: block;
   position: relative;
-  top:-1rem;
+  top:0;
+  left:0.5rem;
 }
 
 .has-searched .transcript-navigate-results div:last-child > span{
