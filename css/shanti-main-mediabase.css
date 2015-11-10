@@ -1807,9 +1807,10 @@ ul.links.inline {
 
 .transcript-navigate-results .btn.nextresult,
 .transcript-navigate-results .btn.previousresult {
-  width: 4rem;
-  height: 4rem;
-  background: #fff;
+  width: 3rem;
+  height: 3.7rem;
+  display: inline-block;
+  position: relative;
   border: 1px solid #ddd;
   margin: 1rem 0 0 1rem;
   box-shadow: none;
@@ -1819,20 +1820,21 @@ ul.links.inline {
 
 .transcript-navigate-results .btn .icon {
   font-family: 'shanticon';
-  color: #ddd;
   background: transparent;
   font-size: 1.75rem;
+  position: absolute;
+  top:-0.8rem;
+  left:0.45rem;
+  width: 3rem;
+  height: 3rem;
 }
 
-.transcript-navigate-results .btn .icon::before{
+.transcript-navigate-results .btn .icon::before,
+.transcript-navigate-results .btn:hover .icon::before{
   color: #ddd;
 }
 
-.transcript-navigate-results .btn:hover .icon::before{
-  color: #aaa;
-}
-
-.has-searched .transcript-navigate-results .btn .icon{
+.has-searched .transcript-navigate-results .btn .icon:before{
    color: #aaa;
 }
 
