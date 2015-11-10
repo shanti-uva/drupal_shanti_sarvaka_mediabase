@@ -1820,7 +1820,7 @@ ul.links.inline {
 
 .transcript-navigate-results .btn .icon {
   font-family: 'shanticon';
-  background: transparent;
+  background: #fff;
   font-size: 1.75rem;
   position: absolute;
   top:-0.8rem;
@@ -1833,7 +1833,7 @@ ul.links.inline {
 .transcript-navigate-results .btn:hover .icon::before,
 .transcript-navigate-results .btn:active .icon::before{
   color: #ddd;
-  background: transparent;
+  background: #fff;
 }
 
 .has-searched .transcript-navigate-results .btn .icon:before{
