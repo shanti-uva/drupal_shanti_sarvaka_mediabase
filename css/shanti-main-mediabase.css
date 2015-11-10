@@ -1666,12 +1666,8 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
-  position: absolute;
   width: 2rem;
   height: 2rem;
-  display: inline-block;
-  left: -2.7rem;
-  top:0.8rem;
   color: #aaa;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
@@ -1842,6 +1838,7 @@ ul.links.inline {
   width: 3.6rem;
   height: 3.6rem;
   color: #ddd;
+  cursor:'arrow';
 }
 
 .transcript-navigate-results .btn:hover,
@@ -1856,6 +1853,7 @@ ul.links.inline {
 
 .has-searched .transcript-navigate-results .btn .icon{
    color: #aaa;
+   cursor:'pointer';
 }
 
 .has-searched .transcript-navigate-results .btn:hover .icon,
