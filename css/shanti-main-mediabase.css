@@ -954,7 +954,7 @@ ul.links.inline {
 .transcript-content li {
   /* border: 3px double #fff;
   border-style: solid double; */
-  border-radius: 10px;
+  border-radius: 8px;
   background-clip: padding-box;
   border: 1px solid #ddd;
   padding:1rem 1rem 0;
