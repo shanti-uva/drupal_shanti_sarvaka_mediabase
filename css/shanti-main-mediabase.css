@@ -1664,11 +1664,11 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon.fa-spinner{
   color: transparent;
   font-family:'FontAwesome';
-  /*position: absolute;
-  top:-1rem;
-  left:-1rem;
+  position: absolute;
+  top:1rem;
+  left:-4rem;
   width:2rem;
-  height:2rem;*/
+  height:2rem;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
