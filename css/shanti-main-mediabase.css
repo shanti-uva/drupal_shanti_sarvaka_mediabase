@@ -1145,7 +1145,11 @@ ul.links.inline {
   font-size:1.06em;
 }
 
-
+.speaker-tiers .tier mark{
+  color: blue;
+  background: yellow;
+  background: rgba(255, 255, 0, 0.73);
+}
 
 
 /*----------------------------*/
@@ -1660,9 +1664,11 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon.fa-spinner{
   color: transparent;
   font-family:'FontAwesome';
-  position: relative;
+  position: absolute;
   top:0;
   left:0;
+  width:2rem;
+  height:2rem;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
