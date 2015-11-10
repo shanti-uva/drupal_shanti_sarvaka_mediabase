@@ -1820,13 +1820,14 @@ ul.links.inline {
 
 .transcript-navigate-results .btn .icon {
   font-family: 'shanticon';
-  background: #fff;
+  background: transparent;
   font-size: 1.75rem;
   position: absolute;
   top:-0.8rem;
   left:0.45rem;
   width: 3rem;
   height: 3rem;
+  color:#ddd;
 }
 
 .transcript-navigate-results .btn:hover,
@@ -1834,12 +1835,12 @@ ul.links.inline {
   background: #fff;
 }
 
-.transcript-navigate-results .btn:hover .icon::before,
-.transcript-navigate-results .btn:active .icon::before{
+.transcript-navigate-results .btn:hover .icon,
+.transcript-navigate-results .btn:active .icon{
   color: #ddd;
 }
 
-.has-searched .transcript-navigate-results .btn .icon:before{
+.has-searched .transcript-navigate-results .btn .icon{
    color: #aaa;
 }
 
