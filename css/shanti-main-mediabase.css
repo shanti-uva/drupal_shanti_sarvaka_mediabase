@@ -1807,14 +1807,12 @@ ul.links.inline {
 
 .transcript-navigate-results .btn.nextresult,
 .transcript-navigate-results .btn.previousresult {
-  width: auto;
-  height: 3.6rem;
+  width: 4rem;
+  height: 4rem;
   background: #fff;
   border: 1px solid #ddd;
-  margin: 0 0 0 4%;
+  margin: 1rem 0 0 4%;
   box-shadow: none;
-  position: relative;
-  top: 1rem;
   -webkit-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
 }
@@ -1822,12 +1820,6 @@ ul.links.inline {
 .transcript-navigate-results .btn .icon {
   font-family: 'shanticon';
   color: #ddd;
-  position: absolute;
-  right: 0;
-  top: 0.8rem;
-  padding: 0;
-  line-height: 1;
-  width: auto;
   background: transparent;
   font-size: 1.75rem;
 }
