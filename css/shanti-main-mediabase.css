@@ -1838,7 +1838,7 @@ ul.links.inline {
   width: 3.6rem;
   height: 3.6rem;
   color: #ddd;
-  cursor:'default';
+  cursor:default;
 }
 
 .transcript-navigate-results .btn:hover,
@@ -1853,7 +1853,7 @@ ul.links.inline {
 
 .has-searched .transcript-navigate-results .btn .icon{
    color: #aaa;
-   cursor:'pointer';
+   cursor:pointer;
 }
 
 .has-searched .transcript-navigate-results .btn:hover .icon,
