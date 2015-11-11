@@ -1886,6 +1886,13 @@ ul.links.inline {
  /* display: none; */
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s;
+
+  display: block;
+  position: relative;
+  top:0;
+  left:0.5rem;
+
+  color: #777;
 }
 
 .has-searched .transcript-search-options label,
@@ -1893,6 +1900,7 @@ ul.links.inline {
   display: inline-block;
 }
 
+/*
 .has-searched .transcript-navigate-results div:last-child {
   display: block;
   position: relative;
@@ -1903,6 +1911,7 @@ ul.links.inline {
 .has-searched .transcript-navigate-results div:last-child > span{
   color: #777;
 }
+*/
 
 /*--- search results window ---*/
 .transcript-search-result .btn.btn-primary {
