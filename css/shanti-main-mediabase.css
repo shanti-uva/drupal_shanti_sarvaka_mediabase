@@ -1817,6 +1817,11 @@ ul.links.inline {
   margin-right: .5rem;
   position: relative;
   top: -0.2rem;
+  cursor: default;
+}
+
+.transcript-search-options .iradio_minimal-red:hover{
+  background-position: -100px 0;
 }
 
 .transcript-navigate-results {
