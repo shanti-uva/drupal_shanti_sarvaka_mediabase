@@ -1806,8 +1806,11 @@ ul.links.inline {
  /* display: none; */
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s;
+  cursor:default;
+}
 
-  
+.has-searched .transcript-search-options label{
+  cursor: pointer;
 }
 
 .transcript-search-options .iradio_minimal-red{
