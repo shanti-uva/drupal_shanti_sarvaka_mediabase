@@ -1860,13 +1860,13 @@ ul.links.inline {
   color: #ddd;
 }
 
-.has-searched .transcript-navigate-results .btn.has-result .icon{
+.transcript-navigate-results .btn.has-result .icon{
    color: #aaa;
    cursor:pointer;
 }
 
-.has-searched .transcript-navigate-results .btn:hover .icon,
-.has-searched .transcript-navigate-results .btn:active .icon{
+.transcript-navigate-results .btn.has-result:hover .icon,
+.transcript-navigate-results .btn.has-result:active .icon{
   color:#777;
 }
 
