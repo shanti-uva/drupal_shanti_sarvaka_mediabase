@@ -1824,6 +1824,18 @@ ul.links.inline {
   background-position: -100px 0;
 }
 
+.transcript-search-options .iradio_minimal-red.checked:hover{
+  background-position: -140px 0;
+}
+
+.has-searched .transcript-search-options .iradio_minimal-red:hover{
+  background-position: -120px 0;
+}
+
+.has-searched .transcript-search-options .iradio_minimal-red.checked:hover{
+  background-position: -140px 0;
+}
+
 .transcript-navigate-results {
   float: left;
   width: 25%;
