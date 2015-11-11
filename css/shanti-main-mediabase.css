@@ -1860,7 +1860,7 @@ ul.links.inline {
   color: #ddd;
 }
 
-.has-searched .transcript-navigate-results .btn .icon{
+.has-searched .transcript-navigate-results .btn.has-result .icon{
    color: #aaa;
    cursor:pointer;
 }
