@@ -1616,6 +1616,8 @@ ul.links.inline {
   right: 0.3rem;
   top: 0.3rem;
   color: #ddd;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .transcript-search-wrapper .shanticon-close2:hover,
