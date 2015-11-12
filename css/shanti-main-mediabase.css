@@ -1804,6 +1804,10 @@ ul.links.inline {
   display:block;
 }
 
+.has-searched.no-results .transcript-search-options{
+  display:none;
+}
+
 .transcript-search-options label {
   font-size: 90%;
   text-transform: capitalize;
