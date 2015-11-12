@@ -1797,6 +1797,11 @@ ul.links.inline {
   margin: 0 0 0 1rem;
   position:relative;
   top: 5.2rem;
+  display:none;
+}
+
+.has-searched .transcript-search-options{
+  display:block;
 }
 
 .transcript-search-options label {
@@ -1809,31 +1814,10 @@ ul.links.inline {
   cursor:default;
 }
 
-.has-searched .transcript-search-options label{
-  cursor: pointer;
-}
-
 .transcript-search-options .iradio_minimal-red{
   margin-right: .5rem;
   position: relative;
   top: -0.2rem;
-  cursor: default;
-}
-
-.transcript-search-options .iradio_minimal-red:hover{
-  background-position: -100px 0;
-}
-
-.transcript-search-options .iradio_minimal-red.checked:hover{
-  background-position: -140px 0;
-}
-
-.has-searched .transcript-search-options .iradio_minimal-red:hover{
-  background-position: -120px 0;
-}
-
-.has-searched .transcript-search-options .iradio_minimal-red.checked:hover{
-  background-position: -140px 0;
 }
 
 .transcript-navigate-results {
@@ -2101,10 +2085,8 @@ ul.links.inline {
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
 
-/* this removes the 'shim' above videos 
-.kaltura-embed > div > div:first-of-type{
-  display:none;
-} */
+
+
 
 /* this adds black band on top of video */
 .kaltura-embed > div{
