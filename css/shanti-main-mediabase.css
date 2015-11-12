@@ -1617,8 +1617,8 @@ ul.links.inline {
 
 .transcript-search-wrapper .shanticon-close2{
   position: absolute;
-  right: 0.3rem;
-  top: 0.3rem;
+  right: 0.1rem;
+  top: 0.2rem;
   color: #ddd;
   display: inline-block;
   cursor: pointer;
@@ -2144,7 +2144,7 @@ object.KalturaDynamicPlayer {
 */
 
 .av-main-video-section {
-  padding-right: 1.5rem;
+  padding-right: 3.5rem;
 }
 
 .is-transcript-editing .av-main-video-section,
