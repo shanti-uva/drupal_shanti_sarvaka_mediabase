@@ -1847,6 +1847,7 @@ ul.links.inline {
   float: left;
   width: 25%;
   padding: 0;
+  min-width: 100px;
 }
 
 .transcript-navigate-results > div {
