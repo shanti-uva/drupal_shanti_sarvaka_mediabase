@@ -752,6 +752,10 @@ a.hide-annot::before {
   display: inline-block;
 }
 
+.node .content .field-label-inline{
+  line-height: 2.7rem;
+}
+
 .node .content .mb-identifier label, 
 .node .content .field-label-inline .field-label-span {
   color: #333;
