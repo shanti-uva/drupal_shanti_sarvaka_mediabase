@@ -1611,6 +1611,18 @@ ul.links.inline {
   border-collapse: separate;
 }
 
+.transcript-search-wrapper .shanticon-close2{
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  color: #ddd;
+}
+
+.transcript-search-wrapper .shanticon-close2:hover,
+.transcript-search-wrapper .shanticon-close2:active{
+  color: #ccc;
+}
+
 .transcript-search-wrapper .input-group-btn {
   position: absolute;
   top: 1.1rem;
