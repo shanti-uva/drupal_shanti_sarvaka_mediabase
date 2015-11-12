@@ -2102,7 +2102,9 @@ ul.links.inline {
 /*------------------------------*/
 
 
-
+.kaltura-embed > div > div:first-of-type{
+  display:none;
+}
 
 /* this adds black band on top of video */
 .kaltura-embed > div{
