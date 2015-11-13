@@ -2140,7 +2140,8 @@ ul.links.inline {
 }
 
 /* overide "mediabase-edit-form.css" */
-.field-multiple-table .field-type-field-collection input.form-text.form-control{
+.field-multiple-table .field-type-field-collection input.form-text.form-control,
+.field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
 }
 
@@ -2176,13 +2177,20 @@ div#node_video_form_group_details > .panel-body > div{
 
 .kmap_search_button{
   background-color: #5b68ce;
-  color:#eee;
+  color: #eee;
+  display: inline-block;
+  padding: 0.35rem 1.2rem 0.2rem;
+  border-radius: .3rem; 
+  border: 1px solid #777;
+  font-family:'museo-sans-500', helvetica, sans-serif;
+  font-size:0.93em;
 }
 
 
 .kmap_search_button:hover,
 .kmap_search_button:active{
   background: #4850bd;
+  border-color:#4850bd;
   color:#fff;
 }
 /*------------------------------*/
