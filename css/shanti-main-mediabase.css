@@ -2152,8 +2152,12 @@ object.KalturaDynamicPlayer {
 }
 */
 
+.av-main-transcript-section{
+  padding-right:2rem;
+}
+
 .av-main-video-section {
-  padding-right: 3.5rem;
+  /*padding-right: 3.5rem;*/
 }
 
 .is-transcript-editing .av-main-video-section,
