@@ -1694,19 +1694,25 @@ color: #fff;
 */
 
 .transcript-search-wrapper .input-group-btn .icon.spinner{
-  color: transparent;
   font-family:'FontAwesome';
   position: absolute;
   top:1rem;
   left:-4rem;
   width:2rem;
   height:2rem;
+
+background: grey;
+width: 2.5rem;
+height: 2.5rem;
+position: absolute;
+right: 12rem;
+top: 0.6rem;
+z-index: 100;
+color: red;
 }
 
 .transcript-search-wrapper .input-group-btn .icon.spinner {
-  /*width: 2rem;
-  height: 2rem;
-  color: #aaa;*/
+  
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
@@ -1719,6 +1725,7 @@ color: #fff;
 .transcript-search-wrapper .input-group-btn .icon.spinner::before {
   content: '\f110';
   font-family:'FontAwesome';
+  color: red;
 }
 
 
