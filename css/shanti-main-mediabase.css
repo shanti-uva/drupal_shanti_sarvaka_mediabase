@@ -1682,50 +1682,31 @@ ul.links.inline {
   font-size:18px;
 }
 
-
-/*
-background: grey;
-width: 2.5rem;
-height: 2.5rem;
-position: absolute;
-right: 5rem;
-top: 0.6rem;
-color: #fff;
-*/
-
-.transcript-search-wrapper .input-group-btn .icon.spinner{
-  font-family:'FontAwesome';
-  position: absolute;
-  top:1rem;
-  left:-4rem;
-  width:2rem;
-  height:2rem;
-
-background: grey;
-width: 2.5rem;
-height: 2.5rem;
-position: absolute;
-right: 12rem;
-top: 0.6rem;
-z-index: 100;
-color: red;
+.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
+  content: '\e080';
 }
 
-.transcript-search-wrapper .input-group-btn .icon.spinner {
-  
+.transcript-search-wrapper .input-group-btn .icon.spinner{
+  position: absolute;
+  top: 0.5rem;
+  right: 5.1rem;
+  padding: 0;
+  z-index: 1000;
+  width: 2.5rem;
+  height: 2.5rem;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
-  content: '\e080';
-}
-
 .transcript-search-wrapper .input-group-btn .icon.spinner::before {
   content: '\f110';
-  font-family:'FontAwesome';
-  color: red;
+  font-family: 'FontAwesome';
+  font-size: 3rem;
+  color: #999;
+  position: relative;
+  top: -0.2rem;
+  right: 0rem;
 }
 
 
