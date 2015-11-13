@@ -1688,8 +1688,8 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .icon.spinner{
   position: absolute;
-  top: 0.5rem;
-  right: 5.1rem;
+  top: 0.55rem;
+  right: 5.125rem;
   padding: 0;
   z-index: 10;
   width: 2.5rem;
@@ -1751,7 +1751,7 @@ ul.links.inline {
   background-image: none;
   position: absolute;
   right: 5rem;
-  top: 1rem;
+  top: 0.45rem;
   z-index: 10;
   padding: 0;
   margin: 0;
@@ -1781,7 +1781,7 @@ ul.links.inline {
   background-clip: padding-box;
   border: none;
   position: relative;
-  top: -0.55rem;
+  top: 0;
   left: 0;
   background: transparent;
 }
