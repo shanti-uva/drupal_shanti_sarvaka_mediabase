@@ -1704,10 +1704,16 @@ color: #fff;
 }
 
 .transcript-search-wrapper .input-group-btn .icon.spinner {
-  color: #aaa;
+  /*width: 2rem;
+  height: 2rem;
+  color: #aaa;*/
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
+}
+
+.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
+  content: '\e080';
 }
 
 .transcript-search-wrapper .input-group-btn .icon.spinner::before {
