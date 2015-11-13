@@ -2150,6 +2150,14 @@ div.btn-group.bootstrap-select.form-control.form-select.ss-select{
   margin-top: -0.7rem;
 }
 
+div#node_video_form_group_details > .panel-body{
+  padding-top:.2rem;
+}
+
+div#node_video_form_group_details > .panel-body > div{
+  margin: 12px 0px;
+}
+
 
 
 .form-item.form-type-textfield label{
