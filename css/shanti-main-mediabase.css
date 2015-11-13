@@ -1691,7 +1691,7 @@ ul.links.inline {
   top: 0.5rem;
   right: 5.1rem;
   padding: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 2.5rem;
   height: 2.5rem;
   -webkit-filter: blur(0);
@@ -1703,12 +1703,15 @@ ul.links.inline {
   content: '\f110';
   font-family: 'FontAwesome';
   font-size: 3rem;
-  color: #999;
+  color: transparent;
   position: relative;
   top: -0.2rem;
   right: 0rem;
 }
 
+.searching .transcript-search-wrapper .input-group-btn .icon.spinner::before{
+  color:#999;
+}
 
 /*
 @-moz-document url-prefix() {
@@ -1792,9 +1795,15 @@ ul.links.inline {
   width: 1.7rem;
   height: 1px;
   content: '';
+  opacity:1;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.searching .transcript-search-wrapper .input-group-btn .searchreset .icon::before,
+.searching .transcript-search-wrapper .input-group-btn .searchreset .icon::after{
+  opacity:0;
 }
 
 .transcript-search-wrapper .input-group-btn .searchreset .icon::after {
