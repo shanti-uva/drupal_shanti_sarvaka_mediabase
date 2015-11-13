@@ -1854,10 +1854,8 @@ ul.links.inline {
 }
 
 .transcript-navigate-results {
-  float: left;
   width: 25%;
   padding: 0;
-  min-width: 110px;
 }
 
 .transcript-navigate-results > div {
@@ -1871,7 +1869,7 @@ ul.links.inline {
   display: inline-block;
   position: relative;
   border: 1px solid #ddd;
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 0.5rem;
   box-shadow: none;
   -webkit-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
