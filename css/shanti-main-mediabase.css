@@ -1120,6 +1120,7 @@ ul.links.inline {
 .transcript-content .speaker-tiers {
   margin-left: 35%;
   padding-left: 1rem;
+  padding-bottom: 0.5rem;
   border-left: 1px solid #eee;
 }
 
@@ -1619,6 +1620,7 @@ ul.links.inline {
   position: absolute;
   right: 0.3rem;
   top: 0.2rem;
+  z-index: 1;
   color: #ddd;
   display: inline-block;
   cursor: pointer;
