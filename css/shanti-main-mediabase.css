@@ -2118,8 +2118,13 @@ ul.links.inline {
   color: #eee;
   border: 1px solid #ddd;
   padding: 0.2rem 1rem 0.1rem 0.65rem;
-  background-color: #5a65d1;
+  background-color: #5b68ce; #5a65d1;
   border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.selected-kmap:hover{
+  color: #fff;
+  background: #4850bd;
 }
 
 .selected-kmap .shanticon-close2:before{
@@ -2132,6 +2137,7 @@ ul.links.inline {
 .selected-kmap:hover .shanticon-close2:before{
   color: #fff;
 }
+
 
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
