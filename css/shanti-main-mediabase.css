@@ -192,10 +192,11 @@
 }
 
 
+
+
 /*---------------------------*/
 /***** REVIEW STYLES *********/
 /*---------------------------*/
-
 /* Revive point on last breadcrumb when search result replace node */
 .breadwrap .breadcrumb li:last-child a.revive-pointer:hover {
   cursor: pointer !important;
@@ -2443,7 +2444,7 @@ a.tabledrag-toggle-weight {
 .video-overview-title {
   margin-bottom: 0.25em;
   text-transform: uppercase;
-  font-size: 0.88em;
+  font-size: 1em;
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
   font-weight: bold;
   font-weight: 700;
@@ -2463,6 +2464,11 @@ a.tabledrag-toggle-weight {
 .avsubjects,
 .avplace {
   margin-top: 10px;
+}
+
+.avplace,
+.avcollection{
+  font-size: 1.12em;
 }
 
 .avsubjects .field-items-span,
