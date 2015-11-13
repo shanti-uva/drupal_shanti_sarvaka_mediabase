@@ -1151,9 +1151,8 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier mark{
-  color: blue;
-  background: yellow;
-  background: rgba(255, 255, 0, 0.73);
+  background: rgb(255, 252, 200); /* yellow highlight */
+  background: rgba(255, 255, 0, 0.2);
 }
 
 
