@@ -2120,7 +2120,6 @@ ul.links.inline {
   padding: 0.2rem 1rem 0.1rem 0.62rem;
   background-color: #5b68ce;
   border-radius: 1.2rem 0 0 1.2rem;
-  border-right: 3px double #fff;
 }
 
 .selected-kmap:hover{
