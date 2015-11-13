@@ -2118,7 +2118,7 @@ ul.links.inline {
   color: #eee;
   border: 1px solid #ddd;
   padding: 0.2rem 1rem 0.1rem 0.65rem;
-  background-color: #5b68ce; #5a65d1;
+  background-color: #5b68ce;
   border-radius: 1.2rem 0 0 1.2rem;
 }
 
@@ -2138,7 +2138,44 @@ ul.links.inline {
   color: #fff;
 }
 
+/* override style from "mediabase-edit-form.css" */
+.field-multiple-table .field-type-field-collection input.form-text.form-control{
+  max-width: 90% !important;
+}
 
+/* alignment: lift the dropdown */
+/* override style from "mediabase-edit-form.css" */
+div.btn-group.bootstrap-select.form-control.form-select.ss-select{
+  margin-top: -0.7rem;
+}
+
+
+
+.form-item.form-type-textfield label{
+  font-size: 0.93em;
+  margin-bottom:5px;
+  display:block;
+}
+
+.form-item.form-type-textfield input.form-text, 
+.form-item.form-type-textfield input.form-control{
+  font-size: 1em;
+  line-height: 1.12em;
+  display:inline-block;
+  margin-right:0.5rem;
+}
+
+.kmap_search_button{
+  background-color: #5b68ce;
+  color:#eee;
+}
+
+
+.kmap_search_button:hover,
+.kmap_search_button:active{
+  background: #4850bd;
+  color:#fff;
+}
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
