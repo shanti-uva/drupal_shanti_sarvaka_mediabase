@@ -2112,6 +2112,27 @@ ul.links.inline {
   line-height: 1.62em;
 }
 
+
+/* search-labels used for transcript edit admin */
+.selected-kmap{
+  color: #eee;
+  border: 1px solid #ddd;
+  padding: 0.2rem 1rem 0.1rem 0.65rem;
+  background-color: #5b68ce;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.selected-kmap .shanticon-close2:before{
+  color: #eee;
+  top: 0.15rem;
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.selected-kmap .shanticon-close2:hover:before{
+  color: #fff;
+}
+
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
