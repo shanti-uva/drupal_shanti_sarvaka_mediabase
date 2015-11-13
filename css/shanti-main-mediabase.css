@@ -1706,11 +1706,11 @@ ul.links.inline {
   color: transparent;
   position: relative;
   top: -0.2rem;
-  right: 0rem;
+  right: 0.05rem;
 }
 
 .transcript-search-wrapper .searching .input-group-btn .icon.spinner::before{
-  color:#999;
+  color:#ccc;
 }
 
 /*
