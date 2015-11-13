@@ -1590,7 +1590,7 @@ ul.links.inline {
   height: 2.5em;
   margin: 0 2rem 0.3rem 2rem;
   padding: 0.2rem 4rem 0 2rem;
-  max-width: 90%;
+  max-width: 88%;
   position: absolute;
   right:0;
   top: 1rem;
@@ -1682,7 +1682,18 @@ ul.links.inline {
   font-size:18px;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default .icon.fa-spinner{
+
+/*
+background: grey;
+width: 2.5rem;
+height: 2.5rem;
+position: absolute;
+right: 5rem;
+top: 0.6rem;
+color: #fff;
+*/
+
+.transcript-search-wrapper .input-group-btn .icon.spinner{
   color: transparent;
   font-family:'FontAwesome';
   position: absolute;
@@ -1692,20 +1703,14 @@ ul.links.inline {
   height:2rem;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner {
-  width: 2rem;
-  height: 2rem;
+.transcript-search-wrapper .input-group-btn .icon.spinner {
   color: #aaa;
   -webkit-filter: blur(0);
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default .icon::before {
-  content: '\e080';
-}
-
-.transcript-search-wrapper .input-group-btn .btn.btn-default.progress-disabled .icon.fa-spinner::before {
+.transcript-search-wrapper .input-group-btn .icon.spinner::before {
   content: '\f110';
   font-family:'FontAwesome';
 }
@@ -1849,7 +1854,7 @@ ul.links.inline {
   float: left;
   width: 25%;
   padding: 0;
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .transcript-navigate-results > div {
