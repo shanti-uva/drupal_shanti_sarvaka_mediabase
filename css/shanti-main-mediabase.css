@@ -1709,7 +1709,7 @@ ul.links.inline {
   right: 0rem;
 }
 
-.searching .transcript-search-wrapper .input-group-btn .icon.spinner::before{
+.transcript-search-wrapper .searching .input-group-btn .icon.spinner::before{
   color:#999;
 }
 
@@ -1801,8 +1801,8 @@ ul.links.inline {
   transform: rotate(45deg);
 }
 
-.searching .transcript-search-wrapper .input-group-btn .searchreset .icon::before,
-.searching .transcript-search-wrapper .input-group-btn .searchreset .icon::after{
+.transcript-search-wrapper .searching .input-group-btn .searchreset .icon::before,
+.transcript-search-wrapper .searching .input-group-btn .searchreset .icon::after{
   opacity:0;
 }
 
