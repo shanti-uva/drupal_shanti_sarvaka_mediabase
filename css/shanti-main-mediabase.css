@@ -2212,6 +2212,10 @@ fieldset.form-wrapper .f-set{
   clear: both;
 }
 
+.mb-av-form{
+  margin-right: 1.5rem;
+}
+
 .mb-av-form .kaltura_field_thumb::after{
   content: 'Remove';
   color: #777;
