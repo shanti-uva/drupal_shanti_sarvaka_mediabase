@@ -2289,6 +2289,7 @@ ul.links.inline {
 
 .kaltura-thumb-wrap {
   clear: none;
+  display: inline-block;
 }
 
 .views-table .kaltura-thumb img {
