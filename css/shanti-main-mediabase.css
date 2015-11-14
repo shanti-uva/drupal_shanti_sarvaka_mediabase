@@ -1621,7 +1621,7 @@ ul.links.inline {
   position: absolute;
   right: 0.7rem;
   top: -5.5rem;
-  z-index: 1000;
+  z-index: 1;
   color: #ddd;
   display: inline-block;
   cursor: pointer;
@@ -1632,6 +1632,10 @@ ul.links.inline {
 .transcript-search-wrapper .shanticon-close2:hover,
 .transcript-search-wrapper .shanticon-close2:active{
   color: #ccc;
+}
+
+.transcript-search-wrapper .shanticon-close2:before{
+  content: "X";
 }
 
 .transcript-search-wrapper .input-group-btn {
