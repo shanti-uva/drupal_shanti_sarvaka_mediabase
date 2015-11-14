@@ -2233,7 +2233,7 @@ fieldset.form-wrapper .f-set{
   font-weight: bold;
 }
 
-.field-video-add-more-wrapper p{
+.mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
   max-width: 40rem !important;
   display: inline-block;
 }
