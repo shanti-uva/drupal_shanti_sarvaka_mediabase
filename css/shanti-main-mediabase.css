@@ -2215,10 +2215,11 @@ ul.links.inline {
   margin-bottom:0;
   font-size: 0.93em;
   display:block;
+  margin-left:1rem;
 }
 
-.group-rights .form-type-textfield label, .field-name-field-workflow .form-item.form-type-select label, .field-type-field-collection .form-item.form-type-select label{
-  margin-left:1rem;
+.field-type-field-collection .form-item.form-type-select label{
+  margin-left:2rem;
 }
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
