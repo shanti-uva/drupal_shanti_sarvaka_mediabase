@@ -2194,6 +2194,10 @@ ul.links.inline {
   margin:1rem;
 }
 
+.form-item.form-item-field-video-und-0-settings-default-settings-entry-widget{
+  margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
+}
+
 .node-video-form .panel-body{
   padding-top:1rem;
 }
