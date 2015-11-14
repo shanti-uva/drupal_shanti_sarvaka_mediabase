@@ -2305,6 +2305,9 @@ object.KalturaDynamicPlayer {
   width: 100% !important;
 }
 
+fieldset.form-wrapper .f-set{
+  border:none; /* video node edit page */
+}
 
 /* this is in iframe and thus does nothing
 .videoHolder{
