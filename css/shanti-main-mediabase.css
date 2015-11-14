@@ -2119,6 +2119,12 @@ ul.links.inline {
 }
 
 
+
+
+/********************/
+/* .node-video-form */
+/********************/
+
 /* search-labels used for transcript edit admin */
 .selected-kmap{
   color: #eee;
@@ -2146,25 +2152,13 @@ ul.links.inline {
   color: #fff;
 }
 
+
+
 /* overide "mediabase-edit-form.css" */
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
   position: relative;
   top: -0.3rem;
-}
-
-/* alignment: lift the dropdown */
-/* overide "mediabase-edit-form.css" */
-.field-multiple-table div.btn-group.bootstrap-select.form-control.form-select.ss-select{
-  /*margin-top: -0.7rem;*/
-}
-
-.field-multiple-table .panel-body{
-  padding-top: 0.2rem;
-}
-
-.field-multiple-table .panel-body > div{
-  margin: 12px 0px;
 }
 
 .form-item.form-type-textfield input.form-text, 
@@ -2185,12 +2179,19 @@ ul.links.inline {
   font-size:0.93em;
 }
 
-
 .kmap_search_button:hover,
 .kmap_search_button:active{
   background: #4850bd;
   border-color:#4850bd;
   color:#fff;
+}
+
+.node-video-form .panel-body{
+  padding-top:0;
+}
+
+.field-multiple-table .panel-body > div{
+  margin: 12px 0px;
 }
 
 .resizable-textarea .grippie{
@@ -2226,8 +2227,9 @@ ul.links.inline {
   margin-top:1rem;
 }
 
-.node-video-form .panel-body{
-  padding-top:0;
+.node-video-form .icon.shanticon-create{
+  font-size: 1.8rem;
+  color: #777;
 }
 
 /*------------------------------*/
