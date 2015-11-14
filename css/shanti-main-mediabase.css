@@ -2186,6 +2186,10 @@ ul.links.inline {
   color:#fff;
 }
 
+.node-video-form .form-item{
+  margin:0;
+}
+
 .node-video-form .panel-body{
   padding-top:1rem;
 }
