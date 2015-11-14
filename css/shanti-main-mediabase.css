@@ -2194,13 +2194,15 @@ ul.links.inline {
   margin:1rem;
 }
 
-.form-item.form-item-field-video-und-0-settings-default-settings-entry-widget{
+.form-item-field-video-und-0-settings-default-settings-entry-widget{
   margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
 }
 
+#edit-field-video-und-0-button{
+  clear: both;
+}
 
-
-.mb-av-form div.kaltura_field_thumb::after{
+.mb-av-form .kaltura_field_thumb::after{
   content: 'Remove';
   color: #777;
   display: inline-block;
