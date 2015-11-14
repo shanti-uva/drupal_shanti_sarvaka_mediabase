@@ -2195,6 +2195,24 @@ div#node_video_form_group_details > .panel-body > div{
   border-color:#4850bd;
   color:#fff;
 }
+
+
+
+.group-rights .form-type-textfield, 
+.field-name-field-workflow .field-widget-options-select, 
+.field-type-field-collection .field-widget-options-select{
+  padding-left:1.5rem;
+}
+
+.group-rights .form-type-textfield label, 
+.field-name-field-workflow .form-item.form-type-select label, 
+.field-type-field-collection .form-item.form-type-select label{
+  padding: 3px 0px 6px 0px;
+}
+
+.field-multiple-table .btn-sm.btn-icon.btn-delete{
+  margin-top:1rem;
+}
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
