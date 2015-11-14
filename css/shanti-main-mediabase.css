@@ -2142,9 +2142,10 @@ ul.links.inline {
 }
 
 /* overide "mediabase-edit-form.css" */
-.field-multiple-table .field-type-field-collection input.form-text.form-control,
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
+  position: relative;
+  top: -0.3rem;
 }
 
 /* alignment: lift the dropdown */
@@ -2196,7 +2197,9 @@ div.btn-group.bootstrap-select.form-control.form-select.ss-select{
   color:#fff;
 }
 
-
+.resizable-textarea .grippie{
+  margin-bottom:2rem; /* for margin space below adjustable text area */
+}
 
 .group-rights .form-type-textfield, 
 .field-name-field-workflow .field-widget-options-select, 
@@ -2219,6 +2222,7 @@ div.btn-group.bootstrap-select.form-control.form-select.ss-select{
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
+
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
