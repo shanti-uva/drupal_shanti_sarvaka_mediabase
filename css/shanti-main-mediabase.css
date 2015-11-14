@@ -2135,7 +2135,7 @@ ul.links.inline {
   background-color: #5b68ce;
   border-radius: 1.2rem 0 0 1.2rem;
 
-
+  cursor:pointer;
   background-color: #777;
 }
 
@@ -2143,6 +2143,7 @@ ul.links.inline {
   color: #fff;
   background: #4850bd;
 
+  cursor:pointer;
   background-color: #555;
 }
 
