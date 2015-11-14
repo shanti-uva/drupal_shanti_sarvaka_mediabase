@@ -2190,6 +2190,10 @@ ul.links.inline {
   margin:0;
 }
 
+.node-video-form .fieldset-wrapper .form-item{
+  margin:1rem;
+}
+
 .node-video-form .panel-body{
   padding-top:1rem;
 }
