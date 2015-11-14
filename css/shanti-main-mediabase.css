@@ -2210,6 +2210,12 @@ div.btn-group.bootstrap-select.form-control.form-select.ss-select{
   padding: 3px 0px 6px 0px;
 }
 
+.group-rights .form-type-textfield, 
+.field-name-field-workflow .field-widget-options-select, 
+.field-type-field-collection .field-widget-options-select{
+  padding-top:1.5rem;
+}
+
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
