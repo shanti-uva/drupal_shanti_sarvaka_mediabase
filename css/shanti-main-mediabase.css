@@ -2215,13 +2215,19 @@ ul.links.inline {
 .group-rights .form-type-textfield, 
 .field-name-field-workflow .field-widget-options-select, 
 .field-type-field-collection .field-widget-options-select{
-  padding-top:1.5rem;
+  padding-top:0;
 }
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
 
+
+.group-rights .form-type-textfield label, 
+.field-name-field-workflow .form-item.form-type-select label, 
+.field-type-field-collection .form-item.form-type-select label{
+  margin-bottom:0;
+}
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
