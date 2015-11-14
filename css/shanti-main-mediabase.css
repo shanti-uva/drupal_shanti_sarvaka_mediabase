@@ -2198,11 +2198,9 @@ ul.links.inline {
   margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
 }
 
-.mb-av-form .field-accordion:first-child .panel-body{
-  padding-top:2rem;
-}
 
-div.kaltura_field_thumb::after{
+
+.mb-av-form div.kaltura_field_thumb::after{
   content: 'Remove';
   color: #777;
   display: inline-block;
@@ -2215,11 +2213,18 @@ div.kaltura_field_thumb::after{
   font-weight: bold;
 }
 
+.field-video-add-more-wrapper p{
+  max-width: 40rem;
+  display: inline-block;
+}
 
 
-
-.node-video-form .panel-body{
+.mb-av-form .field-accordion .panel-body{
   padding-top:1rem;
+}
+
+.mb-av-form .field-accordion:first-child .panel-body{
+  padding-top:2rem;
 }
 
 .field-multiple-table .panel-body > div{
