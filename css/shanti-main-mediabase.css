@@ -2201,7 +2201,7 @@ ul.links.inline {
 .field-type-field-collection .field-widget-text-textfield,
 .field-name-field-workflow .field-widget-options-select, 
 .field-type-field-collection .field-widget-options-select{
-  padding-top:0;
+  padding-bottom: 1.5rem;
 }
 
 .field-type-field-collection .form-type-textfield{
