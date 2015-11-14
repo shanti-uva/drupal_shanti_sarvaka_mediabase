@@ -2198,6 +2198,26 @@ ul.links.inline {
   margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
 }
 
+.mb-av-form .field-accordion:first-child .panel-body{
+  padding-top:2rem;
+}
+
+div.kaltura_field_thumb::after{
+  content: 'Remove';
+  color: #777;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: -0.6rem;
+  font-family: arial, sans-serif;
+  height: 40px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+
+
+
 .node-video-form .panel-body{
   padding-top:1rem;
 }
