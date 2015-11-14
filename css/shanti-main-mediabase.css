@@ -1223,12 +1223,13 @@ ul.links.inline {
 }
 .tcu-info .editable-submit,
 .speaker-tiers .editable-submit{
-  float:right;
+  float: right;
   font-size: 0.62em;
   line-height: 1.62em;
-  padding-top:0.62em;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-top: 0.5em;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 .tcu-info .editable-container.editable-inline .glyphicon-ok::before,
 .speaker-tiers .editable-container.editable-inline .glyphicon-ok::before{
