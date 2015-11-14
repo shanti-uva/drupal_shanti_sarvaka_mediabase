@@ -2187,7 +2187,7 @@ ul.links.inline {
 }
 
 .node-video-form .panel-body{
-  padding-top:0;
+  padding-top:1rem;
 }
 
 .field-multiple-table .panel-body > div{
