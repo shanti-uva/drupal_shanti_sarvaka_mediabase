@@ -2220,7 +2220,7 @@ fieldset.form-wrapper .f-set{
 }
 
 .field-video-add-more-wrapper p{
-  max-width: 40rem;
+  max-width: 40rem !important;
   display: inline-block;
 }
 
