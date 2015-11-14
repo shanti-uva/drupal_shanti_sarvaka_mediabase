@@ -2205,10 +2205,14 @@ ul.links.inline {
 .field-type-field-collection .form-type-textfield label, 
 .field-name-field-workflow .form-item.form-type-select label, 
 .field-type-field-collection .form-item.form-type-select label{
-  padding: 3px 0px 6px 0px;
+  padding: 3px 0px 6px 10px;
   margin-bottom:0;
   font-size: 0.93em;
   display:block;
+}
+
+.group-rights .form-type-textfield label, .field-name-field-workflow .form-item.form-type-select label, .field-type-field-collection .form-item.form-type-select label{
+  margin-left:1rem;
 }
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
