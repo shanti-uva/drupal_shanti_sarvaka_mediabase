@@ -999,7 +999,7 @@ ul.links.inline {
   background-image: none;
   background: #fff;
   border-radius: 0;
-  height: 5.88em;
+  height: 7rem;
   border: 1px solid #ddd;
   width: 100%;
   /*position: relative;
@@ -1383,7 +1383,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-icon {
   display: table-cell;
   width: 16.66%;
-  height: 4.56em;
+  height: 7rem;
 }
 
 .btn-group-transcript .btn.btn-icon span {
@@ -1415,7 +1415,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon.playpause {
   font-size: 1em;
-  height: 4em;
+  height: 7rem;
 }
 
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
