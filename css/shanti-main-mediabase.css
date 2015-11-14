@@ -2216,6 +2216,10 @@ fieldset.form-wrapper .f-set{
   margin-right: 1.5rem;
 }
 
+.mb-av-form table.field-multiple-table {
+  margin-bottom: 0;
+}
+
 .mb-av-form .kaltura_field_thumb::after{
   content: 'Remove';
   color: #777;
