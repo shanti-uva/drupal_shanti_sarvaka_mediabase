@@ -2161,20 +2161,11 @@ ul.links.inline {
   margin: 12px 0px;
 }
 
-
-
-.form-item.form-type-textfield label{
-  font-size: 0.93em;
-  margin-bottom:5px;
-  display:block;
-}
-
 .form-item.form-type-textfield input.form-text, 
 .form-item.form-type-textfield input.form-control{
   font-size: 1em;
   line-height: 1.12em;
   display:inline-block;
-  margin-right:0.5rem;
 }
 
 .kmap_search_button{
@@ -2205,28 +2196,25 @@ ul.links.inline {
 .field-name-field-workflow .field-widget-options-select, 
 .field-type-field-collection .field-widget-options-select{
   padding-top:0;
-  padding-left:1.5rem;
-  width:30%;
 }
 
-.group-rights .form-type-textfield label, 
+.field-type-field-collection .form-type-textfield{
+  display:inline-block;
+}
+
+.field-type-field-collection .form-type-textfield label, 
 .field-name-field-workflow .form-item.form-type-select label, 
 .field-type-field-collection .form-item.form-type-select label{
   padding: 3px 0px 6px 0px;
+  margin-bottom:0;
+  font-size: 0.93em;
+  display:block;
 }
-
-
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
 
-
-.group-rights .form-type-textfield label, 
-.field-name-field-workflow .form-item.form-type-select label, 
-.field-type-field-collection .form-item.form-type-select label{
-  margin-bottom:0;
-}
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
