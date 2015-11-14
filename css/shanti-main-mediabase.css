@@ -2201,9 +2201,12 @@ ul.links.inline {
 }
 
 .group-rights .form-type-textfield, 
+.field-type-field-collection .field-widget-text-textfield,
 .field-name-field-workflow .field-widget-options-select, 
 .field-type-field-collection .field-widget-options-select{
+  padding-top:0;
   padding-left:1.5rem;
+  width:30%;
 }
 
 .group-rights .form-type-textfield label, 
@@ -2212,11 +2215,7 @@ ul.links.inline {
   padding: 3px 0px 6px 0px;
 }
 
-.group-rights .form-type-textfield, 
-.field-name-field-workflow .field-widget-options-select, 
-.field-type-field-collection .field-widget-options-select{
-  padding-top:0;
-}
+
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
