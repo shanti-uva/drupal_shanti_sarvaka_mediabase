@@ -1618,13 +1618,14 @@ ul.links.inline {
 
 .transcript-search-wrapper .shanticon-close2{
   position: absolute;
-  right: 0.3rem;
-  top: 0.2rem;
-  z-index: 1;
+  right: 0.7rem;
+  top: -5.5rem;
+  z-index: 1000;
   color: #ddd;
   display: inline-block;
   cursor: pointer;
-  font-size:1.8rem;
+  font-size: 1.2rem;
+  font-family: helvetica, sans-serif;
 }
 
 .transcript-search-wrapper .shanticon-close2:hover,
