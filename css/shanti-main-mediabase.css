@@ -2150,7 +2150,7 @@ ul.links.inline {
 /* alignment: lift the dropdown */
 /* overide "mediabase-edit-form.css" */
 .field-multiple-table div.btn-group.bootstrap-select.form-control.form-select.ss-select{
-  margin-top: -0.7rem;
+  /*margin-top: -0.7rem;*/
 }
 
 .field-multiple-table .panel-body{
