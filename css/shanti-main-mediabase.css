@@ -1635,7 +1635,11 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .shanticon-close2:before{
-  content: "X";
+  content: "Close";
+  font-size: 0.75em;
+  color: #aaa;
+  position: relative;
+  top: -0.3rem;
 }
 
 .transcript-search-wrapper .input-group-btn {
