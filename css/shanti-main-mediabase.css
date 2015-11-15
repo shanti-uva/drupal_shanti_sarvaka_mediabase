@@ -2156,6 +2156,7 @@ ul.links.inline {
   top: 0.15rem;
   position: relative;
   margin-right: 0.5rem;
+  font-size:1.12em;
 }
 
 .selected-kmap:hover .shanticon-close2:before{
