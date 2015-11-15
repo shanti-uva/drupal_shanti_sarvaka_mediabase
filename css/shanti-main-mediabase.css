@@ -1692,7 +1692,7 @@ ul.links.inline {
   content: '\e080';
 }
 
-.transcript-search-wrapper .input-group-btn .icon.spinner{
+.transcript-search-wrapper .input-group-btn .icon.fa-spinner{
   position: absolute;
   top: 0.55rem;
   right: 5.125rem;
@@ -1705,7 +1705,7 @@ ul.links.inline {
   animation: fa-spin 1s infinite steps(8);
 }
 
-.transcript-search-wrapper .input-group-btn .icon.spinner::before {
+.transcript-search-wrapper .input-group-btn .icon.fa-spinner::before {
   content: '\f110';
   font-family: 'FontAwesome';
   font-size: 3rem;
@@ -1715,7 +1715,7 @@ ul.links.inline {
   right: 0.05rem;
 }
 
-.transcript-search-wrapper .searching .input-group-btn .icon.spinner::before{
+.transcript-search-wrapper .searching .input-group-btn .icon.fa-spinner::before{
   color:#ccc;
 }
 
