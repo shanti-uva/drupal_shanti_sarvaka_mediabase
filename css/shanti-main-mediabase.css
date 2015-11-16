@@ -2251,8 +2251,14 @@ fieldset.form-wrapper .f-set{
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
+/* Details section, Collection header /icon */
+.field-accordion.group-details .field-type-group label{
+  display: inline-block;
+  margin-left:1.5rem;
+  margin-top:1rem;
+}
 
-.node-video-form .icon.shanticon-create{
+.field-accordion.group-details .field-type-group label .icon.shanticon-create{
   font-size: 1.8rem;
   color: #777;
 }
