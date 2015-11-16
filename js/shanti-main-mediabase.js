@@ -158,6 +158,16 @@
 	  		$("#accordionedit-drupal-login .panel-collapse").collapse('show');
 	    }
 	};
+	
+	Drupal.behaviors.shantiAVVideoFix = {
+		attach: function(context, settings) {
+			if ($('.kWidgetIframeContainer.kaltura-embed-processed').length == 1) {
+				$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
+				$('.kWidgetIframeContainer.kaltura-embed-processed').css({'position':'', 'top':'', 'left': '', 'right':'', 'bottom':'', 'width':'690px', 'height':'425px'});
+				$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', '720px');
+			}
+		}
+	};
 
 
 } (jQuery)); // End of JQuery Wrapper
