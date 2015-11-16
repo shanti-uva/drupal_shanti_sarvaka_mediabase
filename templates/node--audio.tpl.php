@@ -121,12 +121,12 @@ if($teaser):
 
       <?php if(!empty($variables['duration']['formatted'])): ?>
         <div class="shanti-thumbnail-field shanti-field-duration">
-         <span class="field-content"> <?php print $variables['duration']['formatted']; ?></span>
+         <span class="shanti-field-content"> <?php print $variables['duration']['formatted']; ?></span>
         </div>
       <?php endif; ?>
 
 				<div class="shanti-thumbnail-field shanti-field-creator">
-	          <span class="shanti-field-content"><a href="<?php print "user/{$variables['uid']}";?>"><?php print $variables['name']; ?></a></span>
+	          <span class="shanti-field-content"><?php print $variables['name']; ?></span>
 	      </div>
 
     </div> <!-- end body-wrap -->
