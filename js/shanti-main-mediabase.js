@@ -152,4 +152,12 @@
 	};
 
 	
+
+	Drupal.behaviors.shantiOpenAVLoginPanel = {
+	  	attach: function (context, settings) {
+	  		$("#accordionedit-drupal-login panel-collapse.in").collapse('show');
+	    }
+	};
+
+
 } (jQuery)); // End of JQuery Wrapper
