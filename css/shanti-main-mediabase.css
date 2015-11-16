@@ -2128,43 +2128,6 @@ ul.links.inline {
 /********************/
 /* .node-video-form */
 /********************/
-
-/* search-labels used for transcript edit admin */
-.selected-kmap{
-  color: #eee;
-  font-size: 0.93em;
-  font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-  border: 1px solid #ddd;
-  padding: 0.3rem 1rem 0.3rem 0.62rem;
-  background-color: #5b68ce;
-  border-radius: 1.2rem 0 0 1.2rem;
-
-  cursor:pointer;
-  background-color: #777;
-}
-
-.selected-kmap:hover{
-  color: #fff;
-  background: #4850bd;
-
-  cursor:pointer;
-  background-color: #555;
-}
-
-.selected-kmap .shanticon-close2:before{
-  color: #eee;
-  top: 0.15rem;
-  position: relative;
-  margin-right: 0.5rem;
-  font-size:1.12em;
-}
-
-.selected-kmap:hover .shanticon-close2:before{
-  color: #fff;
-}
-
-
-
 /* overide "mediabase-edit-form.css" */
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
