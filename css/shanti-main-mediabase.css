@@ -2702,6 +2702,21 @@ button on video window
 
 
 
+/* single collection page */
+.node-type-collection.logged-in .about .img-thumbnail.pull-left{
+  margin-left:0;
+}
+
+.node-type-collection.logged-in .about .description h4{
+  padding-top:0;
+  font-size: 1em;
+}
+
+.node-type-collection.logged-in .description.trim{
+  padding-left: 1rem;
+}
+
+
 
 /*----------------*/
 /* BEGIN carousel */
