@@ -2138,8 +2138,6 @@ ul.links.inline {
 
 .form-item.form-type-textfield input.form-text, 
 .form-item.form-type-textfield input.form-control{
-  font-size: 1em;
-  line-height: 1.12em;
   display:inline-block;
 }
 
