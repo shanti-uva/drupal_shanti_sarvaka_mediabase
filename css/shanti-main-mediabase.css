@@ -1635,8 +1635,9 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .shanticon-close2:before{
-  content: "Close";
-  font-size: 0.75em;
+  content: '\e60f'; /* icon of agent person */
+  font-family: 'shanticon';
+  font-size: 1em;
   color: #aaa;
   position: relative;
   top: -0.3rem;
@@ -2195,7 +2196,7 @@ fieldset.form-wrapper .f-set{
   position: relative;
   left: 0;
   top: -0.6rem;
-  font-family: arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   height: 40px;
   font-size: 1.7rem;
   font-weight: bold;
