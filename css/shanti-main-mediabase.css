@@ -2705,6 +2705,7 @@ button on video window
 /* single collection page */
 .node-type-collection .about .img-thumbnail.pull-left{
   margin-left:0;
+  margin-top:0;
 }
 
 .node-type-collection .about .description h4{
