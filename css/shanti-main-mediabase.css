@@ -2703,16 +2703,16 @@ button on video window
 
 
 /* single collection page */
-.node-type-collection.logged-in .about .img-thumbnail.pull-left{
+.node-type-collection .about .img-thumbnail.pull-left{
   margin-left:0;
 }
 
-.node-type-collection.logged-in .about .description h4{
+.node-type-collection .about .description h4{
   padding-top:0;
   font-size: 1em;
 }
 
-.node-type-collection.logged-in .description.trim{
+.node-type-collection .description.trim{
   padding-left: 1rem;
 }
 
