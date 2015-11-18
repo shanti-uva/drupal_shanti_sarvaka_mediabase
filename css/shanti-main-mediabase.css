@@ -932,6 +932,11 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 
+.transcript-container,
+.transcript-controls{
+  margin-right: 2rem;
+}
+
 .transcript-container {
   /*background: white;*/
   height: 750px;
