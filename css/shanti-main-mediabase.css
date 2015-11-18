@@ -2794,8 +2794,7 @@ button on video window
 /* page layout for video display - balance with transcript panel */
 .node-type-audio .tab-pane.main-col > div,
 .node-type-video .tab-pane.main-col > div {
-  max-width: 1250px !important;
-  padding: 1.7rem 0 4rem;
+  max-width: 1450px !important;
   margin: 0 auto !important;
 }
 
