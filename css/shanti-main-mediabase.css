@@ -495,6 +495,7 @@ a.hide-annot::before {
 
 .view-collections .view-content{
   margin-top:3rem;
+  padding-left: 2rem;
 }
 
 .view-collections .collection-list-link {
@@ -1372,10 +1373,33 @@ ul.links.inline {
   color:#bc1e20;
 }
 
+
+
+/* gear button - for editing add-remove segments */
+.tcu-gear.dropdown{
+  position: relative;
+  float: right;
+  top: -0.9rem;
+  right: -0.9rem;
+}
+
+.tcu-gear-ops.dropdown-toggle{
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+}
+
+
+
+
+
 /*-----------------------------------*/
 /***** transcript button control *****/
 /*-----------------------------------*/
-
 .btn-group-transcript {
   width: 100%;
   padding: 0;
@@ -1551,6 +1575,8 @@ ul.links.inline {
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain {
   display: none;
 }
+
+
 
 
 
