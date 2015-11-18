@@ -2806,7 +2806,7 @@ button on video window
 }
 
 .node-type-video.has-transcript .av-main-video-section{
-  min-width:100% !important;
+  min-width:auto !important;
 }
 
 
