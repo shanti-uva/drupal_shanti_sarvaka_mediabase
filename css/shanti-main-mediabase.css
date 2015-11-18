@@ -2890,11 +2890,11 @@ button on video window
     min-width: auto !important;
   }
 
-  .has-transcript .av-main-video-section{
+  .node-type-video.has-transcript .av-main-video-section{
     min-width: auto !important;
   }
 
-  .has-transcript .av-main-transcript-section{
+  .node-type-video.has-transcript .av-main-transcript-section{
     min-width: auto !important;
   }
 
