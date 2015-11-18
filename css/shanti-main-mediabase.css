@@ -2873,16 +2873,13 @@ button on video window
 
 @media screen and (min-width: 768px) {
 
-  .av-main-video-section {
+  .node-type-video .av-main-video-section{
+    min-width: 700px !important;
     padding-right: 0;
     min-width:auto!important;
   }
 
-  .av-main-video-section{
-    min-width: 700px !important;
-  }
-
-  .av-main-transcript-section{
+  .node-type-video .av-main-transcript-section{
     min-width: auto !important;
   }
 
