@@ -2802,14 +2802,6 @@ button on video window
   margin: 0 auto !important;
 }
 
-.node-type-video .av-main-video-section{
-  min-width:700px;
-}
-
-.node-type-video.has-transcript .av-main-video-section{
-  min-width:auto;
-}
-
 
 
 
