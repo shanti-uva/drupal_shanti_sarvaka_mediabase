@@ -2792,16 +2792,23 @@ button on video window
 
 
 /* page layout for video display - balance with transcript panel */
-.node-type-audio .tab-pane.main-col > div,
-.node-type-video .tab-pane.main-col > div {
+.node-type-video.has-transcript .tab-pane.main-col > div {
   max-width: 1450px !important;
   margin: 0 auto !important;
 }
 
+.node-type-video .tab-pane.main-col > div {
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+}
 
+.node-type-video.has-transcript .av-main-video-section{
+  min-width:auto !important;
+}
 
-
-
+.node-type-video .av-main-video-section{
+  min-width:700px !important;
+}
 
 
 
