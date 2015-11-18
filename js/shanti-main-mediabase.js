@@ -166,7 +166,7 @@
 					$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
 					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
 						var ratio = Drupal.settings.mediabase.vratio,
-							  height = (ratio == '4:3') ? 485 : 425,
+							  height = (ratio == '4:3') ? 485 : 445,
 							  width = 100,
 							  maxwidth = (ratio == '4:3') ? 570 : 720,
 							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';
