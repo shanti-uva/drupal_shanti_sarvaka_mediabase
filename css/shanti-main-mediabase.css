@@ -2713,28 +2713,6 @@ button on video window
 
 
 
-.node-type-audio #block-system-main,
-.node-type-video #block-system-main{
-  margin-top: 0;
-}
-
-.logged-in.node-type-audio #block-system-main,
-.logged-in.node-type-video #block-system-main{
-  margin-top:-0.75em;
-}
-
-.node-type-audio .tab-pane.main-col.active,
-.node-type-video .tab-pane.main-col.active{
- margin-left: 1.5rem;
-}
-
-.no-sidebars.node-type-audio .tab-pane.main-col > div,
-.no-sidebars.node-type-video .tab-pane.main-col > div{
-  max-width: 100% !important;
-}
-
-
-
 
 
 /* single collection page */
@@ -2796,7 +2774,25 @@ button on video window
 
 
 
+
+.node-type-audio #block-system-main,
+.node-type-video #block-system-main{
+  margin-top: 0;
+}
+
+.logged-in.node-type-audio #block-system-main,
+.logged-in.node-type-video #block-system-main{
+  margin-top:-0.75em;
+}
+
+.node-type-audio .tab-pane.main-col.active,
+.node-type-video .tab-pane.main-col.active{
+ margin-left: 1.5rem;
+}
+
+
 /* page layout for video display - balance with transcript panel */
+.node-type-audio .tab-pane.main-col > div,
 .node-type-video .tab-pane.main-col > div {
   max-width: 1250px !important;
   padding: 1.7rem 0 4rem;
