@@ -2802,14 +2802,20 @@ button on video window
 }
 
 .node-type-video .av-main-video-section{
-  min-width:auto !important;
+  min-width: 100% !important;
+}
+
+.node-type-video .av-main-transcript-section{
+  min-width: 0 !important;
 }
 
 .node-type-video.has-transcript .av-main-video-section{
-  min-width:auto !important;
+  min-width: 100% !important;
 }
 
-
+.node-type-video.has-transcript .av-main-transcript-section{
+  min-width: 100% !important;
+}
 
 
 
@@ -2873,12 +2879,22 @@ button on video window
 
   .av-main-video-section {
     padding-right: 0;
-    min-width:100% !important;
+    min-width:auto!important;
   }
 
-  .node-type-video .av-main-video-section{
-    min-width:700px !important;
+  .av-main-video-section{
+    min-width: 700px !important;
   }
+
+  .av-main-transcript-section{
+    min-width: auto !important;
+  }
+
+  .has-transcript .av-main-video-section{
+    min-width: auto !important;
+  }
+
+
 
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
