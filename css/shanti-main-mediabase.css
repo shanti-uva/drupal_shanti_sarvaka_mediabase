@@ -2794,6 +2794,25 @@ button on video window
 
 
 
+
+
+/* page layout for video display - balance with transcript panel */
+.node-type-video .tab-pane.main-col > div {
+  max-width: 1250px !important;
+  padding: 1.7rem 0 4rem;
+  margin: 0 auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
