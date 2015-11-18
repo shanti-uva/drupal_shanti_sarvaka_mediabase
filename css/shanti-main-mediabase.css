@@ -1393,6 +1393,21 @@ ul.links.inline {
   font-size: 1.4rem;
 }
 
+.tcu-gear.dropdown .dropdown-menu{
+  position: absolute;
+  right:1.5rem;
+  font-family:'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.tcu-gear.dropdown .dropdown-menu>li{
+  border:none;
+}
+
+.tcu-gear.dropdown .dropdown-menu>li>a{
+  padding: 0px 20px;
+}
+
+
 
 
 
