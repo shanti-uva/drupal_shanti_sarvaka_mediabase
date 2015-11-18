@@ -166,9 +166,9 @@
 					$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
 					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
 						var ratio = Drupal.settings.mediabase.vratio,
-							  width = (ratio == '4:3') ? 520 : 667,
-							  height = 485,
-							  maxwidth = (ratio == '4:3') ? 550 : 720,
+							  height = (ratio == '4:3') ? 485 : 425,
+							  width = 100,
+							  maxwidth = (ratio == '4:3') ? 570 : 720,
 							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';
 						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
 								'position':'', 
@@ -176,9 +176,8 @@
 								'left': '', 
 								'right':'', 
 								'bottom':'', 
-								'width':'100%',
-								// 'width': width + 'px', -mf8yk removed nov 18 testing width 100%
-								'height': height + 'px'
+								'width': width + '%', 
+								'height': height+ 'px'
 						});
 						$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
 					});
