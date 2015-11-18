@@ -161,23 +161,27 @@
 	
 	Drupal.behaviors.shantiAVVideoFix = {
 		attach: function(context, settings) {
-			$('.kWidgetIframeContainer.kaltura-embed-processed').once('videosizeadjustment', function() {
-				$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
-				var ratio = Drupal.settings.mediabase.vratio,
-					  width = (ratio == '4:3') ? 520 : 667,
-					  height = 425,
-					  maxwidth = (ratio == '4:3') ? 550 : 720;
-				$('.kWidgetIframeContainer.kaltura-embed-processed').css({
-						'position':'', 
-						'top':'', 
-						'left': '', 
-						'right':'', 
-						'bottom':'', 
-						'width': width + 'px', 
-						'height': height+ 'px'
+			if (context == document) { 
+				$('.kWidgetIframeContainer.kaltura-embed-processed').once('videosizeadjustment', function() {
+					$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
+					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
+						var ratio = Drupal.settings.mediabase.vratio,
+							  width = (ratio == '4:3') ? 520 : 667,
+							  height = 425,
+							  maxwidth = (ratio == '4:3') ? 550 : 720;
+						$('.kWidgetIframeContainer.kaltura-embed-processed').css({
+								'position':'', 
+								'top':'', 
+								'left': '', 
+								'right':'', 
+								'bottom':'', 
+								'width': width + 'px', 
+								'height': height+ 'px'
+						});
+						$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
+					});
 				});
-				$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
-			});
+			}
 		}
 	};
 
