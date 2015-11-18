@@ -2307,7 +2307,7 @@ fieldset.form-wrapper .f-set{
 
 
 /* this adds black band on top of video */
-.kaltura-embed > div{
+.kaltura-embed > div > div{
   border: 1.5rem solid #000;
   border-bottom-width: .5rem;
   border-radius: 0.3rem;
@@ -2792,14 +2792,23 @@ button on video window
 
 
 /* page layout for video display - balance with transcript panel */
-.node-type-audio .tab-pane.main-col > div,
-.node-type-video .tab-pane.main-col > div {
+.node-type-video.has-transcript .tab-pane.main-col > div {
   max-width: 1450px !important;
   margin: 0 auto !important;
 }
 
+.node-type-video .tab-pane.main-col > div {
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+}
 
+.node-type-video .av-main-video-section{
+  min-width:700px !important;
+}
 
+.node-type-video.has-transcript .av-main-video-section{
+  min-width:100% !important;
+}
 
 
 
@@ -2862,6 +2871,12 @@ button on video window
 }
 
 @media screen and (min-width: 768px) {
+
+  .av-main-video-section {
+    padding-right: 0;
+    min-width:100% !important;
+  }
+
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
     margin-bottom: 0.5rem;
@@ -2878,10 +2893,6 @@ button on video window
 
   .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
     margin-top: 1.5rem;
-  }
-
-  .av-main-video-section {
-    padding-right: 0;
   }
 
   .shanti-filters table.pagerer {
