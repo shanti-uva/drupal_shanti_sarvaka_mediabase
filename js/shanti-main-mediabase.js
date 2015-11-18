@@ -168,8 +168,9 @@
 						var ratio = Drupal.settings.mediabase.vratio,
 							  width = (ratio == '4:3') ? 520 : 667,
 							  height = 425,
-							  maxwidth = (ratio == '4:3') ? 550 : 720;
-						$('.kWidgetIframeContainer.kaltura-embed-processed').css({
+							  maxwidth = (ratio == '4:3') ? 550 : 720,
+							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';
+						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
 								'position':'', 
 								'top':'', 
 								'left': '', 
