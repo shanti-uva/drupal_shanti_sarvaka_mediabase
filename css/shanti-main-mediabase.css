@@ -2802,7 +2802,7 @@ button on video window
 }
 
 .node-type-video .av-main-video-section{
-  min-width:700px !important;
+  min-width:auto !important;
 }
 
 .node-type-video.has-transcript .av-main-video-section{
@@ -2874,6 +2874,10 @@ button on video window
   .av-main-video-section {
     padding-right: 0;
     min-width:100% !important;
+  }
+
+  .node-type-video .av-main-video-section{
+    min-width:700px !important;
   }
 
   .view-collections .view-result-count-info {
