@@ -105,10 +105,6 @@
 /*border-bottom:1px solid #ccc;*/
 }
 
-.view-collections .views-exposed-form .views-exposed-widget {
-  padding: 0 0.5em 0 0;
-}
-
 .view-collections .views-exposed-form .views-exposed-widget label, 
 .view-collections .views-exposed-form .views-exposed-widget div {
  /*float: left; margin: 0 1em 0 0; */
@@ -499,6 +495,7 @@ a.hide-annot::before {
 
 .view-collections .view-content{
   margin-top:3rem;
+  padding-left: 2rem;
 }
 
 .view-collections .collection-list-link {
@@ -675,6 +672,11 @@ a.hide-annot::before {
 .view-collections .views-exposed-widget.views-reset-button {
   padding: 0;
   margin: -12px 0 0 0;
+}
+
+/* Collections page top filter button temporarily */
+#edit-submit-collections.form-submit{
+  display:none;
 }
 
 
@@ -871,6 +873,7 @@ ul.links.inline {
   height: 5.5rem;
   margin: 0;
   text-align: left;
+  padding: 0 0.5em 0 0;
 }
 
 .view .form-item-operation {
@@ -1370,10 +1373,48 @@ ul.links.inline {
   color:#bc1e20;
 }
 
+
+
+/* gear button - for editing add-remove segments */
+.tcu-gear.dropdown{
+  position: relative;
+  float: right;
+  top: -0.9rem;
+  right: -0.6rem;
+}
+
+.tcu-gear-ops.dropdown-toggle{
+  height: 2.5rem !important;
+  width: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: none !important;
+  box-shadow: none;
+  font-size: 1.4rem;
+}
+
+.tcu-gear.dropdown .dropdown-menu{
+  position: absolute;
+  right:1.5rem;
+  font-family:'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.tcu-gear.dropdown .dropdown-menu>li{
+  border:none;
+}
+
+.tcu-gear.dropdown .dropdown-menu>li>a{
+  padding: 0px 20px;
+}
+
+
+
+
+
+
 /*-----------------------------------*/
 /***** transcript button control *****/
 /*-----------------------------------*/
-
 .btn-group-transcript {
   width: 100%;
   padding: 0;
@@ -1553,6 +1594,8 @@ ul.links.inline {
 
 
 
+
+
 /*---------------------------*/
 /***** transcript search *****/
 /*---------------------------*/
@@ -1619,14 +1662,13 @@ ul.links.inline {
 
 .transcript-search-wrapper .shanticon-close2{
   position: absolute;
-  right: 0.7rem;
+  right: 0.4rem;
   top: -5.5rem;
   z-index: 10;
   color: #ccc;
-  display: inline-block;
   cursor: pointer;
   font-size: 1.2rem;
-  font-family: helvetica, sans-serif;
+  font-family: 'shanticon';
 }
 
 .transcript-search-wrapper .shanticon-close2:hover,
@@ -1635,11 +1677,7 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .shanticon-close2:before{
-  content: "Close";
-  font-size: 0.75em;
-  color: #aaa;
-  position: relative;
-  top: -0.3rem;
+  content: '\e60f'; /* icon of agent person */
 }
 
 .transcript-search-wrapper .input-group-btn {
@@ -2137,8 +2175,6 @@ ul.links.inline {
 
 .form-item.form-type-textfield input.form-text, 
 .form-item.form-type-textfield input.form-control{
-  font-size: 1em;
-  line-height: 1.12em;
   display:inline-block;
 }
 
@@ -2195,7 +2231,7 @@ fieldset.form-wrapper .f-set{
   position: relative;
   left: 0;
   top: -0.6rem;
-  font-family: arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   height: 40px;
   font-size: 1.7rem;
   font-weight: bold;
@@ -2677,28 +2713,22 @@ button on video window
 
 
 
-.node-type-audio #block-system-main,
-.node-type-video #block-system-main{
-  margin-top: 0;
+
+
+/* single collection page */
+.node-type-collection .about .img-thumbnail.pull-left{
+  margin-left:0;
+  margin-top:0;
 }
 
-.logged-in.node-type-audio #block-system-main,
-.logged-in.node-type-video #block-system-main{
-  margin-top:-0.75em;
+.node-type-collection .about .description h4{
+  padding-top:0;
+  font-size: 1em;
 }
 
-.node-type-audio .tab-pane.main-col.active,
-.node-type-video .tab-pane.main-col.active{
- margin-left: 1.5rem;
+.node-type-collection .description.trim{
+  padding-left: 1rem;
 }
-
-.no-sidebars.node-type-audio .tab-pane.main-col > div,
-.no-sidebars.node-type-video .tab-pane.main-col > div{
-  max-width: 100% !important;
-}
-
-
-
 
 
 
@@ -2738,6 +2768,42 @@ button on video window
   max-height: 225px;
 }
 /*** END Carousel ***/
+
+
+
+
+
+
+
+.node-type-audio #block-system-main,
+.node-type-video #block-system-main{
+  margin-top: 0;
+}
+
+.logged-in.node-type-audio #block-system-main,
+.logged-in.node-type-video #block-system-main{
+  margin-top:-0.75em;
+}
+
+.node-type-audio .tab-pane.main-col.active,
+.node-type-video .tab-pane.main-col.active{
+ margin-left: 1.5rem;
+}
+
+
+/* page layout for video display - balance with transcript panel */
+.node-type-audio .tab-pane.main-col > div,
+.node-type-video .tab-pane.main-col > div {
+  max-width: 1450px !important;
+  margin: 0 auto !important;
+}
+
+
+
+
+
+
+
 
 
 
