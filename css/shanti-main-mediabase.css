@@ -1380,7 +1380,7 @@ ul.links.inline {
   position: relative;
   float: right;
   top: -0.9rem;
-  right: -0.9rem;
+  right: -0.6rem;
 }
 
 .tcu-gear-ops.dropdown-toggle{
@@ -1662,14 +1662,13 @@ ul.links.inline {
 
 .transcript-search-wrapper .shanticon-close2{
   position: absolute;
-  right: 0.7rem;
+  right: 0.4rem;
   top: -5.5rem;
   z-index: 10;
   color: #ccc;
-  display: inline-block;
   cursor: pointer;
   font-size: 1.2rem;
-  font-family: helvetica, sans-serif;
+  font-family: 'shanticon';
 }
 
 .transcript-search-wrapper .shanticon-close2:hover,
@@ -1679,11 +1678,6 @@ ul.links.inline {
 
 .transcript-search-wrapper .shanticon-close2:before{
   content: '\e60f'; /* icon of agent person */
-  font-family: 'shanticon';
-  font-size: 1em;
-  color: #aaa;
-  position: relative;
-  top: -0.3rem;
 }
 
 .transcript-search-wrapper .input-group-btn {
