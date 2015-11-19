@@ -161,27 +161,14 @@
 	
 	Drupal.behaviors.shantiAVVideoFix = {
 		attach: function(context, settings) {
-			if (context == document) { 
-				$('.kWidgetIframeContainer.kaltura-embed-processed').once('videosizeadjustment', function() {
-					$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
-					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
-						var ratio = Drupal.settings.mediabase.vratio,
-							  height = (ratio == '4:3') ? 485 : 445,
-							  width = 100,
-							  maxwidth = (ratio == '4:3') ? 570 : 720,
-							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';
-						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
-								'position':'', 
-								'top':'', 
-								'left': '', 
-								'right':'', 
-								'bottom':'', 
-								'width': width + '%', 
-								'height': height+ 'px'
-						});
-						$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
-					});
-				});
+			if ($('.kWidgetIframeContainer.kaltura-embed-processed').length == 1) {
+				$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
+				var ratio = Drupal.settings.mediabase.vratio,
+					  width = (ratio == '4:3') ? 520 : 690,
+					  height = 425,
+					  maxwidth = (ratio == '4:3') ? 550 : 720;
+				$('.kWidgetIframeContainer.kaltura-embed-processed').css({'position':'', 'top':'', 'left': '', 'right':'', 'bottom':'', 'width': width + 'px', 'height': height+ 'px'});
+				$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
 			}
 		}
 	};
