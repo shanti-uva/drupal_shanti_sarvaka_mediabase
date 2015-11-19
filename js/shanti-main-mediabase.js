@@ -165,11 +165,12 @@
 				$('.kWidgetIframeContainer.kaltura-embed-processed').once('videosizeadjustment', function() {
 				$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
 					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
-				var ratio = Drupal.settings.mediabase.vratio,
-							  width = (ratio == '4:3') ? 520 : 667,
-							  height = 425,
-							  maxwidth = (ratio == '4:3') ? 550 : 720,
-							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';
+						var ratio = Drupal.settings.mediabase.vratio,
+							 /* vheight = Drupal.settings.mediabase.vheight,
+							  vwidth = Drupal.settings.mediabase.vwidth,*/
+							  pwidth = $('.kWidgetIframeContainer.kaltura-embed-processed').parent().width(),
+							  height = ((ratio == '4:3') ? pwidth / 1.3333 : pwidth / 1.7778) + 42, // add 42 px to height for control bar
+							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';		
 						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
 								'position':'', 
 								'top':'', 
@@ -177,10 +178,8 @@
 								'right':'', 
 								'bottom':'', 
 								'width':'100%',
-								'width': width + 'px',
 								'height': height + 'px'
 						});
-				$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
 					});
 				});
 			}
