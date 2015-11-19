@@ -1380,14 +1380,14 @@ ul.links.inline {
 
 
 /* gear button - for editing add-remove segments */
-.tcu-gear.dropdown{
+.tcu-gear{
   position: relative;
   float: right;
   top: -0.9rem;
   right: -0.6rem;
 }
 
-.tcu-gear-ops.dropdown-toggle{
+.tcu-gear-ops{
   height: 2.5rem !important;
   width: 2.5rem;
   padding: 0;
@@ -1397,17 +1397,19 @@ ul.links.inline {
   font-size: 1.4rem;
 }
 
+
+
 .tcu-gear.dropdown .dropdown-menu{
   position: absolute;
   right:1.5rem;
   font-family:'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-.tcu-gear.dropdown .dropdown-menu>li{
+.tcu-gear .dropdown-menu>li{
   border:none;
 }
 
-.tcu-gear.dropdown .dropdown-menu>li>a{
+.tcu-gear .dropdown-menu>li>a{
   padding: 0px 20px;
 }
 
