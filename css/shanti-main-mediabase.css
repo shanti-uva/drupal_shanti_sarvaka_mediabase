@@ -931,8 +931,6 @@ ul.links.inline {
 /*----------------------------*/
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
-
-.transcript-container,
 .transcript-controls{
   margin-right: 2rem;
 }
@@ -942,6 +940,7 @@ ul.links.inline {
   height: 750px;
   overflow-x: auto;
   margin-top: 0;
+  margin-right: 0.5rem;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
 }
