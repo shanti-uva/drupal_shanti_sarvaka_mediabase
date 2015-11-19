@@ -223,73 +223,36 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
 	$view = $vars['view'];
-  if (isset($view->name) && $view->name == 'collections') {
-  	//dpm($view, 'view');
-	$displ = $view->current_display;
 	
-    // Grab the pieces you want and then remove them from the array    
-    $header   = $vars['header'];   // $vars['header']   = '';
-    $filters  = $vars['exposed'];   //$vars['exposed']  = '';
-    $pager    = $vars['pager'];    // $vars['pager']    = '';
-    
-    // Should be a render array
-    
-    // Create the view layout switcher
-	$faton = ($displ == 'page_list') ? ' on':'';
-	$thumbon = ($displ == 'page_thumbs') ? ' on':'';
-	$fatpath = ($faton == '') ? $view->display['page_list']->display_options['path'] : '#';
-	$thumbpath = ($thumbon == '') ? $view->display['page_thumbs']->display_options['path'] : '#';
-	/*
-    $btn1 = "<span class='icon shanticon-list'></span>";
-    $btn2 = "<span class='icon shanticon-list4'></span>";
-    $btn3 = "<span class='icon shanticon-grid'></span>";
-    $switch = "<ul id='view-all-colls-switcher'><li class='fat-list$faton'><a href='$fatpath'>$btn1</a></li><li class='grid$thumbon'><a href='$thumbpath'>$btn3</a></li></ul>";
-		// Took out: <!--<li class='thin-list'>$btn2</li>-->
-    
-    // Put everything in a new element
-    $control_box = "<div class='view-all-colls-control-box'><div class='view-all-colls-control-box-row'>";
-    $control_box .= "<span class='a view-all-colls-control-box-cell col-xs-12 col-sm-3'>$header</span>";
-    $control_box .= "<span class='b view-all-colls-control-box-cell col-xs-12 col-sm-3'>$filters</span>";
-    $control_box .= "<span class='c view-all-colls-control-box-cell col-xs-4 col-sm-3'>$switch</span>";
-    $control_box .= "<span class='d view-all-colls-control-box-cell col-xs-8 col-sm-3'>$pager</span></div></div>\n";
-    
-    // Attach the new element to the array
-    $vars['attachment_before'] = $control_box;
-	 **/
-    $vars['attachment_after'] = $pager;
-   /* 
-    // Add JS and CSS files that will take over behavior
-    drupal_add_js(SHANTI_ESSAYS_PATH . '/js/jquery.transit.min.js', 'file');
-    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.cookie.js', 'file');
-    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_essays_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
-    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_essays_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
-  */
-  // Home page view Tweaks
-  } else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
-  	 //dpm($vars, 'pp view browse media');
-		$query = $view->query;
-    // Grab the pieces you want and then remove them from the array    
-	    /*$header   = $vars['header'];    $vars['header']   = '';
-	    $pager    = $vars['pager'];     $vars['pager']    = '';
-			$vars['header']   = $header;
-			$vars['pager']    = $pager;*/
+	// Collections Page if needed
+	if (isset($view->name) && $view->name == 'collections') {
+  		// No Tweaks Yet for Collection Page
+	// Home page view Tweaks
+	} else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
+	  	 //dpm($vars, 'pp view browse media');
+			$query = $view->query;
+	    // Grab the pieces you want and then remove them from the array    
+		    /*$header   = $vars['header'];    $vars['header']   = '';
+		    $pager    = $vars['pager'];     $vars['pager']    = '';
+				$vars['header']   = $header;
+				$vars['pager']    = $pager;*/
+				
+			// Make sure text search box is only size 15 on home page filter
+	    $filters  = $vars['exposed'];   $vars['exposed']  = '';
+	  	$filters = str_replace('name="title" value="" size="30"', 'name="title" value="" size="15"', $filters);
 			
-		// Make sure text search box is only size 15 on home page filter
-    $filters  = $vars['exposed'];   $vars['exposed']  = '';
-  	$filters = str_replace('name="title" value="" size="30"', 'name="title" value="" size="15"', $filters);
-		
-		// Set Dropdown selected value
-		$field = $query->orderby[0]['field'];
-		$direction = $query->orderby[0]['direction'];
-		$selval = $query->fields[$field]['field'] . ' ' . $direction;
-		$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
-		/*$filters = str_replace('Date Created Asc', 'Date Created &#11014;', $filters);
-		$filters = str_replace('Date Created Desc', 'Date Created &#11015;', $filters);
-		$filters = str_replace('Asc', '(A-Z)', $filters);
-		$filters = str_replace('Desc', '(Z-A)', $filters);*/
-		//dpm($filters, 'filters');
-		$vars['exposed']  = $filters;
-		
+			// Set Dropdown selected value
+			$field = $query->orderby[0]['field'];
+			$direction = $query->orderby[0]['direction'];
+			$selval = $query->fields[$field]['field'] . ' ' . $direction;
+			$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
+			/*$filters = str_replace('Date Created Asc', 'Date Created &#11014;', $filters);
+			$filters = str_replace('Date Created Desc', 'Date Created &#11015;', $filters);
+			$filters = str_replace('Asc', '(A-Z)', $filters);
+			$filters = str_replace('Desc', '(Z-A)', $filters);*/
+			//dpm($filters, 'filters');
+			$vars['exposed']  = $filters;
+			
 	// List views of Media By Kmap
   } else if(isset($view->name) && $view->name == 'media_by_kmap') {
   	$type = $vars['display_id'];

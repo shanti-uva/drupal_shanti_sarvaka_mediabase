@@ -349,6 +349,7 @@ form#views-exposed-form-browse-media-home-block {
   margin-right: 2rem;
   text-transform: capitalize;
   font-size:0.88em;
+  float: left;
 }
 
 .shanti-filters .ajax-progress {
@@ -493,10 +494,12 @@ a.hide-annot::before {
   padding-bottom:10rem;
 }
 
+/*
 .view-collections .view-content{
   margin-top:3rem;
   padding-left: 2rem;
 }
+*/
 
 .view-collections .collection-list-link {
   float: left;
@@ -2882,7 +2885,6 @@ button on video window
   .view-collections .view-all-colls-control-box .pager {
     margin: 2.3rem 0 1rem;
   }
-
   .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
     margin-top: 1.5rem;
   }
@@ -2899,7 +2901,12 @@ button on video window
     width: ;
     max-width: ;
   }
-
+  
+  .shanti-filters .control-box-cell-header p {
+  	display: inline-block;
+  	font-size: 90%;
+  }
+  
   .shanti-filters .shanti-filters .control-box-cell-filters {
     width: ;
     max-width: ;
