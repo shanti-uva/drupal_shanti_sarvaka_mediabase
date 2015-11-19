@@ -225,20 +225,21 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
 	$view = $vars['view'];
   if (isset($view->name) && $view->name == 'collections') {
   	//dpm($view, 'view');
-		$displ = $view->current_display;
+	$displ = $view->current_display;
+	
     // Grab the pieces you want and then remove them from the array    
-    $header   = $vars['header'];    $vars['header']   = '';
-    $filters  = $vars['exposed'];   $vars['exposed']  = '';
-    $pager    = $vars['pager'];     $vars['pager']    = '';
+    $header   = $vars['header'];   // $vars['header']   = '';
+    $filters  = $vars['exposed'];   //$vars['exposed']  = '';
+    $pager    = $vars['pager'];    // $vars['pager']    = '';
     
     // Should be a render array
     
     // Create the view layout switcher
-		$faton = ($displ == 'page_list') ? ' on':'';
-		$thumbon = ($displ == 'page_thumbs') ? ' on':'';
-		$fatpath = ($faton == '') ? $view->display['page_list']->display_options['path'] : '#';
-		$thumbpath = ($thumbon == '') ? $view->display['page_thumbs']->display_options['path'] : '#';
-		
+	$faton = ($displ == 'page_list') ? ' on':'';
+	$thumbon = ($displ == 'page_thumbs') ? ' on':'';
+	$fatpath = ($faton == '') ? $view->display['page_list']->display_options['path'] : '#';
+	$thumbpath = ($thumbon == '') ? $view->display['page_thumbs']->display_options['path'] : '#';
+	/*
     $btn1 = "<span class='icon shanticon-list'></span>";
     $btn2 = "<span class='icon shanticon-list4'></span>";
     $btn3 = "<span class='icon shanticon-grid'></span>";
@@ -254,6 +255,7 @@ function sarvaka_mediabase_preprocess_views_view(&$vars) {
     
     // Attach the new element to the array
     $vars['attachment_before'] = $control_box;
+	 **/
     $vars['attachment_after'] = $pager;
    /* 
     // Add JS and CSS files that will take over behavior
