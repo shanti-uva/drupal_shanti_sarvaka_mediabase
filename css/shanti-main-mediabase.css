@@ -2799,7 +2799,7 @@ button on video window
 
 /* page layout for video display - balance with transcript panel */
 .node-type-video.has-transcript .tab-pane.main-col > div {
-  max-width: 1450px !important;
+  max-width: 1350px !important;
   margin: 0 auto !important;
 }
 
