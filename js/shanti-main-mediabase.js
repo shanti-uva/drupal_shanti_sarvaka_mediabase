@@ -139,9 +139,7 @@
 		} // end context = document
 	};
 
-
-
-		// --- unhiding shanti-filters: inline styles keeps the default dropdown from flashing onLoad before the bootstrap-select script/css loads
+	// --- unhiding shanti-filters: inline styles keeps the default dropdown from flashing onLoad before the bootstrap-select script/css loads
 	Drupal.behaviors.shantiFiltersOnLoadFlickerControl = {
 	  	attach: function (context, settings) {
 	  		$(".front .control-box-cell-filters").show( "fast" );
@@ -150,8 +148,6 @@
 	  		}
 	    }
 	};
-
-	
 
 	Drupal.behaviors.shantiOpenAVLoginPanel = {
 	  	attach: function (context, settings) {
@@ -183,6 +179,5 @@
 			}
 		}
 	};
-
 
 } (jQuery)); // End of JQuery Wrapper
