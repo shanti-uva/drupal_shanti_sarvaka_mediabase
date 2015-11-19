@@ -166,8 +166,6 @@
 				$('.kWidgetIframeContainer.kaltura-embed-processed').prev('div').remove();
 					$('.kWidgetIframeContainer.kaltura-embed-processed iframe').on('load', function() { 
 						var ratio = Drupal.settings.mediabase.vratio,
-							 /* vheight = Drupal.settings.mediabase.vheight,
-							  vwidth = Drupal.settings.mediabase.vwidth,*/
 							  pwidth = $('.kWidgetIframeContainer.kaltura-embed-processed').parent().width(),
 							  height = ((ratio == '4:3') ? pwidth / 1.3333 : pwidth / 1.7778) + 42, // add 42 px to height for control bar
 							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';		
