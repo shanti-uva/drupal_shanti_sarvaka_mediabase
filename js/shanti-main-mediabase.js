@@ -177,7 +177,7 @@
 								'right':'', 
 								'bottom':'', 
 								'width':'100%',
-								// 'width': width + 'px', -mf8yk removed nov 18 testing width 100%
+								'width': width + 'px',
 								'height': height + 'px'
 						});
 				$('.kWidgetIframeContainer.kaltura-embed-processed').parent().css('max-width', maxwidth + 'px'); 
