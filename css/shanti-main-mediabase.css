@@ -367,6 +367,12 @@ form#views-exposed-form-browse-media-home-block {
   padding: 0;
 }
 
+.shanti-filters .control-box-cell-header .view-result-count-info {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
 .shanti-filters .control-box-cell-filters {
   margin: 0 auto;
 }
@@ -2905,6 +2911,7 @@ button on video window
   .shanti-filters .control-box-cell-header p {
   	display: inline-block;
   	font-size: 90%;
+    padding-left: 12px;
   }
   
   .shanti-filters .shanti-filters .control-box-cell-filters {
