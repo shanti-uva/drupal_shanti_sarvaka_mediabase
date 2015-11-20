@@ -40,8 +40,8 @@
   color: #444 !important;
 }
 /*--- END colors ---*/
-.front .main-content{ margin-bottom:5rem;}
 
+.front .main-content{ margin-bottom:5rem;}
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li {
@@ -2322,13 +2322,11 @@ fieldset.form-wrapper .f-set{
 
 /* this adds black band on top of video */
 .kaltura-embed > div > div{
-  border: 1.5rem solid #000;
-  border-bottom-width: .5rem;
   border-radius: 0.3rem;
   background-clip: padding-box;
   background: #555;
-  min-height:300px;
-  clear:both;
+  border: 1.5rem solid #000;
+  border-bottom-width: .5rem;
 }
 
 .kaltura-embed iframe{
