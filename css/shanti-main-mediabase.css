@@ -1439,11 +1439,11 @@ ul.links.inline {
 
 
 .tcu-gear .dropdown-menu{
-  font-family:'Helvetica Neue',helvetica,arial,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   margin-left: -15.7rem;
   padding-bottom: 1.2rem;
   position: absolute;
-  right:1.5rem !important;
+  right: 1.5rem !important;
   top: -0.2rem;
   z-index: 1;
 }
@@ -1456,6 +1456,10 @@ ul.links.inline {
   padding: 0px 20px;
 }
 
+.tcu-gear .dropdown-menu>li>a:hover,
+.tcu-gear .dropdown-menu>li>a:active{
+  background: transparent;
+}
 
 
 
