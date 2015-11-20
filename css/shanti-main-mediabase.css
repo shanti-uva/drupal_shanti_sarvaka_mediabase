@@ -1682,7 +1682,7 @@ ul.links.inline {
   z-index: 10;
   color: #ccc;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1em;
   font-family: 'shanticon';
 }
 
@@ -1886,7 +1886,8 @@ ul.links.inline {
 }
 
 .transcript-search-options {
-  margin: 0 0 0 1rem;
+  margin: 0;
+  padding-left: 10%;
   position:relative;
   top: 5.2rem;
   display:none;
@@ -2899,6 +2900,11 @@ button on video window
 
   .av-main-video-section {
     padding-right: 0;
+    width:70% !important;
+  }
+
+  .has-transcript .av-main-video-section {
+    width:50% !important;
   }
 
   .shanti-filters table.pagerer {
