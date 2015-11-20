@@ -2800,12 +2800,12 @@ button on video window
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
-
+/*
 .node-type-audio .tab-pane.main-col.active,
 .node-type-video .tab-pane.main-col.active{
  margin-left: 1.5rem;
 }
-
+*/
 
 /* page layout for video display - balance with transcript panel */
 .node-type-video.has-transcript .tab-pane.main-col > div {
