@@ -1437,13 +1437,13 @@ ul.links.inline {
   font-size: 85%;
   font-weight: bold;
   font-family: 'museo-sans-700';
-  color:#555;
+  color: #454fa4;
+  border-bottom:none;
 }
 
 .tcu-gear .dropdown-menu>li>a:hover,
 .tcu-gear .dropdown-menu>li>a:active{
   background: transparent;
-  border-bottom:none !important;
 }
 
 
