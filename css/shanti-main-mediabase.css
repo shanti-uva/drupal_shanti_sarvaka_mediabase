@@ -2406,8 +2406,10 @@ fieldset.form-wrapper .f-set > table{
 }
 
 .video-row {
-  margin-bottom: 12px;
+  /*margin-bottom: 12px;*/
   margin-top: 0.1rem; /* improves alignemnt with transcript top */
+  min-height:300px;
+  clear:both;
 }
 /* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
