@@ -1406,9 +1406,7 @@ ul.links.inline {
   font-size: 1.4rem;
 }
 
-
-
-.tcu-gear.dropdown .dropdown-menu{
+.tcu-gear .dropdown-menu{
   position: absolute;
   right:1.5rem;
   font-family:'Helvetica Neue',helvetica,arial,sans-serif;
