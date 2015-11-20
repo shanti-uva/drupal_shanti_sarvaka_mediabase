@@ -2326,6 +2326,9 @@ fieldset.form-wrapper .f-set{
 .kaltura-embed > div > div{
   border-radius: 0.3rem;
   background-clip: padding-box;
+}
+
+.kaltura-embed iframe{
   min-height:400px;
   background: #555;
   border: 1.5rem solid #000;
