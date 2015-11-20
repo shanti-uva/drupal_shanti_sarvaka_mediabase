@@ -2317,8 +2317,10 @@ fieldset.form-wrapper .f-set{
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
 
-
-
+/* tabs and accordions for video page */
+.av-related-wrapper{
+  margin:0 1rem;
+}
 
 /* this adds black band on top of video */
 .kaltura-embed > div > div{

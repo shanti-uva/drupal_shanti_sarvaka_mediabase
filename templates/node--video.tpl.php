@@ -179,7 +179,7 @@ else:     /************ FULL Display ***********/
       // Description is compiled in mediabase_preprocess_node and contained in $description variable
       // Not working hide($content['field_pbcore_description']);
     ?>
-      <div class="video-row">
+      <div class="video-row clearfix">
           <?php print render($content['field_video']); ?>
       </div>
 
@@ -257,7 +257,7 @@ else:     /************ FULL Display ***********/
      </div> <!-- End of av-main-wrapper -->
   </div> <!-- End of content -->
 
-      <div>
+      <div class="av-related-wrapper">
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
           <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audio-Video'); ?></a></li>
