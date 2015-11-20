@@ -2413,7 +2413,8 @@ fieldset.form-wrapper .f-set > table{
 }
 /* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
-  padding-left: 0 !important;
+  padding-left: 0.2rem !important;
+  padding-top: 1rem;
 }
 /* right column wrapper for descriptive metadata immediately under video */
 .video-overview {
