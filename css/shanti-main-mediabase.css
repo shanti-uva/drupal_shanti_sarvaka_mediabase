@@ -2324,13 +2324,10 @@ fieldset.form-wrapper .f-set{
 .kaltura-embed > div > div{
   border-radius: 0.3rem;
   background-clip: padding-box;
+  min-height:400px;
   background: #555;
   border: 1.5rem solid #000;
   border-bottom-width: .5rem;
-}
-
-.kaltura-embed iframe{
-  min-height:300px;
 }
 
 .kaltura-thumb-wrap {
@@ -2406,7 +2403,6 @@ fieldset.form-wrapper .f-set > table{
 .video-row {
   /*margin-bottom: 12px;*/
   margin-top: 0.1rem; /* improves alignemnt with transcript top */
-  min-height:300px;
   clear:both;
 }
 /* left column wrapper of date/time/author/social links immediately under video */
