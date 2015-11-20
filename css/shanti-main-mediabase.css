@@ -1408,7 +1408,7 @@ ul.links.inline {
 
 .tcu-gear .dropdown-menu{
   position: absolute;
-  right:1.5rem;
+  right:1.5rem !important;
   font-family:'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
