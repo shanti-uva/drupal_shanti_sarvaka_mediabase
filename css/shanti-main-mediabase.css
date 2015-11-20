@@ -1414,15 +1414,16 @@ ul.links.inline {
 .tcu-gear .dropdown.open .glyphicon::before,
 .tcu-gear .dropdown.open .glyphicon::after {
   background: #aaa;
-  position: absolute;
-  top: 1.3rem;
-  left: 0.5rem;
   width: 1.7rem;
   height: 1px;
   content: '';
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+
+  position: relative;
+  top: -1.75rem;
+  left: -1rem;
 }
 
 .tcu-gear .dropdown.open .glyphicon::after {
