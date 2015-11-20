@@ -2370,13 +2370,14 @@ fieldset.form-wrapper .f-set > table{
   /*padding-right: 3.5rem;*/
 }
 
+/*
 .is-transcript-editing .av-main-video-section,
 .is-transcript-editing .av-main-transcript-section {
-  width:100%; /* 100% is for mobile */
+  width:100%;
   transition:width 500ms;
   -webkit-transition:width 500ms;
   -moz-transition: width 500ms;
-}
+} */
 
 .node-video .tab-content {
   border-top: 1px solid #ddd;
@@ -2854,11 +2855,12 @@ button on video window
 
 @media screen and (max-width: 767px) {
 
-  .is-transcript-editing .avdesc{
+  /*.is-transcript-editing .avdesc{
     float: left;
     padding-left: 0.5rem;
     margin-bottom:1.5rem;
-  }
+  }*/
+
   .node-type-audio .nav-justified>li.active::before,
   .node-type-video .nav-justified>li.active::before{
     color: transparent !important;
@@ -2946,13 +2948,13 @@ button on video window
 
 @media screen and (min-width: 880px) {
 
-  .is-transcript-editing .av-main-video-section {
+  /*.is-transcript-editing .av-main-video-section {
     width:33.33333333333333% !important;
   }
 
   .is-transcript-editing .av-main-transcript-section {
     width:66.66666666666666% !important;
-  }
+  }*/
 } 
 
 @media screen and (min-width: 992px) {
@@ -2967,13 +2969,13 @@ button on video window
     padding-bottom: 2rem;
   }
 
-  .is-transcript-editing .av-main-video-section {
+  /*.is-transcript-editing .av-main-video-section {
     width:40% !important;
   }
 
   .is-transcript-editing .av-main-transcript-section {
     width:59% !important;
-  }
+  }*/
 
   .logged-in .carousel .carousel-main-image{
     width:45%;
@@ -3060,10 +3062,10 @@ button on video window
 
 @media screen and (min-width: 1280px) {
   
-  .is-transcript-editing .av-main-video-section,
+  /*.is-transcript-editing .av-main-video-section,
   .is-transcript-editing .av-main-transcript-section {
     width:50% !important;
-  }
+  }*/
 }
 
 @media (min-width:1400px) {
