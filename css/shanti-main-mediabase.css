@@ -1404,7 +1404,7 @@ ul.links.inline {
   border: none !important;
   box-shadow: none;
   font-size: 1.4rem;
-
+  color: #777;
   position: absolute;
   z-index: 10;
   right: 1.4rem;
