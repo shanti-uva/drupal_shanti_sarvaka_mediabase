@@ -2328,6 +2328,11 @@ fieldset.form-wrapper .f-set{
   background-clip: padding-box;
   background: #555;
   min-height:300px;
+  clear:both;
+}
+
+.kaltura-embed iframe{
+  min-height:300px;
 }
 
 .kaltura-thumb-wrap {
