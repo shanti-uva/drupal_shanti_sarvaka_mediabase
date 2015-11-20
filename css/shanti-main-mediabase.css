@@ -1419,6 +1419,7 @@ ul.links.inline {
   right: 1.5rem !important;
   top: -0.2rem;
   z-index: 1;
+  border-radius: 1rem 0 1rem 1rem;
 }
 
 .tcu-gear .dropdown-menu>li{
