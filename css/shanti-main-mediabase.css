@@ -972,7 +972,7 @@ ul.links.inline {
   border-width: 0 1px 4px 1px; */
 }
 
-.transcript-content li {
+.transcript-content li.list-group-item{
   /* border: 3px double #fff;
   border-style: solid double; */
   border-radius: 8px;
@@ -980,6 +980,7 @@ ul.links.inline {
   border: 1px solid #ddd;
   padding:1rem 1rem 0;
   margin-bottom: 0;
+  background: #ddd
 }
 
 .transcript-content li.playing {
@@ -1054,7 +1055,7 @@ ul.links.inline {
 .speaker-name {
   width: 100%;
   float:none;
-  margin: 0.3rem 0 1rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .speaker-name .speaker-display{
@@ -1141,6 +1142,10 @@ ul.links.inline {
   padding-right: 1rem;
   margin-right:18rem;
   margin-left:0;
+
+  background: white;
+  border-radius: 7px;
+  padding: 0.5rem
 }
 
 .av-main-transcript-section .tcu-info {
@@ -1152,6 +1157,7 @@ ul.links.inline {
 
 .transcript-content li.playing .speaker-tiers {
   border-color: #5b68ce;
+
 }
 
 .speaker-tiers .tier {
@@ -1159,7 +1165,7 @@ ul.links.inline {
   border:1px solid transparent;
   border-bottom: 1px dashed #eee;
   /*padding-bottom: 1rem;*/
-  padding: 8px;
+  padding: 7px;
 }
 
 .speaker-tiers .tier:last-child{
@@ -1412,8 +1418,8 @@ ul.links.inline {
 .tcu-gear{
   position: relative;
   float: right;
-  top: -0.9rem;
-  right: -0.6rem;
+  top: -0.2rem;
+  right: 0;
   display:none;
 }
 
@@ -1440,7 +1446,7 @@ ul.links.inline {
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   margin-left: -13.7rem;
   min-width:11rem;
-  padding-bottom: 1.2rem;
+  padding: 1.5rem 0.5rem 1.2rem;
   background:#777;
   position: absolute;
   right: -0.2rem !important;
@@ -2414,19 +2420,23 @@ fieldset.form-wrapper .f-set{
   margin:0 1rem;
 }
 
+.kaltura-embed{
+   min-height:400px;
+}
+
 /* this adds black band on top of video */
 .kaltura-embed > div > div{
   border-radius: 0.5rem;
   background-clip: padding-box;
   min-height:400px;
-  background: #000;
+  background: #777;
   border: 1.3rem solid #000;
   border-bottom-width: 0.5rem;
   min-height:400px;
 }
 
 .kaltura-embed iframe{
-  min-height:400px;
+
 }
 
 .kaltura-thumb-wrap {
