@@ -1072,7 +1072,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button {
-  margin: 0 0 0 0.5rem;
+  margin: 0 0 0 1rem;
 }
 
 .av-main-transcript-section .play-button .btn {
@@ -1203,6 +1203,8 @@ ul.links.inline {
 .tcu-info .btn.btn-default .icon::before,
 .speaker-tiers .btn.btn-default .icon::before{
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif !important;
+  font-weight:bold;
+  font-weight:700;
 }
 
 .speaker-tiers .editable-buttons.editable-buttons-bottom{ 
