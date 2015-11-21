@@ -1852,9 +1852,9 @@ ul.links.inline {
   text-shadow:none;
 }
 
-.transcript-search-wrapper .input-group-btn .btn.btn-default.active {
+.transcript-search-wrapper .input-group-btn .btn.btn-default:focus {
   background: transparent;
-  border-color: #fff;
+  border-color: transparent;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon {
