@@ -983,10 +983,9 @@ ul.links.inline {
   background: #ddd
 }
 
-.transcript-content li.playing {
-  border-color: #7181ff;
-  background: #fafafa;
-  border-width: 1px;
+.transcript-content li.list-group-item.playing {
+  border-color: #aaa;
+  background: #ccc;
 }
 
 .transcript-controls table tbody,
@@ -1465,9 +1464,10 @@ ul.links.inline {
 }
 
 .tcu-gear .dropdown-menu>li>a{
-  padding: 0 0 0 0.5rem;
+  padding: 0 0 0 0.8rem;
   text-transform: uppercase;
   font-size: 80%;
+  line-height:1.75em;
   font-weight: bold;
   font-family: 'museo-sans-700';
   color: #fff;
