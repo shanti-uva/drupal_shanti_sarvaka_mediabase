@@ -1051,8 +1051,7 @@ ul.links.inline {
 
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
-  border: 1px solid #ccc;
-  background: #f5f5f5;
+  background: #888;
 }
 
 .speaker-name {
