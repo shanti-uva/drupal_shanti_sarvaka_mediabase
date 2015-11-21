@@ -1427,6 +1427,7 @@ ul.links.inline {
   top: -0.1rem;
   z-index: 1;
   border-radius: 1rem 0 1rem 1rem;
+  border-color:#999;
 }
 
 .tcu-gear .dropdown-menu>li{
@@ -1441,6 +1442,7 @@ ul.links.inline {
   font-family: 'museo-sans-700';
   color: #fff;
   border-bottom:none;
+  text-shadow:1px 1px #888;
 }
 
 .tcu-gear .dropdown-menu>li>a:hover,
@@ -1466,6 +1468,7 @@ ul.links.inline {
   top: -0.5rem;
   left: -0.4rem;
   z-index: 100;
+  text-shadow:1px 1px #888;
 }
 
 .tcu-gear .dropdown.open .glyphicon::after {
