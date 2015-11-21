@@ -1536,7 +1536,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-default.btn-icon:focus .icon, 
 .btn-group-transcript .btn.btn-default.btn-icon:hover .fa, 
 .btn-group-transcript .btn.btn-default.btn-icon:focus .fa{
-  background: #888;
+  background: #888 !important;
 }
 .btn-group-transcript {
   width: 100%;
