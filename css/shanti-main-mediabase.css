@@ -992,6 +992,10 @@ ul.links.inline {
   background: #c0c0c0;
 }
 
+.transcript-content li.list-group-item.playing .speaker-tiers{
+  box-shadow: 0 0 3px 2px #aaa;
+}
+
 .transcript-controls table tbody,
 .transcript-player table tbody {
   border-top: none;
@@ -1143,7 +1147,7 @@ ul.links.inline {
   padding-right: 1rem;
   margin-right:16rem;
   margin-left:0;
-
+  box-shadow: 0 0 3px 1px #ccc;
   background: white;
   border-radius: 7px;
   padding: 0.5rem
@@ -1569,7 +1573,7 @@ ul.links.inline {
   line-height: 1;
   width: auto;
   background: transparent;
-  text-shadow: 1px 1px #777;
+  text-shadow: 1px 1px 2px #333;
 }
 
 .btn-group-transcript .btn.btn-icon .fa {
