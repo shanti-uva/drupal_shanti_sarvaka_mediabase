@@ -2283,10 +2283,8 @@ ul.links.inline {
   background: rgb(254, 254, 223);
   height: 2rem;
   margin: 0 .1rem;
-  border: 1px solid #ddd;
-  border-width: 0 1px 0 1px;
   font-size: 90%;
-  line-height: 1.62em;
+  line-height: 1.68em;
 }
 
 
