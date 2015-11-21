@@ -1013,7 +1013,7 @@ ul.links.inline {
 .av-main-transcript-section .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
-  background: #707070;  
+  background: #555;  
   border-radius: 0;
   height: 6rem;
   border: 1px solid #ddd;
@@ -1528,11 +1528,17 @@ ul.links.inline {
 /*-----------------------------------*/
 /***** transcript button control *****/
 /*-----------------------------------*/
+.btn-group-transcript .btn.btn-default.btn-icon:hover .icon, 
+.btn-group-transcript .btn.btn-default.btn-icon:focus .icon, 
+.btn-group-transcript .btn.btn-default.btn-icon:hover .fa, 
+.btn-group-transcript .btn.btn-default.btn-icon:focus .fa{
+  background: #888;
+}
 .btn-group-transcript {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #fff;
+  background: #555;
 }
 
 .btn-group-transcript .btn.btn-icon {
@@ -1548,7 +1554,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon:hover,
 .btn-group-transcript .btn.btn-icon:active {
-  background: #888 !important;
+  background: #444 !important;
 }
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
@@ -1585,14 +1591,14 @@ ul.links.inline {
 
 .btn-group-transcript.btn-group .btn+.btn {
   border-left: none;
-  background: #707070;
+  background: #555;
 }
 
 .btn-group-transcript.btn-group:nth-of-type(1) > .btn.btn-default {
   border-left: none;
   margin-left: 0;
   outline: 0;
-  background: #707070;
+  background: #555;
 }
 
 .btn-group-transcript .fa.fa-comments-o{
