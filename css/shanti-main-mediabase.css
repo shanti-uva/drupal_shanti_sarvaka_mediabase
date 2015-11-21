@@ -1083,7 +1083,7 @@ ul.links.inline {
 
 
   border-color: #ddd;
-  background-color: #777;
+  background-color: #999;
   text-shadow:1px 1px #888;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
@@ -1092,11 +1092,11 @@ ul.links.inline {
 .av-main-transcript-section .play-button .btn:hover {
   border: 1px solid transparent;
   border-collapse: separate;
-  background: #f9f9f9;
+  background: #888;
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
-  color: #888;
+  color: #eee;
   line-height: 0.8rem;
   float: left;
   padding: 0;
@@ -1312,7 +1312,7 @@ ul.links.inline {
 
 .edit-times{
   display: inline-block;
-  color: #aaa;
+  color: #ddd;
   cursor: pointer;
   position:relative;
   left: -1.75rem;
