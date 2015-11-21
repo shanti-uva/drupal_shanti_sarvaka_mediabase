@@ -978,8 +978,8 @@ ul.links.inline {
   border-radius: 8px;
   background-clip: padding-box;
   border: 1px solid #ddd;
-  padding:1rem 1rem 0;
-  margin-bottom: 0;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin-bottom: 0.1rem;
   background: #ddd
 }
 
@@ -1069,7 +1069,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button {
-  margin: 0 0 0 0.8rem;
+  margin: 0 0 0 0.5rem;
 }
 
 .av-main-transcript-section .play-button:hover{
@@ -1080,17 +1080,19 @@ ul.links.inline {
   margin: 0;
   padding: 0.4rem 3.5rem 0.2rem 2rem;
   font-size: 1.1rem;
-  border: 1px solid transparent;
-  box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);
-  border-collapse: separate;
-}
 
-.av-main-transcript-section .play-button .btn:hover {
+
   border-color: #ddd;
   background-color: #777;
   text-shadow:1px 1px #888;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
+}
+
+.av-main-transcript-section .play-button .btn:hover {
+  border: 1px solid transparent;
+  border-collapse: separate;
+  background: #f9f9f9;
 }
 
 .av-main-transcript-section .play-button .btn .glyphicon {
@@ -1305,7 +1307,7 @@ ul.links.inline {
 .editing-active .speaker-display:hover{
   /*background:#fcffc6;
   background: rgba(252, 255, 198, 0.5);*/
-  border-color: #c0c0c0;
+  border-color: #aaa;
 }
 
 .edit-times{
@@ -1352,14 +1354,14 @@ ul.links.inline {
   top: -0.4rem;
   right: -0.4rem;
   font-size: 1.1rem;
-  color:white;
+  color:transparent;
   display:inline-block;
   height:12px;
   width:12px;
   font-family: 'Glyphicons Halflings';
 }
 .editing-active .speaker-display:hover::before{
-  color:#aaa;
+  color:#999;
 }
 
 .tcu-info .btn.play-range{
