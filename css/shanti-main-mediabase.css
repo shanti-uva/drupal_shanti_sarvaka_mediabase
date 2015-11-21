@@ -1057,7 +1057,8 @@ ul.links.inline {
 .speaker-name {
   width: 100%;
   float:none;
-  margin: 0.5rem 0 1rem .5rem;
+  margin: 1.2rem 0 1rem .5rem;
+  padding-right:.5rem
 }
 
 .speaker-name .speaker-display{
@@ -1167,7 +1168,7 @@ ul.links.inline {
   border-bottom-color:transparent;
 }
 
-.speaker-tiers .tier[data-tier="content_bod"]{
+.speaker-tiers .tier[data-speaker-display='ss_speaker_bod']{
   font-size:1.06em;
 }
 
@@ -1391,7 +1392,7 @@ ul.links.inline {
 }
 
 .has-transcript .tabs li a.transcript-edit::after{
-  content: "\f040";
+  content: '\f040';
   font-family:'FontAwesome';
   color:#444;
   font-size:1.25em;
@@ -1418,7 +1419,7 @@ ul.links.inline {
 .tcu-gear{
   position: relative;
   float: right;
-  top: -0.2rem;
+  top: -0.6rem;
   right: 0;
   display:none;
 }
@@ -1579,7 +1580,7 @@ ul.links.inline {
   height: 6rem;
 }
 
-.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.bootstrap-select:not([class*='span']):not([class*='col-']):not([class*='form-control']):not(.input-group-btn) {
   width: 16.66%;
 }
 
@@ -2282,7 +2283,7 @@ ul.links.inline {
 /********************/
 /* .node-video-form */
 /********************/
-/* overide "mediabase-edit-form.css" */
+/* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
   position: relative;
@@ -2825,7 +2826,7 @@ button on video window
   float: left;
 }
 .page-collections .views-field-field-images::after{
-  content: ".";
+  content: '.';
   display: block;
   height: 0;
   clear: both;
@@ -2834,7 +2835,7 @@ button on video window
 .page-collections .views-field-field-images::before,
 .page-collections .views-field-field-images::after{
   display: table;
-  content: " "
+  content: '';
 }
 .page-collections .views-field-title{
   margin-top: 2rem;
