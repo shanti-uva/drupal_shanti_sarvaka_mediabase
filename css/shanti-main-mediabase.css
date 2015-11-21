@@ -1086,7 +1086,8 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button .btn:hover {
   border-color: #ddd;
-  background-color: #555;
+  background-color: #777;
+  text-shadow:1px 1px #888;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
 }
