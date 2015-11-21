@@ -1139,12 +1139,12 @@ ul.links.inline {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
   padding-right: 1rem;
-  margin-right:30%;
+  margin-right:18rem;
+  margin-left:0;
 }
 
 .av-main-transcript-section .tcu-info {
-  width: 29%;
-  min-width: 17rem;
+  width: 17.5rem;
   min-height: 5.5rem;
   padding-bottom:1rem;
   float: right;
