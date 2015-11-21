@@ -1144,6 +1144,7 @@ ul.links.inline {
 
 .av-main-transcript-section .tcu-info {
   width: 34%;
+  min-width:19rem;
   min-height: 5.5rem;
   padding-bottom:1rem;
 }
