@@ -988,8 +988,8 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing {
-  border-color: #aaa;
-  background: #ccc;
+  border-color: #888;
+  background: #c0c0c0;
 }
 
 .transcript-controls table tbody,
