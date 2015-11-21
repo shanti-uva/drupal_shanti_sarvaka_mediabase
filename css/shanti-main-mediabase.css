@@ -1416,13 +1416,15 @@ ul.links.inline {
   margin-left: -13.7rem;
   min-width:11rem;
   padding-bottom: 1.2rem;
-  background:#999;
+  background:#777;
   position: absolute;
   right: -0.2rem !important;
   top: -0.1rem;
   z-index: 1;
   border-radius: 1rem 0 1rem 1rem;
-  border-color:#999;
+  border-color:#888;
+  filter: alpha(opacity=85);
+  opacity: 0.85;
 }
 
 .tcu-gear .dropdown-menu>li{
@@ -1464,7 +1466,7 @@ ul.links.inline {
   left: -0.4rem;
   z-index: 100;
   text-shadow:1px 1px #888;
-  color:#f0f0f0;
+  background: #ccc;
 }
 
 .tcu-gear .dropdown.open .glyphicon::after {
