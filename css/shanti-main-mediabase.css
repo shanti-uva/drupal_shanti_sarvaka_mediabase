@@ -975,12 +975,16 @@ ul.links.inline {
 .transcript-content li.list-group-item{
   /* border: 3px double #fff;
   border-style: solid double; */
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
   background-clip: padding-box;
   border: 1px solid #ddd;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   margin-bottom: 0.1rem;
   background: #ddd
+}
+
+.transcript-content li.list-group-item:first-of-type{
+  border-radius: 0 0 0 8px;
 }
 
 .transcript-content li.list-group-item.playing {
