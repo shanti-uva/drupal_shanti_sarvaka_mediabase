@@ -1222,6 +1222,9 @@ ul.links.inline {
   text-decoration:none;
   font-size:1rem;
    background:transparent;
+  position: relative;
+  left: 6.5rem;
+  bottom: -2.5rem;
 }
 
 .tcu-info .editable-cancel:hover,
@@ -1354,9 +1357,17 @@ ul.links.inline {
   padding: .2rem 1rem;
 }
 
+.tcu-info .range-display output{
+  font-size: 0.9rem;
+  font-family:helvetica, arial, sans-serif;
+  width: auto;
+}
+
+
 .tcu-info .btn.play-range .glyphicon-play{
-  top: .2rem;
-  margin-right: 0.2rem;
+  top: .1rem;
+  margin-right: 0;
+  left: -0.2rem;
 }
 
 /***** banner tabs for editors ****/
