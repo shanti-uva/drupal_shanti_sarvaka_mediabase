@@ -166,6 +166,9 @@
 							  height = ((ratio == '4:3') ? pwidth / 1.3333 : pwidth / 1.7778) + ((ratio == '4:3') ? 32 : 42), // add 32/42 px to height for control bar
 							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';		
 						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
+								'background':'black',
+								'border-width':'1.2' + 'rem',
+								'border-bottom-width':'0.5' + 'rem',
 								'position':'', 
 								'top':'', 
 								'left': '', 

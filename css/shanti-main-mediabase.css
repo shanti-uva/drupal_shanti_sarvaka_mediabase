@@ -2436,10 +2436,11 @@ fieldset.form-wrapper .f-set{
   border-radius: 0.5rem;
   background-clip: padding-box;
   min-height:400px;
-  background: #777;
-  border: 1.3rem solid #000;
+  border: 1.2rem solid #000;
   border-bottom-width: 0.5rem;
   min-height:400px;
+  /* background color and border-width is set via js with video player size ratio */
+  border-width:0;
 }
 
 .kaltura-embed iframe{
