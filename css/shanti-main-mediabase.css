@@ -1972,7 +1972,7 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .searchreset .icon::before,
 .transcript-search-wrapper .input-group-btn .searchreset .icon::after {
-  background: #aaa;
+  background: transparent;
   position: absolute;
   top: 1.3rem;
   left: 0.5rem;
