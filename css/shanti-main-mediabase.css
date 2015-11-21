@@ -1366,7 +1366,7 @@ ul.links.inline {
 
 .tcu-info .begin-range,
 .tcu-info .end-range{
-
+  
 }
 
 
@@ -1412,6 +1412,11 @@ ul.links.inline {
   float: right;
   top: -0.9rem;
   right: -0.6rem;
+  display:none;
+}
+
+.editing-active .tcu-gear{
+  display:inline-block;
 }
 
 .tcu-gear-ops.dropdown-toggle{
