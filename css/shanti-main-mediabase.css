@@ -1548,7 +1548,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon:hover,
 .btn-group-transcript .btn.btn-icon:active {
-  background: transparent;
+  background: #a0a0a0 !important;
 }
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
