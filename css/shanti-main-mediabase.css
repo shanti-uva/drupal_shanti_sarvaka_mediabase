@@ -1013,7 +1013,7 @@ ul.links.inline {
 .av-main-transcript-section .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
-  background: #888;
+  background: #707070;  
   border-radius: 0;
   height: 6rem;
   border: 1px solid #ddd;
@@ -1585,14 +1585,14 @@ ul.links.inline {
 
 .btn-group-transcript.btn-group .btn+.btn {
   border-left: none;
-  background: #888;
+  background: #707070;
 }
 
 .btn-group-transcript.btn-group:nth-of-type(1) > .btn.btn-default {
   border-left: none;
   margin-left: 0;
   outline: 0;
-  background: #888;
+  background: #707070;
 }
 
 .btn-group-transcript .fa.fa-comments-o{
