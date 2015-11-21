@@ -1057,7 +1057,7 @@ ul.links.inline {
 .speaker-name {
   width: 100%;
   float:none;
-  margin: 1.5rem 0 1rem;
+  margin: 4rem 0 1rem .5rem;
 }
 
 .speaker-name .speaker-display{
@@ -1072,18 +1072,17 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button {
   margin: 0 0 0 0.5rem;
-}
-
-.av-main-transcript-section .play-button:hover{
-  background: #f5f5f5;
+  position: relative;
+  top: -10.8rem;
+  left: 0.5rem;
 }
 
 .av-main-transcript-section .play-button .btn {
   margin: 0;
   padding: 0.4rem 3.5rem 0.2rem 2rem;
   font-size: 1.1rem;
-
-
+  min-width: 12rem;
+  text-align:left;
   border-color: #ddd;
   background-color: #999;
   text-shadow:1px 1px #888;
@@ -1233,10 +1232,10 @@ ul.links.inline {
   text-transform:capitalize;
   text-decoration:none;
   font-size:1rem;
-   background:transparent;
+  background:transparent;
   position: relative;
-  left: 6.5rem;
-  bottom: -2.5rem;
+  left: -5rem;
+  bottom: 0;
 }
 
 .tcu-info .editable-cancel:hover,
@@ -1317,8 +1316,8 @@ ul.links.inline {
   color: #ddd;
   cursor: pointer;
   position:relative;
-  left: -1.75rem;
-  top: 0.2rem;
+  left: -1.4rem;
+  top: -10.5rem;
   height: 17px;
   width: 17px;
 }
