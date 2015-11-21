@@ -1013,7 +1013,7 @@ ul.links.inline {
 .av-main-transcript-section .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
-  background: #fff;
+  background: #888;
   border-radius: 0;
   height: 6rem;
   border: 1px solid #ddd;
@@ -1556,11 +1556,12 @@ ul.links.inline {
   border-radius: 0;
   margin: 0 auto;
   font-size: 1.62em;
-  color: #606060;
+  color: #fff;
   position: static;
   line-height: 1;
   width: auto;
   background: transparent;
+  text-shadow: 1px 1px #777;
 }
 
 .btn-group-transcript .btn.btn-icon .fa {
@@ -1584,12 +1585,14 @@ ul.links.inline {
 
 .btn-group-transcript.btn-group .btn+.btn {
   border-left: none;
+  background: #888;
 }
 
 .btn-group-transcript.btn-group:nth-of-type(1) > .btn.btn-default {
   border-left: none;
   margin-left: 0;
   outline: 0;
+  background: #888;
 }
 
 .btn-group-transcript .fa.fa-comments-o{
@@ -1636,7 +1639,8 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .selectpicker .caret::before {
-  color: #606060 !important;
+  color: #fff !important;
+  text-shadow:1px 1px #777;
   font-size: 1.88em;
   left: -1.3rem;
   right: 0;
@@ -1645,8 +1649,9 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .selectpicker .fa::before {
-  font-size: 2.32em;
-  color: #606060 !important;
+  font-size: 2.12em;
+  color: #fff !important;
+  text-shadow:1px 1px #777;
   position: relative;
   left: 0.5rem;
 }
