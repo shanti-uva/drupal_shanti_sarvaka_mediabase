@@ -1273,6 +1273,11 @@ ul.links.inline {
 .speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
 }
+.tcu-info .glyphicon,
+.speaker-tiers .glyphicon{
+  font-weight:bold;
+  font-weight: 700;
+}
 .tcu-info .editable-container.editable-inline,
 .speaker-tiers .editable-container.editable-inline{
   display: block;
