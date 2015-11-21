@@ -1726,7 +1726,7 @@ ul.links.inline {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #f0f0f0;
+  background: #888;
   padding: 0;
   display: none;
   height: 8rem;
@@ -2016,10 +2016,10 @@ ul.links.inline {
   font-size: 90%;
   text-transform: capitalize;
   display: inline-block;
- /* display: none; */
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s;
   cursor:default;
+  color:#fff;
 }
 
 .transcript-search-options .iradio_minimal-red{
@@ -2096,16 +2096,13 @@ ul.links.inline {
   width: 100%;
   text-align: center;
   padding-right: 0.3rem;
- /* display: none; */
   -webkit-transition: all 500ms ease 0s;
   transition: all 500ms ease 0s;
-
   display: block;
   position: relative;
   top:0;
   left:0.5rem;
-
-  color: #777;
+  color: #eee;
 }
 
 /*
