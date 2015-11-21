@@ -1138,8 +1138,8 @@ ul.links.inline {
 .transcript-content .speaker-tiers {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
-  margin-left: 0;
   padding-right: 1rem;
+  margin-right:30%;
 }
 
 .av-main-transcript-section .tcu-info {
