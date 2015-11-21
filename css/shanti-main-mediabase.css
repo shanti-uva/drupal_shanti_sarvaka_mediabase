@@ -1057,7 +1057,7 @@ ul.links.inline {
 .speaker-name {
   width: 100%;
   float:none;
-  margin: 4rem 0 1rem .5rem;
+  margin: 0.5rem 0 1rem .5rem;
 }
 
 .speaker-name .speaker-display{
@@ -1072,9 +1072,6 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button {
   margin: 0 0 0 0.5rem;
-  position:relative;
-  top:-10.8rem;
-  left:0.5rem;
 }
 
 .av-main-transcript-section .play-button .btn {
@@ -1315,10 +1312,11 @@ ul.links.inline {
   color: #ddd;
   cursor: pointer;
   position:relative;
-  left: -1.4rem;
-  top: -10.5rem;
+  left: -1.7rem;
+  top: 0.2rem;
   height: 17px;
   width: 17px;
+  font-size: 90%;
 }
 
 .tcu-info .editableform .form-control{
