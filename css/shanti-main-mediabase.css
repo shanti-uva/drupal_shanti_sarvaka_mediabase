@@ -1233,6 +1233,10 @@ ul.links.inline {
   bottom: 0;
 }
 
+.speaker-tiers .editable-cancel{
+  left: 0;  
+}
+
 .tcu-info .editable-cancel:hover,
 .speaker-tiers .editable-cancel:hover{
   border:none;
@@ -1267,7 +1271,7 @@ ul.links.inline {
 }
 .tcu-info .editable-container.editable-inline,
 .speaker-tiers .editable-container.editable-inline{
-  display:inline-block;
+  display: block;
   border-bottom: 1px solid #eee;
   margin-bottom:1rem;
   padding-left:0.5rem;
