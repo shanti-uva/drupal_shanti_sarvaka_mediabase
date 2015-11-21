@@ -1403,12 +1403,12 @@ ul.links.inline {
   margin: 0;
   border: none !important;
   box-shadow: none;
-  font-size: 1.4rem;
-  color: #777;
+  color: #aaa;
   position: absolute;
   z-index: 10;
-  right: 1.4rem;
-  top: 0;
+  right: 1.2rem;
+  top: -0.4rem;
+  font-size:1.3rem
 }
 
 .tcu-gear .dropdown-menu{
@@ -1463,16 +1463,22 @@ ul.links.inline {
 
   position: absolute;
   top: -0.5rem;
-  left: -0.4rem;
-  z-index: 100;
+  left: -0.5rem;
+  z-index: 10;
   text-shadow:1px 1px #888;
   background: #ccc;
+  color:#aaa;
 }
 
 .tcu-gear .dropdown.open .glyphicon::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.tcu-gear .dropdown.open:hover .glyphicon::before,
+.tcu-gear .dropdown.open:hover .glyphicon::after {
+  background: #eee;
 }
 
 .tcu-gear .dropdown.open:hover .icon,
