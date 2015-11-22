@@ -1608,14 +1608,14 @@ ul.links.inline {
 
 .btn-group-transcript.btn-group .btn+.btn {
   border-left: none;
-  background: #555;
+  background: #333;
 }
 
 .btn-group-transcript.btn-group:nth-of-type(1) > .btn.btn-default {
   border-left: none;
   margin-left: 0;
   outline: 0;
-  background: #555;
+  background: #333;
 }
 
 .btn-group-transcript .fa.fa-comments-o{
