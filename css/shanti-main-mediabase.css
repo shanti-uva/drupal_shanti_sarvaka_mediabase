@@ -946,6 +946,11 @@ ul.links.inline {
 .node-type-video.has-transcript .panel-default>.panel-heading{
   background: #d8d8d8 !important;
 }
+.node-type-video.has-transcript .has-tabs .banner-tabs{
+  background: #fff !important;
+}
+
+
 .transcript-controls{
   margin-right: 2rem;
 }
@@ -1741,7 +1746,7 @@ ul.links.inline {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #909090;
+  background: #888;
   padding: 0;
   display: none;
   height: 8rem;
