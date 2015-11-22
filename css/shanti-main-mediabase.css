@@ -1871,8 +1871,9 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default:focus {
-  background: transparent;
-  border-color: transparent;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: #aaa;
 }
 
 .transcript-search-wrapper .input-group-btn .btn.btn-default .icon {
@@ -1997,7 +1998,7 @@ ul.links.inline {
   width: 1.7rem;
   height: 1px;
   content: '';
-  opacity:1;
+  opacity:0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
