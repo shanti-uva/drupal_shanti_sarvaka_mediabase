@@ -2501,20 +2501,6 @@ fieldset.form-wrapper .f-set > table{
   margin-left:2rem;  /* in node-video admin edit page */
 }
 
-/* this is in iframe and thus does nothing
-.videoHolder{
-  position:static !important;
-}
-*/
-
-.av-main-transcript-section{
-  padding-right:2rem;
-}
-
-.av-main-video-section {
-  /*padding-right: 3.5rem;*/
-}
-
 /*
 .is-transcript-editing .av-main-video-section,
 .is-transcript-editing .av-main-transcript-section {
@@ -2547,7 +2533,6 @@ fieldset.form-wrapper .f-set > table{
 
 .video-row {
   margin-top: 0.1rem; /* improves alignemnt with transcript top */
-  padding-left: 1rem
 }
 /* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
