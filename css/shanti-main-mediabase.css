@@ -948,6 +948,8 @@ ul.links.inline {
 }
 .node-type-video.has-transcript .has-tabs .banner-tabs{
   background: #fff !important;
+  filter: alpha(opacity=100);
+  opacity: 1;
 }
 
 
