@@ -1006,7 +1006,7 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing .speaker-tiers{
-  box-shadow: 0 0 3px 2px #aaa;
+  box-shadow: 0 0 3px 2px #888;
 }
 
 .transcript-content li.list-group-item.playing .speaker-display{
