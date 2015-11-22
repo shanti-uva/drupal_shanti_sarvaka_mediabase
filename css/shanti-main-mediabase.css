@@ -940,6 +940,12 @@ ul.links.inline {
 /*----------------------------*/
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
+.node-type-video.has-transcript .main-wrapper{
+  background: #ddd;
+}
+.node-type-video.has-transcript .panel-default>.panel-heading{
+  background: #d8d8d8 !important;
+}
 .transcript-controls{
   margin-right: 2rem;
 }
@@ -975,12 +981,12 @@ ul.links.inline {
 .transcript-content li.list-group-item{
   /* border: 3px double #fff;
   border-style: solid double; */
-  border-radius: 8px 0 0 8px;
+  border-radius: 7px 0 0 7px;
   background-clip: padding-box;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   padding: 0.8rem 0.5rem 0.8rem 1rem;
   margin-bottom: 0.1rem;
-  background: #ddd
+  background: #ccc
 }
 
 .transcript-content li.list-group-item:first-of-type{
@@ -989,7 +995,7 @@ ul.links.inline {
 
 .transcript-content li.list-group-item.playing {
   border-color: #aaa;
-  background: #c0c0c0;
+  background: #aaa;
 }
 
 .transcript-content li.list-group-item.playing .speaker-tiers{
