@@ -1001,12 +1001,17 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing {
-  border-color: #aaa;
-  background: #aaa;
+  border-color: #888;
+  background: #999;
 }
 
 .transcript-content li.list-group-item.playing .speaker-tiers{
   box-shadow: 0 0 3px 2px #aaa;
+}
+
+.transcript-content li.list-group-item.playing .speaker-display{
+  color: white !important;
+  text-shadow: 0 0 3px #222;
 }
 
 .transcript-controls table tbody,
@@ -3036,6 +3041,7 @@ button on video window
     margin-top: 1.5rem;
   }
 
+  /* video page layout */
   .av-main-video-section {
     padding-right: 0;
     width:70% !important;
@@ -3045,6 +3051,7 @@ button on video window
     width:50% !important;
   }
 
+  /* SHANTi filters header in use above gallery grids */
   .shanti-filters table.pagerer {
     margin: 2rem 0 0;
   }
@@ -3069,6 +3076,7 @@ button on video window
     float: right;
   }
 
+  /* carousel front page */
   .logged-in .carousel-title {
     font-size: 1.38em;
   }
