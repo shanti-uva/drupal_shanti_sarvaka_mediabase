@@ -1991,14 +1991,14 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .searchreset .icon::before,
 .transcript-search-wrapper .input-group-btn .searchreset .icon::after {
-  background: #aaa;
+  background: transparent;
   position: absolute;
   top: 1.3rem;
   left: 0.5rem;
   width: 1.7rem;
   height: 1px;
   content: '';
-  opacity:0;
+  opacity:1;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -2023,6 +2023,11 @@ ul.links.inline {
 .transcript-search-wrapper .input-group-btn .searchreset:hover .icon::before,
 .transcript-search-wrapper .input-group-btn .searchreset:hover .icon::after {
   background: #555;
+}
+
+.transcript-search-wrapper .input-group-btn .searchreset:focus .icon::before,
+.transcript-search-wrapper .input-group-btn .searchreset:focus .icon::after{
+  opacity:1;
 }
 
 .transcript-search-options {
