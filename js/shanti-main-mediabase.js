@@ -167,8 +167,7 @@
 							  divclass = (ratio == '4:3') ? 'ratio-4-3' : 'ratio-16-9';		
 						$('.kWidgetIframeContainer.kaltura-embed-processed').addClass(divclass).css({
 								'background':'black',
-								'border-width':'1.2' + 'rem',
-								'border-bottom-width':'0.5' + 'rem',
+								'border-width':'0.3' + 'rem',
 								'position':'', 
 								'top':'', 
 								'left': '', 
