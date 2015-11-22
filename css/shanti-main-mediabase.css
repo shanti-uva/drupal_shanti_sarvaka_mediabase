@@ -1566,6 +1566,7 @@ ul.links.inline {
 .btn-group-transcript .btn.btn-icon:hover,
 .btn-group-transcript .btn.btn-icon:active {
   background: #444 !important;
+  text-shadow: 0 0 3px #555;
 }
 /*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
 .btn-group-transcript .btn.btn-icon .fa,
@@ -1578,7 +1579,6 @@ ul.links.inline {
   line-height: 1;
   width: auto;
   background: transparent;
-  text-shadow: 1px 1px 2px #333;
 }
 
 .btn-group-transcript .btn.btn-icon .fa {
@@ -1587,7 +1587,7 @@ ul.links.inline {
 }
 
 .btn-group-transcript .btn.btn-icon.playpause {
-  font-size: 1em;
+  font-size: 1.06em;
   height: 6rem;
 }
 
@@ -1735,7 +1735,7 @@ ul.links.inline {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #888;
+  background: #909090;
   padding: 0;
   display: none;
   height: 8rem;
