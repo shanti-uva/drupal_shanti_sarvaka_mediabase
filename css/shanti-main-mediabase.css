@@ -2571,9 +2571,8 @@ fieldset.form-wrapper .f-set > table{
 }
 /* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
-  padding-top: 1rem;
+  padding-left: 0px !important;
 }
-/* right column wrapper for descriptive metadata immediately under video */
 .video-overview {
   padding-left: 0px !important;
 }
@@ -2603,8 +2602,10 @@ fieldset.form-wrapper .f-set > table{
 }
 
 .avdesc {
-  margin: 5px 0 0;
+  margin: 0;
+  padding-bottom:1.5rem;
   max-width: 800px;
+  float:left;
 }
 
 .avdate .icon,
@@ -3137,10 +3138,7 @@ button on video window
     padding-left: 0.25rem;
   }
 
-  .video-overview {
-    padding-left: 5px !important;
-    padding-bottom: 2rem;
-  }
+
 
   /*.is-transcript-editing .av-main-video-section {
     width:40% !important;
