@@ -1995,7 +1995,7 @@ ul.links.inline {
 
 .transcript-search-wrapper .input-group-btn .searchreset .icon::before,
 .transcript-search-wrapper .input-group-btn .searchreset .icon::after {
-  background: transparent;
+  background: #aaa;
   position: absolute;
   top: 1.3rem;
   left: 0.5rem;
