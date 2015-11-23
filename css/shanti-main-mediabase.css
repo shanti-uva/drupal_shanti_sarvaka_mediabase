@@ -1005,8 +1005,8 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing {
-  border-color: #888;
-  background: #777;
+  border-color: #999;
+  background: #999;
 }
 
 .transcript-content li.list-group-item.playing .speaker-tiers{
@@ -1180,6 +1180,10 @@ ul.links.inline {
   min-height: 5.5rem;
   padding-bottom:1rem;
   float: right;
+}
+
+.tcu-info .speaker-display[data-speaker-display='ss_speaker']{ /* tibetan font */
+  font-size: 108%;
 }
 
 .speaker-tiers .tier {
@@ -2474,7 +2478,7 @@ fieldset.form-wrapper .f-set{
 .node-type-video.has-transcript .panel-heading .accordion-toggle::after{
   text-shadow:none;
 }
-.panel.panel-default .panel-heading h6 .glyphicon{
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
   border-color:#999;
 }
 
