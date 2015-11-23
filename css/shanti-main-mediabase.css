@@ -1082,9 +1082,9 @@ ul.links.inline {
 
 .speaker-name {
   width: 100%;
-  float:none;
-  margin: 1.2rem 0 1rem .5rem;
-  padding-right:.5rem
+  float:left;
+  margin: 0.2rem 0 1rem 0.5rem;
+  padding-right:.5rem;
 }
 
 .speaker-name .speaker-display{
