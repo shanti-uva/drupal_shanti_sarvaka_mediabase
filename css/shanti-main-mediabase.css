@@ -1026,7 +1026,7 @@ ul.links.inline {
 
 .transcript-content li.list-group-item.playing .speaker-display{
   color: white !important;
-  text-shadow: 0 0 3px #222;
+  text-shadow: 0 0 2px #444;
 }
 
 .transcript-controls table tbody,
@@ -1471,6 +1471,16 @@ ul.links.inline {
 .has-transcript .panel.panel-default .panel-heading h6{
   border-bottom: none;
 }
+
+.has-transcript .tabs.primary li.active a{
+  color: #777 !important;
+  background: #eee;
+  text-shadow:none !important;
+}
+
+
+
+
 
 
 
