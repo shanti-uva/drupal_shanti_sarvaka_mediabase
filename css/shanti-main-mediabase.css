@@ -1387,6 +1387,7 @@ ul.links.inline {
 
 .tcu-info .twitter-typeahead .tt-query{
   margin-bottom:0 !important;
+  font-size: 85%;
 }
 
 .tcu-info .editable-clear-x{
@@ -1409,6 +1410,7 @@ ul.links.inline {
   height:12px;
   width:12px;
   font-family: 'Glyphicons Halflings';
+  text-shadow:none;
 }
 .editing-active .speaker-display:hover::before{
   color:#999;
@@ -1798,7 +1800,7 @@ ul.links.inline {
   display: none;
   height: 8rem;
   position: relative;
-  margin: 0 0.18rem 0.1rem;
+  margin: 0;
 }
 
 .transcripts-ui-search-form {
