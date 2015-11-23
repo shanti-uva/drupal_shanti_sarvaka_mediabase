@@ -1575,12 +1575,11 @@ ul.links.inline {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #555;
 }
 
 .btn-group-transcript .btn.btn-icon {
   display: table-cell;
-  width: 16.66%;
+  width: 16.5%;
   height: 6rem;
 }
 
