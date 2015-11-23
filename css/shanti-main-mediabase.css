@@ -951,10 +951,22 @@ ul.links.inline {
   background: #d8d8d8 !important;
 }
 .node-type-video.has-transcript .has-tabs .banner-tabs{
-  background: #fff !important;
+  background: #ccc !important;
   filter: alpha(opacity=100);
   opacity: 1;
 }
+
+.node-type-video.has-transcript .tabs.primary li a{
+  color: #fff;
+  text-shadow: 1px 1px #999;
+}
+
+.node-type-video.has-transcript .tabs.primary li a:active{
+  text-shadow:none;
+}
+
+
+
 
 
 .transcript-controls{
@@ -966,7 +978,6 @@ ul.links.inline {
   height: 750px;
   overflow-x: auto;
   margin-top: 0;
-  margin-right: 0.5rem;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
 }
@@ -1425,36 +1436,45 @@ ul.links.inline {
 }
 
 /***** banner tabs for editors ****/
-.has-transcript .tabs li a.transcript-edit{
+.has-transcript .tabs.primary li a.transcript-edit{
   padding-right: 1.25rem;
   padding-top: 0.5rem;
 }
 
-.has-transcript .tabs li a.transcript-edit::after{
+.has-transcript .tabs.primary li a.transcript-edit::after{
   content: '\f040';
   font-family:'FontAwesome';
-  color:#444;
+  color:#fff;
   font-size:1.25em;
   position:relative;
   top: -0.055rem;
   right: -0.5rem;
 }
 
-.has-transcript .tabs li a.transcript-edit:hover::after{
-  color:#fff;
-}
-
-.has-transcript .tabs li.active a.transcript-edit::after{
+.has-transcript .tabs.primary li.active a.transcript-edit::after{
   color:#bc1e20;
 }
 
-.has-transcript .tabs li.active a.transcript-edit:hover::after{
+.has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
   color:#bc1e20;
+}
+
+.has-transcript .tabs.primary li a:hover{
+  background: #777;
+  text-shadow:none;
+}
+.has-transcript .tabs.primary li a:active{
+  background: #888;
+  text-shadow:none;
+}
+
+.has-transcript .panel.panel-default .panel-heading h6{
+  border-bottom: none;
 }
 
 
 
-/* gear button - for editing add-remove segments */
+/**** BEGIN Translation Segment Edit Tools Menu *****/
 .tcu-gear{
   position: relative;
   float: right;
@@ -1581,7 +1601,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon {
   display: table-cell;
-  width: 16.53%;
+  width: 16.66%;
   height: 6rem;
 }
 
@@ -1767,7 +1787,7 @@ ul.links.inline {
   display: none;
   height: 8rem;
   position: relative;
-  margin: 0 1px 1px;
+  margin: 0 0.18rem 0.1rem;
 }
 
 .transcripts-ui-search-form {
