@@ -1315,6 +1315,7 @@ ul.links.inline {
 
 .tcu-info .editable-container.editable-inline{
   border-bottom:none;
+  padding-top: 1rem;
 }
 
 .speaker-tiers .tier.editable:hover{
