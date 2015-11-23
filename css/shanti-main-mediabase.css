@@ -1105,7 +1105,7 @@ ul.links.inline {
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
-  padding: .5rem .5rem .5rem .8rem;
+  padding: .4rem .5rem .25rem .8rem;
   border:1px dashed transparent;
 }
 
