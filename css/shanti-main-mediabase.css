@@ -2470,6 +2470,7 @@ fieldset.form-wrapper .f-set{
 
 .node-type-video.has-transcript .panel-default>.panel-heading{
   background: #999 !important;
+  box-shadow: inset 1rem 1rem 2rem #909090;
 }
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
   text-shadow: 0 0 4px #555;
