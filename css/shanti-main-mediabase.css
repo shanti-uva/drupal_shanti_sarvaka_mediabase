@@ -2460,9 +2460,35 @@ fieldset.form-wrapper .f-set{
   color: #777;
 }
 
+
+
+
+.node-type-video.has-transcript .panel-default>.panel-heading{
+  background: #999 !important;
+}
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
+  text-shadow: 0 0 3px #707070;
+  color: #fff;
+  letter-spacing: 0.08rem;
+}
+.node-type-video.has-transcript .panel-heading .accordion-toggle::after{
+  text-shadow:none;
+}
+
+
+
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
+
+
+
+
+
+
+
+
+
 
 .kaltura-embed{
    min-height:400px;
