@@ -941,7 +941,8 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:10px;
+  padding-right:1rem;
+  padding-left:1rem;
 }
 
 .node-type-video.has-transcript .main-wrapper{
