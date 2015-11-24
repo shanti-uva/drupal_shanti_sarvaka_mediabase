@@ -1796,11 +1796,7 @@ ul.links.inline {
 /*---------------------------*/
 .transcript-search-wrapper {
   background: #888;
-  padding: 0;
-  display: none;
   height: 8rem;
-  position: relative;
-  margin: 0;
 }
 
 .transcripts-ui-search-form {
