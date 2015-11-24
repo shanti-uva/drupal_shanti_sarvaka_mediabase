@@ -2608,6 +2608,7 @@ fieldset.form-wrapper .f-set > table{
 /* left column wrapper of date/time/author/social links immediately under video */
 .avinfo {
   padding-left: 0px !important;
+  padding-top:1rem;
 }
 .video-overview {
   padding-left: 0px !important;
