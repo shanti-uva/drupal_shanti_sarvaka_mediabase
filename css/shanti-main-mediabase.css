@@ -947,32 +947,6 @@ ul.links.inline {
   padding-left:1rem;
 }
 
-.node-type-video.has-transcript .main-wrapper{
-  background: #ddd;
-}
-.node-type-video.has-transcript .panel-default>.panel-heading{
-  background: #d8d8d8 !important;
-}
-.node-type-video.has-transcript .has-tabs .banner-tabs{
-  background: #ccc !important;
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
-
-.node-type-video.has-transcript .tabs.primary li a{
-  color: #fff;
-  text-shadow: 1px 1px #777;
-  background: #888;
-}
-
-.node-type-video.has-transcript .tabs.primary li a:active{
-  text-shadow:none;
-}
-
-
-
-
-
 .transcript-controls{
   margin-right: 2rem;
 }
@@ -1438,49 +1412,6 @@ ul.links.inline {
   top: .1rem;
   margin-right: 0;
   left: -0.2rem;
-}
-
-/***** banner tabs for editors ****/
-.has-transcript .tabs.primary li a.transcript-edit{
-  padding-right: 1.25rem;
-  padding-top: 0.5rem;
-}
-
-.has-transcript .tabs.primary li a.transcript-edit::after{
-  content: '\f040';
-  font-family:'FontAwesome';
-  color:#fff;
-  font-size:1.25em;
-  position:relative;
-  top: -0.055rem;
-  right: -0.5rem;
-}
-
-.has-transcript .tabs.primary li.active a.transcript-edit::after{
-  color:#bc1e20;
-}
-
-.has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
-  color:#bc1e20;
-}
-
-.has-transcript .tabs.primary li a:hover{
-  background: #777;
-  text-shadow:none;
-}
-.has-transcript .tabs.primary li a:active{
-  background: #888;
-  text-shadow:none;
-}
-
-.has-transcript .panel.panel-default .panel-heading h6{
-  border-bottom: none;
-}
-
-.has-transcript .tabs.primary li.active a{
-  color: #777 !important;
-  background: #eee;
-  text-shadow:none !important;
 }
 
 
@@ -2363,6 +2294,85 @@ ul.links.inline {
 
 
 
+.has-transcript .main-wrapper{
+  background: #ddd;
+}
+.has-transcript .panel-default>.panel-heading{
+  background: #d8d8d8 !important;
+}
+.has-transcript .has-tabs .banner-tabs{
+  background: #ccc !important;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/***** banner tabs for editors ****/
+.has-transcript .tabs.primary li a.transcript-edit{
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.has-transcript .tabs.primary li a.transcript-edit::after{
+  content: '\f040';
+  font-family:'FontAwesome';
+  color:#fff;
+  font-size:1.25em;
+  position:relative;
+  top: -0.055rem;
+  right: -0.5rem;
+}
+
+.has-transcript .tabs.primary li.active a.transcript-edit::after{
+  color:#bc1e20;
+}
+
+.has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
+  color:#777;
+}
+
+.has-transcript .panel.panel-default .panel-heading h6{
+  border-bottom: none;
+}
+
+.has-transcript .tabs.primary li a{
+  color: #fff;
+  text-shadow: 1px 1px #777;
+  background: #999;
+}
+.has-transcript .tabs.primary li a:hover{
+  background: #777;
+  text-shadow:none;
+}
+.has-transcript .tabs.primary li a:active{
+  background: #888;
+  text-shadow:none;
+}
+
+.has-transcript .tabs.primary li.active a{
+  color: #777 !important;
+  background: #eee;
+  text-shadow:none !important;
+}
+
+.has-transcript .panel-default>.panel-heading{
+  background: #999 !important;
+  box-shadow: inset 1rem 1rem 2rem #909090;
+}
+.has-transcript .panel.panel-default .panel-heading h6 a{
+  text-shadow: 0 0 4px #555;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+.has-transcript .panel-heading .accordion-toggle::after{
+  text-shadow:none;
+}
+.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
+  border-color:#999;
+}
+
+
+
+
 /********************/
 /* .node-video-form */
 /********************/
@@ -2497,25 +2507,6 @@ fieldset.form-wrapper .f-set{
 .field-accordion.group-details .field-type-group label .icon.shanticon-create{
   font-size: 1.8rem;
   color: #777;
-}
-
-
-
-
-.node-type-video.has-transcript .panel-default>.panel-heading{
-  background: #999 !important;
-  box-shadow: inset 1rem 1rem 2rem #909090;
-}
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
-  text-shadow: 0 0 4px #555;
-  color: #fff;
-  letter-spacing: 0.1rem;
-}
-.node-type-video.has-transcript .panel-heading .accordion-toggle::after{
-  text-shadow:none;
-}
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
-  border-color:#999;
 }
 
 
@@ -3003,12 +2994,6 @@ button on video window
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
-/*
-.node-type-audio .tab-pane.main-col.active,
-.node-type-video .tab-pane.main-col.active{
- margin-left: 1.5rem;
-}
-*/
 
 /* page layout for video display - balance with transcript panel */
 .node-type-video.has-transcript .tab-pane.main-col > div {
