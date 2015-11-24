@@ -943,7 +943,7 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:1.7rem;
+  padding-right:1rem;
   padding-left:1rem;
 }
 
@@ -980,6 +980,7 @@ ul.links.inline {
 .transcript-container {
   /*background: white;*/
   height: 750px;
+  overflow-x: auto;
   margin-top: 0;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
@@ -1798,7 +1799,11 @@ ul.links.inline {
 /*---------------------------*/
 .transcript-search-wrapper {
   background: #888;
+  padding: 0;
+  display: none;
   height: 8rem;
+  position: relative;
+  margin: 0;
 }
 
 .transcripts-ui-search-form {
