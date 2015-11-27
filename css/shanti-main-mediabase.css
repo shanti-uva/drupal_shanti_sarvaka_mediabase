@@ -1167,17 +1167,6 @@ ul.links.inline {
   display: none;
 }
 
-.twitter-typeahead .tt-query, 
-.twitter-typeahead .tt-hint{
-  margin-bottom:0.5rem;
-}
-/*
-.twitter-typeahead .tt-hint{
-  position:absolute;
-  top:0.5rem !important;
-  left:0.3rem !important;
-}
-*/
 .transcript-content .speaker-tiers {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
@@ -1388,9 +1377,13 @@ ul.links.inline {
   display: block !important;
 }
 
+.twitter-typeahead .tt-query, 
+.twitter-typeahead .tt-hint{
+  margin-bottom:0.5rem;
+}
+
 .tcu-info .twitter-typeahead .tt-query{
-  margin-bottom:0 !important;
-  font-size: 85%;
+  margin-bottom:0;
 }
 
 .tcu-info .editable-clear-x{
