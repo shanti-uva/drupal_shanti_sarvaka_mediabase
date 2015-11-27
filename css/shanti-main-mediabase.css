@@ -1373,19 +1373,20 @@ ul.links.inline {
   margin-left:25%;
 }
 
-.tcu-info .twitter-typeahead{
+.tcu-info .speaker-name .twitter-typeahead{
   display: block !important;
 }
 
-.twitter-typeahead .tt-query, 
-.twitter-typeahead .tt-hint{
+.tcu-info .speaker-name .tt-query, 
+.tcu-info .speaker-name .tt-hint{
   margin-bottom:0.5rem;
   font-size:0.88em;
   padding-left:0.6rem;
 }
 
-.tcu-info .twitter-typeahead .tt-query{
+.tcu-info .speaker-name .tt-query{
   margin-bottom:0;
+  color:#555;
 }
 
 .tcu-info .editable-clear-x{
