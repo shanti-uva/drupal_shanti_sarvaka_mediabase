@@ -1380,6 +1380,8 @@ ul.links.inline {
 .twitter-typeahead .tt-query, 
 .twitter-typeahead .tt-hint{
   margin-bottom:0.5rem;
+  font-size:0.88em;
+  padding-left:0.6rem;
 }
 
 .tcu-info .twitter-typeahead .tt-query{
