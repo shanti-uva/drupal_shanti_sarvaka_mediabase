@@ -2669,6 +2669,12 @@ fieldset.form-wrapper .f-set > table{
   margin-bottom: 0.3rem;
 }
 
+.avinfo .avauthor{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
 .avinfo .transcripts-processed .form-item {
   margin-top: 0.5rem;
 }
