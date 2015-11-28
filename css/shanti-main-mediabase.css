@@ -1458,7 +1458,7 @@ ul.links.inline {
 }
 
 .has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
-  color:#bc1e20;
+  color:#888;
 }
 
 .has-transcript .tabs.primary li a:hover{
@@ -2363,9 +2363,6 @@ ul.links.inline {
 
 .modal.tcu-delete-modal.in{
   display: block;
-  position: absolute;
-  top: 5rem;
-  right: 0;
 }
 
 .modal.tcu-delete-modal.in .modal-dialog{
@@ -2374,6 +2371,9 @@ ul.links.inline {
 
 .modal.tcu-delete-modal.in .modal-content{
   border-radius: 0.7rem;
+  position: absolute;
+  top: 25rem;
+  right: 0;
 }
 
 .modal.tcu-delete-modal.in .modal-header{
