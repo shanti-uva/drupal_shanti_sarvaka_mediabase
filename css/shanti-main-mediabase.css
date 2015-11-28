@@ -2361,7 +2361,37 @@ ul.links.inline {
   display: none;
 }
 
+.modal.tcu-delete-modal{
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
 
+.modal.tcu-delete-modal .modal-content{
+  border-radius: 0.7rem;
+}
+
+.modal.tcu-delete-modal .modal-header{
+  border-bottom: none;
+}
+
+.modal.tcu-delete-modal .modal-body{
+  position: relative;
+  padding: 0 15px 10px;
+  top: -0.5rem;
+}
+
+.modal.tcu-delete-modal .modal-footer{
+  background: #eee;
+  border-radius: 6px;
+  padding: 5px 15px 10px;
+}
+
+.modal.tcu-delete-modal .btn{
+  font-size: .62em;
+  letter-spacing:.12rem;
+}
 
 
 
