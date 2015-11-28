@@ -2504,15 +2504,20 @@ fieldset.form-wrapper .f-set{
 
 
 
-
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6{
+  border-top-color: #ccc;
+}
 .node-type-video.has-transcript .panel-default>.panel-heading{
   background: #999 !important;
   box-shadow: inset 1rem 1rem 2rem #909090;
 }
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
-  text-shadow: 0 0 4px #555;
-  color: #fff;
+  text-shadow: 0 0 3px #555;
+  color: #eee;
   letter-spacing: 0.1rem;
+}
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{
+  color: #fff;
 }
 .node-type-video.has-transcript .panel-heading .accordion-toggle::after{
   text-shadow:none;
@@ -2820,7 +2825,7 @@ a.tabledrag-toggle-weight {
 
 .avplace,
 .avcollection{
-  font-size: 1.12em;
+  font-size: 1em;
 }
 
 .avsubjects .field-items-span,
