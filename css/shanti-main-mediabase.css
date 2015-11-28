@@ -1454,7 +1454,7 @@ ul.links.inline {
 }
 
 .has-transcript .tabs.primary li.active a.transcript-edit::after{
-  color:#bc1e20;
+  color:#888;
 }
 
 .has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
@@ -2368,6 +2368,10 @@ ul.links.inline {
   right: 0;
 }
 
+.modal.tcu-delete-modal.in .modal-dialog{
+  width: 70%;
+}
+
 .modal.tcu-delete-modal.in .modal-content{
   border-radius: 0.7rem;
 }
@@ -2385,14 +2389,19 @@ ul.links.inline {
 .modal.tcu-delete-modal.in .modal-footer{
   background: #eee;
   border-radius: 6px;
-  padding: 5px 15px 10px;
+  padding: 0 15px 10px;
 }
 
 .modal.tcu-delete-modal.in .btn{
   font-size: .62em;
   letter-spacing:.12rem;
+  padding: .5em 1.5em .38em;
 }
 
+.modal.tcu-delete-modal.in .btn.tcu-delete-cancel{
+  position: relative;
+top: .5rem
+}
 
 
 
