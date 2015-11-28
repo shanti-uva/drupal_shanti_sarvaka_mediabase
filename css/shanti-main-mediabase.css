@@ -2673,6 +2673,8 @@ fieldset.form-wrapper .f-set > table{
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
+  margin-right:0.5rem;
+  font-size:90%;
 }
 
 .avinfo .transcripts-processed .form-item {
