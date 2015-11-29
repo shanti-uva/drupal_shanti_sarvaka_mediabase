@@ -2406,14 +2406,10 @@ ul.links.inline {
   top: .5rem
 }
 
-.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:hover{
+.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:hover,
+.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:focus{
   background:transparent;
-  border:none;
   box-shadow:none;
-  color:red;
-}
-
-.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:active{
   color:red;
 }
 
