@@ -2361,6 +2361,8 @@ ul.links.inline {
   display: none;
 }
 
+
+
 .modal.tcu-delete-modal.in{
   display: block;
 }
@@ -2400,7 +2402,24 @@ ul.links.inline {
 
 .modal.tcu-delete-modal.in .btn.tcu-delete-cancel{
   position: relative;
-top: .5rem
+  top: .5rem
+}
+
+.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:hover{
+  background:transparent;
+  border:none;
+  box-shadow:none;
+  color:red;
+}
+
+.modal.tcu-delete-modal.in .btn.tcu-delete-cancel:active{
+  color:red;
+}
+
+.modal-header button.close{
+  position: relative;
+  top: -0.8rem;
+  left: 1rem;
 }
 
 
