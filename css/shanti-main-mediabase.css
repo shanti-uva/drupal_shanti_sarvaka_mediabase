@@ -2386,6 +2386,7 @@ ul.links.inline {
   position: relative;
   padding: 0 15px 10px;
   top: -0.5rem;
+  width:350px;
 }
 
 .modal.tcu-delete-modal.in .modal-footer{
@@ -2418,7 +2419,7 @@ ul.links.inline {
 
 .modal-header button.close{
   position: relative;
-  top: -0.8rem;
+  top: -1.5rem;
   left: 1rem;
 }
 
