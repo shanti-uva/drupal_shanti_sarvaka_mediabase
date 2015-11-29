@@ -2366,7 +2366,7 @@ ul.links.inline {
 }
 
 .modal.tcu-delete-modal.in .modal-dialog{
-  width: 70%;
+  /*width: 70%;*/
 }
 
 .modal.tcu-delete-modal.in .modal-content{
