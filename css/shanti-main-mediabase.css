@@ -1055,7 +1055,7 @@ ul.links.inline {
   left: 1.2rem;
 }
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle {
+.av-main-transcript-section .transcript-controls .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
   background: #555;  
@@ -1067,7 +1067,7 @@ ul.links.inline {
   top: -0.15rem;*/
 }
 
-.av-main-transcript-section .btn.btn-default.dropdown-toggle:focus {
+.av-main-transcript-section .transcript-controls .btn.btn-default.dropdown-toggle:focus {
   box-shadow:none;
 }
 
@@ -1500,11 +1500,12 @@ ul.links.inline {
 }
 
 .tcu-gear-ops.dropdown-toggle{
-  height: 2.5rem !important;
-  width: 2.5rem;
+  height: 1.5rem !important;
+  width: 1.5rem;
   padding: 0;
   margin: 0;
   border: none !important;
+  background: transparent;
   box-shadow: none;
   color: #777;
   position: absolute;
@@ -1553,11 +1554,13 @@ ul.links.inline {
   color:#fff;
 }
 
+
+/*
 .tcu-gear .dropdown .glyphicon::before{
   position: absolute;
   z-index: 1;
 }
-/*
+
 .tcu-gear .dropdown.open .glyphicon::before,
 .tcu-gear .dropdown.open .glyphicon::after {
   position: absolute;
