@@ -1523,12 +1523,12 @@ ul.links.inline {
 
 .tcu-gear .dropdown-menu{
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-  margin-left: -17rem;
+  margin-left: -15rem;
   min-width: 12rem;
   padding: 1rem;
   background: #777;
   position: absolute;
-  right: 0;
+  right: -0.5rem;
   top: -0.5rem;
   z-index: 5;
   border-radius: 1rem 0 1rem 1rem;
@@ -1545,7 +1545,7 @@ ul.links.inline {
   padding: 0 0 0 0.8rem;
   text-transform: uppercase;
   font-size: 80%;
-  line-height:1.75em;
+  line-height:1.88em;
   font-weight: bold;
   font-family: 'museo-sans-700';
   color: #fff;
@@ -1560,7 +1560,7 @@ ul.links.inline {
   color:#fff;
 }
 
-.tcu-gear .open > .dropdown-menu{
+.tcu-gear .open > .dropdown-toggle{
   color:#ddd;
 }
 
