@@ -1055,7 +1055,7 @@ ul.links.inline {
   left: 1.2rem;
 }
 
-.av-main-transcript-section .transcript-controls .btn.btn-default.dropdown-toggle {
+.av-main-transcript-section .btn-group-transcript .btn.btn-default.dropdown-toggle {
  /*display: table-cell;*/
   background-image: none;
   background: #555;  
@@ -1067,7 +1067,7 @@ ul.links.inline {
   top: -0.15rem;*/
 }
 
-.av-main-transcript-section .transcript-controls .btn.btn-default.dropdown-toggle:focus {
+.av-main-transcript-section .btn-group-transcript .btn.btn-default.dropdown-toggle:focus {
   box-shadow:none;
 }
 
