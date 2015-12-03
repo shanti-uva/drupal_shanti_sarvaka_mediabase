@@ -2352,6 +2352,7 @@ ul.links.inline {
   font-weight: bold;
   color: #555;
   margin-bottom: .5rem;
+  line-height: 1.25em;
 }
 
 .transcript-search-result .shanti-thumbnail-image a:nth-last-of-type(1) {
