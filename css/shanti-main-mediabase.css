@@ -947,32 +947,6 @@ ul.links.inline {
   padding-left:1rem;
 }
 
-.node-type-video.has-transcript .main-wrapper{
-  background: #ddd;
-}
-.node-type-video.has-transcript .panel-default>.panel-heading{
-  background: #d8d8d8 !important;
-}
-.node-type-video.has-transcript .has-tabs .banner-tabs{
-  background: #ccc !important;
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
-
-.node-type-video.has-transcript .tabs.primary li a{
-  color: #fff;
-  text-shadow: 1px 1px #777;
-  background: #888;
-}
-
-.node-type-video.has-transcript .tabs.primary li a:active{
-  text-shadow:none;
-}
-
-
-
-
-
 .transcript-controls{
   margin-right: 2rem;
 }
@@ -1437,6 +1411,8 @@ ul.links.inline {
   margin-right: 0;
   left: -0.2rem;
 }
+
+
 
 /***** banner tabs for editors ****/
 .has-transcript .tabs.primary li a.transcript-edit{
@@ -2571,24 +2547,53 @@ fieldset.form-wrapper .f-set{
 
 
 
+.node-type-video.has-transcript .main-wrapper{
+  background: #ddd;
+}
+
+.node-type-video.has-transcript .has-tabs .banner-tabs{
+  background: #ccc !important;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.node-type-video.has-transcript .tabs.primary li a{
+  color: #fff;
+  text-shadow: 1px 1px #777;
+  background: #888;
+}
+
+.node-type-video.has-transcript .tabs.primary li a:active{
+  text-shadow:none;
+}
+
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6{
   border-top-color: #ccc;
 }
+
 .node-type-video.has-transcript .panel-default>.panel-heading{
   background: #999 !important;
   box-shadow: inset 1rem 1rem 2rem #909090;
 }
+
+.node-type-video.has-transcript .panel-default>.panel-heading:hover{
+  background: #888 !important;
+}
+
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
   text-shadow: 0 0 3px #555;
   color: #eee;
   letter-spacing: 0.1rem;
 }
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{
-  color: #fff;
+
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
+  color: #fff; 
 }
+
 .node-type-video.has-transcript .panel-heading .accordion-toggle::after{
   text-shadow:none;
 }
+
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
   border-color:#999;
 }
@@ -3086,25 +3091,18 @@ button on video window
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
-/*
-.node-type-audio .tab-pane.main-col.active,
-.node-type-video .tab-pane.main-col.active{
- margin-left: 1.5rem;
-}
-*/
 
-/* page layout for video display - balance with transcript panel */
-.node-type-video.has-transcript .tab-pane.main-col > div {
-  max-width: 1350px !important;
-  margin: 0 auto !important;
-}
+
 
 .node-type-video .tab-pane.main-col > div {
   max-width: 1050px !important;
   margin: 0 auto !important;
 }
 
-
+.node-type-video.has-transcript .tab-pane.main-col > div {
+  max-width: 1350px !important;
+  margin: 0 auto !important;
+}
 
 
 
