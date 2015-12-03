@@ -1324,6 +1324,7 @@ ul.links.inline {
 
 .speaker-tiers .tier.editable:hover{
   border: 1px dashed #c0c0c0;
+  border-radius: 0.3rem;
 }
 
 .speaker-tiers .tier.editable::before{ 
