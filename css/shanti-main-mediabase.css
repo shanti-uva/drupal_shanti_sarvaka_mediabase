@@ -2614,7 +2614,7 @@ fieldset.form-wrapper .f-set{
 /* this adds black band on top of video */
 .kaltura-embed > div > div{
   min-height:400px;
-  /* background color and border-width is set via js with video player size ratio */
+  max-height:515px;
   border-width:0;
 }
 
