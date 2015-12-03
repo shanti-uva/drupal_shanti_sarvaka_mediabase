@@ -1807,7 +1807,7 @@ ul.links.inline {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #888;
+  background: #707070;
   padding: 0;
   display: none;
   height: 8rem;
@@ -2223,7 +2223,7 @@ ul.links.inline {
 /*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
 .transcript-search-result .btn {
   width: 100%;
-  padding: 0.3rem 1rem 0.1rem;
+  padding: 0.3rem 1rem 0.2rem;
 }
 
 .transcript-search-result .btn .glyphicon {
@@ -2298,16 +2298,14 @@ ul.links.inline {
 
 .transcript-search-result .btn.btn-primary.untimed:hover {
   box-shadow: none;
-  border-color: #ddd;
-  background: #f5f5f5;
-  color: #333;
+  background: #444;
 }
 
 .transcript-search-result .btn.btn-primary.untimed:active {
-  border-color: #ddd;
-  background: #ddd;
-  color: #777;
-  box-shadow: 0 0 4px 0 rgba(50,50,50,0.175);
+  border-color: #aaa;
+  background: #aaa;
+  color: #333;
+  box-shadow: none;
 }
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child {
@@ -2318,17 +2316,16 @@ ul.links.inline {
   position: relative;
   top: 0.3rem;
   left: -0.5rem;
- /**/
-  border: 1px solid #ddd;
-  box-shadow: 0 0 3px 0 rgba(50,50,50,0.175);
-  border-collapse: separate;
+  border: 1px solid #aaa;
+  background: #aaa;
+  color:#fff;
+  box-shadow: none;
 }
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:hover {
   box-shadow: none;
-  border-color: #ddd;
-  background: #f5f5f5;
-  color: #333;
+  border-color: #999;
+  background: #999;
 }
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child:active,
