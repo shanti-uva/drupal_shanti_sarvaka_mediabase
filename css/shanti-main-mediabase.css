@@ -2268,7 +2268,8 @@ ul.links.inline {
 .transcript-search-result .shanti-thumbnail-info {
   width: 21%;
   padding-left: 3%;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
+  font-size: 0.88em;
 }
 
 .transcript-search-result .shanti-thumbnail-image {
@@ -2310,7 +2311,7 @@ ul.links.inline {
 
 .transcript-search-result .shanti-thumbnail-info .btn:last-child {
   margin-bottom: 2rem;
-  font-size: 0.88em;
+  font-size: 0.75em;
   font-weight: bold;
   max-width: 14rem;
   position: relative;
@@ -2328,8 +2329,7 @@ ul.links.inline {
   background: #999;
 }
 
-.transcript-search-result .shanti-thumbnail-info .btn:last-child:active,
-.transcript-search-result .shanti-thumbnail-info .btn:last-child:focus {
+.transcript-search-result .shanti-thumbnail-info .btn:last-child:active {
   border-color: #ddd;
   background-color: #555;
   color: #fff;
@@ -2351,6 +2351,7 @@ ul.links.inline {
 .transcript-search-result .shanti-thumbnail-field.shanti-field-title {
   font-weight: bold;
   color: #555;
+  margin-bottom: .5rem;
 }
 
 .transcript-search-result .shanti-thumbnail-image a:nth-last-of-type(1) {
