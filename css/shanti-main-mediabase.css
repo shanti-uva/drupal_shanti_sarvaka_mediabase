@@ -1532,7 +1532,7 @@ ul.links.inline {
   right: -0.5rem;
   top: -0.5rem;
   z-index: 5;
-  border-radius: 1rem 0 1rem 1rem;
+  border-radius: .7rem 0 .7rem .7rem;
   border-color:#888;
   /*filter: alpha(opacity=90);
   opacity: 0.9;*/
