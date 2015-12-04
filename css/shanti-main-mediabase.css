@@ -1487,7 +1487,7 @@ ul.links.inline {
   color: #777;
   position: absolute;
   z-index: 10;
-  right: 0;
+  right: 0.2rem;
   top: -0.5rem;
   font-size:1.3rem
 }
@@ -2559,7 +2559,7 @@ fieldset.form-wrapper .f-set{
 
 .node-type-video.has-transcript .tabs.primary li a{
   color: #fff;
-  text-shadow: 1px 1px #777;
+  text-shadow: 1px 1px 3px #888;
 }
 
 .node-type-video.has-transcript .tabs.primary li a:active{
