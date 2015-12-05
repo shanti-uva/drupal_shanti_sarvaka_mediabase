@@ -3196,7 +3196,7 @@ button on video window
 
   /* SHANTi filters header in use above gallery grids */
   .shanti-filters table.pagerer {
-    margin: 2rem 0 0;
+    margin: 0;
   }
   
   .shanti-filters .control-box-cell-header p {
