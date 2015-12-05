@@ -367,6 +367,10 @@ form#views-exposed-form-browse-media-home-block {
   padding: 0;
 }
 
+.logged-in.front .shanti-filters .control-box-cell-header label{
+  display:inline-block;
+}
+
 .shanti-filters .control-box-cell-header .view-result-count-info {
 	margin: 0;
 	padding: 0;
@@ -390,11 +394,11 @@ form#views-exposed-form-browse-media-home-block {
   margin: -1rem 0 0;
   width: ;
 }
-
+/*
 .shanti-filters table.pagerer {
   margin-top: -1rem;
 }
-
+*/
 
 
 
@@ -3194,11 +3198,6 @@ button on video window
   .shanti-filters table.pagerer {
     margin: 2rem 0 0;
   }
-
-  .shanti-filters .control-box-cell-header {
-    width: ;
-    max-width: ;
-  }
   
   .shanti-filters .control-box-cell-header p {
   	display: inline-block;
@@ -3346,6 +3345,14 @@ button on video window
   .logged-in .carousel .carousel-main-content{
     width: 69%;
   }
+
+  .logged-in.front .control-box-cell-pager{
+    margin: -4.25rem -1.5rem 0 0;
+  }
+  .logged-in.front .shanti-filters{
+    margin-bottom: -2rem;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
