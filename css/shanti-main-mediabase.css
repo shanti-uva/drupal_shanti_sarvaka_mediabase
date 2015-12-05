@@ -391,7 +391,7 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-pager {
   padding: 0;
-  margin: -1rem 0 0;
+  margin: 1rem -1.5rem 0 0;
   width: ;
 }
 /*
@@ -3205,21 +3205,21 @@ button on video window
     padding-left: 12px;
   }
   
-  .shanti-filters .shanti-filters .control-box-cell-filters {
-    width: ;
-    max-width: ;
+  .shanti-filters .control-box-cell-filters {
+    width: 100%;
   }
 
   .shanti-filters .control-box-cell-pager {
     float: right;
+    margin-top:-7rem;
   }
 
 
-
+/*
   .logged-in.front .control-box-cell-pager{
-    margin: -4.25rem -1.5rem 0 0;
+    margin-top: -4.25rem;
   }
-
+*/
 
 
 
@@ -3263,6 +3263,9 @@ button on video window
     padding-left: 0.25rem;
   }
 
+  .shanti-filters .control-box-cell-pager{
+    margin-top:1rem;
+  }
 
 
   /*.is-transcript-editing .av-main-video-section {
