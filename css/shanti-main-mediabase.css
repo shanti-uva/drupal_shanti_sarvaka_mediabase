@@ -3214,6 +3214,18 @@ button on video window
     float: right;
   }
 
+
+
+  .logged-in.front .control-box-cell-pager{
+    margin: -4.25rem -1.5rem 0 0;
+  }
+  .logged-in.front .shanti-filters{
+    margin-bottom: -2rem;
+  }
+
+
+
+
   /* carousel front page */
   .logged-in .carousel-title {
     font-size: 1.38em;
@@ -3346,11 +3358,10 @@ button on video window
     width: 69%;
   }
 
+
+
   .logged-in.front .control-box-cell-pager{
-    margin: -4.25rem -1.5rem 0 0;
-  }
-  .logged-in.front .shanti-filters{
-    margin-bottom: -2rem;
+    margin: -2rem -1.5rem 0 0;
   }
 
 }
