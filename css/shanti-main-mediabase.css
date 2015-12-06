@@ -354,6 +354,7 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-header {
   margin: 0.8rem 0 0 0;
   padding: 0;
+  width:25%;
 }
 
 .shanti-filters .control-box-cell-header span{
