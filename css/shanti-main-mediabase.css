@@ -3172,12 +3172,14 @@ button on video window
 
   .shanti-filters .control-box-cell-pager {
     float: right;
-    margin-top:-6.5rem;
+    width: 33%;
+    margin-top: -7.7rem;
+    margin-right: -10px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  
+
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
     margin-bottom: 0.5rem;
@@ -3250,9 +3252,9 @@ button on video window
     padding-left: 0.25rem;
   }
 
-  .shanti-filters .control-box-cell-pager{
-    margin-top: 1.1rem;
-    margin-right: 0;
+  .shanti-filters .control-box-cell-pager {
+    margin-top: -7.7rem;
+    margin-right: -10px;
   }
 
   .logged-in .carousel .carousel-main-image{
