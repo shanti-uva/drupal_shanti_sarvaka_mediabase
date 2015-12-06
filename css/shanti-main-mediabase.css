@@ -400,8 +400,7 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-pager {
   padding: 0;
-  margin: 1rem 0 0;
-  width: 100%;
+  margin: -1rem 0 0;
 }
 
 /*
