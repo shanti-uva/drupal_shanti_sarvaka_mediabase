@@ -368,11 +368,12 @@ form#views-exposed-form-browse-media-home-block {
   color: #555;
   text-transform: uppercase;
   font-size:0.82em;
+  display:none;
 }
 
 /* show-hide text for mobile - Recent Addtions */
 .logged-in.front .shanti-filters .control-box-cell-header .label{ 
-  display:none;
+
 }
 
 .shanti-filters .count {
@@ -667,7 +668,7 @@ a.hide-annot::before {
   float: none;
   position: static;
   text-align: left;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .view-all-colls-control-box-cell table.pagerer .admin-menu .content table td {
@@ -3122,41 +3123,36 @@ button on video window
 
 
 
-/*-------------------------*/
-/***** BEGIN max-width *****/
-/*-------------------------*/
-@media screen and (max-width: 499px) {
-
-  .shanti-filters table.pagerer {
-    margin-top: 1rem !important;
-    float:left !important;
-  }
-} 
-
-@media screen and (max-width: 599px) {
-
-  .shanti-filters table.pagerer{
-    margin-top:-5.2rem;
-  }
-
-  .shanti-filters .label{
-    display:none;
-  }
 
   .control-box-cell-header,
   .control-box-cell-filters,
   .control-box-cell-pager{
     width:100% !important;
   }
+
+  .shanti-filters table.pagerer {
+    float:left !important;
+  }
+
+  .shanti-filters .control-box-cell-pager {
+    float: left;
+    margin-top:0rem;
+  }
+
+
+
+/*-------------------------*/
+/***** BEGIN max-width *****/
+/*-------------------------*/
+@media screen and (max-width: 499px) {
+
+} 
+
+@media screen and (max-width: 599px) {
+
 }  
 
 @media screen and (max-width: 767px) {
-
-  /*.is-transcript-editing .avdesc{
-    float: left;
-    padding-left: 0.5rem;
-    margin-bottom:1.5rem;
-  }*/
 
   .node-type-audio .nav-justified>li.active::before,
   .node-type-video .nav-justified>li.active::before{
@@ -3174,15 +3170,14 @@ button on video window
 /*-------------------------*/
 @media screen and (min-width:599px) {
 
-
   .shanti-filters .control-box-cell-pager {
     float: right;
     margin-top:-6.5rem;
   }
-
 }
 
 @media screen and (min-width: 768px) {
+  
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
     margin-bottom: 0.5rem;
@@ -3209,11 +3204,6 @@ button on video window
   .has-transcript .av-main-video-section {
     width:50% !important;
   }
-
-  /* SHANTi filters header in use above gallery grids */
-  .shanti-filters table.pagerer {
-    margin: 0;
-  }
   
   .shanti-filters .control-box-cell-header p {
   	display: inline-block;
@@ -3224,13 +3214,6 @@ button on video window
   .shanti-filters .control-box-cell-filters {
     
   }
-
-
-/*
-  .logged-in.front .control-box-cell-pager{
-    margin-top: -4.25rem;
-  }
-*/
 
 
 
@@ -3258,13 +3241,6 @@ button on video window
 
 @media screen and (min-width: 880px) {
 
-  /*.is-transcript-editing .av-main-video-section {
-    width:33.33333333333333% !important;
-  }
-
-  .is-transcript-editing .av-main-transcript-section {
-    width:66.66666666666666% !important;
-  }*/
 } 
 
 @media screen and (min-width: 992px) {
@@ -3278,15 +3254,6 @@ button on video window
     margin-top: 1.1rem;
     margin-right: 0;
   }
-
-
-  /*.is-transcript-editing .av-main-video-section {
-    width:40% !important;
-  }
-
-  .is-transcript-editing .av-main-transcript-section {
-    width:59% !important;
-  }*/
 
   .logged-in .carousel .carousel-main-image{
     width:45%;
@@ -3327,14 +3294,6 @@ button on video window
 }
 
 @media (min-width:1150px) {
-
-  .transcript-content .speaker-tiers{
-    /*margin-left:30%;*/
-  }
-
-  .av-main-transcript-section .tcu-info{
-    /*width:29%;*/
-  }
 
   .logged-in .carousel .carousel-main-image{
     width:38%;
@@ -3380,10 +3339,6 @@ button on video window
 
 @media screen and (min-width: 1280px) {
   
-  /*.is-transcript-editing .av-main-video-section,
-  .is-transcript-editing .av-main-transcript-section {
-    width:50% !important;
-  }*/
 }
 
 @media (min-width:1400px) {
