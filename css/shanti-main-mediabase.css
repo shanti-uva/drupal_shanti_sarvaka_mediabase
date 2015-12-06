@@ -3124,6 +3124,19 @@ button on video window
 
 
 
+
+
+
+
+/*-------------------------*/
+/***** BEGIN max-width *****/
+/*-------------------------*/
+@media screen and (max-width: 499px) {
+
+} 
+
+@media screen and (max-width: 599px) {
+
   .control-box-cell-header,
   .control-box-cell-filters,
   .control-box-cell-pager{
@@ -3138,18 +3151,6 @@ button on video window
     float: left;
     margin-top:0rem;
   }
-
-
-
-/*-------------------------*/
-/***** BEGIN max-width *****/
-/*-------------------------*/
-@media screen and (max-width: 499px) {
-
-} 
-
-@media screen and (max-width: 599px) {
-
 }  
 
 @media screen and (max-width: 767px) {
