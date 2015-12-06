@@ -368,7 +368,7 @@ form#views-exposed-form-browse-media-home-block {
 }
 
 .logged-in.front .shanti-filters .control-box-cell-header label{
-  display:inline-block;
+  display:none;
 }
 
 .shanti-filters .control-box-cell-header .view-result-count-info {
@@ -3163,6 +3163,12 @@ button on video window
 /***** BEGIN min-width *****/
 /*-------------------------*/
 @media screen and (min-width:599px) {
+
+
+  .shanti-filters .control-box-cell-pager {
+    float: right;
+    margin-top:-7rem;
+  }
 
 }
 
