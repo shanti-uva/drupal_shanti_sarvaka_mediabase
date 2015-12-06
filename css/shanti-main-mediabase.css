@@ -359,7 +359,7 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-header span{
   float: left;
   padding:0;
-  margin:0;
+  margin:0 0 0 1.5rem;
   line-height:2rem;
 }
 
@@ -375,9 +375,7 @@ form#views-exposed-form-browse-media-home-block {
 }
 
 .shanti-filters .count {
-  margin-right: 1rem;
   margin-bottom: .4rem;
-  margin-left: 1.5rem;
   text-transform: capitalize;
   font-size: 0.93em;
 }
@@ -402,9 +400,10 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-pager {
   padding: 0;
-  margin: 1rem -1.5rem 0 0;
+  margin: 1rem 0 0;
   width: 100%;
 }
+
 /*
 .shanti-filters table.pagerer {
   margin-top: -1rem;
@@ -3178,7 +3177,7 @@ button on video window
 
   .shanti-filters .control-box-cell-pager {
     float: right;
-    margin-top:-7rem;
+    margin-top:-6.5rem;
   }
 
 }
@@ -3224,11 +3223,6 @@ button on video window
   
   .shanti-filters .control-box-cell-filters {
     
-  }
-
-  .shanti-filters .control-box-cell-pager {
-    float: right;
-    margin-top:-7rem;
   }
 
 
