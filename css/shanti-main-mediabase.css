@@ -389,8 +389,12 @@ form#views-exposed-form-browse-media-home-block {
 }
 
 .shanti-filters .control-box-cell-filters {
-  margin: 0 auto;
+  margin: 0;
 }
+
+.logged-in.front .shanti-filters .control-box-cell-filters {
+  width:100%;
+} 
 
 .shanti-filters .control-box-cell-filters .views-exposed-form .form-item {
   margin-right: 1rem;
@@ -3214,9 +3218,6 @@ button on video window
     padding-left: 12px;
   }
   
-  .shanti-filters .control-box-cell-filters {
-    
-  }
 
 
 
@@ -3334,14 +3335,18 @@ button on video window
 
 
 
-  .logged-in.front .control-box-cell-pager{
-    margin: 0 -1.5rem 0 0;
-  }
 
 }
 
 @media screen and (min-width: 1280px) {
   
+
+  .logged-in.front .control-box-cell-pager{
+    margin: -7.5rem -1.5rem 0 0;
+  }
+  .logged-in.front .shanti-filters .control-box-cell-filters {
+    width:33.333%;
+  }  
 }
 
 @media (min-width:1400px) {
