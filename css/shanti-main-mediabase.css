@@ -390,7 +390,6 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-filters {
   margin: 0;
-  width:60%;
 }
 
 .logged-in.front .shanti-filters .control-box-cell-filters {
@@ -1443,11 +1442,12 @@ ul.links.inline {
 .has-transcript .tabs.primary li a.transcript-edit::after{
   content: '\f040';
   font-family:'FontAwesome';
-  color:#fff;
-  font-size:1.25em;
-  position:relative;
+  color: #eee;
+  font-size: 1.25em;
+  position: relative;
   top: -0.055rem;
   right: -0.5rem;
+  text-shadow: 1px 1px 0 #999;
 }
 
 .has-transcript .tabs.primary li.active a.transcript-edit::after{
@@ -1520,16 +1520,16 @@ ul.links.inline {
 
 .tcu-gear .dropdown-menu{
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-  margin-left: -15rem;
+  margin: 0 0 0 -15rem;
   min-width: 12rem;
-  padding: 1rem;
+  padding: 1.3rem 1rem 1rem;
   background: #777;
   position: absolute;
   right: -0.5rem;
-  top: -0.5rem;
+  top: -0.3rem;
   z-index: 5;
   border-radius: .7rem 0 .7rem .7rem;
-  border-color:#888;
+  border-color: #888;
   /*filter: alpha(opacity=90);
   opacity: 0.9;*/
 }
@@ -3357,8 +3357,8 @@ button on video window
 @media screen and (min-width: 1280px) {
   
 
-  .logged-in.front .control-box-cell-pager{
-    margin: -0.3rem -1rem 0 0;
+  .logged-in.front .shanti-filters .control-box-cell-pager{
+    margin: -1rem -1rem 0 0;
   }
   .logged-in.front .shanti-filters .control-box-cell-filters {
     width:33.333%;
