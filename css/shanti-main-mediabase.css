@@ -2085,7 +2085,8 @@ ul.links.inline {
 
 .has-searched.no-results .transcript-search-message{
     top: 5.2rem;
-    color:#fff;
+    color:#ddd;
+    left:2rem;
 }
 
 .transcript-search-options {
