@@ -3143,10 +3143,13 @@ button on video window
 
 @media screen and (max-width: 599px) {
 
-  .control-box-cell-header,
   .control-box-cell-filters,
   .control-box-cell-pager{
     width:100% !important;
+  }
+
+  .control-box-cell-header{
+    width:25%;
   }
 
   .shanti-filters table.pagerer {
@@ -3269,7 +3272,6 @@ button on video window
     width:55%;
   }
 
-  .control-box-cell-header,
   .control-box-cell-filters,
   .control-box-cell-pager{
     width:33.333% !important;
