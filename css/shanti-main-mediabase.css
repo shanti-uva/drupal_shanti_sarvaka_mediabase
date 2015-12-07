@@ -3291,6 +3291,12 @@ button on video window
     width: 33.333%;
   }
 
+  .logged-in.front .shanti-filters .control-box-cell-pager{
+    width: 50%;
+  }
+
+
+
   .logged-in .carousel .carousel-main-image{
     width:45%;
   }
@@ -3353,6 +3359,16 @@ button on video window
 
 @media (min-width:1250px) {
 
+  .logged-in.front .shanti-filters .control-box-cell-pager{
+    margin-top: -0.5rem;
+    width:33.333%;
+  }
+
+  .logged-in.front .shanti-filters .control-box-cell-filters {
+    width:33.333%;
+  }
+
+
   .logged-in .carousel .carousel-main-image{
     width: 31%;
   }
@@ -3369,14 +3385,7 @@ button on video window
 @media screen and (min-width: 1280px) {
   
 
-  .logged-in.front .shanti-filters .control-box-cell-pager{
-    margin-top: -0.5rem;
-    width:33.333%;
-  }
-
-  .logged-in.front .shanti-filters .control-box-cell-filters {
-    width:33.333%;
-  }  
+  
 }
 
 @media (min-width:1400px) {
