@@ -24,6 +24,7 @@ body.in-frame.html {
 	background-color: transparent !important;
 	box-shadow: none !important;
 	border: none !important;
+	height: 4rem;
 }
 
 .in-frame  header.banner.titlearea .page-title-text {
@@ -33,4 +34,8 @@ body.in-frame.html {
 	box-shadow: none !important;
 	border: none !important;
 	line-height: 2em !important;
+}
+
+.in-frame header.banner .page-title {
+	padding-top: 0px;
 }
