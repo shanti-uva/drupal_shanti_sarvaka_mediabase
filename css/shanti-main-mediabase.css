@@ -391,7 +391,6 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-filters {
   margin: 0;
   width:60%;
-  float:none;
 }
 
 .logged-in.front .shanti-filters .control-box-cell-filters {
