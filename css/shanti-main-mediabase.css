@@ -3135,15 +3135,16 @@ button on video window
 
 
 
-  .control-box-cell-header{
+  .shanti-filters .control-box-cell-header,
+  .shanti-filters .control-box-cell-pager,
+  .shanti-filters .control-box-cell-filters{
     width:100%;
+    float:left;
   }
-
-  .shanti-filters .control-box-cell-pager {
-    float: left;
-    width: 100%;
+  .shanti-filters .control-box-cell-pager,
+  .shanti-filters .control-box-cell-filters {
     margin-top: 0;
-    margin-right: -10px;
+    margin-right: 0;
   }
 
   .logged-in.front .shanti-filters .control-box-cell-pager {
@@ -3272,7 +3273,7 @@ button on video window
   }
 
   .shanti-filters .control-box-cell-pager {
-    margin-right: -1rem;
+    margin-right: 0;
   }
 
   .shanti-filters .control-box-cell-pager,
