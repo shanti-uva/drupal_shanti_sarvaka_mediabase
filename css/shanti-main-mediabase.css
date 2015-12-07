@@ -3137,9 +3137,11 @@ button on video window
 
   .shanti-filters .control-box-cell-header,
   .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-filters{
+  .shanti-filters .control-box-cell-filters,
+  .logged-in.front .shanti-filters .control-box-cell-filters{
     width:100%;
   }
+
   .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-filters {
     margin-top: 0;
@@ -3203,10 +3205,6 @@ button on video window
 
   .shanti-filters table.pagerer {
     float:right;
-  }
-
-  .shanti-filters .control-box-cell-filters{
-    float:none;
   }
 }
 
