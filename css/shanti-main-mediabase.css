@@ -379,6 +379,8 @@ form#views-exposed-form-browse-media-home-block {
   margin-bottom: .4rem;
   text-transform: capitalize;
   font-size: 0.93em;
+  white-space: nowrap;
+  overflow:visible;
 }
 
 .shanti-filters .control-box-cell-header .view-result-count-info {
@@ -3200,7 +3202,7 @@ button on video window
   }
 
   .logged-in.front .shanti-filters .control-box-cell-pager {
-    margin-top: -7.7rem;
+    margin-top: -7.8rem;
   }
 
   .shanti-filters table.pagerer {
@@ -3291,10 +3293,13 @@ button on video window
     width: 33.333%;
   }
 
-  .logged-in.front .shanti-filters .control-box-cell-pager{
+  .logged-in.front .shanti-filters .control-box-cell-pager,
+  .logged-in.front .shanti-filters .control-box-cell-header{
     width: 50%;
   }
-
+  .logged-in.front .shanti-filters .control-box-cell-filters{
+    width:100%;
+  }
 
 
   .logged-in .carousel .carousel-main-image{
