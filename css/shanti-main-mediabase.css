@@ -3188,7 +3188,8 @@ button on video window
 @media screen and (min-width:599px) {
 
   .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header{
+  .shanti-filters .control-box-cell-header,
+  .shanti-filters .control-box-cell-filters{
     width: 45%;
   }
 
@@ -3203,6 +3204,10 @@ button on video window
 
   .shanti-filters table.pagerer {
     float:right !important;
+  }
+
+  .shanti-filters .control-box-cell-filters{
+    float:none;
   }
 }
 
@@ -3280,7 +3285,6 @@ button on video window
   .shanti-filters .control-box-cell-header{
     width: 33.333%;
   }
-
 
   .logged-in .carousel .carousel-main-image{
     width:45%;
