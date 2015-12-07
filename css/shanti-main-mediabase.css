@@ -368,7 +368,7 @@ form#views-exposed-form-browse-media-home-block {
   color: #555;
   text-transform: uppercase;
   font-size:0.82em;
-  display:none;
+  display:none !important;
 }
 
 /* show-hide text for mobile - Recent Addtions */
@@ -3186,6 +3186,10 @@ button on video window
 /***** BEGIN min-width *****/
 /*-------------------------*/
 @media screen and (min-width:599px) {
+
+  .shanti-filters .control-box-cell-header{
+    width:25%;
+  }
 
   .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-header{
