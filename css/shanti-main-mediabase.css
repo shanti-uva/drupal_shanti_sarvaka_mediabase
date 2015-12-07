@@ -1536,6 +1536,8 @@ ul.links.inline {
 
 .tcu-gear .dropdown-menu>li{
   border:none;
+  list-style: square inside;
+  color: #fff;
 }
 
 .tcu-gear .dropdown-menu>li>a{
