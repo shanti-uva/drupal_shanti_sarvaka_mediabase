@@ -2083,6 +2083,11 @@ ul.links.inline {
   opacity:1;
 }
 
+.has-searched.no-results .transcript-search-message{
+    top: 5.2rem;
+    color:#fff;
+}
+
 .transcript-search-options {
   margin: 0;
   padding-left: 10%;
