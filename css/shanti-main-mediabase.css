@@ -3136,7 +3136,7 @@ button on video window
 
 
   .control-box-cell-header{
-    width:25%;
+    width:100%;
   }
 
   .shanti-filters .control-box-cell-pager {
@@ -3150,7 +3150,7 @@ button on video window
     margin-top: -1rem;
   }
 
- .shanti-filters table.pagerer {
+  .shanti-filters table.pagerer {
     float:left !important;
   }
 
@@ -3186,9 +3186,13 @@ button on video window
 /*-------------------------*/
 @media screen and (min-width:599px) {
 
+  .shanti-filters .control-box-cell-pager,
+  .shanti-filters .control-box-cell-header{
+    width: 50%;
+  }
+
   .shanti-filters .control-box-cell-pager {
     float: right;
-    width: 50%;
     margin-top: -1rem;
   }
 
@@ -3220,6 +3224,7 @@ button on video window
     margin-top: 1.5rem;
   }
 
+
   /* video page layout */
   .av-main-video-section {
     padding-right: 0;
@@ -3235,8 +3240,6 @@ button on video window
   	font-size: 90%;
     padding-left: 12px;
   }
-  
-
 
 
   /* carousel front page */
@@ -3261,10 +3264,6 @@ button on video window
   }
 }
 
-@media screen and (min-width: 880px) {
-
-} 
-
 @media screen and (min-width: 992px) {
 
   .shanti-filters .control-box-cell-header {
@@ -3276,6 +3275,12 @@ button on video window
     margin-top: -7.7rem;
     margin-right: -1rem;
   }
+
+  .shanti-filters .control-box-cell-pager,
+  .shanti-filters .control-box-cell-header{
+    width: 33.333%;
+  }
+
 
   .logged-in .carousel .carousel-main-image{
     width:45%;
@@ -3363,7 +3368,7 @@ button on video window
     margin-top: -0.5rem;
     width:33.333%;
   }
-  
+
   .logged-in.front .shanti-filters .control-box-cell-filters {
     width:33.333%;
   }  
