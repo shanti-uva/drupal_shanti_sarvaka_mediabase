@@ -962,7 +962,7 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:1rem;
+  padding-right:2rem;
   padding-left:1rem;
 }
 
@@ -3165,6 +3165,10 @@ button on video window
 
   .control-box-cell-filters,
   .control-box-cell-pager{
+    width:100% !important;
+  }
+
+  .logged-in.front .shanti-filters .control-box-cell-filters {
     width:100% !important;
   }
 }  
