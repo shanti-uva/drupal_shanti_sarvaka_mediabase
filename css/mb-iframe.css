@@ -39,3 +39,8 @@ body.in-frame.html {
 .in-frame header.banner .page-title {
 	padding-top: 0px;
 }
+
+/** Hide JIRA feedback button **/
+.in-frame .atlwdg-trigger.atlwdg-SUBTLE {
+	display: none;
+}
