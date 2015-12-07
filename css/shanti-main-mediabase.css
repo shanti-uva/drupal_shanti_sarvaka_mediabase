@@ -3147,11 +3147,6 @@ button on video window
 
 @media screen and (max-width: 599px) {
 
-  .control-box-cell-filters,
-  .control-box-cell-pager{
-    width:100% !important;
-  }
-
   .control-box-cell-header{
     width:25%;
   }
@@ -3163,6 +3158,11 @@ button on video window
   .shanti-filters .control-box-cell-pager {
     float: left;
     margin-top:0rem;
+  }
+
+  .control-box-cell-filters,
+  .control-box-cell-pager{
+    width:100% !important;
   }
 }  
 
@@ -3269,7 +3269,7 @@ button on video window
 
   .shanti-filters .control-box-cell-pager {
     margin-top: -7.7rem;
-    margin-right: -10px;
+    margin-right: -1rem;
   }
 
   .logged-in .carousel .carousel-main-image{
@@ -3278,11 +3278,6 @@ button on video window
 
   .logged-in .carousel .carousel-main-content{
     width:55%;
-  }
-
-  .control-box-cell-filters,
-  .control-box-cell-pager{
-    width:33.333% !important;
   }
 
   .logged-in .carousel .byline {
@@ -3351,7 +3346,9 @@ button on video window
     width: 69%;
   }
 
-
+  .shanti-filters .control-box-cell-pager {
+    margin-top: -1rem;
+  }
 
 
 }
