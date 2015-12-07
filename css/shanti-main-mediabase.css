@@ -354,7 +354,6 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-header {
   margin: 0.8rem 0 0 0;
   padding: 0;
-  width:25%;
 }
 
 .shanti-filters .control-box-cell-header span{
@@ -3189,8 +3188,9 @@ button on video window
 /*-------------------------*/
 @media screen and (min-width:599px) {
 
+  .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-header{
-    width:25%;
+    width:50%%;
   }
 
   .shanti-filters .control-box-cell-pager {
@@ -3209,6 +3209,14 @@ button on video window
 }
 
 @media screen and (min-width: 768px) {
+
+  .shanti-filters .control-box-cell-header{
+    width:25%;
+  }
+
+  .shanti-filters .control-box-cell-pager{
+    width:33.333%;
+  }
 
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
