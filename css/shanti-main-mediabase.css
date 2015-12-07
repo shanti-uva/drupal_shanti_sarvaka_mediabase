@@ -3182,8 +3182,12 @@ button on video window
   .shanti-filters .control-box-cell-pager {
     float: right;
     width: 33%;
-    margin-top: -7.7rem;
+    margin-top: -1rem;
     margin-right: -10px;
+  }
+
+  .logged-in.front .shanti-filters .control-box-cell-pager {
+    margin-top: -7.7rem;
   }
 }
 
