@@ -364,7 +364,7 @@ form#views-exposed-form-browse-media-home-block {
   line-height:2rem;
 }
 
-.shanti-filters .label {
+.shanti-filters .control-box-cell-header .label {
   color: #555;
   text-transform: uppercase;
   font-size:0.82em;
@@ -3191,14 +3191,10 @@ button on video window
     width:25%;
   }
 
-  .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header{
-    width: 45%;
-  }
-
   .shanti-filters .control-box-cell-pager {
     float: right;
     margin-top: -3.8rem;
+    width: 45%;
   }
 
   .logged-in.front .shanti-filters .control-box-cell-pager {
@@ -3285,7 +3281,7 @@ button on video window
   }
 
   .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header{
+  .shanti-filters .control-box-cell-filters{
     width: 33.333%;
   }
 
