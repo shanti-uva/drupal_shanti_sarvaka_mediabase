@@ -179,5 +179,22 @@
 			}
 		}
 	};
+	
+	/**
+	 * Make sure gallery thumbnails from kaltura use the proper size. Hack because php code to save thumb url is not working properly 
+	 * ndg, 2015-12-07
+	 */
+	Drupal.behaviors.shantiAVThumbnailFix = {
+		attach: function(context, settings) {
+			if (context == document) { 
+				$('li.shanti-thumbnail.video img').each(function() { 
+					var src = $(this).attr('src'); 
+					if (src.indexOf('kaltura.com') > -1 && src.indexOf('/version') > -1) { 
+						var pts = src.split('version'); $(this).attr('src', pts[0] + '/width/240/height/220/type/1'); 
+					} 
+				});
+			}
+		}
+	};
 
 } (jQuery)); // End of JQuery Wrapper
