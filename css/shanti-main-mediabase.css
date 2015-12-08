@@ -1190,7 +1190,7 @@ ul.links.inline {
   border:1px solid transparent;
   border-bottom: 1px dashed #eee;
   /*padding-bottom: 1rem;*/
-  padding: 7px;
+  padding: 2px;
 }
 
 .speaker-tiers .tier:last-child{
