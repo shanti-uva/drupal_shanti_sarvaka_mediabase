@@ -3209,7 +3209,10 @@ button on video window
   }
 
   .page-collections .shanti-filters .control-box-cell-pager{
-    width: 50% !important;
+    width: 60% !important;
+  }
+  .page-collections .shanti-filters .control-box-cell-header{
+    width: 33.333% !important;
   }
 }
   
