@@ -1186,11 +1186,9 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier {
-  /* margin-top: 1rem; */
   border:1px solid transparent;
   border-bottom: 1px dashed #eee;
-  /*padding-bottom: 1rem;*/
-  padding: 2px;
+  padding: 0.2rem 0.2rem 0.2rem 0.7rem;
 }
 
 .speaker-tiers .tier:last-child{
