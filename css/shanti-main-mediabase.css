@@ -3147,8 +3147,7 @@ button on video window
     width:100%;
   }
 
-  .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-filters {
+  .shanti-filters .control-box-cell-pager {
     margin-top: 0;
     margin-right: 0;
   }
