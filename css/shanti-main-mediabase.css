@@ -3309,8 +3309,7 @@ button on video window
     width: 33.333%;
   }
 
-  .logged-in.front .shanti-filters .control-box-cell-pager,
-  .logged-in.front .shanti-filters .control-box-cell-header{
+  .logged-in.front .shanti-filters .control-box-cell-pager{
     width: 50%;
   }
   .logged-in.front .shanti-filters .control-box-cell-filters{
