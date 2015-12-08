@@ -3264,9 +3264,14 @@ button on video window
   }
 
   .page-collections .shanti-filters .control-box-cell-header,
-  .page-collections .shanti-filters .control-box-cell-filters,
-  .page-collections .shanti-filters .control-box-cell-pager{
+  .page-collections .shanti-filters .control-box-cell-filters{
     width:33% !important;
+  }
+
+  .page-collections .shanti-filters .control-box-cell-pager{
+    width: 40% !important;
+    margin-top:-4.5rem;
+    margin-right:-1.5rem;
   }
 
 
