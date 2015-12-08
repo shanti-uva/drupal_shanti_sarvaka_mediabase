@@ -3172,6 +3172,13 @@ button on video window
 /*-------------------------*/
 @media screen and (max-width: 499px) {
 
+   .shanti-filters .control-cell-box-pager{
+    margin-right: -1.5rem;
+    margin-top:-8rem;
+  }
+   .shanti-filters table.pagerer{
+    float:right;
+  }
 } 
 
 @media screen and (max-width: 599px) {
