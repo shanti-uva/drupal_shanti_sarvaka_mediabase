@@ -3135,16 +3135,12 @@ button on video window
 
 
 
-
+  .shanti-filters .control-box-cell-pager,
+  .logged-in.front .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-header,
   .shanti-filters .control-box-cell-filters,
   .logged-in.front .shanti-filters .control-box-cell-filters{
     width:100%;
-  }
-
-  .shanti-filters .control-box-cell-pager,
-  .logged-in.front .shanti-filters .control-box-cell-pager{
-    width:50%;
   }
 
   .shanti-filters .control-box-cell-pager,
@@ -3393,7 +3389,7 @@ button on video window
     margin-top: -0.5rem;
   }
 
-  
+
 
   .logged-in .carousel .carousel-main-image{
     width: 31%;
