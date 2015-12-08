@@ -1317,7 +1317,7 @@ ul.links.inline {
 .speaker-tiers .tier.editable:hover{
   border: 1px dashed #ddd;
   border-radius: 0.3rem;
-  border-width: 0 1px 1px;
+  border-color: transparent #ddd #ddd #ddd;
 }
 
 .speaker-tiers .tier.editable:first-child:hover{
@@ -1342,10 +1342,8 @@ ul.links.inline {
   color:#aaa;
 }
 
-/***** speaker name ****/
+/* speaker name */
 .editing-active .speaker-display:hover{
-  /*background:#fcffc6;
-  background: rgba(252, 255, 198, 0.5);*/
   border-color: #aaa;
 }
 
