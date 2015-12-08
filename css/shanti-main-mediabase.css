@@ -3165,7 +3165,9 @@ button on video window
     margin-right:-1.5rem;
     width: 60% !important;
   }
-
+   .shanti-filters table.pagerer{
+    float:right;
+  }
 
 
 
