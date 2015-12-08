@@ -3285,7 +3285,7 @@ button on video window
 
   /* video page layout */
   .av-main-video-section {
-    padding-right: 0;
+    padding-right: 0 !important;
     width:70% !important;
   }
 
