@@ -3172,13 +3172,6 @@ button on video window
 /*-------------------------*/
 @media screen and (max-width: 499px) {
 
-   .shanti-filters .control-cell-box-pager{
-    margin-right: -1.5rem;
-    margin-top:-8rem;
-  }
-   .shanti-filters table.pagerer{
-    float:right;
-  }
 } 
 
 @media screen and (max-width: 599px) {
@@ -3201,7 +3194,18 @@ button on video window
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
-@media screen and (min-width:599px) {
+@media screen and (min-width:500px) {
+
+  .shanti-filters .control-cell-box-pager{
+    margin-right: -1.5rem;
+    margin-top:-8rem;
+  }
+   .shanti-filters table.pagerer{
+    float:right;
+  }
+}
+  
+@media screen and (min-width:600px) {
 
   .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-header{
