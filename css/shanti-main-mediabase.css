@@ -3380,18 +3380,20 @@ button on video window
 @media (min-width:1250px) {
 
   .shanti-filters .control-box-cell-pager,
+  .logged-in.front .shanti-filters .control-box-cell-filters,
   .logged-in.front .shanti-filters .control-box-cell-pager{
     width:33%;
-  }
-
-  .logged-in.front .shanti-filters .control-box-cell-pager{
-    margin-top: -0.5rem;
   }
 
   .logged-in.front .shanti-filters .control-box-cell-header {
     width:25%;
   }
 
+  .logged-in.front .shanti-filters .control-box-cell-pager{
+    margin-top: -0.5rem;
+  }
+
+  
 
   .logged-in .carousel .carousel-main-image{
     width: 31%;
