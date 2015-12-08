@@ -1114,7 +1114,7 @@ ul.links.inline {
   margin: 0;
   padding: 0.4rem 3.5rem 0.2rem 2rem;
   font-size: 1.1rem;
-  min-width: 12rem;
+  min-width: 10.5rem;
   text-align:left;
   border-color: #ddd;
   background-color: #999;
@@ -1177,7 +1177,7 @@ ul.links.inline {
   width: 16rem;
   min-height: 5.5rem;
   padding-bottom:1rem;
-  padding-top:1.5rem;
+  padding-top:0.2rem;
   float: right;
 }
 
