@@ -3137,10 +3137,14 @@ button on video window
 
 
   .shanti-filters .control-box-cell-header,
-  .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-filters,
   .logged-in.front .shanti-filters .control-box-cell-filters{
     width:100%;
+  }
+
+  .shanti-filters .control-box-cell-pager,
+  .logged-in.front .shanti-filters .control-box-cell-pager{
+    width:50%;
   }
 
   .shanti-filters .control-box-cell-pager,
@@ -3157,6 +3161,7 @@ button on video window
   .shanti-filters .control-box-cell-pager {
     float:left;
   }
+
 
 
 
@@ -3199,7 +3204,6 @@ button on video window
   .shanti-filters .control-box-cell-pager {
     float: right;
     margin-top: -3.8rem;
-    width: 45%;
   }
 
   .page-collections .shanti-filters .control-box-cell-pager{
@@ -3377,7 +3381,6 @@ button on video window
 @media (min-width:1250px) {
 
   .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header,
   .logged-in.front .shanti-filters .control-box-cell-pager{
     width:33%;
   }
@@ -3386,8 +3389,8 @@ button on video window
     margin-top: -0.5rem;
   }
 
-  .logged-in.front .shanti-filters .control-box-cell-filters {
-    width:33%;
+  .logged-in.front .shanti-filters .control-box-cell-header {
+    width:25%;
   }
 
 
