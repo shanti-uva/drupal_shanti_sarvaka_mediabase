@@ -3203,6 +3203,12 @@ button on video window
    .shanti-filters table.pagerer{
     float:right;
   }
+
+  .page-collections .shanti-filters .control-box-cell-pager{
+    margin-top: -4.8rem;
+    margin-right:-1.5rem;
+    width: 40% !important;
+  }
 }
   
 @media screen and (min-width:600px) {
@@ -3217,9 +3223,7 @@ button on video window
     margin-top: 0.4rem;
   }
 
-  .page-collections .shanti-filters .control-box-cell-pager{
-    margin-top: -0.5rem;
-  }
+}
 
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -7.8rem;
@@ -3270,8 +3274,6 @@ button on video window
 
   .page-collections .shanti-filters .control-box-cell-pager{
     width: 40% !important;
-    margin-top:-4.5rem;
-    margin-right:-1.5rem;
   }
 
 
