@@ -3161,6 +3161,7 @@ button on video window
 
 
 
+
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
@@ -3240,6 +3241,13 @@ button on video window
   .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
     margin-top: 1.5rem;
   }
+
+  .page-collections .shanti-filters .control-box-cell-header,
+  .page-collections .shanti-filters .control-box-cell-filters,
+  .page-collections .shanti-filters .control-box-cell-pager{
+    width:33% !important;
+  }
+
 
 
   /* video page layout */
