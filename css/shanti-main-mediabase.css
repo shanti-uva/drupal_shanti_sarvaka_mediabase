@@ -3214,12 +3214,16 @@ button on video window
   .page-collections .shanti-filters .control-box-cell-header{
     width: 33.333% !important;
   }
+
+  .shanti-filters .control-box-cell-header{
+    width:25%;
+  }
+
 }
   
 @media screen and (min-width:600px) {
 
-  .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header{
+  .shanti-filters .control-box-cell-pager{
     width:50%;
   }
 
@@ -3227,8 +3231,6 @@ button on video window
     float: right;
     margin-top: 0.4rem;
   }
-
-}
 
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -7.8rem;
@@ -3245,10 +3247,6 @@ button on video window
 }
 
 @media screen and (min-width: 768px) {
-
-  .shanti-filters .control-box-cell-header{
-    width:25%;
-  }
 
   .shanti-filters .control-box-cell-pager{
     width:33.333%;
