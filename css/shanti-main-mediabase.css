@@ -2910,6 +2910,7 @@ a.tabledrag-toggle-weight {
 
 .video-overview .show-more a{
   font-size:0.88em;
+  display: block;
 }
 
 .video-overview-title {
