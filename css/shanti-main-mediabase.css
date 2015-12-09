@@ -487,6 +487,10 @@ div.node .group-details .field-label-span {
 .field-name-field-pbcore-description .show-more {
   position: relative;
   top: -0.7rem;
+  border: 1px double #ccc;
+  border-width: 3px 0;
+  padding: .3rem 0 .2rem;
+  text-align: center;
 }
 
 /*--- WHERE is show-annot from? ---*/
@@ -2905,7 +2909,7 @@ a.tabledrag-toggle-weight {
 }
 
 .video-overview .show-more a{
-  font-size:1em;
+  font-size:0.88em;
 }
 
 .video-overview-title {
