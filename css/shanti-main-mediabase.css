@@ -3213,11 +3213,15 @@ button on video window
   .shanti-filters .control-box-cell-pager{
     width:25%;
     float: right;
-    margin-top: -7.8rem;
+    margin-top: -8rem;
   }
 
   .shanti-filters table.pagerer {
     float:right;
+  }
+
+  .logged-in.front .shanti-filters .control-box-cell-pager {
+    margin-top: -8rem;
   }
 
   .page-collections .shanti-filters .control-box-cell-pager{
@@ -3246,7 +3250,7 @@ button on video window
 
   .shanti-filters .control-box-cell-pager{
     width:33.333%;
-    margin-top: -8.2rem;
+    margin-top: -8rem;
   }
 
   .view-collections .view-result-count-info {
@@ -3335,7 +3339,7 @@ button on video window
 
   .logged-in.front .shanti-filters .control-box-cell-pager{
     width: 50%;
-    margin-top:-7.8rem;
+    margin-top:-8rem;
   }
   .logged-in.front .shanti-filters .control-box-cell-filters{
     width:100%;
