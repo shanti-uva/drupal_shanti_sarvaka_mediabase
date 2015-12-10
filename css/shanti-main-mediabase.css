@@ -3169,11 +3169,12 @@ button on video window
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -1rem;
   }
-  
+
   .page-collections .shanti-filters .control-box-cell-pager{
     margin-top: -4.8rem;
     margin-right:-1.5rem;
     width: 60% !important;
+    float:right;
   }
    .page-collections .shanti-filters .control-box-cell-pager table.pagerer{
     float:right;
