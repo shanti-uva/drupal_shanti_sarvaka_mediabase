@@ -1069,7 +1069,7 @@ ul.links.inline {
   box-shadow:none;
 }
 
-.bootstrap-select.btn-group.tier-selector .icon:first-child {
+.bootstrap-select.btn-group.transcript-options .icon:first-child {
   font-size: 2.3rem;
   line-height: 1.5em;
   color: #606060;
@@ -1079,12 +1079,12 @@ ul.links.inline {
   width: auto;
 }
 
-.bootstrap-select.btn-group.tier-selector .btn:hover,
-.bootstrap-select.btn-group.tier-selector .btn:focus,
-.bootstrap-select.btn-group.tier-selector .btn:hover .icon,
-.bootstrap-select.btn-group.tier-selector .btn:focus .icon,
-.bootstrap-select.btn-group.tier-selector .btn:hover .icon::before,
-.bootstrap-select.btn-group.tier-selector .btn:focus .icon::before {
+.bootstrap-select.btn-group.transcript-options .btn:hover,
+.bootstrap-select.btn-group.transcript-options .btn:focus,
+.bootstrap-select.btn-group.transcript-options .btn:hover .icon,
+.bootstrap-select.btn-group.transcript-options .btn:focus .icon,
+.bootstrap-select.btn-group.transcript-options .btn:hover .icon::before,
+.bootstrap-select.btn-group.transcript-options .btn:focus .icon::before {
   background: #ddd;
 }
 
@@ -1769,7 +1769,7 @@ ul.links.inline {
   line-height: 0.88em;
 }
 
-.btn-group.bootstrap-select.show-tick.tier-selector{
+.btn-group.bootstrap-select.show-tick.transcript-options{
   margin-bottom:0;
   margin-top: 0;
 }
