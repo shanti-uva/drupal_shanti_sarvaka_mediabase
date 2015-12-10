@@ -3157,12 +3157,12 @@ button on video window
 
   .shanti-filters .control-box-cell-pager {
     margin-top: 0;
-    margin-right: 0;
+    margin-right: -15px;
   }
 
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager {
-    float:left;
+    float:right;
     height:5rem;
   }
 
@@ -3172,11 +3172,7 @@ button on video window
 
   .page-collections .shanti-filters .control-box-cell-pager{
     margin-top: -4.8rem;
-    margin-right:-1.5rem;
     width: 60% !important;
-    float:right;
-  }
-   .page-collections .shanti-filters .control-box-cell-pager table.pagerer{
     float:right;
   }
 
