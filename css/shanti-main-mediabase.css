@@ -3211,7 +3211,7 @@ button on video window
 @media screen and (min-width:500px) {
 
   .shanti-filters .control-box-cell-pager{
-    width:50%;
+    width:25%;
     float: right;
     margin-top: -7.8rem;
   }
@@ -3227,9 +3227,7 @@ button on video window
     width: 40% !important;
   }
 
-  .shanti-filters .control-box-cell-header{
-    width:25%;
-  }
+
 
 }
   
@@ -3337,6 +3335,7 @@ button on video window
 
   .logged-in.front .shanti-filters .control-box-cell-pager{
     width: 50%;
+    margin-top:-7.8rem;
   }
   .logged-in.front .shanti-filters .control-box-cell-filters{
     width:100%;
