@@ -410,6 +410,39 @@ form#views-exposed-form-browse-media-home-block {
   margin: -1rem 0 0;
 }
 
+
+
+
+  .shanti-filters .control-box-cell-pager,
+  .logged-in.front .shanti-filters .control-box-cell-pager,
+  .shanti-filters .control-box-cell-header,
+  .shanti-filters .control-box-cell-filters,
+  .logged-in.front .shanti-filters .control-box-cell-filters{
+    width:100%;
+  }
+
+  .shanti-filters .control-box-cell-pager {
+    margin-top: 0;
+    margin-right: -15px;
+  }
+
+  .shanti-filters table.pagerer,
+  .shanti-filters .control-box-cell-pager {
+    float:right;
+    height:5rem;
+  }
+
+  .logged-in.front .shanti-filters .control-box-cell-pager {
+    margin-top: -1rem;
+  }
+
+  .page-collections .shanti-filters .control-box-cell-pager{
+    margin-top: -4.8rem;
+    width: 60% !important;
+    float:right;
+  }
+
+
 /*
 .shanti-filters table.pagerer {
   margin-top: -1rem;
@@ -967,7 +1000,7 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:2rem;
+  padding-right:1rem;
   padding-left:1rem;
 }
 
@@ -1802,6 +1835,72 @@ ul.links.inline {
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.transcript-content li{
+  border: none;
+  border-radius:0;
+  padding: 0.5rem 0.5rem 0.5rem .75rem;
+  margin-bottom: 0;
+  background: #fff;
+}
+
+.transcript-content .speaker-tiers{
+  padding-bottom: 0.5rem;
+  border:none;
+  box-shadow: none;
+  background: white;
+}
+
+.transcript-content .speaker-name{
+  margin: 0 0 1rem 0.5rem;
+  padding-right: .5rem;
+}
+
+.av-main-transcript-section .tcu-info{
+  min-height:auto;
+  padding-bottom:0;
+}
+
+.av-main-transcript-section .play-button .btn{
+  background: white;
+  color: #fff;
+  font-size: 0;
+  height: 2.2rem;
+  width: 2.5rem;
+  min-width: 2rem;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.av-main-transcript-section .play-button .btn .glyphicon{
+  position: relative;
+  font-size: 1.32rem;
+  left: -1rem;
+  top: 0.6rem;
+  color:#ccc;
+}
+
+.av-main-transcript-section .play-button .btn:hover .glyphicon{
+  color:#999;
+}
+
+
+
+
+
+
+
 
 
 
@@ -3147,34 +3246,6 @@ button on video window
 
 
 
-  .shanti-filters .control-box-cell-pager,
-  .logged-in.front .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-header,
-  .shanti-filters .control-box-cell-filters,
-  .logged-in.front .shanti-filters .control-box-cell-filters{
-    width:100%;
-  }
-
-  .shanti-filters .control-box-cell-pager {
-    margin-top: 0;
-    margin-right: -15px;
-  }
-
-  .shanti-filters table.pagerer,
-  .shanti-filters .control-box-cell-pager {
-    float:right;
-    height:5rem;
-  }
-
-  .logged-in.front .shanti-filters .control-box-cell-pager {
-    margin-top: -1rem;
-  }
-
-  .page-collections .shanti-filters .control-box-cell-pager{
-    margin-top: -4.8rem;
-    width: 60% !important;
-    float:right;
-  }
 
 
 
