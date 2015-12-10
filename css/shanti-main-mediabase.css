@@ -3160,22 +3160,22 @@ button on video window
     margin-right: 0;
   }
 
-  .logged-in.front .shanti-filters .control-box-cell-pager {
-    margin-top: -1rem;
-  }
-
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager {
     float:left;
     height:5rem;
   }
 
+  .logged-in.front .shanti-filters .control-box-cell-pager {
+    margin-top: -1rem;
+  }
+  
   .page-collections .shanti-filters .control-box-cell-pager{
     margin-top: -4.8rem;
     margin-right:-1.5rem;
     width: 60% !important;
   }
-   .shanti-filters table.pagerer{
+   .page-collections .shanti-filters .control-box-cell-pager table.pagerer{
     float:right;
   }
 
