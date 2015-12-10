@@ -2663,7 +2663,7 @@ fieldset.form-wrapper .f-set{
 
 .audio-video .kaltura-embed,
 .audio-video .kaltura-embed > div > div{
-  min-height: auto; 
+  min-height: 100%; 
 }
 
 .kaltura-thumb-wrap {
