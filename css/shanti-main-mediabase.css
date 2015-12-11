@@ -1044,6 +1044,7 @@ ul.links.inline {
   border-radius: 7px 0 0 7px;
   background-clip: padding-box;
   border: 1px solid #eee;
+  border-right: none;
   padding: 1rem 0.5rem 1rem 1rem;
   margin-bottom: 0.1rem;
   background: #ccc
@@ -1667,7 +1668,7 @@ ul.links.inline {
 
 .btn-group-transcript .btn.btn-icon {
   display: table-cell;
-  width: 16.66%;
+  width: 16.666%;
   height: 6rem;
 }
 
@@ -1705,12 +1706,12 @@ ul.links.inline {
 }
 
 .bootstrap-select:not([class*='span']):not([class*='col-']):not([class*='form-control']):not(.input-group-btn) {
-  width: 16.66%;
+  width: 16.666%;
 }
 
 .btn-group-transcript .btn-group>.btn+.dropdown-toggle {
   padding: 0;
-  width: 16.66%;
+  width: 16.666%;
 }
 
 .btn-group-transcript.btn-group .btn+.btn {
@@ -1974,6 +1975,8 @@ ul.links.inline {
   height: 8rem;
   position: relative;
   margin: 0;
+  border: 1px solid #eee;
+  border-width: 0 1px;
 }
 
 .transcripts-ui-search-form {
