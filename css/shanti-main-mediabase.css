@@ -1850,6 +1850,10 @@ ul.links.inline {
 /*-------------------*/
 /*** minimal theme ***/
 /*-------------------*/
+.transcript-content .minimal-view .tcu-info{
+  width:auto;
+}
+
 .transcript-content .minimal-view li.list-group-item{
   border-radius:0;
   padding: 0 0.5rem 0 .75rem;
@@ -2530,6 +2534,16 @@ ul.links.inline {
   overflow: hidden;
   height: 10rem;
 }
+
+
+
+
+.transcript-search-result .shanti-thumbnail-link{
+  line-height: 1.25em;
+}
+
+
+
 /* show-hide for editing mode notice */
 .editing-message{
   position: relative;
