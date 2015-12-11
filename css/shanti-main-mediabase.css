@@ -177,6 +177,10 @@
   max-width: 90rem;
 }
 
+.page-collections .views-exposed-widget{
+  display:none;
+}
+
 .mb-solr-results .results {
   margin-top: 1rem;
 }
