@@ -1866,6 +1866,10 @@ ul.links.inline {
   background: white;
 }
 
+.transcript-content .no-speaker-names .speaker-tiers{
+  margin-right:4rem;
+}
+
 .transcript-content .minimal-view li.list-group-item.playing .speaker-tiers{
   box-shadow: none;
 }
