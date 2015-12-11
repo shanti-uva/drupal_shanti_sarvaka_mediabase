@@ -428,15 +428,14 @@ form#views-exposed-form-browse-media-home-block {
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager {
     float:left;
-    height:5rem;
   }
-
+/*
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -1rem;
   }
-
+*/
   .page-collections .shanti-filters .control-box-cell-pager{
-    margin-top: -4.8rem;
+    margin-top: -3.3rem;
     width: 60% !important;
     float:right;
   }
@@ -3333,18 +3332,18 @@ button on video window
 
   .shanti-filters .control-box-cell-pager{
     width:60%;
-    margin-top: -8rem;
+    margin-top: -6.5rem;
   }
 
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager{
     float:right;
   }
-
+/*
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -8rem;
   }
-
+*/
   .page-collections .shanti-filters .control-box-cell-pager{
     width: 60% !important;
   }
@@ -3371,7 +3370,7 @@ button on video window
 
   .shanti-filters .control-box-cell-pager{
     width:33.333%;
-    margin-top: -8rem;
+    margin-top: -6.5rem;
   }
 
   .view-collections .view-result-count-info {
@@ -3450,7 +3449,7 @@ button on video window
 
   .shanti-filters .control-box-cell-pager {
     margin-right: 0;
-    margin-top: -1rem;
+    margin-top: 0.5rem;
   }
 
   .shanti-filters .control-box-cell-pager,
