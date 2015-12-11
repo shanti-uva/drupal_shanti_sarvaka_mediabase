@@ -2777,6 +2777,11 @@ fieldset.form-wrapper .f-set{
   text-shadow: 0 0 3px #555;
   color: #eee;
   letter-spacing: 0.1rem;
+  background: #888 !important;
+}
+
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a.collapsed{
+  background: transparent !important;
 }
 
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
