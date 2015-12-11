@@ -1862,7 +1862,7 @@ ul.links.inline {
 }
 
 .transcript-content .speaker-name{
-  margin: 0 0 1rem 0.5rem;
+  margin: -1.5rem 0 1rem 0.5rem;
   padding-right: .5rem;
 }
 
@@ -1883,6 +1883,7 @@ ul.links.inline {
   width: 2.5rem;
   min-width: 2rem;
   padding: 0;
+  margin:0;
   border: none;
   box-shadow: none;
 }
@@ -1903,9 +1904,14 @@ ul.links.inline {
 .av-main-transcript-section .play-button .btn .glyphicon:before{
   border: none;
   box-shadow: none;
+  color: #ccc;
+  font-size: 2rem;
 }
 
-
+.av-main-transcript-section .tcu-info{
+  min-height:auto;
+  padding-top:0;
+}
 
 
 
