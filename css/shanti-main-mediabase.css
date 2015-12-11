@@ -1869,6 +1869,10 @@ ul.links.inline {
   margin-right:4rem;
 }
 
+.transcript-content .no-speaker-names .tier{
+  border-color:#eee;
+}
+
 .transcript-content .minimal-view li.list-group-item.playing .speaker-tiers{
   box-shadow: none;
 }
