@@ -1888,6 +1888,12 @@ ul.links.inline {
   box-shadow: none;
 }
 
+.av-main-transcript-section .play-button .btn:hover,
+.av-main-transcript-section .play-button .btn:active{
+  background: transparent;
+  box-shadow: none;
+}
+
 .av-main-transcript-section .play-button .btn .glyphicon{
   position: relative;
   font-size: 1.32rem;
@@ -1901,7 +1907,14 @@ ul.links.inline {
   color:#aaa;
 }
 
-.av-main-transcript-section .play-button .btn .glyphicon:before{
+.av-main-transcript-section .play-button .btn .glyphicon::before{
+  border: none;
+  box-shadow: none;
+  color: #ccc;
+  font-size: 2rem;
+}
+
+.av-main-transcript-section .play-button .btn:hover .glyphicon::before{
   border: none;
   box-shadow: none;
   color: #ccc;
