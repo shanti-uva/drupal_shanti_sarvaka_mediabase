@@ -2739,7 +2739,7 @@ fieldset.form-wrapper .f-set{
 
 
 .node-type-video.has-transcript .main-wrapper{
-  background: #ddd;
+  background: #e0e0e0;
 }
 
 .node-type-video.has-transcript .has-tabs .banner-tabs{
@@ -2762,8 +2762,8 @@ fieldset.form-wrapper .f-set{
 }
 
 .node-type-video.has-transcript .panel-default>.panel-heading{
-  background: #999 !important;
-  box-shadow: inset 1rem 1rem 2rem #909090;
+  background: #a0a0a0 !important;
+  box-shadow: inset 1rem 1rem 2rem #999;
 }
 
 .node-type-video.has-transcript .panel-default>.panel-heading:hover{
