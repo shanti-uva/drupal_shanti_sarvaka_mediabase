@@ -1843,9 +1843,9 @@ ul.links.inline {
 
 
 
-
-
-
+/*-------------------*/
+/*** minimal theme ***/
+/*-------------------*/
 .transcript-content li.list-group-item{
   border: none;
   border-radius:0;
@@ -1859,6 +1859,10 @@ ul.links.inline {
   border:none;
   box-shadow: none;
   background: white;
+}
+
+.transcript-content .speaker-display{
+  padding: 0 .5rem .75rem .8rem;
 }
 
 .transcript-content .speaker-name{
@@ -1915,10 +1919,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn:hover .glyphicon::before{
-  border: none;
-  box-shadow: none;
-  color: #ccc;
-  font-size: 2rem;
+  color: #555;
 }
 
 .av-main-transcript-section .tcu-info{
@@ -1926,7 +1927,9 @@ ul.links.inline {
   padding-top:0;
 }
 
-
+/*---------------*/
+/*** END theme ***/
+/*---------------*/
 
 
 
