@@ -1846,7 +1846,7 @@ ul.links.inline {
 /*-------------------*/
 /*** minimal theme ***/
 /*-------------------*/
-.minimal-view .transcript-content li.list-group-item{
+.transcript-content .minimal-view li.list-group-item{
   border: none;
   border-radius:0;
   padding: 0.5rem 0.5rem 0.5rem .75rem;
@@ -1854,32 +1854,32 @@ ul.links.inline {
   background: #fff;
 }
 
-.minimal-view .transcript-content .speaker-tiers{
+.transcript-content .minimal-view .speaker-tiers{
   padding-bottom: 0.5rem;
   border:none;
   box-shadow: none;
   background: white;
 }
 
-.minimal-view .transcript-content .speaker-display{
+.transcript-content .minimal-view .speaker-display{
   padding: 0 .5rem .75rem .8rem;
 }
 
-.minimal-view .transcript-content .speaker-name{
+.transcript-content .minimal-view .speaker-name{
   margin: -1.5rem 0 1rem 0.5rem;
   padding-right: .5rem;
 }
 
-.minimal-view .av-main-transcript-section .tcu-info{
+.av-main-transcript-section .minimal-view .tcu-info{
   min-height:auto;
   padding-bottom:0;
 }
 
-.minimal-view .av-main-transcript-section .play-button{
+.av-main-transcript-section .minimal-view .minimal-view .play-button{
   float: right;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn{
+.av-main-transcript-section .minimal-view .play-button .btn{
   background: white;
   color: #fff;
   font-size: 0;
@@ -1892,13 +1892,13 @@ ul.links.inline {
   box-shadow: none;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn:hover,
-.minimal-view .av-main-transcript-section .play-button .btn:active{
+.av-main-transcript-section .minimal-view .play-button .btn:hover,
+.av-main-transcript-section .minimal-view .play-button .btn:active{
   background: transparent;
   box-shadow: none;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn .glyphicon{
+.av-main-transcript-section .minimal-view .play-button .btn .glyphicon{
   position: relative;
   font-size: 1.32rem;
   left: -1rem;
@@ -1907,22 +1907,22 @@ ul.links.inline {
   text-shadow:none;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn:hover .glyphicon{
+.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon{
   color:#aaa;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn .glyphicon::before{
+.av-main-transcript-section .minimal-view .play-button .btn .glyphicon::before{
   border: none;
   box-shadow: none;
   color: #ccc;
   font-size: 2rem;
 }
 
-.minimal-view .av-main-transcript-section .play-button .btn:hover .glyphicon::before{
+.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon::before{
   color: #555;
 }
 
-.minimal-view .av-main-transcript-section .tcu-info{
+.av-main-transcript-section .minimal-view .tcu-info{
   min-height:auto;
   padding-top:0;
 }
