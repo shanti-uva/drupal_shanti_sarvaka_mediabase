@@ -431,7 +431,7 @@ form#views-exposed-form-browse-media-home-block {
 
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager {
-    float:left;
+    float:right;
   }
 /*
   .logged-in.front .shanti-filters .control-box-cell-pager {
@@ -3343,12 +3343,12 @@ button on video window
     width:60%;
     margin-top: -6.5rem;
   }
-
+/*
   .shanti-filters table.pagerer,
   .shanti-filters .control-box-cell-pager{
     float:right;
   }
-
+*/
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -8rem;
   }
