@@ -1849,34 +1849,49 @@ ul.links.inline {
 .transcript-content .minimal-view li.list-group-item{
   border: none;
   border-radius:0;
-  padding: 0.25rem 0.5rem 0.25rem .75rem;
+  padding: 0 0.5rem 0 .75rem;
   margin-bottom: 0;
   background: #fff;
 }
 
+.transcript-content .minimal-view li.list-group-item.playing{
+  border-left: 5px solid #888;
+}
+
 .transcript-content .minimal-view .speaker-tiers{
-  padding-bottom: 0.5rem;
+  padding-bottom: 0;
   border:none;
   box-shadow: none;
   background: white;
 }
 
+.transcript-content .minimal-view li.list-group-item.playing .speaker-tiers{
+  box-shadow: none;
+}
+
 .transcript-content .minimal-view .speaker-display{
-  padding: 0 .5rem .75rem .8rem;
+  padding: 0 .5rem 0 .8rem;
+}
+
+.transcript-content .minimal-view li.list-group-item.playing .speaker-display{
+  text-shadow:none;
+  color:#555 !important;  
 }
 
 .transcript-content .minimal-view .speaker-name{
-  margin: -1.5rem 0 1rem 0.5rem;
+  margin: -1.5rem 0 0.5rem 0;
   padding-right: .5rem;
 }
 
 .av-main-transcript-section .minimal-view .tcu-info{
-  min-height:auto;
+  min-height: 3rem;
+  padding-top:0;
   padding-bottom:0;
 }
 
 .av-main-transcript-section .minimal-view .play-button{
   float: right;
+  margin:0;
 }
 
 .av-main-transcript-section .minimal-view .play-button .btn{
@@ -1918,13 +1933,12 @@ ul.links.inline {
   font-size: 2rem;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon::before{
-  color: #555;
+.av-main-transcript-section .minimal-view li.playing .play-button .btn .glyphicon::before{
+  color:#888;
 }
 
-.av-main-transcript-section .minimal-view .tcu-info{
-  min-height: 3rem;
-  padding-top:0;
+.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon::before{
+  color: #888;
 }
 
 /*---------------*/
