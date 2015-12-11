@@ -97,7 +97,7 @@
 					     	// When Show More is clicked
 					         $(this).text(Drupal.t('Show Less'));
 					         divstotoggle.removeClass('hidden');
-									 items.eq(0).find('p').eq(0).nextAll().show();
+									 items.eq(0).find('p').eq(0).nextAll().slideDown( 'slow' );
 					     		$(".avdesc").addClass("show-more-height");
 					     } else {
 					     	// When Show Less is clicked
