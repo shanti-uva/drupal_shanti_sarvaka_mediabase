@@ -1849,7 +1849,7 @@ ul.links.inline {
 .transcript-content .minimal-view li.list-group-item{
   border: none;
   border-radius:0;
-  padding: 0.5rem 0.5rem 0.5rem .75rem;
+  padding: 0.25rem 0.5rem 0.25rem .75rem;
   margin-bottom: 0;
   background: #fff;
 }
@@ -1923,7 +1923,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .minimal-view .tcu-info{
-  min-height:auto;
+  min-height: 3rem;
   padding-top:0;
 }
 
