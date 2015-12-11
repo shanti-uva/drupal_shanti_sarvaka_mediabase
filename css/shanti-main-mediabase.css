@@ -1869,12 +1869,12 @@ ul.links.inline {
   background: white;
 }
 
-.transcript-content .no-speaker-names .speaker-tiers{
+.transcript-content .minimal-view.no-speaker-names .speaker-tiers{
   margin-right:4rem;
 }
 
-.transcript-content .no-speaker-names .tier{
-  border-color:#eee;
+.transcript-content .minimal-view.no-speaker-names .tier{
+  border-bottom-color:#eee;
 }
 
 .transcript-content .minimal-view li.list-group-item.playing .speaker-tiers{
