@@ -1884,18 +1884,18 @@ ul.links.inline {
   padding-right: .5rem;
 }
 
-.av-main-transcript-section .minimal-view .tcu-info{
+.transcript-content .minimal-view .tcu-info{
   min-height: 3rem;
   padding-top:0;
   padding-bottom:0;
 }
 
-.av-main-transcript-section .minimal-view .play-button{
+.transcript-content .minimal-view .play-button{
   float: right;
   margin:0;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn{
+.transcript-content .minimal-view .play-button .btn{
   background: white;
   color: #fff;
   font-size: 0;
@@ -1908,13 +1908,13 @@ ul.links.inline {
   box-shadow: none;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn:hover,
-.av-main-transcript-section .minimal-view .play-button .btn:active{
+.transcript-content .minimal-view .play-button .btn:hover,
+.transcript-content .minimal-view .play-button .btn:active{
   background: transparent;
   box-shadow: none;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn .glyphicon{
+.transcript-content .minimal-view .play-button .btn .glyphicon{
   position: relative;
   font-size: 1.32rem;
   left: -1rem;
@@ -1923,22 +1923,22 @@ ul.links.inline {
   text-shadow:none;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon{
+.transcript-content .minimal-view .play-button .btn:hover .glyphicon{
   color:#aaa;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn .glyphicon::before{
+.transcript-content .minimal-view .play-button .btn .glyphicon::before{
   border: none;
   box-shadow: none;
   color: #ccc;
   font-size: 2rem;
 }
 
-.av-main-transcript-section .minimal-view li.playing .play-button .btn .glyphicon::before{
+.transcript-content .minimal-view li.playing .play-button .btn .glyphicon::before{
   color:#888;
 }
 
-.av-main-transcript-section .minimal-view .play-button .btn:hover .glyphicon::before{
+.transcript-content .minimal-view .play-button .btn:hover .glyphicon::before{
   color: #888;
 }
 
