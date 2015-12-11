@@ -2778,6 +2778,7 @@ fieldset.form-wrapper .f-set{
 
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
   color: #fff; 
+  background: #888 !important;
 }
 
 .node-type-video.has-transcript .panel-heading .accordion-toggle::after{
