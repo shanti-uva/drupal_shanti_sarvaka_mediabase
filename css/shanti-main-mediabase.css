@@ -177,7 +177,7 @@
   max-width: 90rem;
 }
 
-.page-collections .views-exposed-widget{
+.page-collections .views-exposed-widget .form-submit{
   display:none;
 }
 
