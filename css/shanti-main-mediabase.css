@@ -3344,11 +3344,11 @@ button on video window
   .shanti-filters .control-box-cell-pager{
     float:right;
   }
-/*
+
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -8rem;
   }
-*/
+
   .page-collections .shanti-filters .control-box-cell-pager{
     width: 60% !important;
   }
