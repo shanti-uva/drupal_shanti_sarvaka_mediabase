@@ -1871,6 +1871,10 @@ ul.links.inline {
   padding-bottom:0;
 }
 
+.av-main-transcript-section .play-button{
+  float: right;
+}
+
 .av-main-transcript-section .play-button .btn{
   background: white;
   color: #fff;
@@ -1889,13 +1893,17 @@ ul.links.inline {
   left: -1rem;
   top: 0.6rem;
   color:#ccc;
+  text-shadow:none;
 }
 
 .av-main-transcript-section .play-button .btn:hover .glyphicon{
-  color:#999;
+  color:#aaa;
 }
 
-
+.av-main-transcript-section .play-button .btn .glyphicon:before{
+  border: none;
+  box-shadow: none;
+}
 
 
 
