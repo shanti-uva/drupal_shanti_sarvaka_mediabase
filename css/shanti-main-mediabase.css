@@ -99,18 +99,18 @@
 
 
 /*--- view collections page ---*/
+
+/*
 .view-collections .views-exposed-form {
   margin-bottom: 0;
-  text-align: center;
-/*border-bottom:1px solid #ccc;*/
 }
 
 .view-collections .views-exposed-form .views-exposed-widget label, 
 .view-collections .views-exposed-form .views-exposed-widget div {
- /*float: left; margin: 0 1em 0 0; */
   vertical-align: middle;
 }
-
+*/
+/*
 .view-collections .views-exposed-form input.form-control {
   width: 12em;
 }
@@ -131,7 +131,7 @@
 .view-collections .views-exposed-widget.views-widget-per-page {
   width: 10.5em;
 }
-
+*/
 .view-collections .views-row {
   padding-top: 0.75em;
   padding-bottom: 2em;
@@ -602,6 +602,7 @@ a.hide-annot::before {
 /**
  *  All Collections View Header Styles taken from Essays
  */
+ /*
 .view-result-count-info {
   font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
   font-size: 0.88em;
@@ -668,7 +669,6 @@ a.hide-annot::before {
   display: table;
   width: 100%;
   border-top: 0;
-  /* margin: 10px 0; removed oct 29, 2015 mf8yk */
   margin:0;
   border-color: transparent;
 }
@@ -683,7 +683,8 @@ a.hide-annot::before {
   margin: 0 -15px;
   height:3rem;
 }
-
+*/
+/*
 .view-collections .view-all-colls-control-box .pager {
   text-align: left;
   float: left;
@@ -723,7 +724,7 @@ a.hide-annot::before {
 .views-widget-filter-title input {
   height: 24px;
 }
-
+*/
 .shanti-collections .content-section {
   padding-top: 0;
 }
@@ -733,18 +734,18 @@ a.hide-annot::before {
   text-transform: capitalize;
   margin: -4px 8px 0 0;
 }
-
+/*
 .view-collections .views-exposed-widget.views-submit-button, 
 .view-collections .views-exposed-widget.views-reset-button {
   padding: 0;
   margin: -12px 0 0 0;
 }
-
+*/
 /* Collections page top filter button temporarily */
-#edit-submit-collections.form-submit{
+/*#edit-submit-collections.form-submit{
   display:none;
 }
-
+*/
 
 /**
  *  Individual Collection Pages
@@ -761,7 +762,7 @@ a.hide-annot::before {
 
 .collimage .img-thumbnail {
   padding: 0.7rem;
-  margin: 12px 18px;
+  margin: 12px 18px 5px;
   border-radius: 0.2rem;
   background-clip: padding-box;
  /* border: 2px solid #32ccca; */
@@ -3372,7 +3373,7 @@ button on video window
     width:33.333%;
     margin-top: -6.5rem;
   }
-
+/*
   .view-collections .view-result-count-info {
     margin-top: 2.3rem;
     margin-bottom: 0.5rem;
@@ -3389,7 +3390,7 @@ button on video window
   .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
     margin-top: 1.5rem;
   }
-
+*/
   .page-collections .shanti-filters .control-box-cell-header,
   .page-collections .shanti-filters .control-box-cell-filters{
     width:33% !important;
