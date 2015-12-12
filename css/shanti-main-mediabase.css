@@ -1908,14 +1908,16 @@ ul.links.inline {
 
 .transcript-content .minimal-view .play-button{
   float: right;
-  margin:0 2rem 0 0;
+  position: relative;
+  right: 1rem;
+  top: .3rem;
 }
 
 .transcript-content .minimal-view .play-button .btn{
   background: white;
   color: #fff;
   font-size: 0;
-  height: 2.2rem;
+  height: 2.5rem;
   width: 2.5rem;
   min-width: 2rem;
   padding: 0;
@@ -1923,6 +1925,8 @@ ul.links.inline {
   border: none;
   box-shadow: none;
   overflow:visible;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
 .transcript-content .minimal-view .play-button .btn:hover,
@@ -1934,10 +1938,10 @@ ul.links.inline {
 .transcript-content .minimal-view .play-button .btn .glyphicon{
   position: relative;
   font-size: 1.32rem;
-  left: 1rem;
-  top: 0.6rem;
-  color:#ccc;
-  text-shadow:none;
+  left: 0.55rem;
+  top: 0;
+  color: #ccc;
+  text-shadow: none;
 }
 
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon{
