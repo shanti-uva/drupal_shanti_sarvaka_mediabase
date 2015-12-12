@@ -96,15 +96,15 @@
 					     if($(this).text() == Drupal.t('Show More')) {
 					     	// When Show More is clicked
 					         $(this).text(Drupal.t('Show Less'));
-					         divstotoggle.removeClass('hidden');
+					         // divstotoggle.removeClass('hidden');
 									 items.eq(0).find('p').eq(0).nextAll().slideDown( 'slow' );
-					     		$(".avdesc").addClass("show-more-height");
+					     		// $(".avdesc").addClass("show-more-height");
 					     } else {
 					     	// When Show Less is clicked
 					         $(this).text(Drupal.t('Show More'));
-					         divstotoggle.addClass('hidden');
+					         // divstotoggle.addClass('hidden');
 									 items.eq(0).find('p').eq(0).nextAll().hide();
-					     		$(".avdesc").removeClass("show-more-height");
+					     		// $(".avdesc").removeClass("show-more-height");
 					     }
 							 e.preventDefault();
 						});

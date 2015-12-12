@@ -2910,7 +2910,8 @@ fieldset.form-wrapper .f-set > table{
   padding-top:1rem;
 }
 .video-overview {
-  padding-left: 0px !important;
+  padding-bottom: 2rem;
+  padding-left: 0 !important;
 }
 
 .avinfo .trans-btn {
