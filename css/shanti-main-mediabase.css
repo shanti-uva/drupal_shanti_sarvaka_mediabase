@@ -1925,7 +1925,7 @@ ul.links.inline {
   border: none;
   box-shadow: none;
   overflow:visible;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   border-radius: 50%;
 }
 
@@ -1933,6 +1933,7 @@ ul.links.inline {
 .transcript-content .minimal-view .play-button .btn:active{
   background: transparent;
   box-shadow: none;
+  border-color: #ddd;
 }
 
 .transcript-content .minimal-view .play-button .btn .glyphicon{
@@ -1940,8 +1941,6 @@ ul.links.inline {
   font-size: 1.32rem;
   left: 0.55rem;
   top: 0;
-  color: #ccc;
-  text-shadow: none;
 }
 
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon{
@@ -1951,16 +1950,18 @@ ul.links.inline {
 .transcript-content .minimal-view .play-button .btn .glyphicon::before{
   border: none;
   box-shadow: none;
-  color: #ccc;
+  text-shadow: none;
+  color: #ddd;
   font-size: 1.25rem;
 }
 
 .transcript-content .minimal-view li.playing .play-button .btn .glyphicon::before{
-  color:#888;
+  color:#aaa;
+  border-color:#ccc;
 }
 
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon::before{
-  color: #888;
+  color: #aaa;
 }
 
 /*---------------*/
