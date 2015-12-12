@@ -1896,7 +1896,7 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view .speaker-name{
-  margin: -1.5rem 0 0.5rem 0;
+  margin: -1.8rem 0 0.5rem 0;
   padding-right: .5rem;
 }
 
@@ -1910,7 +1910,7 @@ ul.links.inline {
   float: right;
   position: relative;
   right: 1rem;
-  top: .3rem;
+  top: .5rem;
 }
 
 .transcript-content .minimal-view .play-button .btn{
@@ -1931,9 +1931,9 @@ ul.links.inline {
 
 .transcript-content .minimal-view .play-button .btn:hover,
 .transcript-content .minimal-view .play-button .btn:active{
-  background: transparent;
+  background: #888;
   box-shadow: none;
-  border-color: #ddd;
+  border-color: #999;
 }
 
 .transcript-content .minimal-view .play-button .btn .glyphicon{
@@ -1944,7 +1944,7 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon{
-  color:#aaa;
+
 }
 
 .transcript-content .minimal-view .play-button .btn .glyphicon::before{
@@ -1955,14 +1955,18 @@ ul.links.inline {
   font-size: 1.25rem;
 }
 
+.transcript-content .minimal-view .play-button .btn:hover .glyphicon::before,
 .transcript-content .minimal-view li.playing .play-button .btn .glyphicon::before{
-  color:#aaa;
+  color:#eee;
   border-color:#ccc;
 }
 
-.transcript-content .minimal-view .play-button .btn:hover .glyphicon::before{
-  color: #aaa;
+.transcript-content .minimal-view li.playing .play-button .btn{
+  background: #888;
+  box-shadow: none;
+  border-color: #999;
 }
+
 
 /*---------------*/
 /*** END theme ***/
