@@ -1210,7 +1210,7 @@ ul.links.inline {
   margin-left:0;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
-  border-radius: 7px;
+  border-radius: 4px;
   padding: 0.5rem
 }
 
@@ -1861,6 +1861,7 @@ ul.links.inline {
   background: #fff;
   border: none;
   border-left: 5px solid transparent;
+  min-height:3.5rem;
 }
 
 .transcript-content .minimal-view li.list-group-item.playing{
@@ -1955,6 +1956,9 @@ ul.links.inline {
   font-size: 1.25rem;
 }
 
+
+
+
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon::before,
 .transcript-content .minimal-view li.playing .play-button .btn .glyphicon::before{
   color:#eee;
@@ -1989,7 +1993,7 @@ ul.links.inline {
   position: relative;
   margin: 0;
   border: 1px solid #eee;
-  border-width: 0 1px;
+  border-width: 0 1px 1px;
 }
 
 .transcripts-ui-search-form {
