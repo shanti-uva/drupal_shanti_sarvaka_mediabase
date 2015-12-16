@@ -1236,7 +1236,8 @@ ul.links.inline {
   border-bottom-color:transparent;
 }
 
-.speaker-tiers .tier[data-speaker-display='ss_speaker_bod']{
+.speaker-tiers .tier[data-speaker-display='ss_speaker_bod'],
+.speaker-name .speaker-display[data-speaker-display='ss_speaker_bod']{
   font-size:1.06em;
 }
 
@@ -1394,7 +1395,7 @@ ul.links.inline {
   cursor: pointer;
   position:relative;
   left: -1.7rem;
-  top: 0.2rem;
+  top: -0.2rem;
   height: 17px;
   width: 17px;
   font-size: 90%;
@@ -1531,7 +1532,7 @@ ul.links.inline {
   position: relative;
   float: right;
   top: -0.6rem;
-  right: 0;
+  right: -1.3rem;
   display:none;
 }
 
@@ -1846,13 +1847,12 @@ ul.links.inline {
 
 /***** REVERSE COLUMNS in transcript viewer *****/
 .transcript-content .play-button{
-  float:none;
   position: absolute;
   bottom: 1rem;
 }
 
 .transcript-content .speaker-tiers{
-  margin-left: 16rem;
+  margin-left: 17rem;
   margin-right: 2rem;
 }
 
