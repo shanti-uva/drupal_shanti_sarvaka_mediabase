@@ -1123,7 +1123,7 @@ ul.links.inline {
 
 .speaker-name {
   width: 100%;
-  /*float:left;*/
+  float:left;
   margin: 0 0 1rem;
   padding-right:.5rem;
   color:#111;
@@ -1252,7 +1252,7 @@ ul.links.inline {
 
 
 .transcript-content .editing-active .speaker-tiers{
-  margin-right:3rem;
+  margin-right:1.5rem;
   margin-left:17rem;
 }
 
@@ -1540,7 +1540,7 @@ ul.links.inline {
   position: relative;
   float: right;
   top: -0.6rem;
-  right: 0;
+  right: -1.5rem;
   display:none;
 }
 
@@ -1568,6 +1568,11 @@ ul.links.inline {
 .tcu-gear-ops.dropdown-toggle:focus{
   background: transparent !important;
 }
+
+.playing .tcu-gear-ops.dropdown-toggle{
+  color:#555;
+}
+
 
 
 .tcu-gear .dropdown-menu{
