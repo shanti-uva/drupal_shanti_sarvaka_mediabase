@@ -1132,14 +1132,14 @@ ul.links.inline {
 
 .speaker-name {
   width: 100%;
-  float:left;
-  margin: 0.5rem 0 1rem 0.5rem;
+  /*float:left;*/
+  margin: 0 0 1rem;
   padding-right:.5rem;
 }
 
 .speaker-name .speaker-display{
   display:block;
-  font-size:90%;
+  font-size:95%;
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
@@ -1158,7 +1158,7 @@ ul.links.inline {
   min-width: 10.5rem;
   text-align:left;
   border-color: #ddd;
-  background-color: #999;
+  background-color: #aaa;
   text-shadow:1px 1px #888;
   color: #fff;
   box-shadow: 0 0 4px 0 rgba(50,50,50,0.175); 
@@ -1844,15 +1844,35 @@ ul.links.inline {
 
 
 
-
-
-
-/*-------------------*/
-/*** minimal theme ***/
-/*-------------------*/
-.transcript-content .minimal-view .tcu-info{
-  width:auto;
+/***** REVERSE COLUMNS in transcript viewer *****/
+.transcript-content .play-button{
+  float:none;
+  position: absolute;
+  bottom: 1rem;
 }
+
+.transcript-content .speaker-tiers{
+  margin-left: 16rem;
+  margin-right: 2rem;
+}
+
+.transcript-content .minimal-view .tcu-info{
+  float:left;
+}
+
+/*.transcript-content .minimal-view .tcu-info{
+  width:auto;
+}*/
+/*****/
+
+
+
+/*---------------------------------------------------------------------------*/
+/*** minimal theme - Note:; options include these classes - .minimal-view.no-speaker-names and li.playing ***/
+/*---------------------------------------------------------------------------*/
+/*.transcript-content .minimal-view .tcu-info{
+  width:auto;
+}*/
 
 .transcript-content .minimal-view li.list-group-item{
   border-radius:0;
@@ -1975,6 +1995,7 @@ ul.links.inline {
 /*---------------*/
 /*** END theme ***/
 /*---------------*/
+
 
 
 
