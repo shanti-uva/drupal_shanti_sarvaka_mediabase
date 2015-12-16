@@ -1200,7 +1200,7 @@ ul.links.inline {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
   padding-right: 1rem;
-  margin-right:2rem;
+  margin-right:3rem;
   margin-left:17rem;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
@@ -1531,7 +1531,7 @@ ul.links.inline {
   position: relative;
   float: right;
   top: -0.6rem;
-  right: -1.3rem;
+  right: 0;
   display:none;
 }
 
