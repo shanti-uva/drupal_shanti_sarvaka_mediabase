@@ -1218,7 +1218,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .tcu-info {
-  width: auto;
+  width: 16rem;
   min-height: 5.5rem;
   padding-bottom:1rem;
   padding-top:0.2rem;
@@ -1965,6 +1965,10 @@ ul.links.inline {
   position: absolute; 
   right: 2rem;
   top: -0.5rem;
+}
+
+.transcript-content .minimal-view.no-speaker-names .play-button{
+  top:2.3rem;
 }
 
 .transcript-content .minimal-view .play-button .btn{
