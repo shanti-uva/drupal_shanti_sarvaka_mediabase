@@ -1219,7 +1219,7 @@ ul.links.inline {
   min-height: 5.5rem;
   padding-bottom:1rem;
   padding-top:0.2rem;
-  float: right;
+  float: left;
 }
 
 .tcu-info .speaker-display[data-speaker-display='ss_speaker']{ /* tibetan font */
@@ -1856,13 +1856,9 @@ ul.links.inline {
   margin-right: 2rem;
 }
 
-.transcript-content .minimal-view .tcu-info{
+.transcript-content .tcu-info{
   float:left;
 }
-
-/*.transcript-content .minimal-view .tcu-info{
-  width:auto;
-}*/
 /*****/
 
 
