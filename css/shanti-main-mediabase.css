@@ -1055,7 +1055,7 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing {
-  border-color: #999;
+  /*border-color: #999;*/
   background: #999;
 }
 
@@ -1252,7 +1252,7 @@ ul.links.inline {
 
 
 .transcript-content .editing-active .speaker-tiers{
-  margin-right:1.5rem;
+  margin-right:3rem;
   margin-left:17rem;
 }
 
@@ -1540,7 +1540,7 @@ ul.links.inline {
   position: relative;
   float: right;
   top: -0.6rem;
-  right: -1.5rem;
+  right: 0rem;
   display:none;
 }
 
@@ -1859,11 +1859,12 @@ ul.links.inline {
 
 
 /***** REVERSE COLUMNS in transcript viewer *****/
+
 .transcript-content .reversed-view .play-button{
-  float: right;
+  float: left;
   position: relative;
-  right: 1rem;
-  top: .5rem;
+  left: 0.1rem;
+  top: -1rem;
 }
 
 .transcript-content .reversed-view .speaker-tiers{
@@ -1874,6 +1875,18 @@ ul.links.inline {
 .transcript-content .reversed-view .tcu-info{
   float:right;
 }
+
+.transcript-content .minimal-view.reversed-view .play-button{
+  float: right;
+  position: relative;
+  right: 1rem;
+  top: .5rem;
+ }
+ 
+ .transcript-content .reversed-view .speaker-name{
+  margin-left:0.5rem;
+ } 
+
 /*****/
 
 
