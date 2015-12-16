@@ -1140,7 +1140,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button {
-  margin: 0 0 0 1rem;
+  margin: 1rem 0 0 1rem;
   position:absolute;
   bottom:1rem;
 }
@@ -1371,7 +1371,7 @@ ul.links.inline {
 
 .speaker-tiers .tier.editable:first-child:hover{
   border-radius: 0.3rem;
-  border-color: #ddd;
+  border-top: 1px dashed #ddd;
 }
 
 .speaker-tiers .tier.editable::before{ 
