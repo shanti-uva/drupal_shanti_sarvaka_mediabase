@@ -197,6 +197,10 @@
   margin: -26px -12px;
 }
 
+.node-type-collection .mb-solr-results .head table.pagerer{
+  margin-top:0;
+}
+
 .mb-solr-results .head .label {
   color: #333;
   text-transform: uppercase;
