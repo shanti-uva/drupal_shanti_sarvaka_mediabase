@@ -1059,15 +1059,6 @@ ul.links.inline {
   background: #999;
 }
 
-.transcript-content li.list-group-item.playing .speaker-tiers{
-  box-shadow: 0 0 3px 2px #888;
-}
-
-.transcript-content li.list-group-item.playing .speaker-display{
-  color: white !important;
-  text-shadow: 0 0 2px #444;
-}
-
 .transcript-controls table tbody,
 .transcript-player table tbody {
   border-top: none;
@@ -1135,6 +1126,7 @@ ul.links.inline {
   /*float:left;*/
   margin: 0 0 1rem;
   padding-right:.5rem;
+  color:#111;
 }
 
 .speaker-name .speaker-display{
@@ -1149,13 +1141,15 @@ ul.links.inline {
 
 .av-main-transcript-section .play-button {
   margin: 0 0 0 1rem;
+  position:absolute;
+  bottom:1rem;
 }
 
 .av-main-transcript-section .play-button .btn {
   margin: 0;
   padding: 0.4rem 3.5rem 0.2rem 2rem;
   font-size: 1.1rem;
-  min-width: 10.5rem;
+  min-width: 11.5rem;
   text-align:left;
   border-color: #ddd;
   background-color: #aaa;
@@ -1206,12 +1200,21 @@ ul.links.inline {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
   padding-right: 1rem;
-  margin-right:16rem;
-  margin-left:0;
+  margin-right:2rem;
+  margin-left:17rem;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
   border-radius: 4px;
   padding: 0.5rem
+}
+
+.transcript-content li.list-group-item.playing .speaker-tiers{
+  box-shadow: 0 0 3px 2px #888;
+}
+
+.transcript-content li.list-group-item.playing .speaker-display{
+  color: white !important;
+  text-shadow: 0 0 2px #444;
 }
 
 .av-main-transcript-section .tcu-info {
@@ -1220,10 +1223,6 @@ ul.links.inline {
   padding-bottom:1rem;
   padding-top:0.2rem;
   float: left;
-}
-
-.tcu-info .speaker-display[data-speaker-display='ss_speaker']{ /* tibetan font */
-  font-size: 108%;
 }
 
 .speaker-tiers .tier {
@@ -1548,7 +1547,7 @@ ul.links.inline {
   border: none !important;
   background: transparent !important;
   box-shadow: none;
-  color: #777;
+  color: #999;
   position: absolute;
   z-index: 10;
   right: 1rem;
@@ -1846,18 +1845,20 @@ ul.links.inline {
 
 
 /***** REVERSE COLUMNS in transcript viewer *****/
-.transcript-content .play-button{
-  position: absolute;
-  bottom: 1rem;
+.transcript-content .reversed-view .play-button{
+  float: right;
+  position: relative;
+  right: 1rem;
+  top: .5rem;
 }
 
-.transcript-content .speaker-tiers{
-  margin-left: 17rem;
-  margin-right: 2rem;
+.transcript-content .reversed-view .speaker-tiers{
+  margin-right:16rem;
+  margin-left:0;
 }
 
-.transcript-content .tcu-info{
-  float:left;
+.transcript-content .reversed-view .tcu-info{
+  float:right;
 }
 /*****/
 
