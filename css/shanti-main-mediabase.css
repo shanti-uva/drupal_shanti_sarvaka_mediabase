@@ -1362,7 +1362,8 @@ ul.links.inline {
 }
 
 .speaker-tiers .tier.editable:first-child:hover{
-  border-width:1px 1px 1px 1px;
+  border-radius: 0.3rem;
+  border-color: #ddd;
 }
 
 .speaker-tiers .tier.editable::before{ 
@@ -1890,6 +1891,8 @@ ul.links.inline {
   border:none;
   box-shadow: none;
   background: white;
+  margin-right: 5rem;
+  margin-left: 13rem;
 }
 
 .transcript-content .minimal-view.no-speaker-names .speaker-tiers{
@@ -1925,9 +1928,8 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view .play-button{
-  float: right;
-  position: relative;
-  right: 1rem;
+  position: absolute; 
+  right: 2.5rem;
   top: .5rem;
 }
 
