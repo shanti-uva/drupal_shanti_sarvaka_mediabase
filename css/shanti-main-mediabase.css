@@ -1045,13 +1045,17 @@ ul.links.inline {
   background-clip: padding-box;
   border: 1px solid #eee;
   border-right: none;
-  padding: 1rem 0.5rem 1rem 1rem;
+  padding: 1rem 2.5rem 1rem 1rem;
   margin-bottom: 0.1rem;
   background: #ccc
 }
 
+.transcript-content .editing-active li.list-group-item{
+  padding-right:3.5rem;
+}
+
 .transcript-content li.list-group-item:first-of-type{
-  border-radius: 0 0 0 8px;
+  border-radius: 0 0 0 0.8rem;
 }
 
 .transcript-content li.list-group-item.playing {
@@ -1200,7 +1204,7 @@ ul.links.inline {
   padding-bottom: 0.5rem;
   border-right: 1px solid #eee;
   padding-right: 1rem;
-  margin-right: 2rem;
+  margin-right: 0;
   margin-left: 15rem;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
@@ -1263,10 +1267,6 @@ ul.links.inline {
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
-.transcript-content .editing-active .speaker-tiers{
-  margin-right:3rem;
-}
-
 .speaker-tiers .editable-input{
   width: 100% !important;
   display: block !important;
@@ -1546,15 +1546,15 @@ ul.links.inline {
 
 /**** BEGIN Translation Segment Edit Tools Menu *****/
 .tcu-gear{
-  position: relative;
-  float: right;
-  top: -0.6rem;
-  right: 0rem;
   display:none;
 }
 
 .editing-active .tcu-gear{
   display:inline-block;
+  position: absolute;
+  float: right;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .tcu-gear-ops.dropdown-toggle{
