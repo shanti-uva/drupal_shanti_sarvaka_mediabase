@@ -1027,6 +1027,9 @@ ul.links.inline {
 .transcript-container .list-group {
   -webkit-margin-before: 0;
   margin-bottom: 420px;
+}
+
+.transcript-container .minimal-view .list-group{
   border-bottom: 30px solid #fff;
 }
 
