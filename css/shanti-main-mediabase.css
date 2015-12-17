@@ -1229,6 +1229,10 @@ ul.links.inline {
   padding: 0.2rem 0.2rem 0.2rem 0.7rem;
 }
 
+.minimal-view .speaker-tiers .tier{
+  border-bottom:none;
+}
+
 .speaker-tiers .tier:last-child{
   border-bottom-color:transparent;
 }
