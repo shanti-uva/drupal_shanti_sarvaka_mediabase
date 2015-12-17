@@ -1014,7 +1014,7 @@ ul.links.inline {
 .transcript-container {
   /*background: white;*/
   height: 750px;
-  overflow-x: auto;
+  overflow-x: scroll !important;
   margin-top: 0;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
@@ -1253,7 +1253,7 @@ ul.links.inline {
 
 .transcript-content .editing-active .speaker-tiers{
   margin-right:3rem;
-  margin-left:16rem;
+  margin-left:17rem;
 }
 
 
