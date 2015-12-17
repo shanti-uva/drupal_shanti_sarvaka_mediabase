@@ -1012,12 +1012,12 @@ ul.links.inline {
 }
 
 .transcript-container {
-  /*background: white;*/
   height: 750px;
-  overflow-x: scroll !important;
-  margin-top: 0;
+  overflow-x: hidden;
+  margin-top: 0px;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
+  overflow-y: scroll !important;
 }
 
 .transcript-container.show-search {
@@ -1033,14 +1033,7 @@ ul.links.inline {
   margin-bottom: 0;
 }
 
-.transcript-content {
-  /* border: 1px solid #ddd;
-  border-width: 0 1px 4px 1px; */
-}
-
 .transcript-content li.list-group-item{
-  /* border: 3px double #fff;
-  border-style: solid double; */
   border-radius: 7px 0 0 7px;
   background-clip: padding-box;
   border: 1px solid #eee;
@@ -1059,7 +1052,6 @@ ul.links.inline {
 }
 
 .transcript-content li.list-group-item.playing {
-  /*border-color: #999;*/
   background: #999;
 }
 
@@ -1076,7 +1068,6 @@ ul.links.inline {
 .transcript-controls .btn-group:nth-of-type(1) .btn {
   border-left: 1px solid #ddd;
 }
- /*--- .btn-group-transcript .btn.btn-icon span:last-child{display:inline-block;} set up for new video transcript controls --*/
 
 .transcripts-apachesolr-search-snippet .controls {
   width: 15.5rem;
@@ -1086,15 +1077,12 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .btn-group-transcript .btn.btn-default.dropdown-toggle {
- /*display: table-cell;*/
   background-image: none;
   background: #555;  
   border-radius: 0;
   height: 6rem;
   border: 1px solid #ddd;
   width: 100%;
-  /*position: relative;
-  top: -0.15rem;*/
 }
 
 .av-main-transcript-section .btn-group-transcript .btn.btn-default.dropdown-toggle:focus {
