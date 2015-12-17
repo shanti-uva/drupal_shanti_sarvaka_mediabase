@@ -1122,7 +1122,7 @@ ul.links.inline {
 }
 
 .speaker-name {
-  width: 15rem;
+  width: 14.5rem;
   float:left;
   margin: 0 0 1rem;
   padding-right:.5rem;
@@ -1201,7 +1201,7 @@ ul.links.inline {
   border-right: 1px solid #eee;
   padding-right: 1rem;
   margin-right: 2rem;
-  margin-left: 13.5rem;
+  margin-left: 15rem;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
   border-radius: 4px;
