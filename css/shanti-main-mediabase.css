@@ -1886,7 +1886,7 @@ ul.links.inline {
   float: right;
   position: relative;
   right: 1rem;
-  top: .5rem;
+  top: -0.5rem;
 }
  
 .av-main-transcript-section .reversed-view .play-button .btn{
