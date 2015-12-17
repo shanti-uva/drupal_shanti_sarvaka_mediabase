@@ -1925,9 +1925,13 @@ ul.links.inline {
   margin-left: 13rem;
 }
 
-.transcript-content .minimal-view.no-speaker-names .speaker-tiers,
-.transcript-content .minimal-view.reversed-view .speaker-tiers{
+.transcript-content .minimal-view.no-speaker-names .speaker-tier{
   margin-right:4rem;
+  margin-left:0;
+}
+
+.transcript-content .minimal-view.reversed-view .speaker-tiers{
+  margin-right:14rem;
   margin-left:0;
 }
 
