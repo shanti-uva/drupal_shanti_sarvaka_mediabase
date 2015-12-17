@@ -1212,6 +1212,10 @@ ul.links.inline {
   margin-left:17rem;
 }
 
+.transcript-content li.list-group-item.editing-timecodes .tcu-info{
+  width:16rem;
+}
+
 .transcript-content li.list-group-item.playing .speaker-tiers{
   box-shadow: 0 0 3px 2px #888;
 }
@@ -1249,16 +1253,19 @@ ul.links.inline {
   background: rgba(255, 255, 0, 0.2);
 }
 
+.transcript-content .btn{
+  font-family: "museo-sans-500",helvetica,arial,sans-serif !important;
+}
+
+
+
 
 /*----------------------------*/
 /***** Transcript Editing *****/
 /*----------------------------*/
-
-
 .transcript-content .editing-active .speaker-tiers{
   margin-right:3rem;
 }
-
 
 .speaker-tiers .editable-input{
   width: 100% !important;
