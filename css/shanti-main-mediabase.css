@@ -1860,10 +1860,10 @@ ul.links.inline {
 /***** REVERSE COLUMNS in transcript viewer *****/
 
 .transcript-content .reversed-view .play-button{
-  float: left;
-  position: relative;
-  left: 0.1rem;
-  top: -1rem;
+  float: none;
+  position: absolute;
+  right: 3rem;
+  bottom: 1rem;
 }
 
 .transcript-content .reversed-view .speaker-tiers{
