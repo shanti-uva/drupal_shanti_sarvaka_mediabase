@@ -2125,7 +2125,7 @@ ul.links.inline {
   border-collapse: separate;
 }
 
-.transcript-search-wrapper .icon{
+.transcript-search-wrapper > .icon{
   position: absolute;
   right: 0.3rem;
   top: -5.5rem;
@@ -2136,8 +2136,8 @@ ul.links.inline {
   font-family: 'shanticon';
 }
 
-.transcript-search-wrapper .icon:hover,
-.transcript-search-wrapper .icon:active{
+.transcript-search-wrapper > .icon:hover,
+.transcript-search-wrapper > .icon:active{
   color: #ccc;
 }
 
