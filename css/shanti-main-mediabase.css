@@ -1152,8 +1152,6 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .play-button .btn:hover {
-  border: 1px solid transparent;
-  border-collapse: separate;
   background: #888;
 }
 
@@ -1881,10 +1879,8 @@ ul.links.inline {
 
 
 .transcript-content .minimal-view.reversed-view .play-button{
-  float: right;
-  position: relative;
+  position:absolute;
   right: 1rem;
-  top: -0.5rem;
 }
 
 .transcript-content .minimal-view.reversed-view.no-speaker-names .play-button{
