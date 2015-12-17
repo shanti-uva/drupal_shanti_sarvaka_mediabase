@@ -1873,6 +1873,7 @@ ul.links.inline {
 
 .transcript-content .reversed-view .tcu-info{
   float:right;
+  width:16rem;
 }
 
 .transcript-content .reversed-view .speaker-name{
