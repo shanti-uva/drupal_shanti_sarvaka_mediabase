@@ -1127,7 +1127,7 @@ ul.links.inline {
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
-  padding: .4rem .5rem .25rem .3rem;
+  padding: .2rem .3rem;
   border:1px dashed transparent;
 }
 
@@ -1219,9 +1219,8 @@ ul.links.inline {
 
 .av-main-transcript-section .tcu-info {
   width: auto;
-  min-height: 5.5rem;
+  min-height: 8.5rem;
   padding-bottom:1rem;
-  padding-top:0.2rem;
   float: left;
 }
 
