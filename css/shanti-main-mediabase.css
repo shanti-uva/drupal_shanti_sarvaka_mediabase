@@ -1027,6 +1027,7 @@ ul.links.inline {
 .transcript-container .list-group {
   -webkit-margin-before: 0;
   margin-bottom: 420px;
+  border-bottom: 30px solid #fff;
 }
 
 .transcript-container .alert-info {
@@ -1038,13 +1039,13 @@ ul.links.inline {
   background-clip: padding-box;
   border: 1px solid #eee;
   border-right: none;
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 1rem;
   margin-bottom: 0.1rem;
   background: #ccc
 }
 
 .transcript-content .editing-active li.list-group-item{
-  padding-right:3.5rem;
+  padding-right:2rem;
 }
 
 .transcript-content li.list-group-item:first-of-type{
