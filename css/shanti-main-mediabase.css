@@ -1862,12 +1862,12 @@ ul.links.inline {
 .transcript-content .reversed-view .play-button{
   float: none;
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   bottom: 1rem;
 }
 
 .transcript-content .reversed-view .speaker-tiers{
-  margin-right:15rem;
+  margin-right:13rem;
   margin-left:0;
 }
 
@@ -1889,7 +1889,9 @@ ul.links.inline {
   top: .5rem;
 }
  
-
+.av-main-transcript-section .reversed-view .play-button .btn{
+  min-width: 10.5rem;
+}
 
 /*****/
 
