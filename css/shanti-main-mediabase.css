@@ -1201,11 +1201,15 @@ ul.links.inline {
   border-right: 1px solid #eee;
   padding-right: 1rem;
   margin-right: 2rem;
-  margin-left: 14rem;
+  margin-left: 13.5rem;
   box-shadow: 0 0 3px 1px #c0c0c0;
   background: white;
   border-radius: 4px;
   padding: 0.5rem
+}
+
+.transcript-content li.list-group-item.editing-timecodes .speaker-tiers{
+  margin-left:17rem;
 }
 
 .transcript-content li.list-group-item.playing .speaker-tiers{
@@ -1253,7 +1257,6 @@ ul.links.inline {
 
 .transcript-content .editing-active .speaker-tiers{
   margin-right:3rem;
-  margin-left:17rem;
 }
 
 
