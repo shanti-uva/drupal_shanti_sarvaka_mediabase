@@ -1959,11 +1959,7 @@ ul.links.inline {
 .transcript-content .minimal-view .speaker-name{
   margin: 0.5rem 0;
   padding-right: .5rem;
-}
-
-.transcript-content .minimal-view.reversed-view .speaker-name{
-  display:none;
-}  
+} 
 
 .transcript-content .minimal-view .tcu-info{
   min-height: 3rem;
