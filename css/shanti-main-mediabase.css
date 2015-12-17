@@ -2134,6 +2134,12 @@ ul.links.inline {
   cursor: pointer;
   font-size: 1em;
   font-family: 'shanticon';
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #777;
+  border-width: 0 0 1px 1px;
+  display: inline-block;
 }
 
 .transcript-search-wrapper .shanticon-close2:hover,
@@ -2142,8 +2148,33 @@ ul.links.inline {
 }
 
 .transcript-search-wrapper .shanticon-close2:before{
-  content: '\e60f'; /* icon of agent person */
+  /*content: '\e60f';*/
+  content: '';
 }
+
+.transcript-search-wrapper .shanticon-close2:after,
+.transcript-search-wrapper .shanticon-close2:before{
+  background: #888;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 2rem;
+  height: 1px;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.transcript-search-wrapper .shanticon-close2:after{
+  /*content: '\e60f';*/
+  content: '';
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
 
 .transcript-search-wrapper .input-group-btn {
   position: absolute;
