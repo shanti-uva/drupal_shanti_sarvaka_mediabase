@@ -1888,6 +1888,10 @@ ul.links.inline {
   right: 1rem;
   top: -0.5rem;
 }
+
+.transcript-content .minimal-view.reversed-view.no-speaker-names .play-button{
+  right: 1.7rem;
+}
  
 .av-main-transcript-section .reversed-view .play-button .btn{
   min-width: 10.5rem;
