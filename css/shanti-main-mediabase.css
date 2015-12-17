@@ -2074,6 +2074,7 @@ ul.links.inline {
   margin: 0;
   border: 1px solid #eee;
   border-width: 0 1px 1px;
+  border-right-color: #707070;
 }
 
 .transcripts-ui-search-form {
