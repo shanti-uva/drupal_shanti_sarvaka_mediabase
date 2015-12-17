@@ -2125,7 +2125,7 @@ ul.links.inline {
   border-collapse: separate;
 }
 
-.transcript-search-wrapper > .icon{
+.transcript-search-wrapper .icon{
   position: absolute;
   right: 0.4rem;
   top: -5.5rem;
@@ -2134,47 +2134,16 @@ ul.links.inline {
   cursor: pointer;
   font-size: 1em;
   font-family: 'shanticon';
-
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #777;
-  border-width: 0 0 1px 1px;
-  display: inline-block;
 }
 
-.transcript-search-wrapper > .icon:hover,
-.transcript-search-wrapper > .icon:active{
+.transcript-search-wrapper .icon:hover,
+.transcript-search-wrapper .icon:active{
   color: #ccc;
 }
 
 .transcript-search-wrapper .shanticon-close2:before{
-  /*content: '\e60f';*/
-  content: '';
+  content: '\e60f';
 }
-
-.transcript-search-wrapper > .icon:after,
-.transcript-search-wrapper > .icon:before{
-  background: #888;
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 2rem;
-  height: 1px;
-  content: '';
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.transcript-search-wrapper > .icon:after{
-  /*content: '\e60f';*/
-  content: '';
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-
 
 .transcript-search-wrapper .input-group-btn {
   position: absolute;
