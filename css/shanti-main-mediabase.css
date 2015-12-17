@@ -1970,7 +1970,7 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view.no-speaker-names .tcu-info{
-  float:none;
+  float:right;
 }
 
 .transcript-content .minimal-view .play-button{
@@ -1980,11 +1980,12 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view.no-speaker-names .play-button{
-  top:2.3rem;
+  top: -0.5rem;
+  right: 2rem;
 }
 
 .transcript-content .minimal-view.no-speaker-names.reversed-view .play-button{
-  display:none;
+  right:1.5rem
 }
 
 .transcript-content .minimal-view .play-button .btn{
