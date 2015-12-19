@@ -1003,7 +1003,7 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:1.5rem;
+  padding-right:1rem;
   padding-left:1rem;
 }
 
@@ -1716,6 +1716,10 @@ ul.links.inline {
   height: 4.06em;
 }
 
+.btn-group-transcript .btn.btn-icon .fa.fa-play {
+  padding-top: 2.3rem;
+}
+
 .btn-group-transcript .btn.btn-icon.playpause {
   font-size: 1.06em;
   height: 6rem;
@@ -1921,6 +1925,7 @@ ul.links.inline {
 
 .transcript-content .minimal-view li.list-group-item.playing{
   border-color: #888;
+  background: #f0f0f0;
 }
 
 .transcript-content .minimal-view .speaker-tiers{
@@ -1948,6 +1953,7 @@ ul.links.inline {
 
 .transcript-content .minimal-view li.list-group-item.playing .speaker-tiers{
   box-shadow: none;
+  background: #f0f0f0;
 }
 
 .transcript-content .minimal-view .speaker-display{
