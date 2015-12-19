@@ -1937,9 +1937,9 @@ ul.links.inline {
   margin-left: 13rem;
 }
 
-.transcript-content .minimal-view.no-speaker-names .speaker-tier{
+.transcript-content .minimal-view.no-speaker-names .speaker-tiers{
   margin-right:4rem;
-  margin-left:0 !important;
+  margin-left:0;
 }
 
 .transcript-content .minimal-view.reversed-view .speaker-tiers{
@@ -1973,6 +1973,10 @@ ul.links.inline {
   margin: 0.5rem 0;
   padding-right: .5rem;
 } 
+
+.transcript-content .minimal-view .speaker-name{
+
+}
 
 .transcript-content .minimal-view .tcu-info{
   min-height: 3rem;
