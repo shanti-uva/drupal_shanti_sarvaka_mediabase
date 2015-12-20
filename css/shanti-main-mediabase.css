@@ -2045,9 +2045,6 @@ ul.links.inline {
   font-size: 1.25rem;
 }
 
-
-
-
 .transcript-content .minimal-view .play-button .btn:hover .glyphicon::before,
 .transcript-content .minimal-view li.playing .play-button .btn .glyphicon::before{
   color:#eee;
@@ -2055,11 +2052,10 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view li.playing .play-button .btn{
-  background: #888;
+  background: #aaa;
   box-shadow: none;
-  border-color: #999;
+  border-color: #aaa;
 }
-
 
 /*---------------*/
 /*** END theme ***/
