@@ -1127,7 +1127,6 @@ ul.links.inline {
 
 .speaker-name .speaker-display{
   display:block;
-  font-size:95%;
   overflow:hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
