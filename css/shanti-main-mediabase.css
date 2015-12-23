@@ -1233,6 +1233,8 @@ ul.links.inline {
 
 .minimal-view .speaker-tiers .tier{
   border-bottom:none;
+  border-left: 0.3rem solid #f0f0f0;
+  padding-left: 2.5rem;
 }
 
 .speaker-tiers .tier:last-child{
