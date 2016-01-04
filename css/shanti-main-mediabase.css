@@ -1048,7 +1048,7 @@ ul.links.inline {
 }
 
 .transcript-content .editing-active li.list-group-item{
-  padding-right:3.5rem;
+  padding-right:2rem;
 }
 
 .transcript-content li.list-group-item:first-of-type{
@@ -1554,7 +1554,7 @@ ul.links.inline {
   position: absolute;
   float: right;
   top: 0.5rem;
-  right: 0.5rem;
+  right: -1rem;
 }
 
 .tcu-gear-ops.dropdown-toggle{
