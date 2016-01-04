@@ -1948,6 +1948,10 @@ ul.links.inline {
   margin-left:0;
 }
 
+.transcript-content .minimal-view.reversed-view.no-speaker-names .speaker-tiers{
+  margin-right:3rem;
+}
+
 .transcript-content .minimal-view.no-speaker-names .tier{
   border-bottom-color:#eee;
 }
