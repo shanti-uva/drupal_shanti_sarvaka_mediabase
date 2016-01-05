@@ -2792,6 +2792,10 @@ fieldset.form-wrapper .f-set{
   font-weight: bold;
 }
 
+.page-node-add .mb-av-form .kaltura_field_thumb { display: none; }
+
+.page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
+
 .mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
   max-width: 40rem !important;
   display: inline-block;
