@@ -2754,6 +2754,7 @@ div.ctools-modal-content a.close{
   font-weight:normal;
   font-weight: 500;
   margin-top:0;
+  font-family:'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
 div.ctools-modal-content a.close::after{
@@ -2763,6 +2764,17 @@ div.ctools-modal-content a.close::after{
 div.ctools-modal-content a.close img{
   display:none;
 }
+
+input#edit-media-upload.form-file{
+  float:left; 
+}
+
+div#edit-actions--3.form-actions.form-wrapper{
+  margin: 8rem auto 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 
 .sidebar.pullright .btn.btn-primary.btn-icon{
   letter-spacing: 0;
