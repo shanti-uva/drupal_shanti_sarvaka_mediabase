@@ -2778,12 +2778,11 @@ div#edit-actions--3.form-actions.form-wrapper{
 /* sidecolumn upload video-audio buttons */
 .region-sidebar-second .block-mb-structure .btn.btn-icon{
   letter-spacing: 0.03rem;
-  width: 3em;
   font-size: 1em;
   line-height: 2.5em;
 }
 
-.region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon span.icon{
+.region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
   width: 3em;
   line-height:2.5em;
 }
