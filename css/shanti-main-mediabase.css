@@ -2755,10 +2755,16 @@ div.ctools-modal-content .modal-header{
   line-height: 2.38em;
 }
 
+.sidebar.pullright .btn.btn-primary.btn-icon .icon{
+  width: 3em;
+  font-size: 150%;
+  line-height: 2.32em;
+}
+
 .sidebar.pullright .btn.btn-icon span:last-child{
   padding: 1em 2em .75em 6em;
   line-height: 2em;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 
