@@ -2785,6 +2785,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 
 #mb-structure-lets-get-started-form .btn.btn-primary.btn-icon span.icon{
   width: 3em;
+  line-height:2.5em;
 }
 
 .region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
