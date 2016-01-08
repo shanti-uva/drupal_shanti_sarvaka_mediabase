@@ -2776,22 +2776,22 @@ div#edit-actions--3.form-actions.form-wrapper{
 }
 
 
-.sidebar.pullright .btn.btn-primary.btn-icon{
-  letter-spacing: 0;
+#mb-structure-lets-get-started-form .btn.btn-primary.btn-icon{
+  letter-spacing: 0.05rem;
   width: 3em;
-  font-size: 160%;
+  font-size: 1em;
   line-height: 2.38em;
 }
-
-.sidebar.pullright .btn.btn-primary.btn-icon .icon{
+/*
+#mb-structure-lets-get-started-form .btn.btn-primary.btn-icon span.icon{
   width: 3em;
-  font-size: 150%;
-  line-height: 2.12em;
+  font-size: 130%;
+  line-height: 2.75em;
 }
-
-.sidebar.pullright .btn.btn-icon span:last-child{
-  padding: 1em 2em .75em 6em;
-  line-height: 2em;
+*/
+#mb-structure-lets-get-started-form .btn.btn-icon span:last-child{
+  padding-left: 6em;
+  line-height: 2.5em;
   font-size: 90%;
 }
 
