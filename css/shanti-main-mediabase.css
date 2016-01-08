@@ -2729,6 +2729,41 @@ ul.links.inline {
 
 
 
+
+/* kaltura upload video */
+div.ctools-modal-content{
+  border: 1px solid #ccc;
+}
+
+div.ctools-modal-content .modal-content{
+  padding: 2rem 15%;
+  box-shadow:none !important;
+  border:none !important;
+  background:transparent;
+}
+
+div.ctools-modal-content .modal-header{
+  padding: 1.5rem 3rem;
+  background-color: #008a96 !important;
+}
+
+
+.sidebar.pullright .btn.btn-primary.btn-icon{
+  letter-spacing: 0;
+  width: 3em;
+  font-size: 160%;
+  line-height: 2.38em;
+}
+
+.sidebar.pullright .btn.btn-icon span:last-child{
+  padding: 1em 2em .75em 6em;
+  line-height: 2em;
+  font-size: 100%;
+}
+
+
+
+
 /********************/
 /* .node-video-form */
 /********************/
