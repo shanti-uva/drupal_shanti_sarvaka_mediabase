@@ -2777,22 +2777,19 @@ div#edit-actions--3.form-actions.form-wrapper{
 
 /* sidecolumn upload video-audio buttons */
 .region-sidebar-second .block-mb-structure .btn.btn-icon{
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   width: 3em;
   font-size: 1em;
-  line-height: 2.38em;
+  line-height: 2.5em;
 }
-/*
+
 #mb-structure-lets-get-started-form .btn.btn-primary.btn-icon span.icon{
   width: 3em;
-  font-size: 130%;
-  line-height: 2.75em;
 }
-*/
+
 .region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
-  padding-left: 6em;
   line-height: 2.5em;
-  font-size: 90%;
+  font-size: 80%;
 }
 
 
