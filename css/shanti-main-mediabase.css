@@ -2795,6 +2795,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 .region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
   line-height: 2.5em;
   font-size: 80%;
+  padding-left:0;
 }
 
 
