@@ -2766,7 +2766,11 @@ div.ctools-modal-content a.close img{
 }
 
 input#edit-media-upload.form-file{
-  float:left; 
+   
+}
+
+button#edit-media-upload-button{
+  margin: 2rem 4rem;
 }
 
 div#edit-actions--3.form-actions.form-wrapper{
@@ -2780,6 +2784,7 @@ div#edit-actions--3.form-actions.form-wrapper{
   letter-spacing: 0.03rem;
   font-size: 1em;
   line-height: 2.5em;
+  padding-left: 6.5rem;
 }
 
 .region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
