@@ -2798,6 +2798,10 @@ div#edit-actions--3.form-actions.form-wrapper{
   padding-left:0;
 }
 
+.region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
+  max-width: 90%;
+}
+
 
 
 
