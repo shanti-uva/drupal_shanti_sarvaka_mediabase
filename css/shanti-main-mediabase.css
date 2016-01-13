@@ -2375,7 +2375,7 @@ ul.links.inline {
 }
 
 .searching .transcript-search-message{
-  color:transparent;
+  display:none;
 }
 
 .transcript-search-options {
