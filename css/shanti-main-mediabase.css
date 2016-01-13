@@ -2368,10 +2368,14 @@ ul.links.inline {
   opacity:1;
 }
 
-.has-searched.no-results:not(.searching) .transcript-search-message{
+.has-searched.no-results .transcript-search-message{
     top: 5.2rem;
     color:#ddd;
     left:2rem;
+}
+
+.searching .transcript-search-message{
+  color:transparent;
 }
 
 .transcript-search-options {
