@@ -2421,13 +2421,13 @@ ul.links.inline {
 
 .transcript-navigate-results .btn.nextresult,
 .transcript-navigate-results .btn.previousresult {
-  width: 3rem;
+  width: 2.7rem;
   height: 3.7rem;
   display: inline-block;
   position: relative;
   border: 1px solid #ddd;
   margin: 1rem 0 0 0.5rem;
-  padding: .65em 1.75em .52em;
+  padding: .9rem 1.9rem .7rem;
   box-shadow: none;
   -webkit-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
