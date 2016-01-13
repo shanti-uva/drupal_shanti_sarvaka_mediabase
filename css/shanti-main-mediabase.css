@@ -2374,8 +2374,8 @@ ul.links.inline {
     left:2rem;
 }
 
-.searching .transcript-search-message{
-  display:none;
+.searching.has-searched.no-results .transcript-search-message{
+  display:none !important;
 }
 
 .transcript-search-options {
