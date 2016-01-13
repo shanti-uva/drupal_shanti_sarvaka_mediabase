@@ -2368,7 +2368,7 @@ ul.links.inline {
   opacity:1;
 }
 
-.has-searched.no-results .transcript-search-message{
+.has-searched.no-results:not(.searching) .transcript-search-message{
     top: 5.2rem;
     color:#ddd;
     left:2rem;
@@ -3537,7 +3537,7 @@ body.in-frame.html {
 
 .in-frame header.banner .page-title {
   padding-top: 0px;
-  margin:-0.5rem 0 0 1rem;
+  margin:-1.2rem 0 0 1rem;
 }
 
 /** Hide JIRA feedback button **/
