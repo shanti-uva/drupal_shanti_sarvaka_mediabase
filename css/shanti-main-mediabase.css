@@ -1457,8 +1457,8 @@ ul.links.inline {
   content: '\e065';
   float:right;
   position: relative;
-  top: -0.4rem;
-  right: -0.4rem;
+  top: -0.2rem;
+  right: -0.2rem;
   font-size: 1.1rem;
   color:transparent;
   display:inline-block;
@@ -1468,7 +1468,7 @@ ul.links.inline {
   text-shadow:none;
 }
 .editing-active .speaker-display:hover::before{
-  color:#999;
+  color:#ddd;
 }
 
 .tcu-info .btn.play-range{
