@@ -1468,7 +1468,7 @@ ul.links.inline {
   text-shadow:none;
 }
 .editing-active .speaker-display:hover::before{
-  color:#ddd;
+  color:#eee;
 }
 
 .tcu-info .btn.play-range{
