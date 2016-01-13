@@ -1609,10 +1609,11 @@ ul.links.inline {
 .tcu-gear .dropdown-menu>li>a{
   padding: 0 0 0 0.2rem;
   text-transform: uppercase;
-  font-size: 80%;
-  line-height:1.75em;
-  font-weight: normal;
-  font-family: 'museo-sans-500';
+  font-size: 0.62em;
+  line-height:2em;
+  font-weight: bold;
+  font-weight:700;
+  font-family: 'museo-sans-700';
   color: #fff;
   border-bottom:none;
   text-shadow:1px 1px #666;
