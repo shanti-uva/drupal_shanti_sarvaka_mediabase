@@ -2427,6 +2427,7 @@ ul.links.inline {
   position: relative;
   border: 1px solid #ddd;
   margin: 1rem 0 0 0.5rem;
+  padding: .65em 1.75em .52em;
   box-shadow: none;
   -webkit-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
