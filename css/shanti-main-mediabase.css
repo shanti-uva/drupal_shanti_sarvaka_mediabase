@@ -1404,7 +1404,7 @@ ul.links.inline {
 
 /* speaker name */
 .editing-active .speaker-display:hover{
-  border-color: #aaa;
+  border-color: #c0c0c0;
 }
 
 .edit-times{
