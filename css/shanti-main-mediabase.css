@@ -2420,7 +2420,7 @@ ul.links.inline {
 }
 
 .transcript-navigate-results .btn.nextresult,
-.transcript-navigate-results .btn.previousresult {
+.transcript-navigate-results .btn.previousresult { 
   width: 2.7rem;
   height: 3.7rem;
   display: inline-block;
@@ -3581,7 +3581,7 @@ body.in-frame.html {
 }
 
 .node-type-video.has-transcript .tab-pane.main-col > div {
-  max-width: 1350px !important;
+  max-width: 1500px !important;
   margin: 0 auto !important;
 }
 
