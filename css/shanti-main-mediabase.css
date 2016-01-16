@@ -3573,6 +3573,16 @@ body.in-frame.html {
   display: none;
 }
 
+.in-frame iframe{
+  background: #e0e0e0;
+}
+
+.in-frame iframe::-webkit-scrollbar-thumb{
+  background-color: #e0e0e0;
+  outline: 1px solid #e0e0e0;
+}
+
+
 /*** END iframe */
 
 
