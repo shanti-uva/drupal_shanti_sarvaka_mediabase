@@ -3521,6 +3521,10 @@ button on video window
 
 
 /*** BEGIN iframe */
+body.in-frame{
+  background: #fff;
+}
+
 .in-frame header.header-banner,
 .in-frame header.banner .page-title .icon,
 .in-frame header.banner .breadwrap, 
@@ -3569,6 +3573,11 @@ body.in-frame.html {
 /** Hide JIRA feedback button **/
 .in-frame .atlwdg-trigger.atlwdg-SUBTLE {
   display: none;
+}
+
+body.in-frame::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  outline: 1px solid #e0e0e0;
 }
 
 /*** END iframe */
