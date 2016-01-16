@@ -3561,12 +3561,12 @@ body.in-frame.html {
   padding-left: 12px !important;
   box-shadow: none !important;
   border: none !important;
-  line-height: 2em !important;
+  line-height: 3em !important;
 }
 
 .in-frame header.banner .page-title {
   padding-top: 0px;
-  margin:-1.2rem 0 0 1rem;
+  margin:-2rem 0 0 1rem;
 }
 
 /** Hide JIRA feedback button **/
@@ -3579,8 +3579,8 @@ body.in-frame.html {
   outline: 1px solid #e0e0e0 !important;
 }
 
-.in-frame .titlearea.has-tabs{
-  margin-bottom: 0.5rem;
+.in-frame .titlearea{
+  margin-bottom: 1rem;
 }
 
 
