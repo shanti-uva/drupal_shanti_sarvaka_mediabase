@@ -1788,7 +1788,8 @@ ul.links.inline {
 .av-main-transcript-section .dropdown-menu li a span.text {
   font-weight: normal !important;
   font-size: 1.18em;
-  line-height: 2.5em;
+  line-height: 2.25em;
+  letter-spacing: 0.03rem;
   font-family: arial,helvetica,sans-serif;
   color: #333;
   margin-right: 7rem;
@@ -1850,7 +1851,7 @@ ul.links.inline {
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
   padding: 7px 20px;
-  background: #999;
+  background: #909090;
   /*color: #555;*/
   font-style: italic;
   letter-spacing: 1px;
