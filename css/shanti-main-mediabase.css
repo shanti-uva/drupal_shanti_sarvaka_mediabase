@@ -462,6 +462,15 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
   margin-left: 20px;
 }
 
+
+
+
+
+
+
+
+
+
 #locale-translation-filter-form .form-item-translation {
   width: 22em;
 }
@@ -528,7 +537,7 @@ div.node .group-details .field-label-span {
   text-align: center;
 }
 
-/*--- WHERE is show-annot from? ---*/
+
 /*--- show-hide toggle button ---*/
 a.show-annot, a.hide-annot {
   font-size: 1em;
@@ -551,6 +560,8 @@ a.hide-annot::before {
   position: relative;
   top: -1px;
 }
+
+
 
 /**
  *  All Collections Page
@@ -1857,13 +1868,14 @@ ul.links.inline {
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
-  padding: 7px 20px;
+  padding: 7px 20px 7px 22px;
   background: #909090;
   /*color: #555;*/
   font-style: italic;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+  margin-bottom: 0.4rem;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt {
