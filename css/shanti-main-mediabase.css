@@ -1764,7 +1764,8 @@ ul.links.inline {
 .btn-group-transcript .selectpicker li:hover,
 .btn-group-transcript .selectpicker li span.text,
 .btn-group-transcript .selectpicker li:hover span.text {
-  color: #555;
+  color: #fff;
+  text-shadow: 0 0 #555;
 }
 
 .btn-group-transcript .selectpicker li.selected a,
@@ -1849,8 +1850,8 @@ ul.links.inline {
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
   padding: 7px 20px;
-  background: #eee;
-  color: #555;
+  background: #999;
+  /*color: #555;*/
   font-style: italic;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3528,7 +3529,7 @@ body.in-frame.html {
 }
 
 .in-frame header.col-xs-12.titlearea.banner{
-    height: 2.5rem;
+    height: 2rem;
 }
 
 .in-frame  header.banner.titlearea .page-title-text {
