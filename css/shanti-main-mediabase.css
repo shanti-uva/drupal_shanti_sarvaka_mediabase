@@ -1875,7 +1875,6 @@ ul.links.inline {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-  margin-bottom: 0.4rem;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt {
@@ -3565,7 +3564,7 @@ body.in-frame.html {
 
 .in-frame .titlearea .page-title {
   padding-top: 0px;
-  margin:-2rem 0 0 1rem;
+  margin:-1.75rem 0 0 1rem;
 }
 
 /** Hide JIRA feedback button **/
