@@ -3602,7 +3602,25 @@ body.in-frame.html {
   outline: 1px solid #e0e0e0 !important;
 }
 */
-  
+ 
+/*--- BEGIN iframe parent target subtheme colors -----*/
+.in-frame .node-type-audio .nav-justified>li.active a,
+.in-frame .node-type-audio .nav-justified>li.active a:hover,
+.in-frame .node-type-audio .nav-justified>li.active a:active,
+.in-frame .node-type-video .nav-justified>li.active a,
+.in-frame .node-type-video .nav-justified>li.active a:hover,
+.in-frame .node-type-video .nav-justified>li.active a:active {
+  background: #4ca6fb !important;
+}
+
+
+
+
+
+
+
+
+
 /*** END iframe */
 
 
