@@ -2478,9 +2478,9 @@ ul.links.inline {
   font-size: 1.75rem;
   line-height: 3.2rem;
   position: absolute;
-  left: .65rem;
-  width: 3.6rem;
-  height: 3.6rem;
+  left: .15rem;
+  width: 3.5rem;
+  height: 3.5rem;
   color: #ddd;
   cursor:default;
 }
