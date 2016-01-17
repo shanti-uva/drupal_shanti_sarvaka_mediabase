@@ -3522,7 +3522,6 @@ button on video window
 
 /*** BEGIN iframe */
 
-
 .in-frame header.header-banner,
 .in-frame header.banner .page-title .icon,
 .in-frame header.banner .breadwrap, 
@@ -3552,7 +3551,7 @@ body.in-frame.html {
 }
 
 .in-frame header.col-xs-12.titlearea.banner{
-    height: 2rem;
+  height: 2rem;
 }
 
 .in-frame  header.banner.titlearea .page-title-text {
@@ -3574,16 +3573,20 @@ body.in-frame.html {
   display: none;
 }
 
-.in-frame::-webkit-scrollbar-track{
+/*
+
+.in-frame html::-webkit-scrollbar-track,
+.in-frame body::-webkit-scrollbar-track{
   background-color: #e0e0e0 !important;
   outline: 1px solid #e0e0e0 !important;
 }
+*/
+
 
 .in-frame .titlearea{
   margin-bottom: 1rem;
 }
-
-
+  
 /*** END iframe */
 
 
