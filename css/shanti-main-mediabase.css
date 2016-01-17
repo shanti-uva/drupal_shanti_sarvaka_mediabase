@@ -1025,7 +1025,8 @@ ul.links.inline {
 .transcript-container {
   height: 800px;
   overflow-x: hidden;
-  margin-top: 0px;
+  margin-top: 0;
+  margin-right: 0.1rem;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
