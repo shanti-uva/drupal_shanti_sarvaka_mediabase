@@ -1034,7 +1034,7 @@ ul.links.inline {
 
 
 .transcript-container::-webkit-scrollbar {
-    width: 0.4rem;
+    width: 0.8rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
