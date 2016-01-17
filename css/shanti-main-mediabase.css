@@ -1039,7 +1039,7 @@ ul.links.inline {
 }
  
 .transcript-container::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
