@@ -3531,12 +3531,12 @@ button on video window
 .in-frame #admin-footer,
 .in-frame #admin-menu{
   display: none !important;
-  height: 0px !important;
-  width: 0px !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
 body.in-frame.html {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
   background: #e0e0e0 !important;
 }
 
@@ -3550,11 +3550,11 @@ body.in-frame.html {
 
 }
 
-.in-frame header.col-xs-12.titlearea.banner{
-  height: 2rem;
+.in-frame .titlearea{
+  height: 1rem;
 }
 
-.in-frame  header.banner.titlearea .page-title-text {
+.in-frame  .titlearea .page-title-text {
   text-shadow: none !important;
   color: #444 !important;
   padding-left: 12px !important;
@@ -3563,7 +3563,7 @@ body.in-frame.html {
   line-height: 3em !important;
 }
 
-.in-frame header.banner .page-title {
+.in-frame .titlearea .page-title {
   padding-top: 0px;
   margin:-2rem 0 0 1rem;
 }
@@ -3581,11 +3581,6 @@ body.in-frame.html {
   outline: 1px solid #e0e0e0 !important;
 }
 */
-
-
-.in-frame .titlearea{
-  margin-bottom: 1rem;
-}
   
 /*** END iframe */
 
