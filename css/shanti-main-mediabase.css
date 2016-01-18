@@ -1036,7 +1036,7 @@ ul.links.inline {
 
 
 .transcript-container::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.8rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
@@ -1048,7 +1048,7 @@ ul.links.inline {
   /*margin-left: -0.1rem;*/
   cursor: pointer;
   border-radius: 1rem;
-  width: 1rem;
+  width: 0.8rem;
 }
 
 
