@@ -1034,6 +1034,7 @@ ul.links.inline {
 
 
 
+
 .transcript-container::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -1061,6 +1062,7 @@ ul.links.inline {
 .transcript-container .list-group {
   -webkit-margin-before: 0;
   margin-bottom: 420px;
+  margin-right: 0.5rem;
 }
 
 .transcript-container .minimal-view .list-group{
@@ -1076,13 +1078,9 @@ ul.links.inline {
   background-clip: padding-box;
   border: 1px solid #eee;
   border-right: none;
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   margin-bottom: 0.1rem;
   background: #ccc
-}
-
-.transcript-content li.list-group-item{
-  padding-right:2rem;
 }
 
 .transcript-content li.list-group-item:first-of-type{
