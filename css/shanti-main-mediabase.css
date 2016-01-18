@@ -1035,17 +1035,18 @@ ul.links.inline {
 
 
 .transcript-container::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 0.5rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
-  background-color: #707070;
+  background-color: #606060;
   outline: 1px solid #707070;
-  margin-left: -0.1rem;
+  margin-left: -0.2rem;
+  border-radius:8px;
 }
 
 
@@ -1083,6 +1084,7 @@ ul.links.inline {
 
 .transcript-content li.list-group-item:first-of-type{
   border-radius: 0 0 0 0.8rem;
+  border-top:none;
 }
 
 .transcript-content li.list-group-item.playing {
