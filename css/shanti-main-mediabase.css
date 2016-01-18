@@ -1045,7 +1045,7 @@ ul.links.inline {
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #707070;
   outline: 1px solid #707070;
-  margin-right: 0.2rem;
+  margin-left: -0.1rem;
 }
 
 
