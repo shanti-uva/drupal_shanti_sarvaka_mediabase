@@ -1045,9 +1045,10 @@ ul.links.inline {
  
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #606060;
-  margin-left: -0.2rem;
+  margin-left: -0.1rem;
   cursor: pointer;
   border-radius: 1rem;
+  width: 0.5rem;
 }
 
 
