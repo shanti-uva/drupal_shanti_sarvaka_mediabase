@@ -2,18 +2,18 @@
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
-.page-places-audio-video-node .nav-justified>li.active a,
-.page-places-audio-video-node .nav-justified>li.active a:hover,
-.page-places-audio-video-node .nav-justified>li.active a:active,
-.page-places-audio-video-node .nav-justified>li.active a,
-.page-places-audio-video-node .nav-justified>li.active a:hover,
-.page-places-audio-video-node .nav-justified>li.active a:active {
+.node-type-audio .nav-justified>li.active a,
+.node-type-audio .nav-justified>li.active a:hover,
+.node-type-audio .nav-justified>li.active a:active,
+.node-type-video .nav-justified>li.active a,
+.node-type-video .nav-justified>li.active a:hover,
+.node-type-video .nav-justified>li.active a:active {
   background-color: #2fbebc !important;
 }
 
 .navbar-brand:hover .site-slogan,
-.page-places-audio-video-node .nav-justified>li.active::before,
-.page-places-audio-video-node .nav-justified>li.active::before,
+.node-type-audio .nav-justified>li.active::before,
+.node-type-video .nav-justified>li.active::before,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
@@ -903,7 +903,7 @@ ul.links.inline {
   display: none;
 }
 
-.page-node-edit.page-places-audio-video-node .field-name-field-thumbnail-image .image-preview {
+.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
   display: none;
 }
 
@@ -1044,7 +1044,7 @@ ul.links.inline {
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
-  background-color: #606060;
+  background-color: #aaa;
   /*margin-left: -0.1rem;*/
   cursor: pointer;
   border-radius: 1rem;
@@ -2994,59 +2994,59 @@ fieldset.form-wrapper .f-set{
 
 
 
-.page-places-audio-video-node.has-transcript .main-wrapper{
+.node-type-video.has-transcript .main-wrapper{
   background: #e0e0e0;
 }
 
-.page-places-audio-video-node.has-transcript .has-tabs .banner-tabs{
+.node-type-video.has-transcript .has-tabs .banner-tabs{
   background: #c0c0c0 !important;
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-.page-places-audio-video-node.has-transcript .tabs.primary li a{
+.node-type-video.has-transcript .tabs.primary li a{
   color: #fff;
   text-shadow: 1px 1px 3px #888;
 }
 
-.page-places-audio-video-node.has-transcript .tabs.primary li a:active{
+.node-type-video.has-transcript .tabs.primary li a:active{
   text-shadow:none;
 }
 
-.page-places-audio-video-node.has-transcript .panel.panel-default .panel-heading h6{
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6{
   border-top-color: #ccc;
 }
 
-.page-places-audio-video-node.has-transcript .panel-default>.panel-heading{
+.node-type-video.has-transcript .panel-default>.panel-heading{
   background: #a0a0a0 !important;
   box-shadow: inset 1rem 1rem 2rem #999;
 }
 
-.page-places-audio-video-node.has-transcript .panel-default>.panel-heading:hover{
+.node-type-video.has-transcript .panel-default>.panel-heading:hover{
   background: #888 !important;
 }
 
-.page-places-audio-video-node.has-transcript .panel.panel-default .panel-heading h6 a{
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
   text-shadow: 0 0 3px #555;
   color: #eee;
   letter-spacing: 0.1rem;
   background: #888 !important;
 }
 
-.page-places-audio-video-node.has-transcript .panel.panel-default .panel-heading h6 a.collapsed{
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a.collapsed{
   background: transparent !important;
 }
 
-.page-places-audio-video-node.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
   color: #fff; 
   background: #888 !important;
 }
 
-.page-places-audio-video-node.has-transcript .panel-heading .accordion-toggle::after{
+.node-type-video.has-transcript .panel-heading .accordion-toggle::after{
   text-shadow:none;
 }
 
-.page-places-audio-video-node.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
+.node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
   border-color:#999;
 }
 
@@ -3592,25 +3592,11 @@ body.in-frame.html {
 .in-frame .atlwdg-trigger.atlwdg-SUBTLE {
   display: none;
 }
-
-
-
-/*
-
-.in-frame html::-webkit-scrollbar-track,
-.in-frame body::-webkit-scrollbar-track{
-  background-color: #e0e0e0 !important;
-  outline: 1px solid #e0e0e0 !important;
-}
-*/
  
 /*--- BEGIN iframe parent target subtheme colors -----*/
-.in-frame .page-places-audio-video-node .nav-justified>li.active a,
-.in-frame .page-places-audio-video-node .nav-justified>li.active a:hover,
-.in-frame .page-places-audio-video-node .nav-justified>li.active a:active,
-.in-frame .page-places-audio-video-node .nav-justified>li.active a,
-.in-frame .page-places-audio-video-node .nav-justified>li.active a:hover,
-.in-frame .page-places-audio-video-node .nav-justified>li.active a:active {
+.in-frame .nav-justified>li.active a,
+.in-frame .nav-justified>li.active a:hover,
+.in-frame .nav-justified>li.active a:active{
   background: #4ca6fb !important;
 }
 
@@ -3635,24 +3621,24 @@ body.in-frame.html {
 
 
 
-.page-places-audio-video-node #block-system-main,
-.page-places-audio-video-node #block-system-main{
+.node-type-audio #block-system-main,
+.node-type-video #block-system-main{
   margin-top: 0;
 }
 
-.logged-in.page-places-audio-video-node #block-system-main,
-.logged-in.page-places-audio-video-node #block-system-main{
+.logged-in.node-type-audio #block-system-main,
+.logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
 
 
 
-.page-places-audio-video-node .tab-pane.main-col > div {
+.node-type-video .tab-pane.main-col > div {
   max-width: 1050px !important;
   margin: 0 auto !important;
 }
 
-.page-places-audio-video-node.has-transcript .tab-pane.main-col > div {
+.node-type-video.has-transcript .tab-pane.main-col > div {
   max-width: 1500px !important;
   margin: 0 auto !important;
 }
@@ -3676,8 +3662,8 @@ body.in-frame.html {
 
 @media screen and (max-width: 767px) {
 
-  .page-places-audio-video-node .nav-justified>li.active::before,
-  .page-places-audio-video-node .nav-justified>li.active::before{
+  .node-type-audio .nav-justified>li.active::before,
+  .node-type-video .nav-justified>li.active::before{
     color: transparent !important;
   }
 }
