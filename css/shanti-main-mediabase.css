@@ -1035,20 +1035,20 @@ ul.links.inline {
 
 
 .transcript-container::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.7rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
-  background-color: #aaa;
+  background-color: #ccc;
   /*margin-left: -0.1rem;*/
   cursor: pointer;
-  border-radius: 0.5rem;
-  width: 0.5rem;
+  border-radius: 1rem;
+  width: 0.7rem;
 }
 
 
@@ -3599,14 +3599,6 @@ body.in-frame.html {
 .in-frame .nav-justified>li.active a:active{
   background: #4ca6fb !important;
 }
-
-
-
-
-
-
-
-
 
 /*** END iframe */
 
