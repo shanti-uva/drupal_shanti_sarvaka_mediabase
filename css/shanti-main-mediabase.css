@@ -1026,6 +1026,7 @@ ul.links.inline {
   height: 800px;
   overflow-x: hidden;
   margin-top: 0;
+  margin-right:0.2rem;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
@@ -1045,7 +1046,6 @@ ul.links.inline {
  
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #aaa;
-  /*margin-left: -0.1rem;*/
   cursor: pointer;
   border-radius: 1rem;
   width: 0.7rem;
