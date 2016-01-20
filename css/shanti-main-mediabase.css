@@ -3599,11 +3599,11 @@ body.in-frame.html {
   background: #4ca6fb !important;
 }
 
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .icon-ok.check-mark::before, 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before{
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .icon-ok.check-mark::before, 
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before{
   color: #4ca6fb !important;
 }
 
