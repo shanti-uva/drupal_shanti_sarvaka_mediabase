@@ -1026,7 +1026,7 @@ ul.links.inline {
   height: 800px;
   overflow-x: hidden;
   margin-top: 0;
-  margin-right: -0.1rem;
+ /* margin-right: -0.1rem;*/
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
@@ -1040,7 +1040,7 @@ ul.links.inline {
 }
  
 .transcript-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.25);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
   border-radius: .7rem;
   width: 0.7rem;
 }
@@ -1719,7 +1719,7 @@ ul.links.inline {
   background: #888 !important;
 }
 .btn-group-transcript {
-  width: 100.7%;
+  width: 100.28%;
   padding: 0;
   margin: 0;
 }
