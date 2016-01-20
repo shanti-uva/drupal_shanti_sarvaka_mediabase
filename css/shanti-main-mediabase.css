@@ -2119,7 +2119,22 @@ ul.links.inline {
 
 
 
-
+@media (max-width: 580px) { 
+    #modalContent {
+      position: fixed !important;
+      top: 12% !important;
+      bottom: 12% !important;
+      right: 4% !important;
+      left: 4% !important;
+    }
+    div.ctools-modal-content {
+      width: 100% !important;
+      margin: 0 auto;
+    }
+    div.ctools-modal-content .modal-content {
+      width: 100% !important;
+    }
+}
 
 
 
