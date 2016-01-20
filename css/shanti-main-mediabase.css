@@ -2147,7 +2147,7 @@ ul.links.inline {
   display: none;
   height: 8rem;
   position: relative;
-  margin: 0 -0.25rem 0 0.1rem;
+  margin: 0 0 0 0.1rem;
   border: 1px solid #777;
   border-width: 0 1px 1px;
   border-right-color: #707070;
