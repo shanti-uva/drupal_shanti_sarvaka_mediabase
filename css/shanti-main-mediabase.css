@@ -1026,6 +1026,7 @@ ul.links.inline {
   height: 800px;
   overflow-x: hidden;
   margin-top: 0;
+  margin-right: -0.1rem;
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
@@ -2131,8 +2132,8 @@ ul.links.inline {
   display: none;
   height: 8rem;
   position: relative;
-  margin: 0;
-  border: 1px solid #eee;
+  margin: 0 -0.25rem 0 0.1rem;
+  border: 1px solid #777;
   border-width: 0 1px 1px;
   border-right-color: #707070;
 }
