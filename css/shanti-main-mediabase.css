@@ -2749,8 +2749,19 @@ ul.links.inline {
   right: 0;*/
 }
 
+div.ctools-modal-content .modal-title{
+  font-size: 150%;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+
 .modal.tcu-delete-modal.in .modal-header{
   border-bottom: none;
+}
+
+div.ctools-modal-content a.close{
+  letter-spacing: .1rem;
+  font-family: palatino,'Palatino Linotype',georgia,serif;
 }
 
 .modal.tcu-delete-modal.in .modal-body{
