@@ -2906,7 +2906,7 @@ fieldset.form-wrapper .f-set{
 }
 
 .mb-av-form{
-  margin-right: 1.5rem;
+  /*margin-right: 1.5rem;*/
 }
 
 .mb-av-form table.field-multiple-table {
@@ -3585,7 +3585,7 @@ body.in-frame.html {
 
 .in-frame .titlearea .page-title {
   padding-top: 0px;
-  margin:-2rem 0 0 1rem;
+  margin:-1.8rem 0 0 1rem;
 }
 
 /** Hide JIRA feedback button **/
