@@ -3600,7 +3600,7 @@ body.in-frame.html {
 }
 
 .in-frame .titlearea{
-  height: 3rem;
+  height: 2rem;
 }
 .in-frame .titlearea.has-tabs{
   margin-bottom:0;
