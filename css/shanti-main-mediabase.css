@@ -1030,26 +1030,26 @@ ul.links.inline {
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
+  border-right: 1px solid #ccc;
 }
 
 
 
 
 .transcript-container::-webkit-scrollbar {
-  width: 0.7rem;
+  width: 0.8rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
-  border-radius: .7rem;
-  width: 0.7rem;
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  border-radius: .7rem; */
+  width: 0.8rem;
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #aaa;
   cursor: pointer;
-  border-radius: .7rem;
-  width: 0.7rem;
+  width: 0.8rem;
 }
 
 
