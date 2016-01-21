@@ -1019,19 +1019,17 @@ ul.links.inline {
 /*----- BEGIN transcripts ----*/
 /*----------------------------*/
 .av-main-transcript-section{
-  padding-right:1rem;
   padding-left:1rem;
 }
-
+/*
 .transcript-controls{
   margin-right: 2rem;
 }
-
+*/
 .transcript-container {
   height: 800px;
   overflow-x: hidden;
   margin-top: 0;
- /* margin-right: -0.1rem;*/
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
@@ -3603,7 +3601,7 @@ body.in-frame.html {
 }
 
 .in-frame .titlearea{
-  height: 1rem;
+  height: 2rem;
 }
 
 .in-frame  .titlearea .page-title-text {
