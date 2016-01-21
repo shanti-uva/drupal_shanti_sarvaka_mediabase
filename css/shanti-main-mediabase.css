@@ -1834,8 +1834,8 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .selectpicker li a {
-  line-height: 2.62em;
-  height: 2.62em;
+  line-height: 2.25em;
+  height: 2.25em;
 }
 
 .av-main-transcript-section .selectpicker .caret::before {
@@ -1888,7 +1888,7 @@ ul.links.inline {
 }
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
-  top: 0.9rem;
+  top: 0.7rem;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
