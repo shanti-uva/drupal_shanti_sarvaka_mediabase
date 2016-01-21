@@ -3615,7 +3615,7 @@ body.in-frame.html {
 
 .in-frame .titlearea .page-title {
   padding-top: 0px;
-  margin:-1.8rem 0 0 1rem;
+  margin: -2rem 0 0 0.5rem;
 }
 
 /** Hide JIRA feedback button **/
@@ -3630,6 +3630,8 @@ body.in-frame.html {
   background: #4ca6fb !important;
 }
 
+.in-frame.node-type-audio .nav-justified>li.active::before, 
+.in-frame.node-type-video .nav-justified>li.active::before,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
