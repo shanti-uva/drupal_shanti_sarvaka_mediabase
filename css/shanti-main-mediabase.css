@@ -39,6 +39,11 @@
 .navbar-brand:active .site-slogan {
   color: #444 !important;
 }
+
+::-moz-selection, ::selection {
+  background: #fb8c4c !important;
+}
+
 /*--- END colors ---*/
 
 .front .main-content{ margin-bottom:5rem;}
