@@ -1037,19 +1037,19 @@ ul.links.inline {
 
 
 .transcript-container::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 1rem;
 }
  
 .transcript-container::-webkit-scrollbar-track {
   /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
   border-radius: .7rem; */
-  width: 0.8rem;
+  width: 1rem;
 }
  
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #aaa;
   cursor: pointer;
-  width: 0.8rem;
+  width: 1rem;
 }
 
 
@@ -3644,6 +3644,11 @@ body.in-frame.html {
 
 
 
+
+/* editing form techincal metadata */
+#node_video_form_group_technical .node-video-form{
+  margin: 0 !important;
+}
 
 
 
