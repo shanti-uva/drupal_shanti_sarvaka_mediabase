@@ -397,7 +397,9 @@ span.fancytree-node.fancytree-active {
 
 
 
-
+#node_video_form_group_technical .fieldset-wrapper .form-item{
+  margin:0;
+}
 
 
 
