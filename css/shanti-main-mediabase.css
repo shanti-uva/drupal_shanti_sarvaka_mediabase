@@ -490,6 +490,10 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
  /* padding typo override */
 }
 
+.page-node-edit button#edit-delete.btn.btn-primary.form-submit{
+  float:right;
+}
+
 
 /*--- MOVE TO SARVAKA - bottom of page for edit save buttons ---*/
 #edit-actions.form-actions {
