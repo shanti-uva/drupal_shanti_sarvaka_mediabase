@@ -3015,7 +3015,7 @@ fieldset.form-wrapper .f-set{
 .field-type-field-collection .form-type-textfield label, 
 .field-name-field-workflow .form-item.form-type-select label, 
 .field-type-field-collection .form-item.form-type-select label{
-  padding: 3px 0px 6px 10px;
+  padding: 3px 0px 2px 10px;
   margin-bottom:0;
   font-size: 0.93em;
   display:block;
