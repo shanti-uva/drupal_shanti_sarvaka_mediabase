@@ -1918,7 +1918,7 @@ ul.links.inline {
   padding-left: 15px;
 }
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt:not(.opt-download) span.text::before {
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt span.text::before {
   content: '- ';
 }
 
