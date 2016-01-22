@@ -1456,7 +1456,7 @@ ul.links.inline {
 
 /* speaker name */
 .editing-active .speaker-display:hover{
-  border-color: #c0c0c0;
+  border-color: #aaa;
 }
 
 .edit-times{
@@ -1520,7 +1520,7 @@ ul.links.inline {
   text-shadow:none;
 }
 .editing-active .speaker-display:hover::before{
-  color:#eee;
+  color:#888;
 }
 
 .tcu-info .btn.play-range{
