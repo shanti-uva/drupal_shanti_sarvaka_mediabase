@@ -492,6 +492,13 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 .page-node-edit button#edit-delete.btn.btn-primary.form-submit{
   float:right;
+  padding: .38em 1.25em .25em;
+}
+
+.page-node-edit button#edit-cancel.btn.btn-primary.form-submit{
+  box-shadow: none;
+  color: #777;
+  background:#fff;
 }
 
 
