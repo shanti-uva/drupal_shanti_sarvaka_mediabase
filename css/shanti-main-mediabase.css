@@ -426,32 +426,32 @@ form#views-exposed-form-browse-media-home-block {
 
 
 
-  .shanti-filters .control-box-cell-pager,
-  .logged-in.front .shanti-filters .control-box-cell-pager,
-  .shanti-filters .control-box-cell-filters,
-  .logged-in.front .shanti-filters .control-box-cell-filters{
-    width:100%;
-  }
+.shanti-filters .control-box-cell-pager,
+.logged-in.front .shanti-filters .control-box-cell-pager,
+.shanti-filters .control-box-cell-filters,
+.logged-in.front .shanti-filters .control-box-cell-filters{
+  width:100%;
+}
 
-  .shanti-filters .control-box-cell-pager {
-    margin-top: 0;
-    margin-right: 0;
-  }
+.shanti-filters .control-box-cell-pager {
+  margin-top: 0;
+  margin-right: 0;
+}
 
-  .shanti-filters table.pagerer,
-  .shanti-filters .control-box-cell-pager {
-    float:right;
-  }
+.shanti-filters table.pagerer,
+.shanti-filters .control-box-cell-pager {
+  float:right;
+}
 /*
-  .logged-in.front .shanti-filters .control-box-cell-pager {
-    margin-top: -1rem;
-  }
+.logged-in.front .shanti-filters .control-box-cell-pager {
+  margin-top: -1rem;
+}
 */
-  .page-collections .shanti-filters .control-box-cell-pager{
-    margin-top: -3.3rem;
-    width: 60% !important;
-    float:right;
-  }
+.page-collections .shanti-filters .control-box-cell-pager{
+  margin-top: -3.3rem;
+  width: 60% !important;
+  float:right;
+}
 
 
 /*
@@ -490,15 +490,27 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
  /* padding typo override */
 }
 
-.page-node-edit button#edit-delete.btn.btn-primary.form-submit{
-  float:right;
-  padding: .38em 1.25em .25em;
+.page-node-edit button#edit-delete{
+  float: right;
+  padding: .25em 1em .12em;
+  font-size: 0.75em;
+  background:#fff;
 }
 
-.page-node-edit button#edit-cancel.btn.btn-primary.form-submit{
+.page-node-edit button#edit-delete:hover{
+  background: red;
+}
+
+.page-node-edit button#edit-cancel{
   box-shadow: none;
   color: #777;
+  letter-spacing: .02em;
   background:#fff;
+}
+
+.page-node-edit button#edit-cancel:hover{
+  color:red;
+  background: transparent;
 }
 
 
