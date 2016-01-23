@@ -2151,6 +2151,7 @@ ul.links.inline {
 
 div.ctools-modal-content .btn.btn-primary{
   padding: .25em 1em .12em;
+  font-size:0.75em;
 }
 
 div#edit-actions--3.form-actions.form-wrapper{
@@ -2918,7 +2919,7 @@ button#edit-media-upload-button{
 div#edit-actions--3.form-actions.form-wrapper{
   margin: 2rem auto 0;
   text-align: center;
-  font-size: 1.18em;
+  font-size: 1.25em;
 }
 
 /* sidecolumn upload video-audio buttons */
