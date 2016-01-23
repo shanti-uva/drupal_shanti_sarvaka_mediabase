@@ -2142,12 +2142,19 @@ ul.links.inline {
 /*** END theme ***/
 /*---------------*/
 
+div.ctools-modal-content .btn.btn-primary{
+  padding: .25em 1em .12em;
+}
+
+div#edit-actions--3.form-actions.form-wrapper{
+  margin-top:4rem;
+}
 
 div.ctools-modal-content {
   width: 100% !important;
   margin: 0 auto;
   max-width: 500px !important;
-  max-height: 350px !important;
+  max-height: 300px !important;
 }  
 
 @media (max-width: 750px) { 
