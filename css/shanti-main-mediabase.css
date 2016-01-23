@@ -2871,13 +2871,14 @@ div.ctools-modal-content a.close{
 }
 
 div.ctools-modal-content .modal-header::after{
-  content:'Close x';
-  position:relative;
-  right:2rem;
-  top:2rem;
-  color:#555;
-  height:1rem;
-  width:70px;
+  content: 'Close x';
+  position: relative;
+  right: -2rem;
+  top: 0rem;
+  color: #555;
+  height: 1rem;
+  width: 70px;
+  float:right;
 }
 
 div.ctools-modal-content a.close img{
@@ -2893,7 +2894,7 @@ button#edit-media-upload-button{
 }
 
 div#edit-actions--3.form-actions.form-wrapper{
-  margin: 8rem auto 0;
+  margin: 2rem auto 0;
   text-align: center;
   font-size: 1.25em;
 }
