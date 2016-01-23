@@ -2854,6 +2854,10 @@ div.ctools-modal-content{
   border: 1px solid #ccc;
 }
 
+.modal-content .messages.status{
+  display:none;
+}
+
 div.ctools-modal-content .modal-content{
   padding: 2rem 15%;
   box-shadow:none !important;
