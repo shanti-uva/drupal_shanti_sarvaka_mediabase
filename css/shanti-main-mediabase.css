@@ -2143,7 +2143,12 @@ ul.links.inline {
 /*---------------*/
 
 
-
+div.ctools-modal-content {
+  width: 100% !important;
+  margin: 0 auto;
+  max-width: 500px !important;
+  max-height: 350px !important;
+}  
 
 @media (max-width: 750px) { 
     #modalContent {
@@ -2156,9 +2161,12 @@ ul.links.inline {
     div.ctools-modal-content {
       width: 100% !important;
       margin: 0 auto;
+      max-width: 500px !important;
+      max-height: 350px !important;
     }
     div.ctools-modal-content .modal-content {
       width: 100% !important;
+      max-width: 500px !important;
     }
 }
 
