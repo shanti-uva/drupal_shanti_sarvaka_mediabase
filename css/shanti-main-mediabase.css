@@ -2879,15 +2879,20 @@ div.ctools-modal-content a.close{
 }
 
 div.ctools-modal-content .modal-header::after{
-  content: 'Close x';
+  content: 'CLOSE X';
   position: relative;
   right: -2rem;
-  top: 0rem;
+  top: -0.5rem;
   color: #555;
   height: 1rem;
-  width: 70px;
-  letter-spacing:0.5rem;
-  float:right;
+  font-size:0.68em;
+  font-weight:bold;
+  color:#fff;
+  text-shadow: 0 0 #888;
+  letter-spacing: 0.15rem;
+  float: right;
+  white-space: nowrap;
+  font-family:levetica,arial,sans-serif;
 }
 
 div.ctools-modal-content .modal-header::after:hover{
