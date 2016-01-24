@@ -2884,18 +2884,6 @@ div.ctools-modal-content .modal-header{
 }
 
 div.ctools-modal-content a.close{
-  filter: alpha(opacity=100);
-  opacity:0;
-  display:none;
-  font-size: 1em;
-  font-weight:normal;
-  font-weight: 500;
-  margin-top:0;
-  letter-spacing: .1rem;
-  font-family: palatino,'Palatino Linotype',georgia,serif;
-}
-
-div.ctools-modal-content .modal-header::after{
   content: 'CLOSE X';
   position: relative;
   right: -2rem;
@@ -2909,7 +2897,7 @@ div.ctools-modal-content .modal-header::after{
   letter-spacing: 0.15rem;
   float: right;
   white-space: nowrap;
-  font-family:levetica,arial,sans-serif;
+  font-family:helevetica,arial,sans-serif;
 }
 
 div.ctools-modal-content .modal-header::after:hover{
