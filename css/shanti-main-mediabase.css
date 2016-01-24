@@ -492,10 +492,12 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 .page-node-edit button#edit-delete{
   float: right;
-  padding: .25em 1em .12em;
-  font-size: 0.75em;
-  background:#fff;
+  padding: .38em 1.5em .25em;
+  font-size: 0.68em;
+  background: #fff;
   color: #606060;
+  font-weight:bold;
+  border:1px solid #ddd;
 }
 
 .page-node-edit button#edit-delete:hover{
@@ -508,11 +510,13 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
   color: #777;
   letter-spacing: .02em;
   background:#fff;
+  border:1px solid #ddd;
 }
 
 .page-node-edit button#edit-cancel:hover{
   color:red;
   background: transparent;
+  border:none;
 }
 
 
