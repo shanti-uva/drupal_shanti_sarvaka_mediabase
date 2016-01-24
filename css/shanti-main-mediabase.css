@@ -2911,16 +2911,16 @@ div.ctools-modal-content a.close{
   font-size: 0.68em;
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 #888;
+  text-shadow: 0 0 3px #888;
   letter-spacing: 0.15rem;
   float: right;
   white-space: nowrap;
-  font-family: helevetica, arial, sans-serif;
-  opacity:0.9;
+  font-family: 'Helvetica Neue', helevetica, arial, sans-serif;
+  opacity:0.8;
 }
 
-div.ctools-modal-content .modal-header::after:hover{
-  color:#fff;
+div.ctools-modal-content a.close:hover{
+  opacity:1;
 }
 
 div.ctools-modal-content a.close::after{
