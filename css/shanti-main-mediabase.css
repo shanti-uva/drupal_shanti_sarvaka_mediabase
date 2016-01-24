@@ -530,6 +530,10 @@ div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-da
 }
 
 
+.panel-body fieldset.form-wrapper legend{
+  margin-left: 0;
+}
+
 
 
 
