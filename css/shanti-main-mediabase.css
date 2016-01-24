@@ -2167,6 +2167,10 @@ ul.links.inline {
 /*** END theme ***/
 /*---------------*/
 
+
+
+
+
 div.ctools-modal-content .btn.btn-primary{
   padding: .25em 1em .12em;
   font-size:0.75em;
@@ -2180,7 +2184,7 @@ div.ctools-modal-content {
   width: 100% !important;
   margin: 0 auto;
   max-width: 500px !important;
-  max-height: 350px !important;
+  max-height: 300px !important;
 }  
 
 #modalContent{
@@ -2201,7 +2205,7 @@ div.ctools-modal-content {
       width: 100% !important;
       margin: 0 auto;
       max-width: 500px !important;
-      max-height: 400px !important;
+      max-height: 300px !important;
     }
     div.ctools-modal-content .modal-content {
       width: 100% !important;
@@ -2912,15 +2916,15 @@ div.ctools-modal-content a.close{
   right: -1rem;
   top: -0.5rem;
   height: 1rem;
-  font-size: 0.68em;
+  font-size: 0.75em;
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 3px #888;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   float: right;
   white-space: nowrap;
   font-family: 'Helvetica Neue', helevetica, arial, sans-serif;
-  opacity:0.8;
+  opacity:0.85;
 }
 
 div.ctools-modal-content a.close:hover{
@@ -2928,7 +2932,7 @@ div.ctools-modal-content a.close:hover{
 }
 
 div.ctools-modal-content a.close::after{
-  content:'x';
+  content:'X';
   position:relative;
 }
 
@@ -3196,15 +3200,10 @@ fieldset.form-wrapper .f-set{
    min-height:400px;
 }
 
-/* this adds black band on top of video */
 .kaltura-embed > div > div{
   min-height:400px;
   max-height:515px;
   border-width:0;
-}
-
-.kaltura-embed iframe{
-
 }
 
 .audio-video .kaltura-embed,
