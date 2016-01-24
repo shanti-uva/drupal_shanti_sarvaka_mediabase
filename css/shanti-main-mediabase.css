@@ -514,10 +514,27 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 }
 
 .page-node-edit button#edit-cancel:hover{
-  color:red;
-  background: transparent;
-  border:none;
+  background: #ddd;
+  box-shadow: none;
 }
+
+
+
+
+
+
+
+div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-date-created{
+  float: left;
+  width: 50%;
+}
+
+
+
+
+
+
+
 
 
 /*--- MOVE TO SARVAKA - bottom of page for edit save buttons ---*/
