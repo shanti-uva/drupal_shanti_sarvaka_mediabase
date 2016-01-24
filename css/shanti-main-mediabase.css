@@ -2865,10 +2865,16 @@ div.ctools-modal-content .modal-title{
 /* kaltura upload video */
 div.ctools-modal-content{
   border: 1px solid #ccc;
+  border-radius: 1rem;
 }
 
 .modal-content .messages.status{
   display:none;
+}
+
+#modal-content{ 
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #aaa;
 }
 
 div.ctools-modal-content .modal-content{
@@ -2881,23 +2887,23 @@ div.ctools-modal-content .modal-content{
 div.ctools-modal-content .modal-header{
   padding: 1.5rem 3rem;
   background-color: #2fbebc !important;
+  border-radius: .7rem 0.7rem 0 0;
 }
 
 div.ctools-modal-content a.close{
-  content: 'CLOSE X';
   position: relative;
   right: -2rem;
   top: -0.5rem;
-  color: #555;
   height: 1rem;
-  font-size:0.68em;
-  font-weight:bold;
-  color:#fff;
+  font-size: 0.68em;
+  font-weight: bold;
+  color: #fff;
   text-shadow: 0 0 #888;
   letter-spacing: 0.15rem;
   float: right;
   white-space: nowrap;
-  font-family:helevetica,arial,sans-serif;
+  font-family: helevetica, arial, sans-serif;
+  opacity:0.9;
 }
 
 div.ctools-modal-content .modal-header::after:hover{
