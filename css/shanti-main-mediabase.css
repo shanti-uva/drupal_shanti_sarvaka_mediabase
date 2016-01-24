@@ -2803,6 +2803,10 @@ div.ctools-modal-content {
 
 
 
+
+
+
+
 .modal.tcu-delete-modal.in{
   display: block;
 }
@@ -2816,13 +2820,6 @@ div.ctools-modal-content {
   position: absolute;
   top: 25rem;
   right: 0;*/
-}
-
-div.ctools-modal-content .modal-title{
-  font-size: 150%;
-  font-weight: normal;
-  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
-  text-shadow: 0 0 5px #888;
 }
 
 .modal.tcu-delete-modal.in .modal-header{
@@ -2871,6 +2868,7 @@ div.ctools-modal-content .modal-title{
 
 
 /* kaltura upload video */
+
 div.ctools-modal-content{
   border: 1px solid #ccc;
   border-radius: 1rem;
@@ -2898,9 +2896,16 @@ div.ctools-modal-content .modal-header{
   border-radius: .7rem 0.7rem 0 0;
 }
 
+div.ctools-modal-content .modal-title{
+  font-size: 150%;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  text-shadow: 0 0 5px #888;
+}
+
 div.ctools-modal-content a.close{
   position: relative;
-  right: -2rem;
+  right: -1rem;
   top: -0.5rem;
   height: 1rem;
   font-size: 0.68em;
@@ -2916,6 +2921,11 @@ div.ctools-modal-content a.close{
 
 div.ctools-modal-content .modal-header::after:hover{
   color:#fff;
+}
+
+div.ctools-modal-content a.close::after{
+  content:'x';
+  position:relative;
 }
 
 div.ctools-modal-content a.close img{
@@ -2935,6 +2945,10 @@ div#edit-actions--3.form-actions.form-wrapper{
   text-align: center;
   font-size: 1.25em;
 }
+
+
+
+
 
 /* sidecolumn upload video-audio buttons */
 .region-sidebar-second .block-mb-structure .btn.btn-icon{
