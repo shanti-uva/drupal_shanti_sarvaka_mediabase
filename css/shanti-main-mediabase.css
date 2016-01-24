@@ -495,7 +495,7 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
   padding: .25em 1em .12em;
   font-size: 0.75em;
   background:#fff;
-  color:606060;
+  color: #606060;
 }
 
 .page-node-edit button#edit-delete:hover{
@@ -2176,11 +2176,12 @@ div.ctools-modal-content {
   width: 100% !important;
   margin: 0 auto;
   max-width: 500px !important;
-  max-height: 300px !important;
+  max-height: 350px !important;
 }  
 
 #modalContent{
   box-shadow: 0 0 10px #aaa;
+  border-radius: 1rem;
 }
 
 @media (max-width: 750px) { 
@@ -2196,7 +2197,7 @@ div.ctools-modal-content {
       width: 100% !important;
       margin: 0 auto;
       max-width: 500px !important;
-      max-height: 350px !important;
+      max-height: 400px !important;
     }
     div.ctools-modal-content .modal-content {
       width: 100% !important;
@@ -2821,6 +2822,7 @@ div.ctools-modal-content .modal-title{
   font-size: 150%;
   font-weight: normal;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  text-shadow: 0 0 5px #888;
 }
 
 .modal.tcu-delete-modal.in .modal-header{
