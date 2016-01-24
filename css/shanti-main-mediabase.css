@@ -495,10 +495,12 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
   padding: .25em 1em .12em;
   font-size: 0.75em;
   background:#fff;
+  color:606060;
 }
 
 .page-node-edit button#edit-delete:hover{
   background: red;
+  color:#fff;
 }
 
 .page-node-edit button#edit-cancel{
