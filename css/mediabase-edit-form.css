@@ -217,7 +217,7 @@ div.kmap-selector button.selectpicker {
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
-
+/** Workflow Fields **/
 #edit-field-workflow-und-0-field-edl-log-files,
 #accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div.field-type-text-long,
 #field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div.field-type-text-long {

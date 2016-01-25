@@ -957,6 +957,33 @@ ul.links.inline {
   display: block;
 }
 
+/** Technical Metadata Fields **/
+    
+.mb-identifier.field.field-label-inline.clearfix, .mb-identifier.field.field-label-inline.clearfix * {
+    float: none;
+}
+
+.mb-identifier * {
+    display: inline-block !important;
+}
+
+.field-name-field-identifier-source, .field-name-field-identifier-source .field-items {
+    display: inline !important;
+}
+
+.field-name-field-identifier-source .field-item {
+    display: inline !important;
+    font-weight: bold;
+}
+
+.field-name-field-identifier, .field-name-field-identifier div {
+    display: inline;
+}
+
+ .field-name-field-identifier-source .field-item:after {
+    content: ':';
+}
+
 /** Hiding Spaces table until it can be properly implemented */
 .node-type-collection table.spaces {
   display: none;
