@@ -2933,11 +2933,11 @@ div.ctools-modal-content{
   border: 1px solid #ccc;
   border-radius: 1rem;
 }
-
+/*
 .modal-content .messages.status{
   display:none;
 }
-
+*/
 #modal-content{ 
   border-radius: 1rem;
   box-shadow: 0 0 10px #aaa;
