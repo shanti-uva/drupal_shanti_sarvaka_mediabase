@@ -476,12 +476,10 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 
-
-
-
 div#node_video_form_group_details > .panel-body > div, 
 div#node_audio_form_group_details > .panel-body > div{
   margin:0;
+  background: #f9f9f9;
 }
 
 
