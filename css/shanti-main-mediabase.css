@@ -484,6 +484,13 @@ div#node_video_form_group_details > .panel-body > div,
 div#node_audio_form_group_details > .panel-body > div{
   margin:0;
   background: #f9f9f9;
+  padding: 0 1.2rem;
+}
+
+
+div#node_video_form_group_details > .panel-body .field-name-group-audience, 
+div#node_audio_form_group_details > .panel-body .field-name-group-audience{
+  padding-top: 1.5rem;
 }
 
 
@@ -882,7 +889,8 @@ a.hide-annot::before {
 
 /* add space after collection name */
 #av-details .field-name-av-collection {
-  margin-bottom: 3px;
+  margin-bottom: 0.8rem;
+  font-size: 1.12em;
 }
 
 #av-details .field-type-taxonomy-term-reference {
