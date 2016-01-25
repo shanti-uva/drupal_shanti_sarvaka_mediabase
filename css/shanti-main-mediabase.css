@@ -913,6 +913,7 @@ a.hide-annot::before {
 
 .node .content .field-label-inline{
   line-height: 2.7rem;
+  font-family: palatino, 'Palatino Linotype', georgia, serif;
 }
 
 .node .content .mb-identifier label, 
