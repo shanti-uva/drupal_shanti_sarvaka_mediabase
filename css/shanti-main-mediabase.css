@@ -2239,6 +2239,7 @@ div.ctools-modal-content {
   box-shadow: 0 0 10px #aaa;
   border-radius: 1rem;
   z-index: 100001 !important;
+  min-width: 500px;
 }
 
 div.ctools-modal-content {
@@ -2252,10 +2253,11 @@ div.ctools-modal-content .modal-content {
   max-width: 500px !important;
 }
 
-@media (max-width: 750px) { 
+@media (max-width: 600px) { 
     
     #modalContent {
       position: fixed !important;
+      min-width: 320px;
       top: 12% !important;
       bottom: 12% !important;
       right: 4% !important;
