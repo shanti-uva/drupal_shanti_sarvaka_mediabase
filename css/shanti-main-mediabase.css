@@ -2216,6 +2216,7 @@ div.ctools-modal-content {
 
 div.ctools-modal-content {
   margin: 0 auto;
+  width: 100% !important;
   max-width: 500px !important;
   max-height: 300px !important;
 }
@@ -2225,18 +2226,13 @@ div.ctools-modal-content .modal-content {
 }
 
 @media (max-width: 750px) { 
+    
     #modalContent {
       position: fixed !important;
       top: 12% !important;
       bottom: 12% !important;
       right: 4% !important;
       left: 4% !important;
-    }
-    div.ctools-modal-content {
-      width: 100% !important;
-    }
-    div.ctools-modal-content .modal-content {
-      width: 100% !important;
     }
 }
 
