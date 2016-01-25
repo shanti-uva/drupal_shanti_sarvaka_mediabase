@@ -475,6 +475,10 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 
+input#field_transcript_value.text-full.form-control.form-inline{
+  margin-right: 0.5rem;
+}
+
 
 div#node_video_form_group_details > .panel-body > div, 
 div#node_audio_form_group_details > .panel-body > div{
