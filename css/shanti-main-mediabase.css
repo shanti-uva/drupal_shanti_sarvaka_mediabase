@@ -50,6 +50,8 @@
 
 /*--- END colors ---*/
 
+
+
 .front .main-content{ margin-bottom:5rem;}
 
 /* sidebar search results sorting list */
@@ -477,7 +479,10 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 
-
+div#node_video_form_group_details > .panel-body > div, 
+div#node_audio_form_group_details > .panel-body > div{
+  margin:0;
+}
 
 
 #locale-translation-filter-form .form-item-translation {
@@ -3238,9 +3243,6 @@ fieldset.form-wrapper .f-set{
 /*------------------------------*/
 /*----- END TRANSCRIPTS --------*/
 /*------------------------------*/
-
-
-
 
 
 
