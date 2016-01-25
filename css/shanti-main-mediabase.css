@@ -2229,6 +2229,10 @@ div.ctools-modal-content .btn.btn-primary{
   font-size:0.75em;
 }
 
+div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary.ajax-processed{
+  padding: 0.7rem 0.5rem 0.7rem;
+}
+
 div#edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
@@ -2253,6 +2257,7 @@ div.ctools-modal-content {
   max-width: 500px !important;
   max-height: 350px !important;
 }
+
 div.ctools-modal-content .modal-content {
   width: 100% !important;
   max-width: 500px !important;
