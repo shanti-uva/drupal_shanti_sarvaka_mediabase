@@ -134,8 +134,8 @@
 
 
 .extruder #loading-text{
-  position: absolute;
-  left: 40px !important;
+  position: absolute  !important;
+  left: 3.7rem !important;
 }
 
 .input-section .form-group{
