@@ -1901,8 +1901,7 @@ ul.links.inline {
 .btn-group-transcript .selectpicker li:hover,
 .btn-group-transcript .selectpicker li span.text,
 .btn-group-transcript .selectpicker li:hover span.text {
-  color: #fff;
-  text-shadow: 0 0 #555;
+  color: #444;
 }
 
 .btn-group-transcript .selectpicker li.selected a,
