@@ -138,6 +138,10 @@
   left: 3.7rem !important;
 }
 
+.extruder .loading{
+  width: 160px;
+}
+
 .input-section .form-group{
   margin-bottom:10px;
 }
