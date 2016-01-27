@@ -2233,8 +2233,8 @@ ul.links.inline {
 
 
 div.ctools-modal-content .btn.btn-primary{
-  padding: .25em 1em .12em;
-  font-size:0.75em;
+  padding: .32em 1.5em .18em;
+  font-size: 1em;
 }
 
 div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary.ajax-processed{
@@ -3015,7 +3015,9 @@ input#edit-media-upload.form-file{
 }
 
 button#edit-media-upload-button{
-  margin: 2rem 4rem;
+  margin: 7rem 50% 0;
+  position:relative;
+  left: -4.5rem;
 }
 
 div#edit-actions--3.form-actions.form-wrapper{
