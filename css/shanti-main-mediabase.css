@@ -2232,12 +2232,15 @@ ul.links.inline {
 
 
 
-div.ctools-modal-content .btn.btn-primary{
+div.ctools-modal-content button.btn.btn-primary{
   padding: .32em 1.5em .18em;
-  font-size: 1em;
+  margin-left: 50%;
+  margin-top: 3rem;
+  position: relative;
+  left: -3.5em;
 }
 
-div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary.ajax-processed{
+div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
 }
 
