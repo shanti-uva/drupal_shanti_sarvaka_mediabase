@@ -65,14 +65,14 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	position: relative;
 	left: -0.6rem;
 	top: -0.8rem;
-	font-size: 1.62em;
+	font-size: 1.5em;
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
 
 .btn-sm.btn-icon.btn-delete span.icon.shanticon-trash::before{
 	position: relative;
-	left: -0.5em;
-	top: -.6rem;
+	left: -0.4em;
+	top: -.55rem;
 }
 
 /* Details Field Group */
