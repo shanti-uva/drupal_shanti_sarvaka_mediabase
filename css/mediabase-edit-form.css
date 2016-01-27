@@ -63,9 +63,9 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 .btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
-	left: -0.6rem;
+	left: -1.5rem;
 	top: -0.8rem;
-	font-size: 1.5em;
+	font-size: 1.44em;
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
 

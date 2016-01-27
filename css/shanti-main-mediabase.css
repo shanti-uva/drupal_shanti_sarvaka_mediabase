@@ -2243,6 +2243,7 @@ div.ctools-modal-content button.btn.btn-primary{
 
 div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
+  margin-top:-0.5rem !important;
 }
 
 div#edit-actions--3.form-actions.form-wrapper{
