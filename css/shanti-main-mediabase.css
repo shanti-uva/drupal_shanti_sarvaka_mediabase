@@ -3024,7 +3024,9 @@ div#edit-actions--3.form-actions.form-wrapper{
   font-size: 1.25em;
 }
 
-
+div.ctools-modal-content .btn.btn-delete.btn-primary{
+  margin-top:0 !important;
+}
 
 
 
