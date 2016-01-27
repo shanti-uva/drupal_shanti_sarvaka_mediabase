@@ -1000,10 +1000,6 @@ ul.links.inline {
     content: ':';
 }
 
-/** Hiding Spaces table until it can be properly implemented */
-.node-type-collection table.spaces {
-  display: none;
-}
 
 .page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
   display: none;
@@ -3685,6 +3681,15 @@ button on video window
 
 
 /* single collection page */
+/** Hiding Spaces table until it can be properly implemented */
+.node-type-collection table.spaces {
+  display: none;
+}
+
+.node-type-collection .tab-pane.main-col > div{
+  padding-top:0.7rem;
+}
+
 .node-type-collection .about .img-thumbnail.pull-left{
   margin-left:0;
   margin-top:0;
