@@ -4,11 +4,11 @@
 /* ---------------------- */
 
 /* Throbber for Ajax Loading */
-.ctools-modal-content .throbber {
-	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center center no-repeat !important;
+.throbber {
+	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
 	background-color: transparent !important;
-	width: 2.5rem !important;
-	height: 2rem !important;
+	width: 3.5rem !important;
+	height: 2.5rem !important;
 	display: inline-block;
 }
 
