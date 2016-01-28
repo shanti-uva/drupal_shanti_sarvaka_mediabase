@@ -9,6 +9,7 @@
 	background-color: transparent !important;
 	width: 2.5rem !important;
 	height: 2rem !important;
+	display: inline-block;
 }
 
 /* Glyphicon fix */
