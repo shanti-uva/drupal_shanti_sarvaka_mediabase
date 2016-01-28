@@ -5,9 +5,9 @@
 
 /* Throbber for Ajax Loading */
 .ctools-modal-content .throbber {
-	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center right no-repeat !important;
+	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center center no-repeat !important;
 	background-color: transparent !important;
-	width: 2rem !important;
+	width: 2.5rem !important;
 	height: 2rem !important;
 }
 
