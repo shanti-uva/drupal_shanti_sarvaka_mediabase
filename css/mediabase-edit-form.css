@@ -5,8 +5,10 @@
 
 /* Throbber for Ajax Loading */
 .ctools-modal-content .throbber {
-	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center right 5px no-repeat !important;
+	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center right no-repeat !important;
 	background-color: transparent !important;
+	width: 1.5rem !important;
+	height: 1.5rem !important;
 }
 
 /* Glyphicon fix */
