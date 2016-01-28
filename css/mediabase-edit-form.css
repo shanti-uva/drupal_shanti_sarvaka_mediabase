@@ -4,8 +4,9 @@
 /* ---------------------- */
 
 /* Throbber for Ajax Loading */
-input.throbber {
-	background: #ffffff url("../../shanti_sarvaka/images/ajax-loader.gif") center right 5px no-repeat!important;
+.ctools-modal-content .throbber {
+	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center right 5px no-repeat !important;
+	background-color: transparent !important;
 }
 
 /* Glyphicon fix */
@@ -63,8 +64,8 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 .btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
-	left: -1.5rem;
-	top: -0.8rem;
+	left: -1.35rem;
+	top: -0.6rem;
 	font-size: 1.44em;
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}

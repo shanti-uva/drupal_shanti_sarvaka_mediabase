@@ -2229,12 +2229,11 @@ ul.links.inline {
 
 
 div.ctools-modal-content button.btn.btn-primary{
-  padding: .32em 1.5em .18em;
   margin-left: 50%;
   margin-top: 3rem;
   position: relative;
   left: -5.5em;
-  font-size: .75em;
+  padding: .5rem 2rem .4rem;
 }
 
 div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
@@ -2960,6 +2959,8 @@ div.ctools-modal-content{
 #modal-content{ 
   border-radius: 1rem;
   box-shadow: 0 0 10px #aaa;
+  max-height:280px;
+  overflow-x:hidden
 }
 
 div.ctools-modal-content .modal-content{
