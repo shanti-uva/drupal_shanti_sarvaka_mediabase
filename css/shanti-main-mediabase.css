@@ -2226,7 +2226,12 @@ ul.links.inline {
 
 
 
-
+#modalContent{
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 1rem;
+  z-index: 100001 !important;
+  min-width: 500px;
+}
 
 div.ctools-modal-content button.btn.btn-primary{
   margin-left: 50%;
@@ -2236,12 +2241,17 @@ div.ctools-modal-content button.btn.btn-primary{
   padding: .5rem 2rem .4rem;
 }
 
+div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
+  padding: 0.4rem 1.8rem 0.2rem;
+  font-size: 0.75em;
+}
+
 div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
   padding: 0.7rem 0.5rem 0.7rem;
   margin-top:-0.5rem !important;
 }
 
-div#edit-actions--3.form-actions.form-wrapper{
+div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
 
@@ -2251,13 +2261,6 @@ div.ctools-modal-content {
   max-width: 500px !important;
   max-height: 300px !important;
 }  
-
-#modalContent{
-  box-shadow: 0 0 10px #aaa;
-  border-radius: 1rem;
-  z-index: 100001 !important;
-  min-width: 500px;
-}
 
 div.ctools-modal-content {
   margin: 0 auto;
