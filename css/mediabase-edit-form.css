@@ -7,8 +7,8 @@
 .ctools-modal-content .throbber {
 	background: url("../../shanti_sarvaka/images/ajax-loader.gif") center right no-repeat !important;
 	background-color: transparent !important;
-	width: 1.5rem !important;
-	height: 1.5rem !important;
+	width: 2rem !important;
+	height: 2rem !important;
 }
 
 /* Glyphicon fix */
