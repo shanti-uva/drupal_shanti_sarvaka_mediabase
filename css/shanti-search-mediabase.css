@@ -247,6 +247,11 @@ span.fancytree-title {
   border-radius: 3px;
 }
 */
+
+
+
+
+/*
 span.fancytree-node.fancytree-selected {
   background-color: #fff;
   border-color: transparent;
@@ -288,7 +293,7 @@ span.fancytree-node.fancytree-active {
   border-color: transparent;
 }
 
-
+*/
 
 
 
@@ -296,8 +301,10 @@ span.fancytree-node.fancytree-active {
 
 
 /** Ajax Progress Throbber **/
-.ajax-progress, .ajax-progress *, .ajax-progress-throbber, .ajax-progress-throbber * {
-  display: inline;
+.ajax-progress, .ajax-progress *, 
+.ajax-progress-throbber, 
+.ajax-progress-throbber * {
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
