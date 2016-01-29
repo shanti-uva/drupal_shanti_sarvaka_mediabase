@@ -143,6 +143,8 @@
   width: 10.5em;
 }
 */
+
+
 .view-collections .views-row {
   padding-top: 0.75em;
   padding-bottom: 2em;
@@ -1392,7 +1394,7 @@ ul.links.inline {
 }
 
 .transcript-content .btn{
-  font-family: "museo-sans-500",helvetica,arial,sans-serif !important;
+  font-family: 'museo-sans-500',helvetica,arial,sans-serif !important;
 }
 
 
@@ -3708,6 +3710,10 @@ button on video window
   padding-left: 1rem;
 }
 
+.node-type-collection .content-section > .tab-content.container-fluid{
+  padding-left:0;
+  padding-right:0;
+}
 
 
 /*----------------*/
