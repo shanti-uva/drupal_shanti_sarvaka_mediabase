@@ -8,7 +8,7 @@
 .node-type-video .nav-justified>li.active a,
 .node-type-video .nav-justified>li.active a:hover,
 .node-type-video .nav-justified>li.active a:active {
-  background-color: #2fbebc !important;
+  background-color: #2db6b4 !important;
 }
 
 .navbar-brand:hover .site-slogan,
@@ -27,13 +27,13 @@
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
 .view-section .fancytree-node.fancytree-selected > .glyphicon {
-  color: #2fc0be !important;
+  color: #2db6b4 !important;
 }
 
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active {
-  border-top-color: #2fc0be !important;
+  border-top-color: #2db6b4 !important;
 }
 
 .navbar-brand:active .site-slogan {
