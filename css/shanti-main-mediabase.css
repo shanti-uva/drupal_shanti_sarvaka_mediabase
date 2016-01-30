@@ -2635,7 +2635,7 @@ div.ctools-modal-content .modal-content {
   display: inline-block;
   position: relative;
   border: 1px solid #ddd;
-  margin: 1rem 0 0 0.5rem;
+  margin: -1rem 0 0 0.5rem;
   padding: .9rem 1.9rem .7rem;
   box-shadow: none;
   -webkit-transition: background 200ms ease 0s;
