@@ -1,0 +1,276 @@
+
+/* ---------------------- */
+/* -- Video Edit form --- */
+/* ---------------------- */
+
+/* Throbber for Ajax Loading */
+.throbber {
+	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
+	background-color: transparent !important;
+	width: 3.5rem !important;
+	height: 2.5rem !important;
+	display: inline-block;
+}
+
+/* Glyphicon fix */
+.btn-icon .glyphicon {
+	font-size: 1.5em;
+	margin-top: -2px;
+}
+
+input.form-inline {
+	display: inline;
+}
+
+div.file-widget.form-managed-file > * {
+	display: inline;
+}
+
+.node-form .form-item .file-widget.form-managed-file {
+	padding-left: 1.75em;
+}
+
+.node-form .form-item .description {
+	padding-left: 1.75em;
+}
+
+/* Title Group */
+
+div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
+	float: left;
+	border: none;
+}
+
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
+	display: block;
+	padding: 0px 0px 8px 0px;
+}
+
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
+
+/*
+	div.field-type-field-collection tr.draggable td div[class*="field-type-"] button.dropdown-toggle.selectpicker {
+	was ====> div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker
+
+	width: 90% !important;
+	margin-left: 5%;
+}
+*/
+
+div.field-type-field-collection tr.draggable td div.field-type-text-long {
+	width: 70%;
+	padding-right:1rem;
+}
+
+/* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
+.btn-sm.btn-icon.btn-delete {float: right;max-width: 3em;max-height: 3em;min-height: 22px;margin-left: 3em;}
+.btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
+.btn-sm.btn-icon.btn-delete span.icon {
+	position: relative;
+	left: -1.35rem;
+	top: -0.6rem;
+	font-size: 1.44em;
+}
+.btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
+
+.page-node-edit .btn-sm.btn-icon.btn-delete span.icon.shanticon-trash::before{
+	position: relative;
+	left: 0.62em;
+	top: -0.55rem;
+}
+
+/* Details Field Group */
+/*
+div#node_video_form_group_details .panel-body, div#node_audio_form_group_details .panel-body {
+	background: inherit;
+}
+*/
+div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group_details > .panel-body > div {
+	width: 100%;
+	background-color: #f0f0f0;
+	padding: 12px;
+	margin: 18px 0px;
+}
+
+div#edit-group-audience > div.form-item > label {
+	font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
+	font-size: 100%;
+	text-transform: uppercase;
+	color: #555;
+	margin: -24px 0px 12px -3px;
+}
+
+div#edit-group-audience > div.form-item > div.collection-details-audience {
+	margin-left: 8px;
+}
+
+.group-details .field-type-taxonomy-term-reference > label {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 6px;
+	margin-bottom: 12px;
+	width: 99%;
+	font-family: 'museo-sans-700',Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	color: #555;
+}
+
+.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .branch-filter {
+	margin-top: -12px;
+}
+
+.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .browse-link {
+	margin-top: -6px;
+}
+
+.field-type-taxonomy-term-reference .form-item.kmap-selector label {
+	margin-left: 6px;
+}
+
+.field-widget-field-collection-hidden {
+	display: none;
+}
+
+/* KMap Fields */
+#field_pbcore_coverage_spatial_location_selector {
+	min-height: 60px;
+}
+
+.kmap-selector .autocomplete-input label {
+	margin: 0px 6px;
+}
+
+.form-item.location-selector label {
+	margin: 12px 8px 6px 12px !important;
+}
+
+.form-item.location-selector .results {
+	margin-left: 12px;
+}
+
+div.kmap-selector button.selectpicker {
+	min-width: 300px;
+}
+
+.browse-link a {
+	display: inline-block;
+	margin-left: -120px;
+}
+
+.form-item.kmap-selector a.show-annot {
+	font-size: 90%;
+	margin-left: 8px;
+}
+
+.kmap-selector .autocomplete-input {
+	float: left;
+}
+
+.kmap-selector .autocomplete-input input, .location-selector .autocomplete-input {
+	margin-right: 6px;
+}
+
+.location-selector .autocomplete-input{ display:inline; float:left;}
+
+.kmap-selector-item .icon:before {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.kmap-selector-item,
+.location-selector-item {
+	line-height: 19px;
+	white-space: nowrap;
+	margin: 6px 3px 3px 0px;
+	padding: 2px 6px 2px 2px;
+	color: #404040;
+	background-color: #fdfdfd;
+	border: 1px #b1b1b1 solid;
+	font-size: 80%;
+	display: block;
+	float: left;
+}
+
+.kmap-selector .results {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	margin-left: -4px;
+}
+
+.location-selector{background:transparent !important;}
+
+.location-selector button.btn.btn-sm {
+	float: none;
+	width: 25px;
+	height: 25px;
+	margin: 0px 6px;
+}
+
+.location-selector button.btn-remove:hover {
+	background-color: red;
+}
+
+/* sites/all/themes/shanti_sarvaka/images/ajax-loader.gif */
+
+.location-selector button.btn.btn-sm .icon {
+	font-size: 2.5em;
+	padding: 0px !important;
+	line-height: 2em;
+	margin: -0.4em 0em 0em 0em;
+	float: none;
+	width: 25px;
+	height: 25px;
+}
+
+.location-selector button.btn.btn-sm .icon.shanticon-magnify {
+	font-size: 1.75em;
+	padding-top: 4px !important;
+}
+
+
+input#edit-field-transcripts-xsl-und-0-upload.form-file,
+input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
+
+/** Workflow Fields **/
+#edit-field-workflow-und-0-field-edl-log-files,
+#accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div.field-type-text-long,
+#field_collection_item_field_workflow_form_group_transcript_workflow div.panel-body > div.field-type-text-long {
+	clear: both;
+	margin-right: 12px;
+	width: 45%;
+}
+
+#field_collection_item_field_workflow_form_group_media_workflow div.panel-body > .field-type-text-long {
+	float: left;
+	width: 45%;
+}
+
+
+.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
+
+
+.group-rights .form-type-textfield,
+.field-name-field-workflow .field-widget-options-select,
+.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:30%; border-bottom:none;}
+
+.group-rights .form-type-textfield label,
+.field-name-field-workflow .form-item.form-type-select label,
+.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
+
+.field-name-field-workflow .bootstrap-select.form-control:not([class*='span']),
+.field-type-field-collection  .bootstrap-select.form-control:not([class*='span']){ min-width: 15rem; max-width:95%; margin-left:1rem;}
+
+.group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
+
+.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:80% !important;}
+
+.field-type-field-collection input.form-text.form-control{ max-width:31% !important; position:relative; left:1rem}
+
+
+.field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
+
+.form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{max-width:100% !important;}
+/* ----------------------------*/
+/* -- End of Video Edit form --*/
+/* ----------------------------*/
