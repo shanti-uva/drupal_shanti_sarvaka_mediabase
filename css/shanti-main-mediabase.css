@@ -977,6 +977,17 @@ ul.links.inline {
 
 /** Technical Metadata Fields **/
     
+.field-name-field-recording-location-new .field-label-span {
+    font-weight: bold;
+}
+
+.field-name-field-recording-location-new .field-items-span, 
+.field-name-field-recording-location-new ul, 
+.field-name-field-recording-location-new li {
+    display: inline;
+    padding:0px;
+}
+
 .mb-identifier.field.field-label-inline.clearfix, .mb-identifier.field.field-label-inline.clearfix * {
     float: none;
 }
