@@ -977,13 +977,13 @@ ul.links.inline {
 
 /** Technical Metadata Fields **/
     
-.field-name-field-recording-location-new .field-label-span {
+.field-name-field-recording-location-new > .field-label-span {
     font-weight: bold;
 }
 
 .field-name-field-recording-location-new .field-items-span, 
-.field-name-field-recording-location-new ul, 
-.field-name-field-recording-location-new li {
+.field-name-field-recording-location-new .field-items-span ul, 
+.field-name-field-recording-location-new .field-items-span li {
     display: inline;
     padding:0px;
 }

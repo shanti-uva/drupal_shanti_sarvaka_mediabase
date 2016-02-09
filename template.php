@@ -98,6 +98,13 @@ function sarvaka_mediabase_get_facet_info($fbid) {
 }
 
 /**
+ * Preprocess User Profile
+ */
+function sarvaka_mediabase_preprocess_user_profile(&$variables) {
+    $variables['user_profile']['group_audience']['#weight'] = 40; // Put Group Audience Last
+}
+
+/**
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
