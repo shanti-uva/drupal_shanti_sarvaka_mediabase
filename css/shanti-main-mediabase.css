@@ -3152,7 +3152,7 @@ fieldset.form-wrapper .f-set{
   font-weight: bold;
 }
 
-.page-node-add .mb-av-form .kaltura_field_thumb { display: none; }
+/*.page-node-add .mb-av-form .kaltura_field_thumb { display: none; } */
 
 .page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
 
