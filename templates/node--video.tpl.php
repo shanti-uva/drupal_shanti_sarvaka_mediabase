@@ -100,7 +100,7 @@ if($teaser):
 	    </div>
 	    <div class="shanti-thumbnail-info">
 	     <div class="body-wrap">
-	      <div class="shanti-thumbnail-field shanti-field-title <?php print $variables['title_lang']; ?>">
+	      <div class="shanti-thumbnail-field shanti-field-title <?php if (!empty($variables['title_lang'])) { print $variables['title_lang']; } ?>">
 	         <span class="field-content"><a href="<?php print $variables['node_url']; ?>"
 	             class="shanti-thumbnail-link"><?php print $title; ?></a></span>
 	      </div>
