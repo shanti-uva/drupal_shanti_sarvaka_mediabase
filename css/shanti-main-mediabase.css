@@ -534,12 +534,6 @@ div#node_audio_form_group_details > .panel-body .field-name-group-audience{
   box-shadow: none;
 }
 
-
-
-
-
-
-
 div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-date-created{
   float: left;
   width: 50%;
@@ -549,12 +543,6 @@ div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-da
 .panel-body fieldset.form-wrapper legend{
   margin-left: 0;
 }
-
-
-
-
-
-
 
 
 /*--- MOVE TO SARVAKA - bottom of page for edit save buttons ---*/
@@ -1018,6 +1006,11 @@ ul.links.inline {
   display: none;
 }
 
+/** Related Videos Tab **/
+.av-related-wrapper .tab-pane.mlt .related-av-nodes {
+     padding: 12px;
+ }
+ 
 /** My Content Pages **/
 .view-my-content .vbo-views-form fieldset#edit-select {
   float: right;

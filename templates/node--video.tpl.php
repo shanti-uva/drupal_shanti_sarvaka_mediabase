@@ -265,6 +265,12 @@ else:     /************ FULL Display ***********/
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
+              <div class="panel-group">
+                  <div class="panel panel-default">
+                      <div class="panel-heading"><h6><a name="related-titles">Related A/V Titles</a></h6></div>
+                      <div class="related-av-nodes" id="related-av-nodes"><img class="loading-img" src="/sites/all/themes/shanti_sarvaka/images/ajax-loader.gif"> Loading ... </div>
+                  </div>
+              </div>
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="btn-group avnode-details-buttons">
@@ -272,7 +278,7 @@ else:     /************ FULL Display ***********/
           		<button class="btn btn-default btn-sm btn-toggle-accordion expand">Expand All</button>
           	</div>
           	<div class="panel-group" id="av-details">
-		          <?php
+		          <?php 
 		          	$content['group_details']['#attributes']['class'][] = "in";
 								// Hiding title in details as it is in banner
 								hide($content['group_details']['field_pbcore_title']);

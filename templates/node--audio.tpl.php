@@ -255,7 +255,7 @@ else:     /************ FULL Display ***********/
      </div> <!-- End of av-main-wrapper -->
   </div> <!-- End of content -->
 
-      <div>
+      <div class="av-related-wrapper">
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
           <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audio-Video'); ?></a></li>
@@ -263,6 +263,12 @@ else:     /************ FULL Display ***********/
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane mlt" id="related" data-nid="<?php print $node->nid;?>">
+              <div class="panel-group">
+                  <div class="panel panel-default">
+                      <div class="panel-heading"><h6><a name="related-titles">Related A/V Titles</a></h6></div>
+                      <div class="related-av-nodes" id="related-av-nodes"><img class="loading-img" src="/sites/all/themes/shanti_sarvaka/images/ajax-loader.gif"> Loading ... </div>
+                  </div>
+              </div>
           </div> <!-- End of #related -->
           <div class="tab-pane active" id="details">
           	<div class="btn-group avnode-details-buttons">
