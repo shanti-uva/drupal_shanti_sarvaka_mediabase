@@ -640,6 +640,12 @@ a.hide-annot::before {
 }
 */
 
+.view-collections .shanti-field-body{
+  border-top: 1px solid #ddd;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  line-height: 1.25em;
+}
 
 /*
 .view-collections .collection-list-link {
