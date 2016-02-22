@@ -79,6 +79,12 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	top: -0.55rem;
 }
 
+/** Wysiwyg **/
+/* Hide double display of toolbar in TinyMCE */
+.wysiwygToolbar + .wysiwygToolbar {
+    display: none;
+}
+
 /* Details Field Group */
 /*
 div#node_video_form_group_details .panel-body, div#node_audio_form_group_details .panel-body {
