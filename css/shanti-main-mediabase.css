@@ -640,6 +640,19 @@ a.hide-annot::before {
 }
 */
 
+.view-collections .shanti-field-body{
+  border-top: 1px solid #ddd;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  line-height: 1.25em;
+}
+
+.view-collections .shanti-thumbnail .body-wrap{
+  height: 14rem;
+  padding-top: 0;
+}
+
+/*
 .view-collections .collection-list-link {
   float: left;
   margin: 20px 10px 0 0;
@@ -661,7 +674,7 @@ a.hide-annot::before {
 
 .view-collections .shanti-thumbnail .shanti-thumbnail-field.shanti-field-body {
   white-space: normal !important;
- /* word-break:break-all; for URL paths if needed with js */
+ /* word-break:break-all; for URL paths if needed with js ----------
 }
 
 .view-collections .shanti-thumbnail .shanti-field-body {
@@ -669,13 +682,17 @@ a.hide-annot::before {
   margin-top: 3px;
   padding-top: 3px;
   border-top: 1px solid #ccc;
- /* dont set height on this */
+ /* dont set height on this -------------
 }
 
 .view-collections .shanti-thumbnail .shanti-field-title a {
   font-size: 1.06em;
   font-weight: bold;
 }
+
+*/
+
+
 
 /**
  *  All Collections View Header Styles taken from Essays
@@ -3663,8 +3680,8 @@ button on video window
 
 
 
-/* temporary fix for collections page gallery that has two anchor tags inside the thumbnails */
-.page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}
+/* temporary fix for collections page gallery that has two anchor tags inside the thumbnails
+.page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}  */
 
 /* newer hacks oct 29, 2015 view-display-id-page_list */
 .page-collections .views-field-field-images{
