@@ -647,6 +647,11 @@ a.hide-annot::before {
   line-height: 1.25em;
 }
 
+.view-collections .shanti-thumbnail .body-wrap{
+  height: 14rem;
+  padding-top: 0;
+}
+
 /*
 .view-collections .collection-list-link {
   float: left;
