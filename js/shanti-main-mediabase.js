@@ -23,18 +23,21 @@
 				if( $('.avpbcoredesc .field-item .content > .hidden').length > 0) {
 					$('.showdesclang').removeClass('hidden');
 				}
+				// Show All Languages link: Shows everything and removes any toggles. Can't hide after this.
 				$('.showdesclang a').click(function(e) {
 					e.preventDefault();
-					$('#pb-core-desc-readmore').show();
-					$('.showdesclang').addClass('hidden');
-					// if more than one altlang field show everything and change to show less
+					$('#pb-core-desc-readmore').show(); // Show the Read More link
+					$('.showdesclang').addClass('hidden'); // Hide the Show All Languages link
+					// if more than one altlang field show everything and change to show less (This doesn't work?)
 					if ($('.avpbcoredesc .altlang').length > 1) {
 						$('.avpbcoredesc .hidden').removeClass('hidden');
 						$('#pb-core-desc-readmore a').eq(0).text('Show Less');
 					}
-					// Default just show altlang
-					$('.avpbcoredesc .altlang').removeClass('hidden altlang');
-					
+					// Default just show altlang (Show everything and remove toggle)
+					$('.avpbcoredesc .altlang').removeClass('hidden altlang'); // Show all alternate languages
+                    $('.pb-desc-label').removeClass('hidden'); // Show labels for alternate languages
+					$('.avpbcoredesc .field-name-field-description .field-item > *').show(); // Show all paragraph elements in field description itesms
+					$('.avpbcoredesc #pb-core-desc-readmore').hide(); // Hide the Readmore link
 				});
 			}
 	  }
@@ -66,75 +69,68 @@
 	Drupal.behaviors.shantiSarvakaMbTrimDesc = {
 	  attach: function (context, settings) {
 	  	if (context == document) {
+	  	    // Scoped Function to Show or Hide Description elements. Called below
+	  	    function MbShowHideDesc(descElItems, show) {
+	  	        if (typeof(show) == "undefined") { show = false; }
+                var multip = false,
+                           maxlen = 550,  // Set this for max character length to show by default
+                           textlen = 0,
+                           changeit = false,
+                           heightlost = 0;
+                if (descElItems.text().length > maxlen) {
+                    descElItems.each(function() {
+                        $(this).find('p').eq(0).nextAll().each(function() { 
+                            if (changeit && !show) { 
+                                heightlost += $(this).height();
+                                $(this).hide();
+                            } else { $(this).show(); }
+                            textlen += $(this).text().length;
+                            if (textlen > maxlen) { 
+                                changeit = true;
+                                multip = true;
+                            }
+                        });
+                    });
+                    if (heightlost > 0) { 
+                        var st = $(window).scrollTop();
+                        $(window).scrollTop(st - heightlost);
+                    }
+                }
+                return multip;  // Return whether there are hidden paragraphs
+	  	    }
 		  	// Pb core description trimming
 				if($('.field-name-field-pbcore-description .field-item').length > 1) {
-					var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
+					var items = $('.field-name-field-pbcore-description > .field-items > .field-item'),
+					       showing = false,
+					       multip = false,
+					       ct = 0;
+					multip = MbShowHideDesc(items);
 					// Determine if there any divs showing content
-					var showing = false;
-					items.each(function() { if (jQuery(this).find('div.content > div.hidden').length == 0) { showing = true; }});
-					var multip = false;
-					if (items.eq(0).find('p').length > 1) {
-						multip = true;
-						items.eq(0).find('p').eq(0).nextAll().each(function() { $(this).hide(); });
-					}
-					var ct = 0;
-					items.each(function() {
-						if ($(this).find('.content > .hidden').not(".altlang").length > 0) { ct++; }
-					});
+					items.each(function() { 
+					    if (jQuery(this).find('div.content > div.hidden').length == 0) { showing = true; }
+					    if ($(this).find('.content > .hidden').not(".altlang").length > 0) { ct++; }
+				    });
+					
 					if(ct > 0 || multip == true) {
 						//items.first().nextAll().hide();
+						// Add Show More / Show Less Link
 						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
 						if (!showing) { $('#pb-core-desc-readmore').hide();} // Hide show more if no divs showing content
 						if(!$(".avdesc").hasClass("show-more-height")) { $(".avdesc").addClass("show-more-height"); }
 						$(".show-more > a").click(function (e) {
 							var items = $('.field-name-field-pbcore-description > .field-items > .field-item');
-							//items.first().nextAll('.field-item').slideToggle();
-							var divstotoggle = items.eq(0).nextAll().find('.content > div');
-							if ($('.showdesclang').is(":visible")) {
-								divstotoggle = divstotoggle.filter(":not(.altlang)");
-							} 
-					     if($(this).text() == Drupal.t('Show More')) {
-					     	// When Show More is clicked
-					         $(this).text(Drupal.t('Show Less'));
-					         divstotoggle.removeClass('hidden');
-									 items.eq(0).find('p').eq(0).nextAll().show();
-					     		$(".avdesc").addClass("show-more-height");
-					     } else {
-					     	// When Show Less is clicked
-					         $(this).text(Drupal.t('Show More'));
-					         divstotoggle.addClass('hidden');
-									 items.eq(0).find('p').eq(0).nextAll().hide();
-					     		$(".avdesc").removeClass("show-more-height");
-					     }
+							var showitems = ($(this).text() == Drupal.t('Show More')) ? true : false;
+							if (showitems) {
+							    MbShowHideDesc(items, true);
+							    $(this).text(Drupal.t('Show Less'));
+							} else {
+                                MbShowHideDesc(items, false);
+                                $(this).text(Drupal.t('Show More'));
+							}
 							 e.preventDefault();
 						});
 					}
 				}
-	
-				// Description Trimming
-				/* This makes there be multiple "Show More"s on Dreams page
-					Could perhaps use } else { if needed for other situations
-	
-				$('.description.trim').each(function() {
-				 	if($(this).text().length > 1000 && $(this).find('p').length > 1 && $(this).find('div.show-more').length == 0) {
-				 		var p1 = $(this).find('p').first();
-				 		p1.siblings('p').hide();
-				 		$(this).append('<div class="show-more"><a href="#">Show more</a></div>');
-				 	}
-				});
-				$('.description.trim .show-more a').each(function() {
-					$(this).click(function(event) {
-						event.preventDefault();
-						$(this).parent('.show-more').toggleClass('less');
-						var parent = $(this).parents('.description.trim');
-						var ps = parent.find('p').first().siblings('p');
-						ps.slideToggle();
-						var txt = $(this).text();
-						txt = (txt.indexOf('more') > -1) ? 'Show less' : 'Show more';
-						$(this).text(txt);
-					});
-				});
-				*/
 			}
 		} // end context = document
 	};
