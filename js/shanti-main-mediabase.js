@@ -79,6 +79,7 @@
                            heightlost = 0;
                 if (descElItems.text().length > maxlen) {
                     descElItems.each(function() {
+                        if ($(this).find('div.hidden.altlang').length > 0) { return; } // Skip alt lang divs for counting text length as they are hidden by default
                         $(this).find('p').eq(0).nextAll().each(function() { 
                             if (changeit && !show) { 
                                 heightlost += $(this).height();
@@ -86,6 +87,7 @@
                             } else { $(this).show(); }
                             textlen += $(this).text().length;
                             if (textlen > maxlen) { 
+                                if (show) { $(this).show(); } else { $(this).hide();}
                                 changeit = true;
                                 multip = true;
                             }
