@@ -147,6 +147,7 @@ if($teaser):
 
 <?php
 else:     /************ FULL Display ***********/
+    //dpm($variables, 'video node vars in full display');
 	hide($content['group_details']['group_audience']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
