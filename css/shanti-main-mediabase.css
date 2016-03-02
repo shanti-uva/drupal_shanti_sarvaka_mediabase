@@ -270,6 +270,7 @@ form#views-exposed-form-browse-media-home-block {
 
 #views-exposed-form-browse-media-home-block .views-exposed-form input#edit-title {
     max-width: 130px;
+    margin-top:2px;
 }
 
 /* Tibetan in teaser titles */
@@ -3683,9 +3684,6 @@ button on video window
 
 
 
-
-/* temporary fix for collections page gallery that has two anchor tags inside the thumbnails
-.page-collections .shanti-thumbnail-image a:first-of-type{ height:0;}  */
 
 /* newer hacks oct 29, 2015 view-display-id-page_list */
 .page-collections .views-field-field-images{
