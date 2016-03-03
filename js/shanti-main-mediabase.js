@@ -81,12 +81,13 @@
                     descElItems.each(function() {
                         if ($(this).find('div.hidden.altlang').length > 0) { return; } // Skip alt lang divs for counting text length as they are hidden by default
                         $(this).find('p').eq(0).nextAll().each(function() { 
+                            if ($(this).text().length == 0) { return; } // Don't process empty paragraphs
                             if (changeit && !show) { 
                                 heightlost += $(this).height();
                                 $(this).hide();
                             } else { $(this).show(); }
                             textlen += $(this).text().length;
-                            if (textlen > maxlen) { 
+                            if (textlen > maxlen && textlen > $(this).text().length) { 
                                 if (show) { $(this).show(); } else { $(this).hide();}
                                 changeit = true;
                                 multip = true;
@@ -114,6 +115,7 @@
 				    });
 					
 					if(ct > 0 || multip == true) {
+					    console.log(ct, multip);
 						//items.first().nextAll().hide();
 						// Add Show More / Show Less Link
 						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
