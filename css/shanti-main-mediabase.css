@@ -4013,11 +4013,11 @@ body.in-frame.html {
   }
 
   .node-type-audio .has-transcript .av-main-video-section.col-sm-5 {
-    width: 41.66666667%
+    width: 41.66666667% !important;
   }
 
   .node-type-audio .has-transcript .av-main-video-section.col-sm-7 {
-    width: 58.33333333%
+    width: 58.33333333% !important;
   }
   
   .shanti-filters .control-box-cell-header p {
