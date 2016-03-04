@@ -54,6 +54,11 @@
 
 .front .main-content{ margin-bottom:5rem;}
 
+  #sidebar-second,
+  .region-sidebar-second{
+    background-color: transparent;
+  }
+
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li {
   list-style-type: none;
@@ -4068,6 +4073,11 @@ body.in-frame.html {
   .shanti-filters .control-box-cell-pager,
   .shanti-filters .control-box-cell-filters{
     width: 33.333%;
+  }
+
+  #sidebar-second,
+  .region-sidebar-second{
+    background-color: #fff;
   }
 
   .logged-in.front .shanti-filters .control-box-cell-pager{
