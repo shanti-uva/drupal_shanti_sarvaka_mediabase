@@ -49,15 +49,27 @@
 }
 
 /*--- END colors ---*/
+.view-collection-media{
+  margin-top:-3rem;
+}
+.view-collection-media .view-content{
+  clear: both;
+}
+.view-collection-media table.pagerer{
+  margin-bottom:  1.5rem;
+}
+
 
 
 
 .front .main-content{ margin-bottom:5rem;}
 
-  #sidebar-second,
-  .region-sidebar-second{
-    background-color: transparent;
-  }
+#sidebar-second,
+.region-sidebar-second{
+  background-color: transparent;
+}
+
+
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li {
