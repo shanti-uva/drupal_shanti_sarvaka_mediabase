@@ -466,6 +466,12 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-pager {
   float:right;
 }
+
+.page-collections .shanti-filters table.pagerer{
+  margin-top: -0.8rem;
+}
+
+
 /*
 .logged-in.front .shanti-filters .control-box-cell-pager {
   margin-top: -1rem;
