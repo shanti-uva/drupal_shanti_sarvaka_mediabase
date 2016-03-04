@@ -52,6 +52,10 @@
     </div>
   <?php endif; ?>
 
+  <?php if ($pager): ?>
+    <?php print $pager; ?>
+  <?php endif; ?>
+
   <?php if ($rows): ?>
     <div class="view-content">
         <ul class="shanti-gallery">
