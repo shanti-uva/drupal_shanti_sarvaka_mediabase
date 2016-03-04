@@ -4012,11 +4012,11 @@ body.in-frame.html {
     width:50% !important;
   }
 
-  .node-type-audio .has-transcript .av-main-video-section.col-sm-5 {
+  .node-type-audio.has-transcript .av-main-video-section.col-sm-5 {
     width: 41.66666667% !important;
   }
 
-  .node-type-audio .has-transcript .av-main-video-section.col-sm-7 {
+  .node-type-audio.has-transcript .av-main-video-section.col-sm-7 {
     width: 58.33333333% !important;
   }
   
