@@ -60,8 +60,6 @@
 }
 
 
-
-
 .front .main-content{ margin-bottom:5rem;}
 
 #sidebar-second,
@@ -3742,7 +3740,7 @@ button on video window
   margin-left:0;
   margin-top:0;
 }
-
+.node-type-team .about .description h4,
 .node-type-collection .about .description h4{
   padding-top:0;
   font-size: 1em;
