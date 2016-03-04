@@ -1028,29 +1028,6 @@ ul.links.inline {
   display: none;
 }
 
-.page-node .description blockquote {
-  background: inherit;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  font-size: inherit;
-  font-style: italic;
-}
-
-.page-node .description blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-.page-node .description blockquote p {
-  display: inline;
-  font-size: inherit;
-}
 /** Related Videos Tab **/
 .av-related-wrapper .tab-pane.mlt .related-av-nodes {
      padding: 12px;
@@ -4033,6 +4010,14 @@ body.in-frame.html {
 
   .has-transcript .av-main-video-section {
     width:50% !important;
+  }
+
+  .node-type-audio .has-transcript .av-main-video-section.col-sm-5 {
+    width: 41.66666667%
+  }
+
+  .node-type-audio .has-transcript .av-main-video-section.col-sm-7 {
+    width: 58.33333333%
   }
   
   .shanti-filters .control-box-cell-header p {
