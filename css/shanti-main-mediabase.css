@@ -1666,7 +1666,7 @@ ul.links.inline {
 .has-transcript .tabs.primary li a.transcript-edit::after{
   content: '\f040';
   font-family:'FontAwesome';
-  color: #505050;
+  color: #eee;
   font-size: 1.25em;
   position: relative;
   top: -0.055rem;
