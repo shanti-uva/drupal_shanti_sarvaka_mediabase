@@ -3740,6 +3740,10 @@ button on video window
   padding-right:0;
 }
 
+.node-type-collection .mb-solr-results{
+  margin-top: 0;
+}
+
 
 /*----------------*/
 /* BEGIN carousel */

@@ -203,7 +203,8 @@
 }
 
 .node-type-collection .mb-solr-results .head table.pagerer{
-  margin-top: -1.2rem;
+  /*margin-top: -1.2rem;*/
+  margin-top: 0;
 }
 
 .mb-solr-results .head .label {
