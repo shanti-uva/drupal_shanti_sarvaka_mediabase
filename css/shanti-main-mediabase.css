@@ -1175,7 +1175,7 @@ ul.links.inline {
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
-  border-right: 1px solid #ccc;
+  /*border-right: 1px solid #ccc;*/
 }
 
 
