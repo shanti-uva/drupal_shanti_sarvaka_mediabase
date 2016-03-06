@@ -30,6 +30,7 @@
   color: #2db6b4 !important;
 }
 
+.nav-justified>li.active,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active {
@@ -1182,6 +1183,7 @@ ul.links.inline {
 
 .transcript-container::-webkit-scrollbar {
   width: 1rem;
+  background-color: #fafafa;
 }
  
 .transcript-container::-webkit-scrollbar-track {
@@ -2343,7 +2345,7 @@ div.ctools-modal-content .modal-content {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #707070;
+  background: #888;
   padding: 0;
   display: none;
   height: 8rem;
