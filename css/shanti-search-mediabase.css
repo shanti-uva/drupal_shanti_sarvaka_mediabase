@@ -305,7 +305,7 @@ span.fancytree-node.fancytree-active {
 
 
 
-/** Ajax Progress Throbber **/
+/** Ajax Progress Throbber -------- NOTE this was moved to Sarvaka for testing
 .ajax-progress, .ajax-progress *, 
 .ajax-progress-throbber, 
 .ajax-progress-throbber * {
@@ -313,6 +313,7 @@ span.fancytree-node.fancytree-active {
   margin: 0;
   padding: 0;
 }
+**/
 
 /** No Results Header **/
 .view-media-by-kmap .view-empty h3 {
