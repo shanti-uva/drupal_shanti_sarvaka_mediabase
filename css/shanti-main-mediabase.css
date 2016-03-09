@@ -2342,7 +2342,7 @@ div.ctools-modal-content .modal-content {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
-  background: #888;
+  /*background: #888;*/
   padding: 0;
   display: none;
   height: 8rem;
@@ -2351,6 +2351,12 @@ div.ctools-modal-content .modal-content {
   border: 1px solid #777;
   border-width: 0 1px 1px;
   border-right-color: #707070;
+
+  background-color: #888;
+  background-image: linear-gradient(transparent 89%, rgba(255, 255, 255, .4) 89%);
+  background-size: 3px 3px;
+  height: 7.5rem;
+  opacity: 0.88;
 }
 
 .transcripts-ui-search-form {
