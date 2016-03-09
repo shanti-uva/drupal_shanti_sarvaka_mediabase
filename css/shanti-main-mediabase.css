@@ -2352,8 +2352,8 @@ div.ctools-modal-content .modal-content {
   border-right-color: #707070;*/
 
   background-color: #888;
-  background-image: linear-gradient(transparent 89%, rgba(255, 255, 255, .4) 89%);
-  background-size: 3px 3px;
+  background-image: linear-gradient(transparent 90%, rgba(255, 255, 255, .25) 90%);
+  background-size: 4px 4px;
   height: 7.8rem;
 }
 /*
