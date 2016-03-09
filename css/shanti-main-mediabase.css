@@ -3430,6 +3430,10 @@ fieldset.form-wrapper .f-set > table{
   font-size:90%;
 }
 
+.avinfo .avauthor .icon.shanticon-agents::before{
+  margin-right:0.5rem;
+}
+
 .avinfo .transcripts-processed .form-item {
   margin-top: 0.5rem;
 }
