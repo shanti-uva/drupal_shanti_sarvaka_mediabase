@@ -2345,7 +2345,6 @@ div.ctools-modal-content .modal-content {
   /*background: #888;*/
   padding: 0;
   display: none;
-  height: 8rem;
   position: relative;
   margin: 0 0 0 0.1rem;
   border: 1px solid #777;
@@ -2355,7 +2354,7 @@ div.ctools-modal-content .modal-content {
   background-color: #888;
   background-image: linear-gradient(transparent 89%, rgba(255, 255, 255, .4) 89%);
   background-size: 3px 3px;
-  height: 7.5rem;
+  height: 7.8rem;
   opacity: 0.88;
 }
 
