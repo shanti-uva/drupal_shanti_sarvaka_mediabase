@@ -2282,7 +2282,7 @@ ul.links.inline {
 #modalContent{
   box-shadow: 0 0 10px #aaa;
   border-radius: 1rem;
-  z-index: 100001 !important;
+  z-index: 1000 !important;
   min-width: 500px;
 }
 
