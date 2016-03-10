@@ -2342,14 +2342,19 @@ div.ctools-modal-content .modal-content {
 /***** transcript search *****/
 /*---------------------------*/
 .transcript-search-wrapper {
+  /*background: #888;*/
   padding: 0;
   display: none;
   position: relative;
   margin: 0 0 0 0.1rem;
-  height: 7.8rem;
-  background-color: gray;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+  /*border: 1px solid #777;
+  border-width: 0 1px 1px;
+  border-right-color: #707070;*/
+
+  background-color: #888;
+  background-image: linear-gradient(transparent 95%, rgba(255, 255, 255, .10) 95%);
   background-size: 4px 4px;
+  height: 7.8rem;
 }
 /*
 .transcripts-ui-search-form {
