@@ -1194,7 +1194,7 @@ ul.links.inline {
   background-color: #aaa;
   cursor: pointer;
   width: 1rem;
-  border-radius: 0.5rem
+  border-radius: 0.15rem
 }
 
 .transcript-container::-webkit-scrollbar-thumb:hover {
