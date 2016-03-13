@@ -1265,7 +1265,7 @@ ul.links.inline {
 
 .av-main-transcript-section .btn-group-transcript .btn.btn-default.dropdown-toggle {
   background-image: none;
-  background: #555;  
+  background: #444;  
   border-radius: 0;
   height: 6rem;
   border: 1px solid #ddd;
@@ -1297,7 +1297,7 @@ ul.links.inline {
 
 .av-main-transcript-section .bootstrap-select.btn-group .btn:hover,
 .av-main-transcript-section .bootstrap-select.btn-group .btn:focus {
-  background: #888;
+  background: #333;
 }
 
 .speaker-name {
