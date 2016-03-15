@@ -879,15 +879,14 @@ a.hide-annot::before {
 .node-collection .field-subcollection label {
   margin: 0;
 }
-
+/*
 .collimage .img-thumbnail {
   padding: 0.7rem;
   margin: 12px 18px 5px;
   border-radius: 0.2rem;
   background-clip: padding-box;
- /* border: 2px solid #32ccca; */
 }
-
+*/
 .collimage .img-thumbnail.pull-left {
   margin-left: 0.7rem;
 }
@@ -3751,11 +3750,11 @@ button on video window
 .node-type-collection .tab-pane.main-col > div{
   padding-top:0.7rem;
 }
-
+/*
 .node-type-collection .about .img-thumbnail.pull-left{
   margin-left:0;
   margin-top:0;
-}
+}*/
 .node-type-team .about .description h4,
 .node-type-collection .about .description h4{
   padding-top:0;
