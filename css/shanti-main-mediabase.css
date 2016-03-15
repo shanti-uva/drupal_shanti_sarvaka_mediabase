@@ -879,17 +879,10 @@ a.hide-annot::before {
 .node-collection .field-subcollection label {
   margin: 0;
 }
-/*
-.collimage .img-thumbnail {
-  padding: 0.7rem;
-  margin: 12px 18px 5px;
-  border-radius: 0.2rem;
-  background-clip: padding-box;
-}
-*/
 
-.collimage .media>.pull-left{
-  padding-right:0;
+.collimage .img-thumbnail{
+  padding: 0.4rem;
+  margin: 0 1rem .5rem 0;
 }
 
 .collimage .img-thumbnail.pull-left {
