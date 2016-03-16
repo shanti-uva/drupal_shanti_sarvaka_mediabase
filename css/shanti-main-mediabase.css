@@ -3784,10 +3784,11 @@ button on video window
 .logged-in .carousel-description p {
   height: 11em;
   overflow: hidden;
+  font-size: 0.93em;
 }
 
 .logged-in .carousel-title {
-  font-size: 1em;
+  font-size: 1.18em;
 }
 
 .logged-in .carousel .byline {
