@@ -1962,7 +1962,7 @@ ul.links.inline {
   background-clip: padding-box;
   min-width: 18rem;
   padding-bottom:1rem;
-  margin-top:-1rem;
+  margin-top:-0.1rem;
 }
 
 .av-main-transcript-section .dropdown-menu li a span.text {
