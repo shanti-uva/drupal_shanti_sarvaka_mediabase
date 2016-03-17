@@ -37,6 +37,10 @@
   border-top-color: #2db6b4 !important;
 }
 
+.region-sidebar-second{
+  background-color: transparent;
+}
+
 .navbar-brand:active .site-slogan {
   color: #444 !important;
 }
@@ -59,13 +63,6 @@
 .view-collection-media table.pagerer{
   margin-bottom:  1.5rem;
 }
-
-#sidebar-second,
-.region-sidebar-second{
-  background-color: transparent;
-}
-
-
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li {
@@ -4093,11 +4090,6 @@ body.in-frame.html {
     width: 33.333%;
   }
 
-  #sidebar-second,
-  .region-sidebar-second{
-    background-color: #fff;
-  }
-
   .logged-in.front .shanti-filters .control-box-cell-pager{
     width: 50%;
     margin-top:-8rem;
@@ -4122,6 +4114,12 @@ body.in-frame.html {
 
   .logged-in .carousel-description p {
     height: 10em;
+  }
+
+  #sidebar-second,
+  .region-sidebar-second{
+    background-color: #fff;
+    border-radius: 0.3rem 0 0 0;
   }
 } 
 
