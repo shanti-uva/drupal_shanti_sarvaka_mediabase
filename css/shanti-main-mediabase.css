@@ -3977,7 +3977,9 @@ body.in-frame.html {
     width: 100% !important;
   }
 
-
+  .logged-in .carousel-title {
+    font-size: 1.25em;
+  }
 
 }
   
