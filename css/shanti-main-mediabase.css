@@ -2279,7 +2279,7 @@ ul.links.inline {
   box-shadow: 0 0 10px #aaa;
   border-radius: 1rem;
   z-index: 1000 !important;
-  min-width: 500px;
+  min-width: 550px;
 }
 
 div.ctools-modal-content button.btn.btn-primary{
@@ -2305,22 +2305,15 @@ div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
 }
 
 div.ctools-modal-content {
-  width: 100% !important;
-  margin: 0 auto;
-  max-width: 500px !important;
-  max-height: 300px !important;
-}  
-
-div.ctools-modal-content {
   margin: 0 auto;
   width: 100% !important;
-  max-width: 500px !important;
+  max-width: 550px !important;
   max-height: 350px !important;
 }
 
 div.ctools-modal-content .modal-content {
   width: 100% !important;
-  max-width: 500px !important;
+  max-width: 550px !important;
 }
 
 @media (max-width: 600px) { 
@@ -3012,7 +3005,7 @@ div.ctools-modal-content{
 }
 
 div.ctools-modal-content .modal-content{
-  padding: 2rem 15%;
+  padding: 2rem 9%;
   box-shadow:none !important;
   border:none !important;
   background:transparent;
