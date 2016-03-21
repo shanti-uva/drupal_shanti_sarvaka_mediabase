@@ -881,8 +881,8 @@ a.hide-annot::before {
 }
 
 .collimage .img-thumbnail{
-  padding: 0.4rem;
-  margin: 0 1rem .5rem 0;
+  /*padding: 0.4rem;*/
+  margin: 0.3rem 1rem .5rem 0;
 }
 
 .collimage .img-thumbnail.pull-left {
@@ -1144,8 +1144,6 @@ ul.links.inline {
   font-size: 1em;
 }
 
-
-
 .page-my-content-workflow .views-exposed-widgets {
   margin: 1rem;
 }
@@ -1159,11 +1157,7 @@ ul.links.inline {
 .av-main-transcript-section{
   padding-left:1rem;
 }
-/*
-.transcript-controls{
-  margin-right: 2rem;
-}
-*/
+
 .transcript-container {
   height: 800px;
   overflow-x: hidden;
@@ -1171,10 +1165,7 @@ ul.links.inline {
   -webkit-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
   overflow-y: scroll !important;
-  /*border-right: 1px solid #ccc;*/
 }
-
-
 
 .transcript-container::-webkit-scrollbar {
   width: 1rem;
@@ -1183,9 +1174,7 @@ ul.links.inline {
 }
  
 .transcript-container::-webkit-scrollbar-track {
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
-  border-radius: .7rem; */
-  /*width: 1.2rem;*/
+
 }
 
 .transcript-container::-webkit-scrollbar-thumb {
@@ -1199,10 +1188,6 @@ ul.links.inline {
   background-color: #888;
   cursor: pointer;
 }
-
-
-
-
 
 .transcript-container.show-search {
   margin-top: 7rem;
@@ -3728,13 +3713,14 @@ button on video window
 }
 
 .node-type-collection .tab-pane.main-col > div{
-  padding-top:0.7rem;
+  padding-top:0.2rem;
 }
 /*
 .node-type-collection .about .img-thumbnail.pull-left{
   margin-left:0;
   margin-top:0;
-}*/
+}
+
 .node-type-team .about .description h4,
 .node-type-collection .about .description h4{
   padding-top:0;
@@ -3749,7 +3735,7 @@ button on video window
   padding-left:0;
   padding-right:0;
 }
-
+*/
 .node-type-collection .mb-solr-results{
   margin-top: 0;
 }
