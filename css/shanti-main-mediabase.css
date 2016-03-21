@@ -2370,6 +2370,7 @@ div.ctools-modal-content .modal-content {
   border: 1px solid #9097d3;
   box-shadow: 0 0 4px #949bd8;
   border-collapse: separate;
+  box-shadow: 0 2px 4px #ccc inset;
 }
 
 .transcript-search-wrapper > .icon{
