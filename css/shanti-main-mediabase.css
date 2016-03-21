@@ -3203,7 +3203,7 @@ fieldset.form-wrapper .f-set{
   margin-bottom:0;
   font-size: 0.93em;
   display:block;
-  margin-left:1rem;
+  margin-left:2rem;
 }
 
 .field-type-field-collection .form-item.form-type-select label{
@@ -4197,3 +4197,12 @@ body.in-frame.html {
 
 
 
+/* admin video edit forms section under title and description */
+.filter-guidelines{
+  padding: 2rem 5em 0 1rem;
+}
+
+table.sticky-table .filter-guidelines ul li{
+  line-height: 1.5em;
+  padding-top: 0.7rem
+}
