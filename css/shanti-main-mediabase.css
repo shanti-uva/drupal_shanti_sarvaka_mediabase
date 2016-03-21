@@ -2214,7 +2214,7 @@ ul.links.inline {
 }
 
 .transcript-content .minimal-view .play-button .btn{
-  /* background: white;
+  background: white;
   color: #fff;
   font-size: 0;
   height: 2.5rem;
@@ -2226,9 +2226,7 @@ ul.links.inline {
   box-shadow: none;
   overflow:visible;
   border: 1px solid #eee;
-  border-radius: 50%; */
-
-  display:none;
+  border-radius: 50%; 
 }
 
 .transcript-content .minimal-view .play-button .btn:hover,
