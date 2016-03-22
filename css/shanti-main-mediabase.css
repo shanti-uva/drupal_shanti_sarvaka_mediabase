@@ -54,18 +54,7 @@
 }
 
 /*--- END colors ---*/
-.view-collection-media{
-  top:-3.5rem;
-  position: relative;
-}
 
-.view-collection-media .view-content{
-  clear: both;
-}
-
-.view-collection-media table.pagerer{
-  margin-top:  1.5rem;
-}
 
 /* sidebar search results sorting list */
 .sidebar #block-apachesolr-search-sort ul li {
@@ -157,6 +146,9 @@
 }
 */
 
+.view-collection-media table.pagerer{
+  margin-top: -3.5rem;
+}
 
 .view-collections .views-row {
   padding-top: 0.75em;
