@@ -3566,13 +3566,8 @@ a.tabledrag-toggle-weight {
   display: block;
 }
 
-.video-overview-title {
-  margin-bottom: 0.25em;
+.video-overview > h5 {
   text-transform: uppercase;
-  font-size: 1em;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
-  font-weight: bold;
-  font-weight: 700;
 }
 
 .avplace .field,
