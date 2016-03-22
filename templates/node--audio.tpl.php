@@ -203,7 +203,7 @@ else:     /************ FULL Display ***********/
 	        <?php if(!empty($content['service_links'])): ?>
 	          <div class="avshare">
 	          	<div class="share-links">
-	          		<h5>Share <span>&lt;/&gt; embed</span></h5>
+	          		<h6>Share <span>&lt;/&gt; embed</span></h6>
 	          		<ul>
 	          			<?php  print render($content['service_links']);  ?>
 	          		</ul>
