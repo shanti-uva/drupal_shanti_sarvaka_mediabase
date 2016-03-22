@@ -115,7 +115,7 @@
       </div>
     </div>
     <div class="description trim">
-			<h4>Overview</h4>
+			<h5>Overview</h5>
       <?php 
       if (!empty($content['body'])) {
       	 print render($content['body']); 

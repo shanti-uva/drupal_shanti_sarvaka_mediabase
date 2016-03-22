@@ -870,12 +870,13 @@ a.hide-annot::before {
 /**
  *  Individual Collection Pages
  */
+/* 
 .node-collection .collection-content {
   clear: both;
   margin: 0 8px;
   padding-top: 1px;
 }
-
+*/
 .node-collection .field-subcollection label {
   margin: 0;
 }
