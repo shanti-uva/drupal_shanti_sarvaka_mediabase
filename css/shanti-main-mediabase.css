@@ -880,19 +880,6 @@ a.hide-annot::before {
   margin: 0;
 }
 
-.collimage .img-thumbnail{
-  /*padding: 0.4rem;*/
-  margin: 0.3rem 1rem .5rem 0;
-}
-
-.collimage .img-thumbnail.pull-left {
-  margin-left: 0.7rem;
-}
-
-.collimage .img-thumbnail.pull-right {
-  margin-right: 0;
-}
-
 .about .description .field-item p {
   text-align: justify;
   padding-right: 12px;
