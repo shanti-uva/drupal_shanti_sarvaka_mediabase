@@ -880,7 +880,7 @@ a.hide-annot::before {
 .node-collection .field-subcollection label {
   margin: 0;
 }
-
+/*
 .about .description .field-item p {
   text-align: justify;
   padding-right: 12px;
@@ -890,12 +890,11 @@ a.hide-annot::before {
 }
 
 .about .description h4 {
-  font-weight: bold !important;
   text-transform: uppercase;
   font-size: 0.9em;
   padding-top: 12px;
 }
-
+*/
 .about .field label {
   font-weight: bold !important;
 }
