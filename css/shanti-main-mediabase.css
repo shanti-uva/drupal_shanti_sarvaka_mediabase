@@ -879,7 +879,7 @@ a.hide-annot::before {
 }
 
 .node-type-team .tab-pane.main-col > div{
-  padding-top:0;
+  padding-top:0.5rem;
 }
 
 
