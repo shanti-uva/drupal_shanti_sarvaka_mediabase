@@ -3761,9 +3761,9 @@ button on video window
 }
 
 .logged-in .carousel-main-image img {
-  margin-left: 0;
+  /*margin-left: 0;
   max-width: 100%;
-  margin: 0;
+  margin: 0;*/
   /*max-height: 225px;*/
 }
 /*** END Carousel ***/
@@ -4033,7 +4033,7 @@ body.in-frame.html {
   }
 
   .logged-in .carousel-main-image img {
-    max-height: 200px;
+    /*max-height: 200px;*/
   }
 
   .logged-in .carousel-description p {
