@@ -147,7 +147,7 @@
 */
 
 .view-collection-media table.pagerer{
-  margin-top: -3.5rem;
+  margin-top: -4rem;
 }
 
 .view-collections .views-row {
@@ -874,8 +874,8 @@ a.hide-annot::before {
 }
 
 .node-type-team h2:first-of-type{
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .node-type-team .tab-pane.main-col > div{
@@ -3758,13 +3758,6 @@ button on video window
 
 .logged-in .carousel .byline {
   font-size: 70%;
-}
-
-.logged-in .carousel-main-image img {
-  /*margin-left: 0;
-  max-width: 100%;
-  margin: 0;*/
-  /*max-height: 225px;*/
 }
 /*** END Carousel ***/
 
