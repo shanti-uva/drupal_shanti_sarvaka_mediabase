@@ -833,7 +833,7 @@
 .av-main-transcript-section .selectpicker .caret{
   position: absolute;
   top: 36% !important;
-  right:27px !important;
+  right: 35% !important;
 }
 
 .av-main-transcript-section .selectpicker .caret::before {
