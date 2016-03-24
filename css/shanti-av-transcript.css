@@ -830,14 +830,13 @@
   height: 2.25em;
 }
 
+.av-main-transcript-section .selectpicker .caret{
+  position: absolute;
+  top: 36% !important;
+}
+
 .av-main-transcript-section .selectpicker .caret::before {
   color: #fff !important;
-  text-shadow:1px 1px #777;
-  font-size: 1.88em;
-  left: -1.3rem;
-  right: 0;
-  top: -0.8rem;
-  z-index: 10;
 }
 
 .av-main-transcript-section .selectpicker .fa::before {
