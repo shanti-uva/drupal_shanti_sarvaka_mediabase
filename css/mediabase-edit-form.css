@@ -280,3 +280,13 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
+
+
+.page-node-edit .bootstrap-select.btn-group .btn .caret{
+	position: absolute;
+	top: 3px;
+	right: 27px;
+}
+
+
+
