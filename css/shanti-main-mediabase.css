@@ -3666,8 +3666,6 @@ button on video window
 
 
 
-
-
 /* newer hacks oct 29, 2015 view-display-id-page_list */
 .page-collections .views-field-field-images{
   display: inline-block;
@@ -3693,7 +3691,6 @@ button on video window
 
 
 
-
 /* single collection page */
 /** Hiding Spaces table until it can be properly implemented */
 .node-type-collection table.spaces {
@@ -3703,27 +3700,7 @@ button on video window
 .node-type-collection .tab-pane.main-col > div{
   padding-top:0.2rem;
 }
-/*
-.node-type-collection .about .img-thumbnail.pull-left{
-  margin-left:0;
-  margin-top:0;
-}
 
-.node-type-team .about .description h4,
-.node-type-collection .about .description h4{
-  padding-top:0;
-  font-size: 1em;
-}
-
-.node-type-collection .description.trim{
-  padding-left: 1rem;
-}
-
-.node-type-collection .content-section > .tab-content.container-fluid{
-  padding-left:0;
-  padding-right:0;
-}
-*/
 .node-type-collection .mb-solr-results{
   margin-top: 0;
 }
@@ -3838,21 +3815,9 @@ body.in-frame.html {
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before{
   color: #4ca6fb !important;
 }
-
 /*** END iframe */
 
 
-
-
-
-
-
-
-
-/* editing form techincal metadata */
-#node_video_form_group_technical .node-video-form{
-  margin: 0 !important;
-}
 
 
 
@@ -3887,15 +3852,7 @@ body.in-frame.html {
 
 /*-------------------------*/
 /***** BEGIN max-width *****/
-/*-------------------------*/
-@media screen and (max-width: 499px) {
-
-} 
-
-@media screen and (max-width: 599px) {
-
-}  
-
+/*-------------------------*/ 
 @media screen and (max-width: 767px) {
 
   .node-type-audio .nav-justified>li.active::before,
@@ -3907,8 +3864,6 @@ body.in-frame.html {
 /***** END max-width *****/
 
 
-
-
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
@@ -3918,12 +3873,7 @@ body.in-frame.html {
     width:60%;
     margin-top: -6.5rem;
   }
-/*
-  .shanti-filters table.pagerer,
-  .shanti-filters .control-box-cell-pager{
-    float:right;
-  }
-*/
+
   .logged-in.front .shanti-filters .control-box-cell-pager {
     margin-top: -8rem;
   }
@@ -3943,13 +3893,6 @@ body.in-frame.html {
   
 @media screen and (min-width:600px) {
 
-
-/*
-  .shanti-filters table.pagerer,
-  .shanti-filters .control-box-cell-pager {
-    height:auto;
-  }
-  */
 }
 
 @media screen and (min-width: 768px) {
@@ -3958,24 +3901,7 @@ body.in-frame.html {
     width:33.333%;
     margin-top: -6.5rem;
   }
-/*
-  .view-collections .view-result-count-info {
-    margin-top: 2.3rem;
-    margin-bottom: 0.5rem;
-  }
 
-  .view-collections #view-all-colls-switcher {
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-  }
-
-  .view-collections .view-all-colls-control-box .pager {
-    margin: 2.3rem 0 1rem;
-  }
-  .view-collections .view-all-colls-control-box .pagerer-pager > .pager {
-    margin-top: 1.5rem;
-  }
-*/
   .page-collections .shanti-filters .control-box-cell-header,
   .page-collections .shanti-filters .control-box-cell-filters{
     width:33% !important;
@@ -3984,8 +3910,6 @@ body.in-frame.html {
   .page-collections .shanti-filters .control-box-cell-pager{
     width: 40% !important;
   }
-
-
 
   /* video page layout */
   .av-main-video-section {
@@ -4010,7 +3934,6 @@ body.in-frame.html {
   	font-size: 90%;
     padding-left: 12px;
   }
-
 
   /* carousel front page */
   .logged-in .carousel-title {
@@ -4159,8 +4082,6 @@ body.in-frame.html {
 
 @media screen and (min-width: 1280px) {
   
-
-  
 }
 
 @media (min-width:1400px) {
@@ -4177,6 +4098,9 @@ body.in-frame.html {
 
 
 
+
+
+
 /* admin video edit forms section under title and description */
 .filter-guidelines{
   padding: 2rem 5em 0 1rem;
@@ -4189,8 +4113,15 @@ table.sticky-table .filter-guidelines ul li{
 
 
 
+/* editing form techincal metadata */
+#node_video_form_group_technical .node-video-form{
+  margin: 0 !important;
+}
 
-.page-group-node-admin legend{
+
+
+
+.page-group-node-admin fieldset.form-wrapper {
   margin-left:0;
   font-size: 1.06em;
 }
