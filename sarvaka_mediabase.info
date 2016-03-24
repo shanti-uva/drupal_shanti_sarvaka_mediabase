@@ -29,7 +29,7 @@ regions[admin_footer]   = Admin Footer
 
 stylesheets[all][] =  css/shanti-main-mediabase.css
 stylesheets[all][] =  css/shanti-search-mediabase.css
-stylesheets[all][] =  css/shanti-av-transcripts.css
+stylesheets[all][] =  css/shanti-av-transcript.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
