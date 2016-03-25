@@ -812,7 +812,8 @@
   background-clip: padding-box;
   min-width: 18rem;
   padding-bottom:1rem;
-  margin-top:-0.1rem;
+  margin-top: 3.3rem;
+  border-radius: 0 0 0.8rem 0.8rem !important;
 }
 
 .av-main-transcript-section .dropdown-menu li a span.text {
