@@ -876,7 +876,7 @@
 
 .btn-group.bootstrap-select.show-tick.transcript-options{
   margin-bottom:0;
-  margin-top: 0;
+  margin-top: -3.3rem;
 }
 
 .av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
