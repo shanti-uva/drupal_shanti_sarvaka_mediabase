@@ -1162,7 +1162,7 @@
   top: 1rem;
   overflow: auto;
   vertical-align: middle;
-  box-shadow: 0 2px 4px #888 inset;
+  box-shadow: 0 2px 4px #999 inset;
   border-collapse: separate;
   background: #fff;
   -webkit-transition-property: all;
