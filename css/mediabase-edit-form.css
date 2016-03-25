@@ -289,4 +289,24 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 }
 
 
+/* admin video edit forms section under title and description */
+.filter-guidelines{
+  padding: 2rem 5em 0 1rem;
+}
+
+table.sticky-table .filter-guidelines ul li{
+  line-height: 1.5em;
+  padding-top: 0.7rem
+}
+
+
+
+/* editing form techincal metadata */
+#node_video_form_group_technical .node-video-form{
+  margin: 0 !important;
+}
+
+
+
+
 
