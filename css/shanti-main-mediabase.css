@@ -418,10 +418,12 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters .control-box-cell-filters {
   margin: 0;
+  padding-left:3rem;
 }
 
 .logged-in.front .shanti-filters .control-box-cell-filters {
   width:100%;
+  padding-left:0;
 } 
 
 .shanti-filters .control-box-cell-filters .views-exposed-form .form-item {
@@ -473,7 +475,10 @@ form#views-exposed-form-browse-media-home-block {
   float:right;
 }
 
-
+.shanti-filters .bootstrap-select.btn-group .btn .caret{
+  right: 23px;
+  top: 3px
+}
 /*
 .shanti-filters table.pagerer {
   margin-top: -1rem;
