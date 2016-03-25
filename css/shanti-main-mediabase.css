@@ -1621,7 +1621,6 @@ button on video window
 
 
 /*** BEGIN iframe */
-
 .in-frame header.header-banner,
 .in-frame header.banner .page-title .icon,
 .in-frame header.banner .breadwrap, 
@@ -1709,18 +1708,10 @@ body.in-frame.html {
   margin-top:-0.75em;
 }
 
-
-
 .node-type-video .tab-pane.main-col > div {
   max-width: 1050px !important;
   margin: 0 auto !important;
 }
-
-
-
-
-
-
 
 
 
@@ -1790,10 +1781,6 @@ body.in-frame.html {
     padding-right: 0 !important;
     width:70% !important;
   }
-
-
-
-
   
   .shanti-filters .control-box-cell-header p {
   	display: inline-block;
@@ -1931,8 +1918,6 @@ body.in-frame.html {
     margin-top: -0.5rem;
   }
 
-
-
   .logged-in .carousel .carousel-main-image{
     width: 31%;
   }
@@ -1960,12 +1945,6 @@ body.in-frame.html {
     width: 72%;
   }
 }
-
-
-
-
-
-
 
 
 
