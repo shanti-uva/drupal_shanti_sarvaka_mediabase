@@ -52,11 +52,15 @@
 ::selection {
   background: #c0532f !important;
 }
-
 /*--- END colors ---*/
 
 
-/* sidebar search results sorting list */
+
+/**
+* -------------------------------------
+* Sidebar search results sorting list
+* -------------------------------------
+*/
 .sidebar #block-apachesolr-search-sort ul li {
   list-style-type: none;
 }
@@ -111,8 +115,11 @@
 }
 
 
-/*--- view collections page ---*/
-
+/**
+* ------------------
+* Collections page
+* ------------------
+*/
 .view-collection-media table.pagerer{
   margin-top: -4rem;
 }
@@ -291,8 +298,10 @@ form#views-exposed-form-browse-media-home-block {
 
 
 
-/*
-* SHANTI filters
+/**
+* -------------------
+* Shanti Filters
+* -------------------
 */
 
 .shanti-filters .ajax-progress {
@@ -563,8 +572,10 @@ a.hide-annot::before {
 
 
 /**
- *  All Collections Page
- */
+* -------------------
+* All Collections
+* -------------------
+*/
 .page-collections .view-collections{ 
   padding-bottom:10rem;
 }
@@ -593,8 +604,10 @@ a.hide-annot::before {
 
 
 /**
- *  Individual Collection Pages
- */
+* --------------------------
+* Individual Collections
+* --------------------------
+*/
 .node-collection .field-subcollection label {
   margin: 0;
 }
@@ -611,9 +624,11 @@ a.hide-annot::before {
 
 
 
-/** 
- *  Individual A/V Pages 
- */
+/**
+* --------------------------
+* Individual A/V pages
+* --------------------------
+*/
 
 /* add space after collection name */
 #av-details .field-name-av-collection {
@@ -701,8 +716,12 @@ ul.links.inline {
   display: block;
 }
 
-/** Technical Metadata Fields **/
-    
+
+/**
+* -----------------------------
+* Technical Metadata Fields
+* -----------------------------
+*/
 .field-name-field-recording-location-new > .field-label-span {
     font-weight: bold;
 }
@@ -850,13 +869,49 @@ ul.links.inline {
 
 
 
-
-
+/**
+* --------------
+* Modal Popup
+* --------------
+*/
 #modalContent{
   box-shadow: 0 0 10px #aaa;
   border-radius: 1rem;
   z-index: 1000 !important;
   min-width: 550px;
+  max-height:280px;
+  overflow-x:hidden
+}
+
+@media (max-width: 600px) { 
+    
+    #modalContent {
+      position: fixed !important;
+      min-width: 320px;
+      top: 12% !important;
+      bottom: 12% !important;
+      right: 4% !important;
+      left: 4% !important;
+    }
+}
+
+/* kaltura upload video */
+div.ctools-modal-content {
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 550px !important;
+  max-height: 350px !important;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+div.ctools-modal-content .modal-content {
+  width: 100% !important;
+  max-width: 550px !important;
+  padding: 2rem 9%;
+  box-shadow:none !important;
+  border:none !important;
+  background:transparent;
 }
 
 div.ctools-modal-content button.btn.btn-primary{
@@ -865,6 +920,10 @@ div.ctools-modal-content button.btn.btn-primary{
   position: relative;
   left: -6em;
   padding: .5rem 2rem .4rem;
+}
+
+div.ctools-modal-content .btn.btn-delete.btn-primary{
+  margin-top:0 !important;
 }
 
 div.ctools-modal-content button#edit-submit--5.btn.btn-primary.form-submit{
@@ -880,68 +939,17 @@ div.ctools-modal-content button#edit-media-remove-button.btn.btn-primary{
 div.ctools-modal-content div#edit-actions--3.form-actions.form-wrapper{
   margin-top:4rem;
 }
-
-div.ctools-modal-content {
-  margin: 0 auto;
-  width: 100% !important;
-  max-width: 550px !important;
-  max-height: 350px !important;
-}
-
-div.ctools-modal-content .modal-content {
-  width: 100% !important;
-  max-width: 550px !important;
-}
-
-@media (max-width: 600px) { 
-    
-    #modalContent {
-      position: fixed !important;
-      min-width: 320px;
-      top: 12% !important;
-      bottom: 12% !important;
-      right: 4% !important;
-      left: 4% !important;
-    }
-}
-
-
-
-
+/*
 .modal-header button.close{
   position: relative;
   top: -1.5rem;
   left: 1rem;
 }
 
-
-
-
-/* kaltura upload video */
-
-div.ctools-modal-content{
-  border: 1px solid #ccc;
-  border-radius: 1rem;
-}
-/*
 .modal-content .messages.status{
   display:none;
 }
 */
-#modal-content{ 
-  border-radius: 1rem;
-  box-shadow: 0 0 10px #aaa;
-  max-height:280px;
-  overflow-x:hidden
-}
-
-div.ctools-modal-content .modal-content{
-  padding: 2rem 9%;
-  box-shadow:none !important;
-  border:none !important;
-  background:transparent;
-}
-
 div.ctools-modal-content .modal-header{
   padding: 1.5rem 3rem;
   background-color: #2fbebc !important;
@@ -999,13 +1007,6 @@ div#edit-actions--3.form-actions.form-wrapper{
   text-align: center;
   font-size: 1.25em;
 }
-
-div.ctools-modal-content .btn.btn-delete.btn-primary{
-  margin-top:0 !important;
-}
-
-
-
 /* sidecolumn upload video-audio buttons */
 .region-sidebar-second .block-mb-structure .btn.btn-icon{
   letter-spacing: 0.03rem;
@@ -1031,10 +1032,11 @@ div.ctools-modal-content .btn.btn-delete.btn-primary{
 
 
 
-
-/********************/
-/* .node-video-form */
-/********************/
+/**
+* ----------------------
+* Node Video Form
+* ----------------------
+*/
 /* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
@@ -1231,7 +1233,6 @@ fieldset.form-wrapper .f-set > table{
   top: 0.3rem;
 }
 
-/*.node-video > div{ border-bottom:1px solid #f7f7f7;}*/
 .node-video ul.links.inline {
   position: relative;
   top: 10px;
@@ -1244,7 +1245,7 @@ fieldset.form-wrapper .f-set > table{
 .video-row {
   margin-top: 0.1rem;
 }
-/* left column wrapper of date/time/author/social links immediately under video */
+/* left column date/time/author/social */
 .avinfo {
   padding-left: 0px !important;
   padding-top:1rem;
@@ -1282,7 +1283,6 @@ fieldset.form-wrapper .f-set > table{
   margin-right:0.5rem;
 }
 
-
 .avdesc {
   margin: 0;
   padding-bottom:1.5rem;
@@ -1293,8 +1293,7 @@ fieldset.form-wrapper .f-set > table{
 .avduration .icon {
   margin-right: 0.25em;
 }
-/* .avduration::after,
-.avrating::after{ border-bottom: 1px solid silver; width:175px; margin:4px;} */
+
 .fivestar-widget .star{
   width: 17px;
   height: 17px;
@@ -1425,7 +1424,6 @@ a.tabledrag-toggle-weight {
   display: inline;
 }
 
-/* a.show-more-toggle{ font-size:0.88em; float:left; text-transform:capitalize; font-weight:bold;  font-family:'museo-sans-700',helvetica,arial,sans-serif;} */
 .video-overview .desc-readmore {
   margin: -10px 0 20px;
 }
@@ -1543,7 +1541,7 @@ button on video window
 
 
 
-/* newer hacks oct 29, 2015 view-display-id-page_list */
+/* newer... oct 29, 2015 view-display-id-page_list */
 .page-collections .views-field-field-images{
   display: inline-block;
   float: left;
@@ -1584,10 +1582,12 @@ button on video window
 
 
 
-/*----------------*/
-/* BEGIN carousel */
-/*----------------*/
-/* intro text above carousel */
+/**
+* --------------
+* BEGIN Carousel
+* --------------
+*/
+/* Overview text above carousel */
 .front #block-system-main h4 {
   display: none;
 }

@@ -1,8 +1,4 @@
-/*---- BEGIN search flyout ---*/
-/* .input-section .search-group {
-  margin-top: -0.7rem;
-  height: 8.75rem;
-} */
+
 
 .extruder .input-section {
   height: 87px;
@@ -161,17 +157,7 @@
   position: relative;
   top: 0.25em;
 }
-/*
-.view-section ul.fancytree-container { min-height: 100%; }
-.fancytree-expander { background-image: none !important; }  Removes default fancytree arrows 
-*/
 
-/*
-.view-section .nav-tabs>li.km-facet-tab, 
-.view-section .nav-tabs>li:first-child {
-  width: 33%;
-}
-*/
 .view-section .nav-tabs>li.km-facet-tab{ width:30%;}
 .view-section .nav-tabs>li:first-child{ width:40%;}
 
@@ -185,18 +171,24 @@
   font-size: 0.93em;
 }
 
-/*--------- SOLR Results ---------------*/
+
+
+/**
+* ---------------
+* SOLR Results
+* ---------------
+*/
+
 .mb-solr-results {
-  margin: 1.8rem 0 0;
+  /* margin: 1.8rem 0 0; */
 }
 
 .mb-solr-results .head {
-  /* margin-bottom: 8rem; mf8yk - hid this 08/20 since it created large white space above grid in content area */
   margin-bottom: 0;
 }
 
 .mb-solr-results .head table.pagerer {
-  margin: -2.6rem 2.5rem 0 0;
+  margin: -1.2rem 0 0 0;
 }
 
 .node-type-collection .mb-solr-results .head table.pagerer{
@@ -205,12 +197,6 @@
 
 .logged-in.node-type-collection .mb-solr-results .head table.pagerer{
   margin-top: -1.2rem;
-}
-
-.mb-solr-results .head .label {
-  color: #333;
-  text-transform: uppercase;
-  font-size: 0.9em;
 }
 
 .mb-solr-results .foot table.pagerer {
@@ -223,104 +209,28 @@
   font-size: 0.9em;
 }
 
-/*.view-section .nav-tabs>li{ width:45% !important;	max-width: 200px; font-size: .9em;}
-.view-section .nav-tabs>li:first-child{ width:55% !important;}*/
-
-/*******************************************************************************
- * Styles specific to this skin.
- *
- * This section is automatically generated from the `ui-fancytree.less` template.
- ******************************************************************************/
-/*
-ul.fancytree-container ul {
-  padding: 0 0 0 1.5em;
-  margin: 0;
+.mb-solr-results .head .label {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
-/* Prevent focus frame ------
-.fancytree-container:focus {
-  outline: none;
-}
-span.fancytree-node {
-  border: 1px solid transparent;
-  border-radius: 3px;
-  padding-left: 8px;
-}
-span.fancytree-title {
-  border-radius: 3px;
-}
-*/
-
-
-
-
-/*
-span.fancytree-node.fancytree-selected {
-  background-color: #fff;
-  border-color: transparent;
-  box-shadow: 1px 1px 0 rgba(255,255,255,.4);
-}
-
-span.fancytree-node.fancytree-selected span.fancytree-title {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-
-span.fancytree-node.fancytree-active {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node:hover {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-focused {
-  border-color: #aaa;
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(255,255,255,.4);
-  border-color: transparent;
-}
-
-*/
-
-
-
-
-
-
-/** Ajax Progress Throbber -------- NOTE this was moved to Sarvaka for testing
-.ajax-progress, .ajax-progress *, 
-.ajax-progress-throbber, 
-.ajax-progress-throbber * {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-**/
 
 /** No Results Header **/
 .view-media-by-kmap .view-empty h3 {
   font-style: italic;
 }
 
+.node-video-form .fieldset-wrapper .form-item{
+  margin:0;
+}
 
 
 
-/*----- search bottom half -----*/
+/**
+* ---------------------------
+* Search Flyout bottom half
+* ---------------------------
+*/
 .view-section .tab-pane > div::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 1rem;
@@ -343,77 +253,7 @@ span.fancytree-node.fancytree-active {
 
 
 
-/*
-	.region-search-flyout .block-search .form-item.form-type-radio {
-	display: inline-block;
-	max-width: 49%;
-	white-space: nowrap;
-}
 
-.region-search-flyout .block-search .form-item.form-type-radio label:first-child {
-	max-width: 1.5em;
-	min-width: 1em;
-}
-
-.region-search-flyout .block-search .form-item.form-type-radio label {
-	margin: 0;
-	padding: 0 12px 0 0;
-}
-
-.region-search-flyout .block-search .input-group .input-group-btn {
-	top: -1px;
-}
-
-.region-search-flyout .block-search .form-group .toggle-link.advanced-link {
-	display: none;
-	top: -4px;
-	left: -6px
-}
-*/
-
-/* Facet flyouts 
-
-.kmaps-tree ul.fancytree-container {
-	background-color: #f8f8f8;
-}
-
-#search-flyout .view-section .shanticon-tree:before {
-	content: "\e639";
-	padding-right: 5px;
-}
-*/
-
-/* Place checkmark before selected facets 
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected:before {
-	content: "\2713";
-	color: red;
-	margin: 0px 12px 0px -10px;
-	display: inline-block;
-	padding: 3px;
-}*/
-
-/** Fancytree selected styles 
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected {
-	background-color: #d0f2f2;
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title {
-	background-color: transparent;
-	white-space: nowrap;
-}
-
-.fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-selected span.fancytree-title a {
-	font-style: italic;
-	white-space: nowrap;
-}
-**/
-
-
-
-.node-video-form .fieldset-wrapper .form-item{
-  margin:0;
-}
 
 
 
