@@ -1676,6 +1676,13 @@ body.in-frame.html {
   background: #4ca6fb !important;
 }
 
+.inframe .nav-justified>li.active, 
+.inframe .view-section .nav-tabs>li.active>a, 
+.inframe .view-section .nav-tabs>li.active>a:hover, 
+.inframe .view-section .nav-tabs>li.active>a:active{
+  border-top-color: #4ca6fb !important;
+}
+
 .in-frame.node-type-audio .nav-justified>li.active::before, 
 .in-frame.node-type-video .nav-justified>li.active::before,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
