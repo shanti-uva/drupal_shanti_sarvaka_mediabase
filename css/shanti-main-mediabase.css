@@ -1676,10 +1676,10 @@ body.in-frame.html {
   background: #4ca6fb !important;
 }
 
-.inframe .nav-justified>li.active, 
-.inframe .view-section .nav-tabs>li.active>a, 
-.inframe .view-section .nav-tabs>li.active>a:hover, 
-.inframe .view-section .nav-tabs>li.active>a:active{
+.in-frame .nav-justified>li.active, 
+.in-frame .view-section .nav-tabs>li.active>a, 
+.in-frame .view-section .nav-tabs>li.active>a:hover, 
+.in-frame .view-section .nav-tabs>li.active>a:active{
   border-top-color: #4ca6fb !important;
 }
 
