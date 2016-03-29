@@ -44,3 +44,10 @@ body.in-frame.html {
 .in-frame .atlwdg-trigger.atlwdg-SUBTLE {
 	display: none;
 }
+
+.inframe .nav-justified>li.active, 
+.inframe .view-section .nav-tabs>li.active>a, 
+.inframe .view-section .nav-tabs>li.active>a:hover, 
+.inframe .view-section .nav-tabs>li.active>a:active{
+	border-top-color: #4ca6fb !important;
+}

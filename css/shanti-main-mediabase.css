@@ -52,7 +52,7 @@
 ::selection {
   background: #c0532f !important;
 }
-/*--- END colors ---*/
+/*--- END subtheme colors ---*/
 
 
 
@@ -103,15 +103,9 @@
   background: #5b68ce;
 }
 
-.region-sidebar-second h3 {
-  font-size: 1.32em;
-}
-
 .region-sidebar-second h4 {
   font-size: 0.9em;
-  font-family: 'museo-sans-700',arial,helvetica,sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 
