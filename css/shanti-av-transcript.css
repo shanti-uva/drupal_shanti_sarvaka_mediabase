@@ -76,7 +76,7 @@
 }
 
 .transcript-content li.list-group-item:first-of-type{
-  /*border-radius: 0 0 0 0.8rem;*/
+  border-radius: 0 0 0 0.8rem;
   border-top:none;
 }
 
@@ -825,17 +825,7 @@
   left: 0.5rem;
 }
 
-.av-main-transcript-section .dropdown-menu li a .check-mark {
-  position:absolute;
-  right: 15px;
-}
-/*
-.av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
-.av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before {
-  color: #aaa;
-}
-*/
-.av-main-transcript-section .dropdown-menu button.close {
+.av-main-transcript-section .dropdown-menu .close {
   font-size: 1.82em;
   line-height: 0.88em;
 }
@@ -1753,7 +1743,8 @@
 
 
 
-/*
+/* removing dark grey accordion theme -------
+
 .has-transcript .panel.panel-default .panel-heading h6{
   border-bottom: none;
 }
