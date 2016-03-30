@@ -750,7 +750,7 @@
   background: #444 !important;
   text-shadow: 0 0 3px #555;
 }
-/*.btn-group-transcript .btn.btn-icon span:last-child{ padding: 1em;}*/
+
 .btn-group-transcript .btn.btn-icon .fa,
 .btn-group-transcript .btn.btn-icon .icon {
   border-radius: 0;
@@ -849,20 +849,16 @@
   left: 0.5rem;
 }
 
-.av-main-transcript-section .dropdown-menu li a .icon-ok.check-mark {
-  color: #ddd;
-  margin-top: 0;
+.av-main-transcript-section .dropdown-menu li a .check-mark {
   top: 0.5rem;
+  right: 1.5rem;
 }
-
-.av-main-transcript-section .dropdown-menu li.selected a .icon-ok.check-mark {
-}
-
+/*
 .av-main-transcript-section .dropdown-menu li.selected a:hover .icon-ok.check-mark::before,
 .av-main-transcript-section .dropdown-menu li.selected a:active .icon-ok.check-mark::before {
   color: #aaa;
 }
-
+*/
 .av-main-transcript-section .dropdown-menu button.close {
   font-size: 1.82em;
   line-height: 0.88em;
@@ -878,10 +874,6 @@
 .btn-group.bootstrap-select.show-tick.transcript-options{
   margin-bottom:0;
   margin-top: -3.3rem;
-}
-
-.av-main-transcript-section .bootstrap-select.btn-group.show-tick .dropdown-menu li a .check-mark {
-  top: 0.7rem;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li dt,
