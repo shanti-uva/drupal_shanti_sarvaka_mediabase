@@ -1745,7 +1745,7 @@
 
 
 
-
+/*
 .node-type-video.has-transcript .main-wrapper{
   background: #e0e0e0;
 }
@@ -1801,6 +1801,9 @@
 .node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
   border-color:#999;
 }
+
+*/
+
 
 .avinfo .transcripts-processed .form-item {
   margin-top: 0.5rem;
