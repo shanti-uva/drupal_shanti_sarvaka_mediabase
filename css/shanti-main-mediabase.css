@@ -1784,6 +1784,11 @@ body.in-frame.html {
     padding-right: 0 !important;
     width:70% !important;
   }
+
+   /* video page w/transcript layout */
+  .av-main-video-section {
+    width:50% !important;
+  }
   
   .shanti-filters .control-box-cell-header p {
   	display: inline-block;
