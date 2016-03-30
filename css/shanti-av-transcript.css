@@ -38,9 +38,7 @@
   border-right: 2px solid #c0c0c0;
 }
  
-.transcript-container::-webkit-scrollbar-track {
-
-}
+.transcript-container::-webkit-scrollbar-track {  }
 
 .transcript-container::-webkit-scrollbar-thumb {
   background-color: #aaa;
@@ -61,10 +59,6 @@
 .transcript-container .list-group {
   -webkit-margin-before: 0;
   margin-bottom: 420px;
-}
-
-.transcript-container .minimal-view .list-group{
-  border-bottom: 30px solid #fff;
 }
 
 .transcript-container .alert-info {
@@ -260,19 +254,6 @@
   border:1px solid transparent;
   border-bottom: 1px dashed #ddd;
   padding: 0.2rem 0.2rem 0.2rem 0.7rem;
-}
-
-.minimal-view .speaker-tiers .tier{
-  border-bottom:none;
-  border-left: 0.2rem solid #f0f0f0;
-  padding-left: 2rem;
-}
-
-.minimal-view.reversed-view .speaker-tiers .tier{
-  border-right: 0.2rem solid #f0f0f0;
-  border-left: none;
-  padding-left: 0;
-  padding-right: .5rem;
 }
 
 .speaker-tiers .tier:last-child{
@@ -513,10 +494,7 @@
 }
 
 .tcu-info .begin-range,
-.tcu-info .end-range{
-  
-}
-
+.tcu-info .end-range{  }
 
 .tcu-info .btn.play-range .glyphicon-play{
   top: .1rem;
@@ -526,7 +504,9 @@
 
 
 
-/***** banner tabs for editors ****/
+/**
+* banner tabs for editors 
+*/
 .has-transcript .tabs.primary li a.transcript-edit{
   padding-right: 1.25rem;
   padding-top: 0.5rem;
@@ -558,10 +538,6 @@
 .has-transcript .tabs.primary li a:active{
   background: #888;
   text-shadow:none;
-}
-
-.has-transcript .panel.panel-default .panel-heading h6{
-  border-bottom: none;
 }
 
 .has-transcript .tabs.primary li.active a{
@@ -913,8 +889,15 @@
 
 
 
-/***** REVERSE COLUMNS in transcript viewer *****/
+/**
+* -------------------------
+* Transcript Viewer Themes
+* -------------------------
+*/
 
+/**
+* Reverse Display Option
+*/
 .transcript-content .reversed-view .play-button{
   float: none;
   position: absolute;
@@ -937,6 +920,30 @@
   margin-top: -0.5rem;
 } 
 
+.av-main-transcript-section .reversed-view .play-button .btn{
+  min-width: 10.5rem;
+}
+
+/**
+* Minimal Theme
+* Note:; options include these classes - .minimal-view.no-speaker-names and li.playing
+*/
+.transcript-container .minimal-view .list-group{
+  border-bottom: 30px solid #fff;
+}
+
+.minimal-view .speaker-tiers .tier{
+  border-bottom:none;
+  border-left: 0.2rem solid #f0f0f0;
+  padding-left: 2rem;
+}
+
+.minimal-view.reversed-view .speaker-tiers .tier{
+  border-right: 0.2rem solid #f0f0f0;
+  border-left: none;
+  padding-left: 0;
+  padding-right: .5rem;
+}
 
 .transcript-content .minimal-view.reversed-view .play-button{
   position:absolute;
@@ -946,18 +953,7 @@
 .transcript-content .minimal-view.reversed-view.no-speaker-names .play-button{
   right: 1.7rem;
 }
- 
-.av-main-transcript-section .reversed-view .play-button .btn{
-  min-width: 10.5rem;
-}
 
-/*****/
-
-
-
-/*---------------------------------------------------------------------------*/
-/*** minimal theme - Note:; options include these classes - .minimal-view.no-speaker-names and li.playing ***/
-/*---------------------------------------------------------------------------*/
 .transcript-content .minimal-view li.list-group-item{
   border-radius:0;
   padding: 0 0.5rem 0 .75rem;
@@ -1023,9 +1019,7 @@
   padding-right: .5rem;
 } 
 
-.transcript-content .minimal-view .speaker-name{
-
-}
+.transcript-content .minimal-view .speaker-name{  }
 
 .transcript-content .minimal-view .tcu-info{
   min-height: 3rem;
@@ -1082,9 +1076,7 @@
   top: 0;
 }
 
-.transcript-content .minimal-view .play-button .btn:hover .glyphicon{
-
-}
+.transcript-content .minimal-view .play-button .btn:hover .glyphicon{  }
 
 .transcript-content .minimal-view .play-button .btn .glyphicon::before{
   border: none;
@@ -1105,20 +1097,16 @@
   box-shadow: none;
   border-color: #aaa;
 }
-
-/*------------------------*/
-/*** END minimal theme ***/
-/*------------------------*/
+/* END themes */
 
 
 
 
-
-
-
-/*---------------------------*/
-/***** transcript search *****/
-/*---------------------------*/
+/**
+* -------------------
+* Transcript Search
+* -------------------
+*/
 .transcript-search-wrapper {
   padding: 0;
   display: none;
@@ -1672,13 +1660,6 @@
   line-height: 1.25em;
 }
 
-/*--- END transcript search --*/
-
-
-
-
-
-
 /* show-hide for editing mode notice */
 .editing-message{
   position: relative;
@@ -1691,6 +1672,16 @@
   line-height: 1.68em;
   display: none;
 }
+/* END search */
+
+
+
+
+/**
+* --------------
+* Modal Popup
+* --------------
+*/
 
 .modal.tcu-delete-modal.in{
   display: block;
@@ -1745,7 +1736,28 @@
 
 
 
+
+
+
+.avinfo .transcripts-processed .form-item {
+  margin-top: 0.5rem;
+}
+
+.avinfo .transcripts-processed {
+  margin-left: 0;
+}
+
+
+
+
+
+
+
 /*
+.has-transcript .panel.panel-default .panel-heading h6{
+  border-bottom: none;
+}
+
 .node-type-video.has-transcript .main-wrapper{
   background: #e0e0e0;
 }
@@ -1803,15 +1815,3 @@
 }
 
 */
-
-
-.avinfo .transcripts-processed .form-item {
-  margin-top: 0.5rem;
-}
-
-.avinfo .transcripts-processed {
-  margin-left: 0;
-}
-
-
-
