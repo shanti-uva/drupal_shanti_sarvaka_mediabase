@@ -794,6 +794,10 @@ ul.links.inline {
  .av-related-wrapper .panel-heading{
   display:none;
  }
+
+ .av-related-wrapper .node-video .tab-content{
+  border:none;
+ }
  
 /** My Content Pages **/
 .view-my-content .vbo-views-form fieldset#edit-select {
