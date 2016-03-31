@@ -1695,7 +1695,7 @@ body.in-frame.html {
 }
 
 .in-frame .titlearea{
-  height: 2rem;
+  height: 2.75rem;
 }
 .in-frame .titlearea.has-tabs{
   margin-bottom:0;
