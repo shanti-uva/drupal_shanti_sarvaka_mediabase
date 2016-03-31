@@ -1816,7 +1816,7 @@ body.in-frame.html {
   /* video page layout */
   .av-main-video-section {
     padding-right: 0 !important;
-     width:50% !important;
+    /* width:70% !important; */
   }
 
    /* video page w/transcript layout 
