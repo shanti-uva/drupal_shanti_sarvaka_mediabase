@@ -786,6 +786,14 @@ ul.links.inline {
 .av-related-wrapper .tab-pane.mlt .related-av-nodes {
      padding: 12px;
  }
+
+.av-related-wrapper .panel-group .panel{
+    box-shadow: none;
+ }
+
+ .av-related-wrapper .panel-heading{
+  display:none;
+ }
  
 /** My Content Pages **/
 .view-my-content .vbo-views-form fieldset#edit-select {
