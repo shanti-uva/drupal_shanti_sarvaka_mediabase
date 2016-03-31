@@ -1268,19 +1268,19 @@ fieldset.form-wrapper .f-set > table{
   padding-top:1rem;
 }
 
-.node-type-audio .avinfo{
-  width: 33.33333333% !important;
-}
-
 .video-overview {
   padding-bottom: 2rem;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
+.node-type-audio .avinfo{
+  width: 25% !important;
+}
+
 .node-type-audio .video-overview{
   padding-right: 0 !important;
-  width: 66.66666667% !important;
+  width: 75% !important;
 }
 
 .avinfo .trans-btn {
@@ -1824,12 +1824,21 @@ body.in-frame.html {
     width:50% !important;
   }*/
 
-  .node-type-audio.has-transcript .av-main-video-section.col-sm-5 {
+  .node-type-audio .av-main-video-section.col-sm-5 {
     width: 41.66666667% !important;
   }
 
-  .node-type-audio.has-transcript .av-main-video-section.col-sm-7 {
+  .node-type-audio .av-main-video-section.col-sm-7 {
     width: 58.33333333% !important;
+  }
+
+  .node-type-audio .avinfo{
+  width: 33.33333333% !important;
+  }
+
+  .node-type-audio .video-overview{
+    padding-right: 0 !important;
+    width: 66.66666667% !important;
   }
   
   .shanti-filters .control-box-cell-header p {
