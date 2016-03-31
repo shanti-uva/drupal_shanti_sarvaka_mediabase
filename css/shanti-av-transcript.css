@@ -513,7 +513,7 @@
 .has-transcript .tabs.primary li.active a.transcript-edit:hover::after{
   color:#888;
 }
-
+/*
 .has-transcript .tabs.primary li a:hover{
   background: #777;
   text-shadow:none;
@@ -522,7 +522,7 @@
   background: #888;
   text-shadow:none;
 }
-/*
+
 .has-transcript .tabs.primary li.active a{
   color: #555 !important;
   background: #ddd;
