@@ -1293,6 +1293,11 @@ fieldset.form-wrapper .f-set > table{
   width: 75% !important;
 }
 
+.node-type-audio.has-transcript .avinfo,
+.node-type-audio.has-transcript .video-overview{
+  width: 100% !important;
+}
+
 .avinfo .trans-btn {
   padding-bottom: 5px;
 }
@@ -1735,7 +1740,8 @@ body.in-frame.html {
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
 .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .icon-ok.check-mark::before, 
-.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before{
+.in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before,
+.in-frame .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon.glyphicon-download-alt{
   color: #4ca6fb !important;
 }
 /*** END iframe */
@@ -1757,6 +1763,11 @@ body.in-frame.html {
 
 .node-type-video .tab-pane.main-col > div {
   max-width: 1050px !important;
+  margin: 0 auto !important;
+}
+
+.node-type-audio .tab-pane.main-col > div {
+  max-width: 970px !important;
   margin: 0 auto !important;
 }
 
@@ -1875,6 +1886,10 @@ body.in-frame.html {
   .node-type-audio .video-overview{
     padding-right: 0 !important;
     width: 66.66666667% !important;
+  }
+
+  .node-type-audio.has-transcript .video-overview{
+    width: 100% !important;
   }
 
 }
