@@ -55,6 +55,29 @@
 /*--- END subtheme colors ---*/
 
 
+/**
+* -----------
+* Layouts
+* -----------
+*/
+.node-type-video.has-transcript .tab-pane.main-col > div {
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+}
+/*
+.has-transcript .av-main-video-section {
+  width:50% !important;
+}
+*/
+.node-type-audio.has-transcript .av-main-video-section.col-xs-12 {
+  width: 100% !important;
+}
+
+.node-type-audio.has-transcript .av-main-video-section.col-xs-12 {
+  width: 100% !important;
+}
+
+
 
 /**
 * -------------------------------------
@@ -1793,12 +1816,20 @@ body.in-frame.html {
   /* video page layout */
   .av-main-video-section {
     padding-right: 0 !important;
-    width:70% !important;
+     width:50% !important;
   }
 
-   /* video page w/transcript layout */
+   /* video page w/transcript layout 
   .av-main-video-section {
     width:50% !important;
+  }*/
+
+  .node-type-audio.has-transcript .av-main-video-section.col-sm-5 {
+    width: 41.66666667% !important;
+  }
+
+  .node-type-audio.has-transcript .av-main-video-section.col-sm-7 {
+    width: 58.33333333% !important;
   }
   
   .shanti-filters .control-box-cell-header p {
