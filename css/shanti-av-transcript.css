@@ -724,11 +724,11 @@
 
 .btn-group-transcript .btn.btn-icon .fa {
   font-size: 1em;
-  height: 4.06em;
+  /*height: 4.06em;*/
 }
 
 .btn-group-transcript .btn.btn-icon .fa.fa-play {
-  padding-top: 2.3rem;
+  /*padding-top: 2.3rem;*/
 }
 
 .btn-group-transcript .btn.btn-icon.playpause {
