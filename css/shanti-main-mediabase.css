@@ -1244,9 +1244,20 @@ fieldset.form-wrapper .f-set > table{
   padding-left: 0px !important;
   padding-top:1rem;
 }
+
+.node-type-audio .avinfo{
+  width: 33.33333333% !important;
+}
+
 .video-overview {
   padding-bottom: 2rem;
   padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.node-type-audio .video-overview{
+  padding-right: 0 !important;
+  width: 66.66666667% !important;
 }
 
 .avinfo .trans-btn {
