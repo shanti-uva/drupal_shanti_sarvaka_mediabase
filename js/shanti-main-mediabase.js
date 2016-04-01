@@ -84,7 +84,7 @@
                             if ($(this).text().length == 0) { return; } // Don't process empty paragraphs
                             if (changeit && !show) { 
                                 heightlost += $(this).height();
-                                $(this).hide(300);
+                                $(this).hide(1000);
                             } else { $(this).show(300); }
                             textlen += $(this).text().length;
                             if (textlen > maxlen && textlen > $(this).text().length) { 
