@@ -323,6 +323,10 @@ form#views-exposed-form-browse-media-home-block {
 * -------------------
 */
 
+.shanti-filters{
+  height: 3.5em;
+}
+
 .shanti-filters .ajax-progress {
   position: absolute;
   top: 1.35rem;
@@ -404,6 +408,10 @@ form#views-exposed-form-browse-media-home-block {
 .shanti-filters .control-box-cell-pager {
   margin-top: 0;
   margin-right: 0;
+}
+
+.shanti-filters table.pagerer {
+    margin-bottom:0;
 }
 
 .shanti-filters table.pagerer,
