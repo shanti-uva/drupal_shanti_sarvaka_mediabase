@@ -795,7 +795,7 @@ ul.links.inline {
   display:none;
  }
 
- .av-related-wrapper .node-video .tab-content{
+.av-related-wrapper .tab-content{
   border:none;
  }
  
@@ -1252,11 +1252,11 @@ fieldset.form-wrapper .f-set > table{
 }
 
 
-
+/*
 .node-video .tab-content {
   border-top: 1px solid #ddd;
 }
-
+*/
 .node-video > h2 {
   line-height: 1.75em;
   font-size: 1.18em;
