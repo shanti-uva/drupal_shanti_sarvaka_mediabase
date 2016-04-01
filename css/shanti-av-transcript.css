@@ -858,33 +858,26 @@
   margin-left: 1.5rem;
 }
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu div.div-contain {
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu .div-contain {
   display: none;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon{
-  /*float:right;
-  top:.7rem;
-  right:1.5rem;*/
-  color:#2cb3b2;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a{
   padding: 0;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected>a{  
   line-height: 2.5em;
   height: 2.7rem;
 }
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected>a:hover{
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a:hover{
   background: #fff;
   box-shadow: inset 0 0 5px 1px #ddd;
   display: block;
   width: 100%;
 }
 
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon{
+  color:#2cb3b2;
+}
 
 /**
 * -------------------------
