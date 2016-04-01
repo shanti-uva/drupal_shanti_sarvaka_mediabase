@@ -84,7 +84,7 @@
                             if ($(this).text().length == 0) { return; } // Don't process empty paragraphs
                             if (changeit && !show) { 
                                 heightlost += $(this).height();
-                                $(this).hide(1000);
+                                $(this).hide(300);
                             } else { $(this).show(300); }
                             textlen += $(this).text().length;
                             if (textlen > maxlen && textlen > $(this).text().length) { 
@@ -95,7 +95,7 @@
                         });
                     });
                     if (heightlost > 0) { 
-                        var st = $(window).scrollTop();
+                        var st = $(window).scrollTop(400);
                         $(window).scrollTop(st - heightlost);
                     }
                 }
