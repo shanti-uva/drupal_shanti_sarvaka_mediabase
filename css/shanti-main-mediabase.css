@@ -2054,3 +2054,11 @@ body.in-frame.html {
   font-size: 1.12em;
 }
 
+
+/* admin My Collections edit tab */
+.admin-menu .bootstrap-select.btn-group .btn .caret::before{
+  position: absolute;
+  top: -0.56em;
+  right: -0.5rem;
+}
+
