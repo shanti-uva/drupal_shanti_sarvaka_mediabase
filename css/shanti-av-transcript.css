@@ -790,17 +790,17 @@
   height: 2.25em;
 }
 
-.av-main-transcript-section .selectpicker .caret{
+.av-main-transcript-section .transcript-options.bootstrap-select.btn-group .caret{
   position: absolute;
   top: 36% !important;
   right: 35% !important;
 }
 
-.av-main-transcript-section .selectpicker .caret::before {
+.av-main-transcript-section .transcript-options.bootstrap-select.btn-group .caret::before {
   color: #fff !important;
 }
 
-.av-main-transcript-section .selectpicker .fa::before {
+.av-main-transcript-section .transcript-options.bootstrap-select.btn-group .fa::before {
   font-size: 2.12em;
   color: #fff !important;
   text-shadow:1px 1px #777;
