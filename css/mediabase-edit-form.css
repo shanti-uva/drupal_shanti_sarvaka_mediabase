@@ -67,8 +67,8 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 .btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
-	left: -.9rem;
-	top: -1.54rem;
+	left: -.85rem;
+	top: -1.6rem;
 	font-size: 1.68em;
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
@@ -330,9 +330,9 @@ table.sticky-table .filter-guidelines ul li{
 * migrating admin styles from the mediabase-main css
 *
 *
-* ----------------------
-* Node Video Form
-* ----------------------
+* -------------------------------
+* Node Video Migrated from main
+* -------------------------------
 */
 /* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
@@ -376,10 +376,6 @@ table.sticky-table .filter-guidelines ul li{
   margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
 }
 
-fieldset.form-wrapper .f-set{
-  /*border:none; - this is used in audio-video for node-video admin edit page */
-}
-
 #edit-field-video-und-0-button{
   clear: both;
 }
@@ -411,7 +407,6 @@ fieldset.form-wrapper .f-set{
   max-width: 40rem !important;
   display: inline-block;
 }
-
 
 .mb-av-form .field-accordion .panel-body{
   padding-top:1rem;
@@ -454,7 +449,6 @@ fieldset.form-wrapper .f-set{
       margin-left:2rem;
     }
 
-
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
@@ -472,12 +466,8 @@ fieldset.form-wrapper .f-set{
       color: #777;
     }
 
-
 /**
-* ----------------------
-* END - Node Video Form
-* ----------------------
-*/
+*** END - Node Video Form */
 
 
 

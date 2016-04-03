@@ -1,5 +1,17 @@
 
+/**
+* version 1.x - Mandala Audio-Video Development
+* 
+* shanti-search-mediabase.css
+* -------------------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / Audio-Video
+* -------------------------------------------------------------------
+* 
+*/
 
+/**
+* Search Flyout Top-Section
+*/
 .extruder .input-section {
   height: 87px;
 }
@@ -130,12 +142,6 @@
 }
 
 
-.extruder #loading-text{
-  position: absolute  !important;
-  left: 3.5rem !important;
-}
-
-
 .input-section .form-group{
   margin-bottom:10px;
 }
@@ -171,24 +177,47 @@
   font-size: 0.93em;
 }
 
+.extruder #loading-text{
+  position: absolute  !important;
+  left: 3.5rem !important;
+}
+
 
 
 /**
-* ---------------
 * SOLR Results
-* ---------------
 */
-
 .mb-solr-results {
   /* margin: 1.8rem 0 0; */
 }
 
 .mb-solr-results .head {
+  position: relative;
+  top: -.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
+}
+
+.mb-solr-results .head .label {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .mb-solr-results .head table.pagerer {
   margin: -1.2rem 0 0 0;
+}
+
+.mb-solr-results .foot table.pagerer {
+  margin: 1rem 0 0;
+}
+
+.mb-solr-results .results {
+  margin-top: 1rem;
+}
+
+.node-type-collection .mb-solr-results{
+  margin-top: 0;
 }
 
 .node-type-collection .mb-solr-results .head table.pagerer{
@@ -199,22 +228,13 @@
   margin-top: -1.2rem;
 }
 
-.mb-solr-results .foot table.pagerer {
-  margin: 1rem 0 0;
-}
+
 
 #no-views-filter-results {
   color: red;
   margin: 1.2rem;
   font-size: 0.9em;
 }
-
-.mb-solr-results .head .label {
-  color: #333;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
 /** No Results Header **/
 .view-media-by-kmap .view-empty h3 {
   font-style: italic;
@@ -227,9 +247,7 @@
 
 
 /**
-* ---------------------------
-* Search Flyout bottom half
-* ---------------------------
+* Scrollbars for Flyout bottom
 */
 .view-section .tab-pane > div::-webkit-scrollbar {
   width: 0.6rem;
@@ -249,11 +267,4 @@
 .view-section .tab-pane > div::-webkit-scrollbar-thumb:hover {
   background-color: #888;
 }
-
-
-
-
-
-
-
 

@@ -1,13 +1,16 @@
 /**
+* version 1.x - Mandala Audio-Video Development
 * 
-* version 1.x Development
+* shanti-main-mediabase.css
 * -------------------------------------------------------------------
-* University of Virginia / SHANTI MANDALA / SUBTHEME / Audio-Video
+* University of Virginia / SHANTI MANDALA / Audio-Video
 * -------------------------------------------------------------------
 * 
 */
 
-/* BEGIN custom theme colors */
+/** 
+* Subtheme Colors 
+*/
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
@@ -52,7 +55,8 @@
 
 ::-moz-selection { background: #c0532f !important; } 
 ::selection { background: #c0532f !important; }
-/*--- END subtheme colors ---*/
+/**
+*** END subtheme colors ---*/
 
 
 /**
@@ -208,19 +212,6 @@
 }
 
 
-.mb-solr-results .results {
-  margin-top: 1rem;
-}
-
-.mb-solr-results .head {
-  position: relative;
-  top: -.5rem;
-  margin-top: 1rem;
-}
-
-.node-type-collection .mb-solr-results{
-  margin-top: 0;
-}
 
 .node-type-collection .description{
   min-height: 250px;
@@ -1061,9 +1052,7 @@ div.ctools-modal-content a.close{
       display:none;
     }
 
-input#edit-media-upload.form-file{
-   
-}
+input#edit-media-upload.form-file{  }
 
     button#edit-media-upload-button{
       margin: 7rem 50% 0;
@@ -1099,9 +1088,6 @@ div#edit-actions--3.form-actions.form-wrapper{
     .region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
       max-width: 90%;
     }
-
-
-
 
 
 
@@ -1152,8 +1138,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 /*
 .node-video .tab-content {
   border-top: 1px solid #ddd;
-}
-*/
+}*/
 .node-video > h2 {
   line-height: 1.75em;
   font-size: 1.18em;
@@ -1471,9 +1456,8 @@ h3.node-desc {
     }
 
     .largePlayBtn::after {  }
-/*----------------------------*/
-/*--- END video view page --*/
-/*----------------------------*/
+/**
+*** END video view page */
 
 
 
@@ -1502,8 +1486,8 @@ h3.node-desc {
 .page-collections .views-field-title{
   margin-top: 2rem;
 }
-/* END temporary fix */
-
+/**
+*** END temporary fix */
 
 
 
