@@ -1533,10 +1533,14 @@ h3.node-desc {
 
 @media screen and (min-width: 768px) {
 
-  .shanti-filters .control-box-cell-pager{
-    width:33.333%;
-    margin-top: -6.5rem;
+  .shanti-filters{
+    height: 3.25em;
   }
+
+    .shanti-filters .control-box-cell-pager{
+      width:33.333%;
+      margin-top: -6.5rem;
+    }
 
     .page-collections .shanti-filters .control-box-cell-header,
     .page-collections .shanti-filters .control-box-cell-filters{
@@ -1590,14 +1594,14 @@ h3.node-desc {
 
 @media screen and (min-width: 992px) {
 
-    .shanti-filters{
-      height: 3.25em;
+    .front .shanti-filters table.pagerer {
+      margin-top: 0.4rem;
     }
 
-      .shanti-filters .control-box-cell-header {
-        padding-top: 0.25rem;
-        padding-left: 0.25rem;
-      }
+    .shanti-filters .control-box-cell-header {
+      padding-top: 0.25rem;
+      padding-left: 0.25rem;
+    }
 
       .shanti-filters .control-box-cell-pager {
         margin-right: 0;
