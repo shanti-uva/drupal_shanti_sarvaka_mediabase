@@ -1286,14 +1286,14 @@ fieldset.form-wrapper .f-set{
   top: 0.3rem;
 }
 
-.node-video ul.links.inline {
-  position: relative;
-  top: 10px;
-}
+    .node-video ul.links.inline {
+      position: relative;
+      top: 10px;
+    }
 
-.node-video ul.links.inline a {
-  font-size: 90%;
-}
+    .node-video ul.links.inline a {
+      font-size: 90%;
+    }
 
 .video-row {
   margin-top: 0.1rem;
@@ -1489,9 +1489,9 @@ a.tabledrag-toggle-weight {
       padding: 0.06em 0.5em;
     }
 
-.field-item-span {
-  display: inline;
-}
+    .field-item-span {
+      display: inline;
+    }
 
 .video-overview .desc-readmore {
   margin: -10px 0 20px;
@@ -1512,39 +1512,39 @@ a.tabledrag-toggle-weight {
   display: inline;
 }
 
-.avsubjects .shanticon-subjects::before {
-  float: left;
-  margin: 2px 5px 0 0;
-}
+    .avsubjects .shanticon-subjects::before {
+      float: left;
+      margin: 2px 5px 0 0;
+    }
 
-.avsubjects,
-.avplace {
-  margin-top: 10px;
-}
+    .avsubjects,
+    .avplace {
+      margin-top: 10px;
+    }
 
-.avplace,
-.avcollection{
-  font-size: 1em;
-}
+    .avplace,
+    .avcollection{
+      font-size: 1em;
+    }
 
-.avsubjects .field-items-span,
-.avplace .field-items-span {
-  display: inline;
-}
+    .avsubjects .field-items-span,
+    .avplace .field-items-span {
+      display: inline;
+    }
 
-.field-name-field-pbcore-description > .field-items > .field-item {
-  margin-bottom: 12px;
-}
+    .field-name-field-pbcore-description > .field-items > .field-item {
+      margin-bottom: 12px;
+    }
 
-.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden {
-  padding: 5px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-}
+    .field-name-field-pbcore-title.field-type-field-collection.field-label-hidden {
+      padding: 5px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #ddd;
+    }
 
-.form-item.form-type-select.form-item-spaces-features-transcripts-settings {
-  width: 7em;
-}
+    .form-item.form-type-select.form-item-spaces-features-transcripts-settings {
+      width: 7em;
+    }
 
 h3.node-desc {
   text-transform: uppercase;
