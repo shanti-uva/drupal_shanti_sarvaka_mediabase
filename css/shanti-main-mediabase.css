@@ -247,7 +247,11 @@
 /* Filters on top of block */
 #views-exposed-form-browse-media-home-block .views-exposed-form {
     min-width: 450px;
-    margin-right: -50px;
+    /*margin-right: -50px;*/
+}
+
+#views-exposed-form-browse-media-home-block .views-exposed-widget{
+  padding-top:0.75rem;
 }
 
 form#views-exposed-form-browse-media-home-block {
@@ -324,7 +328,7 @@ form#views-exposed-form-browse-media-home-block {
 */
 
 .shanti-filters{
-  height: 3.5em;
+  height: 5em;
 }
 
 .shanti-filters .ajax-progress {
@@ -412,6 +416,10 @@ form#views-exposed-form-browse-media-home-block {
 
 .shanti-filters table.pagerer {
     margin-bottom:0;
+}
+
+.front .shanti-filters table.pagerer {
+    margin-top: -0.7rem;
 }
 
 .shanti-filters table.pagerer,
@@ -1713,7 +1721,7 @@ body.in-frame.html {
   margin-bottom:0;
 }
 
-.in-frame  .titlearea .page-title-text {
+.in-frame .titlearea .page-title-text {
   text-shadow: none !important;
   color: #444 !important;
   padding-left: 12px !important;
