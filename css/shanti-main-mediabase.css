@@ -155,7 +155,6 @@
 * Collections page
 * ------------------
 */
-/* collections page thumbnail wrapper */
 .view-collections .field-image-thumb {
   max-width: 50%; /* TEMP hack - reduce size of thumbnail */
   float: left;
@@ -169,7 +168,7 @@
     .node-type-team .view-collection-media table.pagerer{
       margin-top: -4rem;
     }
-    
+
     .view-collections .views-row {
       padding-top: 0.75em;
       padding-bottom: 2em;
@@ -1093,7 +1092,9 @@ div#edit-actions--3.form-actions.form-wrapper{
       max-width: 90%;
     }
 
-
+    .region-sidebar-second .block-mb-structure form > div{
+      font-size:0.93rem;
+    }
 
 
 
