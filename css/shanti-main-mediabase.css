@@ -1,3 +1,12 @@
+/**
+* 
+* version 1.x Development
+* -------------------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / SUBTHEME / Audio-Video
+* -------------------------------------------------------------------
+* 
+*/
+
 /* BEGIN custom theme colors */
 .titlearea,
 .carousel-control,
@@ -142,6 +151,13 @@
 * Collections page
 * ------------------
 */
+/* collections page thumbnail wrapper */
+.view-collections .field-image-thumb {
+  max-width: 50%; /* TEMP hack - reduce size of thumbnail */
+  float: left;
+  padding-right: 20px;
+}
+
 .view-collection-media table.pagerer{
   margin-top: -4rem;
 }
@@ -217,13 +233,19 @@
 }
 
 
-/*---------------------------*/
-/***** REVIEW STYLES *********/
-/*---------------------------*/
+
+
+
+
+
 /* Revive point on last breadcrumb when search result replace node */
 .breadwrap .breadcrumb li:last-child a.revive-pointer:hover {
   cursor: pointer !important;
 }
+
+
+
+
 
 /* New node place markup in video overview */
 .avplace .field-items-span ul {
@@ -252,12 +274,8 @@
   font-size: 1.75rem;
 }
 
-/* collections page thumbnail - remove responsive class */
-.view-collections .field-image-thumb {
-  max-width: 50%;
-  float: left;
-  padding-right: 20px;
-}
+
+
 
 /* Home media list block */
 /* Filters on top of block */
@@ -1084,149 +1102,6 @@ div#edit-actions--3.form-actions.form-wrapper{
 
 
 
-/**
-* ----------------------
-* Node Video Form
-* ----------------------
-*/
-/* overide 'mediabase-edit-form.css' */
-.field-type-field-collection input.form-text.form-control{
-  max-width: 90% !important;
-  position: relative;
-  top: -0.3rem;
-}
-
-    .form-item.form-type-textfield input.form-text, 
-    .form-item.form-type-textfield input.form-control{
-      display:inline-block;
-    }
-
-.kmap_search_button{
-  background-color: #5b68ce;
-  color: #eee;
-  display: inline-block;
-  padding: 0.35rem 1.2rem 0.2rem;
-  border-radius: .3rem; 
-  border: 1px solid #777;
-  font-family:'museo-sans-500', helvetica, sans-serif;
-  font-size:0.93em;
-}
-
-    .kmap_search_button:hover,
-    .kmap_search_button:active{
-      background: #4850bd;
-      border-color:#4850bd;
-      color:#fff;
-    }
-
-.node-video-form .form-item{
-  margin:0;
-}
-
-    .node-video-form .fieldset-wrapper .form-item{
-      margin:1rem;
-    }
-
-.form-item-field-video-und-0-settings-default-settings-entry-widget{
-  margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
-}
-
-fieldset.form-wrapper .f-set{
-  /*border:none; - this is used in audio-video for node-video admin edit page */
-}
-
-#edit-field-video-und-0-button{
-  clear: both;
-}
-
-.mb-av-form{
-  /*margin-right: 1.5rem;*/
-}
-
-.mb-av-form table.field-multiple-table {
-  margin-bottom: 0;
-}
-
-.mb-av-form .kaltura_field_thumb::after{
-  content: 'Remove';
-  color: #777;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: -0.6rem;
-  font-family: helvetica, arial, sans-serif;
-  height: 40px;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-/*.page-node-add .mb-av-form .kaltura_field_thumb { display: none; } */
-.page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
-
-.mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
-  max-width: 40rem !important;
-  display: inline-block;
-}
-
-
-.mb-av-form .field-accordion .panel-body{
-  padding-top:1rem;
-}
-
-    .mb-av-form .field-accordion:first-child .panel-body{
-      padding-top:2rem;
-    }
-
-    .field-multiple-table .panel-body > div{
-      margin: 12px 0px;
-    }
-
-.resizable-textarea .grippie{
-  margin-bottom:2rem; /* for margin space below adjustable text area */
-}
-
-.group-rights .form-type-textfield, 
-.field-type-field-collection .field-widget-text-textfield,
-.field-name-field-workflow .field-widget-options-select, 
-.field-type-field-collection .field-widget-options-select{
-  padding-bottom: 1.5rem;
-}
-
-    .field-type-field-collection .form-type-textfield{
-      display:inline-block;
-    }
-
-    .field-type-field-collection .form-type-textfield label, 
-    .field-name-field-workflow .form-item.form-type-select label, 
-    .field-type-field-collection .form-item.form-type-select label{
-      padding: 3px 0px 2px 10px;
-      margin-bottom:0;
-      font-size: 0.93em;
-      display:block;
-      margin-left:2rem;
-    }
-
-    .field-type-field-collection .form-item.form-type-select label{
-      margin-left:2rem;
-    }
-
-
-.field-multiple-table .btn-sm.btn-icon.btn-delete{
-  margin-top:1rem;
-}
-
-
-/* Details section, Collection header /icon */
-.field-accordion.group-details .field-type-group label{
-  display: inline-block;
-  margin-left:1.5rem;
-  margin-top:1rem;
-}
-
-    .field-accordion.group-details .field-type-group label .icon.shanticon-create{
-      font-size: 1.8rem;
-      color: #777;
-    }
-
 
 
 
@@ -1814,14 +1689,6 @@ h3.node-desc {
 
 
 
-
-
-
-
-
-
-
-
 /*** BEGIN iframe */
 .in-frame header.header-banner,
 .in-frame header.banner .page-title .icon,
@@ -2059,7 +1926,10 @@ h3.node-desc {
     }
 }
 
-/*** END Carousel ***/
+/**
+* END Carousel 
+* 
+*/
 
 
 
