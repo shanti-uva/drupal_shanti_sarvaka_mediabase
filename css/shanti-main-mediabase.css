@@ -1892,20 +1892,23 @@ h3.node-desc {
 @media (min-width:1250px) {
 
     .logged-in .carousel .carousel-main-image{
-      width: 31%;
+      width: 35%;
     }
 
     .logged-in .carousel .carousel-main-content{
-      width: 69%;
+      width: 65%;
     }
 
-    .logged-in .carousel-description p {
-      /*height: 9em;*/
-    } 
+    .logged-in .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+      height: 13.82em;
+    }
 }
 
 @media screen and (min-width: 1280px) {
   
+  .logged-in .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 12.25em;
+  }
 }
 
 @media (min-width:1400px) {
