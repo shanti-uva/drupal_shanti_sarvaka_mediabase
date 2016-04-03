@@ -166,6 +166,10 @@
   margin-top: -4rem;
 }
 
+    .node-type-team .view-collection-media table.pagerer{
+      margin-top: -4rem;
+    }
+    
     .view-collections .views-row {
       padding-top: 0.75em;
       padding-bottom: 2em;
