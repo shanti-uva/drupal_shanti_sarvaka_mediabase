@@ -328,7 +328,7 @@ form#views-exposed-form-browse-media-home-block {
 */
 
 .shanti-filters{
-  height: 5em;
+  height: 5.2em;
 }
 
 .shanti-filters .ajax-progress {
@@ -415,11 +415,11 @@ form#views-exposed-form-browse-media-home-block {
 }
 
 .shanti-filters table.pagerer {
-    margin-bottom:0;
+  margin-bottom:0;
 }
 
 .front .shanti-filters table.pagerer {
-    margin-top: -0.7rem;
+  margin-top: -0.7rem;
 }
 
 .shanti-filters table.pagerer,
@@ -1839,6 +1839,10 @@ body.in-frame.html {
 }
 
 @media screen and (min-width: 768px) {
+
+  .shanti-filters{
+    height: 3.25em;
+  }
 
   .shanti-filters .control-box-cell-pager{
     width:33.333%;
