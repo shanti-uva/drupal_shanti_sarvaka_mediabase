@@ -886,7 +886,7 @@
 */
 
 /**
-* Reverse Display Option
+*** Reverse Display Option 
 */
 .transcript-content .reversed-view .play-button{
   float: none;
@@ -915,7 +915,7 @@
 }
 
 /**
-* Minimal Theme
+*** Minimal Theme
 * Note:; options include these classes - .minimal-view.no-speaker-names and li.playing
 */
 .transcript-container .minimal-view .list-group{
@@ -1087,15 +1087,16 @@
   box-shadow: none;
   border-color: #aaa;
 }
-/* END themes */
+/**
+*** END themes */
 
 
 
 
 /**
-* -------------------
-* Transcript Search
-* -------------------
+* ------------------------------------
+* Transcript Search Scroller Window
+* ------------------------------------
 */
 .transcript-search-wrapper {
   padding: 0;
@@ -1511,14 +1512,18 @@
   color: #eee;
 }
 
-
-/*--- search results window ---*/
+/**
+*
+*
+* Search Results - Content Section
+*
+*/
 .transcript-search-result .btn.btn-primary {
   font-weight: bold;
   font-size: 0.62em;
   color: #eee;
 }
-/*.transcript-search-result .btn.btn-primary:first-child{ padding:0.5rem 1rem 0.3rem;}*/
+
 .transcript-search-result .btn {
   width: 100%;
   padding: 0.3rem 1rem 0.2rem;
