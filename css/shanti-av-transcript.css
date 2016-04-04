@@ -1577,7 +1577,7 @@
 .transcript-search-result .shanti-thumbnail-image img {
   border-radius: 0.4rem;
   background-clip: padding-box;
-  /*min-height: 10rem;*/
+  min-height: 10rem;
   width: 140px;
 }
 
