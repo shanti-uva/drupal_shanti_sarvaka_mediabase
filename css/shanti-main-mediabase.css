@@ -1083,7 +1083,7 @@ div#edit-actions--3.form-actions.form-wrapper{
     }
 
     .region-sidebar-second .block-mb-structure form > div{
-      font-size:0.93rem;
+      font-size:0.88em;
     }
 
 
@@ -1345,7 +1345,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 .node-video ul.links.inline a {
   font-size: 90%;
 }
-    
+
 ul.inline li a,
 .compact-link a,
 ul.links.inline li a,
@@ -1950,12 +1950,12 @@ h3.node-desc {
 
 
 
-/* admin My Collections edit tab */
+/* admin My Collections edit tab 
 .admin-menu .bootstrap-select.btn-group .btn .caret::before{
   position: absolute;
   top: -0.56em;
   right: -0.5rem;
 }
-
+*/
 
 
