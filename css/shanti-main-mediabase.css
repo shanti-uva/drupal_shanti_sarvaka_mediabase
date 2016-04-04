@@ -97,10 +97,45 @@
       padding-top:0.2rem;
     }
 
+
+
+
 /**
-* -------------------------------------
-* Sidebar search results sorting list
-* -------------------------------------
+* ---------------
+* Right Sidebar
+* ---------------
+*/
+/**
+* upload video-audio 
+*/
+.region-sidebar-second .block-mb-structure .btn.btn-icon{
+  letter-spacing: 0.03rem;
+  font-size: 1.12em;
+  line-height: 2.5em;
+  padding-left: 5.6rem;
+}
+
+    .region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
+      width: 3em;
+      line-height:2.5em;
+    }
+
+    .region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
+      line-height: 2.5em;
+      font-size: 80%;
+      padding-left:0;
+    }
+
+    .region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
+      max-width: 90%;
+    }
+
+    .region-sidebar-second .block-mb-structure form > div{
+      font-size:0.88em;
+    }
+
+/**
+* Sidebar filter search results
 */
 .sidebar #block-apachesolr-search-sort ul li {
   list-style-type: none;
@@ -148,6 +183,9 @@
       font-size: 0.9em;
       text-transform: uppercase;
     }
+/**
+*** END Right Column */
+
 
 
 /**
@@ -237,36 +275,6 @@
   cursor: pointer !important;
 }
 
-
-
-
-
-/* New node place markup in video overview */
-.avplace .field-items-span ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-/* Tibetan in av descriptions*/
-.avpbcoredesc div.bo p {
-  font-size: 1.75rem;
-}
-
-.pb-desc-label {
-  padding: 0px;
-  margin: 0px;
-  font-size: 1rem;
-}
-
-.field-collection-item-field-pbcore-description .pb-desc-label.langname {
-    font-size: 1.25rem;
-}
-
-/** Tibetan text areas in node form **/
-.node-form .bo textarea {
-  font-size: 1.75rem;
-}
 
 
 
@@ -1059,35 +1067,11 @@ div#edit-actions--3.form-actions.form-wrapper{
   font-size: 1.25em;
 }
 
-/* sidecolumn upload video-audio buttons */
-.region-sidebar-second .block-mb-structure .btn.btn-icon{
-  letter-spacing: 0.03rem;
-  font-size: 1.12em;
-  line-height: 2.5em;
-  padding-left: 5.6rem;
-}
-
-    .region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
-      width: 3em;
-      line-height:2.5em;
-    }
-
-    .region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
-      line-height: 2.5em;
-      font-size: 80%;
-      padding-left:0;
-    }
-
-    .region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
-      max-width: 90%;
-    }
-
-    .region-sidebar-second .block-mb-structure form > div{
-      font-size:0.88em;
-    }
 
 
-
+/** 
+* KALTURA Player 
+*/ 
 .kaltura-embed{
    min-height:400px;
 }
@@ -1133,11 +1117,11 @@ div#edit-actions--3.form-actions.form-wrapper{
 
 
 /** 
-* VIDEO Metadata 
+* VIDEO / Audio : Metadata 
 * 
 * Container '.avdesc' within '.video-row' contains two columns
-* - left column: date, author, social, etc
-* - right column: video overview descriptive info
+* - left column: date, author, rating, social
+* - right column: video description
 * 
 */
 
@@ -1175,6 +1159,8 @@ div#edit-actions--3.form-actions.form-wrapper{
     .node-type-audio.has-transcript .video-overview{
       width: 100% !important;
     }
+
+
 
 .video-overview  .show-more {
   position: relative;
@@ -1326,10 +1312,9 @@ div#edit-actions--3.form-actions.form-wrapper{
       top: 3px;
     }
 
-/*
-.node-video .tab-content {
-  border-top: 1px solid #ddd;
-}*/
+
+
+
 .node-video > h2 {
   line-height: 1.75em;
   font-size: 1.18em;
@@ -1337,14 +1322,6 @@ div#edit-actions--3.form-actions.form-wrapper{
   top: 0.3rem;
 }
 
-.node-video ul.links.inline {
-  position: relative;
-  top: 10px;
-}
-
-.node-video ul.links.inline a {
-  font-size: 90%;
-}
 
 ul.inline li a,
 .compact-link a,
@@ -1356,7 +1333,20 @@ a.tabledrag-toggle-weight {
   font-family: 'museo-sans-700',helvetica,arial,sans-serif;
   font-weight: bold;
   font-weight: 700;
-} /*--- targeting login link for now, see if this oerks ---*/
+}
+
+    .node-video ul.links.inline {
+      position: relative;
+      top: 10px;
+    }
+
+    .node-video ul.links.inline a {
+      font-size: 90%;
+    }
+
+
+
+
 
 .field-name-field-tags {
   padding: 10px 10px 0;
@@ -1379,6 +1369,9 @@ a.tabledrag-toggle-weight {
     .field-item-span {
       display: inline;
     }
+
+
+
 
 .avplace .field,
 .avplace .field .field-items,
@@ -1419,6 +1412,43 @@ a.tabledrag-toggle-weight {
     .form-item.form-type-select.form-item-spaces-features-transcripts-settings {
       width: 7em;
     }
+
+
+
+
+
+
+/* New node place markup in video overview */
+.avplace .field-items-span ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tibetan in av descriptions*/
+.avpbcoredesc div.bo p {
+  font-size: 1.75rem;
+}
+
+/** Tibetan text areas in node form **/
+.node-form .bo textarea {
+  font-size: 1.75rem;
+}
+
+.pb-desc-label {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.field-collection-item-field-pbcore-description .pb-desc-label.langname {
+    font-size: 1.25rem;
+}
+
+
+
+
+
 
 h3.node-desc {
   text-transform: uppercase;
