@@ -1420,6 +1420,19 @@
   top: -0.2rem;
 }
 
+/* show-hide for editing mode notice */
+.editing-message{
+  position: relative;
+  top: 0;
+  text-align: center;
+  background: rgb(254, 254, 223);
+  height: 2rem;
+  margin: 0 .1rem;
+  font-size: 90%;
+  line-height: 1.68em;
+  display: none;
+}
+
 .transcript-navigate-results {
   width: 25%;
   padding: 0;
@@ -1554,7 +1567,7 @@
   width: 21%;
   padding-left: 3%;
   padding-top: 0.5rem;
-  font-size: 0.88em;
+  font-size: 0.82em;
 }
 
 .transcript-search-result .shanti-thumbnail-image {
@@ -1648,19 +1661,8 @@
 
 .transcript-search-result .shanti-thumbnail-link{
   line-height: 1.25em;
-}
-
-/* show-hide for editing mode notice */
-.editing-message{
-  position: relative;
-  top: 0;
-  text-align: center;
-  background: rgb(254, 254, 223);
-  height: 2rem;
-  margin: 0 .1rem;
-  font-size: 90%;
-  line-height: 1.68em;
-  display: none;
+  text-indent: 0;
+  font-size: 0.93em;
 }
 /* END search */
 

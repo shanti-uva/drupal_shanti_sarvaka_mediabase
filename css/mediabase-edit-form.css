@@ -1,7 +1,13 @@
 
-/* ---------------------- */
-/* -- Video Edit form --- */
-/* ---------------------- */
+/**
+* version 1.x - Mandala Audio-Video Development
+* 
+* mediabase-edit-form.css
+* -------------------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / Audio-Video
+* -------------------------------------------------------------------
+* 
+*/
 
 /* Throbber for Ajax Loading */
 .throbber {
@@ -331,7 +337,7 @@ table.sticky-table .filter-guidelines ul li{
 *
 *
 * -------------------------------
-* Node Video Migrated from main
+* Node Migrated from main
 * -------------------------------
 */
 /* overide 'mediabase-edit-form.css' */
@@ -467,7 +473,28 @@ table.sticky-table .filter-guidelines ul li{
     }
 
 /**
-*** END - Node Video Form */
+*** END - Media Edit Form */
 
 
+
+
+
+
+.page-group-node-admin fieldset.form-wrapper {
+  margin-left:0;
+  font-size: 1.06em;
+}
+  .page-group-node-admin .placeholder{
+    font-size: 1.12em;
+  }
+
+
+
+/* admin My Collections edit tab 
+.admin-menu .bootstrap-select.btn-group .btn .caret::before{
+  position: absolute;
+  top: -0.56em;
+  right: -0.5rem;
+}
+*/
 
