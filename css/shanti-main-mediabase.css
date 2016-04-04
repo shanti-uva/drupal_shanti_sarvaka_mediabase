@@ -1651,7 +1651,35 @@ h3.node-desc {
 }
 
 @media screen and (min-width: 1200px) {
+    
+    /**
+    *** testing */
+    .audio-video .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
 
+    .audio-video .row-offcanvas-right {
+      right: 0;
+    }
+
+    .audio-video .row-offcanvas-right .sidebar-offcanvas {
+      right: -17.1rem;
+   /* 6 columns */
+    }
+
+    .audio-video .row-offcanvas-right.active {
+      left: 18.6rem;
+   /* 6 columns */
+    }
+
+    .audio-video .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 18.6rem;
+   /* 6 columns */
+    }
 } 
 
 @media (min-width:1250px) {
