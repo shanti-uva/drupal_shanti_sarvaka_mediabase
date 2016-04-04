@@ -591,24 +591,14 @@ div.node .group-details .field-label-span {
   vertical-align: top;
 }
 
-.field-name-field-pbcore-description .show-more {
-  position: relative;
-  top: -0.7rem;
-  border: 1px double #ccc;
-  border-width: 3px 0;
-  padding: .3rem 0 .2rem;
-  text-align: center;
-  margin-top: 2rem;
+/*--- show-hide toggle button ---*/
+a.show-annot, a.hide-annot {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: -0.5em;
 }
-
-    /*--- show-hide toggle button ---*/
-    a.show-annot, a.hide-annot {
-      font-size: 1em;
-      text-transform: uppercase;
-      font-family: sans-serif;
-      font-weight: bold;
-      margin-left: -0.5em;
-    }
 
     a.show-annot::before,
     a.hide-annot::before {
@@ -1140,46 +1130,37 @@ div#edit-actions--3.form-actions.form-wrapper{
     }
 
 
-/*
-.node-video .tab-content {
-  border-top: 1px solid #ddd;
-}*/
-.node-video > h2 {
-  line-height: 1.75em;
-  font-size: 1.18em;
-  position: relative;
-  top: 0.3rem;
-}
 
-    .node-video ul.links.inline {
-      position: relative;
-      top: 10px;
-    }
 
-    .node-video ul.links.inline a {
-      font-size: 90%;
-    }
+/** 
+* VIDEO Metadata 
+* 
+* Container '.avdesc' within '.video-row' contains two columns
+* - left column: date, author, social, etc
+* - right column: video overview descriptive info
+* 
+*/
 
 .video-row {
   margin-top: 0.1rem;
 }
 
-    .video-overview {
-      padding-bottom: 2rem;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    /* left column date/time/author/social */
-    .avinfo {
-      padding-left: 0px !important;
-      padding-top:1rem;
-    }
+.avdesc {
+  margin: 0;
+  padding-bottom:1.5rem;
+  max-width: 800px;
+}
 
-    .avdesc {
-      margin: 0;
-      padding-bottom:1.5rem;
-      max-width: 800px;
-    }
+.video-overview {
+  padding-bottom: 2rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.avinfo {
+  padding-left: 0px !important;
+  padding-top:1rem;
+}
 
     .node-type-audio .avinfo{
       width: 33.33333333% !important;
@@ -1193,6 +1174,28 @@ div#edit-actions--3.form-actions.form-wrapper{
     .node-type-audio.has-transcript .avinfo,
     .node-type-audio.has-transcript .video-overview{
       width: 100% !important;
+    }
+
+.video-overview  .show-more {
+  position: relative;
+  top: -0.7rem;
+  border: 1px double #ccc;
+  border-width: 3px 0;
+  padding: .3rem 0 .2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+    .video-overview .show-more a{
+      font-size:0.88em;
+      display: block;
+    }
+    /*.video-overview .desc-readmore {
+      margin: -10px 0 20px;
+    } */
+
+    .video-overview > h5 {
+      text-transform: uppercase;
     }
 
 .avinfo .trans-btn {
@@ -1323,6 +1326,26 @@ div#edit-actions--3.form-actions.form-wrapper{
       top: 3px;
     }
 
+/*
+.node-video .tab-content {
+  border-top: 1px solid #ddd;
+}*/
+.node-video > h2 {
+  line-height: 1.75em;
+  font-size: 1.18em;
+  position: relative;
+  top: 0.3rem;
+}
+
+.node-video ul.links.inline {
+  position: relative;
+  top: 10px;
+}
+
+.node-video ul.links.inline a {
+  font-size: 90%;
+}
+    
 ul.inline li a,
 .compact-link a,
 ul.links.inline li a,
@@ -1334,7 +1357,6 @@ a.tabledrag-toggle-weight {
   font-weight: bold;
   font-weight: 700;
 } /*--- targeting login link for now, see if this oerks ---*/
-
 
 .field-name-field-tags {
   padding: 10px 10px 0;
@@ -1356,19 +1378,6 @@ a.tabledrag-toggle-weight {
 
     .field-item-span {
       display: inline;
-    }
-
-.video-overview .desc-readmore {
-  margin: -10px 0 20px;
-}
-
-    .video-overview .show-more a{
-      font-size:0.88em;
-      display: block;
-    }
-
-    .video-overview > h5 {
-      text-transform: uppercase;
     }
 
 .avplace .field,
@@ -1462,7 +1471,7 @@ h3.node-desc {
 
     .largePlayBtn::after {  }
 /**
-*** END video view page */
+*** END video view */
 
 
 
@@ -1492,7 +1501,7 @@ h3.node-desc {
   margin-top: 2rem;
 }
 /**
-*** END temporary fix */
+*** END temp fix */
 
 
 
@@ -1506,8 +1515,8 @@ h3.node-desc {
     color: transparent !important;
   }
 }
-
-/***** END max-width *****/
+/**
+*** END max-width */
 
 
 /*-------------------------*/
@@ -1679,9 +1688,6 @@ h3.node-desc {
 
 
 
-
-
-
 /*** BEGIN iframe */
 .in-frame header.header-banner,
 .in-frame header.banner .page-title .icon,
@@ -1755,7 +1761,8 @@ h3.node-desc {
     .in-frame .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon.glyphicon-download-alt{
       color: #4ca6fb !important;
 }
-/*** END iframe */
+/**
+*** END iframe */
 
 
 
@@ -1923,9 +1930,7 @@ h3.node-desc {
 }
 
 /**
-* END Carousel 
-* 
-*/
+*** END Carousel */
 
 
 

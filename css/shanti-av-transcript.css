@@ -1622,7 +1622,7 @@
 }
 
 .transcript-search-result .shanti-thumbnail-image a .overlay::before {
-  line-height: 2.06em;
+  line-height: 0.6em;
 }
 
 .transcript-search-result .shanti-thumbnail-image a:hover .overlay::before {
