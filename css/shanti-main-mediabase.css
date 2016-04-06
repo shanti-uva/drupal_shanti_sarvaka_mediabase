@@ -1790,7 +1790,16 @@ h3.node-desc {
     .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before,
     .in-frame .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon.glyphicon-download-alt{
       color: #4ca6fb !important;
-}
+    }
+
+    .in-frame .tab-content.container-fluid,
+    .in-frame .main-wrapper.container-fluid,
+    .in-frame .node-type-audio .tab-pane.main-col > div{
+      max-width: 100% !important;
+      padding-right:0;
+      padding-left:0;
+    }
+
 /**
 *** END iframe */
 
