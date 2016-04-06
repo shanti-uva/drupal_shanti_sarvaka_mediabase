@@ -265,7 +265,9 @@
 }
 
 
-
+.collection-content .field-label-inline .field-label-span { 
+  float:left; 
+}
 
 
 
@@ -783,7 +785,8 @@ ul.links.inline {
         padding:0px;
     }
 
-.mb-identifier.field.field-label-inline.clearfix, .mb-identifier.field.field-label-inline.clearfix * {
+.mb-identifier.field.field-label-inline.clearfix, 
+.mb-identifier.field.field-label-inline.clearfix * {
     float: none;
 }
 
@@ -791,7 +794,8 @@ ul.links.inline {
         display: inline-block !important;
     }
 
-.field-name-field-identifier-source, .field-name-field-identifier-source .field-items {
+.field-name-field-identifier-source, 
+.field-name-field-identifier-source .field-items {
     display: inline !important;
 }
 
@@ -800,7 +804,8 @@ ul.links.inline {
         font-weight: bold;
     }
 
-    .field-name-field-identifier, .field-name-field-identifier div {
+    .field-name-field-identifier, 
+    .field-name-field-identifier div {
         display: inline;
     }
 
