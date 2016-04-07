@@ -1560,18 +1560,22 @@ h3.node-desc {
 /*-------------------------*/
 @media screen and (min-width:500px) {
 
-  .shanti-filters .control-box-cell-pager{
-    width:60%;
-    margin-top: -6.5rem;
+  .shanti-filters{
+    height: 5.2em;
   }
+
+    .shanti-filters .control-box-cell-pager{
+      width:50%;
+      margin-top: -6.5rem;
+    }
 
     .logged-in.front .shanti-filters .control-box-cell-pager {
       margin-top: -8rem;
     }
-
+    /*
     .page-collections .shanti-filters .control-box-cell-pager{
       width: 60% !important;
-    }
+    }*/
     .page-collections .shanti-filters .control-box-cell-header{
       width: 100% !important;
     }
@@ -1583,15 +1587,10 @@ h3.node-desc {
 
 @media screen and (min-width: 768px) {
 
-  .shanti-filters .control-box-cell-pager{
-    width:50%;
-    margin-top: -6.5rem;
+  .page-collections .shanti-filters .control-box-cell-header,
+  .page-collections .shanti-filters .control-box-cell-filters{
+    width:33% !important;
   }
-
-    .page-collections .shanti-filters .control-box-cell-header,
-    .page-collections .shanti-filters .control-box-cell-filters{
-      width:33% !important;
-    }
 
     .page-collections .shanti-filters .control-box-cell-pager{
       width: 40% !important;
@@ -1615,13 +1614,13 @@ h3.node-desc {
       width:50% !important;
     }
 
-  .node-type-audio .av-main-video-section {
-    width: 100% !important;
-  }
+    .node-type-audio .av-main-video-section {
+      width: 100% !important;
+    }
 
-  .node-type-audio.has-transcript .av-main-video-section {
-    width: 41.66666667% !important;
-  }
+    .node-type-audio.has-transcript .av-main-video-section {
+      width: 41.66666667% !important;
+    }
 
     .node-type-audio .avinfo{
       width: 25% !important;
