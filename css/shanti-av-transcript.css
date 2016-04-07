@@ -667,7 +667,7 @@
 
 
 /*-----------------------------------*/
-/***** transcript button control *****/
+/***** Transcript button control *****/
 /*-----------------------------------*/
 .btn-group-transcript .btn.btn-default.btn-icon:hover .icon, 
 .btn-group-transcript .btn.btn-default.btn-icon:focus .icon, 
@@ -866,23 +866,35 @@
   padding: 0;
   line-height: 2.5em;
   height: 2.7rem;
-}
-
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a:hover{
-  background: #fff;
-  box-shadow: inset 0 0 5px 1px #ddd;
   display: block;
   width: 100%;
 }
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a:hover{
+  background: #f0f0f0;
+  /* box-shadow: inset 0 0 5px 1px #ddd; */
+}
+
+
+
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
+  float:right;
+}
+
 /*
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a.opt .glyphicon{
   color:#2cb3b2;
 }
 */
+
+
+
+
+
 /**
-* -------------------------
-* Transcript Viewer Themes
-* -------------------------
+* -------------------------------
+* BEGIN Transcript Viewer Themes
+* -------------------------------
 */
 
 /**

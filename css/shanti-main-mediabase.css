@@ -233,12 +233,11 @@
       font-style: italic;
     }
 
-    .view-collections .views-field-field-images img {
+    .view-collections .views-field-field-images  {
       float: left;
       margin: .44em .88em .18em 0;
       box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.7);
       border-collapse: separate;
-     /* fix for ie9 shadow */
     }
 
 .page-collections-list #block-system-main.block.block-system {
@@ -1876,10 +1875,6 @@ h3.node-desc {
 
     .logged-in .carousel .carousel-main-content{
       width:62%;
-    }
-
-    .logged-in .carousel-main-image img {
-      /*max-height: 200px;*/
     }
 
     .logged-in .carousel-description p {
