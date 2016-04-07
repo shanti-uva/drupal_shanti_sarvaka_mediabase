@@ -1583,7 +1583,7 @@ h3.node-desc {
 @media screen and (min-width: 768px) {
 
   .shanti-filters .control-box-cell-pager{
-    width:33.333%;
+    width:50%;
     margin-top: -6.5rem;
   }
 
