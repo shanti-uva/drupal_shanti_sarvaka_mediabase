@@ -667,7 +667,7 @@
 
 
 /*-----------------------------------*/
-/***** Transcript button control *****/
+/***** transcript button control *****/
 /*-----------------------------------*/
 .btn-group-transcript .btn.btn-default.btn-icon:hover .icon, 
 .btn-group-transcript .btn.btn-default.btn-icon:focus .icon, 
@@ -878,7 +878,8 @@
 
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
-  float:right;
+  position:absolute;
+  right: 1.5rem !important;
 }
 
 /*
@@ -892,9 +893,9 @@
 
 
 /**
-* -------------------------------
-* BEGIN Transcript Viewer Themes
-* -------------------------------
+* -------------------------
+* Transcript Viewer Themes
+* -------------------------
 */
 
 /**
