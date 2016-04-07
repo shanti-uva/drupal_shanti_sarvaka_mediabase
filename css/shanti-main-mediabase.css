@@ -823,15 +823,15 @@ ul.links.inline {
  }
 
     .av-related-wrapper .panel-group .panel{
-        box-shadow: none;
+        /*box-shadow: none;*/
      }
 
      .av-related-wrapper .panel-heading{
-      display:none;
+      /*display:none;*/
      }
 
     .av-related-wrapper .tab-content{
-      border:none;
+      /*border:none;*/
      }
  
 /** My Content Pages **/
