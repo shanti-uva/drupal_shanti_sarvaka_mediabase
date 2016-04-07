@@ -818,20 +818,20 @@ ul.links.inline {
 }
 
 /** Related Videos Tab **/
-.av-related-wrapper .tab-pane.mlt .related-av-nodes {
+.av-related-wrapper li:nth-of-type(2) .tab-pane.mlt .related-av-nodes {
      padding: 12px;
  }
 
-    .av-related-wrapper .panel-group .panel{
-        /*box-shadow: none;*/
+    .av-related-wrapper li:nth-of-type(2) .panel-group .panel{
+       box-shadow: none;
      }
 
-     .av-related-wrapper .panel-heading{
-      /*display:none;*/
+     .av-related-wrapper li:nth-of-type(2) .panel-heading{
+       display:none;
      }
 
-    .av-related-wrapper .tab-content{
-      /*border:none;*/
+    .av-related-wrapper li:nth-of-type(2) .tab-content{
+       border:none;
      }
  
 /** My Content Pages **/
