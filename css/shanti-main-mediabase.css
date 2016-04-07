@@ -1,7 +1,7 @@
 /**
-* version 1.x - Mandala Audio-Video - Development
+* Mandala Audio-Video - Development
 * 
-* shanti-main-mediabase.css
+* version 1.x - shanti-main-mediabase.css
 * ------------------------------------------
 * University of Virginia / SHANTI MANDALA
 * ------------------------------------------
@@ -878,8 +878,8 @@ ul.links.inline {
       float: left;
       padding: 0px 12px;
     }
-
-    .view-collections .views-exposed-form .views-exposed-widget {
+    /* widget singular not plural */
+    .view-collections .views-exposed-form .views-exposed-widget { 
       height: 5.5rem;
       margin: 0;
       text-align: left;
@@ -961,6 +961,7 @@ ul.links.inline {
       left: 4% !important;
     }
 }
+
 
 /* kaltura upload video */
 div.ctools-modal-content {

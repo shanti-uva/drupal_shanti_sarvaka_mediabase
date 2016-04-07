@@ -1,15 +1,15 @@
 
 /**
-* version 1.x - Mandala Audio-Video - Development
+* Mandala Audio-Video - Development
 * 
-* mediabase-edit-form.css
+* version 1.x - mediabase-edit-form.css
 * ------------------------------------------
 * University of Virginia / SHANTI MANDALA
 * ------------------------------------------
 * 
 */
 
-/* Throbber for Ajax Loading */
+/* Ajax Loading */
 .throbber {
 	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
 	background-color: transparent !important;
@@ -314,30 +314,9 @@ table.sticky-table .filter-guidelines ul li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
-*
-* New addition mf8yk april 2, 2016
-* migrating admin styles from the mediabase-main css
-*
-*
 * -------------------------------
-* Node Migrated from main
+* ...migrated from mb-main
 * -------------------------------
 */
 /* overide 'mediabase-edit-form.css' */
