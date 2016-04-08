@@ -871,15 +871,13 @@
   background: #f7f7f7;
 }
 
-
-
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
   position:absolute;
   right: 1.5rem !important;
 }
 
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected > a .glyphicon:first-of-type{
   color:#2cb3b2;
 }
 
