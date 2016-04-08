@@ -23,6 +23,7 @@
   background-color: #2db6b4 !important;
 }
 
+.nav-justified>li.active::before,
 .navbar-brand:hover .site-slogan,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
@@ -32,8 +33,6 @@
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
 .view-section .fancytree-node.fancytree-selected > .glyphicon
-.node-type-audio .nav-justified>li.active::before,
-.node-type-video .nav-justified>li.active::before,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
@@ -1545,8 +1544,7 @@ h3.node-desc {
 /*-------------------------*/ 
 @media screen and (max-width: 767px) {
 
-  .node-type-audio .nav-justified>li.active::before,
-  .node-type-video .nav-justified>li.active::before{
+  .nav-justified>li.active::before{
     color: transparent !important;
   }
 }
@@ -1798,8 +1796,7 @@ h3.node-desc {
       border-top-color: #4ca6fb !important;
     }
 
-    .in-frame.node-type-audio .nav-justified>li.active::before, 
-    .in-frame.node-type-video .nav-justified>li.active::before,
+    .in-frame .nav-justified>li.active::before,
     .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
     .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
     .in-frame .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
