@@ -876,9 +876,9 @@
   right: 1.5rem !important;
 }
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu .glyphicon-download-alt,
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li > a .glyphicon.glyphicon-download-alt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected > a .glyphicon:first-of-type{
-  color:#2cb3b2;
+  color:#2cb3b2 !important;
 }
 
 /*

@@ -189,9 +189,9 @@
 */
 
 .mb-solr-results .head {
-  position: relative;
+  /*position: relative;
   top: -1rem;
-  margin-top: 1rem;
+  margin-top: 1rem;*/
   margin-bottom: 0;
 }
 
@@ -215,6 +215,11 @@
 
 .node-type-collection .mb-solr-results{
   margin-top: 0;
+}
+
+.node-type-collection .mb-solr-results .head{
+  /*position: relative;
+  top: 0;*/
 }
 
 .node-type-collection .mb-solr-results .head table.pagerer{
