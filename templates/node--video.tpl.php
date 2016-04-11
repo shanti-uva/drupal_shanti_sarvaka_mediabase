@@ -168,7 +168,7 @@ else:     /************ FULL Display ***********/
 
   <div class="content"<?php print $content_attributes; ?>>
 
-  <div class="av-main-wrapper row">
+  <div class="av-main-wrapper">
 
   <div class="av-main-video-section col-xs-12 col-sm-6">
     <?php

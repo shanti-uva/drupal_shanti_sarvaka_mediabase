@@ -1690,7 +1690,10 @@ h3.node-desc {
 }
 
 @media screen and (min-width: 1200px) {
-    
+
+  .logged-in.front .shanti-filters table.pagerer{
+    margin-top:1.4rem;
+  }  
 } 
 
 @media (min-width:1250px) {
