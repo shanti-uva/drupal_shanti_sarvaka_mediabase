@@ -873,7 +873,8 @@
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
   position:absolute;
-  right: 1.5rem !important;
+  right: 1.5rem;
+  top: 0.6rem;
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li > a .glyphicon.glyphicon-download-alt,

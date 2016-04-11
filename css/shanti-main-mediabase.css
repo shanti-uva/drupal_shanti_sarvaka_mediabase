@@ -1046,7 +1046,7 @@ div.ctools-modal-content a.close{
   letter-spacing: 0.1rem;
   float: right;
   white-space: nowrap;
-  font-family: 'Helvetica Neue', helevetica, arial, sans-serif;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   opacity:0.85;
 }
 
@@ -1337,21 +1337,20 @@ ul.inline li a,
 ul.links.inline li a,
 a.tabledrag-toggle-weight {
   color: #5a65d1;
-  letter-spacing: -0.12em;
   text-transform: capitalize;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   font-weight: bold;
-  font-weight: 700;
 }
-
-    .node-video ul.links.inline a {
-      font-size: 90%;
-    }
     /* links at bottom of media nodes (add comments, add to favs) */
     ul.links.inline {
-      margin-bottom: 0 0 2rem 2rem;
+      margin: 0 0 2rem 2rem;
       display: block;
     }
+
+    .node-video ul.links.inline a {
+      font-size: 0.93em;
+    }
+
 
 
 
