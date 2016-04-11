@@ -132,7 +132,8 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             //dpm($vars, 'vars in pp');
             $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
             if (isset($vars['field_images']['und'][0]['uri'])) {
-              $vars['thumbnail_url'] = file_create_url($vars['field_images']['und'][0]['uri']);
+                $uri = $vars['field_images']['und'][0]['uri'];
+               $vars['thumbnail_url'] = image_style_url('gallery_thumb', $uri);
             }
             $desc = strip_tags($vars['body'][0]['value']);
             $vars['desc'] = (strlen($desc) > 0) ? substr(strip_tags($vars['body'][0]['value']), 0, 130) . "..." : "";
