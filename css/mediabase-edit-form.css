@@ -264,7 +264,7 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
-.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:30%; border-bottom:none;}
+.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.333%; border-bottom:none;}
 
 .group-rights .form-type-textfield label,
 .field-name-field-workflow .form-item.form-type-select label,
@@ -286,6 +286,10 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
+
+
+
+
 
 
 .page-node-edit .bootstrap-select.btn-group .btn .caret{
