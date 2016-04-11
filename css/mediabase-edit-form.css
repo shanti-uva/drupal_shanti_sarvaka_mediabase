@@ -268,7 +268,7 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
 .group-rights .form-type-textfield label,
 .field-name-field-workflow .form-item.form-type-select label,
-.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.8rem;margin-left:2rem;}
+.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.2rem;margin-left:2rem;}
 
 .field-name-field-workflow .bootstrap-select.form-control:not([class*='span']),
 .field-type-field-collection  .bootstrap-select.form-control:not([class*='span']){ min-width: 15rem; max-width:95%; margin-left:1rem;}
