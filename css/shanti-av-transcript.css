@@ -603,7 +603,7 @@
   line-height:2em;
   font-weight: bold;
   font-weight:700;
-  font-family: 'museo-sans-700';
+  /*font-family: 'museo-sans-700';*/
   color: #fff;
   border-bottom:none;
   text-shadow: 0 0 #666;
@@ -1035,7 +1035,7 @@
 
 .transcript-content .minimal-view .play-button{
   position: absolute; 
-  right: 2rem;
+  right: 0.7rem;
   top: -0.5rem;
 }
 

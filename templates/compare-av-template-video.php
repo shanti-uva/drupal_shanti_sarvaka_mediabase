@@ -168,7 +168,7 @@ else:     /************ FULL Display ***********/
 
   <div class="content"<?php print $content_attributes; ?>>
 
-  <div class="av-main-wrapper row">
+  <div class="av-main-wrapper">
 
   <div class="av-main-video-section col-xs-12 col-sm-6">
     <?php
@@ -258,7 +258,7 @@ else:     /************ FULL Display ***********/
      </div> <!-- End of av-main-wrapper -->
   </div> <!-- End of content -->
 
-      <div class="av-related-wrapper">
+      <div class="av-related-wrapper col-xs-12">
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li class="active"><a href="#details" role="tab" data-toggle="tab" id="detail-tab"><?php print t('Details'); ?></a></li>
           <li><a href="#related" role="tab" data-toggle="tab" id="related-tab"><?php print t('Related Audio-Video'); ?></a></li>
