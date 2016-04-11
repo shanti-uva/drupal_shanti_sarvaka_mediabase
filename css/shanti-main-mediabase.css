@@ -760,12 +760,6 @@ a.show-annot, a.hide-annot {
       display: none;
     }
 
-/* fixing spacing of links at bottom (email, add to favs etc.) */
-ul.links.inline {
-  margin-bottom: 24px;
-  display: block;
-}
-
 
 /**
 * -----------------------------
@@ -1346,15 +1340,14 @@ a.tabledrag-toggle-weight {
   font-weight: 700;
 }
 
-    .node-video ul.links.inline {
-      position: relative;
-      top: 10px;
-    }
-
     .node-video ul.links.inline a {
       font-size: 90%;
     }
-
+    /* links at bottom of media nodes (add comments, add to favs) */
+    ul.links.inline {
+      margin-bottom: 0 0 2rem 2rem;
+      display: block;
+    }
 
 
 
