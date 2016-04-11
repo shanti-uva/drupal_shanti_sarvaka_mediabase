@@ -603,7 +603,7 @@
   line-height:2em;
   font-weight: bold;
   font-weight:700;
-  font-family: 'museo-sans-700';
+  /*font-family: 'museo-sans-700';*/
   color: #fff;
   border-bottom:none;
   text-shadow: 0 0 #666;
