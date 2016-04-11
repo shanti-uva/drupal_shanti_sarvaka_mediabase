@@ -80,6 +80,51 @@
  * @ingroup themeable
  */
 ?>
+<?php
+/********* TEASER Display ****************/
+if($teaser):
+        //dpm($variables, 'in teaser');
+        ?> 
+    <!-- Collections Shanti thumbnail-->
+    <li class="shanti-thumbnail collection" >  
+        <div class="shanti-thumbnail-image shanti-field-collection">
+            <a href="/collection/admin-collection" class="shanti-thumbnail-link">
+                <span class="overlay"><span class="icon"></span></span>
+                <img class="img-responsive" typeof="Image" src="<?php print $thumbnail_url; ?>" width="200" height="150" alt="">
+                <span class="icon shanticon-grid"></span>
+            </a>
+        </div>
+        <div class="shanti-thumbnail-info">      
+            <div class="body-wrap">
+                <div class="shanti-thumbnail-field shanti-field-title">        
+                    <span class="field-content">
+                        <a href="/collection/admin-collection" class=""><?php print $title; ?></a></span>  
+                </div>  
+                <div class="shanti-thumbnail-field shanti-field-author">       
+                    <span class="shanti-field-content"><?php print $name; ?></span>  
+                </div>  
+                <div class="shanti-thumbnail-field shanti-field-itemcount">       
+                    <span class="shanti-field-content"><?php print $item_count; ?> <?php
+                        if ($item_count == 0 || $item_count > 1) {
+                            print t('items');
+                        } else {
+                            print t('item');
+                        }
+                    ?></span>  
+                </div>  
+                <div class="shanti-thumbnail-field shanti-field-created">       
+                    <span class="shanti-field-content"><?php print date('F Y', $created); ?></span>  
+                </div>  
+                <div class="shanti-thumbnail-field shanti-field-body">
+                    <?php print $desc; ?>
+                </div>
+            </div> 
+        </div>  
+    </li> <!-- end shanti-thumbnail -->
+
+<?php
+else:     /************ FULL Display ***********/
+?>
 <div id="collection-<?php print $node->nid; ?>" class="collection<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <!--
   <?php print $user_picture; ?>
@@ -140,3 +185,4 @@
   <?php print render($content['comments']); ?>
 
 </div>
+<?php endif; ?>

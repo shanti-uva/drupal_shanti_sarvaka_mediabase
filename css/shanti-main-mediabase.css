@@ -656,6 +656,10 @@ a.show-annot, a.hide-annot {
   margin: -4px 8px 0 0;
 }
 
+.view-id-collections .shanti-thumbnail-field.shanti-field-title {
+    margin-top: 6px;
+    font-weight: bold;
+}
 
 /**
 * --------------------------
