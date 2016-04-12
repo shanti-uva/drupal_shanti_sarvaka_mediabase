@@ -1856,6 +1856,7 @@ h3.node-desc {
 /**
 * Carousel Media Breakpoints 
 */
+/*
 @media screen and (min-width:500px) {
 
     .logged-in .carousel-title {
@@ -1867,7 +1868,6 @@ h3.node-desc {
 
 @media screen and (min-width: 768px) {
 
-    /* carousel front page */
     .logged-in .carousel-title {
       font-size: 1.38em;
     }
@@ -1975,6 +1975,7 @@ h3.node-desc {
       width: 72%;
     }
 }
+*/
 
 /**
 *** END Carousel */
