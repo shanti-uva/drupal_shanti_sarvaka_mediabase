@@ -69,7 +69,7 @@
 * --------------
 */
 
-.tab-pane.main-col.active:not(.front.tab-pane.main-col.active){
+.tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
@@ -315,7 +315,6 @@
 
     #views-exposed-form-browse-media-home-block .views-exposed-form input#edit-title {
         max-width: 130px;
-        margin-top: -1px;
     }
 
 
