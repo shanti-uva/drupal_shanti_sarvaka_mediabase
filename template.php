@@ -118,7 +118,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			$src = image_style_url($style_name, $uri);
 			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
 		}
-		$subcolls = array();
+        $subcolls = array();
         /* Old Kmaps code: Removing for MANU-2488
 		if(!empty($vars['field_subcoll_root_kmap_id'])) { // old field
 			module_load_include('inc','kmap_taxonomy','includes/kmap');
@@ -127,8 +127,9 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 				$kmap->field_name = 'field_subcollection';
 				$subcolls[] = _kmap_subject_popover($kmap);
 			}
-		}*/
+		}
 		$vars['subcolls'] = implode(', ', $subcolls);
+         */
         if ($vars['view_mode'] == 'teaser') {
             //dpm($vars, 'vars in pp');
             $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
