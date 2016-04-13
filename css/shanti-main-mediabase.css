@@ -1354,7 +1354,7 @@ a.tabledrag-toggle-weight {
     /* links at bottom of media nodes (add comments, add to favs) */
     ul.links.inline {
       margin: 0 0 2rem 2rem;
-      display: block;
+      float:left;
     }
 
     .node-video ul.links.inline a {
@@ -1596,7 +1596,6 @@ h3.node-desc {
     .shanti-filters .control-box-cell-header p {
     	display: inline-block;
     	font-size: 90%;
-      padding-left: 12px;
     }
 
   /**
@@ -1646,7 +1645,6 @@ h3.node-desc {
 
       .shanti-filters .control-box-cell-header {
         padding-top: 0.25rem;
-        padding-left: 0.25rem;
       }
 
       .shanti-filters .control-box-cell-pager {
