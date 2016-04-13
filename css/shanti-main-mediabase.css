@@ -1046,7 +1046,7 @@ div.ctools-modal-content a.close{
   letter-spacing: 0.1rem;
   float: right;
   white-space: nowrap;
-  font-family: 'Helvetica Neue', helevetica, arial, sans-serif;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   opacity:0.85;
 }
 
@@ -1337,21 +1337,20 @@ ul.inline li a,
 ul.links.inline li a,
 a.tabledrag-toggle-weight {
   color: #5a65d1;
-  letter-spacing: -0.12em;
   text-transform: capitalize;
-  font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   font-weight: bold;
-  font-weight: 700;
 }
-
-    .node-video ul.links.inline a {
-      font-size: 90%;
-    }
     /* links at bottom of media nodes (add comments, add to favs) */
     ul.links.inline {
-      margin-bottom: 0 0 2rem 2rem;
+      margin: 0 0 2rem 2rem;
       display: block;
     }
+
+    .node-video ul.links.inline a {
+      font-size: 0.93em;
+    }
+
 
 
 
@@ -1857,6 +1856,7 @@ h3.node-desc {
 /**
 * Carousel Media Breakpoints 
 */
+/*
 @media screen and (min-width:500px) {
 
     .logged-in .carousel-title {
@@ -1868,7 +1868,6 @@ h3.node-desc {
 
 @media screen and (min-width: 768px) {
 
-    /* carousel front page */
     .logged-in .carousel-title {
       font-size: 1.38em;
     }
@@ -1976,7 +1975,21 @@ h3.node-desc {
       width: 72%;
     }
 }
+*/
 
 /**
 *** END Carousel */
 
+@media (min-width:1100px) {
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 13em;
+  }
+}
+
+@media (min-width:1250px) {
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 16em;
+  }
+}
