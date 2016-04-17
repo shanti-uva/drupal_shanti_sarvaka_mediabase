@@ -213,8 +213,8 @@
 
 	            $('.has-transcript .show-more a').bind( 'click', function() {	
 //		            $( document ).ready(function() {	
-		              $('.av-main-wrapper > div.col-xs-12').matchHeight({
-		                  target: $('div.col-xs-12.av-main-video-section')
+		              $('.av-main-wrapper > .col-xs-12').matchHeight({
+		                  target: $('.av-main-video-section')
 		              });  
 //		            });  
 	            }); 
