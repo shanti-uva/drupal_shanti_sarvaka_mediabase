@@ -14,7 +14,7 @@
 }
 
 .transcript-container {
-  /*max-height: 900px;*/
+  max-height: 1000px;
   overflow-x: hidden;
   margin-top: 0;
   -webkit-transition: all 100ms ease 0s;
