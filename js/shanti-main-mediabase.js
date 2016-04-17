@@ -206,25 +206,14 @@
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
 	          $('.equal-height').matchHeight({
-	              target: $('.equal-height.col-md-9')
+	              target: $('.col-md-9.equal-height')
 	          });
-	        });    
-	       
-
-	            $('.panel-group a').bind( 'click', function() {
-	              $('.main-col .equal-height').matchHeight({
-	                $( document ).ready(function() {
-	                  target: $('.equal-height.col-md-9')
-	                }); 
-	              });  
-	            }); 
+	        });
 
 
 	            $('.has-transcript .show-more a').bind( 'click', function() {	
 	              $('.av-main-wrapper > div').matchHeight({
-	              	$( document ).ready(function() {
 	                  target: $('.av-main-video-section')
-	                }); 
 	              });  
 	            }); 
 
