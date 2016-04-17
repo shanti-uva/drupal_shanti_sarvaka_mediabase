@@ -1,7 +1,13 @@
+/**
+* Mandala Audio-Video (Transcript Viewer/Editor) - Development
+* 
+* version 1.x - shanti-av-transcript.css
+* ------------------------------------------
+* University of Virginia / SHANTI MANDALA
+* ------------------------------------------
+* 
+*/
 
-/*----------------------------*/
-/*----- BEGIN transcripts ----*/
-/*----------------------------*/
 .av-main-transcript-section{
   padding-left:1rem;
 }
@@ -260,9 +266,12 @@
 
 
 
-/*----------------------------*/
-/***** Transcript Editing *****/
-/*----------------------------*/
+/**
+* ---------------------
+* Transcript Editing
+* ---------------------
+*/
+
 .speaker-tiers .editable-input{
   width: 100% !important;
   display: block !important;
@@ -535,7 +544,13 @@
 
 
 
-/**** BEGIN Translation Segment Edit Tools Menu *****/
+
+/**
+* --------------------------------------
+* Translation Segment Edit Tools Menu
+* --------------------------------------
+*/
+
 .tcu-gear{
   display:none;
 }
@@ -666,9 +681,13 @@
 
 
 
-/*-----------------------------------*/
-/***** transcript button control *****/
-/*-----------------------------------*/
+
+/**
+* -----------------------------------
+* Transcript Viewer-Player Buttons
+* -----------------------------------
+*/
+
 .btn-group-transcript .btn.btn-default.btn-icon:hover .icon, 
 .btn-group-transcript .btn.btn-default.btn-icon:focus .icon, 
 .btn-group-transcript .btn.btn-default.btn-icon:hover .fa, 
@@ -898,9 +917,7 @@
 * -------------------------
 */
 
-/**
-*** Reverse Display Option 
-*/
+/* Reverse Display Option */
 .transcript-content .reversed-view .play-button{
   float: none;
   position: absolute;
@@ -1525,11 +1542,12 @@
   color: #eee;
 }
 
+
+
 /**
-*
-*
+* ------------------------------------
 * Search Results - Content Section
-*
+* ------------------------------------
 */
 .transcript-search-result .btn.btn-primary {
   font-weight: bold;
@@ -1547,7 +1565,11 @@
   left: -0.5rem;
 }
 
-/* Tiers occurs in the search results for transcripts and the transcript container itself, dashed lines seperates the languages */
+/**
+* Tiers occur in search results for transcripts 
+* and the transcript container itself, 
+* dashed lines seperates the languages 
+*/
 .transcript-search-result .tier.active {
   margin-top: 1rem;
   border-bottom: 1px dashed #ddd;
@@ -1747,7 +1769,7 @@
 
 
 
-/* removed march 31, 2016
+/** removed march 31, 2016
 
 .avinfo .transcripts-processed .form-item {
   margin-top: 0.5rem;
@@ -1759,70 +1781,3 @@
 
 */
 
-
-
-
-
-/* removing dark grey accordion theme -------
-
-.has-transcript .panel.panel-default .panel-heading h6{
-  border-bottom: none;
-}
-
-.node-type-video.has-transcript .main-wrapper{
-  background: #e0e0e0;
-}
-
-.node-type-video.has-transcript .has-tabs .banner-tabs{
-  background: #c0c0c0 !important;
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
-
-.node-type-video.has-transcript .tabs.primary li a{
-  color: #fff;
-  text-shadow: 1px 1px 3px #888;
-}
-
-.node-type-video.has-transcript .tabs.primary li a:active{
-  text-shadow:none;
-}
-
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6{
-  border-top-color: #ccc;
-}
-
-.node-type-video.has-transcript .panel-default>.panel-heading{
-  background: #a0a0a0 !important;
-  box-shadow: inset 1rem 1rem 2rem #999;
-}
-
-.node-type-video.has-transcript .panel-default>.panel-heading:hover{
-  background: #888 !important;
-}
-
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a{
-  text-shadow: 0 0 3px #555;
-  color: #eee;
-  letter-spacing: 0.1rem;
-  background: #888 !important;
-}
-
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a.collapsed{
-  background: transparent !important;
-}
-
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 a:hover{ 
-  color: #fff; 
-  background: #888 !important;
-}
-
-.node-type-video.has-transcript .panel-heading .accordion-toggle::after{
-  text-shadow:none;
-}
-
-.node-type-video.has-transcript .panel.panel-default .panel-heading h6 .glyphicon{
-  border-color:#999;
-}
-
-*/

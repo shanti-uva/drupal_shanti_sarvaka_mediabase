@@ -197,4 +197,44 @@
 		}
 	};
 
+
+
+
+	Drupal.behaviors.shantiAVEqualHeights = {
+	  attach: function (context, settings) { 
+	    if(context == window.document) {        
+	        // $(document).ajaxSuccess(function() {
+	        $( document ).ready(function() {
+	          $('.equal-height').matchHeight({
+	              target: $('.equal-height.col-xs-12')
+	          });
+	        });    
+	       
+
+	            $('.panel-group a').bind( 'click', function() {
+	              $( document ).ready(function() {	
+	                $('.main-col .equal-height').matchHeight({
+	                  target: $('.equal-height.col-xs-12')
+	                }); 
+	              });  
+	            }); 
+
+
+	            $('.has-transcript .show-more a').bind( 'click', function() {
+	              $( document ).ready(function() {	
+	                $('.av-main-wrapper > div').matchHeight({
+	                  target: $('.av-main-video-section')
+	                }); 
+	              });  
+	            }); 
+
+	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
+	    }
+	  } 
+	};
+
+
+
+
+
 } (jQuery)); // End of JQuery Wrapper

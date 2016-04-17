@@ -1,4 +1,3 @@
-
 /**
 * Mandala Audio-Video - Development
 * 
@@ -199,6 +198,7 @@
   color: #333;
   text-transform: uppercase;
   font-size: 0.9em;
+  padding-left: 0;
 }
 
 .mb-solr-results .head table.pagerer {
