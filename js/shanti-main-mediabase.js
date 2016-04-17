@@ -205,16 +205,18 @@
 	    if(context == window.document) {        
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
-	          $('.equal-height').matchHeight({
+	          $('.equal-height:not(".front .equal-height").matchHeight({
 	              target: $('.col-md-9.equal-height')
 	          });
 	        });
 
 
 	            $('.has-transcript .show-more a').bind( 'click', function() {	
-	              $('.av-main-wrapper > div').matchHeight({
-	                  target: $('.av-main-video-section')
-	              });  
+		            $( document ).ready(function() {	
+		              $('.av-main-wrapper > div').matchHeight({
+		                  target: $('.av-main-video-section')
+		              });  
+		            });  
 	            }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
