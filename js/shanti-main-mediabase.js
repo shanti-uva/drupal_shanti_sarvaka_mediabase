@@ -206,23 +206,23 @@
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
 	          $('.equal-height').matchHeight({
-	              target: $('.equal-height.col-xs-12')
+	              target: $('.equal-height.col-md-9')
 	          });
 	        });    
 	       
 
 	            $('.panel-group a').bind( 'click', function() {
-	              $( document ).ready(function() {	
-	                $('.main-col .equal-height').matchHeight({
-	                  target: $('.equal-height.col-xs-12')
+	              $('.main-col .equal-height').matchHeight({
+	                $( document ).ready(function() {
+	                  target: $('.equal-height.col-md-9')
 	                }); 
 	              });  
 	            }); 
 
 
-	            $('.has-transcript .show-more a').bind( 'click', function() {
-	              $( document ).ready(function() {	
-	                $('.av-main-wrapper > div').matchHeight({
+	            $('.has-transcript .show-more a').bind( 'click', function() {	
+	              $('.av-main-wrapper > div').matchHeight({
+	              	$( document ).ready(function() {
 	                  target: $('.av-main-video-section')
 	                }); 
 	              });  
