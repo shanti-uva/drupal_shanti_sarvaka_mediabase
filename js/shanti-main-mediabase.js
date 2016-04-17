@@ -205,7 +205,7 @@
 	    if(context == window.document) {        
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
-	          $('.equal-height:not(".front .equal-height").matchHeight({
+	          $('.equal-height:not(".front .equal-height")'.matchHeight({
 	              target: $('.col-md-9.equal-height')
 	          });
 	        });
