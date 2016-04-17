@@ -212,11 +212,11 @@
 
 
 	            $('.has-transcript .show-more a').bind( 'click', function() {	
-		            $( document ).ready(function() {	
-		              $('.av-main-wrapper > div').matchHeight({
-		                  target: $('.av-main-video-section')
+//		            $( document ).ready(function() {	
+		              $('.av-main-wrapper > div.col-xs-12').matchHeight({
+		                  target: $('div.col-xs-12.av-main-video-section')
 		              });  
-		            });  
+//		            });  
 	            }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
