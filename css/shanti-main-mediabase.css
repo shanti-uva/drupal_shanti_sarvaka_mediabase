@@ -263,7 +263,7 @@
 
 
 
-.node-type-collection .description{
+.node-type-collection .description:not(#admin-footer .description){
   min-height: 270px;
 }
 
