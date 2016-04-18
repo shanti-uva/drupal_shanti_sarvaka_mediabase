@@ -11,6 +11,7 @@
 .av-main-transcript-section{
   padding-left:1rem;
   overflow-x: hidden;
+  min-height: 700px;
 }
 
 .transcript-container {
