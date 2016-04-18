@@ -215,13 +215,13 @@
 	              target: $('.av-main-video-section')
 	          });
 	        });
-	        
+
 	            $('.has-transcript .show-more a').bind( 'click', function() {	
-//		            $( document ).ready(function() {	
+		            $( document ).ready(function() {	
 		              $('.av-main-wrapper > .col-xs-12').matchHeight({
 		                  target: $('.av-main-video-section')
 		              });  
-//		            });  
+		            });  
 	            }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
