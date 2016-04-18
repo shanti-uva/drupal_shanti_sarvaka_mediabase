@@ -1835,35 +1835,59 @@ h3.node-desc {
 * --------------
 */
 /* Fonts above carousel */
-.front #block-system-main h4 {
+.front .field-type-text-with-summary h4 {
   display: none;
 }
 
-    .front #block-system-main p { 
+    .front .field-type-text-with-summary p { 
       padding:0 2rem;
     }
 
     .carousel-main-content .show-more {
-      margin-top: 1rem;
+      /*margin-top: 1rem;*/
     }
 
     .logged-in .carousel-description p {
       /*height: 11em;*/
-      overflow: hidden;
+      /*overflow: hidden;*/
       font-size: 0.93em;
     }
 
     .logged-in .carousel-title {
-      font-size: 1.18em;
+      /*font-size: 1.18em;*/
     }
 
     .logged-in .carousel .byline {
-      font-size: 70%;
+      /*font-size: 70%;*/
     }
+
 
 /**
 * Carousel Media Breakpoints 
 */
+@media (min-width:1100px) {
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 13em;
+  }
+}
+
+@media (min-width:1200px) {
+
+  .logged-in .carousel-description p {
+    font-size: 1em;
+  }
+}  
+
+@media (min-width:1250px) {
+
+  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+    height: 16em;
+  }
+}
+
+
+
 /*
 @media screen and (min-width:500px) {
 
@@ -1985,19 +2009,3 @@ h3.node-desc {
 }
 */
 
-/**
-*** END Carousel */
-
-@media (min-width:1100px) {
-
-  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 13em;
-  }
-}
-
-@media (min-width:1250px) {
-
-  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 16em;
-  }
-}
