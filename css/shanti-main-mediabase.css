@@ -829,6 +829,10 @@ a.show-annot, a.hide-annot {
 /** 
 * Related Videos Tab 
 */
+.av-related-wrapper{
+  padding-top:2rem;
+}
+
 .av-related-wrapper #related .related-av-nodes {
      padding: 12px;
  }
@@ -1156,7 +1160,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 }
 /* BEGIN right desc col */
 .video-overview {
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
