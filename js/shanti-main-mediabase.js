@@ -205,9 +205,7 @@
 	    if(context == window.document) {        
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
-	          $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	              target: $('.equal-height.col-md-9')
-	          });
+	          setTimeout("('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({ target: $('.equal-height.col-md-9') })", 5000);
 	        });
 
 	        $( document ).ready(function() {
@@ -217,7 +215,7 @@
 	        });
 
             $('.has-transcript .show-more a').click(function(){
-        			setTimeout("$('.av-main-wrapper > .col-sm-6').matchHeight({ target: $('.av-main-video-section') }); ", 5000); 
+        			setTimeout("$('.av-main-wrapper > .col-sm-6').matchHeight({ target: $('.av-main-video-section') })", 5000); 
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
