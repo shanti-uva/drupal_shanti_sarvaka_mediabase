@@ -217,7 +217,7 @@
 	        });
 
             $('.has-transcript .show-more a').click(function(){
-        		$('.av-main-wrapper > .col-sm-6').matchHeight({ target: $('.av-main-video-section') }; 
+        		$('.av-main-wrapper > .col-sm-6').matchHeight({ target: $('.av-main-video-section' }); 
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
