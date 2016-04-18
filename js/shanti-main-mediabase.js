@@ -211,13 +211,13 @@
 	        });
 
 	        $( document ).ready(function() {
-	          	$('.has-transcript .av-main-wrapper > .col-sm-6').matchHeight({
+	          	$('.has-transcript .av-main-wrapper > div.col-sm-6').matchHeight({
 	              target: $('.av-main-video-section')
 	          	});
 	        });
 
             $('.has-transcript .show-more a').click(function(){
-        		$('.av-main-wrapper > .col-sm-6').matchHeight({ 
+        		$('.av-main-wrapper > div.col-sm-6').delay(15000).matchHeight({ 
         			target: $('.av-main-video-section') 
         		}); 
             }); 
