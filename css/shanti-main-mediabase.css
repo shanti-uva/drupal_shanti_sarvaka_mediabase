@@ -460,7 +460,7 @@
       margin-bottom:0;
     }
 
-    .front .shanti-filters table.pagerer {
+    .front .shanti-filters  .control-box-cell-pager table.pagerer {
       margin-top: -0.7rem;
     }
 
@@ -1643,7 +1643,7 @@ h3.node-desc {
       height: 3.25em;
     }
 
-      .front .shanti-filters table.pagerer {
+      .front .shanti-filters  .control-box-cell-pager table.pagerer {
         margin-top: 0.4rem;
       }
 
@@ -1686,7 +1686,7 @@ h3.node-desc {
 
 @media screen and (min-width: 1200px) {
 
-  .logged-in.front .shanti-filters table.pagerer{
+  .logged-in.front .shanti-filters .control-box-cell-pager table.pagerer{
     margin-top:1.4rem;
   }  
 } 
