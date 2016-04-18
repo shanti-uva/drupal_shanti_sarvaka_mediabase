@@ -169,8 +169,8 @@
 
     .sidebar #block-apachesolr-search-sort ul li a::before {
       content: '';
-      width: 0.7rem;
-      height: 0.7rem;
+      width: 0.9rem;
+      height: 0.9rem;
       background: transparent;
       border: 2px solid #5b68ce;
       display: inline-block;
