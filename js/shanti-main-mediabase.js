@@ -205,17 +205,19 @@
 	    if(context == window.document) {        
 	        // $(document).ajaxSuccess(function() {
 	        $( document ).ready(function() {
-	          setTimeout("('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight()", 5000);
+	          $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').delay(5000).matchHeight({
+	              target: $('.equal-height.col-md-9')
+	          });
 	        });
 
 	        $( document ).ready(function() {
-	          $('.has-transcript .av-main-wrapper > .col-sm-6').matchHeight({
+	          $('.has-transcript .av-main-wrapper > .col-sm-6').delay(5000).matchHeight({
 	              target: $('.av-main-video-section')
 	          });
 	        });
 
             $('.has-transcript .show-more a').click(function(){
-        			setTimeout("$('.av-main-wrapper > .col-sm-6').matchHeight({ target: $('.av-main-video-section') })", 5000); 
+        			$('.av-main-wrapper > .col-sm-6').delay(5000).matchHeight({ target: $('.av-main-video-section') }; 
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
