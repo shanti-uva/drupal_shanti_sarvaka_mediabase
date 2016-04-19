@@ -644,6 +644,11 @@ a.show-annot, a.hide-annot {
   padding-bottom:10rem;
 }
 
+.page-collections .shanti-thumbnail-image a .overlay::before {
+  /* shanticon-grid icon for collections */
+  content: "\e61b";
+}
+
 .view-collections .shanti-field-body{
   border-top: 1px solid #ddd;
   margin-top: 0.5rem;
