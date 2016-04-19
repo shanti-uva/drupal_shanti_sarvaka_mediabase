@@ -211,9 +211,11 @@
 	        });
 
 	        $( document ).ready(function() {
-	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
-	              target: $('.av-main-video-section')
-	          	});
+//	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
+//	              target: $('.av-main-video-section')
+//	          	});
+
+	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
 
             $('.has-transcript .show-more a').bind('click', function(e){
