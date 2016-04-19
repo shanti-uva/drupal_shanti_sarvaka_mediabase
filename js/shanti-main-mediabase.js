@@ -204,13 +204,13 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	        $( document ).ready(function() {
+	        $(document).on('ajaxSuccess', function(){
 	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
 	              target: $('.equal-height.col-md-9')
 	          	});
 	        });
 
-	        $( document ).ready(function() {
+	        $(document).on('ajaxSuccess', function(){
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
 	              target: $('.av-main-video-section')
 	          	});
@@ -218,11 +218,13 @@
 	        });
 
             $('.has-transcript .show-more a').bind('click', function(e){
-            	e.preventDefault();
+              $(document).on('ajaxSuccess', function(){
 
         		$('.av-main-wrapper > div').matchHeight({ 
         			target: $('.av-main-video-section') 
-        		}); 
+        		});
+        		
+        	  });	 
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
