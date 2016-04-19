@@ -204,27 +204,23 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	        $(document).on('ajaxSuccess', function(){
+	        $( document ).ready(function() {
 	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
 	              target: $('.equal-height.col-md-9')
 	          	});
 	        });
 
-	        $(document).on('ajaxSuccess', function(){
+	        $( document ).ready(function() {
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
 	              target: $('.av-main-video-section')
 	          	});
 //	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
 
-            $('.has-transcript .show-more a').bind('click', function(e){
-              $(document).on('ajaxSuccess', function(){
-
+            $('.has-transcript .show-more a').bind('click', function(){
         		$('.av-main-wrapper > div').matchHeight({ 
         			target: $('.av-main-video-section') 
-        		});
-        		
-        	  });	 
+        		}); 
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
