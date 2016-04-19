@@ -106,8 +106,6 @@
     }
 
 
-
-
 /**
 * ---------------
 * Right Sidebar
@@ -830,7 +828,7 @@ a.show-annot, a.hide-annot {
 
 
 /** 
-* Related Videos Tab 
+* Related Audio-Video Tab 
 */
 .av-related-wrapper{
   padding-top:2rem;
@@ -1612,6 +1610,10 @@ h3.node-desc {
     padding-right: 0 !important;
     width:70% !important;
   }
+
+    .has-transcript .av-main-video-section {
+      min-height:750px;
+    }
   
     .node-type-video.has-transcript .av-main-video-section {
       width:50% !important;
