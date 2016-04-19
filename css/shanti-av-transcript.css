@@ -10,10 +10,11 @@
 
 .av-main-transcript-section{
   padding-left:1rem;
+  overflow:hidden;
 }
 
 .transcript-container {
-  max-height: 1000px;
+  /*max-height: 1000px;*/
   overflow-x: hidden;
   overflow-y: scroll !important;
   margin-top: 0;
