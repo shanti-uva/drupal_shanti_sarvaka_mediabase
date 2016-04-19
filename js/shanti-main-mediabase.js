@@ -205,9 +205,7 @@
 	    if(context == window.document) {        
 
 	        $( document ).ready(function() {
-	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	              target: $('.equal-height.col-md-9')
-	          	});
+	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight();
 	        });
 
 	        $( document ).ready(function() {
@@ -216,8 +214,10 @@
 	          	});
 	        });
 
-            $('.has-transcript .show-more a').click(function(){
-        		$('.av-main-wrapper > div.col-sm-6').delay(15000).matchHeight({ 
+            $('.has-transcript .show-more a').bind('click', function(e){
+            	e.preventDefault();
+
+        		$('.av-main-wrapper > div.col-sm-6').delay(1500).matchHeight({ 
         			target: $('.av-main-video-section') 
         		}); 
             }); 
