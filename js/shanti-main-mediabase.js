@@ -205,13 +205,13 @@
 	    if(context == window.document) {        
 
 	        $( document ).ready(function() {
-	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
+	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').delay(3000).matchHeight({
 	              target: $('.equal-height.col-md-9')
 	          	});
 	        });
 
 	        $( document ).ready(function() {
-	          	$('.has-transcript .av-main-wrapper > div.col-sm-6').matchHeight({
+	          	$('.has-transcript .av-main-wrapper > div.col-sm-6').delay(3000).matchHeight({
 	              target: $('.av-main-video-section')
 	          	});
 	        });
