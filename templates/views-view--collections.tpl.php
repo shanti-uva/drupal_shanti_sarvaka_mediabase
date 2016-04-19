@@ -29,7 +29,7 @@
 ?>
 
 <?php // record dom-id for reloading by BEF so that it replaces the whole div ?>
-<div class="shanti-view-dom-id" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
+<div class="shanti-view-dom-id container-fluid" <?php if(isset($variables['dom_id'])) print 'data-dom-id="' . $variables['dom_id'] . '"'; ?>>
 	<div class="shanti-filters clearfix">
 		<div class="control-box-cell-header col-xs-12 col-sm-12 col-md-4">
 			<?php print $header; ?>

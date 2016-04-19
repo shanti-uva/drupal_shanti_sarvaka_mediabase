@@ -470,7 +470,7 @@
     }
 
     .page-collections .shanti-filters table.pagerer{
-      margin-top: -0.8rem;
+      margin-top: 0;
     }
 
     .page-collections .shanti-filters .control-box-cell-pager{
@@ -641,7 +641,7 @@ a.show-annot, a.hide-annot {
 * -------------------
 */
 .page-collections .view-collections{ 
-  padding-bottom:10rem;
+  /*padding-bottom:10rem;*/
 }
 
 .page-collections .shanti-thumbnail-image a .overlay::before {
