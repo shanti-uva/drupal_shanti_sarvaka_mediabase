@@ -14,12 +14,9 @@
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
-.node-type-audio .nav-tabs.nav-justified>li.active a,
-.node-type-audio .nav-tabs.nav-justified>li.active a:hover,
-.node-type-audio .nav-tabs.nav-justified>li.active a:active,
-.node-type-video .nav-tabs.nav-justified>li.active a,
-.node-type-video .nav-tabs.nav-justified>li.active a:hover,
-.node-type-video .nav-tabs.nav-justified>li.active a:active {
+.nav-tabs.nav-justified>li.active>a,
+.nav-tabs.nav-justified>li.active>a:focus,
+.nav-tabs.nav-justified>li.active>a:hover {
   background-color: #2db6b4 !important;
 }
 
@@ -41,7 +38,8 @@
   color: #2db6b4 !important;
 }
 
-.nav-tabs.nav-justified>li.active {
+.nav-tabs.nav-justified>li.active,
+.view-section .nav-tabs > li.active > a {
   border-top-color: #2db6b4 !important;
 }
 
