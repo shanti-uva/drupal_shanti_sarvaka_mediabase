@@ -67,6 +67,16 @@
 * --------------
 */
 
+.content-section.equal-height.col-md-9 > .tab-content.container-fluid::after{
+  /* padding-bottom: 7rem; */
+  content:'';
+  height:7rem;
+  width:1rem;
+  position:relative;
+  display:block;
+}
+
+
 .tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
   margin-left: -1.5rem;
   margin-right: -1.5rem;
