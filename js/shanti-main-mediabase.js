@@ -216,14 +216,9 @@
 	          	});
 //	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
+	        
 
-
-	        $('.video-overview p').bind('resize', function(){
-				alert( 'Height changed to' + $(this).height() );
-			});
-
-
- /*           $('.has-transcript .show-more a').click(function() {
+            $('.has-transcript .show-more a').click(function() {
 
 				if($('.video-overview p').each().is(":visible")) {
 	        		$('.av-main-wrapper > div').matchHeight({ 
@@ -231,7 +226,7 @@
 	        		});
 				} 
 
-            }); */
+            }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
 	    }
