@@ -217,10 +217,14 @@
 //	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
 
-            $('.has-transcript .show-more a').bind('click', function(){
-        		$('.av-main-wrapper > div').matchHeight({ 
-        			target: $('.av-main-video-section') 
-        		}); 
+            $('.has-transcript .show-more a').click(function() {
+
+				if($('.video-overview p').each().is(":visible")) {
+	        		$('.av-main-wrapper > div').matchHeight({ 
+	        			target: $('.av-main-video-section') 
+	        		});
+				} 
+				
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
