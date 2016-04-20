@@ -1625,6 +1625,7 @@ h3.node-desc {
 
     .node-type-audio.has-transcript .av-main-video-section {
       width: 41.66666667% !important;
+      min-height:600px;
     }
 
     .node-type-audio .avinfo{
