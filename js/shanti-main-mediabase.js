@@ -206,7 +206,7 @@
 
 	        $( document ).ready(function() {
 	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	              target: ($('.equal-height.col-md-9 > .tab-content:first') + 100 )
+	              target: ($('.main-wrapper')
 	          	});
 	        });
 
