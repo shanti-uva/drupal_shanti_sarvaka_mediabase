@@ -108,9 +108,9 @@ function sarvaka_mediabase_preprocess_user_profile(&$variables) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	//dpm($vars, 'vars for node');
 	// Preprocess Collection Nodes
 	if($vars['type'] == 'collection' || $vars['type'] == 'team') {
+	    /*
 		$vars['collimage'] = '';
 		if(isset($vars['elements']['field_images'][0]['#image_style']) && isset($vars['elements']['field_images']['#items'][0]['uri'])) {
 			$style_name = $vars['elements']['field_images'][0]['#image_style'];
@@ -119,17 +119,8 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
 		}
         $subcolls = array();
-        /* Old Kmaps code: Removing for MANU-2488
-		if(!empty($vars['field_subcoll_root_kmap_id'])) { // old field
-			module_load_include('inc','kmap_taxonomy','includes/kmap');
-			foreach($vars['field_subcoll_root_kmap_id']['und'] as $n => $t) {
-				$kmap = Kmap::createKmapByTid($t['tid']);
-				$kmap->field_name = 'field_subcollection';
-				$subcolls[] = _kmap_subject_popover($kmap);
-			}
-		}
-		$vars['subcolls'] = implode(', ', $subcolls);
-         */
+*/
+         /*
         if ($vars['view_mode'] == 'teaser') {
             //dpm($vars, 'vars in pp');
             $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
@@ -144,6 +135,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             }
             $vars['item_count'] = get_items_in_collection($vars['nid']);
         }
+          * */
 	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
