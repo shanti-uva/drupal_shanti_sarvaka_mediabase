@@ -108,35 +108,28 @@ function sarvaka_mediabase_preprocess_user_profile(&$variables) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	// Preprocess Collection Nodes
-	if($vars['type'] == 'collection' || $vars['type'] == 'team') {
-	    /*
-		$vars['collimage'] = '';
-		if(isset($vars['elements']['field_images'][0]['#image_style']) && isset($vars['elements']['field_images']['#items'][0]['uri'])) {
-			$style_name = $vars['elements']['field_images'][0]['#image_style'];
-			$uri = $vars['elements']['field_images']['#items'][0]['uri'];
-			$src = image_style_url($style_name, $uri);
-			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
-		}
-        $subcolls = array();
-*/
-         /*
-        if ($vars['view_mode'] == 'teaser') {
-            //dpm($vars, 'vars in pp');
-            $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
-            if (isset($vars['field_images']['und'][0]['uri'])) {
-                $uri = $vars['field_images']['und'][0]['uri'];
-               $vars['thumbnail_url'] = image_style_url('gallery_thumb', $uri);
+	// Preprocess Collection and Subcollection Nodes
+    if($vars['view_mode'] == 'teaser') {
+        	if(in_array($vars['type'], array('collection', 'subcollection'))) {
+    	        $vars['theme_hook_suggestions'][] = 'node__collection__teaser';   // Have them both use the same teaser template
+    	        // Get thumbnail image
+            if (empty($vars['field_general_featured_image']) || !isset($vars['field_general_featured_image']['und'][0]['uri'])) {
+                $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
+            } else {
+                $uri = $vars['field_general_featured_image']['und'][0]['uri'];
+                $style = 'av_gallery_thumb'; // Style defined in mb_structure update 7002
+                 $vars['thumbnail_url'] = image_style_url($style, $uri);
             }
+            // Deal with the body/description (truncate)
             $vars['desc'] = "";
             if (isset($vars['body'][0]['value'])) {
                 $desc = strip_tags($vars['body'][0]['value']);
                 $vars['desc'] = (strlen($desc) > 0) ? substr(strip_tags($vars['body'][0]['value']), 0, 130) . "..." : "";
             }
+            // Get the number of items in the collection from mb_structure.module
             $vars['item_count'] = get_items_in_collection($vars['nid']);
         }
-          * */
-	}
+    	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
 		// Teasers
@@ -238,12 +231,12 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
 	$view = $vars['view'];
-	
+	//dpm($vars, 'vars');
 	// Collections Page if needed
-	if (isset($view->name) && $view->name == 'collections') {
-  		// No Tweaks Yet for Collection Page
-	// Home page view Tweaks
-	} else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
+	if (isset($view->name) && in_array($view->name, array('my_collections','browse_media'))) {
+  		// For Collection page
+  		$vars['theme_hook_suggestions'][] = 'views_view__browse_media';
+	   // Collection page Home page view Tweaks
 	  	 //dpm($vars, 'pp view browse media');
 			$query = $view->query;
 	    // Grab the pieces you want and then remove them from the array    
