@@ -80,12 +80,7 @@
  * @ingroup themeable
  */
 ?>
-<?php
-/********* TEASER Display ****************/
-if($teaser):
-        //dpm($variables, 'in teaser');
-        ?> 
-    <!-- Collections Shanti thumbnail-->
+
     <li class="shanti-thumbnail collection" >  
         <div class="shanti-thumbnail-image shanti-field-collection">
             <a href="/collection/admin-collection" class="shanti-thumbnail-link">
@@ -121,68 +116,3 @@ if($teaser):
             </div> 
         </div>  
     </li> <!-- end shanti-thumbnail -->
-
-<?php
-else:     /************ FULL Display ***********/
-?>
-<div id="collection-<?php print $node->nid; ?>" class="collection<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<!--
-  <?php print $user_picture; ?>
-
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
--->
-    
-  <?php
-    //dpm($content);
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-	hide($content['field_images']);
-	hide($content['field_subcoll_root_kmap_id']);
-    // Description is compiled in mediabase_preprocess_node and contained in $description variable
-    // Not working hide($content['field_pbcore_description']);
-    //dpm($content, 'content in template');
-  ?>	
-	<div class="about">
-		<div class="pull-left collimage">
-			<div class="content-heading clearfix media">
-				<?php print $collimage; ?>
-      </div>
-    </div>
-    <div class="description trim">
-			<h4>Overview</h4>
-      <?php 
-      if (!empty($content['body'])) {
-      	 print render($content['body']); 
-			} else {
-				print t("<p><em>No description available.</em></p>");
-			}
-      ?>
-      <?php if(!empty($subcolls)): ?>
-        <div class="field field-subcollection hidden">
-        	<label>Subcollection: </label> <?php print $subcolls; ?>
-        </div>
-      <?php endif; ?>
-		</div>
-	</div> 
-	
-	<div class="collection-content"<?php print $content_attributes; ?>>
-     <?php print render($content); ?>
-	</div>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
-</div>
-<?php endif; ?>
