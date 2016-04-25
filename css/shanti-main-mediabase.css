@@ -642,7 +642,7 @@ a.show-annot, a.hide-annot {
 * -------------------
 */
 .page-collections .view-collections{ 
-  /*padding-bottom:10rem;*/
+  margin-bottom:10rem;
 }
 
 .page-collections .shanti-thumbnail-image a .overlay::before {
