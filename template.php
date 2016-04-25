@@ -122,16 +122,19 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             }
             // Deal with the body/description (truncate)
             $vars['desc'] = "";
-            if (isset($vars['body'][0]['value'])) {
-                $desc = strip_tags($vars['body'][0]['value']);
-                $vars['desc'] = (strlen($desc) > 0) ? substr(strip_tags($vars['body'][0]['value']), 0, 130) . "..." : "";
+            $body = array_shift(field_get_items('node', $vars['node'], 'body'));
+            if (!empty($body) && isset($body['safe_value'])) {
+                $desc = strip_tags($body['safe_value']);
+                $vars['desc'] = (strlen($desc) > 0) ? substr($desc, 0, 90) . "..." : "";
             }
+            //dpm($vars, 'vars');
             // Get the number of items in the collection from mb_structure.module
             $vars['item_count'] = get_items_in_collection($vars['nid']);
         }
     	}
 	// Preprocess a/v nodes:
 	else if(in_array($vars['type'], array('audio', 'video'))) {
+	    
 		// Teasers
 		if($vars['view_mode'] == 'teaser') {
 			// Get Title language and add as variable for template
@@ -146,19 +149,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 				$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
 			}
 		}
-		
-		// Team link
-		if(!empty($vars['team'])) {
-			$path = drupal_get_path_alias('node/' . $vars['team']->nid);
-			$team_link = l($vars['team']->title, $path);
-			$vars['content']['group_details']['team'] = array(
-				'#type' => 'markup',
-				'#markup' => "<div class=\"field field-name-av-team\">
-												<span class=\"icon shanticon-create\" title=\"Team\"></span>&nbsp;<span class=\"field-label-span\">" .
-												t('Team') . "</span>&nbsp;{$team_link}</div>",
-			);
-		}
-		
+        
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
 			$vars['coll_title'] = $vars['coll']->title;
@@ -231,35 +222,19 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
 	$view = $vars['view'];
-	//dpm($vars, 'vars');
-	// Collections Page if needed
-	if (isset($view->name) && in_array($view->name, array('my_collections','browse_media'))) {
-  		// For Collection page
-  		$vars['theme_hook_suggestions'][] = 'views_view__browse_media';
-	   // Collection page Home page view Tweaks
-	  	 //dpm($vars, 'pp view browse media');
-			$query = $view->query;
-	    // Grab the pieces you want and then remove them from the array    
-		    /*$header   = $vars['header'];    $vars['header']   = '';
-		    $pager    = $vars['pager'];     $vars['pager']    = '';
-				$vars['header']   = $header;
-				$vars['pager']    = $pager;*/
-				
-			// Make sure text search box is only size 15 on home page filter
+    // Browse media view: includes my media and my collections
+	if (isset($view->name) && $view->name == 'browse_media') {
+		$query = $view->query;
+		// Make sure text search box is only size 15 on home page filter
 	    $filters  = $vars['exposed'];   $vars['exposed']  = '';
 	  	$filters = str_replace('name="title" value="" size="30"', 'name="title" value="" size="15"', $filters);
-			
-			// Set Dropdown selected value
-			$field = $query->orderby[0]['field'];
-			$direction = $query->orderby[0]['direction'];
-			$selval = $query->fields[$field]['field'] . ' ' . $direction;
-			$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
-			/*$filters = str_replace('Date Created Asc', 'Date Created &#11014;', $filters);
-			$filters = str_replace('Date Created Desc', 'Date Created &#11015;', $filters);
-			$filters = str_replace('Asc', '(A-Z)', $filters);
-			$filters = str_replace('Desc', '(Z-A)', $filters);*/
-			//dpm($filters, 'filters');
-			$vars['exposed']  = $filters;
+		
+		// Set Dropdown selected value
+		$field = $query->orderby[0]['field'];
+		$direction = $query->orderby[0]['direction'];
+		$selval = $query->fields[$field]['field'] . ' ' . $direction;
+		$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
+		$vars['exposed']  = $filters;
 			
 	// List views of Media By Kmap
   } else if(isset($view->name) && $view->name == 'media_by_kmap') {

@@ -79,11 +79,12 @@
  *
  * @ingroup themeable
  */
+// dpm($variables, 'vars');
 ?>
 
     <li class="shanti-thumbnail collection" >  
         <div class="shanti-thumbnail-image shanti-field-collection">
-            <a href="/collection/admin-collection" class="shanti-thumbnail-link">
+            <a href="<?php print $node_url; ?>" class="shanti-thumbnail-link">
                 <span class="overlay"><span class="icon"></span></span>
                 <img class="img-responsive" typeof="Image" src="<?php print $thumbnail_url; ?>" width="200" height="150" alt="">
                 <span class="icon shanticon-grid"></span>
@@ -93,10 +94,10 @@
             <div class="body-wrap">
                 <div class="shanti-thumbnail-field shanti-field-title">        
                     <span class="field-content">
-                        <a href="/collection/admin-collection" class=""><?php print $title; ?></a></span>  
+                        <a href="<?php print $node_url; ?>" class=""><?php print $title; ?></a></span>  
                 </div>  
                 <div class="shanti-thumbnail-field shanti-field-author">       
-                    <span class="shanti-field-content"><?php print $name; ?></span>  
+                    <span class="shanti-field-content"><?php print $user_link; ?></span>  
                 </div>  
                 <div class="shanti-thumbnail-field shanti-field-itemcount">       
                     <span class="shanti-field-content"><?php print $item_count; ?> <?php
