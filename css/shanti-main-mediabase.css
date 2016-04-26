@@ -266,6 +266,10 @@
   min-height: 270px;
 }
 
+.view-display-id-all_collection_list .view-content .views-table {
+    width: 100%;
+}
+
 /** Collections List page **/
 .page-all-collections-list .view-display-id-all_collection_list td {
     padding-top: 2px;

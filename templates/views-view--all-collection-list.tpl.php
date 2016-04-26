@@ -35,7 +35,7 @@
             <?php print $header; ?>
         </div>
         
-        <div class="control-box-cell-filters col-xs-12 col-md-5" style="display:none;">
+        <div class="control-box-cell-filters col-xs-12 col-md-5">
             <?php if ($exposed): ?>
                 <div class="view-filters-mb">
                 <?php print $exposed; ?>
