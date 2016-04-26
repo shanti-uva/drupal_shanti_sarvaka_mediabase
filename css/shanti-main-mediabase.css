@@ -262,10 +262,23 @@
   display:none;
 }
 
-
-
 .node-type-collection .description:not(#admin-footer .description){
   min-height: 270px;
+}
+
+/** Collections List page **/
+.page-all-collections-list .view-display-id-all_collection_list td {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+.page-all-collections-list .view-display-id-all_collection_list td.views-field.views-field-created {
+    white
+}
+.page-all-collections-list .gallery-view a {
+    padding-left: 8px;
 }
 
 /* single collection page */
