@@ -65,9 +65,13 @@
 		
 		<?php if ($rows): ?>
 			<div class="view-content">
-				<ul class="shanti-gallery">
-					<?php print $rows;  ?>
-				</ul>
+			    <?php if (strpos($variables['view']->current_display, '_list') > -1): ?>
+			        <?php print $rows;  ?>
+			    <?php else: ?>
+        				<ul class="shanti-gallery">
+        					<?php print $rows;  ?>
+        				</ul>
+        			<?php endif; ?>
 			</div>
 		
 		<?php elseif ($empty): ?>
