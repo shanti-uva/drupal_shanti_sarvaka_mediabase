@@ -109,9 +109,12 @@ function sarvaka_mediabase_preprocess_user_profile(&$variables) {
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
 	// Preprocess Collection and Subcollection Nodes
-    if($vars['view_mode'] == 'teaser') {
-        	if(in_array($vars['type'], array('collection', 'subcollection'))) {
-    	        $vars['theme_hook_suggestions'][] = 'node__collection__teaser';   // Have them both use the same teaser template
+	$ntype = $vars['type'];
+    $mode = $vars['view_mode'];
+    $node = $vars['node'];
+    if(in_array($ntype, array('collection', 'subcollection'))) {
+        if($mode == 'teaser') {
+        	    	$vars['theme_hook_suggestions'][] = 'node__collection__teaser';   // Have them both use the same teaser template
     	        // Get thumbnail image
             if (empty($vars['field_general_featured_image']) || !isset($vars['field_general_featured_image']['und'][0]['uri'])) {
                 $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
@@ -122,27 +125,32 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             }
             // Deal with the body/description (truncate)
             $vars['desc'] = "";
-            $body = array_shift(field_get_items('node', $vars['node'], 'body'));
+            $body = array_shift(field_get_items('node', $node, 'body'));
             if (!empty($body) && isset($body['safe_value'])) {
                 $desc = strip_tags($body['safe_value']);
-                $vars['desc'] = (strlen($desc) > 0) ? substr($desc, 0, 90) . "..." : "";
+                $vars['desc'] = (strlen($desc) > 0) ? substr($desc, 0, 60) . "..." : "";
             }
             //dpm($vars, 'vars');
             // Get the number of items in the collection from mb_structure.module
             $vars['item_count'] = get_items_in_collection($vars['nid']);
+            
+            if ($ntype == "subcollection") {
+                $vars['coll'] = $coll = get_collection_ancestor_node($node);
+            }
+            
         }
     	}
 	// Preprocess a/v nodes:
-	else if(in_array($vars['type'], array('audio', 'video'))) {
+	else if(in_array($ntype, array('audio', 'video'))) {
 	    
 		// Teasers
-		if($vars['view_mode'] == 'teaser') {
+		if($mode == 'teaser') {
 			// Get Title language and add as variable for template
-			$ew = entity_metadata_wrapper('node', $vars['node']);
+			$ew = entity_metadata_wrapper('node', $node);
 			try {
 				$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
 			} catch (EntityMetadataWrapperException $emwe) {
-				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $vars['node']->nid);
+				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $node->nid);
 			}
 			// Truncate title in teasers
 			if(strlen($vars['title']) > 75) {

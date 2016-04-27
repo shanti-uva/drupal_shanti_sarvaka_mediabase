@@ -267,26 +267,26 @@
 }
 
 /** Collections List page **/
-.page-all-collections-list .view-display-id-all_collection_list td {
+.page-collections-all-list .view-display-id-collection_all_list td {
     padding-top: 2px;
     padding-left: 8px;
     padding-right: 2px;
     padding-bottom: 2px;
 }
 
-.page-all-collections-list .view-display-id-all_collection_list td.views-field.views-field-created {
+.page-collections-all-list .view-display-id-collection_all_list td.views-field.views-field-created {
     white-space: nowrap;
 }
 
-.page-all-collections .shanti-filters .control-box-cell-header span, .page-all-collections-list .shanti-filters .control-box-cell-header span {
+.page-collections-all .shanti-filters .control-box-cell-header span, .page-collections-all-list .shanti-filters .control-box-cell-header span {
     margin: 0px;
 }
 
-.page-all-collections .other-view a, .page-all-collections-list .other-view a {
+.page-collections-all .other-view a, .page-all-collections-list .other-view a {
     padding-left: 8px;
 }
 
-.view-display-id-all_collection_list .view-content .views-table {
+.view-display-id-collection_all_list .view-content .views-table {
     width: 100%;
 }
 

@@ -79,7 +79,7 @@
  *
  * @ingroup themeable
  */
-// dpm($variables, 'vars');
+//dpm($variables, 'vars');
 ?>
 
     <li class="shanti-thumbnail collection" >  
@@ -95,6 +95,9 @@
                 <div class="shanti-thumbnail-field shanti-field-title">        
                     <span class="field-content">
                         <a href="<?php print $node_url; ?>" class=""><?php print $title; ?></a></span>  
+                </div>  
+                <div class="shanti-thumbnail-field shanti-field-type">       
+                    <span class="shanti-field-content"><?php print ucfirst($type); ?></span>  
                 </div>  
                 <div class="shanti-thumbnail-field shanti-field-author">       
                     <span class="shanti-field-content"><?php print $user_link; ?></span>  
@@ -114,6 +117,18 @@
                 <div class="shanti-thumbnail-field shanti-field-body">
                     <?php print $desc; ?>
                 </div>
-            </div> 
-        </div>  
+            </div> <!-- end of body wrap -->
+            
+            <div class="footer-wrap">
+              
+              <?php if($coll): ?>
+                <div class="shanti-field shanti-field-group-audience">
+                    <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
+                        class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
+                    </div>
+                </div>
+              <?php endif; ?>
+              
+            </div> <!-- end footer -->
+        </div>  <!-- end of thumbnail info -->
     </li> <!-- end shanti-thumbnail -->
