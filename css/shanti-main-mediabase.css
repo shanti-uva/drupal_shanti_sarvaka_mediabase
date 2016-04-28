@@ -1879,7 +1879,7 @@ h3.node-desc {
 @media (min-width:1100px) {
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 13em;
+    height: 16em;
   }
 }
 
@@ -1893,7 +1893,7 @@ h3.node-desc {
 @media (min-width:1250px) {
 
   .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    height: 16em;
+    /*height: 16em;*/
   }
 }
 
