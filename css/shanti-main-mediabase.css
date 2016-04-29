@@ -426,12 +426,12 @@
       margin: 0;
       padding-left:3rem;
     }
-
+/*
     .logged-in.front .shanti-filters .control-box-cell-filters {
       width:100%;
       padding-left:0;
     } 
-
+*/
     .shanti-filters .control-box-cell-filters .views-exposed-form .form-item {
       margin-right: 1rem;
     }
@@ -446,9 +446,9 @@
     }
 
     .shanti-filters .control-box-cell-pager,
-    .logged-in.front .shanti-filters .control-box-cell-pager,
-    .shanti-filters .control-box-cell-filters,
-    .logged-in.front .shanti-filters .control-box-cell-filters{
+    /*.logged-in.front .shanti-filters .control-box-cell-pager,*/
+    .shanti-filters .control-box-cell-filters
+    /*.logged-in.front .shanti-filters .control-box-cell-filters*/{
       width:100%;
     }
 
@@ -1576,9 +1576,9 @@ h3.node-desc {
       margin-top: -6.5rem;
     }
 
-    .logged-in.front .shanti-filters .control-box-cell-pager {
+    /*.logged-in.front .shanti-filters .control-box-cell-pager {
       margin-top: -8rem;
-    }
+    }*/
     /*
     .page-collections .shanti-filters .control-box-cell-pager{
       width: 60% !important;
@@ -1671,7 +1671,7 @@ h3.node-desc {
       .shanti-filters .control-box-cell-filters{
         width: 33.333%;
       }
-
+/*
       .logged-in.front .shanti-filters .control-box-cell-pager{
         width: 50%;
         margin-top:-8rem;
@@ -1679,7 +1679,7 @@ h3.node-desc {
       .logged-in.front .shanti-filters .control-box-cell-filters{
         width:100%;
       }
-
+*/
     #sidebar-second,
     .region-sidebar-second{
       background-color: #fff;
@@ -1697,26 +1697,27 @@ h3.node-desc {
 
 @media screen and (min-width: 1200px) {
 
-  .logged-in.front .shanti-filters .control-box-cell-pager table.pagerer{
+  /*.logged-in.front .shanti-filters .control-box-cell-pager table.pagerer{
     margin-top:1.4rem;
-  }  
+  }  */
 } 
 
 @media (min-width:1250px) {
 
   .shanti-filters .control-box-cell-pager,
-  .logged-in.front .shanti-filters .control-box-cell-filters,
-  .logged-in.front .shanti-filters .control-box-cell-pager{
+  /*.logged-in.front .shanti-filters .control-box-cell-filters,
+  .logged-in.front .shanti-filters .control-box-cell-pager*/{
     width:33%;
   }
 
-    .logged-in.front .shanti-filters .control-box-cell-header {
+    /*.logged-in.front .shanti-filters .control-box-cell-header {
       width:25%;
     }
 
     .logged-in.front .shanti-filters .control-box-cell-pager{
       margin-top: -0.5rem;
     }
+    */
 }
 
 @media screen and (min-width: 1280px) {
@@ -1871,7 +1872,7 @@ h3.node-desc {
     .logged-in .carousel .byline {
       /*font-size: 70%;*/
     }
-
+    /* hiding the sidebar on frontpage at 1150px not default col-md-9 to hep carousel display */
     .logged-in.front .content-section.col-xs-12.col-md-9{
       width:100% !important;
     }
