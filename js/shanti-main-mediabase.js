@@ -205,9 +205,10 @@
 	    if(context == window.document) {        
 
 	        $( document ).ready(function() {
-	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
+	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').once().matchHeight({
 	              target: $('.main-wrapper')
 	          	});
+	          	return false;
 	        });
 
 	        $( document ).ready(function() {
