@@ -570,46 +570,6 @@ div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-da
 }
 
 
-.form-control.role-weight {
-  font-size: 80%;
-  width: 4em;
-  height: 1.5em;
-  line-height: 1.5em;
-}
-
-    .tabledrag-toggle-weight-wrapper {
-      display: inline;
-      float: right;
-     /* margin-top:-0.62em; */
-    }
-
-    .tabledrag-toggle-weight-wrapper a {
-      color: #5a65d1;
-    }
-
-table.field-multiple-table {
-  margin-bottom: 2em;
-}
-
-table.field-multiple-table tbody {
-  border: 2px solid #ddd;
-}
-
-#kmap_annotation_json {
-  margin-left: 2em;
-} /* textbox on bottom */
-
-
-#edit-filter-settings-title {
-  margin-bottom: 0 !important;
-}
-
-div.node .group-details .field-label-span {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  vertical-align: top;
-}
 
 /*--- show-hide toggle button ---*/
 a.show-annot, a.hide-annot {
@@ -1354,8 +1314,7 @@ div#edit-actions--3.form-actions.form-wrapper{
 
 ul.inline li a,
 .compact-link a,
-ul.links.inline li a,
-a.tabledrag-toggle-weight {
+ul.links.inline li a{
   color: #5a65d1;
   text-transform: capitalize;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;

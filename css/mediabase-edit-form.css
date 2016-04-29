@@ -323,11 +323,69 @@ table.sticky-table .filter-guidelines ul li{
 * ...migrated from mb-main
 * -------------------------------
 */
+
+.form-control.role-weight {
+  font-size: 80%;
+  width: 4em;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+    .tabledrag-toggle-weight-wrapper {
+      display: inline;
+      float: right;
+    }
+
+
+table.field-multiple-table {
+  margin-bottom: 2em;
+}
+
+table.field-multiple-table tbody {
+  border: 2px solid #ddd;
+}
+
+#kmap_annotation_json {
+  margin-left: 2em;
+} /* textbox on bottom */
+
+
+#edit-filter-settings-title {
+  margin-bottom: 0 !important;
+}
+
+div.node .group-details .field-label-span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+/*.sticky-table a,
+a.ckeditor_links,
+a.tabledrag-toggle-weight*/ 
+.admin-menu .content-section a{
+  font-weight: bold;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
   max-width: 90% !important;
   position: relative;
-  top: -0.3rem;
+  /*top: -0.3rem;*/
 }
 
     .form-item.form-type-textfield input.form-text, 
@@ -701,6 +759,10 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
 
 .admin-menu tr .form-item {
   line-height: normal;
+}
+
+.admin-menu tr .form-item.form-type-textarea{
+  margin-bottom:0.5rem;
 }
 
 table.sticky-table,
