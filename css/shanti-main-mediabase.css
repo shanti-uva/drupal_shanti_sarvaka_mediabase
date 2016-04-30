@@ -371,14 +371,14 @@
 * ------------------------------
 */
 .shanti-filters{
-    height: 5.2em;
+    /*height: 5.2em;*/
   height: 7.5em;  
 }
 
     .shanti-filters .ajax-progress {
       position: absolute;
       top: 1.35rem;
-      right: 0;
+      /*right: 0;*/
     }
 
     .shanti-filters .control-box .ajax-progress {
@@ -403,9 +403,9 @@
       font-size:0.82em;
       display:none !important;
     }
-    /* show-hide text for mobile - Recent Addtions */
+    
     .logged-in.front .shanti-filters .control-box-cell-header .label{ 
-
+      /* show-hide text for mobile - Recent Addtions */
     }
 
     .shanti-filters .count {
