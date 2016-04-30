@@ -286,8 +286,8 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 /* ----------------------------*/
 
 
-.page-node-edit .bootstrap-select.form-control{
-	max-width: 35rem;
+.page-node-edit .collection-details-audience .bootstrap-select.form-control{
+	max-width: 45rem;
 }
 
 .page-node-edit .bootstrap-select.btn-group .btn{
