@@ -369,9 +369,7 @@ a.tabledrag-toggle-weight*/
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
 
-.audio-video .icheckbox_minimal-red {
-  margin-right: 0.5rem;
-}
+
 
 
 
@@ -834,7 +832,7 @@ textarea {
 
 .admin-menu .icheckbox_minimal-red,
 .admin-menu .iradio_minimal-red {
-  margin-right: 5px;
+  margin-right: 0.5rem !important;
   position: relative;
   top: -2px;
   left: 0;
