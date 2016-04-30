@@ -319,6 +319,13 @@
     }
 
 
+
+#block-views-browse-media-home-block .contextual-links-wrapper{
+  position: absolute;
+  top: -5px;
+}
+
+
 /* Kmaps List page views*/
 .page-list .shanti-view-dom-id > h2 {
   font-size: 1.75em;
@@ -1814,11 +1821,7 @@ h3.node-desc {
       padding:0 2rem;
     }
 
-    .logged-in .carousel-description p {
-      font-size: 0.93em;
-    }
-
-    /* hiding the sidebar on frontpage at 1150px not default col-md-9 to hep carousel display */
+    /* hiding the sidebar on frontpage at 1150px not default col-md-9 to improve carousel display */
     .logged-in.front .content-section.col-xs-12.col-md-9{
       width:100% !important;
     }
@@ -1828,13 +1831,13 @@ h3.node-desc {
 */
 @media (min-width:1100px) {
 
-  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
+  .carousel-main-image{
     height: 16em;
   }
 }
 
 @media (min-width:1170px) {
-
+  /* hiding the sidebar on frontpage at 1150px not default col-md-9 to improve carousel display */
   .logged-in.front .content-section.col-xs-12.col-md-9{
       width:75% !important;
   }
