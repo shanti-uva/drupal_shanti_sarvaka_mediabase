@@ -370,7 +370,7 @@ a.tabledrag-toggle-weight*/
 }
 
 .audio-video .icheckbox_minimal-red {
-  margin-right: 0.4rem;
+  margin-right: 0.5rem;
 }
 
 
@@ -430,7 +430,8 @@ a.tabledrag-toggle-weight*/
 }
 
 .mb-av-form{
-  /*margin-right: 1.5rem;*/
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-av-form table.field-multiple-table {
