@@ -259,8 +259,6 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 }
 
 
-.field-type-field-collection .bootstrap-select.form-control:not([class*='span']){ max-width:18rem;}
-
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
@@ -282,20 +280,28 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
 .field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
 
-.form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{max-width:100% !important;}
+.form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{ max-width:100% !important;}
 /* ----------------------------*/
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
 
 
+.page-node-edit .bootstrap-select.form-control:not([class*='span']){
+	max-width: 35rem;
+}
 
+.page-node-edit .bootstrap-select.btn-group .btn{
+	padding: 0.3rem 2.38em 0.1rem 1.5rem;
+}
 
-
+.page-node-edit .bootstrap-select.btn-group .btn .filter-option{
+	font-size: 0.93em;
+}
 
 .page-node-edit .bootstrap-select.btn-group .btn .caret{
 	position: absolute;
-	top: 3px;
-	right: 27px;
+	top: 0.4rem;
+	right: 2.7rem;
 }
 
 
@@ -526,19 +532,14 @@ a.tabledrag-toggle-weight*/
   margin-left:0;
   font-size: 1.06em;
 }
-  .page-group-node-admin .placeholder{
-    font-size: 1.12em;
-  }
 
-
-
-/* admin My Collections edit tab 
-.admin-menu .bootstrap-select.btn-group .btn .caret::before{
-  position: absolute;
-  top: -0.56em;
-  right: -0.5rem;
+.page-group-node-admin .placeholder{
+font-size: 1.12em;
 }
-*/
+
+
+
+
 
 
 
@@ -548,9 +549,6 @@ a.tabledrag-toggle-weight*/
 * New Admin migration css property set from shanti-main.css
 * 
 */
-
-
-
 
 /* form table td.label styles address the 'Group Space' fields on ...node/add/collection*/
 form table td.label {
@@ -830,8 +828,8 @@ textarea {
   width: 100%;
 }
 
-.admin-menu .icheckbox_minimal-red,
-.admin-menu .iradio_minimal-red {
+.page-node-edit .icheckbox_minimal-red,
+.page-node-edit .iradio_minimal-red {
   margin-right: 0.5rem !important;
   position: relative;
   top: -2px;
