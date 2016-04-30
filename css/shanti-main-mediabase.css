@@ -1814,23 +1814,10 @@ h3.node-desc {
       padding:0 2rem;
     }
 
-    .carousel-main-content .show-more {
-      /*margin-top: 1rem;*/
-    }
-
     .logged-in .carousel-description p {
-      /*height: 11em;*/
-      /*overflow: hidden;*/
       font-size: 0.93em;
     }
 
-    .logged-in .carousel-title {
-      /*font-size: 1.18em;*/
-    }
-
-    .logged-in .carousel .byline {
-      /*font-size: 70%;*/
-    }
     /* hiding the sidebar on frontpage at 1150px not default col-md-9 to hep carousel display */
     .logged-in.front .content-section.col-xs-12.col-md-9{
       width:100% !important;
@@ -1846,10 +1833,17 @@ h3.node-desc {
   }
 }
 
-@media (min-width:1150px) {
+@media (min-width:1170px) {
 
   .logged-in.front .content-section.col-xs-12.col-md-9{
       width:75% !important;
+  }
+  .logged-in .carousel .carousel-main-image{
+    width:40%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width:60%;
   }
 }
 
@@ -1862,8 +1856,12 @@ h3.node-desc {
 
 @media (min-width:1250px) {
 
-  .carousel-main-image.col-xs-12.col-sm-5.col-md-4{
-    /*height: 16em;*/
+  .logged-in .carousel .carousel-main-image{
+    width:34%;
+  }
+
+  .logged-in .carousel .carousel-main-content{
+    width:66%;
   }
 }
 
