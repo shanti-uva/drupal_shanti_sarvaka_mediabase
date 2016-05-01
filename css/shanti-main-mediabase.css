@@ -32,9 +32,7 @@
 .view-section .fancytree-node.fancytree-selected > .glyphicon,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .glyphicon-ok,
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .glyphicon-ok
-/*.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .glyphicon-ok::before, 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .glyphicon-ok::before*/ {
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .glyphicon-ok {
   color: #2db6b4 !important;
 }
 
