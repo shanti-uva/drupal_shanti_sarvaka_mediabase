@@ -771,7 +771,7 @@
   top: 0.3rem;
   position: relative;
 }
-
+/*
 .btn-group-transcript .selectpicker li,
 .btn-group-transcript .selectpicker li:hover,
 .btn-group-transcript .selectpicker li span.text,
@@ -787,16 +787,16 @@
 .btn-group-transcript .selectpicker li.selected a:active span.text {
   color: #444;
 }
-
+*/
 .av-main-transcript-section .dropdown-menu.open {
-  border-radius: 0 0 1rem 1rem;
+  /*border-radius: 0 0 1rem 1rem;
   background-clip: padding-box;
   min-width: 18rem;
-  padding-bottom:1rem;
+  padding-bottom:1rem;*/
   margin-top: 3.25rem;
   border-radius: 0 0 0.8rem 0.8rem !important;
 }
-
+/*
 .av-main-transcript-section .dropdown-menu li a span.text {
   font-weight: normal !important;
   font-size: 1.18em;
@@ -806,10 +806,10 @@
   color: #333;
   margin-right: 7rem;
 }
-
+*/
 .av-main-transcript-section .selectpicker li a {
-  line-height: 2.25em;
-  height: 2.25em;
+  /*line-height: 2.25em;
+  height: 2.25em;*/
 }
 
 .av-main-transcript-section .transcript-options.bootstrap-select.btn-group .caret{
@@ -851,13 +851,13 @@
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li:hover dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected dt,
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected:hover dt {
-  padding: 7px 20px 7px 16px;
+  /*padding: 7px 20px 7px 16px;*/
   background: #eee;
   border-top: 2px solid #ddd;
   border-bottom: 1px solid #ddd;
   font-style: italic;
   letter-spacing: 1px;
-  font-size: 1.06em;
+  font-size: 0.88em;
   text-transform: uppercase;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   color:#555;
@@ -883,10 +883,10 @@
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a{
   padding: 0;
-  line-height: 2.5em;
+  /*line-height: 2.5em;
   height: 2.7rem;
   display: block;
-  width: 100%;
+  width: 100%;*/
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a:hover{
@@ -899,8 +899,8 @@
   top: 0.6rem;
 }
 
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li > a .glyphicon.glyphicon-download-alt,
-.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected > a .glyphicon:first-of-type{
+/* .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected > a .glyphicon:first-of-type, */
+.btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li > a .glyphicon.glyphicon-download-alt{
   color:#2cb3b2 !important;
 }
 
