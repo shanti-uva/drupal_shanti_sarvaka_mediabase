@@ -340,10 +340,13 @@ table.sticky-table .filter-guidelines ul li{
 	background-color: #2db6b4;
 }
 
-.page-node-edit .kmaps-ancestors{
+.page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
 }
 
+.page-node-edit .kmaps-ancestors{
+	display:inline;
+}
 
 
 /* editing form techincal metadata */
