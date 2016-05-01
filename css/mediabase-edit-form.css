@@ -297,7 +297,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 /* Dropdown with header - Collections selection, reducing space left of list items */
 .page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
-	padding-left: 25px;
+	padding-left: 15px;
 }
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
@@ -317,6 +317,11 @@ input#field_transcript_value.text-full.form-control.form-inline{
 	font-weight: bold;
 	border-top: 2px solid #ddd;
 	border-bottom: 1px solid #ddd;
+
+	/* target collection smenu single top header , but will look for exceptions to this model and address those seperately */
+	padding: 8px 20px 4px 14px;
+	border-top: none;
+	border-radius: 0.8rem 0 0 0;
 }
 
 
