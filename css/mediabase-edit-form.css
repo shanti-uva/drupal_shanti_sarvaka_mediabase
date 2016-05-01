@@ -307,7 +307,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
-	background: #e0e0e0;
+	/*background: #e0e0e0;*/
 	color:#000;
 }
 

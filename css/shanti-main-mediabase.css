@@ -30,11 +30,11 @@
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
 .view-section .fancytree-node.fancytree-selected > .glyphicon
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .check-mark,
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .icon-ok.check-mark::before, 
-.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .icon-ok.check-mark::before {
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .glyphicon-ok,
+.bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .glyphicon-ok
+/*.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:hover .glyphicon-ok::before, 
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .glyphicon-ok::before*/ {
   color: #2db6b4 !important;
 }
 
