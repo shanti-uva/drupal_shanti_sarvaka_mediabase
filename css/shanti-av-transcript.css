@@ -796,17 +796,17 @@
   margin-top: 3.25rem;
   border-radius: 0 0 0.8rem 0.8rem !important;
 }
-/*
+
 .av-main-transcript-section .dropdown-menu li a span.text {
-  font-weight: normal !important;
+  /*font-weight: normal !important;
   font-size: 1.18em;
   line-height: 2em;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03rem;*/
   font-family: arial,helvetica,sans-serif;
-  color: #333;
-  margin-right: 7rem;
+  /*color: #333;
+  margin-right: 7rem;*/
 }
-*/
+
 .av-main-transcript-section .selectpicker li a {
   /*line-height: 2.25em;
   height: 2.25em;*/
