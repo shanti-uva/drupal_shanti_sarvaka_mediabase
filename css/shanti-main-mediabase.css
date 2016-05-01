@@ -29,7 +29,7 @@
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
-.view-section .fancytree-node.fancytree-selected > .glyphicon
+.view-section .fancytree-node.fancytree-selected > .glyphicon,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:hover .glyphicon-ok,
 .bootstrap-select.btn-group.show-tick .dropdown-menu>li.selected>a:active .glyphicon-ok
