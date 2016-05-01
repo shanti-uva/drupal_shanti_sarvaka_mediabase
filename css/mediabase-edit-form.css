@@ -285,25 +285,10 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
 
-
+/* Collections selection, some names are long so extending this */
 .page-node-edit .collection-details-audience .bootstrap-select.form-control{
 	max-width: 45rem;
 }
-
-.page-node-edit .bootstrap-select.btn-group .btn{
-	padding: 0.3rem 2.38em 0.1rem 1.5rem;
-}
-
-.page-node-edit .bootstrap-select.btn-group .btn .filter-option{
-	font-size: 0.93em;
-}
-
-.page-node-edit .bootstrap-select.btn-group .btn .caret{
-	position: absolute;
-	top: 0.4rem;
-	right: 2.7rem;
-}
-
 
 /* admin video edit forms section under title and description */
 .filter-guidelines{
@@ -473,9 +458,9 @@ a.tabledrag-toggle-weight*/
     .field-multiple-table .panel-body > div{
       margin: 12px 0px;
     }
-
+/* for margin space below adjustable Rich-text area */
 .resizable-textarea .grippie{
-  margin-bottom:2rem; /* for margin space below adjustable text area */
+  margin-bottom: 0.5rem; 
 }
 
 .group-rights .form-type-textfield, 
