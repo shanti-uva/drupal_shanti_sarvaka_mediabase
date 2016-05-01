@@ -311,6 +311,15 @@ input#field_transcript_value.text-full.form-control.form-inline{
 	color:#000;
 }
 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
+	padding: 6px 20px 4px 14px;
+	background-color: #eee;
+	font-weight: bold;
+	font-size: 1.12em;
+	border-top: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
 
 
 /* admin video edit forms section under title and description */
@@ -330,6 +339,10 @@ table.sticky-table .filter-guidelines ul li{
 /* typeahead hover color to match subtheme */
 .page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
+}
+
+.page-node-edit .kmaps-ancestors{
+	color:#fff;
 }
 
 
@@ -388,8 +401,8 @@ div.node .group-details .field-label-span {
 a.ckeditor_links,
 a.tabledrag-toggle-weight*/ 
 .admin-menu .content-section a{
-  font-weight: bold;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+  /*font-weight: bold;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;*/
 }
 
 
