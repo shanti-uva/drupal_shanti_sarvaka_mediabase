@@ -328,9 +328,14 @@ table.sticky-table .filter-guidelines ul li{
   line-height: 1.5em;
   padding-top: 0.7rem
 }
+
+.page-node-edit .kmaps-tt-suggestion{
+	padding: 3px 20px 0;
+}
+
 /* typeahead hover color to match subtheme */
-.kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-	background-color: #2db6b4 !important;
+.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+	background-color: #2db6b4;
 }
 
 
