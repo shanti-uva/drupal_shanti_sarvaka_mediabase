@@ -325,6 +325,18 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 
 
+/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
+.kmap_filter_box .selected-kmap:not(:first-child):before{
+	content: '(or)';
+	width: 2.5em;
+	color: #888;
+}
+/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
+.kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child):before{
+	content: '(and)';
+	width: 3em;
+	color: #888;
+}
 
 /* admin video edit forms section under title and description */
 .filter-guidelines{
