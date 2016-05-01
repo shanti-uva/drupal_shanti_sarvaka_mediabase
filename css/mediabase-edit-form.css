@@ -330,7 +330,7 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-	background-color: #2db6b4;
+	background-color: #2db6b4 !important;
 }
 
 
