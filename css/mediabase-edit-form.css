@@ -329,6 +329,10 @@ table.sticky-table .filter-guidelines ul li{
   padding-top: 0.7rem
 }
 
+.kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+	background-color: #2db6b4;
+}
+
 
 
 /* editing form techincal metadata */
