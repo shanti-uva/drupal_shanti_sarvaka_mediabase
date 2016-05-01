@@ -244,6 +244,11 @@ div.kmap-selector button.selectpicker {
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
+input#field_transcript_value.text-full.form-control.form-inline{
+  margin-right: 0.5rem;
+  color: #444;
+}
+
 /** Workflow Fields **/
 #edit-field-workflow-und-0-field-edl-log-files,
 #accordionfield_collection_item_field_workflow_form_group_catalog_record_workflow div.panel-body > div.field-type-text-long,
@@ -285,10 +290,33 @@ input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 /* -- End of Video Edit form --*/
 /* ----------------------------*/
 
+
 /* Collections selection, some names are long so extending this */
 .page-node-edit .collection-details-audience .bootstrap-select.form-control{
 	max-width: 45rem;
 }
+/* Dropdown with header - Collections selection, reducing space left of list items */
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+	padding-left: 25px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a{
+	line-height: 2em;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.bootstrap-select.btn-group .dropdown-menu li>a:active{
+	background: #e0e0e0;
+	color:#000;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li.selected>a{
+	background: #aaa;
+	color: #fff;
+	text-shadow: 0 0 1px #888;
+}
+
+
 
 /* admin video edit forms section under title and description */
 .filter-guidelines{
