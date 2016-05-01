@@ -311,12 +311,6 @@ input#field_transcript_value.text-full.form-control.form-inline{
 	color:#000;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li.selected>a{
-	background: #aaa;
-	color: #fff;
-	text-shadow: 0 0 1px #888;
-}
-
 
 
 /* admin video edit forms section under title and description */
