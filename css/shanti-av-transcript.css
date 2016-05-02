@@ -793,7 +793,7 @@
   background-clip: padding-box;
   min-width: 18rem;
   padding-bottom:1rem;*/
-  margin-top: 3.25rem;
+  margin-top: 3.25rem !important;
   border-radius: 0 0 0.8rem 0.8rem !important;
 }
 
