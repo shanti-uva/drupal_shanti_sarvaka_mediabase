@@ -40,6 +40,14 @@ div.file-widget.form-managed-file > * {
 	padding-left: 1.75em;
 }
 
+/*.sticky-table a,
+a.ckeditor_links,
+a.tabledrag-toggle-weight*/
+.page-node-edit .content-section a {
+	font-weight: bold;
+  	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
 /* Title Group */
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
@@ -448,23 +456,6 @@ div.node .group-details .field-label-span {
   font-size: 0.9em;
   vertical-align: top;
 }
-
-/*.sticky-table a,
-a.ckeditor_links,
-a.tabledrag-toggle-weight*/ 
-.admin-menu .content-section a{
-  /*font-weight: bold;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;*/
-}
-
-
-
-
-
-
-
-
-
 
 
 
