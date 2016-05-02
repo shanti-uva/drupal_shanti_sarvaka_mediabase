@@ -325,18 +325,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 
 
-/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.kmap_filter_box .selected-kmap:not(:first-child):before{
-	content: '(or)';
-	width: 2.5em;
-	color: #888;
-}
-/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child):before{
-	content: '(and)';
-	width: 3em;
-	color: #888;
-}
+
 
 /* admin video edit forms section under title and description */
 .filter-guidelines{
@@ -346,6 +335,27 @@ input#field_transcript_value.text-full.form-control.form-inline{
 table.sticky-table .filter-guidelines ul li{
   line-height: 1.5em;
   padding-top: 0.7rem
+}
+
+
+
+
+
+/* typeahead */
+.page-node-edit .kmaps-ancestors{
+	display:inline;
+}
+
+.page-node-edit .kmaps-tt-header{
+	padding: 4px 20px 4px 14px;
+	background-color: #eee;
+	font-weight: bold;
+	border-top: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+	padding: 8px 20px 4px 14px;
+	border-top: none;
+	border-radius: 0.8rem 0 0 0;
 }
 
 .page-node-edit .kmaps-tt-suggestion{
@@ -361,9 +371,21 @@ table.sticky-table .filter-guidelines ul li{
 	color:#fff;
 }
 
-.page-node-edit .kmaps-ancestors{
-	display:inline;
+/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
+.kmap_filter_box .selected-kmap:not(:first-child):before{
+	content: '(or)';
+	width: 2.5em;
+	color: #888;
 }
+/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
+.kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child):before{
+	content: '(and)';
+	width: 3em;
+	color: #888;
+}
+
+
+
 
 
 /* editing form techincal metadata */
