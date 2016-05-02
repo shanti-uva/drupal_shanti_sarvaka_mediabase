@@ -347,20 +347,26 @@ table.sticky-table .filter-guidelines ul li{
 
 
 /* typeahead */
+.page-node-edit .kmaps-tt-menu{
+	padding-top:0;
+}
+
 .page-node-edit .kmaps-ancestors{
 	display:inline;
 }
 
 .page-node-edit .kmaps-tt-header{
-	padding: 4px 20px 4px 14px;
 	background-color: #eee;
 	font-weight: bold;
 	border-top: 2px solid #ddd;
 	border-bottom: 1px solid #ddd;
-
 	padding: 8px 20px 4px 14px;
+}
+
+.page-node-edit .kmaps-tt-header:first-of-type {
 	border-top: none;
-	border-radius: 0.8rem 0 0 0;
+	margin-top:0;
+	border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .page-node-edit .kmaps-tt-suggestion{
@@ -377,13 +383,13 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.kmap_filter_box .selected-kmap:not(:first-child):before{
+.page-node-edit .kmap_filter_box .selected-kmap:not(:first-child)::before{
 	content: '(or)';
 	width: 2.5em;
 	color: #888;
 }
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child):before{
+.page-node-edit .kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
 	content: '(and)';
 	width: 3em;
 	color: #888;
