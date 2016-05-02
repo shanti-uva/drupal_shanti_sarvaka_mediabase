@@ -291,24 +291,14 @@ input#field_transcript_value.text-full.form-control.form-inline{
 /* ----------------------------*/
 
 
+
 /* Collections selection, some names are long so extending this */
 .page-node-edit .collection-details-audience .bootstrap-select.form-control{
 	max-width: 45rem;
 }
-/* Dropdown with header - Collections selection, reducing space left of list items */
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
-	padding-left: 15px;
-}
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
-	line-height: 1.88em;
-	height:2em;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
-	/*background: #e0e0e0;*/
-	color:#000;
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu {
+	padding-top:0;
 }
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
@@ -324,6 +314,21 @@ input#field_transcript_value.text-full.form-control.form-inline{
 	border-radius: 0.8rem 0 0 0;
 }
 
+/* Dropdown with header - Collections selection, reducing space left of list items */
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+	padding-left: 15px;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
+	line-height: 1.88em;
+	height:2em;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
+	/*background: #e0e0e0;*/
+	color:#000;
+}
 
 
 
