@@ -40,6 +40,11 @@ div.file-widget.form-managed-file > * {
 	padding-left: 1.75em;
 }
 
+div.description p{
+	font-style: italic;
+	color: #000;
+}
+
 /*.sticky-table a,
 a.ckeditor_links,
 a.tabledrag-toggle-weight*/
@@ -923,12 +928,12 @@ textarea {
   white-space: nowrap;
   font-weight: bold;
 }
-
+/*
 .admin-menu .sticky-table a:hover,
 .admin-menu .sticky-table a:active {
   border-bottom-width: 2px !important;
 }
-
+*/
 form table td.label {
   padding-top: 0.68em !important;
 }
