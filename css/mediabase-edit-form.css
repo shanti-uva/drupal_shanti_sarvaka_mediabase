@@ -328,8 +328,8 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
-	line-height: 1.88em;
-	height:2em;
+	/*line-height: 1.88em;
+	height:2em;*/
 }
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
