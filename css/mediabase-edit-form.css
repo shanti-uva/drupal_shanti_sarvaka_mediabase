@@ -183,7 +183,7 @@ div.kmap-selector button.selectpicker {
 
 .location-selector .autocomplete-input{ display:inline; float:left;}
 
-.kmap-selector-item .icon:before {
+.kmap-selector-item .icon::before {
 	font-size: 1.5em;
 	vertical-align: middle;
 }
