@@ -802,7 +802,7 @@
   font-size: 1.18em;
   line-height: 2em;
   letter-spacing: 0.03rem;*/
-  font-family: arial,helvetica,sans-serif;
+  /*font-family: arial,helvetica,sans-serif;*/
   /*color: #333;
   margin-right: 7rem;*/
 }
@@ -894,14 +894,16 @@
 }
 
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li>a .glyphicon:first-of-type{
-  position:absolute;
-  right: 1.5rem;
-  top: 0.7rem;
+
 }
 
 /* .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li.selected > a .glyphicon:first-of-type, */
 .btn-group-transcript .bootstrap-select.btn-group .dropdown-menu li > a .glyphicon.glyphicon-download-alt{
   color:#2cb3b2 !important;
+  position:absolute;
+  right: 1.5rem;
+  top: 0.8rem;
+  font-size: 85%;
 }
 
 /*
