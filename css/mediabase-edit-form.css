@@ -324,7 +324,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
-.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.333%; border-bottom:none;}
+.field-type-field-collection .field-widget-options-select{ /*padding:0;*/ float:left; display:inline; width:33.333%; border-bottom:none;}
 
 .field-name-field-workflow .bootstrap-select.form-control,
 .field-type-field-collection  .bootstrap-select.form-control{ min-width: 15rem; max-width:95%; margin-left:1rem;}
@@ -949,6 +949,25 @@ textarea {
   width: 100%;
 }
 
+.admin-menu .content table td:not(.pagerer) {
+  background: transparent;
+  /*padding-bottom:1.5rem;*/
+  padding-top: 1.2rem;
+}
+
+
+.pagerer_admin_panes_config .form-type-select label {
+  display: none;
+}
+
+form table td.label {
+  padding-top: 0.68em !important;
+}
+
+
+
+
+
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
   margin-right: 0.5rem !important;
@@ -969,7 +988,7 @@ textarea {
 .admin-menu .sticky-table a {
   border-bottom-width: 1px;
   white-space: nowrap;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 /*
 .admin-menu .sticky-table a:hover,
@@ -977,9 +996,8 @@ textarea {
   border-bottom-width: 2px !important;
 }
 */
-form table td.label {
-  padding-top: 0.68em !important;
-}
+
+
 
 .main-content .content-section .view-content {
   max-width: 100%;
