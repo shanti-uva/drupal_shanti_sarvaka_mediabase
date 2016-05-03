@@ -328,14 +328,13 @@ input#field_transcript_value.text-full.form-control.form-inline{
   display:inline-block;
 }
 
-.field-name-field-copyright-owner .form-type-textfield{
-	padding-bottom:0;
-}
-
-
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
 .field-type-field-collection .field-widget-options-select{ /*padding:0;*/ float:left; display:inline; width:33.333%; border-bottom:none;}
+
+#node_video_form_group_rights .form-type-textfield{
+	padding-bottom: 0;
+}
 
 .field-name-field-workflow .bootstrap-select.form-control,
 .field-type-field-collection  .bootstrap-select.form-control{ min-width: 15rem; max-width:95%; margin-left:1rem;}
