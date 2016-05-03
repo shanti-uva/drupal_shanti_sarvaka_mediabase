@@ -469,8 +469,7 @@ table.sticky-table .filter-guidelines ul li{
 
 .filter-help {
 	float: none;
-	position: relative;
-	left: 2rem
+	padding:0 !important;
 }
 
 
