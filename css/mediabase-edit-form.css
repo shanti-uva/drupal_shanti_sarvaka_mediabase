@@ -321,6 +321,10 @@ input#field_transcript_value.text-full.form-control.form-inline{
   display:inline-block;
 }
 
+.field-name-field-copyright-owner .form-type-textfield{
+	padding-bottom:0;
+}
+
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
@@ -345,6 +349,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
 	float: left;
 	border: none;
+	margin-right:1.5rem;
 }
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
@@ -371,13 +376,22 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
   margin-top: 1rem;
 }
 
-/*
-.field-type-field-collection .form-item.form-type-select label{
-  margin-left: 1.5rem;
-  text-transform: uppercase;
-  font-size: 0.88em;
+
+
+.admin-menu .content table td:not(.pagerer) {
+  background: transparent;
+	padding-bottom: 1.5rem;
+	padding-top: 0.5rem;
 }
-*/
+
+
+.pagerer_admin_panes_config .form-type-select label {
+  display: none;
+}
+
+form table td.label {
+  padding-top: 0.68em !important;
+}
 
 
 
@@ -955,20 +969,7 @@ textarea {
   width: 100%;
 }
 
-.admin-menu .content table td:not(.pagerer) {
-  background: transparent;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-}
 
-
-.pagerer_admin_panes_config .form-type-select label {
-  display: none;
-}
-
-form table td.label {
-  padding-top: 0.68em !important;
-}
 
 
 
