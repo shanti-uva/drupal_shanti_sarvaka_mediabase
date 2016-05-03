@@ -9,6 +9,39 @@
 * 
 */
 
+.page-node-edit .fancytree-container .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-selected > .glyphicon{
+  color: #2db6b4 !important;
+}
+
+/* typeahead hover color to match subtheme */
+.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+	background-color: #2db6b4;
+}
+
+.kmap_search_button{
+  background-color: #5b68ce;
+  color: #eee;
+  display: inline-block;
+  padding: 0.35rem 1.2rem 0.2rem;
+  border-radius: .3rem; 
+  border: 1px solid #777;
+  font-family:'museo-sans-500', helvetica, sans-serif;
+  font-size:0.93em;
+}
+
+.kmap_search_button:hover,
+.kmap_search_button:active{
+  background: #4850bd;
+  border-color:#4850bd;
+  color:#fff;
+}
+
+    
+
 /* Ajax Loading */
 .throbber {
 	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
@@ -122,7 +155,7 @@ div#edit-group-audience > div.form-item > label {
 	font-size: 100%;
 	text-transform: uppercase;
 	color: #555;
-	margin: -24px 0px 12px -3px;
+	margin: 0 0 0.5rem 2rem;
 }
 
 div#edit-group-audience > div.form-item > div.collection-details-audience {
@@ -174,6 +207,10 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 
 div.kmap-selector button.selectpicker {
 	min-width: 300px;
+}
+
+.field-type-file .file-link a{
+	font-size: 0.88em;
 }
 
 .browse-link a {
@@ -253,6 +290,11 @@ div.kmap-selector button.selectpicker {
 	padding-top: 4px !important;
 }
 
+/* Transcript Accordion - input label */
+.form-item-field-transcript-und-0 label{
+	margin-left:4rem;
+	margin-bottom:0.2rem;
+}
 
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
@@ -308,6 +350,12 @@ input#field_transcript_value.text-full.form-control.form-inline{
 table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   font-size: 0.93em;
   max-width: 25rem !important;
+}
+
+/* Collections select menu Icon */
+.field-accordion.group-details .field-type-group label .icon.shanticon-create{
+  font-size: 2rem;
+  color: #777;
 }
 
 /* Collections selection, some names are long so extending this */
@@ -391,10 +439,7 @@ table.sticky-table .filter-guidelines ul li{
 	padding: 3px 20px 1px;
 }
 
-/* typeahead hover color to match subtheme */
-.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-	background-color: #2db6b4;
-}
+
 
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
@@ -482,23 +527,7 @@ div.node .group-details .field-label-span {
       display:inline-block;
     }
 
-.kmap_search_button{
-  background-color: #5b68ce;
-  color: #eee;
-  display: inline-block;
-  padding: 0.35rem 1.2rem 0.2rem;
-  border-radius: .3rem; 
-  border: 1px solid #777;
-  font-family:'museo-sans-500', helvetica, sans-serif;
-  font-size:0.93em;
-}
 
-    .kmap_search_button:hover,
-    .kmap_search_button:active{
-      background: #4850bd;
-      border-color:#4850bd;
-      color:#fff;
-    }
 
 .node-video-form .form-item{
   margin:0;
@@ -591,17 +620,15 @@ div.node .group-details .field-label-span {
 }
 
 
-/* Details section, Collection header /icon */
+/* Details section, Collection header /icon 
 .field-accordion.group-details .field-type-group label{
   display: inline-block;
   margin-left:1.5rem;
   margin-top:1rem;
 }
+*/
 
-    .field-accordion.group-details .field-type-group label .icon.shanticon-create{
-      font-size: 1.8rem;
-      color: #777;
-    }
+
 
 /**
 *** END - Media Edit Form */
