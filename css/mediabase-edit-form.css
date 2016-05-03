@@ -26,11 +26,12 @@
   background-color: #5b68ce;
   color: #eee;
   display: inline-block;
-  padding: 0.35rem 1.2rem 0.2rem;
+  padding: 0.5rem 1.5rem 0.2rem;
   border-radius: .3rem; 
   border: 1px solid #777;
   font-family:'museo-sans-500', helvetica, sans-serif;
   font-size:0.93em;
+  margin-left:0.5rem;
 }
 
 .kmap_search_button:hover,
@@ -324,26 +325,63 @@ input#field_transcript_value.text-full.form-control.form-inline{
 .field-name-field-workflow .field-widget-options-select,
 .field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.333%; border-bottom:none;}
 
-.group-rights .form-type-textfield label,
-.field-name-field-workflow .form-item.form-type-select label,
-.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.2rem;margin-left:2rem;font-size: 0.93em; margin-top: 1rem;}
-
 .field-name-field-workflow .bootstrap-select.form-control,
 .field-type-field-collection  .bootstrap-select.form-control{ min-width: 15rem; max-width:95%; margin-left:1rem;}
 
 .group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
 
-.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:80% !important;}
+.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:70% !important;}
 
-.field-type-field-collection input.form-text.form-control{ max-width:31% !important; position:relative; left:1rem}
+.field-type-field-collection input.form-text.form-control{ /*max-width:31% !important; position:relative; left:1rem */}
 
 
 .field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
 
 .form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{ max-width:100% !important;}
-/* ----------------------------*/
-/* -- End of Video Edit form --*/
-/* ----------------------------*/
+
+
+
+
+
+.group-rights .form-type-textfield, 
+.field-type-field-collection .field-widget-text-textfield,
+.field-name-field-workflow .field-widget-options-select, 
+.field-type-field-collection .field-widget-options-select{
+  padding-bottom: 1.5rem;
+}
+
+.field-type-field-collection .form-type-textfield{
+  display:inline-block;
+}
+
+.group-rights .form-type-textfield label,
+.field-name-field-workflow .form-item.form-type-select label,
+.field-type-field-collection  .form-item.form-type-select label{ 
+	display:block; 
+	margin-bottom:0.2rem;
+	margin-left:2rem;
+	font-size: 0.93em; 
+	margin-top: 1rem;
+}
+
+.field-type-field-collection .form-type-textfield label, 
+.field-name-field-workflow .form-item.form-type-select label, 
+.field-type-field-collection .form-item.form-type-select label{
+  padding: 3px 0px 2px 10px;
+  margin-bottom:0;
+  font-size: 0.88em;
+  display:block;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+/*
+.field-type-field-collection .form-item.form-type-select label{
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.88em;
+}
+*/
+
 
 
 
@@ -354,8 +392,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 /* Collections select menu Icon */
 .field-accordion.group-details .field-type-group label .icon.shanticon-create{
-  font-size: 2rem;
-  color: #777;
+  font-size: 1.68rem;
 }
 
 /* Collections selection, some names are long so extending this */
@@ -517,8 +554,8 @@ div.node .group-details .field-label-span {
 
 /* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
-  max-width: 90% !important;
-  position: relative;
+  /*max-width: 90% !important;
+  position: relative;*/
   /*top: -0.3rem;*/
 }
 
@@ -590,31 +627,7 @@ div.node .group-details .field-label-span {
   margin-bottom: 0.5rem; 
 }
 
-.group-rights .form-type-textfield, 
-.field-type-field-collection .field-widget-text-textfield,
-.field-name-field-workflow .field-widget-options-select, 
-.field-type-field-collection .field-widget-options-select{
-  padding-bottom: 1.5rem;
-}
 
-    .field-type-field-collection .form-type-textfield{
-      display:inline-block;
-    }
-
-    .field-type-field-collection .form-type-textfield label, 
-    .field-name-field-workflow .form-item.form-type-select label, 
-    .field-type-field-collection .form-item.form-type-select label{
-      padding: 3px 0px 2px 10px;
-      margin-bottom:0;
-      font-size: 0.93em;
-      display:block;
-      margin-left: 3rem;
-	  margin-top: 1rem
-    }
-
-    .field-type-field-collection .form-item.form-type-select label{
-      margin-left:2rem;
-    }
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
@@ -725,7 +738,7 @@ html.js .form-autocomplete {
 }
 
 .field-widget-text-textfield.form-wrapper input.form-control {
-  max-width: 80%;
+  /*max-width: 80%;*/
 } /* this was width: 80% !important but changed for video edit - field-extension-authority */
 
 .form-item .description .warning,
