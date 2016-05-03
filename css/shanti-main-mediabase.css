@@ -67,6 +67,11 @@
 * --------------
 */
 
+.content-section.equal-height.col-md-9 > .tab-content.container-fluid::after{
+  /* padding-bottom: 7rem; */
+}
+
+
 .tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
   margin-left: -1.5rem;
   margin-right: -1.5rem;
@@ -104,8 +109,6 @@
     .node-type-collection .tab-pane.main-col > div{
       padding-top:0.2rem;
     }
-
-
 
 
 /**
@@ -259,10 +262,32 @@
   display:none;
 }
 
-
-
 .node-type-collection .description:not(#admin-footer .description){
   min-height: 270px;
+}
+
+/** Collections List page **/
+.page-collections-all-list .view-display-id-collection_all_list td {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+.page-collections-all-list .view-display-id-collection_all_list td.views-field.views-field-created {
+    white-space: nowrap;
+}
+
+.page-collections-all .shanti-filters .control-box-cell-header span, .page-collections-all-list .shanti-filters .control-box-cell-header span {
+    margin: 0px;
+}
+
+.page-collections-all .other-view a, .page-all-collections-list .other-view a {
+    padding-left: 8px;
+}
+
+.view-display-id-collection_all_list .view-content .views-table {
+    width: 100%;
 }
 
 /* single collection page */
@@ -830,7 +855,7 @@ a.show-annot, a.hide-annot {
 
 
 /** 
-* Related Videos Tab 
+* Related Audio-Video Tab 
 */
 .av-related-wrapper{
   padding-top:2rem;
@@ -1612,6 +1637,10 @@ h3.node-desc {
     padding-right: 0 !important;
     width:70% !important;
   }
+
+    .has-transcript .av-main-video-section {
+      min-height:750px;
+    }
   
     .node-type-video.has-transcript .av-main-video-section {
       width:50% !important;
@@ -1623,6 +1652,7 @@ h3.node-desc {
 
     .node-type-audio.has-transcript .av-main-video-section {
       width: 41.66666667% !important;
+      min-height:600px;
     }
 
     .node-type-audio .avinfo{

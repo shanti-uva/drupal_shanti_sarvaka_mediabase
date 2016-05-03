@@ -206,22 +206,26 @@
 
 	        $( document ).ready(function() {
 	          	$('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	              target: $('.equal-height.col-md-9')
+	              target: $('.main-wrapper')
 	          	});
 	        });
 
 	        $( document ).ready(function() {
-	          	$('.has-transcript .av-main-wrapper > div.col-sm-6').matchHeight({
+	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
 	              target: $('.av-main-video-section')
 	          	});
+//	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
+	        
 
-            $('.has-transcript .show-more a').bind('click', function(e){
-            	e.preventDefault();
+            $('.has-transcript .show-more a').click(function() {
 
-        		$('.av-main-wrapper > div.col-sm-6').delay(1500).matchHeight({ 
-        			target: $('.av-main-video-section') 
-        		}); 
+				if($('.video-overview p').each().is(":visible")) {
+	        		$('.av-main-wrapper > div').matchHeight({ 
+	        			target: $('.av-main-video-section') 
+	        		});
+				} 
+
             }); 
 
 	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  

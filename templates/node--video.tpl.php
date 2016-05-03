@@ -79,12 +79,12 @@
  *
  * @ingroup themeable
  */
+ 
 ?>
 
 <?php
 /********* TEASER Display ****************/
 if($teaser):
-		//dpm($variables, 'in teaser');
 		?> 
 		<li class="shanti-thumbnail video">
 	    <div class="shanti-thumbnail-image shanti-field-video">
@@ -136,7 +136,7 @@ if($teaser):
       <?php if($coll): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
-            	class="shanti-thumbnail-link"><?php print $variables['coll_title']; ?></a>
+            	class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
             </div>
         </div>
       <?php endif; ?>
