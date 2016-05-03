@@ -314,7 +314,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 .form-type-textfield, 
 .field-widget-text-textfield,
 .field-widget-options-select{
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .form-type-textfield{
@@ -957,8 +957,8 @@ textarea {
 
 .admin-menu .content table td:not(.pagerer) {
   background: transparent;
-  /*padding-bottom:1.5rem;*/
-  padding-top: 1.2rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 }
 
 
