@@ -42,6 +42,13 @@
 }
 
 
+/* override bootstrap css - Collections Edit page */
+.page-node-edit.node-type-collection .radio-inline input[type=radio]{
+	position: static;
+	margin: 0;
+}
+
+
 
 /* Ajax Loading */
 .throbber {
