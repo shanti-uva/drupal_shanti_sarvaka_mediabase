@@ -442,8 +442,14 @@ table.sticky-table .filter-guidelines ul li{
   padding-top: 0.7rem
 }
 
+.filter-help p{
+	font-size: 85%;
+}
 
-
+.filter-help {
+	float: none;
+	margin-bottom: 1rem;
+}
 
 
 /* typeahead */
