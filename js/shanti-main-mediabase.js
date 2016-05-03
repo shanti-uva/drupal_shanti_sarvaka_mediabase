@@ -17,6 +17,7 @@
 				$('#edit-group-audience .form-item-group-audience-und', context).once('aveditcollaud').wrapInner('<div class="collection-details-audience"></div>');
 				$('.collection-details-audience').once('aveditcollaud2').before($('.collection-details-audience > label').detach());
 				$('#edit-group-audience .form-item-group-audience-und > label, #edit-field-subcollection > label').once('aveditsubcoll').prepend('<span class="icon shanticon-create"></span> ');
+                                $('#edit-field-transcript .form-item-field-transcript-und-0 > label').once('avedittrans').prepend('<span class="fa fa-comments-o"></span> ');
 				$('#edit-field-characteristic > label').once('aveditsubjects').prepend('<span class="icon shanticon-subjects"></span> ');
 				$('#edit-field-pbcore-coverage-spatial > label').once('aveditspatial').prepend('<span class="icon shanticon-places"></span> ');
 				// Show more language descriptions
