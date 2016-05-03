@@ -9,6 +9,47 @@
 * 
 */
 
+.page-node-edit .fancytree-container .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-selected > .glyphicon{
+  color: #2db6b4 !important;
+}
+
+/* typeahead hover color to match subtheme */
+.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+	background-color: #2db6b4;
+}
+
+.kmap_search_button{
+  background-color: #5b68ce;
+  color: #eee;
+  display: inline-block;
+  padding: 0.5rem 1.5rem 0.2rem;
+  border-radius: .3rem; 
+  border: 1px solid #777;
+  font-family:'museo-sans-500', helvetica, sans-serif;
+  font-size:0.93em;
+  margin-left:0.5rem;
+}
+
+.kmap_search_button:hover,
+.kmap_search_button:active{
+  background: #4850bd;
+  border-color:#4850bd;
+  color:#fff;
+}
+
+
+/* override bootstrap css - Collections Edit page */
+.page-node-edit.node-type-collection .radio-inline input[type=radio]{
+	position: static;
+	margin: 0;
+}
+
+
+
 /* Ajax Loading */
 .throbber {
 	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
@@ -54,17 +95,6 @@ a.tabledrag-toggle-weight*/
 }
 
 /* Title Group */
-
-div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
-	float: left;
-	border: none;
-}
-
-div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
-	display: block;
-	padding: 0px 0px 8px 0px;
-}
-
 form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
 
 /*
@@ -86,9 +116,9 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 .btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
-	left: -0.9rem;
-	top: -1.6rem;
-	font-size: 1.68em;
+	left: -0.78rem;
+	top: -1.5rem;
+	font-size: 1.56em;
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
 
@@ -122,7 +152,7 @@ div#edit-group-audience > div.form-item > label {
 	font-size: 100%;
 	text-transform: uppercase;
 	color: #555;
-	margin: -24px 0px 12px -3px;
+	margin: 0 0 0.5rem 2rem;
 }
 
 div#edit-group-audience > div.form-item > div.collection-details-audience {
@@ -174,6 +204,10 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 
 div.kmap-selector button.selectpicker {
 	min-width: 300px;
+}
+
+.field-type-file .file-link a{
+	font-size: 0.88em;
 }
 
 .browse-link a {
@@ -253,6 +287,11 @@ div.kmap-selector button.selectpicker {
 	padding-top: 4px !important;
 }
 
+/* Transcript Accordion - input label */
+.form-item-field-transcript-und-0 label{
+	margin-left:4rem;
+	margin-bottom:0.2rem;
+}
 
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
@@ -278,36 +317,99 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 
+
+.form-type-textfield, 
+.field-widget-text-textfield,
+.field-widget-options-select{
+  padding-bottom: 0.5rem;
+}
+
+.form-type-textfield{
+  display:inline-block;
+}
+
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
-.field-type-field-collection  .field-widget-options-select{ padding:0; float:left; display:inline; width:33.333%; border-bottom:none;}
+.field-type-field-collection .field-widget-options-select{ /*padding:0;*/ float:left; display:inline; width:33.333%; border-bottom:none;}
 
-.group-rights .form-type-textfield label,
-.field-name-field-workflow .form-item.form-type-select label,
-.field-type-field-collection  .form-item.form-type-select label{ display:block; margin-bottom:0.2rem;margin-left:2rem;}
+#node_video_form_group_rights .form-type-textfield{
+	padding-bottom: 0;
+}
 
 .field-name-field-workflow .bootstrap-select.form-control,
 .field-type-field-collection  .bootstrap-select.form-control{ min-width: 15rem; max-width:95%; margin-left:1rem;}
 
 .group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
 
-.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:80% !important;}
+.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:70% !important;}
 
-.field-type-field-collection input.form-text.form-control{ max-width:31% !important; position:relative; left:1rem}
+.field-type-field-collection input.form-text.form-control{ /*max-width:31% !important; position:relative; left:1rem */}
 
 
 .field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
 
 .form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{ max-width:100% !important;}
-/* ----------------------------*/
-/* -- End of Video Edit form --*/
-/* ----------------------------*/
+
+
+
+div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
+	float: left;
+	border: none;
+	margin-right:1.5rem;
+}
+
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
+	/*display: block;
+	padding: 0px 0px 5px 0px;*/
+}
+
+.form-type-textfield label,
+.form-item.form-type-select label{ 
+	display:block; 
+	margin-bottom:0.2rem;
+	margin-left:2rem;
+	font-size: 0.88em; 
+	margin-top: 0;
+}
+
+.form-type-textfield label, 
+.form-item.form-type-select label{
+  /* padding: 3px 0px 2px 10px;*/
+  margin-bottom:0.2rem;
+  font-size: 0.88em;
+  display:block;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+
+.admin-menu .content table td:not(.pagerer) {
+  background: transparent;
+	padding-bottom: 1.5rem;
+	padding-top: 0.5rem;
+}
+
+
+.pagerer_admin_panes_config .form-type-select label {
+  display: none;
+}
+
+form table td.label {
+  padding-top: 0.68em !important;
+}
+
 
 
 
 table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   font-size: 0.93em;
   max-width: 25rem !important;
+}
+
+/* Collections select menu Icon */
+.field-accordion.group-details .field-type-group label .icon.shanticon-create{
+  font-size: 1.68rem;
 }
 
 /* Collections selection, some names are long so extending this */
@@ -360,8 +462,14 @@ table.sticky-table .filter-guidelines ul li{
   padding-top: 0.7rem
 }
 
+.filter-help p{
+	font-size: 85%;
+}
 
-
+.filter-help {
+	float: none;
+	padding:0 !important;
+}
 
 
 /* typeahead */
@@ -391,10 +499,7 @@ table.sticky-table .filter-guidelines ul li{
 	padding: 3px 20px 1px;
 }
 
-/* typeahead hover color to match subtheme */
-.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-	background-color: #2db6b4;
-}
+
 
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
@@ -472,8 +577,8 @@ div.node .group-details .field-label-span {
 
 /* overide 'mediabase-edit-form.css' */
 .field-type-field-collection input.form-text.form-control{
-  max-width: 90% !important;
-  position: relative;
+  /*max-width: 90% !important;
+  position: relative;*/
   /*top: -0.3rem;*/
 }
 
@@ -482,23 +587,7 @@ div.node .group-details .field-label-span {
       display:inline-block;
     }
 
-.kmap_search_button{
-  background-color: #5b68ce;
-  color: #eee;
-  display: inline-block;
-  padding: 0.35rem 1.2rem 0.2rem;
-  border-radius: .3rem; 
-  border: 1px solid #777;
-  font-family:'museo-sans-500', helvetica, sans-serif;
-  font-size:0.93em;
-}
 
-    .kmap_search_button:hover,
-    .kmap_search_button:active{
-      background: #4850bd;
-      border-color:#4850bd;
-      color:#fff;
-    }
 
 .node-video-form .form-item{
   margin:0;
@@ -561,47 +650,22 @@ div.node .group-details .field-label-span {
   margin-bottom: 0.5rem; 
 }
 
-.group-rights .form-type-textfield, 
-.field-type-field-collection .field-widget-text-textfield,
-.field-name-field-workflow .field-widget-options-select, 
-.field-type-field-collection .field-widget-options-select{
-  padding-bottom: 1.5rem;
-}
 
-    .field-type-field-collection .form-type-textfield{
-      display:inline-block;
-    }
-
-    .field-type-field-collection .form-type-textfield label, 
-    .field-name-field-workflow .form-item.form-type-select label, 
-    .field-type-field-collection .form-item.form-type-select label{
-      padding: 3px 0px 2px 10px;
-      margin-bottom:0;
-      font-size: 0.93em;
-      display:block;
-      margin-left:2rem;
-    }
-
-    .field-type-field-collection .form-item.form-type-select label{
-      margin-left:2rem;
-    }
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
   margin-top:1rem;
 }
 
 
-/* Details section, Collection header /icon */
+/* Details section, Collection header /icon 
 .field-accordion.group-details .field-type-group label{
   display: inline-block;
   margin-left:1.5rem;
   margin-top:1rem;
 }
+*/
 
-    .field-accordion.group-details .field-type-group label .icon.shanticon-create{
-      font-size: 1.8rem;
-      color: #777;
-    }
+
 
 /**
 *** END - Media Edit Form */
@@ -697,7 +761,7 @@ html.js .form-autocomplete {
 }
 
 .field-widget-text-textfield.form-wrapper input.form-control {
-  max-width: 80%;
+  /*max-width: 80%;*/
 } /* this was width: 80% !important but changed for video edit - field-extension-authority */
 
 .form-item .description .warning,
@@ -911,6 +975,12 @@ textarea {
   width: 100%;
 }
 
+
+
+
+
+
+
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
   margin-right: 0.5rem !important;
@@ -931,7 +1001,7 @@ textarea {
 .admin-menu .sticky-table a {
   border-bottom-width: 1px;
   white-space: nowrap;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 /*
 .admin-menu .sticky-table a:hover,
@@ -939,9 +1009,8 @@ textarea {
   border-bottom-width: 2px !important;
 }
 */
-form table td.label {
-  padding-top: 0.68em !important;
-}
+
+
 
 .main-content .content-section .view-content {
   max-width: 100%;
