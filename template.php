@@ -126,7 +126,8 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             }
             // Deal with the body/description (truncate)
             $vars['desc'] = "";
-            $body = array_shift(field_get_items('node', $node, 'body'));
+            $bfi = field_get_items('node', $node, 'body');
+            $body = array_shift($bfi);
             if (!empty($body) && isset($body['safe_value'])) {
                 $desc = strip_tags($body['safe_value']);
                 $vars['desc'] = (strlen($desc) > 0) ? substr($desc, 0, 60) . "..." : "";
