@@ -123,8 +123,8 @@
               
               <?php if($coll): ?>
                 <div class="shanti-field shanti-field-group-audience">
-                    <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
-                        class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
+                    <div class="shanti-field-content"><a href="<?php if (isset($coll->url)) {print $coll->url; } else { print "#";}; ?>" 
+                        class="shanti-thumbnail-link"><?php if (isset($coll->title)) {print $coll->title; }  ?></a>
                     </div>
                 </div>
               <?php endif; ?>

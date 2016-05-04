@@ -108,6 +108,7 @@ function sarvaka_mediabase_preprocess_user_profile(&$variables) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
+    
 	// Preprocess Collection and Subcollection Nodes
 	$ntype = $vars['type'];
     $mode = $vars['view_mode'];
@@ -134,10 +135,8 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             // Get the number of items in the collection from mb_structure.module
             $vars['item_count'] = get_items_in_collection($vars['nid']);
             
-            if ($ntype == "subcollection") {
-                $vars['coll'] = $coll = get_collection_ancestor_node($node);
-            }
-            
+           $vars['coll'] = ($ntype == "subcollection") ? get_collection_ancestor_node($node) : FALSE;
+          
         }
     	}
 	// Preprocess a/v nodes:
@@ -148,7 +147,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 			// Get Title language and add as variable for template
 			$ew = entity_metadata_wrapper('node', $node);
 			try {
-				$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
+				$vars['title_lang'] = lang_code($ew->field_pbcore_title[0]->field_language->value());
 			} catch (EntityMetadataWrapperException $emwe) {
 				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $node->nid);
 			}
