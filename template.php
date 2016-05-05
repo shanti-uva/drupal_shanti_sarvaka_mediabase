@@ -296,7 +296,7 @@ function sarvaka_mediabase_select($vars) {
   $element['#attributes']['class'][] = 'form-select';
   $element['#attributes']['class'][] = 'ss-select';
   $element['#attributes']['class'][] = 'selectpicker';
-  if ($element['#attributes']['multiple']) {
+  if (isset($element['#attributes']['multiple'])) {
     $element['#attributes']['data-selected-text-format'] = 'count>2';
     $element['#attributes']['data-header'] = t('Select one or more...');
   }
