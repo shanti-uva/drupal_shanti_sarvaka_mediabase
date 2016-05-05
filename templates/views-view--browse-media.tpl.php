@@ -35,7 +35,7 @@
 			<?php print $header; ?>
 		</div>
 		
-		<div class="control-box-cell-filters col-xs-12 col-md-5" style="display:none;">
+		<div class="control-box-cell-filters col-xs-12 col-md-5" >
 			<?php if ($exposed): ?>
 				<div class="view-filters-mb">
 				<?php print $exposed; ?>
@@ -50,7 +50,7 @@
 		<?php endif; ?>
 	</div>	   
 	
-	<div class="<?php print $classes; ?>">
+	<div class="<?php print $classes; ?> clearfix">
 		<?php print render($title_prefix); ?>
 		<?php if ($title): ?>
 			<?php print $title; ?>
@@ -65,9 +65,13 @@
 		
 		<?php if ($rows): ?>
 			<div class="view-content">
-				<ul class="shanti-gallery">
-					<?php print $rows;  ?>
-				</ul>
+			    <?php if (strpos($variables['view']->current_display, '_list') > -1): ?>
+			        <?php print $rows;  ?>
+			    <?php else: ?>
+        				<ul class="shanti-gallery">
+        					<?php print $rows;  ?>
+        				</ul>
+        			<?php endif; ?>
 			</div>
 		
 		<?php elseif ($empty): ?>

@@ -260,10 +260,32 @@
   display:none;
 }
 
-
-
 .node-type-collection .description:not(#admin-footer .description){
   min-height: 270px;
+}
+
+/** Collections List page **/
+.page-collections-all-list .view-display-id-collection_all_list td {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+.page-collections-all-list .view-display-id-collection_all_list td.views-field.views-field-created {
+    white-space: nowrap;
+}
+
+.page-collections-all .shanti-filters .control-box-cell-header span, .page-collections-all-list .shanti-filters .control-box-cell-header span {
+    margin: 0px;
+}
+
+.page-collections-all .other-view a, .page-all-collections-list .other-view a {
+    padding-left: 8px;
+}
+
+.view-display-id-collection_all_list .view-content .views-table {
+    width: 100%;
 }
 
 /* single collection page */

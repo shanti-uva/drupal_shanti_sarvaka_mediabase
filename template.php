@@ -108,72 +108,56 @@ function sarvaka_mediabase_preprocess_user_profile(&$variables) {
  * Preprocess function for a NODE
  */
 function sarvaka_mediabase_preprocess_node(&$vars) {
-	//dpm($vars, 'vars for node');
-	// Preprocess Collection Nodes
-	if($vars['type'] == 'collection' || $vars['type'] == 'team') {
-		$vars['collimage'] = '';
-		if(isset($vars['elements']['field_images'][0]['#image_style']) && isset($vars['elements']['field_images']['#items'][0]['uri'])) {
-			$style_name = $vars['elements']['field_images'][0]['#image_style'];
-			$uri = $vars['elements']['field_images']['#items'][0]['uri'];
-			$src = image_style_url($style_name, $uri);
-			$vars['collimage'] = '<img class="img-thumbnail img-responsive pull-left" src="' . $src . '" />';
-		}
-        $subcolls = array();
-        /* Old Kmaps code: Removing for MANU-2488
-		if(!empty($vars['field_subcoll_root_kmap_id'])) { // old field
-			module_load_include('inc','kmap_taxonomy','includes/kmap');
-			foreach($vars['field_subcoll_root_kmap_id']['und'] as $n => $t) {
-				$kmap = Kmap::createKmapByTid($t['tid']);
-				$kmap->field_name = 'field_subcollection';
-				$subcolls[] = _kmap_subject_popover($kmap);
-			}
-		}
-		$vars['subcolls'] = implode(', ', $subcolls);
-         */
-        if ($vars['view_mode'] == 'teaser') {
-            //dpm($vars, 'vars in pp');
-            $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
-            if (isset($vars['field_images']['und'][0]['uri'])) {
-                $uri = $vars['field_images']['und'][0]['uri'];
-               $vars['thumbnail_url'] = image_style_url('gallery_thumb', $uri);
+    
+	// Preprocess Collection and Subcollection Nodes
+	$ntype = $vars['type'];
+    $mode = $vars['view_mode'];
+    $node = $vars['node'];
+    if(in_array($ntype, array('collection', 'subcollection'))) {
+        if($mode == 'teaser') {
+        	    	$vars['theme_hook_suggestions'][] = 'node__collection__teaser';   // Have them both use the same teaser template
+    	        // Get thumbnail image
+            if (empty($vars['field_general_featured_image']) || !isset($vars['field_general_featured_image']['und'][0]['uri'])) {
+                $vars['thumbnail_url'] = '/sites/all/modules/mediabase/images/collections-generic.png';
+            } else {
+                $uri = $vars['field_general_featured_image']['und'][0]['uri'];
+                $style = 'av_gallery_thumb'; // Style defined in mb_structure update 7002
+                 $vars['thumbnail_url'] = image_style_url($style, $uri);
             }
+            // Deal with the body/description (truncate)
             $vars['desc'] = "";
-            if (isset($vars['body'][0]['value'])) {
-                $desc = strip_tags($vars['body'][0]['value']);
-                $vars['desc'] = (strlen($desc) > 0) ? substr(strip_tags($vars['body'][0]['value']), 0, 130) . "..." : "";
+            $bfi = field_get_items('node', $node, 'body');
+            $body = array_shift($bfi);
+            if (!empty($body) && isset($body['safe_value'])) {
+                $desc = strip_tags($body['safe_value']);
+                $vars['desc'] = (strlen($desc) > 0) ? substr($desc, 0, 60) . "..." : "";
             }
+            //dpm($vars, 'vars');
+            // Get the number of items in the collection from mb_structure.module
             $vars['item_count'] = get_items_in_collection($vars['nid']);
+            
+           $vars['coll'] = ($ntype == "subcollection") ? get_collection_ancestor_node($node) : FALSE;
+          
         }
-	}
+    	}
 	// Preprocess a/v nodes:
-	else if(in_array($vars['type'], array('audio', 'video'))) {
+	else if(in_array($ntype, array('audio', 'video'))) {
+	    
 		// Teasers
-		if($vars['view_mode'] == 'teaser') {
+		if($mode == 'teaser') {
 			// Get Title language and add as variable for template
-			$ew = entity_metadata_wrapper('node', $vars['node']);
+			$ew = entity_metadata_wrapper('node', $node);
 			try {
-				$vars['title_lang'] =	lang_code($ew->field_pbcore_title[0]->field_language->value());
+				$vars['title_lang'] = lang_code($ew->field_pbcore_title[0]->field_language->value());
 			} catch (EntityMetadataWrapperException $emwe) {
-				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $vars['node']->nid);
+				watchdog('sarvaka mediabase', 'No field language in entity wrapper for node ' . $node->nid);
 			}
 			// Truncate title in teasers
 			if(strlen($vars['title']) > 75) {
 				$vars['title'] = truncate_utf8($vars['title'], 75, TRUE, TRUE);
 			}
 		}
-		
-		// Team link
-		if(!empty($vars['team'])) {
-			$path = drupal_get_path_alias('node/' . $vars['team']->nid);
-			$team_link = l($vars['team']->title, $path);
-			$vars['content']['group_details']['team'] = array(
-				'#type' => 'markup',
-				'#markup' => "<div class=\"field field-name-av-team\">
-												<span class=\"icon shanticon-create\" title=\"Team\"></span>&nbsp;<span class=\"field-label-span\">" .
-												t('Team') . "</span>&nbsp;{$team_link}</div>",
-			);
-		}
-		
+        
 		// Add collection field to group details
 		if(!empty($vars['coll'])) {
 			$vars['coll_title'] = $vars['coll']->title;
@@ -246,35 +230,19 @@ function sarvaka_mediabase_preprocess_audio_node_form(&$vars) {
  */
 function sarvaka_mediabase_preprocess_views_view(&$vars) {
 	$view = $vars['view'];
-	
-	// Collections Page if needed
-	if (isset($view->name) && $view->name == 'collections') {
-  		// No Tweaks Yet for Collection Page
-	// Home page view Tweaks
-	} else if(!empty($vars['name']) && $vars['name'] =='browse_media') {
-	  	 //dpm($vars, 'pp view browse media');
-			$query = $view->query;
-	    // Grab the pieces you want and then remove them from the array    
-		    /*$header   = $vars['header'];    $vars['header']   = '';
-		    $pager    = $vars['pager'];     $vars['pager']    = '';
-				$vars['header']   = $header;
-				$vars['pager']    = $pager;*/
-				
-			// Make sure text search box is only size 15 on home page filter
+    // Browse media view: includes my media and my collections
+	if (isset($view->name) && $view->name == 'browse_media') {
+		$query = $view->query;
+		// Make sure text search box is only size 15 on home page filter
 	    $filters  = $vars['exposed'];   $vars['exposed']  = '';
 	  	$filters = str_replace('name="title" value="" size="30"', 'name="title" value="" size="15"', $filters);
-			
-			// Set Dropdown selected value
-			$field = $query->orderby[0]['field'];
-			$direction = $query->orderby[0]['direction'];
-			$selval = $query->fields[$field]['field'] . ' ' . $direction;
-			$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
-			/*$filters = str_replace('Date Created Asc', 'Date Created &#11014;', $filters);
-			$filters = str_replace('Date Created Desc', 'Date Created &#11015;', $filters);
-			$filters = str_replace('Asc', '(A-Z)', $filters);
-			$filters = str_replace('Desc', '(Z-A)', $filters);*/
-			//dpm($filters, 'filters');
-			$vars['exposed']  = $filters;
+		
+		// Set Dropdown selected value
+		$field = $query->orderby[0]['field'];
+		$direction = $query->orderby[0]['direction'];
+		$selval = $query->fields[$field]['field'] . ' ' . $direction;
+		$filters = str_replace("value=\"{$selval}\"", "value=\"{$selval}\" selected=\"selected\"", $filters);
+		$vars['exposed']  = $filters;
 			
 	// List views of Media By Kmap
   } else if(isset($view->name) && $view->name == 'media_by_kmap') {
