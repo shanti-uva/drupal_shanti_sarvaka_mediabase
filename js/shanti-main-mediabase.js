@@ -102,7 +102,7 @@
                 }
                 return multip;  // Return whether there are hidden paragraphs
 	  	    }
-		  	// Pb core description trimming
+		  	// Pb core description trimming for a/v nodes
 				if($('.field-name-field-pbcore-description .field-item').length > 1) {
 					var items = $('.field-name-field-pbcore-description > .field-items > .field-item'),
 					       showing = false,
@@ -135,6 +135,44 @@
 							 e.preventDefault();
 						});
 					}
+				}
+				
+				// Description Trimming for collections
+				if ($('.node-type-collection .field-type-text-with-summary, .node-type-subcollection .field-type-text-with-summary').length > 0) {
+				    var maxlen = 500;
+				    var descel = $('.node-type-collection .field-type-text-with-summary, .node-type-subcollection .field-type-text-with-summary').eq(0);
+				    if (descel.text().length > maxlen) {
+				        var totalchar = 0;
+				        var eltotal = 0;
+				        var ishidden = false;
+				        $('.node-type-collection .field-type-text-with-summary .field-item, .node-type-subcollection .field-type-text-with-summary .field-item').each(function() {
+				            $(this).children().each(function() {
+				                totalchar += $(this).text().length;
+				                eltotal++;
+				                if (totalchar > maxlen && eltotal > 1) {
+				                    $(this).addClass('overmax');
+				                    $(this).hide();
+				                    ishidden = true;
+				                }
+				            });
+				        });
+				        if (ishidden) {
+				            $('.node-type-collection .field-type-text-with-summary, .node-type-subcollection .field-type-text-with-summary')
+				                .append('<div class="coldesc-showmore"><a class="link show" href="#">Show more</a></div>');
+				            $('.coldesc-showmore a.link').click(function(e) {
+				                if ($(this).hasClass('show')) {
+				                    $('.overmax').show();
+				                    $(this).text('Show less');
+				                    $(this).removeClass('show');
+				                } else {
+				                    $('.overmax').hide();
+                                    $(this).text('Show more');
+                                    $(this).addClass('show');
+				                }
+                                e.preventDefault();
+				            });
+				        }
+				    }
 				}
 			}
 		} // end context = document

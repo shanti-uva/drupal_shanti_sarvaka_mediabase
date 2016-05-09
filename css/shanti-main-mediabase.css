@@ -663,12 +663,14 @@ a.show-annot, a.hide-annot {
   margin: 0;
 }
 
-    .node-type-team h2:first-of-type{
-      margin-top: 1rem;
-      margin-bottom: 0.8rem;
-    }
+.node-type-team h2:first-of-type{
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
 
-
+.node-type-collection .field-name-field-general-featured-image, .node-type-subcollection .field-name-field-general-featured-image {
+    margin: 0px 8px;
+}
 
 
 /**
