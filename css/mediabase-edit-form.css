@@ -488,6 +488,12 @@ table.sticky-table .filter-guidelines ul li{
 
 /* typeahead */
 
+ul.typeahead-pager.pager{
+	font-size: 81%;
+	position: relative;
+	right: -3rem;
+}
+
 .kmaps-tt.menu .close{
 	position: relative;
 	top: 0;
