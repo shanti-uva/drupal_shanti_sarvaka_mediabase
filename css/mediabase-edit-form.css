@@ -515,13 +515,16 @@ table.sticky-table .filter-guidelines ul li{
 
 
 
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors{
-	color:#999;
-}
 
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
 }
+
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{
+	color:#999;
+}
+
+
 
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
 .page-node-edit .kmap_filter_box .selected-kmap:not(:first-child)::before{
