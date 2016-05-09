@@ -400,7 +400,23 @@ form table td.label {
 }
 
 
+/* Collections select menu Icon */
+.field-accordion.group-details .field-type-group label .icon.shanticon-create{
+  font-size: 1.68rem;
+}
 
+/* Collections selection, some names are long so extending this */
+.page-node-edit .collection-details-audience .bootstrap-select.form-control{
+	max-width: 45rem;
+}
+
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu {
+	font-size: 0.93em;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu {
+	padding-top:0;
+}
 
 table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   font-size: 0.93em;
@@ -419,19 +435,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	color:#000;
 }
 
-/* Collections select menu Icon */
-.field-accordion.group-details .field-type-group label .icon.shanticon-create{
-  font-size: 1.68rem;
-}
 
-/* Collections selection, some names are long so extending this */
-.page-node-edit .collection-details-audience .bootstrap-select.form-control{
-	max-width: 45rem;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu {
-	padding-top:0;
-}
 
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
 	padding: 6px 20px 4px 14px;
