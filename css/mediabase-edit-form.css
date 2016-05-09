@@ -467,6 +467,18 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	font-size: 1em;
 }
 
+/* classification section filters */
+div.form-item.form-type-textfield.form-item-field-location-search-term,
+div.form-item.form-type-textfield.form-item-field-location-search-filter-associated-subject,
+div.form-item.form-type-textfield.form-item-field-location-search-filter-feature-type{
+	display:block;
+}
+
+
+
+
+
+
 
 
 
