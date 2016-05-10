@@ -34,8 +34,8 @@
 	padding-top: 0;
 }
 
-.mb-av-form .group-media .field-accordion:first-of-type .panel-body,
-.mb-av-form .field-accordion .field-name-field-recording-location-new .panel-body{
+.mb-av-form .field-accordion .field-accordion .panel-body,
+.mb-av-form .group-media .field-accordion:first-of-type .panel-body{
 	padding-top: 2rem;
 }
 
