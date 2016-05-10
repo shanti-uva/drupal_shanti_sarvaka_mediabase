@@ -631,8 +631,8 @@ ul.typeahead-pager.pager{
 	width: 33.33%;
 }
 /* a pair of layout fixes for Channel Config */
-#field-pbcore-instantiation-en-0-field-channel-conf-add-more-wrapper{ width:33.3%; }
-.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ float:left; }
+.field-name-field-channel-conf{ width:33.3%; }
+/*.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ float:left; }*/
 
 /* Alternate Modes, Duration, and Start Time */
 .form-item-field-pbcore-instantiation-en-0-field-alternate-modes-und-0-value,
@@ -641,10 +641,9 @@ ul.typeahead-pager.pager{
 	width: 33.3%;
 }
 
-/*.group-technical .form-item.form-type-textfield{
-	width: 33.3%;
-	float: left
-}*/
+.field-name-field-duration{ width: 33.3%; }
+.field-name-field-duration>div{ float:left; }
+.field-name-field-duration>div>div{ width:100%; }
 
 
 /**
