@@ -373,6 +373,7 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	/*display: block;
 	padding: 0px 0px 5px 0px;*/
 	margin-top:1rem;
+	margin-bottom: 0.25rem;
 }
 
 .form-type-textfield label,
@@ -508,8 +509,10 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 .filter-help {
-	float: none;
-	padding:0 !important;
+	float: none !important;
+	padding: 0 !important;
+	position: relative;
+	top: -0.5rem;
 }
 
 
@@ -607,16 +610,19 @@ ul.typeahead-pager.pager{
 */
 
 .form-control.role-weight {
-  font-size: 80%;
-  width: 4em;
-  height: 1.5em;
-  line-height: 1.5em;
+	font-size: 80%;
+	width: 4em;
+	height: 1.5em;
+	line-height: 1.5em;
 }
 
-    .tabledrag-toggle-weight-wrapper {
-      display: inline;
-      float: right;
-    }
+.tabledrag-toggle-weight-wrapper {
+	display: inline;
+	float: right;
+	position:relative;
+	top:1.75rem;
+	right:1rem;
+}
 
 
 table.field-multiple-table {
@@ -709,13 +715,13 @@ div.node .group-details .field-label-span {
   padding-top:1rem;
 }
 
-    .mb-av-form .field-accordion:first-child .panel-body{
-      padding-top:2rem;
-    }
+.mb-av-form .field-accordion:first-child .panel-body{
+  padding-top:2rem;
+}
 
-    .field-multiple-table .panel-body > div{
-      margin: 12px 0px;
-    }
+.field-multiple-table .panel-body > div{
+  margin: 12px 0px;
+}
 /* for margin space below adjustable Rich-text area */
 .resizable-textarea .grippie{
   margin-bottom: 0.5rem; 
@@ -738,14 +744,6 @@ div.node .group-details .field-label-span {
 
 
 
-/**
-*** END - Media Edit Form */
-
-
-
-
-
-
 .page-group-node-admin fieldset.form-wrapper {
   margin-left:0;
   font-size: 1.06em;
@@ -754,9 +752,6 @@ div.node .group-details .field-label-span {
 .page-group-node-admin .placeholder{
 font-size: 1.12em;
 }
-
-
-
 
 
 
@@ -980,6 +975,10 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
 
 .admin-menu tr .form-item.form-type-textarea{
   margin-bottom:0.5rem;
+}
+
+#switch_edit-field-pbcore-description-en-0-field-description-und-0-value.ckeditor_links{
+	margin-left:1rem;
 }
 
 table.sticky-table,
