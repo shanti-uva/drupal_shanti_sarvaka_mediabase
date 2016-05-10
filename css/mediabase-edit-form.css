@@ -311,9 +311,11 @@ div.kmap-selector button.selectpicker {
 
 
 /* Availability & Access Section */
-fieldset.date-combo.form-wrapper{
+.group-availability-access fieldset.date-combo.form-wrapper{
 	margin-bottom: 0;
 }
+
+
 
 
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
@@ -403,7 +405,7 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 
 .page-node-edit .content table td:not(.pagerer) {
   background: transparent;
-	padding-bottom: 1.5rem;
+	padding-bottom: 0;
 	padding-top: 0.5rem;
 }
 
