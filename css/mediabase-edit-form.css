@@ -394,14 +394,11 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	margin-top: 1rem;
 }
 
-
-
 .admin-menu .content table td:not(.pagerer) {
   background: transparent;
 	padding-bottom: 1.5rem;
 	padding-top: 0.5rem;
 }
-
 
 .pagerer_admin_panes_config .form-type-select label {
   display: none;
@@ -411,22 +408,18 @@ form table td.label {
   padding-top: 0.68em !important;
 }
 
-
 /* Collections select menu Icon */
 .field-accordion.group-details .field-type-group label .icon.shanticon-create{
   font-size: 1.68rem;
 }
 
 /* Collections selection, some names are long so extending this */
-.page-node-edit .collection-details-audience .bootstrap-select.form-control{
+.field-name-field-og-collection-ref .bootstrap-select.form-control{
 	max-width: 45rem;
 }
 
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu {
+.field-name-field-og-collection-ref .bootstrap-select.btn-group .dropdown-menu {
 	font-size: 0.93em;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu {
 	padding-top:0;
 }
 
