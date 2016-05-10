@@ -502,7 +502,7 @@ ul.typeahead-pager.pager{
 	right: -3rem;
 }
 
-.kmaps-tt.menu .close{
+.kmaps-tt-header .close{
 	position: relative;
 	top: 0;
 	right: 0;
@@ -511,7 +511,7 @@ ul.typeahead-pager.pager{
 	color: transparent;
 }
 
-.kmaps-tt.menu .close::after{
+.kmaps-tt-header .close::after{
 	content:'Close X';
 	display:inline-block;
 	position:relative;
