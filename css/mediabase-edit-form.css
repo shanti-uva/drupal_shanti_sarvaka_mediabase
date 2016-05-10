@@ -587,6 +587,13 @@ ul.typeahead-pager.pager{
   margin: 0 !important;
 }
 
+/* Technical Metadata > Versions > Dates */
+.field-type-datetime.field-name-field-date-created,
+.field-type-datetime.field-name-field-date-issued{
+	width: 49%;
+	float: left;
+}
+
 
 
 /**
