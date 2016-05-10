@@ -34,9 +34,11 @@
 	padding-top: 0;
 }
 
-.mb-av-form .group-media .field-accordion:first-of-type .panel-body{
+.mb-av-form .group-media .field-accordion:first-of-type .panel-body,
+.mb-av-form .field-accordion .field-name-field-recording-location-new .panel-body{
 	padding-top: 2rem;
 }
+
 
 /* adds some contrast to these accordion headers */
 .page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
@@ -267,6 +269,10 @@ textarea {
   position: relative;
   top: -2px;
   left: 0;
+}
+
+.page-node-edit .icheckbox_minimal-red{
+	box-shadow: 0 0 2px #999;
 }
 
 .page-node-edit .icheckbox_minimal-red.disabled {
