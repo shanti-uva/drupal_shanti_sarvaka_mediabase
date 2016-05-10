@@ -549,7 +549,7 @@ ul.typeahead-pager.pager{
 }
 
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover{
 	color:#999;
 }
 
