@@ -329,6 +329,10 @@ input#field_transcript_value.text-full.form-control.form-inline{
   display:inline-block;
 }
 
+.group-rights .field-widget-text-textfield{
+	padding-bottom: 0 !important;
+}
+
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
 .field-type-field-collection .field-widget-options-select{ /*padding:0;*/ float:left; display:inline; width:33.333%; border-bottom:none;}
