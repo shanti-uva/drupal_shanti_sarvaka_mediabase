@@ -492,25 +492,30 @@ table.sticky-table .filter-guidelines ul li{
 
 /* typeahead */
 ul.typeahead-pager.pager{
-	font-size: 81%;
-	position: relative;
-	right: -3rem;
+	font-size: 85%;
+	position: absolute;
+	right: 1rem;
+	bottom: 0.7rem;
 }
 
 .kmaps-tt-header .close{
 	position: relative;
-	top: 0;
+	top: -0.2;
 	right: 0;
-	font-size: 0;
-	line-height: 0;
-	color: transparent;
+	color: #555;
+	font-size: 1.75em;
 }
 
 .kmaps-tt-header .close::after{
-	content:'Close X';
-	display:inline-block;
-	position:relative;
-	color:#999;
+	content: 'Close';
+	display: inline-block;
+	position: relative;
+	right: 0.85rem;
+	top: -0.8rem;
+	color: #555;
+	width: 30px;
+	height: 9px;
+	font-size: 0.5em;
 }
 
 .page-node-edit .kmaps-tt-menu{
@@ -531,8 +536,15 @@ ul.typeahead-pager.pager{
 
 .page-node-edit .kmaps-tt-header:first-of-type {
 	border-top: none;
-	margin-top:0;
+	margin-top: 0;
 	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.page-node-edit .kmaps-tt-dataset-places .kmaps-tt-header:first-of-type {
+	position: relative;
+	height: 60px !important;
+	display: block;
+	width: 100%;
 }
 
 .page-node-edit .kmaps-tt-suggestion{
