@@ -594,6 +594,16 @@ ul.typeahead-pager.pager{
 	float: left;
 }
 
+.form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value,
+.form-item-field-pbcore-instantiation-en-0-field-file-size-und-0-value,
+.form-item-field-pbcore-instantiation-en-0-field-data-rate-und-0-value{
+	width: 33%;
+	float: left
+}
+
+.form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
+	width:34%;
+}
 
 
 /**
