@@ -302,6 +302,17 @@ div.kmap-selector button.selectpicker {
 	top:3.5rem;
 }
 
+
+.field-name-field-location.field-widget-kmap-typeahead-picker .kmap_filter.form-wrapper,
+.field-name-field-location.field-widget-kmap-typeahead-picker .form-type-textfield.form-item-field-location-search-term {
+	width:33.3%;
+}
+
+
+
+
+
+
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
@@ -582,14 +593,8 @@ ul.typeahead-pager.pager{
 	color: #888;
 }
 /* format Filtering help text - Click within text input and/or begin typing to search for a term. - */
-.kmap_search_header{
-	padding-bottom: 2.5rem;
-}
 .kmap_search_header p{
-	margin: 0 0 1rem 1rem;
-	border: 1px solid #ccc;
-	padding: 2px 15px;
-	display: inline;
+	margin: 0 0 1.5rem 1rem;
 }
 
 
@@ -636,10 +641,10 @@ ul.typeahead-pager.pager{
 	width: 33.3%;
 }
 
-.group-technical .form-item.form-type-textfield{
+/*.group-technical .form-item.form-type-textfield{
 	width: 33.3%;
 	float: left
-}
+}*/
 
 
 /**
