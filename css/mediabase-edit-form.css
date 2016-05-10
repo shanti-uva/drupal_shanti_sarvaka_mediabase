@@ -506,7 +506,7 @@ ul.typeahead-pager.pager{
 	font-size: 1.5em;
 }
 
-.kmaps-tt-header .close::after{
+.kmaps-tt-header .close::before{
 	content: 'Close';
 	display: inline-block;
 	position: relative;
