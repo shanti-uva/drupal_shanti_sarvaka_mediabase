@@ -22,8 +22,12 @@
 	background-color: #2db6b4;
 }
 
-.form-item.form-type-textfield.form-item-field-recording-location-new-search-term{
+.form-item-field-recording-location-new-search-term{
 	width:100%;
+}
+
+.panel.panel-default .panel-heading h6 a.collapsed{
+	background: #f0f0f0;
 }
 
 .kmap_search_button{
@@ -578,14 +582,15 @@ ul.typeahead-pager.pager{
 	color: #888;
 }
 /* format Filtering help text - Click within text input and/or begin typing to search for a term. - */
+.kmap_search_header{
+	padding-bottom: 1.5rem;
+}
 .kmap_search_header p{
-	margin: 0 0 10px;
+	margin: 0 0 1rem 1rem;
 	border: 1px solid #ccc;
 	padding: 2px 15px;
-	width: 50%;
+	display: inline;
 }
-
-
 
 
 
