@@ -22,20 +22,31 @@
 	background-color: #2db6b4;
 }
 
-.form-item-field-recording-location-new-search-term{
-	width:100%;
-}
+
+
+
 /* space at top of accordion */
 .mb-av-form .field-accordion .panel-body{
   padding: 1rem 2rem 2rem;
 }
 
 .mb-av-form .field-accordion:first-of-type .panel-body{
-	padding-top:0;
+	padding-top: 0;
 }
+
+.mb-av-form .group-media .field-accordion:first-of-type .panel-body{
+	padding-top: 2rem;
+}
+
 /* adds some contrast to these accordion headers */
 .page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
 	background: #f0f0f0;
+}
+/* table panels spacing */
+.page-node-edit .content table.sticky-table td {
+  background: transparent;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
 }
 
 .kmap_search_button{
@@ -62,8 +73,6 @@
 	position: static;
 	margin: 0;
 }
-
-
 
 /* Glyphicon fix */
 .btn-icon .glyphicon {
@@ -92,25 +101,260 @@ div.description p{
 	color: #000;
 }
 
-/*.sticky-table a,
-a.ckeditor_links,
-a.tabledrag-toggle-weight*/
 .page-node-edit .content-section a {
 	font-weight: bold;
-  	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+/* BEGIN move up from bottom */
+
+.form-item.form-type-select {
+  padding: 0 0.25em 0 0;
+}
+
+.form-item .description {
+  font-size: 0.93em;
+  margin-top: 0.25em;
+  margin-bottom: .75em;
+  padding-left: 1em;
+  max-width: 50em;
+}
+
+.form-item .option.icheck-label {
+  font-size: 90%;
+  text-transform: capitalize;
+}
+
+th.checkbox,
+td.checkbox {
+  display: table-cell;
+}
+
+th.checkbox {
+  padding-right: 20px;
+  padding-left: 5px;
+  text-align: left;
+  line-height: 1.12em;
+  width: 12%;
+}
+
+td.checkbox .form-type-checkbox .icheckbox_minimal-red {
+  display: block;
+}
+
+td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
+  margin-top: 5px;
+}
+
+/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
+.contextual-links-wrapper {
+  position: absolute;
+  top: -0.15rem !important;
+}
+
+.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
+  border-bottom: none !important;
+}
+
+/* admin make checkboxes plain in features table */
+.page-node-edit .content .features .status {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.page-node-edit table tr td.permission .form-item {
+  line-height: normal;
+  margin-top: 0;
+}
+
+.page-node-edit table tr.odd.add-new:last-child {
+  border-bottom: 20px solid transparent;
+}
+
+.page-node-edit tr .form-item {
+  line-height: normal;
+}
+
+.page-node-edit tr .form-item.form-type-textarea{
+  margin-bottom:0.5rem;
+}
+
+
+.ckeditor_links{
+	margin-left:1rem;
+}
+
+
+table.sticky-table,
+table.sticky-header {
+  width: 100%;
+}
+
+table.sticky-header th {
+  padding-left: 1em;
+}
+
+table.sticky-table td ul {
+  margin-bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+table.sticky-table td ul li {
+  line-height: 1em;
+}
+
+#edit-delete:hover,
+#edit-delete:focus {
+  background: red;
+  border-color: red;
+}
+
+#module-filter-tabs a,
+#module-filter-tabs a:hover,
+#module-filter-tabs a:active {
+  border-bottom: none;
+}
+
+.table-select-processed.tableheader-processed {
+  margin-top: 1.5em;
+}
+
+textarea {
+  border: 1px solid #ccc;
+}
+
+.page-node-edit table.spaces td.option {
+  width: 4%;
+}
+
+.page-node-edit .content table td {
+  padding: 5px;
+  text-align: left;
+}
+
+.page-node-edit .content table td.status {
+  padding: 0;
+}
+
+.page-node-edit .block.block-system {
+  /*float: left;*/
+}
+
+.page-node-edit #block-system-main.block.block-system {
+ /*margin-top:1.75em;*/
+  width: 100%;
+}
+
+
+.page-node-edit .icheckbox_minimal-red,
+.page-node-edit .iradio_minimal-red {
+  margin-right: 0.75rem !important;
+  position: relative;
+  top: -2px;
+  left: 0;
+}
+
+.page-node-edit .icheckbox_minimal-red.disabled {
+  background-position: -80px 0;
+/* border:1px dashed #ccc;*/
+}
+
+.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red {
+  margin-left: 6px;
+}
+
+.page-node-edit .sticky-table a {
+  border-bottom-width: 1px;
+  white-space: nowrap;
+  /*font-weight: bold;*/
+}
+
+.main-content .content-section .view-content {
+  max-width: 100%;
+}
+
+.form-type-checkbox .description {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+/* overwrite mb_location-selector module in audio-video */
+.location-selector-item {
+  padding: 0.2em 0.6em 0.1em 0.4em;
+  border: 1px solid #ddd;
+  margin-right: 0.3em;
+  line-height: normal;
+}
+
+/* view My Content in My Workflow etc */
+.views-table td.active {
+  background: transparent;
+}
+
+.views-table th {
+  font-size: 0.88em;
+  padding: 0 0.3rem;
+}
+
+.views-field {
+  padding: 0 0.5rem 0 0;
+  font-size: 0.93em;
+}
+
+.views-field img {
+  margin: 0.2rem;
+}
+
+.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type {
+  font-size: 0.82em;
+}
+
+.views-table.cols-8 .views-field.views-field-title {
+  width: 40%;
+}
+
+.field-multiple-table tr.odd,
+.field-multiple-table tr.even {
+  background: #f7f7f7;
+}
+
+/* END move up from bottom */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Title Group */
 form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
 
-/*
-	div.field-type-field-collection tr.draggable td div[class*="field-type-"] button.dropdown-toggle.selectpicker {
-	was ====> div.field-name-field-title button.dropdown-toggle.selectpicker, div.field-name-field-title-type button.dropdown-toggle.selectpicker, div.field-name-field-language button.dropdown-toggle.selectpicker
-
-	width: 90% !important;
-	margin-left: 5%;
+.form-item-field-recording-location-new-search-term{
+	width: 100%;
 }
-*/
 
 div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	width: 70%;
@@ -128,11 +372,6 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 }
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
 
-.page-node-edit .btn-sm.btn-icon.btn-delete span.icon.shanticon-trash::before{
-	/*position: relative;
-	left: 0.62em;
-	top: -0.55rem;*/
-}
 
 /** Wysiwyg **/
 /* Hide double display of toolbar in TinyMCE */
@@ -141,7 +380,6 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 }
 
 /* Details Field Group */
-
 div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group_details > .panel-body > div {
 	width: 100%;
 	background-color: #f0f0f0;
@@ -272,8 +510,6 @@ div.kmap-selector button.selectpicker {
 	background-color: red;
 }
 
-/* sites/all/themes/shanti_sarvaka/images/ajax-loader.gif */
-
 .location-selector button.btn.btn-sm .icon {
 	font-size: 2.5em;
 	padding: 0px !important;
@@ -306,12 +542,6 @@ div.kmap-selector button.selectpicker {
 	top:3.5rem;
 }
 
-/*
-.field-name-field-location.field-widget-kmap-typeahead-picker .kmap_filter.form-wrapper,
-.field-name-field-location.field-widget-kmap-typeahead-picker .form-type-textfield.form-item-field-location-search-term {
-	width:33.3%;
-}
-*/
 
 
 /* Availability & Access Section */
@@ -343,8 +573,6 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 
 
-
-
 .form-type-textfield, 
 .field-widget-text-textfield,
 .field-widget-options-select{
@@ -372,13 +600,9 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 .field-widget-text-textfield.form-wrapper input.form-text.form-control { max-width:70% !important;}
 
-.field-type-field-collection input.form-text.form-control { /*max-width:31% !important; position:relative; left:1rem */}
-
-
 .field-type-field-collection input.form-text.form-control.date-clear { max-width:100% !important;}
 
 .form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{ max-width:100% !important;}
-
 
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] { 
@@ -403,12 +627,6 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 
 .form-type-textfield label{
 	margin-left: 2.5rem;
-}
-
-.page-node-edit .content table td:not(.pagerer) {
-  background: transparent;
-	padding-bottom: 0;
-	padding-top: 0.5rem;
 }
 
 .pagerer_admin_panes_config .form-type-select label {
@@ -660,6 +878,8 @@ ul.typeahead-pager.pager{
 .field-name-field-duration{ width: 33.3%; }
 .field-name-field-duration>div{ float:left; }
 .field-name-field-duration>div>div{ width:100%; }
+
+
 
 
 /**
@@ -936,238 +1156,4 @@ a.features-storage,
 .exposed-filters .form-item label {
   float: none;
 }
-
-.form-item.form-type-select {
-  padding: 0 0.25em 0 0;
-}
-
-.form-item .description {
-  font-size: 0.93em;
-  margin-top: 0.25em;
-  margin-bottom: .75em;
-  padding-left: 1em;
-  max-width: 50em;
-}
-
-.form-item .option.icheck-label {
-  font-size: 90%;
-  text-transform: capitalize;
-}
-
-th.checkbox,
-td.checkbox {
-  display: table-cell;
-}
-
-th.checkbox {
-  padding-right: 20px;
-  padding-left: 5px;
-  text-align: left;
-  line-height: 1.12em;
-  width: 12%;
-}
-
-td.checkbox .form-type-checkbox .icheckbox_minimal-red {
-  display: block;
-}
-
-td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
-  margin-top: 5px;
-}
-
-
-
-/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
-.contextual-links-wrapper {
-  position: absolute;
-  top: -0.15rem !important;
-}
-
-.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
-  border-bottom: none !important;
-}
-
-/* admin make checkboxes plain in features table */
-.page-node-edit .content .features .status {
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.page-node-edit table tr td.permission .form-item {
-  line-height: normal;
-  margin-top: 0;
-}
-
-.page-node-edit table tr.odd.add-new:last-child {
-  border-bottom: 20px solid transparent;
-}
-
-.page-node-edit tr .form-item {
-  line-height: normal;
-}
-
-.page-node-edit tr .form-item.form-type-textarea{
-  margin-bottom:0.5rem;
-}
-
-/*#switch_edit-field-pbcore-description-en-0-field-description-und-0-value.ckeditor_links*/
-.ckeditor_links{
-	margin-left:1rem;
-}
-
-table.sticky-table,
-table.sticky-header {
-  width: 100%;
-}
-
-table.sticky-header th {
-  padding-left: 1em;
-}
-
-table.sticky-table td ul {
-  margin-bottom: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
-}
-
-table.sticky-table td ul li {
-  line-height: 1em;
-}
-
-#edit-delete:hover,
-#edit-delete:focus {
-  background: red;
-  border-color: red;
-}
-
-#module-filter-tabs a,
-#module-filter-tabs a:hover,
-#module-filter-tabs a:active {
-  border-bottom: none;
-}
-
-.table-select-processed.tableheader-processed {
-  margin-top: 1.5em;
-}
-
-textarea {
-  border: 1px solid #ccc;
-}
-
-.page-node-edit table.spaces td.option {
-  width: 4%;
-}
-
-.page-node-edit .content table td {
-  padding: 5px;
-  text-align: left;
-}
-
-.page-node-edit .content table td.status {
-  padding: 0;
-}
-
-.page-node-edit .block.block-system {
-  /*float: left;*/
-}
-
-.page-node-edit #block-system-main.block.block-system {
- /*margin-top:1.75em;*/
-  width: 100%;
-}
-
-
-
-
-
-
-
-.page-node-edit .icheckbox_minimal-red,
-.page-node-edit .iradio_minimal-red {
-  margin-right: 0.75rem !important;
-  position: relative;
-  top: -2px;
-  left: 0;
-}
-
-.page-node-edit .icheckbox_minimal-red.disabled {
-  background-position: -80px 0;
-/* border:1px dashed #ccc;*/
-}
-
-.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red {
-  margin-left: 6px;
-}
-
-.page-node-edit .sticky-table a {
-  border-bottom-width: 1px;
-  white-space: nowrap;
-  /*font-weight: bold;*/
-}
-/*
-.page-node-edit .sticky-table a:hover,
-.page-node-edit .sticky-table a:active {
-  border-bottom-width: 2px !important;
-}
-*/
-
-
-
-.main-content .content-section .view-content {
-  max-width: 100%;
-}
-
-.form-type-checkbox .description {
-  margin-top: 0;
-  margin-left: 0;
-}
-
-
-/* overwrite mb_location-selector module in audio-video */
-.location-selector-item {
-  padding: 0.2em 0.6em 0.1em 0.4em;
-  border: 1px solid #ddd;
-  margin-right: 0.3em;
-  line-height: normal;
-}
-
-/* view My Content in My Workflow etc */
-.views-table td.active {
-  background: transparent;
-}
-
-.views-table th {
-  font-size: 0.88em;
-  padding: 0 0.3rem;
-}
-
-.views-field {
-  padding: 0 0.5rem 0 0;
-  font-size: 0.93em;
-}
-
-.views-field img {
-  margin: 0.2rem;
-}
-
-.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type {
-  font-size: 0.82em;
-}
-
-.views-table.cols-8 .views-field.views-field-title {
-  width: 40%;
-}
-
-.field-multiple-table tr.odd,
-.field-multiple-table tr.even {
-  background: #f7f7f7;
-}
-
-/**
-*** END new migration */
 
