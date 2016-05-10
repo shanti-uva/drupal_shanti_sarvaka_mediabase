@@ -335,37 +335,33 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
-.field-type-field-collection .field-widget-options-select{ /*padding:0;*/ float:left; display:inline; width:33.333%; border-bottom:none;}
+.field-type-field-collection .field-widget-options-select { float:left; display:inline; width:33.333%; border-bottom:none;}
 
-#node_video_form_group_rights .form-type-textfield{
-	padding-bottom: 0;
-}
+#node_video_form_group_rights .form-type-textfield { padding-bottom: 0;}
 
 .field-name-field-workflow .bootstrap-select.form-control,
-.field-type-field-collection  .bootstrap-select.form-control{ min-width: 15rem; max-width:95%; margin-left:1rem;}
+.field-type-field-collection  .bootstrap-select.form-control { min-width: 15rem; max-width:95%; margin-left:1rem;}
 
-.group-rights .form-type-textfield input.form-text.form-control{ width:91% !important; margin-left:0.5rem;}
+.group-rights .form-type-textfield input.form-text.form-control { width:91% !important; margin-left:0.5rem;}
 
-.field-widget-text-textfield.form-wrapper input.form-text.form-control{ max-width:70% !important;}
+.field-widget-text-textfield.form-wrapper input.form-text.form-control { max-width:70% !important;}
 
-.field-type-field-collection input.form-text.form-control{ /*max-width:31% !important; position:relative; left:1rem */}
+.field-type-field-collection input.form-text.form-control { /*max-width:31% !important; position:relative; left:1rem */}
 
 
-.field-type-field-collection input.form-text.form-control.date-clear{ max-width:100% !important;}
+.field-type-field-collection input.form-text.form-control.date-clear { max-width:100% !important;}
 
 .form-item-field-pbcore-extension-und-0-field-extension-authority-und-0-value .field-widget-text-textfield.form-wrapper input.form-control{ max-width:100% !important;}
 
 
 
-div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* was div.field-name-field-title, div.field-name-field-title-type, div.field-name-field-language */
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] { 
 	float: left;
 	border: none;
 	margin-right:1.5rem;
 }
 
-div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
-	/*display: block;
-	padding: 0px 0px 5px 0px;*/
+div.field-type-field-collection tr.draggable td div[class*="field-type-"] label {
 	margin-top:1rem;
 	margin-bottom: 0.25rem;
 }
@@ -373,19 +369,14 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 .form-type-textfield label,
 .form-item.form-type-select label{ 
 	display:block; 
+	font-size: 0.88em; 
 	margin-bottom:0.2rem;
-	margin-left:2rem;
-	font-size: 1em; 
-	margin-top: 0;
-
-    /* sorting this out */
-
-	/* padding: 3px 0px 2px 10px;*/
-	margin-bottom:0.2rem;
-	font-size: 1em;
-	display:block;
 	margin-left: 1.5rem;
 	margin-top: 1rem;
+}
+
+.form-type-textfield label{
+	margin-left: 2.5rem;
 }
 
 .page-node-edit .content table td:not(.pagerer) {
@@ -752,23 +743,10 @@ form table td.label strong::after {
 
 form table td.label .description {
   display: inline;
-/*font-weight: normal;*/
 }
 
 .form-type-password-confirm {
   position: relative;
-}
-
-.form-type-password-confirm label {
- /*position:relative; top:1.12em;*/
-}
-
-.form-item-pass-pass1 label {
- /*position:absolute; top:2.5em;*/
-}
-
-.form-type-password div {
- /*display:inline-block;*/
 }
 
 .password-strength {
