@@ -394,7 +394,7 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	margin-top: 1rem;
 }
 
-.admin-menu .content table td:not(.pagerer) {
+.page-node-edit .content table td:not(.pagerer) {
   background: transparent;
 	padding-bottom: 1.5rem;
 	padding-top: 0.5rem;
@@ -946,27 +946,27 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
 }
 
 /* admin make checkboxes plain in features table */
-.admin-menu .content .features .status {
+.page-node-edit .content .features .status {
   padding: 0;
   background: transparent;
   border: none;
   box-shadow: none;
 }
 
-.admin-menu table tr td.permission .form-item {
+.page-node-edit table tr td.permission .form-item {
   line-height: normal;
   margin-top: 0;
 }
 
-.admin-menu table tr.odd.add-new:last-child {
+.page-node-edit table tr.odd.add-new:last-child {
   border-bottom: 20px solid transparent;
 }
 
-.admin-menu tr .form-item {
+.page-node-edit tr .form-item {
   line-height: normal;
 }
 
-.admin-menu tr .form-item.form-type-textarea{
+.page-node-edit tr .form-item.form-type-textarea{
   margin-bottom:0.5rem;
 }
 
@@ -1016,24 +1016,24 @@ textarea {
   border: 1px solid #ccc;
 }
 
-.admin-menu table.spaces td.option {
+.page-node-edit table.spaces td.option {
   width: 4%;
 }
 
-.admin-menu .content table td {
+.page-node-edit .content table td {
   padding: 5px;
   text-align: left;
 }
 
-.admin-menu .content table td.status {
+.page-node-edit .content table td.status {
   padding: 0;
 }
 
-.admin-menu .block.block-system {
+.page-node-edit .block.block-system {
   /*float: left;*/
 }
 
-.admin-menu #block-system-main.block.block-system {
+.page-node-edit #block-system-main.block.block-system {
  /*margin-top:1.75em;*/
   width: 100%;
 }
@@ -1052,23 +1052,23 @@ textarea {
   left: 0;
 }
 
-.admin-menu .icheckbox_minimal-red.disabled {
+.page-node-edit .icheckbox_minimal-red.disabled {
   background-position: -80px 0;
 /* border:1px dashed #ccc;*/
 }
 
-.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red {
+.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red {
   margin-left: 6px;
 }
 
-.admin-menu .sticky-table a {
+.page-node-edit .sticky-table a {
   border-bottom-width: 1px;
   white-space: nowrap;
   /*font-weight: bold;*/
 }
 /*
-.admin-menu .sticky-table a:hover,
-.admin-menu .sticky-table a:active {
+.page-node-edit .sticky-table a:hover,
+.page-node-edit .sticky-table a:active {
   border-bottom-width: 2px !important;
 }
 */
