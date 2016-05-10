@@ -577,6 +577,13 @@ ul.typeahead-pager.pager{
 	width: 3em;
 	color: #888;
 }
+/* format Filtering help text - Click within text input and/or begin typing to search for a term. - */
+.kmap_search_header p{
+	margin: 0 0 10px;
+	border: 1px solid #ccc;
+	padding: 2px 15px;
+	width: 50%;
+}
 
 
 
@@ -602,11 +609,16 @@ ul.typeahead-pager.pager{
 }
 
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
-	width:34%;
+	width:34%; /* extra width to prevent moving up a row */
 }
 
 .group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
 	max-width: 93% !important;
+}
+
+
+.form-item-field-pbcore-instantiation-en-0-field-frame-size-und-0-value{
+	width: 33.33%;
 }
 
 
@@ -819,10 +831,6 @@ form table td.label .description {
 html.js .form-autocomplete {
   background-position: 98% center !important;
 }
-
-.field-widget-text-textfield.form-wrapper input.form-control {
-  /*max-width: 80%;*/
-} /* this was width: 80% !important but changed for video edit - field-extension-authority */
 
 .form-item .description .warning,
 .fieldset-description .error {
