@@ -632,7 +632,7 @@ ul.typeahead-pager.pager{
 }
 /* a pair of layout fixes for Channel Config */
 .field-name-field-channel-conf{ width:33.3%; }
-/*.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ float:left; }*/
+.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ float:left; }
 
 /* Alternate Modes, Duration, and Start Time */
 .form-item-field-pbcore-instantiation-en-0-field-alternate-modes-und-0-value,
