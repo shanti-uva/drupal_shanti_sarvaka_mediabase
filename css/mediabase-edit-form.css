@@ -310,7 +310,10 @@ div.kmap-selector button.selectpicker {
 */
 
 
-
+/* Availability & Access Section */
+fieldset.date-combo.form-wrapper{
+	margin-bottom: 0;
+}
 
 
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
