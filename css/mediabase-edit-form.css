@@ -524,6 +524,7 @@ ul.typeahead-pager.pager{
 
 .page-node-edit .kmaps-ancestors{
 	display:inline;
+	color:#555;
 }
 
 .page-node-edit .kmaps-tt-header{
