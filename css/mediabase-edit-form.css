@@ -41,7 +41,6 @@
   color:#fff;
 }
 
-
 /* override bootstrap css - Collections Edit page */
 .page-node-edit.node-type-collection .radio-inline input[type=radio]{
 	position: static;
@@ -49,15 +48,6 @@
 }
 
 
-
-/* Ajax Loading */
-.throbber {
-	background: url('../../shanti_sarvaka/images/ajax-loader.gif') center center no-repeat !important;
-	background-color: transparent !important;
-	width: 3.5rem !important;
-	height: 2.5rem !important;
-	display: inline-block;
-}
 
 /* Glyphicon fix */
 .btn-icon .glyphicon {
@@ -440,8 +430,6 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	color:#000;
 }
 
-
-
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
 	padding: 6px 20px 4px 14px;
 	background-color: #eee;
@@ -481,12 +469,6 @@ div.form-item.form-type-textfield.form-item-field-location-search-filter-feature
 
 
 
-
-
-
-
-
-
 /* admin video edit forms section under title and description */
 .filter-guidelines{
   padding: 2rem 5em 0 1rem;
@@ -510,7 +492,6 @@ table.sticky-table .filter-guidelines ul li{
 
 
 /* typeahead */
-
 ul.typeahead-pager.pager{
 	font-size: 81%;
 	position: relative;
@@ -558,9 +539,6 @@ ul.typeahead-pager.pager{
 .page-node-edit .kmaps-tt-suggestion{
 	padding: 3px 20px 1px;
 }
-
-
-
 
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
