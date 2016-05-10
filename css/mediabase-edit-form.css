@@ -605,6 +605,10 @@ ul.typeahead-pager.pager{
 	width:34%;
 }
 
+.group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
+	max-width: 93% !important;
+}
+
 
 /**
 * -------------------------------
