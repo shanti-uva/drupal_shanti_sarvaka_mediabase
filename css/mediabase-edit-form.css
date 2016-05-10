@@ -1004,7 +1004,8 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
   margin-bottom:0.5rem;
 }
 
-#switch_edit-field-pbcore-description-en-0-field-description-und-0-value.ckeditor_links{
+/*#switch_edit-field-pbcore-description-en-0-field-description-und-0-value.ckeditor_links*/
+.ckeditor_links{
 	margin-left:1rem;
 }
 
