@@ -25,15 +25,15 @@
 .form-item-field-recording-location-new-search-term{
 	width:100%;
 }
-
+/* space at top of accordion */
 .mb-av-form .field-accordion .panel-body{
-  padding-top:1rem;
+  padding: 1rem 2rem 2rem;
 }
 
 .mb-av-form .field-accordion:first-of-type .panel-body{
 	padding-top:0;
 }
-
+/* adds some contrast to these accordion headers */
 .page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
 	background: #f0f0f0;
 }
