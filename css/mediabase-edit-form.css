@@ -26,6 +26,10 @@
 	width:100%;
 }
 
+.mb-av-form .field-accordion:first-of-type .panel-body{
+	padding-top:0;
+}
+
 .page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
 	background: #f0f0f0;
 }
@@ -315,9 +319,7 @@ div.kmap-selector button.selectpicker {
 	margin-bottom: 0;
 }
 
-
-
-
+/* transcript section */
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
@@ -605,6 +607,15 @@ ul.typeahead-pager.pager{
 
 
 /* editing form techincal metadata */
+/* Date created - Date issued */
+.group-technical fieldset.date-combo .container-inline-date .date-padding{
+	padding: 0 0 0 1rem;
+}
+
+.group-technical  fieldset.date-combo .container-inline-date > .form-item{
+	margin-bottom:0;
+}
+
 #node_video_form_group_technical .node-video-form{
   margin: 0 !important;
 }
@@ -778,7 +789,7 @@ div.node .group-details .field-label-span {
 
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
-  margin-top:3rem;
+  margin-top: 2.5rem;
 }
 
 
