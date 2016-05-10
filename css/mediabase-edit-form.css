@@ -22,6 +22,10 @@
 	background-color: #2db6b4;
 }
 
+.form-item.form-type-textfield.form-item-field-recording-location-new-search-term{
+	width:100%;
+}
+
 .kmap_search_button{
   background-color: #5b68ce;
   color: #eee;
