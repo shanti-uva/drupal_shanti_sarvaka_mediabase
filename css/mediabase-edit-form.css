@@ -293,6 +293,17 @@ div.kmap-selector button.selectpicker {
 	margin-bottom:0.2rem;
 }
 
+.form-item-field-transcript-und-0 label .fa-comments-o:before{
+	font-size: 1.5em;
+}
+
+.form-item-field-transcript-und-0 button{
+	font-size: .75em;
+	padding: .38em 1.5em .25em;
+	position: relative;
+	top:3.5rem;
+}
+
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
@@ -361,6 +372,7 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"]  { /* 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] label { /* was: div.field-name-field-title label, div.field-name-field-title-type label, div.field-name-field-language label */
 	/*display: block;
 	padding: 0px 0px 5px 0px;*/
+	margin-top:1rem;
 }
 
 .form-type-textfield label,
@@ -368,18 +380,17 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	display:block; 
 	margin-bottom:0.2rem;
 	margin-left:2rem;
-	font-size: 0.88em; 
+	font-size: 1em; 
 	margin-top: 0;
-}
 
-.form-type-textfield label, 
-.form-item.form-type-select label{
-  /* padding: 3px 0px 2px 10px;*/
-  margin-bottom:0.2rem;
-  font-size: 0.88em;
-  display:block;
-  margin-left: 1.5rem;
-  margin-top: 1rem;
+    /* sorting this out */
+
+	/* padding: 3px 0px 2px 10px;*/
+	margin-bottom:0.2rem;
+	font-size: 1em;
+	display:block;
+	margin-left: 1.5rem;
+	margin-top: 1rem;
 }
 
 
@@ -713,7 +724,7 @@ div.node .group-details .field-label-span {
 
 
 .field-multiple-table .btn-sm.btn-icon.btn-delete{
-  margin-top:1rem;
+  margin-top:3rem;
 }
 
 
@@ -910,7 +921,7 @@ a.features-storage,
 }
 
 .form-item .option.icheck-label {
-  font-size: 80% !important;
+  font-size: 90% !important;
 }
 
 th.checkbox,
@@ -1043,7 +1054,7 @@ textarea {
 
 .page-node-edit .icheckbox_minimal-red,
 .page-node-edit .iradio_minimal-red {
-  margin-right: 0.5rem !important;
+  margin-right: 0.75rem !important;
   position: relative;
   top: -2px;
   left: 0;
