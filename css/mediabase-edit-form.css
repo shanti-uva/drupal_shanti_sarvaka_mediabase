@@ -23,7 +23,15 @@
 }
 
 
+.form-type-textfield, 
+.field-widget-text-textfield,
+.field-widget-options-select{
+  padding-bottom: 0.5rem;
+}
 
+.form-type-textfield{
+  display:inline-block;
+}
 
 /* space at top of accordion */
 .mb-av-form .field-accordion .panel-body{
@@ -405,7 +413,7 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 	margin-left: 8px;
 }
 
-.group-details .field-type-taxonomy-term-reference > label {
+.field-widget-kmap-typeahead-picker .field-type-taxonomy-term-reference > label {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 6px;
 	margin-bottom: 12px;
@@ -415,11 +423,11 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 	color: #555;
 }
 
-.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .branch-filter {
+.field-widget-kmap-typeahead-picker .field-type-taxonomy-term-reference > .form-item.kmap-selector .branch-filter {
 	margin-top: -12px;
 }
 
-.group-details .field-type-taxonomy-term-reference > .form-item.kmap-selector .browse-link {
+.field-widget-kmap-typeahead-picker .field-type-taxonomy-term-reference > .form-item.kmap-selector .browse-link {
 	margin-top: -6px;
 }
 
@@ -579,15 +587,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 }
 
 
-.form-type-textfield, 
-.field-widget-text-textfield,
-.field-widget-options-select{
-  padding-bottom: 0.5rem;
-}
 
-.form-type-textfield{
-  display:inline-block;
-}
 
 .group-rights .field-widget-text-textfield{
 	padding-bottom: 0 !important;
@@ -644,7 +644,7 @@ form table td.label {
 }
 
 /* Collections select menu Icon */
-.field-accordion.group-details .field-type-group label .icon.shanticon-create{
+.field-accordion.field-widget-kmap-typeahead-picker .field-type-group label .icon.shanticon-create{
   font-size: 1.68rem;
 }
 
@@ -737,6 +737,11 @@ table.sticky-table .filter-guidelines ul li{
 
 
 /* typeahead */
+
+.field-widget-kmap-typeahead-picker .form-type-textfield{
+	display:block;
+}
+
 ul.typeahead-pager.pager{
 	font-size: 85%;
 	position: absolute;
@@ -926,14 +931,14 @@ table.field-multiple-table tbody {
 #edit-filter-settings-title {
   margin-bottom: 0 !important;
 }
-
+/* @question - not sure what this is...? 
 div.node .group-details .field-label-span {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9em;
   vertical-align: top;
 }
-
+*/
 
 
 
