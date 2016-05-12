@@ -276,7 +276,8 @@
     white-space: nowrap;
 }
 
-.page-collections-all .shanti-filters .control-box-cell-header span, .page-collections-all-list .shanti-filters .control-box-cell-header span {
+.page-collections-all .shanti-filters .control-box-cell-header span, 
+.page-collections-all-list .shanti-filters .control-box-cell-header span {
     margin: 0px;
 }
 
