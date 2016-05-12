@@ -393,7 +393,18 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
     display: none;
 }
 
-/* Details Field Group */
+/**
+*
+* CLASSIFICATION - Details Field Group
+*
+*/
+
+/* Collections dropdown label */
+.field-name-field-og-collection-ref label{
+	font-size: 1em;
+	margin-left: 1.8rem
+}
+
 div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group_details > .panel-body > div {
 	width: 100%;
 	background-color: #f0f0f0;
@@ -589,9 +600,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 
-.group-rights .field-widget-text-textfield{
-	padding-bottom: 0 !important;
-}
+.group-rights .field-widget-text-textfield{ padding-bottom: 0 !important; }
 
 .group-rights .form-type-textfield,
 .field-name-field-workflow .field-widget-options-select,
@@ -740,6 +749,11 @@ table.sticky-table .filter-guidelines ul li{
 
 .field-widget-kmap-typeahead-picker .form-type-textfield{
 	display:block;
+}
+
+.group-details .field-add-more-submit.btn.btn-primary{
+	position: relative;
+	top: -2rem;
 }
 
 ul.typeahead-pager.pager{
