@@ -95,7 +95,7 @@
 
 
 
-
+/* Final form button at bottom- Save, cancel, Delete */
 #edit-delete:hover,
 #edit-delete:focus {
   background: red;
@@ -103,29 +103,31 @@
 }
 
 /* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
-.btn-sm.btn-icon.btn-delete {float: right;max-width: 3em;max-height: 3em;min-height: 22px;margin-left: 3em;}
-.btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
+.btn-sm.btn-icon.btn-delete {
+	float:right; 
+	max-width: 3em; 
+	max-height: 3em; 
+	min-height: 22px; 
+	margin: 2.5em 1.5em 0 0;
+
+}
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
 	left: -0.78rem;
 	top: -1.5rem;
 	font-size: 1.56em;
 }
+
 .btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
 
-
-.field-multiple-table .btn-sm.btn-icon.btn-delete{
-  margin-top: 2.5rem;
-}
-
-
-
+/**
+* not sure what this is so commenting it out
 #module-filter-tabs a,
 #module-filter-tabs a:hover,
 #module-filter-tabs a:active {
   border-bottom: none;
 }
-
+*/
 
 
 .kmap_search_button{
