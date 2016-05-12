@@ -9,6 +9,22 @@
 * 
 */
 
+/**
+* -----------------------------------------------------------------------
+* FORM SECTION GUIDE - CLASS NAMES for each form group = 'group-name'
+* - Title and Description / 'group-title-desc'
+* - Media / 'group-media'
+* - Transcript / 'group-transcript'
+* - Classification / 'group-details'
+* - Right & Licensing / 'group-rights'
+* - Availability & Access / 'group-availability-access'
+* - People and Copyrights / 'group-people'
+* - Technical Metadata / 'group-technical'
+* - Workflow / 'group-workflow'
+* -----------------------------------------------------------------------
+*/
+
+/* Subtheme colors */
 .page-node-edit .fancytree-container .glyphicon,
 .page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
 .page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
@@ -21,7 +37,21 @@
 .page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
 }
+/* END colors */
 
+
+
+/* Common elements */
+/* Glyphicon fix */
+.btn-icon .glyphicon {
+	font-size: 1.5em;
+	margin-top: -2px;
+}
+
+.page-node-edit .content-section a {
+	font-weight: bold;
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
 
 .form-type-textfield, 
 .field-widget-text-textfield,
@@ -33,7 +63,7 @@
   display:inline-block;
 }
 
-/* space at top of accordion */
+/* Accordions: space at top, 'mb-av-form' selectors overide Sarvaka */
 .mb-av-form .field-accordion .panel-body{
   padding: 1rem 2rem 2rem;
 }
@@ -47,17 +77,56 @@
 	padding-top: 2rem;
 }
 
-
 /* adds some contrast to these accordion headers */
 .page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
 	background: #f0f0f0;
 }
-/* table panels spacing */
-.page-node-edit .content table.sticky-table td {
-  background: transparent;
-	padding-bottom: 1rem;
-	padding-top: 0.5rem;
+
+
+
+.page-node-edit #block-system-main.block.block-system {
+  width: 100%;
 }
+
+.main-content .content-section .view-content {
+  max-width: 100%;
+}
+
+
+
+
+
+#edit-delete:hover,
+#edit-delete:focus {
+  background: red;
+  border-color: red;
+}
+
+/* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
+.btn-sm.btn-icon.btn-delete {float: right;max-width: 3em;max-height: 3em;min-height: 22px;margin-left: 3em;}
+.btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
+.btn-sm.btn-icon.btn-delete span.icon {
+	position: relative;
+	left: -0.78rem;
+	top: -1.5rem;
+	font-size: 1.56em;
+}
+.btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
+
+
+.field-multiple-table .btn-sm.btn-icon.btn-delete{
+  margin-top: 2.5rem;
+}
+
+
+
+#module-filter-tabs a,
+#module-filter-tabs a:hover,
+#module-filter-tabs a:active {
+  border-bottom: none;
+}
+
+
 
 .kmap_search_button{
   background-color: #5b68ce;
@@ -78,16 +147,16 @@
   color:#fff;
 }
 
-/* override bootstrap css - Collections Edit page */
-.page-node-edit.node-type-collection .radio-inline input[type=radio]{
-	position: static;
-	margin: 0;
+
+
+
+/* toggle text editor link text under textarea */
+.ckeditor_links{
+	margin-left:1rem;
 }
 
-/* Glyphicon fix */
-.btn-icon .glyphicon {
-	font-size: 1.5em;
-	margin-top: -2px;
+textarea {
+  border: 1px solid #ccc;
 }
 
 input.form-inline {
@@ -102,52 +171,64 @@ div.file-widget.form-managed-file > * {
 	padding-left: 1.75em;
 }
 
-.node-form .form-item .description {
-	padding-left: 1.75em;
-}
-
-div.description p{
-	font-style: italic;
-	color: #000;
-}
-
-.page-node-edit .content-section a {
-	font-weight: bold;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-}
-
-
-
-
-
-
 
 
 
 
 /* BEGIN move up from bottom */
-
-.form-item.form-type-select {
-  padding: 0 0.25em 0 0;
-}
-
 .form-item .description {
   font-size: 0.93em;
   margin-top: 0.25em;
   margin-bottom: .75em;
-  padding-left: 1em;
+  padding-left: 1.75em;
   max-width: 50em;
+
+  font-style: italic;
+	color: #000;
+}
+/*
+.description p{
+	font-style: italic;
+	color: #000;
+}
+*/
+
+
+.form-item .option.icheck-label { font-size: 90%; text-transform: capitalize; }
+
+/* override bootstrap css - Collections Edit page */
+.page-node-edit.node-type-collection .radio-inline input[type=radio]{
+	position: static;
+	margin: 0;
+}
+.page-node-edit .icheckbox_minimal-red,
+.page-node-edit .iradio_minimal-red {
+  margin-right: 0.75rem !important;
+  position: relative;
+  top: -2px;
+  left: 0;
 }
 
-.form-item .option.icheck-label {
-  font-size: 90%;
-  text-transform: capitalize;
+.page-node-edit .icheckbox_minimal-red{
+	box-shadow: 0 0 2px #999;
+}
+
+.page-node-edit .icheckbox_minimal-red.disabled {
+  background-position: -80px 0;
+/* border:1px dashed #ccc;*/
+}
+
+.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red {
+  margin-left: 6px;
+}
+
+.form-type-checkbox .description {
+  margin-top: 0;
+  margin-left: 0;
 }
 
 th.checkbox,
-td.checkbox {
-  display: table-cell;
-}
+td.checkbox { display: table-cell; }
 
 th.checkbox {
   padding-right: 20px;
@@ -157,13 +238,8 @@ th.checkbox {
   width: 12%;
 }
 
-td.checkbox .form-type-checkbox .icheckbox_minimal-red {
-  display: block;
-}
-
-td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
-  margin-top: 5px;
-}
+td.checkbox .form-type-checkbox .icheckbox_minimal-red { display: block; margin-top: 5px; }
+/* td.checkbox .form-type-checkbox > .icheckbox_minimal-red { margin-top: 5px; } */
 
 /*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
 .contextual-links-wrapper {
@@ -201,9 +277,7 @@ td.checkbox .form-type-checkbox > .icheckbox_minimal-red {
 }
 
 
-.ckeditor_links{
-	margin-left:1rem;
-}
+
 
 
 table.sticky-table,
@@ -213,6 +287,12 @@ table.sticky-header {
 
 table.sticky-header th {
   padding-left: 1em;
+}
+
+table.sticky-table td {
+  background: transparent;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
 }
 
 table.sticky-table td ul {
@@ -228,84 +308,39 @@ table.sticky-table td ul li {
   line-height: 1em;
 }
 
-#edit-delete:hover,
-#edit-delete:focus {
-  background: red;
-  border-color: red;
+table.sticky-table a {
+  border-bottom-width: 1px;
+  white-space: nowrap;
+  /*font-weight: bold;*/
 }
 
-#module-filter-tabs a,
-#module-filter-tabs a:hover,
-#module-filter-tabs a:active {
-  border-bottom: none;
-}
+
+
+
 
 .table-select-processed.tableheader-processed {
   margin-top: 1.5em;
 }
 
-textarea {
-  border: 1px solid #ccc;
-}
 
-.page-node-edit table.spaces td.option {
-  width: 4%;
-}
 
 .page-node-edit .content table td {
   padding: 5px;
   text-align: left;
 }
 
+.page-node-edit .content table.spaces td.option {
+  width: 4%;
+}
+
 .page-node-edit .content table td.status {
   padding: 0;
 }
 
-.page-node-edit .block.block-system {
-  /*float: left;*/
-}
-
-.page-node-edit #block-system-main.block.block-system {
- /*margin-top:1.75em;*/
-  width: 100%;
-}
 
 
-.page-node-edit .icheckbox_minimal-red,
-.page-node-edit .iradio_minimal-red {
-  margin-right: 0.75rem !important;
-  position: relative;
-  top: -2px;
-  left: 0;
-}
 
-.page-node-edit .icheckbox_minimal-red{
-	box-shadow: 0 0 2px #999;
-}
 
-.page-node-edit .icheckbox_minimal-red.disabled {
-  background-position: -80px 0;
-/* border:1px dashed #ccc;*/
-}
-
-.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red {
-  margin-left: 6px;
-}
-
-.page-node-edit .sticky-table a {
-  border-bottom-width: 1px;
-  white-space: nowrap;
-  /*font-weight: bold;*/
-}
-
-.main-content .content-section .view-content {
-  max-width: 100%;
-}
-
-.form-type-checkbox .description {
-  margin-top: 0;
-  margin-left: 0;
-}
 
 /* overwrite mb_location-selector module in audio-video */
 .location-selector-item {
@@ -375,16 +410,8 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	padding-right:1rem;
 }
 
-/* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
-.btn-sm.btn-icon.btn-delete {float: right;max-width: 3em;max-height: 3em;min-height: 22px;margin-left: 3em;}
-.btn-sm.btn-icon.btn-delete {margin: 4em 1.5em 0 0;}
-.btn-sm.btn-icon.btn-delete span.icon {
-	position: relative;
-	left: -0.78rem;
-	top: -1.5rem;
-	font-size: 1.56em;
-}
-.btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
+
+
 
 
 /** Wysiwyg **/
@@ -630,6 +657,9 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 	margin-top:1rem;
 	margin-bottom: 0.25rem;
 }
+
+
+.form-item.form-type-select { padding: 0 0.25em 0 0; }
 
 .form-type-textfield label,
 .form-item.form-type-select label{ 
@@ -1024,10 +1054,6 @@ div.node .group-details .field-label-span {
 }
 
 
-
-.field-multiple-table .btn-sm.btn-icon.btn-delete{
-  margin-top: 2.5rem;
-}
 
 
 /* Details section, Collection header /icon 
