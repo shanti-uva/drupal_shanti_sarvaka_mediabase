@@ -544,33 +544,10 @@ div#node_audio_form_group_details > .panel-body > div{
      /* padding typo override */
     }
 
-.page-node-edit button#edit-delete{
-  float: right;
-  padding: .38em 1.5em .25em;
-  font-size: 0.68em;
-  background: #fff;
-  color: #606060;
-  font-weight:bold;
-  border:1px solid #ddd;
-}
 
-    .page-node-edit button#edit-delete:hover{
-      background: red;
-      color:#fff;
-    }
 
-    .page-node-edit button#edit-cancel{
-      box-shadow: none;
-      color: #777;
-      letter-spacing: .02em;
-      background:#fff;
-      border:1px solid #ddd;
-    }
 
-    .page-node-edit button#edit-cancel:hover{
-      background: #ddd;
-      box-shadow: none;
-    }
+
 
 div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-date-created{
   float: left;
@@ -581,11 +558,6 @@ div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-da
   margin-left: 0;
 }
 
-
-/*--- for edit save buttons bottom of page, perhaps move to sarvaka ---*/
-#edit-actions.form-actions {
-  margin-top: 1.1rem;
-}
 
 
 

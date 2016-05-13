@@ -89,13 +89,6 @@
 
 
 
-/* Final form button at bottom- Save, cancel, Delete */
-#edit-delete:hover,
-#edit-delete:focus {
-  background: red;
-  border-color: red;
-}
-
 /* USE: Remove button, Mediabase video edit page - Remove button (Trashcan icon) */
 .btn-sm.btn-icon.btn-delete {
 	float:right; 
