@@ -74,7 +74,8 @@
 }
 
 .input-section .form-radios .form-item{
-  margin-top:0.2rem;
+  top: -2.2rem;
+  position: relative;
 }
 
 .input-section .search-group .searchreset {
