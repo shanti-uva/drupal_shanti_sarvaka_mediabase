@@ -2,15 +2,13 @@
 * Mandala Audio-Video - Development
 * 
 * version 1.x - shanti-main-mediabase.css
-* ------------------------------------------
-* University of Virginia / SHANTI MANDALA
-* ------------------------------------------
+* -------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / AUDIO-VIDEO
+* -------------------------------------------------------
 * 
 */
 
-/** 
-* Subtheme Colors 
-*/
+/* BEGIN sub-theme colors */
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
@@ -19,7 +17,6 @@
 .nav-tabs.nav-justified>li.active>a:hover {
   background-color: #2db6b4 !important;
 }
-
 
 .navbar-brand:hover .site-slogan,
 .view-section .nav-tabs>li.active>a, 
@@ -54,21 +51,17 @@
     color: #2db6b4 !important;
   }
 }
-
 /**
 *** END subtheme colors ---*/
-
 
 /**
 * --------------
 * Page Layouts
 * --------------
 */
-
 .content-section.equal-height.col-md-9 > .tab-content.container-fluid::after{
   /* padding-bottom: 7rem; */
 }
-
 
 .tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
   margin-left: -1.5rem;
@@ -108,12 +101,12 @@
       padding-top:0.2rem;
     }
 
-
 /**
 * ---------------
 * Right Sidebar
 * ---------------
 */
+
 /**
 * upload video-audio 
 */

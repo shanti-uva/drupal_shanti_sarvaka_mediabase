@@ -1,17 +1,16 @@
-
 /**
-* Mandala Audio-Video - Development
+* Mandala Audio-Video (Media Admin Editor) - Development
 * 
 * version 1.x - mediabase-edit-form.css
-* ------------------------------------------
-* University of Virginia / SHANTI MANDALA
-* ------------------------------------------
+* -------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / AUDIO-VIDEO
+* -------------------------------------------------------
 * 
 */
 
 /**
 * -----------------------------------------------------------------------
-* FORM SECTION GUIDE - CLASS NAMES for each form group = 'group-name'
+* FORM GUIDE - CLASS NAMES for each form group = 'group-name'
 * - Title and Description / 'group-title-desc'
 * - Media / 'group-media'
 * - Transcript / 'group-transcript'
@@ -24,7 +23,7 @@
 * -----------------------------------------------------------------------
 */
 
-/* Subtheme colors */
+/* BEGIN sub-theme (Admin) colors */
 .page-node-edit .fancytree-container .glyphicon,
 .page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
 .page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
@@ -50,12 +49,12 @@
 	font-size: 1.5em;
 	margin-top: -2px;
 }
-
-.page-node-edit .content-section a {
+/* move to Saravaka
+.admin-menu .content-section a {
 	font-weight: bold;
   font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 }
-
+*/
 .form-type-textfield, 
 .field-widget-text-textfield,
 .field-widget-options-select{
