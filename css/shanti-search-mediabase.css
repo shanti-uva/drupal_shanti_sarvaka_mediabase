@@ -73,11 +73,6 @@
   float: left;
 }
 
-.input-section .form-radios .form-item{
-  top: -2.2rem;
-  position: relative;
-}
-
 .input-section .search-group .searchreset {
   box-shadow: none;
   border: none;
