@@ -97,19 +97,12 @@
       padding-top:0.5rem;
     }
 
-    .node-type-collection .tab-pane.main-col > div{
-      padding-top:0.2rem;
-    }
-
 /**
 * ---------------
-* Right Sidebar
+* BEGIN Right Sidebar
 * ---------------
 */
-
-/**
-* upload video-audio 
-*/
+/* upload video-audio */
 .region-sidebar-second .block-mb-structure .btn.btn-icon{
   letter-spacing: 0.03rem;
   font-size: 1em;
