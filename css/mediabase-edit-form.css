@@ -629,8 +629,8 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] {
 }
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] label {
-	margin-top:1rem;
-	margin-bottom: 0.25rem;
+	/*margin-top:1rem;
+	margin-bottom: 0.25rem;*/
 }
 
 
@@ -646,7 +646,7 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] label 
 }
 
 .form-type-textfield label{
-	margin-left: 2.5rem;
+	/*margin-left: 2.5rem;*/
 }
 
 .pagerer_admin_panes_config .form-type-select label {
