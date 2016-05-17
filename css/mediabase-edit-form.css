@@ -767,11 +767,11 @@ table.sticky-table .filter-guidelines ul li{
 /**
 * BEGIN Typeahead Menu
 */
-.page-node-edit .kmaps-tt-menu{
+.kmaps-tt-menu{
 	padding-top:0;
 }
 
-.page-node-edit .kmaps-tt-header{
+.kmaps-tt-header{
 	background-color: #eee;
 	font-weight: bold;
 	border-top: 2px solid #ddd;
@@ -779,20 +779,20 @@ table.sticky-table .filter-guidelines ul li{
 	padding: 8px 20px 4px 14px;
 }
 
-.page-node-edit .kmaps-tt-header:first-of-type {
+.kmaps-tt-header:first-of-type {
 	border-top: none;
 	margin-top: 0;
 	border-radius: 0.8rem 0.8rem 0 0;
 }
 
-.page-node-edit .kmaps-tt-dataset-places .kmaps-tt-header:first-of-type {
+.kmaps-tt-header:first-of-type {
 	position: relative;
 	height: 60px !important;
 	display: block;
 	width: 100%;
 }
 
-ul.typeahead-pager.pager{
+.typeahead-pager.pager{
 	font-size: 85%;
 	position: absolute;
 	right: 1rem;
