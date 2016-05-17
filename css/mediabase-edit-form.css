@@ -412,6 +412,13 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 	margin-left: 8px;
 }
 
+
+
+
+
+
+
+
 .field-widget-kmap-typeahead-picker .field-type-taxonomy-term-reference > label {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 6px;
@@ -429,6 +436,12 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 .field-widget-kmap-typeahead-picker .field-type-taxonomy-term-reference > .form-item.kmap-selector .browse-link {
 	margin-top: -6px;
 }
+
+
+
+
+
+
 
 .field-type-taxonomy-term-reference .form-item.kmap-selector label {
 	margin-left: 6px;
@@ -643,6 +656,9 @@ form table td.label {
   padding-top: 0.68em !important;
 }
 
+
+
+
 /* Collections select menu Icon */
 .field-accordion.field-widget-kmap-typeahead-picker .field-type-group label .icon.shanticon-create{
   font-size: 1.68rem;
@@ -736,7 +752,7 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 
-/* typeahead */
+/* BEGIN Typeahead */
 
 .field-widget-kmap-typeahead-picker .form-type-textfield{
 	display:block;
@@ -745,6 +761,34 @@ table.sticky-table .filter-guidelines ul li{
 .group-details .field-add-more-submit.btn.btn-primary{
 	position: relative;
 	top: -2rem;
+}
+
+/**
+* BEGIN Typeahead Menu
+*/
+.page-node-edit .kmaps-tt-menu{
+	padding-top:0;
+}
+
+.page-node-edit .kmaps-tt-header{
+	background-color: #eee;
+	font-weight: bold;
+	border-top: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 8px 20px 4px 14px;
+}
+
+.page-node-edit .kmaps-tt-header:first-of-type {
+	border-top: none;
+	margin-top: 0;
+	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.page-node-edit .kmaps-tt-dataset-places .kmaps-tt-header:first-of-type {
+	position: relative;
+	height: 60px !important;
+	display: block;
+	width: 100%;
 }
 
 ul.typeahead-pager.pager{
@@ -774,44 +818,30 @@ ul.typeahead-pager.pager{
 	font-family: arial, tahoma, sans-serif;
 }
 
-.page-node-edit .kmaps-tt-menu{
-	padding-top:0;
-}
 
+
+/**
+* BEGIN Typeahead Menu items listed 
+*/
+
+/* list items <div> wrapper */
+.page-node-edit .kmaps-tt-suggestion{
+	padding: 3px 20px 1px;
+}
+/* list items key-word term */
+.page-node-edit .kmaps-tt-suggestion .kmaps-term{
+	color: #222;
+}
+/* list items key-word ancestors */
 .page-node-edit .kmaps-ancestors{
 	display:inline;
 	color:#555;
 }
 
-.page-node-edit .kmaps-tt-header{
-	background-color: #eee;
-	font-weight: bold;
-	border-top: 2px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	padding: 8px 20px 4px 14px;
-}
-
-.page-node-edit .kmaps-tt-header:first-of-type {
-	border-top: none;
-	margin-top: 0;
-	border-radius: 0.8rem 0.8rem 0 0;
-}
-
-.page-node-edit .kmaps-tt-dataset-places .kmaps-tt-header:first-of-type {
-	position: relative;
-	height: 60px !important;
-	display: block;
-	width: 100%;
-}
-
-.page-node-edit .kmaps-tt-suggestion{
-	padding: 3px 20px 1px;
-}
-
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors{
 	color:#fff;
 }
-
+/* list items selected */
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected,
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors,
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
@@ -954,10 +984,10 @@ div.node .group-details .field-label-span {
   /*top: -0.3rem;*/
 }
 
-    .form-item.form-type-textfield input.form-text, 
-    .form-item.form-type-textfield input.form-control{
-      display:inline-block;
-    }
+.form-item.form-type-textfield input.form-text, 
+.form-item.form-type-textfield input.form-control{
+  display:inline-block;
+}
 
 
 
@@ -965,9 +995,9 @@ div.node .group-details .field-label-span {
   margin:0;
 }
 
-    .node-video-form .fieldset-wrapper .form-item{
-      margin:1rem;
-    }
+	.node-video-form .fieldset-wrapper .form-item{
+	  margin:1rem;
+	}
 
 .form-item-field-video-und-0-settings-default-settings-entry-widget{
   margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
