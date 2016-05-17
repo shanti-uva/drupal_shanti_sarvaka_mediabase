@@ -33,7 +33,7 @@
 }
 
 /* typeahead hover color to match subtheme */
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
 .page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
 }
