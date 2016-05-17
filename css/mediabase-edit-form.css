@@ -768,7 +768,7 @@ table.sticky-table .filter-guidelines ul li{
 * BEGIN Typeahead Menu
 */
 .kmaps-tt-menu{
-	padding-top:0;
+	padding-top:0 !important;
 }
 
 .kmaps-tt-header{
@@ -783,39 +783,38 @@ table.sticky-table .filter-guidelines ul li{
 	border-top: none;
 	margin-top: 0;
 	border-radius: 0.8rem 0.8rem 0 0;
-}
 
-.kmaps-tt-header:first-of-type {
 	position: relative;
 	height: 60px !important;
 	display: block;
 	width: 100%;
+	padding-top:1rem;
 }
 
 .typeahead-pager.pager{
 	font-size: 85%;
 	position: absolute;
-	right: 1rem;
-	bottom: 0.7rem;
+	right: 0.7rem;
+	bottom: 0.4rem;
 }
 
 .kmaps-tt-header .close{
 	position: relative;
-	top: -0.1rem;
+	top: -0.7rem;
 	right: -0.5rem;
-	/*opacity: 0.2;*/
-	font-size: 1.5em;
+	opacity: 0.3;
+	font-size: 2em;
 }
 
 .kmaps-tt-header .close::before{
 	content: 'Close';
 	display: inline-block;
 	position: relative;
-	right: 0.85rem;
-	top: -0.4rem;
+	right: 1rem;
+	top: -0.65rem;
 	width: 30px;
 	height: 9px;
-	font-size: 0.56em;
+	font-size: 0.44em;
 	font-family: arial, tahoma, sans-serif;
 }
 
