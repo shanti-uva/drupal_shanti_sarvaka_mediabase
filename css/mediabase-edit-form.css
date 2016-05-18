@@ -783,12 +783,8 @@ table.sticky-table .filter-guidelines ul li{
 	border-top: none;
 	margin-top: 0;
 	border-radius: 0.8rem 0.8rem 0 0;
-
-	position: relative;
-	height: 60px !important;
 	display: block;
 	width: 100%;
-	padding-top:1rem;
 }
 /* These are the search headers which have pagers. The filters do not have pagers. */
 .form-item-field-subcollection-new-search-term .kmaps-tt-header:first-of-type,
