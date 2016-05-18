@@ -791,8 +791,9 @@ table.sticky-table .filter-guidelines ul li{
 	padding-top:1rem;
 }
 /* These are the search headers which have pagers. The filters do not have pagers. */
-.kmaps-tt-dataset-places .kmaps-tt-header:first-of-type,
-.kmaps-tt-dataset-subjects .kmaps-tt-header:first-of-type{
+.form-item-field-subcollection-new-search-term .kmaps-tt-header:first-of-type,
+.form-item-field-subject-search-term .kmaps-tt-header:first-of-type, 
+.form-item-field-location-search-term .kmaps-tt-header:first-of-type{
 	position: relative;
 	height: 60px !important;
 	padding-top:1rem;
@@ -825,6 +826,18 @@ table.sticky-table .filter-guidelines ul li{
 	font-family: arial, tahoma, sans-serif;
 }
 
+
+
+.kmap_filter_box{
+	margin-bottom: 4rem;
+	padding-left: 1rem;	
+}
+
+.kmap_filter .description p{
+	margin: 1rem 0 0.3rem 2rem;
+	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+	font-style: italic;
+}
 
 
 /**
