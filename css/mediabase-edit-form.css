@@ -890,17 +890,7 @@ table.sticky-table .filter-guidelines ul li{
 	color: #888;
 }
 
-/* format Filtering help text - Click within text input and/or begin typing to search for a term. - */
-.kmap_search_header p{
-	margin: 0 0 1.5rem 1rem;
-}
 
-
-
-.kmap_filter_box{
-	margin-bottom: 4rem;
-	padding-left: 1rem;	
-}
 
 .kmap_search .description p,
 .kmap_filter .description p{
@@ -909,6 +899,43 @@ table.sticky-table .filter-guidelines ul li{
 	font-style: italic;
 }
 
+.field-name-field-subject-new .kmap_search_header,
+.field-name-field-subcollection-new .kmap_search_header{
+	display:none;
+}
+
+.kmap_filter{
+	clear:none;
+	width: 49%;
+	float: left;
+}
+
+.kmap_search .twitter-typeahead{
+	width: 49%;
+}
+
+.field-name-field-location .kmap_filter:first-of-type{
+	margin-right:2%;
+}
+
+.kmap_filter_box{
+	margin-bottom: 3rem;
+	padding-left: 1rem;	
+}
+
+.field-name-field-location .kmap_search{
+	border-top:1px solid #ccc;
+	padding-top:1rem;
+}
+
+.field-name-field-location .kmap_search_header{
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.kmap_search_header p{
+	margin: 0 0 1.5rem 1rem;
+}
 
 
 /* editing form techincal metadata */
