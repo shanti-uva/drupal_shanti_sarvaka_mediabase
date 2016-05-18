@@ -59,7 +59,7 @@
 .form-type-textfield, 
 .field-widget-text-textfield,
 .field-widget-options-select{
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
 }
 
 .form-type-textfield{
@@ -824,18 +824,6 @@ table.sticky-table .filter-guidelines ul li{
 
 
 
-.kmap_filter_box{
-	margin-bottom: 4rem;
-	padding-left: 1rem;	
-}
-
-.kmap_filter .description p{
-	margin: 1rem 0 0.3rem 2rem;
-	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-	font-style: italic;
-}
-
-
 /**
 * BEGIN Typeahead Menu items listed 
 */
@@ -882,9 +870,24 @@ table.sticky-table .filter-guidelines ul li{
 	width: 3em;
 	color: #888;
 }
+
 /* format Filtering help text - Click within text input and/or begin typing to search for a term. - */
 .kmap_search_header p{
 	margin: 0 0 1.5rem 1rem;
+}
+
+
+
+.kmap_filter_box{
+	margin-bottom: 4rem;
+	padding-left: 1rem;	
+}
+
+.kmap_search .description p,
+.kmap_filter .description p{
+	margin: 1rem 0 0.3rem 2rem;
+	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+	font-style: italic;
 }
 
 
