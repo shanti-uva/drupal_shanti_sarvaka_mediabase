@@ -816,12 +816,31 @@ table.sticky-table .filter-guidelines ul li{
 	position: relative;
 	right: 1rem;
 	top: -0.65rem;
-	width: 30px;
-	height: 9px;
+	/*width: 30px;
+	height: 9px;*/
 	font-size: 0.44em;
 	font-family: arial, tahoma, sans-serif;
 }
 
+
+.form-item-field-location-search-filter-feature-type .kmaps-tt-header,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header{
+	padding-top:0.6rem;
+}
+
+.form-item-field-location-search-filter-feature-type .kmaps-tt-header .close,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close{
+	position: relative;
+	top: -0.4rem;
+	right: -1rem;
+}
+
+.form-item-field-location-search-filter-feature-type .kmaps-tt-header .close::before,
+.form-item-field-location-search-filter-associated-subject .kmaps-tt-header .close::before{
+	position: relative;
+	right: 0.7rem;
+	top: -0.6rem;
+}
 
 
 /**
