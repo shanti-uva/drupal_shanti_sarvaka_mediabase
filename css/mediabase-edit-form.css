@@ -790,6 +790,13 @@ table.sticky-table .filter-guidelines ul li{
 	width: 100%;
 	padding-top:1rem;
 }
+/* These are the search headers which have pagers. The filters do not have pagers. */
+.kmaps-tt-dataset-places .kmaps-tt-header:first-of-type,
+.kmaps-tt-dataset-subjects .kmaps-tt-header:first-of-type{
+	position: relative;
+	height: 60px !important;
+	padding-top:1rem;
+}
 
 .typeahead-pager.pager{
 	font-size: 85%;
