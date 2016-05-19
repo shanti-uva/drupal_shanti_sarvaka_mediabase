@@ -902,8 +902,8 @@ table.sticky-table .filter-guidelines ul li{
 	font-style: italic;
 }
 
-.kmap_search .description::before,
-.kmap_filter .description::before{
+.kmap_search .description p::before,
+.kmap_filter .description p::before{
 	content:'FILTER';
 	display:inline-block;
 	position:relative;
@@ -988,7 +988,8 @@ table.sticky-table .filter-guidelines ul li{
 	float: left*/
 }
 
-.group-techincal .field-widget-text-textfield { float:left; display:inline; width:33.333%; border-bottom:none;}
+.group-techincal .field-type-textfield,
+.group-techincal .field-widget-text-textfield { float:left; width:33.333%;}
 
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
 	width:34%; /* extra width to prevent moving up a row */
