@@ -914,7 +914,7 @@ table.sticky-table .filter-guidelines ul li{
 .kmap_search .description::before{
 	content:'SEARCH';
 }
-*/
+*/	
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
@@ -988,9 +988,9 @@ table.sticky-table .filter-guidelines ul li{
 	float: left*/
 }
 
-.group-techincal .form-type-textfield,
-.group-techincal .field-type-textfield,
-.group-techincal .field-widget-text-textfield { float:left; width:33.333%;}
+.group-technical .form-type-textfield,
+.group-technical .field-type-textfield,
+.group-technical .field-widget-text-textfield { float:left; width:33.333%;}
 
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
 	width:34%; /* extra width to prevent moving up a row */
