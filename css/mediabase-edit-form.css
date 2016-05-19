@@ -933,9 +933,9 @@ table.sticky-table .filter-guidelines ul li{
 	margin: 0 0 1.5rem 1rem;
 }
 
-.field-name-field-subject .panel-collapse .panel-body,
-.field-name-field-subcollection-new .panel-collapse .panel-body{
-	padding-top:1rem;
+.mb-av-form .field-accordion .field-name-field-subject .panel-body,
+.mb-av-form .field-accordion .field-name-field-subcollection-new .panel-body{
+	padding-top: 1rem !important;
 }
 
 .field-name-field-subject .kmap_search_header,
