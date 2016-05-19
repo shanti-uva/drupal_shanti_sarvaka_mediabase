@@ -15,6 +15,9 @@
 * - Media / 'group-media'
 * - Transcript / 'group-transcript'
 * - Classification / 'group-details'
+* - - 'field-name-field-location' = kmaps_filter & kmaps_search
+* - - 'field-name-field-subject' = kmaps_search
+* - - 'field-name-field-subcollections' = kmaps_search
 * - Right & Licensing / 'group-rights'
 * - Availability & Access / 'group-availability-access'
 * - People and Copyrights / 'group-people'
@@ -899,6 +902,19 @@ table.sticky-table .filter-guidelines ul li{
 	font-style: italic;
 }
 
+.kmap_search .description::before,
+.kmap_filter .description::before{
+	content:'FILTER';
+	display:inline-block;
+	position:relative;
+	font-size: 0.44em;
+	font-family: arial, tahoma, sans-serif;
+}
+
+.kmap_search .description::before{
+	content:'SEARCH';
+}
+
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
@@ -968,9 +984,11 @@ table.sticky-table .filter-guidelines ul li{
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value,
 .form-item-field-pbcore-instantiation-en-0-field-file-size-und-0-value,
 .form-item-field-pbcore-instantiation-en-0-field-data-rate-und-0-value{
-	width: 33%;
-	float: left
+	/*width: 33%;
+	float: left*/
 }
+
+.group-techincal .field-widget-text-textfield { float:left; display:inline; width:33.333%; border-bottom:none;}
 
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
 	width:34%; /* extra width to prevent moving up a row */
@@ -982,23 +1000,23 @@ table.sticky-table .filter-guidelines ul li{
 
 .form-item-field-pbcore-instantiation-en-0-field-track-data-und-0-value,
 .form-item-field-pbcore-instantiation-en-0-field-frame-size-und-0-value{
-	width: 33.33%;
+	/*width: 33.33%;*/
 }
 /* a pair of layout fixes for Channel Config */
-.field-name-field-channel-conf{ width:33.3%; }
-.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ float:left; }
+.field-name-field-channel-conf{ /*width:33.3%;*/ }
+.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ /*float:left;*/ }
 
 /* Alternate Modes, Duration, and Start Time */
 .form-item-field-pbcore-instantiation-en-0-field-alternate-modes-und-0-value,
 .form-item-field-pbcore-instantiation-en-0-field-duration-und-0-value,
 .form-item-field-pbcore-instantiation-en-0-field-start-time-und-0-value{
-	width: 33.3%;
+	/*width: 33.3%;*/
 }
-
+/*
 .field-name-field-duration{ width: 33.3%; }
 .field-name-field-duration>div{ float:left; }
 .field-name-field-duration>div>div{ width:100%; }
-
+*/
 
 
 
