@@ -899,11 +899,6 @@ table.sticky-table .filter-guidelines ul li{
 	font-style: italic;
 }
 
-.field-name-field-subject-new .kmap_search_header,
-.field-name-field-subcollection-new .kmap_search_header{
-	display:none;
-}
-
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
@@ -936,6 +931,16 @@ table.sticky-table .filter-guidelines ul li{
 
 .kmap_search_header p{
 	margin: 0 0 1.5rem 1rem;
+}
+
+.field-name-field-subject .panel-collapse .panel-body,
+.field-name-field-subcollection-new .panel-collapse .panel-body{
+	padding-top:1rem;
+}
+
+.field-name-field-subject .kmap_search_header,
+.field-name-field-subcollection-new .kmap_search_header{
+	display:none;
 }
 
 
