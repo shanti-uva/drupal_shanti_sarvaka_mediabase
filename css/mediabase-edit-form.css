@@ -354,15 +354,6 @@ table.sticky-table a {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Title Group */
 form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
 
@@ -893,7 +884,18 @@ table.sticky-table .filter-guidelines ul li{
 	color: #888;
 }
 
+.kmap_filter label,
+.kmap_search label{
+	text-transform: capitalize;
+	padding-left:1rem;
+	font-weight: normal;
+}
 
+.kmap_filter label span,
+.kmap_search label span{
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 .kmap_search .description p,
 .kmap_filter .description p{
@@ -901,20 +903,7 @@ table.sticky-table .filter-guidelines ul li{
 	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 	font-style: italic;
 }
-/*
-.kmap_search .description p::before,
-.kmap_filter .description p::before{
-	content:'FILTER';
-	display:inline-block;
-	position:relative;
-	font-size: 0.44em;
-	font-family: arial, tahoma, sans-serif;
-}
-
-.kmap_search .description::before{
-	content:'SEARCH';
-}
-*/	
+	
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
