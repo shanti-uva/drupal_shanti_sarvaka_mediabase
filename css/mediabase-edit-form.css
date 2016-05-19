@@ -914,7 +914,7 @@ table.sticky-table .filter-guidelines ul li{
 	width: 49%;
 }
 
-.field-name-field-location .kmap_filter:first-of-type{
+.field-name-field-location .panel-body .kmap_filter:first-of-type{
 	margin-right:2%;
 }
 
