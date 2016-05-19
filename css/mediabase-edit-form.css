@@ -901,7 +901,7 @@ table.sticky-table .filter-guidelines ul li{
 	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 	font-style: italic;
 }
-
+/*
 .kmap_search .description p::before,
 .kmap_filter .description p::before{
 	content:'FILTER';
@@ -914,7 +914,7 @@ table.sticky-table .filter-guidelines ul li{
 .kmap_search .description::before{
 	content:'SEARCH';
 }
-
+*/
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
@@ -988,6 +988,7 @@ table.sticky-table .filter-guidelines ul li{
 	float: left*/
 }
 
+.group-techincal .form-type-textfield,
 .group-techincal .field-type-textfield,
 .group-techincal .field-widget-text-textfield { float:left; width:33.333%;}
 
