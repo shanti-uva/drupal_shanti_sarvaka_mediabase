@@ -1796,6 +1796,11 @@ h3.node-desc {
       width:100% !important;
     }
 
+.front .shanti-filters.bottom{
+  margin-bottom: 5rem;
+}
+
+
 /**
 * Carousel Media Breakpoints 
 */
