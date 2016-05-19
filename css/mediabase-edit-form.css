@@ -69,6 +69,13 @@
   display:inline-block;
 }
 
+
+
+.mb-av-form{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 /* Accordions: space at top, 'mb-av-form' selectors overide Sarvaka */
 .mb-av-form .field-accordion .panel-body{
   padding: 1rem 2rem 2rem;
@@ -98,7 +105,7 @@
 	max-width: 3em; 
 	max-height: 3em; 
 	min-height: 22px; 
-	margin: 2.5em 1.5em 0 0;
+	margin: 3em 1.5em 0 0;
 
 }
 .btn-sm.btn-icon.btn-delete span.icon {
@@ -166,8 +173,111 @@ div.file-widget.form-managed-file > * {
 
 
 
-
 /* BEGIN move up from bottom */
+
+.form-control.role-weight {
+	font-size: 80%;
+	width: 4em;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+
+.tabledrag-toggle-weight-wrapper {
+	display: inline;
+	float: right;
+	position:relative;
+	top:1.75rem;
+	right:1rem;
+}
+
+
+table.field-multiple-table {
+  margin-bottom: 2em;
+}
+
+table.field-multiple-table tbody {
+  border: 2px solid #ddd;
+}
+
+#kmap_annotation_json {
+  margin-left: 2em;
+} /* textbox on bottom */
+
+
+#edit-filter-settings-title {
+  margin-bottom: 0 !important;
+}
+
+.form-item.form-type-textfield input.form-text, 
+.form-item.form-type-textfield input.form-control{
+  display:inline-block;
+}
+
+
+
+
+
+.mb-av-form table.field-multiple-table {
+  margin-bottom: 0;
+}
+
+
+
+
+
+.node-video-form .form-item{
+  margin:0;
+}
+
+.node-video-form .fieldset-wrapper .form-item{
+  margin:1rem;
+}
+
+.form-item-field-video-und-0-settings-default-settings-entry-widget{
+  margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
+}
+
+#edit-field-video-und-0-button{
+  clear: both;
+}
+
+
+
+.mb-av-form .kaltura_field_thumb::after{
+  content: 'Remove';
+  color: #777;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: -0.6rem;
+  font-family: helvetica, arial, sans-serif;
+  height: 40px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/*.page-node-add .mb-av-form .kaltura_field_thumb { display: none; } */
+.page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
+
+.mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
+  max-width: 40rem !important;
+  display: inline-block;
+}
+
+.field-multiple-table .panel-body > div{
+  margin: 12px 0px;
+}
+/* for margin space below adjustable Rich-text area */
+.resizable-textarea .grippie{
+  margin-bottom: 0.5rem; 
+}
+
+
+
+
+
+
+
+
 .form-item .description {
   font-size: 0.93em;
   margin-top: 0.25em;
@@ -388,7 +498,8 @@ div.field-type-field-collection tr.draggable td div.field-type-text-long {
 	margin-left: 1.8rem
 }
 
-div#node_video_form_group_details > .panel-body > div, div#node_audio_form_group_details > .panel-body > div {
+div#node_video_form_group_details > .panel-body > div, 
+div#node_audio_form_group_details > .panel-body > div {
 	width: 100%;
 	background-color: #f0f0f0;
 	padding: 12px;
@@ -911,8 +1022,8 @@ table.sticky-table .filter-guidelines ul li{
 	padding-bottom: 1.5rem;
 }
 
-.kmap_search .twitter-typeahead{
-	width: 49%;
+.kmap_filter.form-wrapper{
+	padding-top:1rem;
 }
 
 .field-name-field-location #field_location_filter_associated_subject{
@@ -924,14 +1035,17 @@ table.sticky-table .filter-guidelines ul li{
 	padding-left: 1rem;	
 }
 
+
+/**
+* KMAPS - Search 
+*/
+.kmap_search .twitter-typeahead{
+	width: 49%;
+}
+
 .field-name-field-location .kmap_search{
 	border-top:1px solid #ccc;
 	padding-top:1rem;
-}
-
-.field-name-field-location .kmap_search_header{
-	margin-bottom: 1rem;
-	border-bottom: 1px solid #ccc;
 }
 
 .kmap_search_header p{
@@ -940,7 +1054,7 @@ table.sticky-table .filter-guidelines ul li{
 
 .mb-av-form .field-accordion .field-name-field-subject .panel-body,
 .mb-av-form .field-accordion .field-name-field-subcollection-new .panel-body{
-	padding-top: 1rem !important;
+	padding-top: 1.5rem !important;
 }
 
 .field-name-field-subject .kmap_search_header,
@@ -948,6 +1062,13 @@ table.sticky-table .filter-guidelines ul li{
 	display:none;
 }
 
+
+
+
+
+/**
+* BEGIN - Technical Metadata > Versions > Dates 
+*/
 
 /* editing form techincal metadata */
 /* Date created - Date issued */
@@ -963,7 +1084,6 @@ table.sticky-table .filter-guidelines ul li{
   margin: 0 !important;
 }
 
-/* Technical Metadata > Versions > Dates */
 .field-type-datetime.field-name-field-date-created,
 .field-type-datetime.field-name-field-date-issued{
 	width: 49%;
@@ -991,6 +1111,11 @@ table.sticky-table .filter-guidelines ul li{
 .group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
 	max-width: 93% !important;
 }
+/* Technical metadata bottom add-row link */
+.field-type-datetime.field-name-field-pbcore-date-available{
+	position:relative;
+	top:6.5rem;
+}
 
 
 
@@ -999,116 +1124,6 @@ table.sticky-table .filter-guidelines ul li{
 * ...migrated from mb-main
 * -------------------------------
 */
-
-.form-control.role-weight {
-	font-size: 80%;
-	width: 4em;
-	height: 1.5em;
-	line-height: 1.5em;
-}
-
-.tabledrag-toggle-weight-wrapper {
-	display: inline;
-	float: right;
-	position:relative;
-	top:1.75rem;
-	right:1rem;
-}
-
-
-table.field-multiple-table {
-  margin-bottom: 2em;
-}
-
-table.field-multiple-table tbody {
-  border: 2px solid #ddd;
-}
-
-#kmap_annotation_json {
-  margin-left: 2em;
-} /* textbox on bottom */
-
-
-#edit-filter-settings-title {
-  margin-bottom: 0 !important;
-}
-/* @question - not sure what this is...? 
-div.node .group-details .field-label-span {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  vertical-align: top;
-}
-*/
-
-
-
-/* overide 'mediabase-edit-form.css' */
-.field-type-field-collection input.form-text.form-control{
-  /*max-width: 90% !important;
-  position: relative;*/
-  /*top: -0.3rem;*/
-}
-
-.form-item.form-type-textfield input.form-text, 
-.form-item.form-type-textfield input.form-control{
-  display:inline-block;
-}
-
-
-
-.node-video-form .form-item{
-  margin:0;
-}
-
-	.node-video-form .fieldset-wrapper .form-item{
-	  margin:1rem;
-	}
-
-.form-item-field-video-und-0-settings-default-settings-entry-widget{
-  margin-left:2rem; /* add space to left of video player in - override format settings > default view mode */
-}
-
-#edit-field-video-und-0-button{
-  clear: both;
-}
-
-.mb-av-form{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mb-av-form table.field-multiple-table {
-  margin-bottom: 0;
-}
-
-.mb-av-form .kaltura_field_thumb::after{
-  content: 'Remove';
-  color: #777;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: -0.6rem;
-  font-family: helvetica, arial, sans-serif;
-  height: 40px;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-/*.page-node-add .mb-av-form .kaltura_field_thumb { display: none; } */
-.page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
-
-.mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
-  max-width: 40rem !important;
-  display: inline-block;
-}
-
-.field-multiple-table .panel-body > div{
-  margin: 12px 0px;
-}
-/* for margin space below adjustable Rich-text area */
-.resizable-textarea .grippie{
-  margin-bottom: 0.5rem; 
-}
 
 
 
