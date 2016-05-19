@@ -1113,9 +1113,9 @@ table.sticky-table .filter-guidelines ul li{
 	max-width: 93% !important;
 }
 /* Technical metadata bottom add-row link */
-.field-type-datetime.field-name-field-pbcore-date-available{
-	/*position:relative;
-	top:6.5rem;*/
+.field-type-datetime.field-name-field-pbcore-date-available .tabledrag-toggle-weight-wrapper{
+	position:relative;
+	top:6.5rem;
 }
 
 
