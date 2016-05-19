@@ -981,47 +981,27 @@ table.sticky-table .filter-guidelines ul li{
 	float: left;
 }
 
-.form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value,
-.form-item-field-pbcore-instantiation-en-0-field-file-size-und-0-value,
-.form-item-field-pbcore-instantiation-en-0-field-data-rate-und-0-value{
-	/*width: 33%;
-	float: left*/
+.group-technical .field-type-textfield,
+.group-technical .field-widget-text-textfield { 
+	float:left; 
+	width:33.333%;
 }
 
-.group-technical .field-type-textfield,
-.group-technical .field-widget-text-textfield { float:left; width:33.333%;}
-
-.field-name-field-file-size.field-widget-text-textfield{
+.field-name-field-duration.field-widget-text-textfield,
+.field-name-field-file-size.field-widget-text-textfield,
+.field-name-field-channel-conf.field-widget-text-textfield{
 	float:none;
 }
 
-.form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
-	/*width:34%;*/ /* extra width to prevent moving up a row */
+.field-name-field-duration.field-widget-text-textfield > div,
+.field-name-field-file-size.field-widget-text-textfield > div,
+.field-name-field-channel-conf.field-widget-text-textfield > div{
+	float:left;
 }
 
 .group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
 	max-width: 93% !important;
 }
-
-.form-item-field-pbcore-instantiation-en-0-field-track-data-und-0-value,
-.form-item-field-pbcore-instantiation-en-0-field-frame-size-und-0-value{
-	/*width: 33.33%;*/
-}
-/* a pair of layout fixes for Channel Config */
-.field-name-field-channel-conf{ /*width:33.3%;*/ }
-.form-item-field-pbcore-instantiation-en-0-field-channel-conf-und-0-value{ /*float:left;*/ }
-
-/* Alternate Modes, Duration, and Start Time */
-.form-item-field-pbcore-instantiation-en-0-field-alternate-modes-und-0-value,
-.form-item-field-pbcore-instantiation-en-0-field-duration-und-0-value,
-.form-item-field-pbcore-instantiation-en-0-field-start-time-und-0-value{
-	/*width: 33.3%;*/
-}
-/*
-.field-name-field-duration{ width: 33.3%; }
-.field-name-field-duration>div{ float:left; }
-.field-name-field-duration>div>div{ width:100%; }
-*/
 
 
 
