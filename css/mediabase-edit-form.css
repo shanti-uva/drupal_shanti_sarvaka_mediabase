@@ -988,12 +988,15 @@ table.sticky-table .filter-guidelines ul li{
 	float: left*/
 }
 
-.group-technical .form-type-textfield,
 .group-technical .field-type-textfield,
 .group-technical .field-widget-text-textfield { float:left; width:33.333%;}
 
+.field-name-field-file-size.field-widget-text-textfield{
+	float:none;
+}
+
 .form-item-field-pbcore-instantiation-en-0-field-encoding-scheme-und-0-value{
-	width:34%; /* extra width to prevent moving up a row */
+	/*width:34%;*/ /* extra width to prevent moving up a row */
 }
 
 .group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
