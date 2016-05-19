@@ -908,6 +908,7 @@ table.sticky-table .filter-guidelines ul li{
 	clear:none;
 	width: 49%;
 	float: left;
+	padding-bottom: 1.5rem;
 }
 
 .kmap_search .twitter-typeahead{
@@ -919,7 +920,7 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 .kmap_filter_box{
-	margin-bottom: 3rem;
+	/*margin-bottom: 3rem;*/
 	padding-left: 1rem;	
 }
 
