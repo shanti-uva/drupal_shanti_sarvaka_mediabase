@@ -288,6 +288,7 @@ table.field-multiple-table tbody {
   font-style: italic;
 	color: #222;
 }
+
 /*
 .description p{
 	font-style: italic;
@@ -1007,14 +1008,14 @@ table.sticky-table .filter-guidelines ul li{
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
+/*
 .kmap_search .description p,
 .kmap_filter .description p{
 	margin: 1rem 0 0.3rem 2rem;
 	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 	font-style: italic;
 }
-	
+*/	
 .field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
@@ -1113,8 +1114,8 @@ table.sticky-table .filter-guidelines ul li{
 }
 /* Technical metadata bottom add-row link */
 .field-type-datetime.field-name-field-pbcore-date-available{
-	position:relative;
-	top:6.5rem;
+	/*position:relative;
+	top:6.5rem;*/
 }
 
 
