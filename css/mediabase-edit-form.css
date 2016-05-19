@@ -904,7 +904,7 @@ table.sticky-table .filter-guidelines ul li{
 	display:none;
 }
 
-.kmap_filter{
+.field-name-field-location .kmap_filter{
 	clear:none;
 	width: 49%;
 	float: left;
