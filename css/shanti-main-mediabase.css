@@ -294,8 +294,11 @@
   cursor: pointer !important;
 }
 
-
-
+/* Fix margin around featured image in Collection page */
+.content-section .pane-content .field-name-field-general-featured-image.field-type-image.pull-left > img {
+    margin: 0px !important;
+    min-width: 250px;
+}
 
 
 /* Home media list block */
