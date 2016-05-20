@@ -726,7 +726,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] { 
-	float: left;
+	/*float: left;*/
 	border: none;
 	margin-right:1.5rem;
 }
