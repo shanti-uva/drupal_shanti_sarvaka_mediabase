@@ -281,13 +281,13 @@
   display: none;
 }
 
-
 .collection-content .field-label-inline .field-label-span { 
   float:left; 
 }
 
-
-
+.node-type-collection .pane-content .view-empty, .node-type-subcollection .pane-content .view-empty {
+    clear: both;
+}
 
 /* Revive point on last breadcrumb when search result replace node */
 .breadwrap .breadcrumb li:last-child a.revive-pointer:hover {
