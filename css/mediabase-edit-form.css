@@ -1107,15 +1107,17 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 /* technical metadata section */
-.page-node-edit .group-technical .form-type-date-popup > div > .form-item:nth-of-type(1){
+.group-technical .form-type-date-popup > div > .form-item:nth-of-type(1){
   margin-right: 3rem;
 }
 
-.page-node-edit .group-technical .form-type-date-popup > div > .form-item:nth-of-type(2) input{
+.group-technical .form-type-date-popup > div > .form-item:nth-of-type(2) input{
   width: 19rem
 }
 
-
+.group-technical .field-name-field-pbcore-annotation .field-multiple-table td .text-format-wrapper {
+	padding: 1rem 3rem 0 0;
+}
 
 
 
