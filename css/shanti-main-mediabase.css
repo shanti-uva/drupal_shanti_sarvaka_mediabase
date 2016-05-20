@@ -1792,12 +1792,16 @@ h3.node-desc {
     }
 
     /* hiding the sidebar on frontpage at 1150px not default col-md-9 to improve carousel display */
-    .logged-in.front .content-section.col-xs-12.col-md-9{
+    .front.logged-in .content-section.col-xs-12.col-md-9{
       width:100% !important;
     }
 
 .front .shanti-filters.bottom{
   margin-bottom: 5rem;
+}
+
+.front.logged-in .shanti-filters.bottom{
+  margin-bottom: 0;
 }
 
 
