@@ -27,24 +27,24 @@
 */
 
 /* BEGIN sub-theme (Admin) colors */
-.page-node-edit .fancytree-container .glyphicon,
-.page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
-.page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
-.page-node-edit .fancytree-node.fancytree-active > .glyphicon,
-.page-node-edit .fancytree-node.fancytree-selected > .glyphicon{
+.admin-menu .fancytree-container .glyphicon,
+.admin-menu .fancytree-container .fancytree-node:hover > .glyphicon,
+.admin-menu .fancytree-container .fancytree-node:active > .glyphicon,
+.admin-menu .fancytree-node.fancytree-active > .glyphicon,
+.admin-menu .fancytree-node.fancytree-selected > .glyphicon{
   color: #2db6b4 !important;
 }
 
 /* typeahead hover color to match subtheme */
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
-.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
+.admin-menu .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
 }
 /* END colors */
 
 
 /* Page layout */
-.page-node-edit #block-system-main.block.block-system { width: 100%; }
+.admin-menu #block-system-main.block.block-system { width: 100%; }
 .main-content .content-section .view-content { max-width: 100%; }
 
 /* Common elements */
@@ -90,10 +90,7 @@
 	padding-top: 2rem;
 }
 
-/* adds some contrast to these accordion headers */
-.page-node-edit .panel.panel-default .panel-heading h6 a.collapsed{
-	background: #f0f0f0;
-}
+
 
 
 
@@ -149,10 +146,7 @@
 
 
 
-/* toggle text editor link text under textarea */
-.ckeditor_links{
-	margin-left:1rem;
-}
+
 
 textarea {
   border: 1px solid #ccc;
@@ -301,7 +295,7 @@ table.field-multiple-table tbody {
 
 
 /*
-.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
+.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
 
 th.checkbox,
 td.checkbox { display: table-cell; }
@@ -328,27 +322,27 @@ th.checkbox {
 }
 
 /* admin make checkboxes plain in features table */
-.page-node-edit .content .features .status {
+.admin-menu .content .features .status {
   padding: 0;
   background: transparent;
   border: none;
   box-shadow: none;
 }
 
-.page-node-edit table tr td.permission .form-item {
+.admin-menu table tr td.permission .form-item {
   line-height: normal;
   margin-top: 0;
 }
 
-.page-node-edit table tr.odd.add-new:last-child {
+.admin-menu table tr.odd.add-new:last-child {
   border-bottom: 20px solid transparent;
 }
 
-.page-node-edit tr .form-item {
+.admin-menu tr .form-item {
   line-height: normal;
 }
 
-.page-node-edit tr .form-item.form-type-textarea{
+.admin-menu tr .form-item.form-type-textarea{
   margin-bottom:0.5rem;
 }
 
@@ -400,16 +394,16 @@ table.sticky-table a {
 
 
 
-.page-node-edit .content table td {
+.admin-menu .content table td {
   padding: 5px;
   text-align: left;
 }
 
-.page-node-edit .content table.spaces td.option {
+.admin-menu .content table.spaces td.option {
   width: 4%;
 }
 
-.page-node-edit .content table td.status {
+.admin-menu .content table td.status {
   padding: 0;
 }
 
@@ -729,7 +723,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] { 
-	float: left;
+	/*float: left;*/
 	border: none;
 	margin-right:1.5rem;
 }
@@ -767,38 +761,36 @@ form table td.label {
 
 
 /* Collections select menu Icon */
+.field-name-field-og-collection-ref .bootstrap-select.btn-group .dropdown-menu {
+	/*font-size: 0.93em;
+	padding-top:0;*/
+}
+
 .field-accordion.field-widget-kmap-typeahead-picker .field-type-group label .icon.shanticon-create{
-  font-size: 1.68rem;
+  /*font-size: 1.68rem;*/
 }
 
 /* Collections selection, some names are long so extending this */
 .field-name-field-og-collection-ref .bootstrap-select.form-control{
-	max-width: 45rem;
-}
-
-.field-name-field-og-collection-ref .bootstrap-select.btn-group .dropdown-menu {
-	font-size: 0.93em;
-	padding-top:0;
+	/*max-width: 45rem;*/
 }
 
 table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
-  /*font-size: 0.93em;*/
   max-width: 25rem !important;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
+.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a{
 	line-height: 2em;
 	height: 2em;
-	/*font-size: 1.06em;*/
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
+.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a:active{
 	/*background: #e0e0e0;*/
 	color:#000;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
+.admin-menu .bootstrap-select.btn-group .dropdown-menu dt{
 	padding: 6px 20px 4px 14px;
 	background-color: #eee;
 	font-weight: bold;
@@ -811,20 +803,20 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	border-radius: 0;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu .divider{
+.admin-menu .bootstrap-select.btn-group .dropdown-menu .divider{
 	margin:0;
 }
 
 /* Dropdown with header - Collections selection, reducing space left of list items */
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	padding-left: 18px;
 }
 
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.admin-menu .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	padding-left: 15px;
 }
 
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
+.admin-menu .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
 	font-size: 1em;
 }
 
@@ -847,16 +839,7 @@ table.sticky-table .filter-guidelines ul li{
   padding-top: 0.7rem
 }
 
-.filter-help p{
-	font-size: 85%;
-}
 
-.filter-help {
-	float: none !important;
-	padding: 0 !important;
-	position: relative;
-	top: -0.5rem;
-}
 
 
 /* BEGIN Typeahead */
@@ -954,43 +937,43 @@ table.sticky-table .filter-guidelines ul li{
 */
 
 /* list items <div> wrapper */
-.page-node-edit .kmaps-tt-suggestion{
+.admin-menu .kmaps-tt-suggestion{
 	padding: 3px 20px 1px;
 }
 /* list items key-word term */
-.page-node-edit .kmaps-tt-suggestion .kmaps-term{
+.admin-menu .kmaps-tt-suggestion .kmaps-term{
 	color: #000;
 }
 /* list items key-word ancestors */
-.page-node-edit .kmaps-ancestors{
+.admin-menu .kmaps-ancestors{
 	display:inline;
 	color:#333;
 }
 
 
-.page-node-edit .kmaps-tt-suggestion:hover .kmaps-term,
-.page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
+.admin-menu .kmaps-tt-suggestion:hover .kmaps-term,
+.admin-menu .kmaps-tt-suggestion:hover .kmaps-ancestors,
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
 	color:#fff;
 }
 
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
+.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
 	color:#f0f0f0; 
 }
 
 
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.page-node-edit .kmap_filter_box .selected-kmap:not(:first-child)::before{
+.admin-menu .kmap_filter_box .selected-kmap:not(:first-child)::before{
 	content: '(or)';
 	width: 2.5em;
 	color: #888;
 }
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.page-node-edit .kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
+.admin-menu .kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
 	content: '(and)';
 	width: 3em;
 	color: #888;
@@ -1046,7 +1029,7 @@ table.sticky-table .filter-guidelines ul li{
 
 .field-name-field-location .kmap_search{
 	border-top:1px solid #ccc;
-	padding-top:1rem;
+	padding-top:2rem;
 }
 
 .kmap_search_header p{
@@ -1112,15 +1095,29 @@ table.sticky-table .filter-guidelines ul li{
 .group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
 	max-width: 93% !important;
 }
+
+.group-technical .field-type-text.field-name-field-extension-authority input.form-text.form-control{
+	max-width: 100% !important;
+}
+
 /* Technical metadata bottom add-row link */
 .field-type-datetime.field-name-field-pbcore-date-available .tabledrag-toggle-weight-wrapper{
 	position:relative;
 	top:6.5rem;
 }
 
+/* technical metadata section dates & times */
+.group-technical .form-type-date-popup > div > .form-item:nth-of-type(1){
+  margin-right: 3rem;
+}
 
+.group-technical .form-type-date-popup > div > .form-item:nth-of-type(2) input{
+  width: 19rem
+}
 
-
+.group-technical .field-name-field-pbcore-annotation .field-multiple-table td .text-format-wrapper {
+	padding: 1rem 3rem 0 0;
+}
 
 
 
