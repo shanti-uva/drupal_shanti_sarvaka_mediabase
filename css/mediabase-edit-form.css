@@ -149,10 +149,7 @@
 
 
 
-/* toggle text editor link text under textarea */
-.ckeditor_links{
-	margin-left:1rem;
-}
+
 
 textarea {
   border: 1px solid #ccc;
@@ -847,16 +844,7 @@ table.sticky-table .filter-guidelines ul li{
   padding-top: 0.7rem
 }
 
-.filter-help p{
-	font-size: 85%;
-}
 
-.filter-help {
-	float: none !important;
-	padding: 0 !important;
-	position: relative;
-	top: -0.5rem;
-}
 
 
 /* BEGIN Typeahead */
