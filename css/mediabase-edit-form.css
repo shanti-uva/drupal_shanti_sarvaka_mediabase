@@ -124,7 +124,7 @@
 */
 
 
-.kmap_search_button{
+.kmap-search-button{
   background-color: #5b68ce;
   color: #eee;
   display: inline-block;
@@ -136,8 +136,8 @@
   margin-left:0.5rem;
 }
 
-.kmap_search_button:hover,
-.kmap_search_button:active{
+.kmap-search-button:hover,
+.kmap-search-button:active{
   background: #4850bd;
   border-color:#4850bd;
   color:#fff;
@@ -967,54 +967,54 @@ table.sticky-table .filter-guidelines ul li{
 
 
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.page-node-edit .kmap_filter_box .selected-kmap:not(:first-child)::before{
+.page-node-edit .kmap-filter-box .selected-kmap:not(:first-child)::before{
 	content: '(or)';
 	width: 2.5em;
 	color: #888;
 }
 /* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.page-node-edit .kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
+.page-node-edit .kmap-filter-box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
 	content: '(and)';
 	width: 3em;
 	color: #888;
 }
 
-.kmap_filter label,
-.kmap_search label{
+.kmap-filter label,
+.kmap-typeahead-picker label{
 	text-transform: capitalize;
 	padding-left:1rem;
 	font-weight: normal;
 }
 
-.kmap_filter label span,
-.kmap_search label span{
+.kmap-filter label span,
+.kmap-typeahead-picker label span{
 	text-transform: uppercase;
 	font-weight: bold;
 }
 /*
-.kmap_search .description p,
-.kmap_filter .description p{
+.kmap-typeahead-picker .description p,
+.kmap-filter .description p{
 	margin: 1rem 0 0.3rem 2rem;
 	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
 	font-style: italic;
 }
 */	
-.field-name-field-location .kmap_filter{
+.field-name-field-location .kmap-filter{
 	clear:none;
 	width: 49%;
 	float: left;
 	padding-bottom: 1.5rem;
 }
 
-.kmap_filter.form-wrapper{
+.kmap-filter.form-wrapper{
 	padding-top:1rem;
 }
 
-.field-name-field-location #field_location_filter_associated_subject{
+.field-name-field-location #field_location-filter-associated_subject{
 	margin-right:2%;
 }
 
-.kmap_filter_box{
+.kmap-filter-box{
 	/*margin-bottom: 3rem;*/
 	padding-left: 1rem;	
 }
@@ -1023,16 +1023,16 @@ table.sticky-table .filter-guidelines ul li{
 /**
 * KMAPS - Search 
 */
-.kmap_search .twitter-typeahead{
+.kmap-typeahead-picker .twitter-typeahead{
 	width: 49%;
 }
 
-.field-name-field-location .kmap_search{
+.field-name-field-location .kmap-typeahead-picker{
 	border-top:1px solid #ccc;
 	padding-top:2rem;
 }
 
-.kmap_search_header p{
+.kmap-search-header p{
 	margin: 0 0 1.5rem 1rem;
 }
 
@@ -1041,8 +1041,8 @@ table.sticky-table .filter-guidelines ul li{
 	padding-top: 1.5rem !important;
 }
 
-.field-name-field-subject .kmap_search_header,
-.field-name-field-subcollection-new .kmap_search_header{
+.field-name-field-subject .kmap-search-header,
+.field-name-field-subcollection-new .kmap-search-header{
 	display:none;
 }
 
