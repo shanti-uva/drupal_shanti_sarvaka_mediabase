@@ -103,8 +103,12 @@
 	max-height: 3em; 
 	min-height: 22px; 
 	margin: 3em 1.5em 0 0;
-
 }
+
+.group-transcript .btn-sm.btn-icon.btn-delete{
+	margin-top: -3rem;
+}
+
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
 	left: -0.78rem;
@@ -353,6 +357,10 @@ th.checkbox {
 table.sticky-table,
 table.sticky-header {
   width: 100%;
+}
+
+table.sticky-header{
+	position:static;
 }
 
 table.sticky-header th {
@@ -1038,8 +1046,8 @@ table.sticky-table .filter-guidelines ul li{
 	margin: 0 0 1.5rem 1rem;
 }
 
-.mb-av-form .field-accordion .field-name-field-subject .panel-body,
-.mb-av-form .field-accordion .field-name-field-subcollection-new .panel-body{
+.field-name-field-subject .panel-body,
+.field-name-field-subcollection-new .panel-body{
 	padding-top: 1.5rem !important;
 }
 
@@ -1048,7 +1056,9 @@ table.sticky-table .filter-guidelines ul li{
 	display:none;
 }
 
-
+.form-type-textfield.form-item-field-subject-search-term{
+	display:block;
+}
 
 
 
