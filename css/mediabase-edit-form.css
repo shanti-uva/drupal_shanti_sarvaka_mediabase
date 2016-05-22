@@ -1131,8 +1131,13 @@ table.sticky-table .filter-guidelines ul li{
 	padding: 1rem 3rem 0 0;
 }
 
+.group-technical .field-name-field-pbcore-date-available .date-float{
+	margin-top: 2rem;
+}
 
-
-
+.group-technical .field-name-field-pbcore-date-available .date-no-float.start-date-wrapper{
+	display: inline;
+	margin-left: 5rem;
+}
 
 
