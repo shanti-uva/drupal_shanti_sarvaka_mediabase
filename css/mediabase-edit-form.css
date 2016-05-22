@@ -856,8 +856,10 @@ table.sticky-table .filter-guidelines ul li{
 /**
 * BEGIN Typeahead Menu
 */
-.kmaps-tt-menu{
+.kmaps-tt-menu,
+.twitter-typeahead{
 	padding-top:0 !important;
+	text-rendering: optimizeSpeed;
 }
 
 .kmaps-tt-header{

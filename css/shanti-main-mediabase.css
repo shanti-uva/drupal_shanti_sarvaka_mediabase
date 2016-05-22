@@ -804,8 +804,8 @@ a.show-annot, a.hide-annot {
     .view-my-content .vbo-views-form fieldset#edit-select legend {
       color: #555;
       font-size: 80%;
-      font-family: 'museo-sans-500',helvetica,arial,sans-serif;
-      font-weight: bold;
+      font-family: 'museo-sans-700',helvetica,arial,sans-serif;
+      font-weight: normal;
       text-transform: uppercase;
       border: none;
       padding: 12px 0px 0px;
@@ -1439,7 +1439,6 @@ h3.node-desc {
       font-size: 0.62em;
       font-family: 'museo-sans-700',helvetica,arial,sans-serif;
       font-weight: bold;
-      font-weight: 700;
     }
 
 
