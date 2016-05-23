@@ -97,7 +97,7 @@
                         <a href="<?php print $node_url; ?>" class=""><?php print $title; ?></a></span>  
                 </div>  
                 <div class="shanti-thumbnail-field shanti-field-type">       
-                    <span class="shanti-field-content"><?php print ucfirst($type); ?></span>  
+                    <span class="shanti-field-content"><?php print $access; ?> <?php print ucfirst($type); ?></span>  
                 </div>  
                 <div class="shanti-thumbnail-field shanti-field-author">       
                     <span class="shanti-field-content"><?php print $user_link; ?></span>  
