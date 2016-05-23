@@ -246,8 +246,9 @@
   display:none;
 }
 
-.node-type-collection .description:not(#admin-footer .description){
-  min-height: 270px;
+/* .node-type-collection .description:not(#admin-footer .description){} */
+.node-type-collection .vertical-tabs-list .form-type-textarea .description{
+  /*min-height: 270px;*/
 }
 
 /** Collections List page **/
@@ -267,7 +268,8 @@
     margin: 0px;
 }
 
-.page-collections-all .other-view a, .page-all-collections-list .other-view a {
+.page-collections-all .other-view a, 
+.page-all-collections-list .other-view a {
     padding-left: 8px;
 }
 
@@ -285,7 +287,8 @@
   float:left; 
 }
 
-.node-type-collection .pane-content .view-empty, .node-type-subcollection .pane-content .view-empty {
+.node-type-collection .pane-content .view-empty, 
+.node-type-subcollection .pane-content .view-empty {
     clear: both;
 }
 
