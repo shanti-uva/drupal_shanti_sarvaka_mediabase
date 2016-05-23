@@ -1179,3 +1179,55 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 
+
+
+/**
+* -----------------------------
+* Technical Metadata Fields - migrated from shanti-main-mb.css May 23, 2016
+* -----------------------------
+*/
+.field-name-field-recording-location-new>.field-label-span {
+    font-weight: bold;
+}
+
+.field-name-field-recording-location-new .field-items-span, 
+.field-name-field-recording-location-new .field-items-span ul, 
+.field-name-field-recording-location-new .field-items-span li {
+    display: inline;
+    padding:0px;
+}
+
+.mb-identifier.field.field-label-inline.clearfix, 
+.mb-identifier.field.field-label-inline.clearfix * {
+    float: none;
+}
+
+.mb-identifier * {
+    display: inline-block !important;
+}
+
+.field-name-field-identifier-source, 
+.field-name-field-identifier-source .field-items {
+    display: inline !important;
+}
+
+.field-name-field-identifier-source .field-item {
+    display: inline !important;
+    font-weight: bold;
+}
+
+.field-name-field-identifier, 
+.field-name-field-identifier div {
+    display: inline;
+}
+
+.field-name-field-identifier-source .field-item:after {
+    content: ':';
+}
+
+
+.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
+  display: none;
+}
+
+
