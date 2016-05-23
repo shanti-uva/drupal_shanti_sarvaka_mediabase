@@ -27,25 +27,29 @@
 */
 
 /* BEGIN sub-theme (Admin) colors */
-.admin-menu .fancytree-container .glyphicon,
-.admin-menu .fancytree-container .fancytree-node:hover > .glyphicon,
-.admin-menu .fancytree-container .fancytree-node:active > .glyphicon,
-.admin-menu .fancytree-node.fancytree-active > .glyphicon,
-.admin-menu .fancytree-node.fancytree-selected > .glyphicon{
+.page-node-edit .fancytree-container .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
+.page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-active > .glyphicon,
+.page-node-edit .fancytree-node.fancytree-selected > .glyphicon{
   color: #2db6b4 !important;
 }
 
 /* typeahead hover color to match subtheme */
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
-.admin-menu .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
+.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
 }
 /* END colors */
 
 
 /* Page layout */
-.admin-menu #block-system-main.block.block-system { width: 100%; }
+.page-node-edit #block-system-main.block.block-system { width: 100%; }
 .main-content .content-section .view-content { max-width: 100%; }
+
+
+
+
 
 /* Common elements */
 /* Glyphicon fix */
@@ -53,12 +57,7 @@
 	font-size: 1.5em;
 	margin-top: -2px;
 }
-/* move to Saravaka
-.admin-menu .content-section a {
-	font-weight: bold;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-}
-*/
+
 .form-type-textfield, 
 .field-widget-text-textfield,
 .field-widget-options-select{
@@ -68,6 +67,30 @@
 .form-type-textfield{
   display:inline-block;
 }
+
+.form-item.form-type-textfield input.form-text, 
+.form-item.form-type-textfield input.form-control{
+  display:inline-block;
+}
+
+
+
+
+
+
+/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
+.contextual-links-wrapper {
+  position: absolute;
+  top: -0.15rem !important;
+}
+
+.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
+  border-bottom: none !important;
+}
+
+
+
+
 
 
 
@@ -103,8 +126,12 @@
 	max-height: 3em; 
 	min-height: 22px; 
 	margin: 3em 1.5em 0 0;
-
 }
+
+.group-transcript .btn-sm.btn-icon.btn-delete{
+	margin-top: -3rem;
+}
+
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
 	left: -0.78rem;
@@ -112,19 +139,16 @@
 	font-size: 1.56em;
 }
 
-.btn-sm.btn-icon.btn-delete span.icon:hover { background-color: red !important;}
-
-/**
-* not sure what this is so commenting it out
-#module-filter-tabs a,
-#module-filter-tabs a:hover,
-#module-filter-tabs a:active {
-  border-bottom: none;
+.btn-sm.btn-icon.btn-delete span.icon:hover { 
+	background-color: red !important;
 }
-*/
 
 
-.kmap_search_button{
+
+
+
+
+.kmap-search-button{
   background-color: #5b68ce;
   color: #eee;
   display: inline-block;
@@ -136,8 +160,8 @@
   margin-left:0.5rem;
 }
 
-.kmap_search_button:hover,
-.kmap_search_button:active{
+.kmap-search-button:hover,
+.kmap-search-button:active{
   background: #4850bd;
   border-color:#4850bd;
   color:#fff;
@@ -147,17 +171,26 @@
 
 
 
-
-textarea {
-  border: 1px solid #ccc;
+/**
+* not sure what this is so commenting it out
+#module-filter-tabs a,
+#module-filter-tabs a:hover,
+#module-filter-tabs a:active {
+  border-bottom: none;
 }
+*/
+
+
+
+
+
 
 input.form-inline {
 	display: inline;
 }
 
 div.file-widget.form-managed-file > * {
-	display: inline;
+	/*display: inline;*/
 }
 
 .node-form .form-item .file-widget.form-managed-file {
@@ -167,7 +200,6 @@ div.file-widget.form-managed-file > * {
 
 
 
-/* BEGIN move up from bottom */
 
 .form-control.role-weight {
 	font-size: 80%;
@@ -185,13 +217,122 @@ div.file-widget.form-managed-file > * {
 }
 
 
+
+
+
+
+
+
+
+.page-node-edit table tr td.permission .form-item {
+  line-height: normal;
+  margin-top: 0;
+}
+
+.page-node-edit table tr.odd.add-new:last-child {
+  border-bottom: 20px solid transparent;
+}
+
+.page-node-edit tr .form-item {
+  line-height: normal;
+}
+
+
+.form-item.form-type-select { padding: 0 0.25em 0 0; }
+
+.form-type-textfield label,
+.form-item.form-type-select label{ 
+	display:block; 
+	font-size: 0.88em; 
+	margin-bottom:0.2rem;
+	margin-left: 1.5rem;
+	margin-top: 1rem;
+}
+
+form table td.label {
+  padding-top: 0.68em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+* Textarea 
+*/
+
+textarea {
+  border: 1px solid #ccc;
+}
+
+/* Wysiwyg Hide  double display of toolbar in TinyMCE */
+.wysiwygToolbar + .wysiwygToolbar {
+    display: none;
+}
+/* for margin space below textarea - adjustable Rich-text area */
+.resizable-textarea .grippie{
+  margin-bottom: 0.5rem; 
+}
+
+.page-node-edit tr .form-item.form-type-textarea{
+  margin-bottom:0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 table.field-multiple-table {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 table.field-multiple-table tbody {
   border: 2px solid #ddd;
 }
+
+
+.field-multiple-table .panel-body > div{
+  margin: 12px 0px;
+}
+
+
+.field-multiple-table tr.odd,
+.field-multiple-table tr.even {
+  background: #f7f7f7;
+}
+
+/* Title Group */
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle { padding-right:0; width:4rem;}
+
+
+.field-type-field-collection tr.draggable td div.field-type-text-long {
+	width: 70%;
+	padding-right:1rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 #kmap_annotation_json {
   margin-left: 2em;
@@ -202,18 +343,7 @@ table.field-multiple-table tbody {
   margin-bottom: 0 !important;
 }
 
-.form-item.form-type-textfield input.form-text, 
-.form-item.form-type-textfield input.form-control{
-  display:inline-block;
-}
 
-
-
-
-
-.mb-av-form table.field-multiple-table {
-  margin-bottom: 0;
-}
 
 
 
@@ -235,8 +365,6 @@ table.field-multiple-table tbody {
   clear: both;
 }
 
-
-
 .mb-av-form .kaltura_field_thumb::after{
   content: 'Remove';
   color: #777;
@@ -252,18 +380,13 @@ table.field-multiple-table tbody {
 /*.page-node-add .mb-av-form .kaltura_field_thumb { display: none; } */
 .page-node-add .mb-av-form .kaltura_field_thumb::after{ content: ''; }
 
+
+
 .mb-av-form .field-accordion:first-child .panel-body .field-video-add-more-wrapper p{
   max-width: 40rem !important;
   display: inline-block;
 }
 
-.field-multiple-table .panel-body > div{
-  margin: 12px 0px;
-}
-/* for margin space below adjustable Rich-text area */
-.resizable-textarea .grippie{
-  margin-bottom: 0.5rem; 
-}
 
 
 
@@ -271,6 +394,14 @@ table.field-multiple-table tbody {
 
 
 
+
+
+
+
+
+
+
+/*
 
 .form-item .description {
   font-size: 0.93em;
@@ -283,7 +414,6 @@ table.field-multiple-table tbody {
 	color: #222;
 }
 
-/*
 .description p{
 	font-style: italic;
 	color: #000;
@@ -295,7 +425,7 @@ table.field-multiple-table tbody {
 
 
 /*
-.admin-menu .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
+.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
 
 th.checkbox,
 td.checkbox { display: table-cell; }
@@ -311,40 +441,20 @@ th.checkbox {
 
 /* td.checkbox .form-type-checkbox > .icheckbox_minimal-red { margin-top: 5px; } */
 
-/*--- the block editing icon dropdown for drupal that shows top-right of blocks on-hover ---*/
-.contextual-links-wrapper {
-  position: absolute;
-  top: -0.15rem !important;
-}
 
-.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
-  border-bottom: none !important;
-}
+
+
 
 /* admin make checkboxes plain in features table */
-.admin-menu .content .features .status {
+.page-node-edit .content .features .status {
   padding: 0;
   background: transparent;
   border: none;
   box-shadow: none;
 }
 
-.admin-menu table tr td.permission .form-item {
-  line-height: normal;
-  margin-top: 0;
-}
 
-.admin-menu table tr.odd.add-new:last-child {
-  border-bottom: 20px solid transparent;
-}
 
-.admin-menu tr .form-item {
-  line-height: normal;
-}
-
-.admin-menu tr .form-item.form-type-textarea{
-  margin-bottom:0.5rem;
-}
 
 
 
@@ -353,6 +463,10 @@ th.checkbox {
 table.sticky-table,
 table.sticky-header {
   width: 100%;
+}
+
+table.sticky-header{
+	position:static;
 }
 
 table.sticky-header th {
@@ -394,16 +508,16 @@ table.sticky-table a {
 
 
 
-.admin-menu .content table td {
+.page-node-edit .content table td {
   padding: 5px;
   text-align: left;
 }
 
-.admin-menu .content table.spaces td.option {
+.page-node-edit .content table.spaces td.option {
   width: 4%;
 }
 
-.admin-menu .content table td.status {
+.page-node-edit .content table td.status {
   padding: 0;
 }
 
@@ -447,39 +561,30 @@ table.sticky-table a {
   width: 40%;
 }
 
-.field-multiple-table tr.odd,
-.field-multiple-table tr.even {
-  background: #f7f7f7;
-}
-
-/* END move up from bottom */
 
 
 
 
 
 
-/* Title Group */
-form .field-multiple-table td.field-multiple-drag a.tabledrag-handle{ padding-right:0; width:4rem;}
-
-.form-item-field-recording-location-new-search-term{
-	width: 100%;
-}
-
-div.field-type-field-collection tr.draggable td div.field-type-text-long {
-	width: 70%;
-	padding-right:1rem;
-}
 
 
 
 
 
-/** Wysiwyg **/
-/* Hide double display of toolbar in TinyMCE */
-.wysiwygToolbar + .wysiwygToolbar {
-    display: none;
-}
+
+
+.form-item-field-recording-location-new-search-term { width: 100%; }
+
+
+
+
+
+
+
+
+
+
 
 /**
 *
@@ -652,6 +757,14 @@ div.kmap-selector button.selectpicker {
 	padding-top: 4px !important;
 }
 
+
+/* classification section filters */
+.form-item-field-location-search-term,
+.form-item-field-location-search-filter-associated-subject,
+.form-item-field-location-search-filter-feature-type{
+	display:block;
+}
+
 /* Transcript Accordion - input label */
 .form-item-field-transcript-und-0 label{
 	margin-left:4rem;
@@ -671,10 +784,7 @@ div.kmap-selector button.selectpicker {
 
 
 
-/* Availability & Access Section */
-.group-availability-access fieldset.date-combo.form-wrapper{
-	margin-bottom: 0;
-}
+
 
 /* transcript section */
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
@@ -702,6 +812,18 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 
+
+
+
+
+
+
+/* Availability & Access Section */
+.group-availability-access fieldset.date-combo.form-wrapper{
+	margin-bottom: 0;
+}
+
+
 .group-rights .field-widget-text-textfield{ padding-bottom: 0 !important; }
 
 .group-rights .form-type-textfield,
@@ -723,39 +845,20 @@ input#field_transcript_value.text-full.form-control.form-inline{
 
 
 div.field-type-field-collection tr.draggable td div[class*="field-type-"] { 
-	/*float: left;*/
+	float: left;
 	border: none;
 	margin-right:1.5rem;
 }
 
-div.field-type-field-collection tr.draggable td div[class*="field-type-"] label {
-	/*margin-top:1rem;
-	margin-bottom: 0.25rem;*/
-}
 
 
-.form-item.form-type-select { padding: 0 0.25em 0 0; }
-
-.form-type-textfield label,
-.form-item.form-type-select label{ 
-	display:block; 
-	font-size: 0.88em; 
-	margin-bottom:0.2rem;
-	margin-left: 1.5rem;
-	margin-top: 1rem;
-}
-
-.form-type-textfield label{
-	/*margin-left: 2.5rem;*/
-}
 
 .pagerer_admin_panes_config .form-type-select label {
   display: none;
 }
 
-form table td.label {
-  padding-top: 0.68em !important;
-}
+
+
 
 
 
@@ -779,18 +882,18 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   max-width: 25rem !important;
 }
 
-.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a{
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
 	line-height: 2em;
 	height: 2em;
 }
 
-.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a:active{
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
 	/*background: #e0e0e0;*/
 	color:#000;
 }
 
-.admin-menu .bootstrap-select.btn-group .dropdown-menu dt{
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
 	padding: 6px 20px 4px 14px;
 	background-color: #eee;
 	font-weight: bold;
@@ -803,29 +906,26 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	border-radius: 0;
 }
 
-.admin-menu .bootstrap-select.btn-group .dropdown-menu .divider{
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu .divider{
 	margin:0;
 }
 
 /* Dropdown with header - Collections selection, reducing space left of list items */
-.admin-menu .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	padding-left: 18px;
 }
 
-.admin-menu .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	padding-left: 15px;
 }
 
-.admin-menu .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
 	font-size: 1em;
 }
 
-/* classification section filters */
-div.form-item.form-type-textfield.form-item-field-location-search-term,
-div.form-item.form-type-textfield.form-item-field-location-search-filter-associated-subject,
-div.form-item.form-type-textfield.form-item-field-location-search-filter-feature-type{
-	display:block;
-}
+
+
+
 
 
 
@@ -856,8 +956,10 @@ table.sticky-table .filter-guidelines ul li{
 /**
 * BEGIN Typeahead Menu
 */
-.kmaps-tt-menu{
+.kmaps-tt-menu,
+.twitter-typeahead{
 	padding-top:0 !important;
+	text-rendering: optimizeSpeed;
 }
 
 .kmaps-tt-header{
@@ -937,116 +1039,64 @@ table.sticky-table .filter-guidelines ul li{
 */
 
 /* list items <div> wrapper */
-.admin-menu .kmaps-tt-suggestion{
+.page-node-edit .kmaps-tt-suggestion{
 	padding: 3px 20px 1px;
 }
 /* list items key-word term */
-.admin-menu .kmaps-tt-suggestion .kmaps-term{
+.page-node-edit .kmaps-tt-suggestion .kmaps-term{
 	color: #000;
 }
 /* list items key-word ancestors */
-.admin-menu .kmaps-ancestors{
+.page-node-edit .kmaps-ancestors{
 	display:inline;
 	color:#333;
 }
 
 
-.admin-menu .kmaps-tt-suggestion:hover .kmaps-term,
-.admin-menu .kmaps-tt-suggestion:hover .kmaps-ancestors,
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
+.page-node-edit .kmaps-tt-suggestion:hover .kmaps-term,
+.page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
 	color:#fff;
 }
 
-.admin-menu .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
 	color:#f0f0f0; 
-}
-
-
-/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.admin-menu .kmap_filter_box .selected-kmap:not(:first-child)::before{
-	content: '(or)';
-	width: 2.5em;
-	color: #888;
-}
-/* overrides css in shanti_kmaps_fields.typeahead.css #6 */
-.admin-menu .kmap_filter_box.kmaps-conjunctive-filters .selected-kmap:not(:first-child)::before{
-	content: '(and)';
-	width: 3em;
-	color: #888;
-}
-
-.kmap_filter label,
-.kmap_search label{
-	text-transform: capitalize;
-	padding-left:1rem;
-	font-weight: normal;
-}
-
-.kmap_filter label span,
-.kmap_search label span{
-	text-transform: uppercase;
-	font-weight: bold;
-}
-/*
-.kmap_search .description p,
-.kmap_filter .description p{
-	margin: 1rem 0 0.3rem 2rem;
-	font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-	font-style: italic;
-}
-*/	
-.field-name-field-location .kmap_filter{
-	clear:none;
-	width: 49%;
-	float: left;
-	padding-bottom: 1.5rem;
-}
-
-.kmap_filter.form-wrapper{
-	padding-top:1rem;
-}
-
-.field-name-field-location #field_location_filter_associated_subject{
-	margin-right:2%;
-}
-
-.kmap_filter_box{
-	/*margin-bottom: 3rem;*/
-	padding-left: 1rem;	
 }
 
 
 /**
 * KMAPS - Search 
 */
-.kmap_search .twitter-typeahead{
+.kmap-typeahead-picker .twitter-typeahead{
 	width: 49%;
 }
 
-.field-name-field-location .kmap_search{
+.field-name-field-location .kmap-typeahead-picker{
 	border-top:1px solid #ccc;
 	padding-top:2rem;
 }
 
-.kmap_search_header p{
+.kmap-search-header p{
 	margin: 0 0 1.5rem 1rem;
 }
 
-.mb-av-form .field-accordion .field-name-field-subject .panel-body,
-.mb-av-form .field-accordion .field-name-field-subcollection-new .panel-body{
+.field-name-field-subject .panel-body,
+.field-name-field-subcollection-new .panel-body{
 	padding-top: 1.5rem !important;
 }
 
-.field-name-field-subject .kmap_search_header,
-.field-name-field-subcollection-new .kmap_search_header{
+.field-name-field-subject .kmap-search-header,
+.field-name-field-subcollection-new .kmap-search-header{
 	display:none;
 }
 
-
+.form-type-textfield.form-item-field-subject-search-term{
+	display:block;
+}
 
 
 
@@ -1119,8 +1169,13 @@ table.sticky-table .filter-guidelines ul li{
 	padding: 1rem 3rem 0 0;
 }
 
+.group-technical .field-name-field-pbcore-date-available .date-float{
+	margin-top: 2rem;
+}
 
-
-
+.group-technical .field-name-field-pbcore-date-available .date-no-float.start-date-wrapper{
+	display: inline;
+	margin-left: 5rem;
+}
 
 

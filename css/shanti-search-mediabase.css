@@ -67,6 +67,12 @@
   display: none;
 }
 
+.input-section .form-radios.shanti-options{
+  clear: both;
+  position: relative;
+  top: -2rem;
+}
+
 .input-section .shanti-options .form-item {
  /*width: 48%;*/
   margin-right: 1rem;
