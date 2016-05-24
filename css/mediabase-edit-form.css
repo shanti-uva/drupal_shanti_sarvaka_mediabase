@@ -395,7 +395,9 @@ form .field-multiple-table td.field-multiple-drag a.tabledrag-handle { padding-r
 
 
 
-
+.node-audio-form .mb-av-form #accordionedit-field-audio-und-0-settings {
+    display: none;
+}
 
 
 
