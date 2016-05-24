@@ -278,7 +278,11 @@
       border-collapse: separate;
     }
 */
-
+.node-type-collection.tab-pane.main-col > div.region-content,
+.page-collections-all .tab-pane.main-col > div.region-content{
+  padding-left:15px;
+  padding-right:15px;
+}
 
 .page-collections-list #block-system-main.block.block-system {
   width: 100%;
