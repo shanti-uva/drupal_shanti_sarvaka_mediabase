@@ -114,7 +114,9 @@
 }
 
 
-
+.mb-av-form .mb_oldthumb {
+    display: none;
+}
 
 
 
