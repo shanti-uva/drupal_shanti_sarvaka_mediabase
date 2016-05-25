@@ -470,11 +470,12 @@ table.sticky-header {
 }
 
 table.sticky-header{
-	position:static;
+	position:static !important;
 }
 
 table.sticky-header th {
   padding-left: 1em;
+  position:static;
 }
 
 table.sticky-table td {
