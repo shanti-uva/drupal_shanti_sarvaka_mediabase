@@ -916,7 +916,7 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 
 /* Dropdown with header - Collections selection, reducing space left of list items */
 .page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
-	padding-left: 18px;
+	/*padding-left: 18px;*/
 }
 
 .page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
@@ -927,7 +927,16 @@ table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
 	font-size: 1em;
 }
 
-
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+	background-color: #60d2d0;
+    background-image: -webkit-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
+    background-image: -o-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2db6b4), to(#60d2d0));
+    background-image: linear-gradient(to bottom, #2db6b4 0, #60d2d0 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x*/
+}
 
 
 
