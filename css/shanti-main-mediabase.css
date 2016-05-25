@@ -874,7 +874,7 @@ a.hide-annot::before {
   z-index: 1000 !important;
   min-width: 550px;
   /*max-height:280px;*/
-  overflow-x:hidden
+  overflow:hidden
 }
 
 @media (max-width: 600px) { 
@@ -910,11 +910,11 @@ div.ctools-modal-content .modal-content {
 }
 
 div.ctools-modal-content button.btn.btn-primary{
-  margin-left: 50%;
+  /*margin-left: 50%;
   margin-top: 3rem;
   position: relative;
   left: -6em;
-  padding: .5rem 2rem .4rem;
+  padding: .5rem 2rem .4rem;*/
 }
 
 div.ctools-modal-content .btn.btn-delete.btn-primary{
@@ -961,8 +961,8 @@ div.ctools-modal-content .modal-title{
 
 div.ctools-modal-content a.close{
   position: relative;
-  right: -0.5rem;
-  top: -2rem;
+  right: 0;
+  top: -3rem;
   width: 2em;
   height: .01rem;
   font-size: 0.5em;
@@ -979,12 +979,20 @@ div.ctools-modal-content a.close::after{
   content: 'X';
   position: relative;
   font-size: 3em;
-  top: 1.8rem;
+  top: 2.3rem;
 }
 
 div.ctools-modal-content a.close img{
   display:none;
 }
+/* radio button labels input position */
+div.ctools-modal-content .vertical-tabs label.radio-inline{
+  width: auto !important;
+  padding-left: 0;
+}
+
+
+
 
 
 
