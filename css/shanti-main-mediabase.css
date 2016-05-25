@@ -991,7 +991,10 @@ div.ctools-modal-content .vertical-tabs label.radio-inline{
   padding-left: 0;
 }
 
-
+div.ctools-modal-content .form-item label{
+  float:none;
+  width:100%;
+}
 
 
 
