@@ -362,6 +362,10 @@
 .tcu-info .editable-cancel .glyphicon-remove::before,
 .speaker-tiers .editable-cancel .glyphicon-remove::before{
   content:'Cancel';
+  font-size: 1.12em;
+  position: relative;
+  bottom: .2rem;
+  left: 1rem;
 }
 .tcu-info .glyphicon,
 .speaker-tiers .glyphicon{
@@ -444,6 +448,7 @@
 .tcu-info .speaker-name .tt-hint{
   margin-bottom:0.5rem;
   font-size:0.88em;
+  font-size:1em; /* this larger size is better for tibetan fonts */
   padding-left:0.6rem;
 }
 
@@ -479,11 +484,17 @@
 }
 
 .tcu-info .btn.play-range{
-  padding: .2rem 1rem;
+  padding: .2rem 1rem .2rem .75rem;
+}
+
+.tcu-info .btn.play-range:hover,
+.tcu-info .btn.play-range:focus{
+  background: #f9f9f9;
+  border: 1px solid #ccc;
 }
 
 .tcu-info .range-display output{
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family:helvetica, arial, sans-serif;
   width: auto;
 }
@@ -510,12 +521,12 @@
 .has-transcript .tabs.primary li a.transcript-edit::after{
   content: '\f040';
   font-family:'FontAwesome';
-  color: #eee;
+  color: #f9f9f9;
   font-size: 1.25em;
   position: relative;
   top: -0.055rem;
   right: -0.5rem;
-  text-shadow: 1px 1px 0 #999;
+  text-shadow: 1px 1px #777;
 }
 
 .has-transcript .tabs.primary li.active a.transcript-edit::after{
@@ -1770,7 +1781,9 @@
   color:red;
 }
 
-
+.modal.tcu-delete-modal.in .close span{
+  font-size: 1.5em;
+}
 
 
 
