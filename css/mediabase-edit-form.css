@@ -1272,4 +1272,7 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 
+.modal-content .file-image-form div.vertical-tabs {
+    display: none;
+}
 
