@@ -191,14 +191,6 @@ input.form-inline {
 	display: inline;
 }
 
-div.file-widget.form-managed-file > * {
-	/*display: inline;*/
-}
-
-.node-form .form-item .file-widget.form-managed-file {
-	padding-left: 1.75em;
-}
-
 
 
 
@@ -214,7 +206,7 @@ div.file-widget.form-managed-file > * {
 	display: inline;
 	float: right;
 	position:relative;
-	top:1.75rem;
+	top:4rem;
 	right:1rem;
 }
 
@@ -405,24 +397,8 @@ form .field-multiple-table td.field-multiple-drag a.tabledrag-handle { padding-r
 
 
 
-/*
 
-.form-item .description {
-  font-size: 0.93em;
-  margin-top: 0.25em;
-  margin-bottom: .75em;
-  padding-left: 1.75em;
-  max-width: 50em;
 
-  font-style: italic;
-	color: #222;
-}
-
-.description p{
-	font-style: italic;
-	color: #000;
-}
-*/
 
 
 
@@ -685,6 +661,22 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 
 
 
+/* under input */
+.form-item .description {
+  font-size: 0.93em;
+  margin-top: 0.25em;
+  margin-bottom: .75em;
+  padding-left: 1.75em;
+  max-width: 50em;
+
+  font-style: italic;
+	color: #222;
+}
+
+.description p{
+	font-style: italic;
+	color: #000;
+}
 
 
 
@@ -821,7 +813,6 @@ div.kmap-selector button.selectpicker {
 	padding-top: 4px !important;
 }
 
-
 /* classification section filters */
 .form-item-field-location-search-term,
 .form-item-field-location-search-filter-associated-subject,
@@ -829,9 +820,24 @@ div.kmap-selector button.selectpicker {
 	display:block;
 }
 
-/* Transcript Accordion - input label */
+
+
+
+
+
+
+
+/**
+* Transcript Section 
+*/
+
+/* Transcript upload file feature */
+.file-widget.form-managed-file {
+	padding-left: 1.75em;
+}
+
 .form-item-field-transcript-und-0 label{
-	margin-left:4rem;
+	margin-left:2rem;
 	margin-bottom:0.2rem;
 }
 
@@ -839,18 +845,6 @@ div.kmap-selector button.selectpicker {
 	font-size: 1.5em;
 }
 
-.form-item-field-transcript-und-0 button{
-	font-size: .75em;
-	padding: .38em 1.5em .25em;
-	position: relative;
-	top:3.5rem;
-}
-
-
-
-
-
-/* transcript section */
 input#edit-field-transcripts-xsl-und-0-upload.form-file,
 input#edit-field-transcript-und-0-upload--2.form-file{ width:20rem;}
 
@@ -858,6 +852,25 @@ input#field_transcript_value.text-full.form-control.form-inline{
   margin-right: 0.5rem;
   color: #444;
 }
+
+.form-item-field-transcript-und-0 button{
+	font-size: .75em;
+	padding: .38em 1.5em .25em;
+	position: relative;
+	top:3.5rem;
+	display: inline;
+}
+
+.form-item-field-transcript-und-0 .description{
+	font-size: 0.93em;
+	margin-left: 2rem;	
+}
+
+
+
+
+
+
 
 /** Workflow Fields **/
 #edit-field-workflow-und-0-field-edl-log-files,
@@ -1173,7 +1186,7 @@ table.sticky-table .filter-guidelines ul li{
 /* Technical metadata bottom add-row link */
 .field-type-datetime.field-name-field-pbcore-date-available .tabledrag-toggle-weight-wrapper{
 	position:relative;
-	top:6.5rem;
+	top:9.3rem;
 }
 
 /* technical metadata section dates & times */
