@@ -589,6 +589,65 @@ table.sticky-table a {
 
 
 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
+	line-height: 2em;
+	height: 2em;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
+	/*background: #e0e0e0;*/
+	color:#000;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
+	padding: 6px 20px 4px 14px;
+	background-color: #eee;
+	font-weight: bold;
+	border-top: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+	/* target collection smenu single top header , but will look for exceptions to this model and address those seperately */
+	padding: 8px 20px 4px 14px;
+	border-top: none;
+	border-radius: 0;
+}
+
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu .divider{
+	margin:0;
+}
+
+/* Dropdown with header - Collections selection, reducing space left of list items */
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+	/*padding-left: 18px;*/
+}
+/*
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+	padding-left: 15px;
+}
+
+.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
+	font-size: 1em;
+}
+*/
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.page-node-edit .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+	background-color: #60d2d0;
+    background-image: -webkit-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
+    background-image: -o-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2db6b4), to(#60d2d0));
+    background-image: linear-gradient(to bottom, #2db6b4 0, #60d2d0 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x*/
+}
+
+
+
+
+
+
+
+
 
 
 /**
@@ -868,76 +927,18 @@ div.field-type-field-collection tr.draggable td div[class*="field-type-"] {
 
 
 
-/* Collections select menu Icon */
-.field-name-field-og-collection-ref .bootstrap-select.btn-group .dropdown-menu {
-	/*font-size: 0.93em;
-	padding-top:0;*/
-}
 
-.field-accordion.field-widget-kmap-typeahead-picker .field-type-group label .icon.shanticon-create{
-  /*font-size: 1.68rem;*/
-}
 
-/* Collections selection, some names are long so extending this */
-.field-name-field-og-collection-ref .bootstrap-select.form-control{
-	/*max-width: 45rem;*/
-}
+
+
+
+
+
 
 table.field-multiple-table .bootstrap-select.btn-group .dropdown-menu {
   max-width: 25rem !important;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
-	line-height: 2em;
-	height: 2em;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
-	/*background: #e0e0e0;*/
-	color:#000;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
-	padding: 6px 20px 4px 14px;
-	background-color: #eee;
-	font-weight: bold;
-	border-top: 2px solid #ddd;
-	border-bottom: 1px solid #ddd;
-
-	/* target collection smenu single top header , but will look for exceptions to this model and address those seperately */
-	padding: 8px 20px 4px 14px;
-	border-top: none;
-	border-radius: 0;
-}
-
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu .divider{
-	margin:0;
-}
-
-/* Dropdown with header - Collections selection, reducing space left of list items */
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
-	/*padding-left: 18px;*/
-}
-
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
-	padding-left: 15px;
-}
-
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
-	font-size: 1em;
-}
-
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
-	background-color: #60d2d0;
-    background-image: -webkit-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
-    background-image: -o-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2db6b4), to(#60d2d0));
-    background-image: linear-gradient(to bottom, #2db6b4 0, #60d2d0 100%);
-    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
-    background-repeat: repeat-x*/
-}
 
 
 
@@ -1248,5 +1249,13 @@ table.sticky-table .filter-guidelines ul li{
 .page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
   display: none;
 }
+
+
+
+
+.container-inline-date .description{
+	margin-left: 2rem;
+}
+
 
 
