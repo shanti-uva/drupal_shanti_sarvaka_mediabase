@@ -1632,12 +1632,6 @@ h4.node-desc-type {
   .shanti-filters .control-box-cell-filters{
     width: 33.333%;
   }
-
-  .sidebar-second,
-  .region-sidebar-second{
-    background-color: #fff;
-    border-radius: 0.3rem 0 0 0;
-  }
 } 
 
 @media (min-width:1100px) {}
