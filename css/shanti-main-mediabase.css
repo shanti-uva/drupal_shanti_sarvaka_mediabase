@@ -1490,11 +1490,24 @@ h4.node-desc-type {
 /*-------------------------*/
 @media screen and (max-width: 993px) {
 
-  .sidebar-second.col-xs-6 { position: absolute; top: 0; width:25%; }
+  .sidebar-second.col-xs-6 { position: absolute; top: 0; width:25%; min-width:275px; }
   .row-offcanvas-right { right: 0; }
-  .row-offcanvas-right .sidebar-second { right:-25%; /* right: -50%;  6 columns */}
-  .row-offcanvas-right.active { right:25%; /* right: 50%;  6 columns */}
-  .row-offcanvas-right.active .sidebar-second { width:25%; /* width: 18.5rem; */ }  
+  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important; }
+  .row-offcanvas-right .sidebar-second { right:-275px; }
+  .row-offcanvas-right.active { right:275px; }
+  .row-offcanvas-right.active .sidebar-second { width:275px; }  
+  /*
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::before,
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } */
 }
 
 
