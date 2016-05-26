@@ -1481,6 +1481,23 @@ h4.node-desc-type {
 
 
 
+
+
+
+
+/*-------------------------*/
+/***** BEGIN max-width *****/
+/*-------------------------*/
+@media screen and (max-width: 993px) {
+
+  .sidebar-second { width:25%; }
+  .row-offcanvas-right { right: 0; }
+  .row-offcanvas-right .sidebar-second { right:-25%; /* right: -50%;  6 columns */}
+  .row-offcanvas-right.active { right:25%; /* right: 50%;  6 columns */}
+  .row-offcanvas-right.active .sidebar-second { width:25%; /* width: 18.5rem; */ }  
+}
+
+
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
