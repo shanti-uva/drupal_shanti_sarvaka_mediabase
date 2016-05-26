@@ -1495,15 +1495,17 @@ h4.node-desc-type {
   .row-offcanvas-right .sidebar-second { right:-275px; }
   .row-offcanvas-right.active { right:275px; }
   .row-offcanvas-right.active .sidebar-second { width:275px; }  
-
   .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; }
-  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;}
-  
-  .view-offcanvas-sidebar.btn-default .icon:before{
+  .view-offcanvas-sidebar.btn-default .icon{
+    position: relative;
+    top: -0.1rem;
+    left:0.3rem;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+  /* target only front page to show button */
+  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;}
 
 
   /*
