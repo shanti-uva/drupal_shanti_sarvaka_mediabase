@@ -109,6 +109,11 @@
 .front .sidebar-second {
   z-index: 1;
 } 
+
+.region-sidebar-second{
+  margin: 0 1.5rem;
+}
+
 .sidebar-second ul {
   list-style: square inside none;
   /* -webkit-margin-before: 1rem;
