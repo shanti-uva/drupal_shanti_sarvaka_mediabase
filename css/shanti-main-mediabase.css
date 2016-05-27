@@ -1570,7 +1570,10 @@ h4.node-desc-type {
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default .icon { float: left; right: -0.3rem; }
   .view-offcanvas-sidebar.btn-default .icon::before { font-family: 'shanticon'; content: '\e63e'; }
 
-
+  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon{
+    position:relative;
+    top:0.7rem;
+  }
 
 }
 
