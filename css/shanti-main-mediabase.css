@@ -1499,6 +1499,8 @@ h4.node-desc-type {
 
 @media screen and (max-width: 1150px) {
 
+  body.sidebar-second .content-section.col-md-9{ width:100%; }
+
   /* target only front page to show button */
   body.sidebar-second .view-offcanvas-sidebar.btn-default { 
 
