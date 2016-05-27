@@ -1488,7 +1488,7 @@ h4.node-desc-type {
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 1150px) {
 
   .sidebar-second.col-xs-6 { position: absolute; top: 0; width:25%; min-width:275px; }
   .row-offcanvas-right { right: 0; }
@@ -1507,19 +1507,6 @@ h4.node-desc-type {
   /* target only front page to show button */
   .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;}
 
-
-  /*
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::before,
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon::after {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  } */
 }
 
 
