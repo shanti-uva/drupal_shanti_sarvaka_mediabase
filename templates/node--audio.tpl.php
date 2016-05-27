@@ -132,7 +132,7 @@ if($teaser):
     </div> <!-- end body-wrap -->
 
     <div class="footer-wrap">
-      <?php if($coll): ?>
+      <?php if($coll && isset($coll->url, $coll->title)): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
             	class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
