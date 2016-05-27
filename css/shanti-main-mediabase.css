@@ -99,11 +99,8 @@
 * BEGIN Right Sidebar
 */
 .sidebar-second {
-  padding: 0 0 0 0.6rem;
   padding:0;
   margin-top: 1rem;
-  border: 1px solid #e5e5e5;
-  border-right-width:0;
 }
 /* hide carousel nav arrows underneath */
 .front .sidebar-second {
@@ -111,7 +108,9 @@
 } 
 
 .region-sidebar-second{
-  margin: 2.25rem 1.5rem 5rem 2rem;
+  padding: 1rem 1.5rem 5rem 2rem;
+  border: 1px solid #e5e5e5;
+  border-width:1px 0 0 1px;
 }
 
 .sidebar-second ul {
@@ -1528,9 +1527,9 @@ h4.node-desc-type {
 
   .row-offcanvas-right { right: 0; }
   .sidebar-second.col-xs-6 { /*position: absolute; top: 0; width:25%; min-width:275px; */}
-  .row-offcanvas-right .sidebar-second { right:-275px; position: absolute; top: 0; width:25%; min-width:275px; }
+  .row-offcanvas-right .sidebar-second { background:transparent; right:-275px; position: absolute; top: 0; width:25%; min-width:275px; }
   .row-offcanvas-right.active { right:275px; }
-  .row-offcanvas-right.active .sidebar-second { width:275px; }  
+  .row-offcanvas-right.active .sidebar-second { width:275px; background:#fff;}  
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; display: none !important;}
 
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default {
