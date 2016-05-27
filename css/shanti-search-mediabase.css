@@ -34,6 +34,7 @@
 
 .input-section .form-item-search-block-form{
   margin-top:0;
+  display: block;
 }
 
 .advanced-view .form-group:nth-of-type(1) { margin: 0 0 0 2rem;}
