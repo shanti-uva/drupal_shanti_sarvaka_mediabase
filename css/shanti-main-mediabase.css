@@ -1488,11 +1488,11 @@ h4.node-desc-type {
 /*-------------------------*/
 /***** BEGIN max-width *****/
 /*-------------------------*/
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 991px) {
 
-  .sidebar-second.col-xs-6 { position: absolute; top: 0; width:25%; min-width:275px; }
+  .sidebar-second.col-xs-6 { /*position: absolute; top: 0; width:25%; min-width:275px; */}
   .row-offcanvas-right { right: 0; }
-  .row-offcanvas-right .sidebar-second { right:-275px; }
+  .row-offcanvas-right .sidebar-second { right:-275px; position: absolute; top: 0; width:25%; min-width:275px; }
   .row-offcanvas-right.active { right:275px; }
   .row-offcanvas-right.active .sidebar-second { width:275px; }  
   .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; }
@@ -1504,8 +1504,16 @@ h4.node-desc-type {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+
+  .view-offcanvas-sidebar.btn-default { display: inline-block !important; }
+
+}
+
+@media screen and (max-width: 1150px) {
+
   /* target only front page to show button */
   .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;
+    
     background: #444;
     font-size: 1rem;
     width: 2.6rem;
@@ -1530,8 +1538,6 @@ h4.node-desc-type {
   }
 
 }
-
-
 /*-------------------------*/
 /***** BEGIN min-width *****/
 /*-------------------------*/
