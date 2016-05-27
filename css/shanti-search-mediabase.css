@@ -69,8 +69,8 @@
 
 .input-section .form-radios.shanti-options{
   /* clear: both; */
-  position: relative;
-  top: -2.5rem;
+  /*position: relative;
+  top: -2.5rem;*/
 }
 
 .input-section .shanti-options .form-item {
