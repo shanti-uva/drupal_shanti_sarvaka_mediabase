@@ -131,7 +131,7 @@
 }
 
 .sidebar-second .block {
-  padding: 1rem 2rem .3rem 1.5rem;
+  /*padding: 1rem 2rem .3rem 1.5rem; This is blowing out the search panel input mark may 26, 2016 */
 }
 
 .sidebar-second .bootstrap-select.form-control .selectpicker {
