@@ -1496,7 +1496,9 @@ h4.node-desc-type {
 @media screen and (max-width: 1150px) {
 
   /* target only front page to show button */
-  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;
+  .front.logged-in .view-offcanvas-sidebar.btn-default { 
+
+    display: inline-block !important;
 
     background: #444;
     font-size: 1rem;
@@ -1536,9 +1538,19 @@ h4.node-desc-type {
     transform: rotate(180deg);
   }
 
-  .view-offcanvas-sidebar.btn-default { 
-    display: inline-block !important; 
+  .view-offcanvas-sidebar.btn-default .icon {
+    background: transparent;
+    line-height: 1;
+    font-size: 1.68rem;
+    width: 2rem;
+    position: relative;
+    top: 0rem;
   }
+
+  .row-offcanvas-right .view-offcanvas-sidebar.btn-default .icon { float: left;right: -0.3rem; }
+  .view-offcanvas-sidebar.btn-default .icon::before { font-family: 'shanticon';content: '\e63e'; }
+
+  .view-offcanvas-sidebar.btn-default { display: inline-block !important; }
 
 }
 
