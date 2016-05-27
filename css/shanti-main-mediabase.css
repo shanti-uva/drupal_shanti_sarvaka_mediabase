@@ -1500,7 +1500,7 @@ h4.node-desc-type {
 @media screen and (max-width: 1150px) {
 
   /* target only front page to show button */
-  .front.logged-in .view-offcanvas-sidebar.btn-default { 
+  body.sidebar-second .view-offcanvas-sidebar.btn-default { 
 
     display: inline-block !important;
 
