@@ -58,12 +58,12 @@
 .content-section.equal-height.col-md-9 > .tab-content.container-fluid::after{
   /* padding-bottom: 7rem; */
 }
-
+/*
 .tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
-  /*margin-left: -1.5rem;
-  margin-right: -1.5rem;*/
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
 }
-
+*/
 .node-type-audio #block-system-main,
 .node-type-video #block-system-main{
   margin-top: 0;
@@ -92,140 +92,6 @@
 .node-type-team .tab-pane.main-col > div{
   padding-top:0.5rem;
 }
-
-
-
-/**
-* BEGIN Right Sidebar
-*/
-.sidebar-second {
-  padding:0;
-  margin-top: 1rem;
-}
-/* hide carousel nav arrows underneath */
-.front .sidebar-second {
-  z-index: 1;
-} 
-
-.region-sidebar-second{
-  padding: 1rem 1.5rem 5rem 2rem;
-  border: 1px solid #e5e5e5;
-  border-width:1px 0 0 1px;
-}
-
-.sidebar-second ul {
-  list-style: square inside none;
-  /* -webkit-margin-before: 1rem;
-  -webkit-margin-after: 1rem; */
-  -webkit-margin-before: 0rem;
-  -webkit-margin-after: 0rem;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  /* -webkit-padding-start: 0.7143rem;
-  padding-left: 0.7143rem; */
-  -webkit-padding-start: 0;
-  padding-left: 0;
-  margin-left: 0.7rem;
-}
-
-.sidebar-second ul li a,
-.sidebar-second ul li a:hover,
-.sidebar-second ul li a:active {
-  border-bottom-width: 1px !important;
-}
-
-.sidebar-second .block {
-  /*padding: 1rem 2rem .3rem 1.5rem; This is blowing out the search panel input mark may 26, 2016 */
-}
-
-.sidebar-second .bootstrap-select.form-control .selectpicker {
-  width: 100% !important;
-}
-
-.sidebar-second .bootstrap-select.btn-group .btn .caret{
-  position: absolute;
-  top: 3px;
-  right: 2.5rem;
-}
-
-/* upload video-audio */
-.region-sidebar-second .block-mb-structure .btn.btn-icon{
-  letter-spacing: 0.03rem;
-  font-size: 1em;
-  line-height: 2.25em;
-  padding-left: 5.6rem;
-}
-
-.region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
-  width: 3em;
-  line-height:2.5em;
-}
-
-.region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
-  line-height: 2.5em;
-  font-size: 85%;
-  padding-left:0;
-}
-
-.region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
-  max-width: 90%;
-}
-
-.region-sidebar-second .block-mb-structure form > div{
-  font-size:0.93em;
-}
-
-/**
-* Sidebar filter search results
-*/
-.sidebar #block-apachesolr-search-sort ul li {
-  list-style-type: none;
-}
-
-.sidebar #block-apachesolr-search-sort ul li img {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-.sidebar #block-apachesolr-search-sort ul li a {
-  background: transparent;
-  font-weight: normal;
-  display: block;
-}
-
-.sidebar #block-apachesolr-search-sort ul li a.active {
-  font-weight: bold;
-}
-
-.sidebar #block-apachesolr-search-sort ul li a::before {
-  content: '';
-  width: 0.9rem;
-  height: 0.9rem;
-  background: transparent;
-  border: 2px solid #5b68ce;
-  display: inline-block;
-  border-radius: 50%;
-  background-clip: padding-box;
-  margin-right: 8px;
-  position: relative;
-  top: -0.1rem;
-}
-
-.sidebar #block-apachesolr-search-sort ul li a:hover::before {
-  background: #5b68ce;
-}
-
-.sidebar #block-apachesolr-search-sort ul li a.active::before {
-  background: #5b68ce;
-}
-
-.region-sidebar-second h4 {
-  font-size: 0.9em;
-  text-transform: uppercase;
-}
-/**
-*** END Right Column */
 
 
 
@@ -1486,6 +1352,140 @@ h4.node-desc-type {
 
 
 
+/**
+* BEGIN Right Sidebar
+*/
+.sidebar-second {
+  padding:0;
+  margin-top: 1rem;
+}
+/* hide carousel nav arrows underneath */
+.front .sidebar-second {
+  z-index: 1;
+} 
+
+.region-sidebar-second{
+  padding: 1rem 1.5rem 5rem 2rem;
+  border: 1px solid #e5e5e5;
+  border-width:1px 0 0 1px;
+}
+
+.sidebar-second ul {
+  list-style: square inside none;
+  /* -webkit-margin-before: 1rem;
+  -webkit-margin-after: 1rem; */
+  -webkit-margin-before: 0rem;
+  -webkit-margin-after: 0rem;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  /* -webkit-padding-start: 0.7143rem;
+  padding-left: 0.7143rem; */
+  -webkit-padding-start: 0;
+  padding-left: 0;
+  margin-left: 0.7rem;
+}
+
+.sidebar-second ul li a,
+.sidebar-second ul li a:hover,
+.sidebar-second ul li a:active {
+  border-bottom-width: 1px !important;
+}
+
+.sidebar-second .block {
+  /*padding: 1rem 2rem .3rem 1.5rem; This is blowing out the search panel input mark may 26, 2016 */
+}
+
+.sidebar-second .bootstrap-select.form-control .selectpicker {
+  width: 100% !important;
+}
+
+.sidebar-second .bootstrap-select.btn-group .btn .caret{
+  position: absolute;
+  top: 3px;
+  right: 2.5rem;
+}
+
+/* upload video-audio */
+.region-sidebar-second .block-mb-structure .btn.btn-icon{
+  letter-spacing: 0.03rem;
+  font-size: 1em;
+  line-height: 2.25em;
+  padding-left: 5.6rem;
+}
+
+.region-sidebar-second .block-mb-structure .btn.btn-primary.btn-icon .icon{
+  width: 3em;
+  line-height:2.5em;
+}
+
+.region-sidebar-second .block-mb-structure .btn.btn-icon span:last-child{
+  line-height: 2.5em;
+  font-size: 85%;
+  padding-left:0;
+}
+
+.region-sidebar-second .bootstrap-select.btn-group .dropdown-menu.open{
+  max-width: 90%;
+}
+
+.region-sidebar-second .block-mb-structure form > div{
+  font-size:0.93em;
+}
+
+/**
+* Sidebar filter search results
+*/
+.sidebar #block-apachesolr-search-sort ul li {
+  list-style-type: none;
+}
+
+.sidebar #block-apachesolr-search-sort ul li img {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a {
+  background: transparent;
+  font-weight: normal;
+  display: block;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a.active {
+  font-weight: bold;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a::before {
+  content: '';
+  width: 0.9rem;
+  height: 0.9rem;
+  background: transparent;
+  border: 2px solid #5b68ce;
+  display: inline-block;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin-right: 8px;
+  position: relative;
+  top: -0.1rem;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a:hover::before {
+  background: #5b68ce;
+}
+
+.sidebar #block-apachesolr-search-sort ul li a.active::before {
+  background: #5b68ce;
+}
+
+.region-sidebar-second h4 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+/**
+*** END Right Column */
+
+
+
 
 
 
@@ -1526,10 +1526,13 @@ h4.node-desc-type {
   }
 
   .row-offcanvas-right { right: 0; }
-  .sidebar-second.col-xs-6 { /*position: absolute; top: 0; width:25%; min-width:275px; */}
-  .row-offcanvas-right .sidebar-second { background:transparent; right:-275px; position: absolute; top: 0; width:25%; min-width:275px; }
   .row-offcanvas-right.active { right:275px; }
-  .row-offcanvas-right.active .sidebar-second { width:275px; background:#fff;}  
+
+  .sidebar-second.col-xs-6 { /*position: absolute; top: 0; width:25%; min-width:275px; */}
+  .row-offcanvas-right .sidebar-second { right:-275px; position: absolute; top: 0; width:25%; min-width:275px; }
+  .row-offcanvas-right.active .sidebar-second { width:275px; }  
+
+
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; display: none !important;}
 
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default {
