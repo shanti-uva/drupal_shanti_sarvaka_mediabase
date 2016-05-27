@@ -1505,7 +1505,29 @@ h4.node-desc-type {
     transform: rotate(180deg);
   }
   /* target only front page to show button */
-  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;}
+  .front.logged-in .view-offcanvas-sidebar.btn-default { display: inline-block !important;
+    background: #444;
+    font-size: 1rem;
+    width: 2.6rem;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: -0.7rem;
+    z-index: 10;
+    background-image: none;
+    border-radius: 0 0.4rem 0.4rem 0;
+    background-clip: padding-box;
+    text-shadow: none;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'museo-sans-500', helvetica, arial, sans-serif;
+    -webkit-transition: background .100ms ease-out;
+    transition: background .100ms ease-out;
+
+    right: -8px;
+  }
 
 }
 
