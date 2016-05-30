@@ -51,12 +51,12 @@
 
 
 
-/* Common elements */
-/* Glyphicon fix */
-.btn-icon .glyphicon {
+
+/* Glyphicon fix - is too general, so need to target */
+/*.btn-icon .glyphicon {
 	font-size: 1.5em;
 	margin-top: -2px;
-}
+}*/
 
 .form-type-textfield, 
 .field-widget-text-textfield,
@@ -84,13 +84,17 @@
   top: -0.15rem !important;
 }
 
-.contextual-links-wrapper a:hover, .contextual-links-wrapper a:active {
+.contextual-links-wrapper a:hover, 
+.contextual-links-wrapper a:active {
   border-bottom: none !important;
 }
 
 
 
 
+input.form-inline {
+	display: inline;
+}
 
 
 
@@ -150,24 +154,7 @@
 
 
 
-.kmap-search-button{
-  background-color: #5b68ce;
-  color: #eee;
-  display: inline-block;
-  padding: 0.5rem 1.5rem 0.2rem;
-  border-radius: .3rem; 
-  border: 1px solid #777;
-  font-family:'museo-sans-500', helvetica, sans-serif;
-  font-size:0.93em;
-  margin-left:0.5rem;
-}
 
-.kmap-search-button:hover,
-.kmap-search-button:active{
-  background: #4850bd;
-  border-color:#4850bd;
-  color:#fff;
-}
 
 
 
@@ -183,13 +170,6 @@
 */
 
 
-
-
-
-
-input.form-inline {
-	display: inline;
-}
 
 
 
