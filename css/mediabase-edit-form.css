@@ -838,7 +838,7 @@ input#field_transcript_value.text-full.form-control.form-inline{
 	font-size: .75em;
 	padding: .38em 1.5em .25em;
 	position: relative;
-	top:3.5rem;
+	/*top:3.5rem;*/
 	display: inline;
 }
 
@@ -1167,7 +1167,7 @@ table.sticky-table .filter-guidelines ul li{
 /* Technical metadata bottom add-row link */
 .field-type-datetime.field-name-field-pbcore-date-available .tabledrag-toggle-weight-wrapper{
 	position:relative;
-	top:9.3rem;
+	top:4.3rem;
 }
 
 /* technical metadata section dates & times */

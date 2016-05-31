@@ -1840,7 +1840,7 @@ h4.node-desc-type {
     }
 
 .front .shanti-filters.bottom{
-  margin-bottom: 5rem;
+  /*margin-bottom: 5rem;*/
 }
 
 .front.logged-in .shanti-filters.bottom{

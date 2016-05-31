@@ -248,12 +248,13 @@
 	              target: $('.main-wrapper')
 	          	});
 	        });
-
+/*
 	        $( document ).ready(function() {
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
 	              target: $('.av-main-video-section')
-	          	});
-//	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
+	          	}); 
+
+	//	          	setTimeout("$('.has-transcript .av-main-wrapper > div').matchHeight({ target: $('.av-main-video-section') })", 1500);
 	        });
 	        
 
@@ -264,10 +265,9 @@
 	        			target: $('.av-main-video-section') 
 	        		});
 				} 
-
             }); 
-
-	         // $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
+*/
+	//	          $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
 	    }
 	  } 
 	};
