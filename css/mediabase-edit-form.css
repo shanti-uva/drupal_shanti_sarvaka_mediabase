@@ -1066,7 +1066,6 @@ table.sticky-table .filter-guidelines ul li{
 	color:#333;
 }
 
-
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-term,
 .page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors,
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
@@ -1076,11 +1075,13 @@ table.sticky-table .filter-guidelines ul li{
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
 	color:#fff;
 }
-
 .page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
 	color:#f0f0f0; 
 }
-
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
+.page-node-edit .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-ancestors{
+        color:gray;
+}
 
 /**
 * KMAPS - Search 
