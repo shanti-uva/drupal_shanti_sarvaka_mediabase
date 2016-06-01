@@ -52,6 +52,46 @@
 
 
 
+
+
+
+.mb-av-form{
+	margin: 1rem 1.5rem;
+}
+
+/* Accordions: space at top, 'mb-av-form' selectors overide Sarvaka */
+.mb-av-form .field-accordion .panel-body{
+  padding: 1rem 2rem 2rem;
+}
+
+.mb-av-form .field-accordion:first-of-type .panel-body{
+	padding-top: 0;
+}
+
+.mb-av-form .field-accordion .field-accordion .panel-body,
+.group-media .field-accordion:first-of-type .panel-body{
+	padding-top: 2rem;
+}
+
+
+
+
+.mb-av-form .mb_oldthumb {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Glyphicon fix - is too general, so need to target */
 /*.btn-icon .glyphicon {
 	font-size: 1.5em;
@@ -96,36 +136,6 @@ input.form-inline {
 	display: inline;
 }
 
-
-
-.mb-av-form{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-/* Accordions: space at top, 'mb-av-form' selectors overide Sarvaka */
-.mb-av-form .field-accordion .panel-body{
-  padding: 1rem 2rem 2rem;
-}
-
-.mb-av-form .field-accordion:first-of-type .panel-body{
-	padding-top: 0;
-}
-
-.mb-av-form .field-accordion .field-accordion .panel-body,
-.group-media .field-accordion:first-of-type .panel-body{
-	padding-top: 2rem;
-}
-
-
-
-
-
-
-
-.mb-av-form .mb_oldthumb {
-    display: none;
-}
 
 
 
