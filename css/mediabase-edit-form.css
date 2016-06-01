@@ -27,24 +27,24 @@
 */
 
 /* BEGIN sub-theme (Admin) colors */
-.page-node-edit .fancytree-container .glyphicon,
-.page-node-edit .fancytree-container .fancytree-node:hover > .glyphicon,
-.page-node-edit .fancytree-container .fancytree-node:active > .glyphicon,
-.page-node-edit .fancytree-node.fancytree-active > .glyphicon,
-.page-node-edit .fancytree-node.fancytree-selected > .glyphicon{
+.mb-av-form .fancytree-container .glyphicon,
+.mb-av-form .fancytree-container .fancytree-node:hover > .glyphicon,
+.mb-av-form .fancytree-container .fancytree-node:active > .glyphicon,
+.mb-av-form .fancytree-node.fancytree-active > .glyphicon,
+.mb-av-form .fancytree-node.fancytree-selected > .glyphicon{
   color: #2db6b4 !important;
 }
 
 /* typeahead hover color to match subtheme */
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
-.page-node-edit .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
+.mb-av-form .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
 	background-color: #2db6b4;
 }
 /* END colors */
 
 
 /* Page layout */
-.page-node-edit #block-system-main.block.block-system { width: 100%; }
+.mb-av-form #block-system-main.block.block-system { width: 100%; }
 .main-content .content-section .view-content { max-width: 100%; }
 
 
@@ -214,16 +214,16 @@ input.form-inline {
 
 
 
-.page-node-edit table tr td.permission .form-item {
+.mb-av-form table tr td.permission .form-item {
   line-height: normal;
   margin-top: 0;
 }
 
-.page-node-edit table tr.odd.add-new:last-child {
+.mb-av-form table tr.odd.add-new:last-child {
   border-bottom: 20px solid transparent;
 }
 
-.page-node-edit tr .form-item {
+.mb-av-form tr .form-item {
   line-height: normal;
 }
 
@@ -271,7 +271,7 @@ textarea {
   margin-bottom: 0.5rem; 
 }
 
-.page-node-edit tr .form-item.form-type-textarea{
+.mb-av-form tr .form-item.form-type-textarea{
   margin-bottom:0.5rem;
 }
 
@@ -401,7 +401,7 @@ form .field-multiple-table td.field-multiple-drag a.tabledrag-handle { padding-r
 
 
 /*
-.page-node-edit .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
+.mb-av-form .table-select-processed th:first-child .icheckbox_minimal-red { margin-left: 6px; }
 
 th.checkbox,
 td.checkbox { display: table-cell; }
@@ -422,7 +422,7 @@ th.checkbox {
 
 
 /* admin make checkboxes plain in features table */
-.page-node-edit .content .features .status {
+.mb-av-form .content .features .status {
   padding: 0;
   background: transparent;
   border: none;
@@ -485,16 +485,16 @@ table.sticky-table a {
 
 
 
-.page-node-edit .content table td {
+.mb-av-form .content table td {
   padding: 5px;
   text-align: left;
 }
 
-.page-node-edit .content table.spaces td.option {
+.mb-av-form .content table.spaces td.option {
   width: 4%;
 }
 
-.page-node-edit .content table td.status {
+.mb-av-form .content table td.status {
   padding: 0;
 }
 
@@ -561,18 +561,18 @@ table.sticky-table a {
 
 
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li>a{
 	line-height: 2em;
 	height: 2em;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a:active{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li>a:hover, 
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li>a:active{
 	/*background: #e0e0e0;*/
 	color:#000;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu dt{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu dt{
 	padding: 6px 20px 4px 14px;
 	background-color: #eee;
 	font-weight: bold;
@@ -585,25 +585,25 @@ table.sticky-table a {
 	border-radius: 0;
 }
 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu .divider{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu .divider{
 	margin:0;
 }
 
 /* Dropdown with header - Collections selection, reducing space left of list items */
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	/*padding-left: 18px;*/
 }
 /*
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
+.mb-av-form .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a.opt{
 	padding-left: 15px;
 }
 
-.page-node-edit .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
+.mb-av-form .collection-details-audience .bootstrap-select.btn-group .dropdown-menu li>a{
 	font-size: 1em;
 }
 */
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
-.page-node-edit .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.mb-av-form .bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
 	background-color: #60d2d0;
     background-image: -webkit-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
     background-image: -o-linear-gradient(top, #2db6b4 0, #60d2d0 100%);
@@ -1068,33 +1068,33 @@ table.sticky-table .filter-guidelines ul li{
 */
 
 /* list items <div> wrapper */
-.page-node-edit .kmaps-tt-suggestion{
+.mb-av-form .kmaps-tt-suggestion{
 	padding: 3px 20px 1px;
 }
 /* list items key-word term */
-.page-node-edit .kmaps-tt-suggestion .kmaps-term{
+.mb-av-form .kmaps-tt-suggestion .kmaps-term{
 	color: #000;
 }
 /* list items key-word ancestors */
-.page-node-edit .kmaps-ancestors{
+.mb-av-form .kmaps-ancestors{
 	display:inline;
 	color:#333;
 }
 
-.page-node-edit .kmaps-tt-suggestion:hover .kmaps-term,
-.page-node-edit .kmaps-tt-suggestion:hover .kmaps-ancestors,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
+.mb-av-form .kmaps-tt-suggestion:hover .kmaps-term,
+.mb-av-form .kmaps-tt-suggestion:hover .kmaps-ancestors,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-term,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected:hover .kmaps-ancestors,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-ancestors:hover,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected .kmaps-term:hover .kmaps-ancestors{
 	color:#fff;
 }
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected:hover{ 
 	color:#f0f0f0; 
 }
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
-.page-node-edit .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-ancestors{
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-term,
+.mb-av-form .kmaps-tt-suggestion.kmaps-tt-zero-facet .kmaps-ancestors{
     color:gray;
 }
 
@@ -1261,7 +1261,7 @@ table.sticky-table .filter-guidelines ul li{
 }
 
 
-.page-node-edit.node-type-audio .field-name-field-thumbnail-image .image-preview {
+.node-type-audio .field-name-field-thumbnail-image .image-preview {
   display: none;
 }
 
