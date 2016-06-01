@@ -1468,6 +1468,14 @@ h4.node-desc-type {
   .page-collections .shanti-filters .control-box-cell-header{
     width: 100% !important;
   }
+
+  .page-collections .shanti-filters .control-box-cell-filters .views-exposed-widget{
+    padding-top:0.7rem;
+  }
+
+  .page-collections .shanti-filters .control-box-cell-pager{
+    margin-top: -4rem;
+  }
 }
   
 @media screen and (min-width:600px) {
@@ -1476,13 +1484,22 @@ h4.node-desc-type {
 
 @media screen and (min-width: 768px) {
 
-  .page-collections .shanti-filters .control-box-cell-header,
   .page-collections .shanti-filters .control-box-cell-filters{
-    width:33% !important;
+    width:37% !important;
+    padding: 0 0 0 2rem;
+  }
+
+  .page-collections .shanti-filters .control-box-cell-filters .views-exposed-widget{
+    padding-left:0;
+    padding-top:0.2rem;
+  }
+
+  .page-collections .shanti-filters .control-box-cell-header{
+    width:30% !important;
   }
 
   .page-collections .shanti-filters .control-box-cell-pager{
-    width: 40% !important;
+    width: 35% !important;
   }
 
   .shanti-filters .control-box-cell-header p {
