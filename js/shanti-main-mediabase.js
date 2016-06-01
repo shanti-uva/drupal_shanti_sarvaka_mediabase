@@ -243,13 +243,13 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	        $( document ).ready(function() {
+/*	        $( document ).ready(function() {
 	        	// $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
 	          	$('.front.logged-in .equal-height, .page-search .equal-height').matchHeight({
 	              target: $('.main-wrapper')
 	          	});
 	        });
-/*
+
 	        $( document ).ready(function() {
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
 	              target: $('.av-main-video-section')
