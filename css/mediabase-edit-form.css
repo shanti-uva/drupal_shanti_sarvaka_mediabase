@@ -1087,8 +1087,8 @@ table.sticky-table .filter-guidelines ul li{
 * KMAPS - Search 
 */
 .field-type-shanti-kmaps-fields-default input.kmap-search-term{
-	width:100%;
-	margin-left: 0;
+	width:100% !important;
+	margin-left: 0 !important;
 }
 
 .kmap-typeahead-picker .twitter-typeahead{
