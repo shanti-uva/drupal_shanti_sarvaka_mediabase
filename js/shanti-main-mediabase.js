@@ -246,7 +246,7 @@
 	        $( document ).ready(function() {
 	        	// $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
 	          	$('.front.logged-in .equal-height, .page-search .equal-height').matchHeight({
-	              target: $('.main-wrapper')
+	              target: $('.tab-content.container-fluid')
 	          	});
 	        });
 /*
