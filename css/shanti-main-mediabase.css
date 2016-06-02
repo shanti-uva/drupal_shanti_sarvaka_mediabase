@@ -368,6 +368,24 @@
   float:right;
 }
 
+
+
+/* new on June 2, 2016 mf8yk */
+.form-item.form-type-select .form-item-sort-bef-combine .btn {
+  width: 15rem;
+}
+
+.form-item.form-type-select .form-item-sort-bef-combine label {
+  display: none;
+}
+
+.form-item.form-type-select .form-item-sort-bef-combine .dropdown-menu.open .disabled {
+  background-color: #d0d0d0;
+}
+
+
+
+
 .page-collections .shanti-filters table.pagerer{
   margin-top: 0;
 }
@@ -1712,22 +1730,10 @@ h4.node-desc-type {
   display: none;
 }
 
-    .front .field-type-text-with-summary p { 
-      padding:0 2rem;
-    }
-
-    /* hiding the sidebar on frontpage at 1150px not default col-md-9 to improve carousel display */
-    .front.logged-in .content-section.col-xs-12.col-md-9{
-      /*width:100% !important;*/
-    }
-
-.front .shanti-filters.bottom{
-  /*margin-bottom: 5rem;*/
+.front .field-type-text-with-summary p { 
+  padding:0 2rem;
 }
 
-.front.logged-in .shanti-filters.bottom{
-  margin-bottom: 0  ;
-}
 
 
 /**
