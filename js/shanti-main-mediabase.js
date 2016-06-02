@@ -245,7 +245,7 @@
 
 	        $( document ).ready(function() {
 	        	// $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	          	$('.front.logged-in .equal-height, .page-search .equal-height').matchHeight({
+	          	$('.front.logged-in .equal-height, .page-search .equal-height, page-node-edit.sidebar-second .equal-height').matchHeight({
 	              target: $('.wrap-all')
 	          	});
 	        });
