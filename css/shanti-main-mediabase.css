@@ -371,15 +371,15 @@
 
 
 /* new on June 2, 2016 mf8yk */
-.form-item.form-type-select .form-item-sort-bef-combine .btn {
+.form-item.form-type-select.form-item-sort-bef-combine .btn {
   width: 15rem;
 }
 
-.form-item.form-type-select .form-item-sort-bef-combine label {
+.form-item.form-type-select.form-item-sort-bef-combine label {
   display: none;
 }
 
-.form-item.form-type-select .form-item-sort-bef-combine .dropdown-menu.open .disabled {
+.form-item.form-type-select.form-item-sort-bef-combine .dropdown-menu.open .disabled {
   background-color: #d0d0d0;
 }
 
