@@ -50,10 +50,14 @@
 
 
 
+.page-mycontent-workflow .tab-pane.main-col {
+	max-width:1200px;
+}
 
 
-
-
+.page-node-edit.no-sidebars .tab-pane.main-col .mb-av-form{
+	max-width:1050px;
+}
 
 .mb-av-form{
 	margin: 1rem 1.5rem;
@@ -538,7 +542,7 @@ table.sticky-table a {
   width: 40%;
 }
 
-
+/* new @june 2016 */
 .views-exposed-form label{
 	font-size:0.8em;
 }
