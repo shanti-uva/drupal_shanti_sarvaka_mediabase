@@ -54,8 +54,8 @@
 	max-width:1200px;
 }
 
-
-.page-node-edit.no-sidebars .tab-pane.main-col .mb-av-form{
+.page-node-edit.node-type-video .tab-pane.main-col,
+.page-node-edit.node-type-audio .tab-pane.main-col{
 	max-width:1050px;
 }
 
