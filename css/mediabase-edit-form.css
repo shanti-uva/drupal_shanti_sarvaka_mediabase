@@ -48,7 +48,7 @@
 .main-content .content-section .view-content { max-width: 100%; }
 .page-node-edit.node-type-video .tab-pane.main-col,
 .page-node-edit.node-type-audio .tab-pane.main-col{
-	max-width:1050px;
+	max-width:1050px !important;
 }
 
 
