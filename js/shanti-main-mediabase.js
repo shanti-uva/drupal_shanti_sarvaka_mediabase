@@ -269,6 +269,11 @@
             }); 
 */
 				//	          $(window).bind('load orientationchange resize', Drupal.behaviors.shantiAVEqualHeights );  
+
+				/* avoid flash on load */
+				$('.avrating').css('display','block');
+
+
 	    }
 	  } 
 	};

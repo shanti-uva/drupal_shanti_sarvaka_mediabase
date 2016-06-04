@@ -199,7 +199,7 @@ else:     /************ FULL Display ***********/
 	        	</div>
 	        <?php endif; ?>
 	        <div class="avauthor"><span class="icon shanticon-agents" title="Creator"></span>  <?php print $user_link;  ?></div>
-	        <div class="avrating">
+	        <div class="avrating" style="display:none;">
 	            <h6>Rating</h6>
 	            <?php print render($content['field_rating']); ?>
 	        </div>
