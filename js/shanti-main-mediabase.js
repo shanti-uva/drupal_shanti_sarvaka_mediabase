@@ -116,7 +116,6 @@
 				    });
 					
 					if(ct > 0 || multip == true) {
-					    console.log(ct, multip);
 						//items.first().nextAll().hide();
 						// Add Show More / Show Less Link
 						items.last().after('<p id="pb-core-desc-readmore" class="show-more"><a href="#">' + Drupal.t('Show More') + '</a></p>');
