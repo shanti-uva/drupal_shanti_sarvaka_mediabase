@@ -46,10 +46,10 @@
 /* Page layout */
 .mb-av-form #block-system-main.block.block-system { width: 100%; }
 .main-content .content-section .view-content { max-width: 100%; }
-
-
-
-
+.page-node-edit.node-type-video.no-sidebars .tab-pane.main-col,
+.page-node-edit.node-type-audio.no-sidebars .tab-pane.main-col{
+	max-width:1050px !important;
+}
 
 
 
@@ -79,14 +79,6 @@
 .mb-av-form .mb_oldthumb {
     display: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -509,33 +501,6 @@ table.sticky-table a {
   border: 1px solid #ddd;
   margin-right: 0.3em;
   line-height: normal;
-}
-
-/* view My Content in My Workflow etc */
-.views-table td.active {
-  background: transparent;
-}
-
-.views-table th {
-  font-size: 0.88em;
-  padding: 0 0.3rem;
-}
-
-.views-field {
-  padding: 0 0.5rem 0 0;
-  font-size: 0.93em;
-}
-
-.views-field img {
-  margin: 0.2rem;
-}
-
-.views-field-realname,td.views-field-created,td.views-field-changed,td.views-field-type {
-  font-size: 0.82em;
-}
-
-.views-table.cols-8 .views-field.views-field-title {
-  width: 40%;
 }
 
 
