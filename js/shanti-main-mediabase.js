@@ -157,7 +157,7 @@
 				        });
 				        if (ishidden) {
 				            $('.node-type-collection .field-type-text-with-summary, .node-type-subcollection .field-type-text-with-summary')
-				                .append('<div class="coldesc-showmore"><a class="link show" href="#">Show more</a></div>');
+				                .append('<div class="coldesc-showmore show-more"><a class="link show" href="#">Show more</a></div>');
 				            $('.coldesc-showmore a.link').click(function(e) {
 				                if ($(this).hasClass('show')) {
 				                    $('.overmax').show();
