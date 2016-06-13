@@ -1314,7 +1314,7 @@ h4.node-desc-type {
 
   .sidebar-second.sidebar-offcanvas.col-xs-6 { /*position: absolute; top: 0; width:25%; min-width:275px; */}
   .row-offcanvas-right .sidebar-second.sidebar-offcanvas { right:-300px; position: absolute; top: 0; width:25%; min-width:275px; }
-  .row-offcanvas-right.active .sidebar-second.sidebar-offcanvas { right:0; width:300px; }  
+  /*.row-offcanvas-right.active .sidebar-second.sidebar-offcanvas { width:300px; }  */
 
 
   .row-offcanvas-right .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; display: block !important;}

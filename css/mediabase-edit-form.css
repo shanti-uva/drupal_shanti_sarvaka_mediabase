@@ -189,7 +189,7 @@ input.form-inline {
 	display: inline;
 	float: right;
 	position:relative;
-	top:4rem;
+	top:2rem;
 	right:1rem;
 	clear:both;
 }
@@ -430,7 +430,7 @@ table.sticky-header {
 }
 
 table.sticky-header{
-	position:static !important;
+	position: absolute !important;
 }
 
 table.sticky-header th {
@@ -1099,12 +1099,6 @@ table.sticky-table .filter-guidelines ul li{
 
 .group-technical .field-type-text.field-name-field-extension-authority input.form-text.form-control{
 	max-width: 100% !important;
-}
-
-/* Technical metadata bottom add-row link */
-.field-type-datetime.field-name-field-pbcore-date-available .tabledrag-toggle-weight-wrapper{
-	position:relative;
-	top:4.3rem;
 }
 
 /* technical metadata section dates & times */
