@@ -141,10 +141,6 @@ input.form-inline {
 	margin: 3em 1.5em 0 0;
 }
 
-.group-transcript .btn-sm.btn-icon.btn-delete{
-	margin-top: -3rem;
-}
-
 .btn-sm.btn-icon.btn-delete span.icon {
 	position: relative;
 	left: -0.78rem;
@@ -917,6 +913,9 @@ table.sticky-table .filter-guidelines ul li{
 
 
 /* BEGIN Typeahead */
+.group-transcript .btn-sm.btn-icon.btn-delete{
+	margin-top: 3rem;
+}
 
 .field-widget-kmap-typeahead-picker .form-type-textfield{
 	display:block;
