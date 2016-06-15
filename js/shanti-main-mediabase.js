@@ -235,19 +235,21 @@
 		}
 	};
 
-
-
-
+	/**
+	 * Set full-height background white on sidebars
+	 */
 	Drupal.behaviors.shantiAVEqualHeights = {
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	        $( document ).ready(function() {
-	        	// $('.front.logged-in .equal-height,.node-type-collection .equal-height,.page-search .equal-height').matchHeight({
-	        		// $('.front.logged-in .equal-height, .page-search .equal-height, .page-node-edit.sidebar-second .equal-height').matchHeight({
-	          	$('.sidebar-second .equal-height').matchHeight({
-	              target: $('.wrap-all')
-	          	});
+	        $(window).load(function() {
+	        	// $('.front.logged-in .equal-height, .page-search .equal-height, .page-node-edit.sidebar-second .equal-height').matchHeight({
+	        	function set_equal_heights() {
+		          	$('.sidebar-second .equal-height').matchHeight({
+		              target: $('main.main-wrapper')
+		          	});
+	            };
+	            window.setTimeout( set_equal_heights, 2000 );
 	        });
 /*
 	        $( document ).ready(function() {
