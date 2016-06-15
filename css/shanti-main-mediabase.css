@@ -1255,7 +1255,8 @@ h4.node-desc-type {
   background: #5b68ce;
 }
 
-.region-sidebar-second h3{
+.region-sidebar-second h3,
+.region-sidebar-second h4 {
   font-size: 1em;
   text-transform: uppercase;
 }
