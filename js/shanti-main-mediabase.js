@@ -249,7 +249,7 @@
 		              target: $('main.main-wrapper')
 		          	});
 	            };
-	            window.setTimeout( set_equal_heights, 2000 );
+	            window.setTimeout( set_equal_heights, 1000 );
 	        });
 /*
 	        $( document ).ready(function() {
