@@ -1182,7 +1182,7 @@ h4.node-desc-type {
 /*-------------------------*/
 @media screen and (max-width: 991px) {
 
-  /*.view-offcanvas-sidebar.btn-default { display: inline-block !important; }*/
+  /*.btn.btn-default.view-offcanvas-sidebar { display: inline-block !important; }*/
 }
 
 @media screen and (max-width: 1170px) {
@@ -1194,7 +1194,7 @@ h4.node-desc-type {
   body.sidebar-second.sidebar-offcanvas .content-section.col-xs-12.col-md-9{ width:100% !important; }
 
   /* target only front page to show button */
-  body.sidebar-second.sidebar-offcanvas .view-offcanvas-sidebar.btn-default { 
+  body.sidebar-second.sidebar-offcanvas .btn.btn-default.view-offcanvas-sidebar { 
 
     display: inline-block !important;
 
@@ -1227,13 +1227,13 @@ h4.node-desc-type {
   /*.row-offcanvas-right.active .sidebar-second.sidebar-offcanvas {  }*/
 
 
-  .row-offcanvas-right .view-offcanvas-sidebar.btn-default { border-radius: 0.4rem 0 0 0.4rem; display: block !important;}
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { border-radius: 0.4rem 0 0 0.4rem; display: block !important;}
 
-  .row-offcanvas-right .view-offcanvas-sidebar.btn-default {
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar {
     right: -8px;
   }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default {
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar {
     position: absolute;
     right: -3.6rem;
     top: -0.5rem; /* adjusted lower */
@@ -1245,7 +1245,7 @@ h4.node-desc-type {
     box-shadow: none;
   }
 
-  .view-offcanvas-sidebar.btn-default .icon{
+  .btn.btn-default.view-offcanvas-sidebar .icon{
     position: relative;
     top: -0.1rem;
     left:0.3rem;
@@ -1254,7 +1254,7 @@ h4.node-desc-type {
     transform: rotate(180deg);
   }
 
-  .view-offcanvas-sidebar.btn-default .icon {
+  .btn.btn-default.view-offcanvas-sidebar .icon {
     background: transparent;
     line-height: 1;
     font-size: 1.68rem;
@@ -1263,10 +1263,10 @@ h4.node-desc-type {
     top: 0rem;
   }
 
-  .row-offcanvas-right .view-offcanvas-sidebar.btn-default .icon { float: left; right: -0.3rem; }
-  .view-offcanvas-sidebar.btn-default .icon::before { font-family: 'shanticon'; content: '\e63e'; }
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon { float: left; right: -0.3rem; }
+  .btn.btn-default.view-offcanvas-sidebar .icon::before { font-family: 'shanticon'; content: '\e63e'; }
 
-  .row-offcanvas-right.active .view-offcanvas-sidebar.btn-default .icon{
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon{
     position:relative;
     top:0.7rem;
   }
