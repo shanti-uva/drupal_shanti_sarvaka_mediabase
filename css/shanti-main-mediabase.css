@@ -1258,7 +1258,9 @@ h4.node-desc-type {
 .region-sidebar-second h3,
 .region-sidebar-second h4 {
   font-size: 1em;
+  font-weight: bold;
   text-transform: uppercase;
+  font-family: 'museo-sans-700', helvetica, arial, sans-serif;
 }
 /**
 *** END Right Column */
