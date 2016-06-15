@@ -288,9 +288,9 @@ else:     /************ FULL Display ***********/
           	<div class="panel-group" id="av-details">
 		          <?php 
 		          	$content['group_details']['#attributes']['class'][] = "in";
-								// Hiding title in details as it is in banner
-								hide($content['group_details']['field_pbcore_title']);
-								print render($content);
+					// Hiding title in details as it is in banner
+					hide($content['group_details']['field_pbcore_title']);
+					print render($content);
 		          ?>
 		        </div>
           </div> <!-- End of #details -->

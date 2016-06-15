@@ -114,6 +114,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
     $mode = $vars['view_mode'];
     $node = $vars['node'];
     if(in_array($ntype, array('collection', 'subcollection'))) {
+        // Collection Teasers
         if($mode == 'teaser') {
         	    	$vars['theme_hook_suggestions'][] = 'node__collection__teaser';   // Have them both use the same teaser template
     	        // Get thumbnail image
@@ -138,12 +139,12 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
             
            $vars['coll'] = ($ntype == "subcollection") ? get_collection_ancestor_node($node) : FALSE;
           
-        }
-    	}
+        } // End of Collection Teasers
+    	} // End of Collection/Subcollection Nodes
 	// Preprocess a/v nodes:
 	else if(in_array($ntype, array('audio', 'video'))) {
 	    
-		// Teasers
+		// AV Node Teasers
 		if($mode == 'teaser') {
 			// Get Title language and add as variable for template
 			$ew = entity_metadata_wrapper('node', $node);
@@ -171,7 +172,7 @@ function sarvaka_mediabase_preprocess_node(&$vars) {
 												<span class=\"icon shanticon-create\" title=\"Collection\"></span>&nbsp;<span class=\"field-label-span\">" .
 												t('Collection') . "</span>&nbsp;<a href=\"{$vars['coll']->url}\">{$vars['coll_title']}</a></div>",
 			);
-		}
+		} 
 
 		// Add Icons 
 		if(!empty($vars['content']['group_details']['field_subcollection_new'])) {
