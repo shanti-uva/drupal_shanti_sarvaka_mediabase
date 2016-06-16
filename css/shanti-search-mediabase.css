@@ -180,8 +180,8 @@
 }
 
 .extruder #loading-text{
-  position: absolute  !important;
-  left: 3.5rem !important;
+  /*position: absolute  !important;
+  left: 3.5rem !important;*/
 }
 
 
