@@ -242,15 +242,37 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	//        $(window).load(function() {
-	        	// $('.front.logged-in .equal-height, .page-search .equal-height, .page-node-edit.sidebar-second .equal-height').matchHeight({
-	 /*       	function set_equal_heights() {
+	        $(window).load(function() {
+	        	function set_equal_heights() {
 		          	$('.sidebar-second .equal-height').matchHeight({
 		              target: $('main.main-wrapper')
 		          	});
 	            };
 	            window.setTimeout( set_equal_heights, 1000 );
-	        }); */
+	        });
+
+	        $(window).load(function() {
+	        	function av_equal_heights() {
+		          	$('.has-transcript .av-main-wrapper > div').matchHeight({
+		              target: $('.av-main-video-section')
+		          	});
+	            };
+	            window.setTimeout( av_equal_heights, 1000 );
+	        });
+
+/*	        $(window).load(function() {
+		            $('.has-transcript .show-more a').click(function() {
+
+						if($('.video-overview p').each().is(":visible")) {
+			        		$('.av-main-wrapper > div').matchHeight({ 
+			        			target: $('.av-main-video-section') 
+			        		});
+						} 
+
+		            });
+	        });
+*/
+
 /*
 	        $( document ).ready(function() {
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
