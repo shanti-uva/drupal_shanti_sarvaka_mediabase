@@ -132,13 +132,13 @@ if($teaser):
     </div> <!-- end body-wrap -->
 
     <div class="footer-wrap">
-      <?php if($variables['subcollection']): ?>
+      <?php if(!empty($variables['subcollection'])): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $variables['subcollection']->url; ?>" 
                 class="shanti-thumbnail-link"><?php print $variables['subcollection']->title; ?></a>
             </div>
         </div>
-      <?php elseif($coll && isset($coll->url, $coll->title)): ?>
+      <?php elseif(!empty($coll) && isset($coll->url, $coll->title)): ?>
         <div class="shanti-field shanti-field-group-audience">
             <div class="shanti-field-content"><a href="<?php print $coll->url; ?>" 
                 class="shanti-thumbnail-link"><?php print $coll->title; ?></a>
