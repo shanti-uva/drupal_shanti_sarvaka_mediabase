@@ -242,15 +242,15 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
 
-	        $(window).load(function() {
+	//        $(window).load(function() {
 	        	// $('.front.logged-in .equal-height, .page-search .equal-height, .page-node-edit.sidebar-second .equal-height').matchHeight({
-	        	function set_equal_heights() {
+	 /*       	function set_equal_heights() {
 		          	$('.sidebar-second .equal-height').matchHeight({
 		              target: $('main.main-wrapper')
 		          	});
 	            };
 	            window.setTimeout( set_equal_heights, 1000 );
-	        });
+	        }); */
 /*
 	        $( document ).ready(function() {
 	          	$('.has-transcript .av-main-wrapper > div').matchHeight({
