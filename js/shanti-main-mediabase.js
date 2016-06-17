@@ -308,7 +308,7 @@
 
 	        $(window).load(function() {
 	        	function footer_heavy_gravity() {
-		          	$(html,body).css( 'height','100%' );
+		          	$('html,body').addClass( 'footer-gravity' );
 	            };
 	            window.setTimeout( footer_heavy_gravity, 3000 );
 	        });
