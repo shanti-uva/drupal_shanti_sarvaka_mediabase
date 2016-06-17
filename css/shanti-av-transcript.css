@@ -1156,7 +1156,7 @@
   background-color: #888;
   background-image: linear-gradient(transparent 95%, rgba(200, 200, 200, .15) 95%);
   background-size: 4px 4px;
-  height: 7.8rem;
+  height: 8.8rem;
   border-bottom: 1px solid #ccc;
 }
 
@@ -1489,6 +1489,8 @@
 .transcript-navigate-results > div {
   text-align: center;
 }
+
+.transcript-navigate-results > div.ajax.progress{ display: none !important; }
 
 .transcript-navigate-results .btn.nextresult,
 .transcript-navigate-results .btn.previousresult { 
