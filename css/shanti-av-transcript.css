@@ -1490,6 +1490,8 @@
   text-align: center;
 }
 
+.transcript-navigate-results > div.ajax-progress{ display:none; }
+
 .transcript-navigate-results .btn.nextresult,
 .transcript-navigate-results .btn.previousresult { 
   width: 2.7rem;
