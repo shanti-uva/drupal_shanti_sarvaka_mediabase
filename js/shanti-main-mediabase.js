@@ -305,15 +305,13 @@
 	  attach: function (context, settings) { 
 	    if(context == window.document) { 
 
-
-	        $(window).load(function() {
+/*	        $(window).load(function() {
 	        	function footer_heavy_gravity() {
 		          	$('html,body').addClass( 'footer-gravity' );
 	            };
-	            window.setTimeout( footer_heavy_gravity, 3000 );
+	            window.setTimeout( footer_heavy_gravity, 1000 );
 	        });
-	        
-
+*/
 			/* avoid flash on load for the Star Ratings below Audio or Video players */
 			$('.avrating').css('display','block');
 
