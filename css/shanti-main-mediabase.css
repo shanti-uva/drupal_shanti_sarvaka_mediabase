@@ -1052,13 +1052,17 @@ h4.node-desc-type {
 .front .sidebar-second.sidebar-offcanvas {
   z-index: 1;
 } 
-
+/* inner sidebar wrapper */
 .region-sidebar-second{
   padding: 1rem 2rem 5rem 2rem;
   border-width:1px 0 0 1px;
   min-height:900px;
 }
 
+
+/**
+* sidebar content 
+*/
 .sidebar-second.sidebar-offcanvas ul {
   list-style: square inside none;
   /* -webkit-margin-before: 1rem;
@@ -1188,48 +1192,28 @@ h4.node-desc-type {
 
 @media screen and (max-width: 1170px) {
 
-  .content-section.col-md-9{
-    width:100%;
-  }
+  .content-section.col-md-9 { width:100%; }
 
-  .sidebar-offcanvas.sidebar-second .content-section.col-xs-12.col-md-9{ width:100% !important; }
-
+  .sidebar-offcanvas.sidebar-second .content-section.col-xs-12.col-md-9 { width:100% !important; }
 
   /**
   * BEGIN: custom right-sidebar breakpoint styles 
+  * 1170px is a wider breakpoint in AV than in Kmaps
   */
-  .row-offcanvas.row-offcanvas-right { /* wider breakpoint in AV than in Sarvaka */
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
-  }
-  .row-offcanvas-right { position: relative; right: 0; }
-  .row-offcanvas-right.active { position: relative; right:300px; }
-
-  .row-offcanvas-right .sidebar-second.sidebar-offcanvas { right:-300px; position: absolute; width:25%; min-width:300px; }
-
-  .btn.btn-default.view-offcanvas-sidebar { display: inline-block !important; position: absolute; top: 0.7rem; /* adjusted lower */ }
-  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { right: -8px; border-radius: 0.4rem 0 0 0.4rem;}
-  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar { position: absolute;right: -3.6rem;top: -0.5rem; /* adjusted lower */}
-  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon{
-    position: relative;
-    left:0.3rem;
-    top: -0.1rem; /* adjusted lower */
-    /* reverse direction of icon for right-sidebar */
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon { float: left; right: -0.3rem; }
-  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon{ position:relative; top:0.7rem; }
-  /**
-  * END: custom right-sidebar
-  */
+  .row-offcanvas.row-offcanvas-right { position: relative; right:0; -webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; }
+  .row-offcanvas.row-offcanvas-right.active { position:relative; right:300px; }
+  .row-offcanvas-right .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; top:0.7rem; right:-8px; border-radius:0.4rem 0 0 0.4rem; }
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar { position:absolute; right:-3.6rem; top:-0.5rem; }
+  .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; left:0.3rem; top:-0.1rem; right:-0.3rem; float:left; /* reverse rotate */ -webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);  }
+  .row-offcanvas-right.active .btn.btn-default.view-offcanvas-sidebar .icon { position:relative; top:0.7rem; }
 
 }
+
 /**
 *** END max-width ***/
+
+
 
 
 /*-------------------------*/
