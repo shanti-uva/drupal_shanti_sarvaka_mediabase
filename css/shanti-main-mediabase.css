@@ -1200,7 +1200,7 @@ h4.node-desc-type {
   * BEGIN: custom right-sidebar breakpoint styles 
   * 1170px is a wider breakpoint in AV than in Kmaps
   */
-  .row-offcanvas.row-offcanvas-right { position: relative; right:0; -webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; }
+  .row-offcanvas.row-offcanvas-right { position: relative; right:0; /*-webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out;*/ }
   .row-offcanvas.row-offcanvas-right.active { position:relative; right:300px; }
   .row-offcanvas-right .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
   .row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; right:-8px; border-radius:0.4rem 0 0 0.4rem; }
