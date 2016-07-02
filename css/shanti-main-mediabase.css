@@ -1047,15 +1047,13 @@ h4.node-desc-type {
   padding:0;
   margin-top: 1rem;
   border: 1px solid #e5e5e5;
+  background-color: #fff;
+  min-height:auto;
 }
 /* hide carousel nav arrows underneath */
 .front .sidebar-second.sidebar-offcanvas {
   z-index: 1;
 } 
-
-.sidebar-second.sidebar-offcanvas{
-  min-height:auto;
-}
 /* inner sidebar wrapper */
 .region-sidebar-second{
   padding: 1rem 2rem 5rem 2rem;
