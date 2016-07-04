@@ -1126,7 +1126,7 @@ h4.node-desc-type {
 /**
 * Sidebar filter search results
 */
-.sidebar #block-apachesolr-search-sort ul li::before{
+.sidebar #block-current-search-standard ul li::before{
   content: '';
   width: 0.9rem;
   height: 0.9rem;
