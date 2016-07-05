@@ -1188,13 +1188,20 @@ h4.node-desc-type {
   background: #5b68ce;
 }
 
-.region-sidebar-second h3,
-.region-sidebar-second h4 {
+.sidebar-second h3,
+.sidebar-second h4 {
   color:#606060;
   font-size: 1em;
   font-weight: bold;
-  text-transform: uppercase;
   font-family: 'museo-sans-700', helvetica, arial, sans-serif;
+}
+
+.sidebar-second #block-apachesolr-search-sort h4{
+  margin-bottom: 5px;
+}
+
+.sidebar-second #block-current-search-standard h4{
+  text-transform: uppercase;
 }
 /**
 *** END Right Column */
