@@ -1058,7 +1058,7 @@ h4.node-desc-type {
 .region-sidebar-second{
   padding: 1rem 2rem 5rem 2rem;
   border-width:1px 0 0 1px;
-  min-height:900px;
+  /*min-height:900px;*/
 }
 
 
