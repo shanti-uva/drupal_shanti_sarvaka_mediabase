@@ -1126,18 +1126,23 @@ h4.node-desc-type {
 /**
 * Sidebar filter search results
 */
+.sidebar #block-current-search-standard ul,
+.sidebar #block-current-search-standard ul li{
+  list-style:none;
+}
+
 .sidebar #block-current-search-standard ul li::before{
   content: '';
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   background: transparent;
-  border: 2px solid #5b68ce;
+  border: 2px solid #777;
   display: inline-block;
-  border-radius: 50%;
   background-clip: padding-box;
-  margin-right: 8px;
+  margin-right: 0.9rem;
   position: relative;
-  top: -0.1rem;
+  left: .1rem;
+  top: 0rem;
 }
 
 .sidebar #block-apachesolr-search-sort ul li {
