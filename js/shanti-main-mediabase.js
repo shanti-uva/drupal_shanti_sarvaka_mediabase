@@ -241,7 +241,7 @@
 	Drupal.behaviors.shantiAVEqualHeights = {
 	  attach: function (context, settings) { 
 	    if(context == window.document) {        
-
+/*
 	        $(window).load(function() {
 	        	function set_equal_heights() {
 		          	$('.sidebar-second .equal-height').matchHeight({
@@ -259,6 +259,15 @@
 	            };
 	            window.setTimeout( av_equal_heights, 1000 );
 	        });
+*/
+
+
+
+
+
+
+
+
 
 /*	        $(window).load(function() {
 		            $('.has-transcript .show-more a').click(function() {
