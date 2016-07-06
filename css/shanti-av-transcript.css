@@ -419,6 +419,11 @@
   background-color: #ddd;
 }
 
+.editing-active .playing .speaker-display:hover{
+  border-color: #ccc;
+  background-color: #aaa;
+}
+
 .edit-times{
   display: inline-block;
   color: #ddd;
