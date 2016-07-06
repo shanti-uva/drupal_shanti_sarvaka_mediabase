@@ -531,6 +531,7 @@ a.hide-annot::before {
 */
 .av-related-wrapper{
   padding-top:2rem;
+  margin-bottom: .8rem;
 }
 
 .av-related-wrapper #related .related-av-nodes {
