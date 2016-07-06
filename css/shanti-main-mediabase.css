@@ -1190,9 +1190,8 @@ h4.node-desc-type {
 
 .sidebar-second h3,
 .sidebar-second h4 {
-  color:#606060;
+  color:#444;
   font-size: 1em;
-  font-weight: bold;
   font-family: 'museo-sans-700', helvetica, arial, sans-serif;
 }
 
@@ -1202,6 +1201,7 @@ h4.node-desc-type {
 
 .sidebar-second #block-current-search-standard h4{
   text-transform: uppercase;
+  font-weight: bold;
 }
 /**
 *** END Right Column */
