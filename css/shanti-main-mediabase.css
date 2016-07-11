@@ -549,11 +549,13 @@ a.hide-annot::before {
   margin: 0 !important;
 }
 
-.field-label-span {
-  color: #333;
+.field-label-span,
+.field-label-inline .field-label {
+  color: #000;
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .field-items-span{
