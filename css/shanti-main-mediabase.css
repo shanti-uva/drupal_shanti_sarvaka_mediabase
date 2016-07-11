@@ -958,10 +958,16 @@ ul.links.inline {
 .avcollection{
   font-size: 1em;
 }
-
+/*
 .avsubjects .field-items-span,
 .avplace .field-items-span {
   display: inline;
+}
+*/
+.field-items-span ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 .field-name-field-pbcore-description > .field-items > .field-item {
@@ -984,11 +990,7 @@ ul.links.inline {
 
 
 /* New node place markup in video overview */
-.avplace .field-items-span ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Tibetan in av descriptions*/
 .avpbcoredesc div.bo p {
