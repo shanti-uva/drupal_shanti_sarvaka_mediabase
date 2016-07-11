@@ -524,10 +524,18 @@ a.hide-annot::before {
 * BEGIN - REVISED ABOVE RULES BELOW  - testing mf8yk July 11, 2016 
 */
 
-/* .node .content .field-label-inline*/
-.field-label-inline {
-  line-height: 2.7rem;
-  font-family: palatino, 'Palatino Linotype', georgia, serif;
+.field-label-inline{
+  line-height: 3em;
+}
+
+.field-label-inline,
+.field-label-inline .field-label, 
+.field-label-inline .field-items{
+  display:inline;
+}
+
+.field-name-field-format-id-source.field-label-inline {
+  padding-left: 4px;
 }
 
 .mb-identifier label{
@@ -564,14 +572,6 @@ a.hide-annot::before {
 .field-name-field-format-id-source .field-item::after {
   content: ')';
   clear: both;
-}
-
-.field-label-inline {
-  display:inline;
-}
-
-.field-name-field-format-id-source.field-label-inline {
-  padding-left: 4px;
 }
 
 /** END REVISED */
