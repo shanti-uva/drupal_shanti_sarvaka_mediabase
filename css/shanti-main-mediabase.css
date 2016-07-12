@@ -625,7 +625,9 @@ a.hide-annot::before {
   float:left;
 }
 
-
+.av-related-wrapper .field-type-datetime{
+  float:none;
+}
 
 
 

@@ -1073,6 +1073,10 @@ table.sticky-table .filter-guidelines ul li{
 
 /* editing form techincal metadata */
 /* Date created - Date issued */
+#node_video_form_group_technical .node-video-form{
+  margin: 0 !important;
+}
+
 .group-technical fieldset.date-combo .container-inline-date .date-padding{
 	padding: 0 0 0 1rem;
 }
@@ -1081,12 +1085,7 @@ table.sticky-table .filter-guidelines ul li{
 	margin-bottom:0;
 }
 
-#node_video_form_group_technical .node-video-form{
-  margin: 0 !important;
-}
-
-.field-type-datetime.field-name-field-date-created,
-.field-type-datetime.field-name-field-date-issued{
+.group-technical .field-type-datetime{
 	width: 49%;
 	float: left;
 }
@@ -1097,23 +1096,23 @@ table.sticky-table .filter-guidelines ul li{
 	width:33.333%;
 }
 
-.field-name-field-duration.field-widget-text-textfield,
-.field-name-field-file-size.field-widget-text-textfield,
-.field-name-field-channel-conf.field-widget-text-textfield{
+.group-technical .field-name-field-duration,
+.group-technical .field-name-field-file-size,
+.group-technical .field-name-field-channel-conf{
 	float:none;
 }
 
-.field-name-field-duration.field-widget-text-textfield > div,
-.field-name-field-file-size.field-widget-text-textfield > div,
-.field-name-field-channel-conf.field-widget-text-textfield > div{
+.group-technical .field-name-field-duration > div,
+.group-technical .field-name-field-file-size > div,
+.group-technical .field-name-field-channel-conf > div{
 	float:left;
 }
 
-.group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
+.group-technical .field-widget-text-textfield.form-wrapper .form-control{
 	max-width: 93% !important;
 }
 
-.group-technical .field-type-text.field-name-field-extension-authority input.form-text.form-control{
+.group-technical .field-type-text.field-name-field-extension-authority .form-control{
 	max-width: 100% !important;
 }
 
