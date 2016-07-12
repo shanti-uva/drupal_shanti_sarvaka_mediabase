@@ -443,32 +443,6 @@ a.hide-annot::before {
 * --------------------------
 */
 
-/* add space after collection name */
-#av-details .field-name-av-collection {
-  margin-bottom: 0.8rem;
-  font-size: 1.12em;
-}
-
-#av-details .field-type-taxonomy-term-reference {
-  margin: 9px 0px 3px;
-}
-
-#av-details .field-type-taxonomy-term-reference ul {
-  margin: 3px 0px 0px 0px;
-}
-
-/* Metadata on a/v record */
-#field_collection_item_field_workflow_full_group_workflow .subgroup {
-  float: left;
-  width: 33%;
-}
-
-#field_collection_item_field_workflow_full_group_workflow .subgroup p {
-  display: inline-block;
-}
-
-
-
 /** 
 * Related Audio-Video Tab 
 */
@@ -493,8 +467,35 @@ a.hide-annot::before {
 
 .av-related-wrapper #related .tab-content{
    border:none;
- }
+}
 
+/**
+*  BEGIN target metadata */
+
+/* Metadata on a/v record */
+#field_collection_item_field_workflow_full_group_workflow .subgroup {
+  float: left;
+  width: 33%;
+}
+
+#field_collection_item_field_workflow_full_group_workflow .subgroup p {
+  display: inline-block;
+}
+
+
+/* add space after collection name */
+#av-details .field-name-av-collection {
+  margin-bottom: 0.8rem;
+  font-size: 1.12em;
+}
+
+#av-details .field-type-taxonomy-term-reference {
+  margin: 9px 0px 3px;
+}
+
+#av-details .field-type-taxonomy-term-reference ul {
+  margin: 3px 0px 0px 0px;
+}
 
 #av-details .field-label-inline{
   line-height: 2em;
@@ -516,12 +517,6 @@ a.hide-annot::before {
   padding-left: 4px;
 }
 
-#av-details .mb-identifier label{
-  color: #333;
-  margin: 0;
-  font-size: 14px;
-  text-transform: capitalize;
-}
 
 #av-details .field-name-field-pbcore-instantiation .field-label,
 #av-details .field-name-field-identifier-source > .field-items{
@@ -547,6 +542,13 @@ a.hide-annot::before {
   text-transform: uppercase;
 }
 
+#av-details .mb-identifier label{
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
 #av-details .mb-identifier.field-label-span,
 #av-details .field-type-shanti-kmaps-fields-default{
   margin-bottom: 5px;
@@ -569,9 +571,6 @@ a.hide-annot::before {
   content: ')';
   clear: both;
 }
-
-/** END REVISED */
-
 
 /* hiding double display of Publisher label */
 #av-details .field-name-field-pbcore-publisher > .field-label {
@@ -882,15 +881,15 @@ ul.links.inline {
 
 
 .field-name-field-tags {
-  padding: 10px 10px 0;
+  /*padding: 10px 10px 0;*/
 }
 
 .field-name-field-tags > div {
-  float: left;
+  /*float: left;*/
 }
 
 .field-name-field-tags div {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .field-name-field-tags .field-item a {
@@ -912,11 +911,6 @@ ul.links.inline {
   display: inline;
 }
 
-.avsubjects .shanticon-subjects::before {
-  float: left;
-  margin: 2px 5px 0 0;
-}
-
 .avsubjects,
 .avplace {
   margin-top: 10px;
@@ -925,6 +919,17 @@ ul.links.inline {
 .avplace,
 .avcollection{
   font-size: 1em;
+}
+
+.avsubjects .shanticon-subjects::before {
+  /*float: left;
+  margin: 2px 5px 0 0;*/
+}
+
+.avsubjects .shanticon-subjects,
+.av-place .icon.shanticon-places{
+  float: left;
+  margin-right: 0.5rem;
 }
 /*
 .avsubjects .field-items-span,
@@ -942,13 +947,13 @@ ul.links.inline {
   margin-bottom: 12px;
 }
 
-.field-name-field-pbcore-title.field-type-field-collection.field-label-hidden {
+.field-name-field-pbcore-title.field-type-field-collection {
   padding: 5px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ddd;
 }
 
-.form-item.form-type-select.form-item-spaces-features-transcripts-settings {
+.form-type-select.form-item-spaces-features-transcripts-settings {
   width: 7em;
 }
 
