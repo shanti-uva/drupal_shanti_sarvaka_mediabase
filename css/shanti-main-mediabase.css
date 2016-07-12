@@ -528,6 +528,12 @@ a.hide-annot::before {
   line-height: 2em;
 }
 
+.field-label-inline.field-name-field-recording-location-new,
+.group-availability-access .field-label-inline.field-name-field-tags{
+  line-height: 1em;
+}
+
+.field-items-span,
 .field-label-inline,
 .field-label-inline .field-label, 
 .field-label-inline .field-items{
@@ -556,10 +562,6 @@ a.hide-annot::before {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.field-items-span{
-  display: inline;
 }
 
 .field-type-shanti-kmaps-fields-default{
@@ -626,7 +628,7 @@ a.hide-annot::before {
 }
 
 .av-related-wrapper .field-type-datetime{
-  float:none;
+  float:none !important;
 }
 
 
