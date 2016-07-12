@@ -275,15 +275,15 @@
 
 
 /* new on June 2, 2016 mf8yk */
-.form-item.form-type-select.form-item-sort-bef-combine .btn {
+.form-type-select.form-item-sort-bef-combine .btn {
   width: 15rem;
 }
 
-.form-item.form-type-select.form-item-sort-bef-combine label {
+.form-type-select.form-item-sort-bef-combine label {
   display: none;
 }
 
-.form-item.form-type-select.form-item-sort-bef-combine .dropdown-menu.open .disabled {
+.form-type-select.form-item-sort-bef-combine .dropdown-menu.open .disabled {
   background-color: #d0d0d0;
 }
 
@@ -308,7 +308,7 @@
   display: none;
 }
 
-table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
+.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .selectpicker {
   width: 70px;
   margin-left: 20px;
 }
@@ -316,15 +316,15 @@ table.field-multiple-table .bootstrap-select.field_pbcore_title-delta-order .sel
 
 
 
-div#node_video_form_group_details > .panel-body > div, 
-div#node_audio_form_group_details > .panel-body > div{
+#node_video_form_group_details > .panel-body > div, 
+#node_audio_form_group_details > .panel-body > div{
   margin:0;
   background: #f9f9f9;
   padding: 0 1.2rem;
 }
 
-div#node_video_form_group_details > .panel-body .field-name-group-audience, 
-div#node_audio_form_group_details > .panel-body .field-name-group-audience{
+#node_video_form_group_details > .panel-body .field-name-group-audience, 
+#node_audio_form_group_details > .panel-body .field-name-group-audience{
   padding-top: 1.5rem;
 }
 
@@ -342,9 +342,7 @@ div#node_audio_form_group_details > .panel-body .field-name-group-audience{
 
 
 
-
-
-div#edit-field-pbcore-instantiation-und-0-field-date-created.field-name-field-date-created{
+#edit-field-pbcore-instantiation-und-0-field-date-created{
   float: left;
   width: 50%;
 }
@@ -422,6 +420,7 @@ a.hide-annot::before {
     font-weight: bold;
 }
 
+
 /**
 * --------------------------
 * Individual Collections
@@ -467,134 +466,6 @@ a.hide-annot::before {
 #field_collection_item_field_workflow_full_group_workflow .subgroup p {
   display: inline-block;
 }
-/*
-.node .content .field-label-inline{
-  line-height: 2.7rem;
-  font-family: palatino, 'Palatino Linotype', georgia, serif;
-}
-
-.node .content .mb-identifier label, 
-.node .content .field-label-inline .field-label-span {
-  color: #333;
-  margin: 0;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-.node .content .field-name-field-recording-location {
-  margin: 0 !important;
-}
-
-.node .content .field-name-field-recording-location .field-label-span {
-  color: #333;
-  margin: 0;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.node .content .field-name-field-pbcore-format-id > .field-items > .field-item {
-  display: block;
-}
-
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id .field-label,
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-label {
-  display: none;
-}
-
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::before {
-  content: '(';
-}
-
-.node .content .field-name-field-pbcore-format-id .field-name-field-format-id-source .field-item::after {
-  content: ')';
-  clear: both;
-}
-
-.field.field-name-field-format-id.field-type-text.field-label-inline.clearfix {
-  float: left;
-}
-
-.field.field-name-field-format-id-source.field-type-text.field-label-inline.clearfix {
-  float: left;
-  padding-left: 4px;
-}
-*/
-
-/**
-* BEGIN - REVISED ABOVE RULES BELOW  - testing mf8yk July 11, 2016 
-*/
-
-.field-label-inline{
-  line-height: 2em;
-}
-
-.field-label-inline.field-name-field-recording-location-new,
-.group-availability-access .field-label-inline.field-name-field-tags{
-  line-height: 1em;
-}
-
-.field-items-span,
-.field-label-inline,
-.field-label-inline .field-label, 
-.field-label-inline .field-items{
-  display:inline;
-}
-
-.field-name-field-format-id-source.field-label-inline {
-  padding-left: 4px;
-}
-
-.mb-identifier label{
-  color: #333;
-  margin: 0;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-.field-name-field-recording-location {
-  margin: 0 !important;
-}
-
-.field-label-span,
-.field-label-inline .field-label {
-  color: #000;
-  margin: 0;
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.field-type-shanti-kmaps-fields-default{
-  margin-bottom: 5px;
-}
-
-.field-name-field-pbcore-format-id > .field-items > .field-item {
-  display: block;
-}
-
-.field-name-field-format-id .field-label,
-.field-name-field-format-id-source .field-label {
-  display: none;
-}
-
-.field-name-field-format-id-source .field-item::before {
-  content: '(';
-}
-
-.field-name-field-format-id-source .field-item::after {
-  content: ')';
-  clear: both;
-}
-
-/** END REVISED */
-
-
-/* hiding double display of Publisher label */
-.field-name-field-pbcore-publisher > .field-label {
-  display: none;
-}
-
-
 
 
 
@@ -614,22 +485,101 @@ a.hide-annot::before {
    box-shadow: none;
  }
 
- .av-related-wrapper #related .panel-heading{
+.av-related-wrapper #related .panel-heading{
    display:none;
  }
 
 .av-related-wrapper #related .tab-content{
    border:none;
  }
- 
-.group-availability-access .field-label,
+
+
+#av-details .field-label-inline{
+  line-height: 2em;
+}
+
+#av-details .field-label-inline.field-name-field-recording-location-new,
+#av-details .group-availability-access .field-label-inline.field-name-field-tags{
+  line-height: 1em;
+}
+
+#av-details .field-items-span,
+#av-details .field-label-inline,
+#av-details .field-label-inline .field-label, 
+#av-details .field-label-inline .field-items{
+  display:inline;
+}
+
+#av-details .field-name-field-format-id-source.field-label-inline {
+  padding-left: 4px;
+}
+
+.mb-identifier label{
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+#av-details .field-name-field-recording-location {
+  margin: 0 !important;
+}
+
+#av-details .field-label-span,
+#av-details .field-label-inline .field-label {
+  color: #000;
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#av-details .field-type-shanti-kmaps-fields-default{
+  margin-bottom: 5px;
+}
+
+#av-details .field-name-field-pbcore-format-id > .field-items > .field-item {
+  display: block;
+}
+
+#av-details .field-name-field-format-id .field-label,
+#av-details .field-name-field-format-id-source .field-label {
+  display: none;
+}
+
+#av-details .field-name-field-format-id-source .field-item::before {
+  content: '(';
+}
+
+#av-details .field-name-field-format-id-source .field-item::after {
+  content: ')';
+  clear: both;
+}
+
+/** END REVISED */
+
+
+/* hiding double display of Publisher label */
+#av-details .field-name-field-pbcore-publisher > .field-label {
+  display: none;
+}
+
+#av-details .group-availability-access .field-label,
 .group-availability-access .field-label-span{
   float:left;
 }
 
-.av-related-wrapper .field-type-datetime{
+#av-details .field-type-datetime{
   float:none !important;
 }
+
+#av-details .group-technical .field-name-field-format-id-source{
+  float:left;
+}
+
+
+
+
 
 
 
