@@ -604,19 +604,19 @@ a.hide-annot::before {
   margin-bottom: .8rem;
 }
 
-.av-related-wrapper .related-av-nodes {
+.av-related-wrapper #related .related-av-nodes {
   padding: 12px;
  }
 
-.av-related-wrapper .panel-group .panel{
+.av-related-wrapper #related .panel-group .panel{
    box-shadow: none;
  }
 
- .av-related-wrapper .panel-heading{
+ .av-related-wrapper #related .panel-heading{
    display:none;
  }
 
-.av-related-wrapper .tab-content{
+.av-related-wrapper #related .tab-content{
    border:none;
  }
  
@@ -624,6 +624,7 @@ a.hide-annot::before {
 .group-availability-access .field-label-span{
   float:left;
 }
+
 
 
 
