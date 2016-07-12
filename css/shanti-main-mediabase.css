@@ -501,9 +501,12 @@ a.hide-annot::before {
   line-height: 2em;
 }
 
-#av-details .field-label-inline.field-name-field-recording-location-new,
-#av-details .group-availability-access .field-label-inline.field-name-field-tags{
+#av-details .field-name-field-recording-location-new{
   line-height: 1em;
+}
+
+#av-details .group-availability-access .field-name-field-tags{
+  line-height:2.5em;
 }
 
 #av-details .field-items-span,
