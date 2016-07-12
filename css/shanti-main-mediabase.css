@@ -579,8 +579,9 @@ a.hide-annot::before {
 }
 
 #av-details .group-availability-access .field-label,
-.group-availability-access .field-label-span{
+#av-details .group-availability-access .field-label-span{
   float:left;
+  text-transform: uppercase;
 }
 
 #av-details .field-type-datetime{
