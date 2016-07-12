@@ -475,6 +475,8 @@ a.hide-annot::before {
 .av-related-wrapper{
   padding-top:2rem;
   margin-bottom: .8rem;
+  font-family: 'Helvetica Neue', helvetica, sans-serif !important;
+  letter-spacing: 0.04rem;
 }
 
 .av-related-wrapper #related .related-av-nodes {
@@ -538,7 +540,7 @@ a.hide-annot::before {
 
 #av-details .field-label-span,
 #av-details .field-label-inline .field-label {
-  color: #000;
+  color: #444;
   margin: 0;
   font-size: 13px;
   font-weight: bold;
