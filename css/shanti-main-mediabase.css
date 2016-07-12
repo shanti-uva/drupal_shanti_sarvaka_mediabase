@@ -926,17 +926,17 @@ ul.links.inline {
   margin: 2px 5px 0 0;*/
 }
 
-.avsubjects .shanticon-subjects,
+.avsubjects .icon.shanticon-subjects,
 .av-place .icon.shanticon-places{
-  float: left;
-  margin-right: 0.5rem;
+  /*float: left;
+  margin-right: 0.5rem;*/
 }
-/*
+
 .avsubjects .field-items-span,
 .avplace .field-items-span {
   display: inline;
 }
-*/
+
 .field-items-span ul {
   display: inline;
   margin: 0;
