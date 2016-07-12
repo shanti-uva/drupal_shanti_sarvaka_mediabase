@@ -511,6 +511,8 @@ a.hide-annot::before {
 #av-details .field-label-inline .field-label, 
 #av-details .field-label-inline .field-items{
   display:inline;
+  color: #444;
+  font-size: 0.93em;
 }
 
 #av-details .field-name-field-format-id-source.field-label-inline {
