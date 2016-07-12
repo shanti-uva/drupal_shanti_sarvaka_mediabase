@@ -524,13 +524,14 @@ a.hide-annot::before {
 
 #av-details .field-name-field-pbcore-instantiation .field-label,
 #av-details .field-name-field-identifier-source > .field-items{
-  margin-bottom: .7rem;
+  margin-bottom: .4rem;
   text-transform: uppercase;
 }
 
 #av-details .field-name-field-pbcore-identifier,
 #av-details .field-name-field-pbcore-instantiation{
-  margin-top:1rem;
+  margin-top: .8rem;
+  color: #444;
 }
 
 #av-details .field-name-field-recording-location {
@@ -556,6 +557,10 @@ a.hide-annot::before {
 #av-details .mb-identifier.field-label-span,
 #av-details .field-type-shanti-kmaps-fields-default{
   margin-bottom: 5px;
+}
+
+#av-details .mb-identifier.field-label-span{
+  margin-bottom: 1rem;
 }
 
 #av-details .field-name-field-pbcore-format-id > .field-items > .field-item {
