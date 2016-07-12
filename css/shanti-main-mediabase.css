@@ -591,9 +591,15 @@ a.hide-annot::before {
   float:left;
 }
 
+#av-details .popover-link-tip{
+  position: relative;
+  bottom: 1.05rem;
+}
 
-
-
+#av-details .popover-link .icon{
+  position: relative;
+  bottom: 0.2rem;
+}
 
 
 
