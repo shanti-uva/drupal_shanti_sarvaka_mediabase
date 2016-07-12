@@ -1090,6 +1090,10 @@ table.sticky-table .filter-guidelines ul li{
 	float: left;
 }
 
+.group-technical .field-type-datetime.field-name-field-pbcore-date-available{
+	width: 100%;
+}
+
 .group-technical .field-type-textfield,
 .group-technical .field-widget-text-textfield { 
 	float:left; 
@@ -1189,6 +1193,21 @@ table.sticky-table .filter-guidelines ul li{
 .node-type-audio .field-name-field-thumbnail-image .image-preview {
   display: none;
 }
+
+
+
+
+
+/**
+* ----------------
+* Group Workflow
+* ----------------
+*/
+.group-workflow .panel.field-group-fieldset{
+	margin-bottom:1rem;
+}
+
+
 
 
 
