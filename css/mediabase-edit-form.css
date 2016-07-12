@@ -1112,8 +1112,8 @@ table.sticky-table .filter-guidelines ul li{
 	float:left;
 }
 
-.group-technical .field-widget-text-textfield.form-wrapper .form-control{
-	max-width: 93% !important;
+.group-technical .field-widget-text-textfield.form-wrapper input.form-text.form-control{
+	max-width: 94% !important;
 }
 
 .group-technical .field-type-text.field-name-field-extension-authority .form-control{
