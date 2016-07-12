@@ -82,6 +82,22 @@
 
 
 
+#edit-media-upload-button{
+  margin: 7rem 50% 0;
+  position:relative;
+  left: -4.5rem;
+}
+
+.mb-av-form #edit-actions--3{
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+
+
+
+
 
 
 /* Glyphicon fix - is too general, so need to target */
