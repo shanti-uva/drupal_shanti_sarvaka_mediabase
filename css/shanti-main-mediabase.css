@@ -201,6 +201,7 @@
 .shanti-filters .control-box-cell-header {
   margin: 0.8rem 0 0 0;
   padding: 0;
+  width: 21%;
 }
 
 .shanti-filters .control-box-cell-header span{
@@ -280,7 +281,7 @@
 }
 
 .form-type-select.form-item-sort-bef-combine label {
-  display: none;
+  display: none !important;
 }
 
 .form-type-select.form-item-sort-bef-combine .dropdown-menu.open .disabled {
