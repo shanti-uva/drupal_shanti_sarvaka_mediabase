@@ -517,6 +517,10 @@ a.hide-annot::before {
   display:inline;
   color: #444;
 }
+/* KMaps terms with popover tooltips */
+.field-type-shanti-kmaps-fields-default .field-items-span{
+  font-style:italic;
+}
 
 #av-details .field-name-field-format-id-source.field-label-inline {
   padding-left: 4px;
