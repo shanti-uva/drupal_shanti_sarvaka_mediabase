@@ -568,8 +568,7 @@ a.hide-annot::before {
   display: block;
 }
 
-#av-details .field-name-field-format-id .field-label,
-#av-details .field-name-field-format-id-source .field-label {
+#av-details .field-name-field-format-id > .field-label {
   display: none;
 }
 
