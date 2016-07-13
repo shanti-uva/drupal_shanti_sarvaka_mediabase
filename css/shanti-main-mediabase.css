@@ -444,6 +444,13 @@ a.hide-annot::before {
 * --------------------------
 */
 
+/* KMaps terms with popover tooltips */
+.field-type-shanti-kmaps-fields-default .field-items-span{
+  font-style:italic;
+  display: inline;
+  font-size:0.93em;
+}
+
 /** 
 * Related Audio-Video Tab 
 */
@@ -516,10 +523,6 @@ a.hide-annot::before {
 #av-details .field-label-inline .field-items{
   display:inline;
   color: #444;
-}
-/* KMaps terms with popover tooltips */
-.field-type-shanti-kmaps-fields-default .field-items-span{
-  font-style:italic;
 }
 
 #av-details .field-name-field-format-id-source.field-label-inline {
@@ -932,22 +935,6 @@ ul.links.inline {
 .avplace,
 .avcollection{
   font-size: 1em;
-}
-
-.avsubjects .shanticon-subjects::before {
-  /*float: left;
-  margin: 2px 5px 0 0;*/
-}
-
-.avsubjects .icon.shanticon-subjects,
-.av-place .icon.shanticon-places{
-  /*float: left;
-  margin-right: 0.5rem;*/
-}
-
-.avsubjects .field-items-span,
-.avplace .field-items-span {
-  display: inline;
 }
 
 .field-items-span ul {
