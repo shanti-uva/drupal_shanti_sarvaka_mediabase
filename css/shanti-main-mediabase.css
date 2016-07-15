@@ -690,7 +690,7 @@ fieldset.form-wrapper .f-set > table{
 }
 /* BEGIN right desc col */
 .video-overview {
-  /* padding-bottom: 2rem; */
+  padding-bottom: 2rem;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -769,6 +769,10 @@ fieldset.form-wrapper .f-set > table{
 .avduration .icon {
   margin-right: 0.25em;
 }
+/* BEGIN avrating */
+.fivestar-static-item .form-item{
+  margin-top:-1rem;
+}
 
 .fivestar-widget .star{
   width: 17px;
@@ -831,7 +835,7 @@ fieldset.form-wrapper .f-set > table{
 .fivestar-basic div.fivestar-widget .cancel a::before {
   content: '\e60f';
 }
-
+/* BEGIN avshare */
 .avshare div h5 span {
   color: #5a65d1;
   font-size: 0.9em;
@@ -1296,7 +1300,7 @@ h4.node-desc-type {
   }
 
   .shanti-filters .control-box-cell-pager{
-    width:50%;
+    width:60%;
     margin-top: -6.5rem;
   }
 
