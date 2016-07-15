@@ -605,6 +605,8 @@ a.hide-annot::before {
 
 #av-details .group-technical .field-name-field-format-id-source{
   float:left;
+  position:relative;
+  left:-8.9rem;
 }
 
 #av-details .popover-link-tip{
