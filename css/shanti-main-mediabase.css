@@ -609,6 +609,12 @@ a.hide-annot::before {
   left:-8.9rem;
 }
 
+
+#av-details .popover-link{
+  position: relative;
+  top: 0.25rem;
+}
+
 #av-details .popover-link-tip{
   position: relative;
   bottom: 1.12rem;
@@ -1445,10 +1451,10 @@ h4.node-desc-type {
 
 
 /*** BEGIN iframe */
-.in-frame header.header-banner,
-.in-frame header.banner .page-title .icon,
-.in-frame header.banner .breadwrap, 
-.in-frame header.banner .banner-tabs,
+.in-frame div.site-banner,
+.in-frame div.banner .page-title .icon,
+.in-frame div.banner .breadwrap, 
+.in-frame div.banner .banner-tabs,
 .in-frame #search-flyout,
 .in-frame footer.footer,
 .in-frame #admin-footer,
@@ -1463,9 +1469,9 @@ h4.node-desc-type {
       background: #e0e0e0 !important;
     }
 
-    .in-frame header.col-xs-12.titlearea.banner, 
-    .in-frame header.col-xs-12.titlearea.banner.has-tabs,
-    .in-frame header.col-xs-12.titlearea.banner > div{
+    .in-frame div.titlearea, 
+    .in-frame div.titlearea.has-tabs,
+    .in-frame div.titlearea > div{
       color: #444 !important;
       background-color: transparent !important;
       box-shadow: none !important;
