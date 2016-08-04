@@ -974,6 +974,7 @@
   min-width: 10.5rem;
 }
 
+
 /**
 *** Minimal Theme
 * Note:; options include these classes - .minimal-view.no-speaker-names and li.playing
@@ -1058,7 +1059,7 @@
 
 .transcript-content .minimal-view.reversed-view .speaker-display{
   display:none;
-  padding-right:2rem;
+  padding-right: 0;
   padding-left: 0;
 }
 
@@ -1071,6 +1072,10 @@
   margin: 0.5rem 0;
   padding-right: .5rem;
 } 
+
+.transcript-content .minimal-view.reversed-view .speaker-name{
+  width:12rem;
+}
 
 .transcript-content .minimal-view .speaker-name{  }
 
@@ -1150,6 +1155,12 @@
   box-shadow: none;
   border-color: #aaa;
 }
+
+.transcript-content .minimal-view.reversed-view .play-button .btn{
+  position: relative;
+  left: 0.5rem;
+}
+
 /**
 *** END themes */
 
