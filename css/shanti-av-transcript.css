@@ -1006,7 +1006,7 @@
 
 .transcript-content .minimal-view li.list-group-item{
   border-radius:0;
-  padding: 0 0.5rem 0 .75rem;
+  padding: 0 0.5rem 0 0;
   margin-bottom: 0;
   background: #fff;
   border: none;
