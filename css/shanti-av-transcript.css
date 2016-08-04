@@ -985,7 +985,8 @@
 .minimal-view .speaker-tiers .tier{
   border-bottom:none;
   border-left: 0.2rem solid #f0f0f0;
-  padding-left: 2rem;
+  padding-left: 0.8rem;
+  padding-right:2.5rem;
 }
 
 .minimal-view.reversed-view .speaker-tiers .tier{
