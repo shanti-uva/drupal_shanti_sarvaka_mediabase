@@ -1058,7 +1058,8 @@
 
 .transcript-content .minimal-view.reversed-view .speaker-display{
   display:none;
-  padding-right:2.5rem;
+  padding-right:2rem;
+  padding-left: 0;
 }
 
 .transcript-content .minimal-view li.list-group-item.playing .speaker-display{
