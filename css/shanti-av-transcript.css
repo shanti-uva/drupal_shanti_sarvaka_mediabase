@@ -993,7 +993,7 @@
 .minimal-view.reversed-view .speaker-tiers .tier{
   border-right: 0.2rem solid #f0f0f0;
   border-left: none;
-  padding-left: 0;
+  padding-left: 0.5rem;
   padding-right: .5rem;
 }
 
