@@ -1032,11 +1032,6 @@ table.sticky-table .filter-guidelines ul li{
 /**
 * BEGIN Typeahead Menu items listed 
 */
-
-/* list items <div> wrapper */
-.mb-av-form .kmaps-tt-suggestion{
-	padding: 3px 20px 1px;
-}
 /* list items key-word term */
 .mb-av-form .kmaps-tt-suggestion .kmaps-term{
 	color: #000;
