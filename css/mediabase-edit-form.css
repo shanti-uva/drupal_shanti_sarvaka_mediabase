@@ -1059,7 +1059,9 @@ table.sticky-table .filter-guidelines ul li{
     color:gray;
 }
 
-
+.mb-av-form .kmaps-tt-suggestion:hover .kmaps-term{
+	color:#000;
+}
 
 
 
