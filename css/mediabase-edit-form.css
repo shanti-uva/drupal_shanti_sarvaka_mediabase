@@ -35,11 +35,7 @@
   color: #2db6b4 !important;
 }
 
-/* typeahead hover color to match subtheme */
-.mb-av-form .kmaps-tt-suggestion.kmaps-tt-selected:not(.kmaps-tt-zero-facet):hover,
-.mb-av-form .kmaps-tt-suggestion:not(.kmaps-tt-selected):not(.kmaps-tt-zero-facet):hover{
-	background-color: #2db6b4;
-}
+
 /* END colors */
 
 
