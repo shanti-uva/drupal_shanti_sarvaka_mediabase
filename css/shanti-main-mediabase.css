@@ -1284,7 +1284,7 @@ h4.node-desc-type {
 
   /**
   * BEGIN: custom right-sidebar breakpoint styles 
-  * 1170px is a wider breakpoint in AV than in Kmaps
+  * 1170px here in Audio-Video is a wider breakpoint than in Kmaps
   */
   .row-offcanvas.row-offcanvas-right { position: relative; right:0; /*-webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out;*/ }
   .row-offcanvas.row-offcanvas-right.active { position:relative; right:300px; }
