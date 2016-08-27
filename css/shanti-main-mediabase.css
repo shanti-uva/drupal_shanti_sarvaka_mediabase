@@ -189,8 +189,7 @@
 * Shanti Filters Gallery Header
 * ------------------------------
 */
-.shanti-filters{
-    /*height: 5.2em;*/
+.shanti-filters {
   height: 7.5em;  
 }
 
@@ -251,26 +250,25 @@
   margin-right:0;
 }
 
-.shanti-filters .control-box-cell-pager {
-  padding: 0;
-  margin: -1rem 0 0;
-}
-
 .shanti-filters .control-box-cell-pager,
 .shanti-filters .control-box-cell-filters{
   width:100%;
 }
 
 .shanti-filters .control-box-cell-pager {
-  margin-top: 0;
-  margin-right: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .shanti-filters table.pagerer {
-  margin-bottom:0;
+  margin: 0.5rem 0 0;
 }
 
-.front .shanti-filters  .control-box-cell-pager table.pagerer {
+.shanti-filters.bottom table.pagerer {
+  margin-top:2rem 0 3rem;
+}
+
+.front .shanti-filters .control-box-cell-pager table.pagerer {
   margin-top: -0.7rem;
 }
 
