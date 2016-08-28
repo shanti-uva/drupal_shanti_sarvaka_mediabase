@@ -58,17 +58,10 @@
 *** END subtheme colors ---*/
 
 
+
+
 /**
 * Page Layouts
-*/
-.content-section.equal-height.col-md-9 > .tab-content.container-fluid::after{
-  /* padding-bottom: 7rem; */
-}
-/*
-.tab-pane.main-col.active:not(.front .tab-pane.main-col.active){
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
 */
 .node-type-audio #block-system-main,
 .node-type-video #block-system-main{
@@ -79,12 +72,7 @@
 .logged-in.node-type-video #block-system-main{
   margin-top:-0.75em;
 }
-/*
-.node-type-video .tab-pane.main-col > div {
-  max-width: 1050px !important;
-  margin: 0 auto !important;
-}
-*/
+
 .node-type-audio .tab-pane.main-col {
   max-width: 970px !important;
 }
@@ -95,15 +83,8 @@
 
 
 
-
-
-
-
-
-
-
-
 /* Home media list block */
+
 /* Filters on top of block */
 #views-exposed-form-browse-media-home-block .views-exposed-form {
     min-width: 450px;
@@ -277,6 +258,16 @@
   float:right;
 }
 
+.page-collections .shanti-filters table.pagerer{
+  margin-top: 0;
+}
+
+.page-collections .shanti-filters .control-box-cell-pager{
+  margin-top: -3.3rem;
+  width: 60% !important;
+  float:right;
+}
+
 
 
 /* new on June 2, 2016 mf8yk */
@@ -292,18 +283,6 @@
   background-color: #d0d0d0;
 }
 
-
-
-
-.page-collections .shanti-filters table.pagerer{
-  margin-top: 0;
-}
-
-.page-collections .shanti-filters .control-box-cell-pager{
-  margin-top: -3.3rem;
-  width: 60% !important;
-  float:right;
-}
 
 
 
@@ -911,21 +890,7 @@ ul.links.inline {
 
 
 
-
-.field-name-field-tags {
-  /*padding: 10px 10px 0;*/
-}
-
-.field-name-field-tags > div {
-  /*float: left;*/
-}
-
-.field-name-field-tags div {
-  /*display: inline-block;*/
-}
-
 .field-name-field-tags .field-item a {
- /*display:inline-block;*/
   float: left;
   padding: 0.06em 0.5em;
 }
@@ -933,7 +898,6 @@ ul.links.inline {
 .field-item-span {
   display: inline;
 }
-
 
 
 
@@ -976,10 +940,9 @@ ul.links.inline {
 
 
 
-
-
-/* New node place markup in video overview */
-
+/**
+* New node place markup in video overview 
+*/
 
 /* Tibetan in av descriptions*/
 .avpbcoredesc div.bo p {
@@ -1000,8 +963,6 @@ ul.links.inline {
 .field-collection-item-field-pbcore-description .pb-desc-label.langname {
     font-size: 1.25rem;
 }
-
-
 
 
 
@@ -1034,8 +995,6 @@ h4.node-desc-type {
   font-weight: bold;
 }
 
-
-
 /* play button on video player */
 .largePlayBtn {
   margin: -2.5rem 0 0 -3rem;
@@ -1057,42 +1016,6 @@ h4.node-desc-type {
 .largePlayBtn::after {  }
 /**
 *** END video view */
-
-
-
-
-
-/* older... oct 29, 2015 view-display-id-page_list 
-
-- hiding May 23, 2016 
-
-.page-collections .views-field-field-images{
-  display: inline-block;
-  float: left;
-}
-
-.page-collections .views-field-field-images::after{
-  content: '.';
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.page-collections .views-field-field-images::before,
-.page-collections .views-field-field-images::after{
-  display: table;
-  content: '';
-}
-
-.page-collections .views-field-title{
-  margin-top: 2rem;
-}
-*/
-/**
-*** END temp fix */
-
-
 
 
 /**
@@ -1276,15 +1199,11 @@ h4.node-desc-type {
 
 @media screen and (max-width: 1170px) {
 
-  .content-section.col-md-9 { width:100%; }
-
-  /*.sidebar-offcanvas.sidebar-second .content-section.col-xs-12.col-md-9 { width:100% !important; } ----- hiding this July 2 for testing */
-
   /**
-  * BEGIN: custom right-sidebar breakpoint styles 
-  * 1170px here in Audio-Video is a wider breakpoint than in Kmaps
+  * BEGIN: custom right-sidebar breakpoint styles - 1170px here in Audio-Video is a wider breakpoint than in Kmaps
   */
-  .row-offcanvas.row-offcanvas-right { position: relative; right:0; /*-webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out;*/ }
+  .content-section.col-md-9 { width:100%; }
+  .row-offcanvas.row-offcanvas-right { position: relative; right:0; }
   .row-offcanvas.row-offcanvas-right.active { position:relative; right:300px; }
   .row-offcanvas.row-offcanvas-right .sidebar-second.sidebar-offcanvas { position:absolute; right:-300px; min-width:300px; width:25%; }
   .row-offcanvas.row-offcanvas-right .btn.btn-default.view-offcanvas-sidebar { display:inline-block !important; position:absolute; right:-8px; top:0; border-radius:0.4rem 0 0 0.4rem; }
@@ -1585,10 +1504,7 @@ h4.node-desc-type {
 }
 
 @media (min-width:1170px) {
-  /* hiding the sidebar on frontpage at 1150px not default col-md-9 to improve carousel display */
-  .front.logged-in .content-section.col-xs-12.col-md-9{
-      /*width:75% !important;*/
-  }
+
   .logged-in .carousel .carousel-main-image{
     width:40%;
   }
