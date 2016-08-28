@@ -14,7 +14,7 @@
 .breadcrumb .icon,
 .nav-tabs.nav-justified>li.active>a,
 .nav-tabs.nav-justified>li.active>a:focus,
-.nav-tabs.nav-justified>li.active>a:hover {
+.nav-tabs.nav-justified>li.active>a:hover{
   background-color: #2db6b4 !important;
 }
 
@@ -39,7 +39,8 @@
 }
 
 .kmaps-tt-menu .kmaps-tt-suggestion:hover::before,
-.kmaps-tt-menu .kmaps-tt-suggestion.kmaps-tt-cursor::before{
+.kmaps-tt-menu .kmaps-tt-suggestion.kmaps-tt-cursor::before,
+.bootstrap-select.btn-group .dropdown-menu li:hover>a::before{
     border-color: #2db6b4;
     background-color: #2db6b4;
 }
