@@ -45,6 +45,11 @@
     background-color: #2db6b4;
 }
 
+.bootstrap-select.btn-group .dropdown-menu li.selected>a, 
+.bootstrap-select.btn-group .dropdown-menu li.selected>a>span.text{
+  background-color: #cbdfdf;
+}
+
 .navbar-brand:active .site-slogan { color: #444 !important; }
 
 ::-moz-selection { background: #c0532f !important; } 

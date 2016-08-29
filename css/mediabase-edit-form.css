@@ -647,6 +647,17 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
   background-color: #f0f0f0;
 }
 
+.field-name-field-location .kmap-filter:nth-of-type(3) label{
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.field-name-field-location .kmap-filter:nth-of-type(3) span{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:1em;
+}
+
 
 
 .field-name-field-location .kmap-result-box{
@@ -678,7 +689,7 @@ div#edit-group-audience > div.form-item > div.collection-details-audience {
 .field-type-shanti-kmaps-fields-default .kmap-tree-picker .searchreset{
   position: absolute;
   right: 11.5rem;
-  top: 2.55rem;
+  top: 2.4rem;
 }
 
 .field-name-field-subject .kmap-tree-picker .searchreset{
